@@ -1,0 +1,7 @@
+systems_txt  TEXT "D:\quickplay\src\Defaults Resource\systems.dat"
+language_txt TEXT "D:\quickplay\src\Defaults Resource\language.txt"
+type_txt     TEXT "D:\quickplay\src\Defaults Resource\type.txt"
+rom_icon     RT_ICON "D:\quickplay\src\Defaults Resource\rom.ico"
+goodcodes_txt	TEXT "D:\quickplay\src\Defaults Resource\GoodCodes.dat"
+SysFileExt_txt  TEXT "D:\quickplay\src\Defaults Resource\SystemFileExts.ini" 
+Tools_txt  TEXT "D:\quickplay\src\Defaults Resource\tools.ini" 

@@ -1,0 +1,35 @@
+Adults Only¬ao
+Animated Violence¬Cartoon Violence¬Fantasy Violence
+Animated Blood & Gore¬Animated Blood
+Comic Mischief
+Early Childhood¬ec
+Edutainment
+Everyone¬e
+Everyone 10+¬e10
+Gambling¬Simulated Gambling
+Gaming
+Informational
+Kids to Adults¬k-a
+Mature¬m
+Mature Humor¬Crude Humor
+Mild Animated Violence¬Mild Cartoon Violence¬Mild Fantasy Violence
+Mild Blood and Gore¬Mild Blood
+Mild Language and Lyrics¬Mild Language¬Mild Lyrics
+Mild Sexual Themes¬Mild Suggestive Themes
+Mild Sexual Content
+Mild Violence¬Mild Realistic Violence
+Nudity¬Partial Nudity
+Rating Pending¬rp
+References to Alcohol and Tobacco¬Alcohol and Tobacco Reference¬Alcohol Reference¬Tobacco Reference
+References to Violence¬Violent References
+References to Drugs and Alcohol¬Drug and Alcohol Reference¬Drug Reference
+Strong Blood and Gore¬Blood and Gore¬Blood¬Realistic Blood¬Realistic Blood & Gore
+Strong Language and Lyrics¬Strong Language¬Strong Lyrics¬Language¬Lyrics
+Strong Sexual Content¬Sexual Content
+Strong Sexual themes¬Sexual Themes¬Suggestive Themes¬Mature Sexual Themes
+Strong Violence¬Violence¬Intense Violence¬Realistic Violence
+Sexual Violence
+Some Adult Assistance May Be Needed
+Teen¬t
+Use of Alcohol and Tobacco¬Use of Tobacco¬Use Of Tobacco & Alcohol¬Use of Alcohol
+Use of Drugs and Alcohol¬Use Of Drugs

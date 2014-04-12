@@ -1,0 +1,56 @@
+#The git dir itelf
+.git/
+
+#All delphi compiled units in the DCU dir
+dcu/
+
+#All Delphi library files - we include libinstalls for you to install your own lib dir as some are install sources
+lib/
+
+
+#Delphi ignore files - see https://github.com/github/gitignore/blob/master/Delphi.gitignore
+*.local
+*.identcache
+*.projdata
+*.tvsconfig
+*.dsk
+
+#Borland Delphi 2006 History files
+src/_history/
+*.~*
+
+#Why are we not ignoring exe and dll files? Because this repo also contains the package files which DO include those, we'll have to be more specific
+
+#Be aware that tools in PackageFiles/tools are standalone and if run up may start making their own ini files. We want to prevent this:
+package/tools/Format History to Tab/FH2T.ini
+package/tools/QUICKPLAY Multiloader/ForciblyWinmount.exe
+package/tools/Romdata Magician/RomData Magician.ini
+
+
+#QuickPlay puts its binary and resources in the packages directory when run up. But we want to publish QP versions without these files in. Quick solution: commit then replace working dir with commit
+package/QP.exe
+package/data
+package/dats
+package/search
+package/temp
+
+#None of these files in the src folder please
+src/*.exe
+src/*.dll
+src/*.bpl
+src/*.bpi
+src/*.dcp
+src/*.so
+src/*.apk
+src/*.drc
+src/*.map
+src/*.dres
+src/*.rsm
+src/*.tds
+src/*.dcu
+
+
+#Windows files
+Thumbs.db
+
+

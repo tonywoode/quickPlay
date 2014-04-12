@@ -1,0 +1,253 @@
+Action
+Action / 2D
+Action / 3D
+Action / Ability
+Action / Combat
+Action / 1st Person
+Action / Flight Combat
+Action / Multi-Genre
+Action / Overhead View
+Action / Stealth
+Adventure
+Adventure / Action
+Adventure / 1st Person
+Adventure / Interactive Movie
+Adventure / Survival Horror
+Adventure / Text
+Adventure / 3rd Person
+Application
+Arcade
+Battleship
+Blank
+Ball & Paddle
+BIOS
+Breakout
+Breakout *Mature*
+Casino
+Casino *Mature*
+Climbing
+Compilation
+Computing
+Demo
+Driving
+Driving / 1st Person
+Driving / Boat
+Driving / Plane
+Driving / Race
+Driving / Race (chase view)
+Driving / Race (chase view) Bike
+Driving / Race 1st Person Bike
+Driving / Race 1st Person
+Driving / Race Bike
+Driving / Race Track
+Editor
+Educational
+Educational / Art
+Educational / Edutainment
+Educational / General College
+Educational / General Early Childhood
+Educational / General Elementary
+Educational / General High School
+Educational / General Middle School
+Educational / Geography
+Educational / History
+Educational / Interactive Book
+Educational / Language
+Educational / Math
+Educational / Music
+Educational / Quiz Game
+Educational / Reading
+Educational / Science
+Educational / Social Interaction
+Educational / Spelling
+Educational / Sports Instruction
+Educational / Test Preparation
+Educational / Typing
+Educational / Writing
+Emulator
+Fighter / 2.5D
+Fighter / 2D
+Fighter / 3D
+Fighter / Field
+Fighter / Misc.
+Fighter / Multiplay
+Fighter / Versus
+Fighter / Versus *Mature*
+Fighter / Versus Co-op
+Fighter / Vertical
+Game Creator
+Game Enhancer
+Hack
+Home
+Home / Design
+Home / Fashion and Beauty
+Home / Genealogy
+Home / Personal Management
+Home / Productivity
+Home / Reference
+Maze
+Maze *Mature*
+Maze / Digging
+Maze / Digging *Mature*
+Maze / Driving
+Maze / Fighter
+Maze / Outline
+Maze / Outline *Mature*
+Maze / Shooter Large
+Maze / Shooter Small
+Maze / Shooter Small *Mature*
+Maze / Surround
+Mini-Games
+Misc.
+Misc. *Mature*
+Multiplay
+Multiplay *Mature*
+Music
+Music / Movie
+Movie
+Movie *Mature*
+Pinball
+Pinball / 2D
+Pinball / 3D
+Pinball *Mature*
+Pinball / Pachinko *Mature*
+Platform
+Platform / 2D
+Platform / 3D
+Platform / Fighter
+Platform / Fighter Scrolling
+Platform / Run Jump
+Platform / Run Jump *Mature*
+Platform / Run Junp Scrolling
+Platform / Shooter
+Platform / Shooter Scrolling
+Puzzle
+Puzzle *Mature*
+Puzzle / Cards
+Puzzle / Cards *Mature*
+Puzzle / Drop
+Puzzle / Drop *Mature*
+Puzzle / Match
+Puzzle / Match *Mature*
+Puzzle / Maze
+Puzzle / Outline
+Puzzle / Outline *Mature*
+Puzzle / Sliding
+Puzzle / Sliding *Mature*
+Puzzle / Toss
+Puzzle / Toss *Mature*
+Quiz
+Quiz / Chinese
+Quiz / English
+Quiz / English *Mature*
+Quiz / French
+Quiz / German
+Quiz / Italian
+Quiz / Japanese
+Quiz / Japanese *Mature*
+Quiz / Korean
+Quiz / Music English
+Quiz / Music Japanese
+Quiz / Spanish
+Rhythm
+Rhythm / Dance
+Rhythm / Instruments
+Role-Playing
+Role-Playing / 1st Person
+Role-Playing / Isometric
+Role-Playing / Persistent World Online RPG
+Role-Playing / 3rd Person 2D
+Role-Playing / 3rd Person 3D
+Shooter / 1st Person
+Shooter / 2D
+Shooter / 3rd Person
+Shooter / 3D
+Shooter / Command
+Shooter / Driving
+Shooter / Driving (chase view)
+Shooter / Driving 1st Person
+Shooter / Driving Diagonal
+Shooter / Driving Horizontal
+Shooter / Driving Vertical
+Shooter / Field
+Shooter / Field *Mature*
+Shooter / Flying
+Shooter / Flying (chase view)
+Shooter / Flying 1st Person
+Shooter / Flying Diagonal
+Shooter / Flying Horizontal
+Shooter / Flying Horizontal *Mature*
+Shooter / Flying Vertical
+Shooter / Flying Vertical *Mature*
+Shooter / Gallery
+Shooter / Gallery *Mature*
+Shooter / Gun
+Shooter / Misc.
+Shooter / Misc. Horizontal
+Shooter / Misc. Vertical
+Shooter / Versus
+Shooter / Walking
+Simulation
+Simulation / Business
+Simulation / Construction
+Simulation / Dating
+Simulation / Flight
+Simulation / Ground Vehicle Combat
+Simulation / Life Development
+Simulation / Political
+Simulation / Space Combat
+Simulation / Sports Management
+Simulation / Train
+Sports
+Sports / Armwresting
+Sports / Baseball
+Sports / Basketball
+Sports / Bowling
+Sports / Boxing
+Sports / Bull Fighting
+Sports / Darts
+Sports / Dodgeball
+Sports / Fishing
+Sports / Football Amer.
+Sports / Footbal Rugby
+Sports / Golf
+Sports / Handball
+Sports / Hang Gliding
+Sports / Hockey
+Sports / Horse Racing
+Sports / Horseshoes
+Sports / Multiplay
+Sports / Ping pong
+Sports / Pool
+Sports / Pool *Mature*
+Sports / Shuffleboard
+Sports / Skateboarding
+Sports / Skiing
+Sports / SkyDiving
+Sports / Soccer
+Sports / Sumo
+Sports / Swimming
+Sports / Tennis
+Sports / Track & Field
+Sports / Volleyball
+Sports / Wrestling
+Strategy
+Strategy / 2D Real-Time
+Strategy / 3D Real-Time
+Strategy / 2D Turn-Based
+Strategy / 3D Turn-Based
+Strategy / Card Battle
+Strategy / Empire-Building
+Strategy / Persistent World Online RTS
+Tabletop
+Tabletop / Chess
+Tabletop *Mature*
+Tabletop / Hanafuda
+Tabletop / Hanafuda *Mature*
+Tabletop / Mahjong
+Tabletop / Mahjong *Mature*
+Tabletop / Othello
+Tabletop / Othello *Mature*
+Tabletop / Renju
+Tabletop / Shougi
+Utility

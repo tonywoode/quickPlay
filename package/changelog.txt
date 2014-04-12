@@ -1,0 +1,33 @@
+//change log:
+//9-10-10:       attempted to dive in to a language I would normaly never
+//              touch. Main goal is to continue this wonderfull program.
+//          LOG:
+//              Changed version to 3.9.0
+//              Fixed home page and forum links
+//              Removed update check, the way it works is, if the downloadable
+//              version is not = to the current, then suggest an upgrade.
+//              Instead of greater then. I dont know how to change that...
+//9-20-10       Added a check for [!] if no language as found.
+//              also added the option per folder to show only [!] roms if
+//              so desired
+//9-22-10       Fixed gif error and scrol error
+//              QP now looks for noimagefound.jpg when no image was found
+//              The run rom dialog box now uses edit fields for that text that tends to wrap around, in some cases MESS, making it impossible to read.
+//9-23-10       Added a rom Height slide bar
+//2011-2012	Various small improvements to facilitate the tools that have been published
+//		e.g.: mame history and mameinfo files have been renamed to game history and gameinfo within QP
+//		and the location of these files is now changeable facilitiating their use for system ini files
+//13-09-12	Butter100fly: QPv4RC3 prepared
+//	   LOG:
+//		Files in dat folder updated for EFind and use in Tools
+//		Tools.ini now created on first run so user has access to all tools from tools sidebar tab
+//		Tools menu bar item renamed to Utilities (since theres a tools sidebar and other options)
+//		User generated tools incuded including system ini files and system history files for goodmerge sets
+//		also QuickPlay Multiloader which now allows command-line calls when setup as an emu in QP
+//		Initial support for 2nd ICONs directory: in settings.ini under [DirOptions] you can create a line
+//		for IconPath1= with a full directory location. This is so MESS ICONs can be used in QP
+//		New package includes latest EFind and collected ICONS - Efind changes include CMD.exe and Explorer.exe
+//		so recommend that user scans windows directory with efind
+//		Background Images in image folder now in .BMP format as we broke GIF somehow. To be fixed later. Some new
+//		images included
+//		

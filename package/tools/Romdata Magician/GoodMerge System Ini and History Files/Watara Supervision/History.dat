@@ -1,0 +1,1329 @@
+## GoodSV_314_GM_V1 History.dat - A console/handheld games database.
+## (c) 2011 Matt McLemore, some rights reserved.
+## All names used are trademarked by their respective trademark holders.
+##
+## Revision: 1.00 - 10-11-2011
+## File size: 21249 bytes / Lines: 1330
+##
+## Created by:
+##   Matt McLemore - AKA Tempest
+##   Butter100fly - http://www.quickplayfrontend.com/index.php?showuser=6
+##
+## Credits:
+##   MobyGames - http://www.mobygames.com/
+##   AllGame - http://www.allgame.com/
+##
+## Available at http://emumovies.com/forums/index.php?/topic/3489-system-ini-files-project/
+##
+## This work is licensed under a Creative Commons Attribution 3.0 License.
+## You are free :
+## to Share — to copy, distribute and transmit the work
+## to Remix — to adapt the work
+## Under the following conditions : Attribution.
+## You must attribute the work in the manner specified by the author
+## (but not in any way that suggests that they endorse you or your use of the work).
+## For any reuse or distribution, you must make clear to others the license terms of this work.
+## The best way to do this is with a link to:
+## http://emumovies.com/forums/index.php?/topic/3489-system-ini-files-project/
+
+$info=Hash Blocks & Eagle Plan (1992) (GTC Inc),
+$<a href="http://www.allgame.com/game.php?id=40849&tab=overview"</a>
+$bio
+ 
+ 
+Hash Blocks & Eagle Plan (1992) (GTC Inc) (c) 1992 
+Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Compilation / Multi-Genre Compilation 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=2-In-1: Police Bust/Magincross,
+$<a href="http://www.allgame.com/game.php?id=40850&tab=overview"</a>
+$bio
+ 
+ 
+2-In-1: Police Bust/Magincross (c) 1990 Watara 
+  Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Compilation / Multi-Genre Compilation 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=4-in-1,
+$<a href="http://www.allgame.com/game.php?id=40851&tab=overview"</a>
+$bio
+ 
+ 
+4-in-1 (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Compilation / Multi-Genre Compilation 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Alien (199x) (Supervision),
+$<a href="http://www.allgame.com/game.php?id=40852&tab=overview"</a>
+$bio
+ 
+ 
+Alien (199x) (Supervision) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Side-Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=B52 Battle,
+$<a href="http://www.allgame.com/game.php?id=40853&tab=overview"</a>
+$bio
+ 
+ 
+B52 Battle (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Balloon Fight (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40854&tab=overview"</a>
+$bio
+ 
+ 
+Balloon Fight (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Fixed Screen Platform 
+Score : 4 
+Other Systems : Arcade,e-Reader,Nintendo 
+Entertainment System,Wii 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Block Buster (199x) (Supervision),
+$<a href="http://www.allgame.com/game.php?id=40855&tab=overview"</a>
+$bio
+ 
+ 
+Block Buster (199x) (Supervision) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Brain Power (199x) (Supervision),
+$<a href="http://www.allgame.com/game.php?id=40856&tab=overview"</a>
+$bio
+ 
+ 
+Brain Power (199x) (Supervision) (c) 1992 Watara 
+Industries 
+ 
+Contains the four games: Mine Detector, Fortune 
+Four, Caterpillar, and Hopper 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Compilation / Traditional 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Bubble World,
+$<a href="http://www.allgame.com/game.php?id=40857&tab=overview"</a>
+$bio
+ 
+ 
+Bubble World (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Carrier (199x) (Travellmate),
+$<a href="http://www.allgame.com/game.php?id=40858&tab=overview"</a>
+$bio
+ 
+ 
+Carrier (199x) (Travellmate) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Adventure Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Challenger Tank (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40859&tab=overview"</a>
+$bio
+ 
+ 
+Challenger Tank (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Overhead Free-Roaming Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Chimera (199x) (Supervision),
+$<a href="http://www.allgame.com/game.php?id=40860&tab=overview"</a>
+$bio
+ 
+ 
+Chimera (199x) (Supervision) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Chinese Checkers,
+$<a href="http://www.allgame.com/game.php?id=40861&tab=overview"</a>
+$bio
+ 
+ 
+Chinese Checkers (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Traditional / Board Game 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Classic Casino,
+$<a href="http://www.allgame.com/game.php?id=40862&tab=overview"</a>
+$bio
+ 
+ 
+Classic Casino (c) 1993 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Traditional / Gambling 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Climber,
+$<a href="http://www.allgame.com/game.php?id=40863&tab=overview"</a>
+$bio
+ 
+ 
+Climber (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Crystball (1991) (Travellmate),
+$<a href="http://www.allgame.com/game.php?id=40864&tab=overview"</a>
+$bio
+ 
+ 
+Crystball (1991) (Travellmate) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Ball and Paddle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Dancing Block,
+$<a href="http://www.allgame.com/game.php?id=40865&tab=overview"</a>
+$bio
+ 
+ 
+Dancing Block (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Delta Hero (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40866&tab=overview"</a>
+$bio
+ 
+ 
+Delta Hero (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / 2D Action 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Dream World,
+$<a href="http://www.allgame.com/game.php?id=40867&tab=overview"</a>
+$bio
+ 
+ 
+Dream World (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Side-Scrolling Platform 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Eagle Plan (1992) (GTC Inc),
+$<a href="http://www.allgame.com/game.php?id=40868&tab=overview"</a>
+$bio
+ 
+ 
+Eagle Plan (1992) (GTC Inc) (c) 1992 GTC / Watara 
+Industries 
+ 
+Eagle Plan gives players an opportunity to control 
+a fighter plane and engage enemy planes and 
+armored ground units. This release for the 
+Supervision system also allows users to choose 
+from an arsenal of powerful and varied weapons as 
+they defend the Brave Resistance forces from the 
+attack of the Evils. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Simulation / Flight Combat Sim 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Earth Defender (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40869&tab=overview"</a>
+$bio
+ 
+ 
+Earth Defender (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Platform Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Fatal Craft (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40870&tab=overview"</a>
+$bio
+ 
+ 
+Fatal Craft (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Side-Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Final Combat (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40871&tab=overview"</a>
+$bio
+ 
+ 
+Final Combat (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 5 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Galactic Crusader (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40872&tab=overview"</a>
+$bio
+ 
+ 
+Galactic Crusader (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Galaxy Fighter (1992) (Thin Chen Enterprise),
+$<a href="http://www.allgame.com/game.php?id=40873&tab=overview"</a>
+$bio
+ 
+ 
+Galaxy Fighter (1992) (Thin Chen Enterprise) (c) 
+1992 Thin Chen Enterprise Co., Ltd. / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Vertical Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Grand Prix (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40874&tab=overview"</a>
+$bio
+ 
+ 
+Grand Prix (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Racing / Formula-1/Indy Racing 
+Score : 5 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Happy Pairs (1992) (Sachen),
+$<a href="http://www.allgame.com/game.php?id=40875&tab=overview"</a>
+$bio
+ 
+ 
+Happy Pairs (1992) (Sachen) (c) 1992 Sachen, Inc. 
+/ Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Happy Race,
+$<a href="http://www.allgame.com/game.php?id=40876&tab=overview"</a>
+$bio
+ 
+ 
+Happy Race (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Maze 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Hash Blocks (1991) (GTC Inc),
+$<a href="http://www.allgame.com/game.php?id=40877&tab=overview"</a>
+$bio
+ 
+ 
+Hash Blocks (1991) (GTC Inc) (c) 1992 WTC / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Hero Hawk,
+$<a href="http://www.allgame.com/game.php?id=40878&tab=overview"</a>
+$bio
+ 
+ 
+Hero Hawk (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Hero Kid (1992) (Hartung),
+$<a href="http://www.allgame.com/game.php?id=40879&tab=overview"</a>
+$bio
+ 
+ 
+Hero Kid (1992) (Hartung) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Side-Scrolling Platform 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Honey Bee (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40880&tab=overview"</a>
+$bio
+ 
+ 
+Honey Bee (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Vertical Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Jade Legend,
+$<a href="http://www.allgame.com/game.php?id=40881&tab=overview"</a>
+$bio
+ 
+ 
+Jade Legend (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Jaguar Bomber (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40882&tab=overview"</a>
+$bio
+ 
+ 
+Jaguar Bomber (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Vertical Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=John Adventure (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40884&tab=overview"</a>
+$bio
+ 
+ 
+John Adventure (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Journey to the West,
+$<a href="http://www.allgame.com/game.php?id=40885&tab=overview"</a>
+$bio
+ 
+ 
+Journey to the West (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Role-Playing / Strategy RPG 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Juggler,
+$<a href="http://www.allgame.com/game.php?id=40886&tab=overview"</a>
+$bio
+ 
+ 
+Juggler (c) 1992 Bon Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Adventure Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Kabi Island (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40887&tab=overview"</a>
+$bio
+ 
+ 
+Kabi Island (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Kitchen War,
+$<a href="http://www.allgame.com/game.php?id=40888&tab=overview"</a>
+$bio
+ 
+ 
+Kitchen War (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Kung-Fu Street,
+$<a href="http://www.allgame.com/game.php?id=40889&tab=overview"</a>
+$bio
+ 
+ 
+Kung-Fu Street (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Fighting / 2D Fighting 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Linear Racing (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40890&tab=overview"</a>
+$bio
+ 
+ 
+Linear Racing (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Magincross (1992) (Thin Chen Enterprise),
+$<a href="http://www.allgame.com/game.php?id=40891&tab=overview"</a>
+$bio
+ 
+ 
+Magincross (1992) (Thin Chen Enterprise) (c) 1992 
+Thin Chen Enterprise Co., Ltd. / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Side-Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Matta Blatta (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40892&tab=overview"</a>
+$bio
+ 
+ 
+Matta Blatta (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Olympic Trials (1992) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40893&tab=overview"</a>
+$bio
+ 
+ 
+Olympic Trials (1992) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Sports / Olympics 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=P-52 Sea Battle (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40894&tab=overview"</a>
+$bio
+ 
+ 
+P-52 Sea Battle (199x) (Watara) (c) 1992 Watara 
+  Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Fixed Screen Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=PacBoy & Mouse (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40895&tab=overview"</a>
+$bio
+ 
+ 
+PacBoy & Mouse (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Maze 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pacific Battle,
+$<a href="http://www.allgame.com/game.php?id=40896&tab=overview"</a>
+$bio
+ 
+ 
+Pacific Battle (c) 1992 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Penguin Hideout (1992) (Thin Chen Enterprise),
+$<a href="http://www.allgame.com/game.php?id=40897&tab=overview"</a>
+$bio
+ 
+ 
+Penguin Hideout (1992) (Thin Chen Enterprise) (c) 
+1992 Thin Chen Enterprise Co., Ltd. / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Maze 
+Controls : Joystick/Gamepad 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Police Bust,
+$<a href="http://www.allgame.com/game.php?id=40899&tab=overview"</a>
+$bio
+ 
+ 
+Police Bust (c) 1992 Bon Treasure / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / Maze 
+Controls : Joystick/Gamepad 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=PoPo Team,
+$<a href="http://www.allgame.com/game.php?id=40898&tab=overview"</a>
+$bio
+ 
+ 
+PoPo Team (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / 2D Action 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pyramid (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40900&tab=overview"</a>
+$bio
+ 
+ 
+Pyramid (199x) (Watara) (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Recycle Design,
+$<a href="http://www.allgame.com/game.php?id=40901&tab=overview"</a>
+$bio
+ 
+ 
+Recycle Design (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Scaffolder,
+$<a href="http://www.allgame.com/game.php?id=40902&tab=overview"</a>
+$bio
+ 
+ 
+Scaffolder (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Adventure Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Soccer Champion (199x) (Hartung),
+$<a href="http://www.allgame.com/game.php?id=40903&tab=overview"</a>
+$bio
+ 
+ 
+Soccer Champion (199x) (Hartung) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Sports / Soccer 
+Controls : Joystick/Gamepad 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Sonny X'Press,
+$<a href="http://www.allgame.com/game.php?id=40904&tab=overview"</a>
+$bio
+ 
+ 
+Sonny X'Press (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Space Fighter,
+$<a href="http://www.allgame.com/game.php?id=40905&tab=overview"</a>
+$bio
+ 
+ 
+Space Fighter (c) 1992 Bon Treasure / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=SSSnake (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40906&tab=overview"</a>
+$bio
+ 
+ 
+SSSnake (199x) (Watara) (c) 1992 BITS Studios / 
+Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Fixed Screen Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Super Block (1992) (Bon Treasure),
+$<a href="http://www.allgame.com/game.php?id=40907&tab=overview"</a>
+$bio
+ 
+ 
+Super Block (1992) (Bon Treasure) (c) 1992 Bon 
+Treasure / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Puzzle / Action Puzzle 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Super Kong (1992) (Thin Chen Enterprise),
+$<a href="http://www.allgame.com/game.php?id=40908&tab=overview"</a>
+$bio
+ 
+ 
+Super Kong (1992) (Thin Chen Enterprise) (c) 1992 
+Thin Chen Enterprise Co., Ltd. / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Super Pang,
+$<a href="http://www.allgame.com/game.php?id=40909&tab=overview"</a>
+$bio
+ 
+ 
+Super Pang (c) 1992 Sachen, Inc. / Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Fixed Screen Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Tasac 2010 (1992) (Thin Chen Enterprise),
+$<a href="http://www.allgame.com/game.php?id=40910&tab=overview"</a>
+$bio
+ 
+ 
+Tasac 2010 (1992) (Thin Chen Enterprise) (c) 1992 
+Thin Chen Enterprise Co., Ltd. / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / Vertical Scrolling Shooter 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Tennis Pro '92 (1992) (B.I.T.S),
+$<a href="http://www.allgame.com/game.php?id=40911&tab=overview"</a>
+$bio
+ 
+ 
+Tennis Pro '92 (1992) (B.I.T.S) (c) 1992 BITS 
+Studios / Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Sports / Tennis 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Thunder Shooting,
+$<a href="http://www.allgame.com/game.php?id=40912&tab=overview"</a>
+$bio
+ 
+ 
+Thunder Shooting (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Shooter / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Treasure Hunter (199x) (Watara),
+$<a href="http://www.allgame.com/game.php?id=40913&tab=overview"</a>
+$bio
+ 
+ 
+Treasure Hunter (199x) (Watara) (c) 1992 Watara 
+Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Action / 2D Action 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Untouchable,
+$<a href="http://www.allgame.com/game.php?id=40914&tab=overview"</a>
+$bio
+ 
+ 
+Untouchable (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Witty Cat,
+$<a href="http://www.allgame.com/game.php?id=40915&tab=overview"</a>
+$bio
+ 
+ 
+Witty Cat (c) 1992 Watara Industries 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre :  / 
+Controls : Joystick/Gamepad 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end

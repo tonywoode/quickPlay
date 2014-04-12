@@ -1,0 +1,516 @@
+## GoodPico_V31415_MISSING62_V1 History.dat - A console/handheld games database.
+## (c) 2011 Matt McLemore, some rights reserved.
+## All names used are trademarked by their respective trademark holders.
+##
+## Revision: 1.00 - 10-11-2011
+## File size: 9929 bytes / Lines: 517
+##
+## Created by:
+##   Matt McLemore - AKA Tempest
+##   Butter100fly - http://www.quickplayfrontend.com/index.php?showuser=6
+##
+## Credits:
+##   MobyGames - http://www.mobygames.com/
+##   AllGame - http://www.allgame.com/
+##
+## Available at http://emumovies.com/forums/index.php?/topic/3489-system-ini-files-project/
+##
+## This work is licensed under a Creative Commons Attribution 3.0 License.
+## You are free :
+## to Share — to copy, distribute and transmit the work
+## to Remix — to adapt the work
+## Under the following conditions : Attribution.
+## You must attribute the work in the manner specified by the author
+## (but not in any way that suggests that they endorse you or your use of the work).
+## For any reuse or distribution, you must make clear to others the license terms of this work.
+## The best way to do this is with a link to:
+## http://emumovies.com/forums/index.php?/topic/3489-system-ini-files-project/
+
+$info=Adventures in Letterland with Jack & Jill,
+$<a href="http://www.allgame.com/game.php?id=8115&tab=overview"</a>
+$bio
+ 
+ 
+Adventures in Letterland with Jack & Jill (c) 199X 
+Caps Software, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Berenstain Bears', The - A School Day,
+$<a href="http://www.allgame.com/game.php?id=8117&tab=overview"</a>
+$bio
+ 
+ 
+Berenstain Bears', The - A School Day (c) 1995 
+Realtime Associates Inc. / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 4 
+Esrb : ec|Some Adult Assistance May Be Needed 
+Other Systems : Atari Video Computer System 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Crayola Crayons - Create a World,
+$<a href="http://www.allgame.com/game.php?id=8118&tab=overview"</a>
+$bio
+ 
+ 
+Crayola Crayons - Create a World (c) 199X Sega of 
+America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Home / Art/Paint 
+Score : 5 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Disney's 101 Dalmatians,
+$<a href="http://www.allgame.com/game.php?id=8114&tab=overview"</a>
+$bio
+ 
+ 
+Disney's 101 Dalmatians (c) 1996 Sega of America, 
+Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Home / Art/Paint 
+Score : 5 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pocahontas - Riverbend Adventures,
+$<a href="http://www.allgame.com/game.php?id=8127&tab=overview"</a>
+$bio
+ 
+ 
+Pocahontas - Riverbend Adventures (c) 1995 
+Realtime Associates Inc. / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Home / Art/Paint 
+Score : 5 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Lion King - Adventure at Pride Rock,
+$<a href="http://www.allgame.com/game.php?id=31396&tab=overview"</a>
+$bio
+ 
+ 
+Lion King - Adventure at Pride Rock (c) 1995 
+Realtime Associates Inc. / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 4 
+Esrb : ec|Some Adult Assistance May Be Needed 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Ecco Jr. and the Great Ocean Treasure Hunt,
+$<a href="http://www.allgame.com/game.php?id=22446&tab=overview"</a>
+$bio
+ 
+ 
+Ecco Jr. and the Great Ocean Treasure Hunt (c) 
+1994 Sega of America, Inc. 
+ 
+Review by Jonathan Sutyak 
+ 
+ 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Great Counting Caper with The 3 Blind Mice, The,
+$<a href="http://www.allgame.com/game.php?id=8119&tab=overview"</a>
+$bio
+ 
+ 
+Great Counting Caper with The 3 Blind Mice, The 
+(c) 199X Caps Software, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Math 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Magic Crayons (Prototype),
+$<a href="http://www.allgame.com/game.php?id=20599&tab=overview"</a>
+$bio
+ 
+ 
+Magic Crayons (Prototype) (c) 1994 Realtime 
+Associates Inc. / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Home / Art/Paint 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Math Antics With Disney's 101 Dalmatians,
+$<a href="http://www.allgame.com/game.php?id=31400&tab=overview"</a>
+$bio
+ 
+ 
+Math Antics With Disney's 101 Dalmatians (c) 1994 
+Sega Enterprises Ltd. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Math 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Mickey's Blast Into the Past,
+$<a href="http://www.allgame.com/game.php?id=20600&tab=overview"</a>
+$bio
+ 
+ 
+Mickey's Blast Into the Past (c) 1994 Disney 
+Software / Sega Enterprises Ltd. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Muppets on the Go!,
+$<a href="http://www.allgame.com/game.php?id=8122&tab=overview"</a>
+$bio
+ 
+ 
+Muppets on the Go! (c) 1996 Sega of America, Inc. 
+ 
+Learn shapes while engaging in matching activities 
+with the help of Animal, Kermit, Fozzie, Gonzo, 
+Miss Piggy, and the rest of the Muppet gang. 
+Children ages three to six can choose from two 
+difficulty settings and listen to an assortment of 
+Muppet songs as they recognize and identify 
+circles, squares, triangles, and more. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Musical Zoo,
+$<a href="http://www.allgame.com/game.php?id=8123&tab=overview"</a>
+$bio
+ 
+ 
+Musical Zoo (c) 199X Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pepe's Puzzles (Prototype),
+$<a href="http://www.allgame.com/game.php?id=8124&tab=overview"</a>
+$bio
+ 
+ 
+Pepe's Puzzles (Prototype) (c) 1995 Sega of 
+America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+Esrb : ec|Some Adult Assistance May Be Needed 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pink Panther's Magic Island,
+$<a href="http://www.allgame.com/game.php?id=8125&tab=overview"</a>
+$bio
+ 
+ 
+Pink Panther's Magic Island (c) 199X American 
+Technos Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / 
+Score : 4 
+Esrb : ec|Violence 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Pink Panther's Shapes & Colors,
+$<a href="http://www.allgame.com/game.php?id=8126&tab=overview"</a>
+$bio
+ 
+ 
+Pink Panther's Shapes & Colors (c) 199X American 
+Technos Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / 
+Score : 4 
+Esrb : ec|Some Adult Assistance May Be Needed 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Richard Scarry's - Huckle and Lowly's Busiest Day Ever,
+$<a href="http://www.allgame.com/game.php?id=8128&tab=overview"</a>
+$bio
+ 
+ 
+Richard Scarry's - Huckle and Lowly's Busiest Day 
+Ever (c) 199X Realtime Associates Inc. / Sega of 
+America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 5 
+Esrb : ec 
+Other Systems : Sega Genesis 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Scholastic's The Magic School Bus - Going Places,
+$<a href="http://www.allgame.com/game.php?id=8121&tab=overview"</a>
+$bio
+ 
+ 
+Scholastic's The Magic School Bus - Going Places 
+(c) 1995 Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Educational -- General 
+Score : 5 
+Esrb : ec 
+Other Systems : Sega Genesis 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Sesame Street - Alphabet Avenue,
+$<a href="http://www.allgame.com/game.php?id=8129&tab=overview"</a>
+$bio
+ 
+ 
+Sesame Street - Alphabet Avenue (c) 1995 Sega of 
+America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 4 
+Esrb : ec|Edutainment 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Smart Alex and Smart Alice - Curious Kids,
+$<a href="http://www.allgame.com/game.php?id=8116&tab=overview"</a>
+$bio
+ 
+ 
+Smart Alex and Smart Alice - Curious Kids (c) 1996 
+Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Sonic the Hedgehog's Gameworld,
+$<a href="http://www.allgame.com/game.php?id=8130&tab=overview"</a>
+$bio
+ 
+ 
+Sonic the Hedgehog's Gameworld (c) November 1996 
+Sega of Japan / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / General Early Childhood 
+Score : 4 
+Esrb : ec 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Tails and the Music Maker,
+$<a href="http://www.allgame.com/game.php?id=20601&tab=overview"</a>
+$bio
+ 
+ 
+Tails and the Music Maker (c) September 1994 
+Realtime Associates Inc. / Sega of America, Inc. 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Music 
+Score : 4 
+SOURCE : 
+ 
+ 
+$end
+
+
+$info=Year at Pooh Corner, A,
+$<a href="http://www.allgame.com/game.php?id=20602&tab=overview"</a>
+$bio
+ 
+ 
+Year at Pooh Corner, A (c) 1994 Disney Software / 
+Sega of America, Inc. 
+ 
+Winnie the Pooh stars in this educational-themed 
+game for Sega's Pico system. Children ages three 
+to seven will guide the honey-loving bear through 
+an assortment of activities designed to reinforce 
+shape, number, and letter recognition skills. Pooh 
+will skate on ice as children trace specific 
+letters, "fish" for the correct answers to math 
+problems, match shapes, and travel across a 
+honeycomb maze in search of his favorite food. 
+Children can also participate in a pin-the-tail on 
+Eeyore game and create custom animated pictures by 
+arranging Pooh, his friends, and various other 
+objects directly on the screen. 
+ 
+Features: 
+Features multiple activities designed to teach 
+letters, shapes, and numbers 
+Practice hand-eye coordination by traveling across 
+a maze or pinning the tail on Eeyore 
+Create custom pictures by arranging animated 
+images 
+ 
+ 
+- TECHNICAL - 
+ 
+Genre : Educational / Interactive Book 
+Score : 5 
+SOURCE : 
+ 
+ 
+$end

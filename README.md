@@ -11,7 +11,7 @@ Is back on [SourceForge] (http://quickplay.sourceforge.net/)
 
 ##Forum Pages
 
-Join us on [QuickPlay Frontend] (http://www.quickplayfrontend.com/)
+Join us at [QuickPlay Frontend] (http://www.quickplayfrontend.com/)
 
 
 ## License

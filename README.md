@@ -3,7 +3,7 @@ QuickPlay
 
 Powerful Windows universal emulator frontend with support for very many emulators, systems, and other frontends/collections
 
-![sample screenshot] (http://i1291.photobucket.com/albums/b551/tonywoodecode/QuickPlayExample_zps78848d79.png)
+![a simple sample screenshot] (http://i1291.photobucket.com/albums/b551/tonywoodecode/QuickPlayExample_zps78848d79.png)
 
 ## Project Pages
 

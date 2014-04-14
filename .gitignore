@@ -1,6 +1,3 @@
-#The git dir itelf
-.git/
-
 #All delphi compiled units in the DCU dir
 dcu/
 

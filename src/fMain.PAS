@@ -1230,7 +1230,7 @@ procedure TMainFrm.HandleNewUpdateMsg(var Message: TMessage);
 begin 
   if (MessageDlg('A new version of QuickPlay is available.  '+#13+#10+'Do you want to visit the QuickPlay homepage?', mtInformation, [mbYes, mbNo], 0) = mrYes) then
   begin
-    ujUtilities.OpenHomePage('waiting on new link');//http://quickplay.sourceforge.net
+    ujUtilities.OpenHomePage('http://quickplay.sourceforge.net');
   end;
 end;
 

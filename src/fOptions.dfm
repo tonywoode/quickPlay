@@ -40,7 +40,6 @@ object PrefForm: TPrefForm
     ActivePage = TabGeneral
     Align = alTop
     TabOrder = 0
-    ExplicitTop = 49
     object TabGeneral: TTabSheet
       Caption = 'General Options'
       object GrpGeneral: TGroupBox
@@ -141,8 +140,8 @@ object PrefForm: TPrefForm
           OnClick = chkUpdatesOnStartClick
         end
         object ChkJoy: TCheckBox
-          Left = 344
-          Top = 152
+          Left = 272
+          Top = 112
           Width = 249
           Height = 17
           Hint = 'When selected QuickPlay will allow joystick input for controls'

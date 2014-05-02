@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, uMediaMiscTypes, GraphicEx, StdCtrls, fJWinFontForm, axctrls ,JvGif;
+  Dialogs, ExtCtrls, uMediaMiscTypes, GraphicEx, StdCtrls, fJWinFontForm, axctrls {,JvGif};  //enabling .gif in GrapghicEX's GraphicConfiguration.inc instead of using VTV's Gif support makes gifs work again....
 
 type
   TtabImageViewer = class(TJWinFontForm)

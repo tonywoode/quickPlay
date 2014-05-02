@@ -20,12 +20,11 @@ type
     lblWrittenIn: TLabel;
     OKButton: TButton;
     LblLink: TLabel;
-    Label2: TLabel;
-    Label1: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    ffv: TLabel;
+    LblMaintain: TLabel;
+    LblJohn: TLabel;
+    LblMaintainer1: TLabel;
+    LblThanks: TLabel;
+    LblIcons: TLabel;
     procedure LblLinkClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure LblLinkMouseDown(Sender: TObject; Button: TMouseButton;
@@ -50,7 +49,6 @@ end;
 procedure TAboutBox.FormCreate(Sender: TObject);
 begin
   Version.Caption := QPVer;
-  //lblVTVer.Caption := VirtualTrees.VTVersion;
 end;
 
 procedure TAboutBox.LblLinkMouseDown(Sender: TObject; Button: TMouseButton;

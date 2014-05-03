@@ -313,7 +313,7 @@ begin
         else
         begin
           tmpStrings.Add('MAMEInfo File not found.  You can download it from:');
-          tmpStrings.Add('http://www.mameworld.net/mameinfo/');
+          tmpStrings.Add('http://www.mameworld.info/mameinfo/');
           tmpStrings.Add('and then copy the file to the DATS directory');
         end;
         tTabTextOnly(useTab.Controls[0]).LoadText(tmpStrings, _TextOpt);

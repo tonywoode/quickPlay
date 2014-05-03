@@ -2755,7 +2755,7 @@ end;
 
 procedure TMainFrm.ActOpenCatverExecute(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar('http://www.mameworld.net/catlist'), '', '', sw_Show);
+  ShellExecute(Handle, 'open', PChar('http://www.progettoemma.net/?catlist'), '', '', sw_Show);
 end;
 
 {-----------------------------------------------------------------------------}

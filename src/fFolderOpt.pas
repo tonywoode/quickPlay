@@ -511,7 +511,7 @@ end;
 
 procedure TFrmFolder.lblMAMElinkClick(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', PChar('http://www.mameworld.net/icons/'), '', '', sw_Show);
+  ShellExecute(Handle, 'open', PChar('http://www.progettosnaps.net/mamu_icons.html'), '', '', sw_Show);
 end;
 
 {-----------------------------------------------------------------------------}

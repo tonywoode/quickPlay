@@ -21,7 +21,7 @@ object FrmFolder: TFrmFolder
     Top = 0
     Width = 618
     Height = 388
-    ActivePage = TabGeneral
+    ActivePage = TabMerged
     Align = alClient
     TabOrder = 0
     object TabGeneral: TTabSheet
@@ -393,12 +393,14 @@ object FrmFolder: TFrmFolder
         ParentFont = False
       end
       object lblMAMElink: TLabel
-        Left = 152
+        Left = 48
         Top = 152
-        Width = 307
+        Width = 490
         Height = 13
         Cursor = crHandPoint
-        Caption = 'Download MAME icons from - http://www.mameworld.net/icons/'
+        Caption = 
+          'Download MAME icons from MAMu_'#39's sets - try here http://www.prog' +
+          'ettosnaps.net/mamu_icons.html '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
         Font.Height = -11

@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 957
+  ClientHeight = 997
   ClientWidth = 1038
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 938
+    Top = 978
     Width = 1038
     Height = 19
     Panels = <
@@ -113,19 +113,21 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 958
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 1038
-    Height = 938
+    Height = 978
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 958
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 938
+      Height = 978
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +135,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 863
       Top = 0
-      Height = 938
+      Height = 978
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,19 +146,21 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 938
+      Height = 978
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 958
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 938
+        Height = 978
         ActivePage = TabSearches
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 958
         object TabROMS: TTabSheet
           Caption = 'ROMs'
           ExplicitLeft = 0
@@ -268,6 +272,7 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
+          ExplicitHeight = 930
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -293,7 +298,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 881
+            Height = 921
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -329,6 +334,7 @@ object MainFrm: TMainFrm
             OnGetImageIndex = VTSearchesGetImageIndex
             OnGetPopupMenu = VTSearchesGetPopupMenu
             OnNewText = VTSearchesNewText
+            ExplicitHeight = 901
             Columns = <
               item
                 Position = 0
@@ -470,10 +476,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 651
-      Height = 938
+      Height = 978
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 958
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -563,7 +570,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 651
-        Height = 885
+        Height = 925
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -615,6 +622,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 905
         Columns = <
           item
             Position = 0
@@ -787,11 +795,12 @@ object MainFrm: TMainFrm
       Left = 866
       Top = 0
       Width = 172
-      Height = 938
+      Height = 978
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 958
     end
     object Edit1: TEdit
       Left = 640

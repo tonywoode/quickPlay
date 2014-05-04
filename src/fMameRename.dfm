@@ -110,6 +110,7 @@ object DatReader: TDatReader
       Width = 513
       Height = 178
       Header.AutoSizeIndex = 1
+      Header.DefaultHeight = 17
       Header.Font.Charset = DEFAULT_CHARSET
       Header.Font.Color = clWindowText
       Header.Font.Height = -11

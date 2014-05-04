@@ -1,3 +1,10 @@
+##
+#     NOT ignoring .exe and .dll as we're including libs and package files: 
+##    Which means YOU MAY NEED TO ALTER YOUR GLOBAL GITCONFIG
+##
+
+
+
 #All delphi compiled units in the DCU dir
 dcu/
 
@@ -14,8 +21,6 @@ lib/
 #Borland Delphi 2006 History files
 src/_history/
 *.~*
-
-#Why are we not ignoring exe and dll files? Because this repo also contains the qp files which DO include those, we'll have to be more specific
 
 #Be aware that tools in qpFiles/tools are standalone and if run up may start making their own ini files. We want to prevent this:
 qp/tools/Format History to Tab/FH2T.ini
@@ -45,7 +50,11 @@ src/*.rsm
 src/*.tds
 src/*.dcu
 
-#Windows files
-Thumbs.db
+#Personal Efind inis - not for sharing as the user must setup their own or they will get confused
+qp/EFind/Custom.ini
+qp/EFind/Gamebase.ini
+qp/EFind/MultiLoader.ini
+
+
 
 

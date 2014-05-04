@@ -142,7 +142,7 @@ NEC PC Engine\TurboGrafx-16¬PC Engine\TurboGrafx-16¬TurboGrafx CD¬TurboGrafx-16¬
 PC Engine FX¬PC-FX
 PC Games¬Windows¬Windows 3.x
 PDF Reader
-Phillips CD-i¬CD-i
+Philips CD-i¬CD-i
 Pioneer Laseractive
 Plug and Play
 Pokemon Mini

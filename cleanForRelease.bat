@@ -5,9 +5,15 @@ rd /S /Q data
 rd /S /Q dats
 rd /S /Q search
 rd /S /Q temp
+
 echo.Cleaning up possible ini files (you may have run up some of the tools)
 del "tools/Format History to Tab/FH2T.ini"
 del "tools/QUICKPLAY Multiloader/ForciblyWinmount.exe"
 del "tools/Romdata Magician/RomData Magician.ini"
+
+echo.Cleaning up possible EFind files
+del "EFind/Custom.ini"
+del "EFind/Gamebase.ini"
+del "EFind/MultiLoader.ini"
 
 pause

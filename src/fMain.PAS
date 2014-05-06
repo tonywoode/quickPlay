@@ -334,6 +334,7 @@ type
     JoyCntrl: TJvJoystick;
     Edit1: TEdit;
     SlideBarDir: TTrackBar;
+    procedure Label1Click(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
     procedure Help1Click(Sender: TObject);
@@ -2092,6 +2093,12 @@ end;
 
 Procedure TMainFrm.SetVTWallpapers();
 begin
+//we weren't freeing the background image when disabling the background option or before loading a new image
+VTDir.Background := nil;
+VTSearches.Background := nil;
+VTTools.Background := nil;
+VTEmus.Background := nil;
+
   if (Settings.Backgrounds.DirBG <> '') and
   (VTDir.TreeOptions.PaintOptions >= [toShowBackground]) and
   (FileExists(Settings.Backgrounds.DirBG)) then
@@ -5174,6 +5181,11 @@ begin
     FreeAndNil(inFiles);
   end;
   
+end;
+
+procedure TMainFrm.Label1Click(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}

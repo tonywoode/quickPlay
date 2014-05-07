@@ -170,8 +170,7 @@ begin
 
         If chkCatver.Checked = true then
           MainFrm.RomList.SetMameCategories(MainFrm.Settings.Paths.CfgDir);
-
-        //IMO we woudl do another check box for "fill in mame filed", and work just like above.
+          //IMO we would do another check box for "fill in mame field", and work just like the above.
 
     end
     Else

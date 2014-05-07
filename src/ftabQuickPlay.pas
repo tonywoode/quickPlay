@@ -33,7 +33,7 @@ end;
 
 procedure TTabQuickplay.FormCreate(Sender: TObject);
 begin
-  //cause issue, why do this anyways
+  //causes issue, so why do this anyway?
   ImgQP.Picture.LoadFromFile(MainFrm.Settings.Paths.AppDir + 'newlogo.png');
 end;
 

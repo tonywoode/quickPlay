@@ -718,6 +718,7 @@ begin
 
       else
       begin
+      //find users choice
         //check any user-set default ROMS
         if _DefaultGoodMerge <> '' then
           for i := 0 to FileList.Count-1 do

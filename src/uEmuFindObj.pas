@@ -63,8 +63,8 @@ begin
     else
       Result := False;
   end
-  else  Result := False;
-
+  else
+  Result := False;
 end;
 
 procedure TQPEmuFindObj.LoadFromIni(Name : String; var Ini : TMemIniFile);

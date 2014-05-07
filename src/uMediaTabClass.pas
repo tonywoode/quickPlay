@@ -288,13 +288,11 @@ begin
         pth :=   ExtractFilePath(_Paths[i]);
        end
 
-
        // see notepad++ for reading zips    "thumb browser " see shit one
 
        // here is how its done, satisfy these vars.
        //       zContents.Clear;
- //         uQPCompObj.Compression.ListContentsOfFile(zContents, _Paths[i]);
-
+       //       uQPCompObj.Compression.ListContentsOfFile(zContents, _Paths[i]);
 
        //else if (JCLStrings.Strcompare('.zip', ExtractFileExt(_Paths[i] )) =0 ) then
        //begin
@@ -377,7 +375,6 @@ begin
 
   _Found.Clear;
   //_Found.Add('D:\Gaming\Emulation\Media\MAME\marquees\marquees.zip=005.png');
-  //_Found.Add('D:\Gaming\Emulation\Media\MAME\marquees\marquees.zip=alcon.png');
   FindObj := ThhFindFile.Create(nil);
   try
     FindObj.Recurse := False;

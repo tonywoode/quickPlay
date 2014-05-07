@@ -738,10 +738,6 @@ begin
   Settings.LoadDimensions(_WindowLayout);
 end;
 
-
-
-//
-
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.ClearAllDynMenus();

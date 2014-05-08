@@ -64,7 +64,8 @@ uses
   uQPMiscTypes in 'uQPMiscTypes.pas',
   fParamVars in 'fParamVars.pas' {FrmParamVars},
   uQPCompObj in 'uQPCompObj.pas',
-  uVersionCheckThread in 'uVersionCheckThread.pas';
+  uVersionCheckThread in 'uVersionCheckThread.pas',
+  fMameHolding in 'fMameHolding.pas' {Form1};
 
 {$R *.RES}
 {$R WindowsXP.RES}
@@ -73,5 +74,6 @@ begin
   Application.Initialize;
   Application.Title := 'Quick Play - Phoenix';
   Application.CreateForm(TMainFrm, MainFrm);
+  Application.CreateForm(TForm1, MameHolding);
   Application.Run;
 end.

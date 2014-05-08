@@ -181,7 +181,7 @@ type
     ZipUtilities1: TMenuItem;
     ProcessCurrentDirwithcatveriniMAMEOnly1: TMenuItem;
     RenameMameROMS1: TMenuItem;
-    ools1: TMenuItem;
+    Tools1: TMenuItem;
     Preferences1: TMenuItem;
     HelpContents1: TMenuItem;
     About1: TMenuItem;

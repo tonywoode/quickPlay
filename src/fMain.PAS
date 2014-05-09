@@ -1212,11 +1212,20 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
+function MessageDlg(const Msg: string; DlgType: TMsgDlgType; Buttons: TMsgDlgButtons; Pos: TPosition): Integer;
+begin
+  with CreateMessageDialog(Msg, DlgType, Buttons) do
+  begin
+    Position := Pos;
+    Result := ShowModal;
+  end;
+end;
 
+{-----------------------------------------------------------------------------}
 procedure TMainFrm.HandleErrUpdateMsg(var Message: TMessage);
 begin
   if _ShowUpdateCheckErrors then
-    MessageDlg('An error occurred while checking for updates.  Please ensure you have an active Internet connection before trying again.', mtError, [mbOK], 0);
+    MessageDlg('An error occurred while checking for updates.  Please ensure you have an active Internet connection before trying again.', mtError, [mbOK], poMainFormCenter);
 
   _ShowUpdateCheckErrors := False;
 end;
@@ -1224,8 +1233,9 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.HandleNewUpdateMsg(var Message: TMessage);
-begin 
-  if (MessageDlg('A new version of QuickPlay is available.  '+#13+#10+'Do you want to visit the QuickPlay homepage?', mtInformation, [mbYes, mbNo], 0) = mrYes) then
+
+  begin
+  if (MessageDlg('A new version of QuickPlay is available.  '+#13+#10+'Do you want to visit the QuickPlay homepage?', mtInformation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
   begin
     ujUtilities.OpenHomePage('http://quickplay.sourceforge.net');
   end;
@@ -1237,7 +1247,7 @@ end;
 procedure TMainFrm.HandleNoUpdateMsg(var Message: TMessage);
 begin
   if _ShowUpdateCheckErrors then  
-    MessageDlg('No new versions available.', mtInformation, [mbOK], 0);
+    MessageDlg('No new versions available.', mtInformation, [mbOK], poMainFormCenter);
 
   _ShowUpdateCheckErrors := False;
 end;
@@ -1516,11 +1526,11 @@ begin
       except
         //this is caused by the running of the ROM.
         on EJNotice do MainFrm.Close();
-        on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+        on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
       end;
     end
     else
-      MessageDlg(QP_EMULATOR_NOT_FOUND, mtError, [mbOK], 0);
+      MessageDlg(QP_EMULATOR_NOT_FOUND, mtError, [mbOK], poMainFormCenter);
 
   end; //end of 1 ROM selected IF Statement
 
@@ -2050,7 +2060,7 @@ begin
 
     except
       on E: EJNotice do MainFrm.Close;
-      on E : Exception do MessageDlg(E.Message, mtError, [mbOK], 0);
+      on E : Exception do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
     end;
 
     ROMlist.SaveToFile();
@@ -2058,7 +2068,7 @@ begin
   end
   else
     //the emulator was not found, give an error!
-    MessageDlg(QP_LINKED_EMU_NOT_FOUND, mtError, [mbOK], 0);
+    MessageDlg(QP_LINKED_EMU_NOT_FOUND, mtError, [mbOK], poMainFormCenter);
 end;
 
 {-----------------------------------------------------------------------------}
@@ -2278,7 +2288,7 @@ procedure TMainFrm.ActEmuDelExecute(Sender: TObject);
 begin
 
   IF (MessageDlg(QP_EMU_DELETE_ALL,
-    mtConfirmation, [mbYes, mbNo], 0) = MrYes) then
+    mtConfirmation, [mbYes, mbNo], poMainFormCenter) = MrYes) then
   begin
     EmuList.DeleteAll(Settings.Paths.CfgDir);
     InitEmuTree();
@@ -2446,7 +2456,7 @@ begin
           edit.ShowModal;
         end
         else
-          MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], 0);
+          MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], poMainFormCenter);
       finally
         FreeAndNil(Edit);
       end;
@@ -2505,7 +2515,7 @@ var
 begin
   DelNode := VTDir.GetFirstSelected;
   if (DelNode <> nil) then
-  if (MessageDlg(J_DIRECTORY_VERIFY_DELETE, mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+  if (MessageDlg(J_DIRECTORY_VERIFY_DELETE, mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
   begin
     CurFol := TQPDir(GetObject(VTDir, DelNode));
     if CurFol <> nil then
@@ -2584,7 +2594,7 @@ begin
           Try
             RomList.MirrorDirectories(Ini);
           except
-            on E: EJexception do MessageDlg(E.Message, mtError, [mbOK], 0);
+            on E: EJexception do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
           end;
           
         Finally
@@ -2592,7 +2602,7 @@ begin
         end;
       end
       else
-        MessageDlg(QP_MIRROR_NOT_ENABLED, mtWarning, [mbOK], 0);
+        MessageDlg(QP_MIRROR_NOT_ENABLED, mtWarning, [mbOK], poMainFormCenter);
 
     finally
       Screen.Cursor := OldStyle;
@@ -2615,7 +2625,7 @@ begin
   //the rom listing is in Show ROMS only mode, ask the user if they want to make a
   //root node.. as the root node is no longer visible.
   if (VTDir.GetNodeLevel(VTDir.FocusedNode) = 0) and
-     (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+     (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
     Dir := Settings.Paths.ROMsDir
   else
     Dir := GetSelectedFolder;
@@ -2700,7 +2710,7 @@ begin
     RomList.SetMameCategories(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
   except
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -2718,11 +2728,10 @@ procedure TMainFrm.ActMameRenExecute(Sender: TObject);
 var
   //The Mame fundctionality doesn't work. We need to make it work
   //For now, a holding page....
-  //Mame : TDatReader;
-  Mame : TMameHolding;
+  Mame : TMameHolding; //Mame : TDatReader;
+
 begin
-    //Mame := TDatReader.create(self);
-    Mame := TMameHolding.create(self);
+    Mame := TMameHolding.create(self);  //Mame := TDatReader.create(self);
     try
       if Mame.ShowModal = mrOk then
         FillRoms(GetSelectedTxt);
@@ -2754,7 +2763,7 @@ begin
     RomList.SetMameMultiPlayer(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
   except
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -2975,7 +2984,7 @@ begin
       else
         TQPROM(GetObject(VTRoms, VTROMS.NodeParent[VTRoms.FocusedNode])).BrowseToROM();
     except
-      on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+      on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
     end;
   end;
 end;
@@ -2995,7 +3004,7 @@ begin
 
     If FileExists(RData.path) = False then
     begin
-      MessageDlg(J_DIRECTORY_NOT_EXIST, mtError, [mbOK], 0);
+      MessageDlg(J_DIRECTORY_NOT_EXIST, mtError, [mbOK], poMainFormCenter);
       Exit;
     end;
 
@@ -3010,7 +3019,7 @@ begin
         ROMList.SaveToFile();
         FilterRoms;
       except
-        on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+        on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
       end;
     End;
 
@@ -3063,7 +3072,7 @@ begin
     end;
   except
     on EJNotice do MainFrm.Close;  //handles the exception raised by running a rom.
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -3084,7 +3093,7 @@ begin
     end;
   except
     on EJNotice do MainFrm.Close;
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -3105,7 +3114,7 @@ begin
     end;
   except
     on EJNotice do MainFrm.Close;  //handles the exception raised by running a rom.
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -3126,7 +3135,7 @@ begin
     end;
   except
     on EJNotice do MainFrm.Close;
-    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], 0);
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -3151,7 +3160,7 @@ begin
       begin
         if (VTROMS.GetNodeLevel(VTROMS.GetFirstSelected) > 0) then
         begin
-          MessageDlg(QP_MAINFRM_GMMERGE_CHILD_PROP, mtError, [mbOK], 0);
+          MessageDlg(QP_MAINFRM_GMMERGE_CHILD_PROP, mtError, [mbOK], poMainFormCenter);
           Exit;
         end;
         Prop.ROM := TQPROM(GetObject(VTRoms, VTRoms.GetFirstSelected));
@@ -3218,7 +3227,7 @@ begin
 
           RDialog.Emu := EmuList.GetEmuForROM(Rdialog.Rom);
           if RDialog.Emu = nil then
-            MessageDlg(QP_EMULATOR_NOT_FOUND, mtError, [mbOK], 0);
+            MessageDlg(QP_EMULATOR_NOT_FOUND, mtError, [mbOK], poMainFormCenter);
 
           if (RDialog.Emu <> nil) and (RDialog.Rom <> nil) then
             RDialog.ShowModal;
@@ -3507,7 +3516,7 @@ var
   Wiz : TFrmWelcome;
 begin
 
-  if MessageDlg(J_SETTINGS_RESET_CFG, mtWarning, [mbYes,mbNo], 0) in [mrYes] then
+  if MessageDlg(J_SETTINGS_RESET_CFG, mtWarning, [mbYes,mbNo], poMainFormCenter) in [mrYes] then
   begin
 
     VTRoms.Clear;
@@ -5468,7 +5477,7 @@ begin
         MyEmu.WaitForEXEEnd := True;
       end
       else
-        MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], 0);
+        MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], poMainFormCenter);
     end;
   end;
 end;
@@ -5652,7 +5661,7 @@ begin
     if FileExists(Tool.Path) then
       Tool.Run()
     else
-      MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], 0);
+      MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], poMainFormCenter);
   end;
 end;
 
@@ -5886,7 +5895,7 @@ end;
 procedure TMainFrm.actDeleteSearchExecute(Sender: TObject);
 begin
   if (VTSearches.GetFirstSelected <> nil) then
-  if (MessageDlg(J_DIRECTORY_VERIFY_DELETE, mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+  if (MessageDlg(J_DIRECTORY_VERIFY_DELETE, mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
   begin
 
     DeleteFile(SearchList.ValueFromIndex[VTSearches.GetFirstSelected.Index]);

@@ -113,7 +113,6 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitTop = 978
   end
   object PanContent: TPanel
     Left = 0
@@ -123,7 +122,6 @@ object MainFrm: TMainFrm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 978
     object SplitMain: TSplitter
       Left = 209
       Top = 0
@@ -150,7 +148,6 @@ object MainFrm: TMainFrm
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 978
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
@@ -160,9 +157,12 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitHeight = 978
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -209,7 +209,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end
@@ -268,7 +268,6 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
-          ExplicitHeight = 950
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -330,7 +329,6 @@ object MainFrm: TMainFrm
             OnGetImageIndex = VTSearchesGetImageIndex
             OnGetPopupMenu = VTSearchesGetPopupMenu
             OnNewText = VTSearchesNewText
-            ExplicitHeight = 921
             Columns = <
               item
                 Position = 0
@@ -342,6 +340,10 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
@@ -398,6 +400,10 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -467,7 +473,6 @@ object MainFrm: TMainFrm
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 978
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -609,7 +614,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitHeight = 925
         Columns = <
           item
             Position = 0
@@ -737,7 +741,7 @@ object MainFrm: TMainFrm
           Width = 89
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 1
           Text = 'By Name'
@@ -757,7 +761,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'
@@ -788,7 +792,6 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitHeight = 978
     end
     object Edit1: TEdit
       Left = 640

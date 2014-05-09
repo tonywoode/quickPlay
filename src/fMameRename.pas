@@ -152,7 +152,7 @@ Begin
     end;
 
     //by this stage we should now have a valid INI file containing names and whatever
-    //time to start comparing the names of our ROMS our INI
+    //time to start comparing the names of our ROMS against our INI
 
     // check if we are doing ALL the ROMS or the selected folder.
     // any files we are processing goes into the processlist variable.

@@ -683,7 +683,7 @@ uses StrUtils, FindFile, ShellAPI, IniFiles,
      JCLstrings, JCLFileUtils,
      uJVirtualTree, uJFile, uJUtilities, ujWindowsMisc,
 
-     fScan, fAddaRom, fMameRename, fFind, fFav, fOptions, fEmuFind,
+     fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
      fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive,
      fMameMerge, fWelcome, fMigrate, fBackup,
@@ -2716,9 +2716,13 @@ end;
 
 procedure TMainFrm.ActMameRenExecute(Sender: TObject);
 var
-  Mame : TDatReader;
+  //The Mame fundctionality doesn't work. We need to make it work
+  //For now, a holding page....
+  //Mame : TDatReader;
+  Mame : TMameHolding;
 begin
-    Mame := TDatReader.create(self);
+    //Mame := TDatReader.create(self);
+    Mame := TMameHolding.create(self);
     try
       if Mame.ShowModal = mrOk then
         FillRoms(GetSelectedTxt);

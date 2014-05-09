@@ -7,15 +7,16 @@ uses
   Dialogs, StdCtrls, ExtCtrls;
 
 type
-  TForm1 = class(TForm)
+  TMameHolding = class(TForm)
     OKButton: TButton;
     Panel1: TPanel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
+    Link2: TLabel;
+    Link1: TLabel;
+    Instructions1: TLabel;
+    Instructions2: TLabel;
+    Instructions3: TLabel;
     Label1: TLabel;
+    procedure Link1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,10 +24,17 @@ type
   end;
 
 var
-  MameHolding: TForm1;
+  MameHolding: TMameHolding;
 
 implementation
 
+uses fMain, ShellAPI, Clipbrd, VirtualTrees;
+
 {$R *.dfm}
+
+procedure TMameHolding.Link1Click(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar(Link1.Caption), '', '', sw_Show);
+end;
 
 end.

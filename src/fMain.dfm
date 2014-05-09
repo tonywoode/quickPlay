@@ -163,15 +163,11 @@ object MainFrm: TMainFrm
         ExplicitHeight = 978
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 921
+            Height = 941
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -213,7 +209,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -346,15 +342,11 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 925
+            Height = 945
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -406,10 +398,6 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -439,7 +427,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 921
+            Height = 941
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0

@@ -1,16 +1,18 @@
-object Form1: TForm1
+object MameHolding: TMameHolding
   Left = 0
   Top = 0
   Caption = 'MameHolding'
   ClientHeight = 312
   ClientWidth = 553
   Color = clBtnFace
+  UseDockManager = True
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -19,7 +21,7 @@ object Form1: TForm1
     Width = 505
     Height = 273
     TabOrder = 1
-    object Label5: TLabel
+    object Link2: TLabel
       Left = 12
       Top = 123
       Width = 478
@@ -38,7 +40,7 @@ object Form1: TForm1
       ParentShowHint = False
       ShowHint = True
     end
-    object Label6: TLabel
+    object Link1: TLabel
       Left = 28
       Top = 51
       Width = 464
@@ -57,8 +59,9 @@ object Form1: TForm1
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
+      OnClick = Link1Click
     end
-    object Label7: TLabel
+    object Instructions1: TLabel
       Left = 79
       Top = 19
       Width = 370
@@ -67,14 +70,14 @@ object Form1: TForm1
         'To make full Mame Romlists for QuickPlay , please follow the ins' +
         'tructions here'
     end
-    object Label8: TLabel
+    object Instructions2: TLabel
       Left = 122
       Top = 88
       Width = 279
       Height = 13
       Caption = 'And you might want to consider  the instructions here also'
     end
-    object Label9: TLabel
+    object Instructions3: TLabel
       Left = 63
       Top = 156
       Width = 404

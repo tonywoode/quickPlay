@@ -1,9 +1,9 @@
 object MameHolding: TMameHolding
   Left = 0
   Top = 0
-  Caption = 'MameHolding'
-  ClientHeight = 312
-  ClientWidth = 553
+  Caption = 'Instructions for Mame Romdata'
+  ClientHeight = 209
+  ClientWidth = 543
   Color = clBtnFace
   UseDockManager = True
   Font.Charset = DEFAULT_CHARSET
@@ -16,14 +16,14 @@ object MameHolding: TMameHolding
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
-    Left = 24
-    Top = 16
-    Width = 505
-    Height = 273
+    Left = 8
+    Top = 8
+    Width = 529
+    Height = 193
     TabOrder = 1
     object Link2: TLabel
-      Left = 12
-      Top = 123
+      Left = 28
+      Top = 82
       Width = 478
       Height = 13
       Cursor = crHandPoint
@@ -39,10 +39,12 @@ object MameHolding: TMameHolding
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
+      OnClick = Link2Click
+      OnMouseDown = Link2MouseDown
     end
     object Link1: TLabel
       Left = 28
-      Top = 51
+      Top = 33
       Width = 464
       Height = 13
       Cursor = crHandPoint
@@ -60,26 +62,29 @@ object MameHolding: TMameHolding
       ParentShowHint = False
       ShowHint = True
       OnClick = Link1Click
+      OnMouseDown = Link1MouseDown
     end
     object Instructions1: TLabel
       Left = 79
-      Top = 19
-      Width = 370
+      Top = 11
+      Width = 367
       Height = 13
       Caption = 
-        'To make full Mame Romlists for QuickPlay , please follow the ins' +
-        'tructions here'
+        'To make full Mame Romlists for QuickPlay, please follow the inst' +
+        'ructions here'
     end
     object Instructions2: TLabel
-      Left = 122
-      Top = 88
-      Width = 279
+      Left = 106
+      Top = 56
+      Width = 352
       Height = 13
-      Caption = 'And you might want to consider  the instructions here also'
+      Caption = 
+        'Also consider the instructions here - you may wish to exclude ma' +
+        'ny roms:'
     end
     object Instructions3: TLabel
       Left = 63
-      Top = 156
+      Top = 106
       Width = 404
       Height = 13
       Caption = 
@@ -87,8 +92,8 @@ object MameHolding: TMameHolding
         'older MAME PERL script'
     end
     object Label1: TLabel
-      Left = 106
-      Top = 188
+      Left = 103
+      Top = 130
       Width = 343
       Height = 13
       Caption = 
@@ -98,7 +103,7 @@ object MameHolding: TMameHolding
   end
   object OKButton: TButton
     Left = 243
-    Top = 239
+    Top = 168
     Width = 75
     Height = 25
     Caption = '&OK'

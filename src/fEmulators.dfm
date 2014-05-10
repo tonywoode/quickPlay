@@ -164,6 +164,10 @@ object FrmEmuDlg: TFrmEmuDlg
       Caption = 'Media Configuration'
       ImageIndex = 1
       OnExit = TabMediaConfigExit
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblSysImage: TLabel
         Left = 8
         Top = 56

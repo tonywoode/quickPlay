@@ -21,15 +21,11 @@ object FrmFolder: TFrmFolder
     Top = 0
     Width = 618
     Height = 388
-    ActivePage = TabMerged
+    ActivePage = TabRealIcons
     Align = alClient
     TabOrder = 0
     object TabGeneral: TTabSheet
       Caption = 'General Options'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpMirror: TGroupBox
         Left = 8
         Top = 28
@@ -85,7 +81,7 @@ object FrmFolder: TFrmFolder
           Width = 201
           Height = 21
           Enabled = False
-          ItemHeight = 0
+          ItemHeight = 13
           Sorted = True
           TabOrder = 1
           OnChange = cmbEmuChange
@@ -383,10 +379,6 @@ object FrmFolder: TFrmFolder
     object TabRealIcons: TTabSheet
       Caption = 'Real Icons'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object TLabel
         Left = 48
         Top = 24

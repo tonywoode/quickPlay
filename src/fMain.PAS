@@ -21,16 +21,13 @@
 // License:      BSD License
 //
 //change log: 4.0
-//added new tool.ini files and support for Butterfly100's new tools files. More to do...
-//change log: 3.9.1
-//9-10-10:       attempted to dive in to a language I would normaly never
-//              touch. Main goal is to continue this wonderfull program.
-//          LOG:
-//              Changed version to 3.9.1
-//              Fixed home page and forum links
-//              Removed update check, the way it works is, if the downloadable
-//              version is not = to the current, then suggest an upgrade.
-//              Instead of greater then. I dont know how to change that...
+//9-10-10:      Attempted to dive in to a language I would normaly never
+//              touch. Main goal is to continue this wonderful program.
+//                Changed version to 3.9.1
+//                Fixed home page and forum links
+//                Removed update check, the way it works is, if the downloadable
+//                  version is not = to the current, then suggest an upgrade.
+//                  Instead of greater than. I dont know how to change that...
 //9-20-10       Added a check for [!] if no language as found.
 //              also added the option per folder to show only [!] roms if
 //                so desired
@@ -41,7 +38,8 @@
 //9-23-10       Added a rom Height slide bar
 //9-28-10       removed image in media panel when it says welcome.
 //10-16-10      Corrected readin maminfo and mamehistory files. ( clones now work ) [ creidt to tempest, member of the QP boards ]
-//7-26-12       Includes many fixes from the new comunity
+//7-26-12       v.4.0 prep - Added new tool.ini files and support for Butterfly100's new tools files. More to do...
+//                Includes many fixes from the new comunity
 //                Tools sidebar now populates with all community supplied tools on first launch -
 //                  tools either launch or provide docs about their use
 //4-14          Updated, cleaned up and attributed icons

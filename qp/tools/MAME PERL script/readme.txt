@@ -19,7 +19,7 @@ So please go there and follow instructions for setting up MAME in QuickPlay
 
 ______________________________________________________________________
 
-[updated march 2011]
+[updated May 2014]
 MAME has got to be the trickiest thing to setup in QuickPlay if you want to do it 'properly' - so I've threatened for a long time to do a walkthrough. I also wanted to post up-to-date tools. Here's both together, so this guide is for using Qrfax's script with all the correct things done in the right order to make everything work (if you're using his or my romdatas then you can pretty much skip stages 3 to 6). We want everything in QP to be easy, and most things are, but in the case of MAME I think this full guide is necessary
 
 So, I installed activperl from HERE (www.activestate.com/activeperl/downloads) and followed Orfax's (orfax.awardspace.com/?page_id=64) method for creating my own MAME database. All worked great. You need to install ActivePerl to run Orfax's script (its about 60 meg and there really is nothing to do except install - just accept any defaults and leave it sitting there or you can uninstall it after doing this if you want). If you want the CHD's to work they must be in correctly named folders in your Mame Roms directory ie: make sure you've datted your set properly in CLRMAMEpro. Basically MAMEUI has to know where everything is and work before you do this, becuase all QP does is pass the MAME name to MAME/MAMEUI (QP calls this %ROMMAME% an example is: 1941)
@@ -56,9 +56,7 @@ The script creates ROMdat.dat - put that back in the QP MAME folder you setup.No
 QP needs history.dat and mameinfo.dat usually in MAMEUI's main directory, or available via here (www.arcade-history.com/) and here (www.mameworld.info/mameinfo/)  so link to the folder containg them in the arcade section in Media Panel - now you can get the MAME text. (note these have to be unzipped at the minute - we are looking at getting the zip support working for these files). Also you may wish to use Tempest's 'Fit History to Tab' on copies of these two files to transform them into versions that fit your QP Media Panel window - get it from HERE (www.quickplayfrontend.com/index.php?showtopic=242&view=findpost&p=1075) and point it to history.dat and mameinfo.dat in turn
 [attachment=220:7_ADD_MEDIA.png]
 To start seeing the extra stuff you need to go into the QP media panel and start pointing to things in the 'arcade' section
-[attachment=221:8_RUN_SCRIPT_IN_MAMU_ICONS_DIR.png]
-as decribed above and with the script. Run this to copy Parent rom names as clone rom names in these great icons
 [attachment=222:9_ADD_ICONS_PATH_IN_FOLDER_OPTIONS.png]
-Although in QP you setup the majority of extras in the media panel, ICONS are a per-folder thing - so you need to tick that box in the last tab of folder options (right click on the folder to get the folder options) and point to where the ICONS are
+Although in QP you setup the majority of extras in the media panel, ICONS are a per-folder thing. Get Mamu's Mame Icons - download and extract his ICON's (http://icons.mameworld.info/) and tick that box in the last tab of folder options (right click on the folder to get the folder options) and point to where the ICONS are (I'd recommend extracting his ICONS instead of pointing to the Zip as its a bit faster)
 [attachment=223:10_FINISHED.png]
 Now I can search and run games on a tiny low-powered portable netbook almost instantly, without it taking several minutes for MAMEUI to even start (thanks Delphi)....that's good....and now you can setup other Arcade EMU's in minutes that work better for portable machines, with filters and other stuff, and piggy back off all those MAME resources when searching for something to play in QuickPlay...go directly back to QuickPlayFrontend's ROMDATA downloads section (www.quickplayfrontend.com/index.php?showforum=16)....I like FBA myself (joypad support aside)...MAME is the daddy of course....

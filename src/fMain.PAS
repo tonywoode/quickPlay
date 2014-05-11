@@ -48,6 +48,7 @@
 //              Fixed .gif not displaying
 //              Added ReactOS CMD command and improved support for Start and Explorer commands
 //              Updates to Arcade functionality
+//                Mame Icons now show parent icon if needed and if they can
 //------------------------------------------------------------------------
 unit fMain;
 
@@ -4281,12 +4282,17 @@ begin
       end;
 
       //get the filename for the associated icon.
-      If ROM.MAMEname <> '' then
-        IconName := ROM.MAMEname
-      else
-        IconName := ChangeFileExt(ExtractFileName(ROM.path), '');
-
-      IconName := IconName + '.ico';
+        //Feature request #23 - alteration so we check whether Mamu made a clone icon, default to parent icon if not
+      If ROM.MAMEName <> '' then
+        begin
+        if (_MAMEIconsList.IndexOf(ROM.MAMEName + '.ico') <> -1) then
+          IconName := ROM.MAMEname + '.ico'
+        //we can't really have a parent without a romname, but just in case, two conditions
+        else if (ROM.ParentName <> '') and (_MAMEIconsList.IndexOf(ROM.ParentName + '.ico') <> -1) then
+          IconName := ROM.ParentName + '.ico'
+        end
+      else //default to using filenameNoExt
+          IconName := ChangeFileExt(ExtractFileName(ROM.path), '') + '.ico';
 
       //check to see if the icon is in the Cache.
       if (_MAMEIconsList <> nil) and (_MAMEIconsList.IndexOf(IconName) <> -1) then

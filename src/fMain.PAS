@@ -40,8 +40,14 @@
 //                tends to wrap around, in some cases MESS, making it impossible to read.
 //9-23-10       Added a rom Height slide bar
 //9-28-10       removed image in media panel when it says welcome.
-//10-16-10       corrected readin maminfo and mamehistory files. ( clones now work ) [ creidt to tempest, member of the QP bords ]
-//7-26-12       Includes many fixes from the new comunity. This will be the first public release and will have the update check in it.
+//10-16-10      Corrected readin maminfo and mamehistory files. ( clones now work ) [ creidt to tempest, member of the QP boards ]
+//7-26-12       Includes many fixes from the new comunity
+//                Tools sidebar now populates with all community supplied tools on first launch -
+//                  tools either launch or provide docs about their use
+//4-14          Updated, cleaned up and attributed icons
+//              Fixed .gif not displaying
+//              Added ReactOS CMD command and improved support for Start and Explorer commands
+//              Updates to Arcade functionality
 //------------------------------------------------------------------------
 unit fMain;
 

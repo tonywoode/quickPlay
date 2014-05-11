@@ -153,16 +153,12 @@ object MainFrm: TMainFrm
         Top = 0
         Width = 209
         Height = 998
-        ActivePage = TabSearches
+        ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -209,7 +205,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -268,6 +264,10 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -332,7 +332,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end
@@ -741,7 +741,7 @@ object MainFrm: TMainFrm
           Width = 89
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 1
           Text = 'By Name'
@@ -761,7 +761,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'

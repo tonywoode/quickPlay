@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 1017
+  ClientHeight = 1037
   ClientWidth = 1038
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 998
+    Top = 1018
     Width = 1038
     Height = 19
     Panels = <
@@ -118,14 +118,14 @@ object MainFrm: TMainFrm
     Left = 0
     Top = 0
     Width = 1038
-    Height = 998
+    Height = 1018
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 998
+      Height = 1018
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +133,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 863
       Top = 0
-      Height = 998
+      Height = 1018
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,7 +144,7 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 998
+      Height = 1018
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
@@ -152,7 +152,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 0
         Width = 209
-        Height = 998
+        Height = 1018
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
@@ -163,7 +163,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 941
+            Height = 961
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -469,7 +469,7 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 651
-      Height = 998
+      Height = 1018
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
@@ -562,7 +562,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 651
-        Height = 945
+        Height = 965
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -787,7 +787,7 @@ object MainFrm: TMainFrm
       Left = 866
       Top = 0
       Width = 172
-      Height = 998
+      Height = 1018
       Align = alRight
       MultiLine = True
       TabOrder = 2
@@ -964,6 +964,12 @@ object MainFrm: TMainFrm
       ImageIndex = 18
       OnExecute = ActCatVerExecute
     end
+    object ActLangIni: TAction
+      Category = 'Mame'
+      Caption = 'Scan Current Folder with Languages.ini'
+      ImageIndex = 18
+      OnExecute = ActLangIniExecute
+    end
     object ActZip: TAction
       Category = 'Tools'
       Caption = 'Zip Utilities'
@@ -1134,6 +1140,12 @@ object MainFrm: TMainFrm
       Caption = 'Go to Catver homepage'
       ImageIndex = 16
       OnExecute = ActOpenCatverExecute
+    end
+    object ActOpenLangIni: TAction
+      Category = 'Mame'
+      Caption = 'Go to Languages.ini homepage'
+      ImageIndex = 16
+      OnExecute = ActOpenLangIniExecute
     end
     object ActOpenNPlayers: TAction
       Category = 'Mame'
@@ -1453,6 +1465,15 @@ object MainFrm: TMainFrm
         Action = ActOpenCatver
       end
       object N20: TMenuItem
+        Caption = '-'
+      end
+      object ProcessCurrentDirwithLangIniMAMEOnly1: TMenuItem
+        Action = ActLangIni
+      end
+      object GotoLangInihomepage1: TMenuItem
+        Action = ActOpenLangIni
+      end
+      object N29: TMenuItem
         Caption = '-'
       end
       object ProcessNPlayersiniMAMEonly1: TMenuItem

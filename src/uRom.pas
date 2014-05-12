@@ -1048,6 +1048,11 @@ End;
 Procedure TQPRom.SetMameGameLanguage(Ini : TMemIniFile);
 var
   Temp : String;  // Variable for holding search criteria.
+  IniRom : String;
+  Sections : TStringList;
+  RomsInSection : TStringList;
+  I : integer;
+  J : integer;
 Begin
 
   //This function determines a games language. For MAME only!!
@@ -1059,13 +1064,31 @@ Begin
   else
     Temp := ChangeFileExt(Extractfilename(_path), '');
 
-  Temp := ini.ReadString('Category', temp , 'Unknown');
+  Sections := TStringList.Create;
 
-  StrReplace(Temp, ' / ','/');
+  ini.ReadSections(Sections);  //Get the section names for each section into an array
 
-  _GameType := Temp;
+   //then for each section through the roms in each section getting those into an array
+   for I := 0 to (Sections.Count - 1) do
+      Begin
+      RomsInSection := TStringList.create;
+      ini.ReadSectionValues(Sections[I], RomsInSection);
+      //we now have an array of roms in this section, so for each rom, check for a match to our rom
+      for J := 0 to (RomsInSection.Count -1) do
+          Begin
+              IniRom := RomsInSection[J];
+              if Temp = IniRom then     //compare this romname with what we have
+              Begin
+                Temp := Sections[I]; //if its a match set it
+                break; //and leave the loop immediately - first rom wins....
+              end;
+          end;
+      end;
+
+   if (Temp <> _MAMEname) then //hope we never get a mame rom called the same as its language...
+  _Language := Temp;
+  //else leave it as it was (handy because Orfax's Perl script also tries to set language)...
 End;
-
 
 {-----------------------------------------------------------------------------}
 Procedure TQPROM.ToCSV(var CodeList : TStrings; Opt : TQPExportOpt);

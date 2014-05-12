@@ -46,7 +46,9 @@
 //              Fixed .gif not displaying
 //              Added ReactOS CMD command and improved support for Start and Explorer commands
 //              Updates to Arcade functionality
+//                "Rename Mame Roms" now directs users to Perl script and (extensive) online support
 //                Mame Icons now show parent icon if needed and if they can
+//                Mame languages ini setup
 //------------------------------------------------------------------------
 unit fMain;
 

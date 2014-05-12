@@ -51,6 +51,7 @@ Type
     procedure RunRandom(EList : TQPEmuList; Tools : TQPToolList; Settings : TQPSettings; NeverPlayed : boolean);
     procedure SaveToFile();
     procedure SetMameCategories(SettingsDir : String);
+    procedure SetMameLanguages(SettingsDir : String);
     procedure SetMameMultiPlayer(SettingsDir : String);
 
     property Items[Index: Integer]: TQPRom read GetItem write SetItem; default;
@@ -1199,6 +1200,35 @@ begin
 
 end;
 
+{-----------------------------------------------------------------------------}
+
+procedure TQPROMlist.SetMameLanguages(SettingsDir : String);
+Var
+  I : integer;
+  ini : TMemIniFile;
+begin
+
+  if fileexists(SettingsDir + 'languages.ini') then
+  begin
+    ini := TMemIniFile.Create(SettingsDir+'languages.ini');
+    try
+
+      for i := 0 to self.Count-1 do
+        self[i].SetMameGameLanguage(Ini);
+
+      self.SaveToFile();
+
+    finally
+      FreeAndNil(ini);
+    end;
+  end
+  else
+    raise EJException.Create(QP_NO_LANGUAGESINI);
+
+end;
+
+
+{-----------------------------------------------------------------------------}
 procedure TQPROMlist.SetMameMultiPlayer(SettingsDir : String);
 Var
   I : integer;

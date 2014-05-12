@@ -119,6 +119,7 @@ type
     procedure RunIPS(Emu : TObject; IPSIndex : Integer; Tools : TQPExeList; RunOpt :TQPRunOptions);
     Procedure SetLanguage(); 
     Procedure SetMameGameCategory(Ini : TMemIniFile);
+    Procedure SetMameGameLanguage(Ini : TMemIniFile);
     procedure SetMameMultiplayer(Ini : TMemIniFile);
     Procedure ToCSV(var CodeList : TStrings; Opt : TQPExportOpt);
     Procedure ToHTML(var CodeList : TStrings; EList : TObjectList; Opt : TQPExportOpt);
@@ -1042,6 +1043,51 @@ Begin
   StrReplace(Temp, ' / ','/');
 
   _GameType := Temp;
+End;
+
+Procedure TQPRom.SetMameGameLanguage(Ini : TMemIniFile);
+var
+  Temp : String;  // Variable for holding search criteria.
+  IniRom : String;
+  Sections : TStringList;
+  RomsInSection : TStringList;
+  I : integer;
+  J : integer;
+Begin
+
+  //This function determines a games language. For MAME only!!
+
+  // if it has a shortname then use this to search with
+  // if it doesnt then try to extract the zip file name and work from that.
+  If _MAMEname <> '' then
+    Temp := _MAMEname
+  else
+    Temp := ChangeFileExt(Extractfilename(_path), '');
+
+  Sections := TStringList.Create;
+
+  ini.ReadSections(Sections);  //Get the section names for each section into an array
+
+   //then for each section through the roms in each section getting those into an array
+   for I := 0 to (Sections.Count - 1) do
+      Begin
+      RomsInSection := TStringList.create;
+      ini.ReadSectionValues(Sections[I], RomsInSection);
+      //we now have an array of roms in this section, so for each rom, check for a match to our rom
+      for J := 0 to (RomsInSection.Count -1) do
+          Begin
+              IniRom := RomsInSection[J];
+              if Temp = IniRom then     //compare this romname with what we have
+              Begin
+                Temp := Sections[I]; //if its a match set it
+                break; //and leave the loop immediately - first rom wins....
+              end;
+          end;
+      end;
+
+   if (Temp <> _MAMEname) then //hope we never get a mame rom called the same as its language...
+  _Language := Temp;
+  //else leave it as it was (handy because Orfax's Perl script also tries to set language)...
 End;
 
 {-----------------------------------------------------------------------------}

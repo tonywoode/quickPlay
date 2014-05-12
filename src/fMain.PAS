@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------------------
+//------------------------------------------------------------------------
 // Name:        QuickPlay
 // Version:     4.0
 // Author:      John Scott
@@ -46,7 +46,9 @@
 //              Fixed .gif not displaying
 //              Added ReactOS CMD command and improved support for Start and Explorer commands
 //              Updates to Arcade functionality
+//                "Rename Mame Roms" now directs users to Perl script and (extensive) online support
 //                Mame Icons now show parent icon if needed and if they can
+//                Mame languages ini setup
 //------------------------------------------------------------------------
 unit fMain;
 
@@ -107,6 +109,7 @@ type
     PanDir: TPanel;
     RomPanel: TPanel;
     ActCatVer: TAction;
+    ActLangIni: TAction;
     ActZip: TAction;
     SplitMain: TSplitter;
     IconList: TImageList;
@@ -185,6 +188,7 @@ type
     RemoveOrphanedFiles1: TMenuItem;
     ZipUtilities1: TMenuItem;
     ProcessCurrentDirwithcatveriniMAMEOnly1: TMenuItem;
+    ProcessCurrentDirwithLangIniMAMEOnly1: TMenuItem;
     RenameMameROMS1: TMenuItem;
     Tools1: TMenuItem;
     Preferences1: TMenuItem;
@@ -241,8 +245,10 @@ type
     ActNPlayers: TAction;
     ProcessNPlayersiniMAMEonly1: TMenuItem;
     ActOpenCatver: TAction;
+    ActOpenLangIni: TAction;
     ActOpenNPlayers: TAction;
     GotoCatverhomepage1: TMenuItem;
+    GotoLangIniHomepage1: TMenuItem;
     GotoNPlayersHomepage1: TMenuItem;
     N20: TMenuItem;
     N21: TMenuItem;
@@ -405,6 +411,7 @@ type
     procedure ActAddFavExecute(Sender: TObject);
     procedure ActRefreshExecute(Sender: TObject);
     procedure ActCatVerExecute(Sender: TObject);
+    procedure ActLangIniExecute(Sender: TObject);
     procedure ActZipExecute(Sender: TObject);
     procedure ActPrefExecute(Sender: TObject);
     procedure ActSelAllExecute(Sender: TObject);
@@ -499,6 +506,7 @@ type
     procedure VTRomsExit(Sender: TObject);
     procedure VTdirExit(Sender: TObject);
     procedure ActOpenCatverExecute(Sender: TObject);
+    procedure ActOpenLangIniExecute(Sender: TObject);
     procedure ActOpenNPlayersExecute(Sender: TObject);
     procedure VTEmusInitNode(Sender: TBaseVirtualTree; ParentNode,
       Node: PVirtualNode; var InitialStates: TVirtualNodeInitStates);
@@ -1360,7 +1368,7 @@ begin
 
     TmpStr := TStringList.Create;
     try
-      TmpStr.NameValueSeparator := '¬';
+      TmpStr.NameValueSeparator := '�';
 
       for i := 0 to EmuList.Count-1 do
         if StrCompare(CurEmu.system, EmuList[i].system) = 0 then
@@ -2721,6 +2729,17 @@ end;
 
 {-----------------------------------------------------------------------------}
 
+procedure TMainFrm.ActLangIniExecute(Sender: TObject);
+begin
+  try
+    RomList.SetMameLanguages(MainFrm.Settings.Paths.CfgDir);
+    VTRoms.Invalidate;
+  except
+    on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
+  end;
+end;
+{-----------------------------------------------------------------------------}
+
 procedure TMainFrm.actCheckForUpdatesExecute(Sender: TObject);
 begin
   _ShowUpdateCheckErrors := True;
@@ -2779,6 +2798,12 @@ begin
   ShellExecute(Handle, 'open', PChar('http://www.progettoemma.net/?catlist'), '', '', sw_Show);
 end;
 
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.ActOpenLangIniExecute(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar('http://www.progettosnaps.net/languages/'), '', '', sw_Show);
+end;
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.ActOpenNPlayersExecute(Sender: TObject);

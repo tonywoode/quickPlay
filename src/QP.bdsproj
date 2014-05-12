@@ -123,7 +123,7 @@
 			<Directories Name="UnitOutputDir">..\dcu</Directories>
 			<Directories Name="PackageDLLOutputDir"></Directories>
 			<Directories Name="PackageDCPOutputDir"></Directories>
-			<Directories Name="SearchPath">$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10\debug;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\FindFile;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\GraphicEx;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\HIDKomponente;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JohnLib;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Common;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Win32API;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa</Directories>
+			<Directories Name="SearchPath">$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\FindFile;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\GraphicEx;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\HIDKomponente;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JohnLib;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Common;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Win32API;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa</Directories>
 			<Directories Name="Packages">VCL50;VCLX50;VCLSMP50;VCLDB50;VCLADO50;ibevnt50;VCLBDE50;VCLDBX50;QRPT50;TEEUI50;TEEDB50;TEE50;DSS50;TEEQR50;VCLIB50;VCLMID50;VCLIE50;INETDB50;INET50;NMFAST50;WEBMID50;dclaxserver50;DragDropD5;RXDB5;graphicsex9;dcl3rdparty;G32_D5;GridPackd5;DSMixer_d5;INDY50;ICSDEL50;JVMYCOMP100_R50;JvPBGoodies100_R50;FlatStyle_D5;dfwD5;ProgramTrackerPackage;Vsf5;tziptv5;LightColorPropertyD_D5;MacOS8Platiinum;TMSD5;rtl;vcl;vclx;VclSmp;JvCoreD10R;JvWizardD10R</Directories>
 			<Directories Name="Conditionals"></Directories>
 			<Directories Name="DebugSourceDirs"></Directories>

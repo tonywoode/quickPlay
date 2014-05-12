@@ -105,6 +105,7 @@ QP_RANDOM_RUN_FAILURE = 'QuickPlay failed to pick a random ROM.';
 QP_MIRROR_NOT_ENABLED = 'Mirroring is not enabled for the currently selected directory';
 QP_MIRROR_NO_DIRECTORIES = 'No Directories have been specified to mirror.';
 QP_NO_CATVER = 'Catver.ini file does not exist - please check the file is in the DATs Directory';
+QP_NO_LANGUAGESINI = 'Languages.ini file does not exist - please check the file is in the DATs Directory';
 QP_NO_NPLAYERS = 'nplayers.ini file does not exist - please check the file is in the DATs Directory';
 QP_LINKED_EMU_NOT_FOUND = 'The emulator linked to this ROM was not found.';
 QP_SELECT_ROM = 'Please Select The Rom';

@@ -1005,6 +1005,8 @@ Begin
 
 End;
 
+{-----------------------------------------------------------------------------}
+
 procedure TQPRom.SetMameMultiplayer(Ini : TMemIniFile);
 var
   Temp : String;  // Variable for holding search criteria.
@@ -1023,6 +1025,8 @@ Begin
 
   _Multiplayer := Temp;
 end;
+
+{-----------------------------------------------------------------------------}
 
 Procedure TQPRom.SetMameGameCategory(Ini : TMemIniFile);
 var
@@ -1044,6 +1048,8 @@ Begin
 
   _GameType := Temp;
 End;
+
+{-----------------------------------------------------------------------------}
 
 Procedure TQPRom.SetMameGameLanguage(Ini : TMemIniFile);
 var

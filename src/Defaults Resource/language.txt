@@ -1,13 +1,18 @@
+Brazilian Portuguese
 Chinese
+Croatian
+Dutch
 English
 French
 German
 Greek
+Hungarian
 Italian
 Japanese
+Korean
+Polish
 Portugese
 Russian
+Slovak
 Spanish
-Korean
-Dutch
 Swedish

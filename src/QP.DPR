@@ -18,6 +18,7 @@ uses
   fFind in 'fFind.pas' {FindForm},
   fFolderOpt in 'fFolderOpt.pas' {FrmFolder},
   fIPS in 'fIPS.pas' {FrmIPS},
+  fMain in 'fMain.PAS' {MainFrm},
   fMameMerge in 'fMameMerge.pas' {FrmMAMEMerged},
   fMameRename in 'fMameRename.pas' {DatReader},
   fMigrate in 'fMigrate.pas' {FrmMigrate},
@@ -72,6 +73,7 @@ uses
 begin
   Application.Initialize;
   Application.Title := 'Quick Play - Phoenix';
-  Application.CreateForm(TMameHolding, MameHolding);
+  Application.CreateForm(TMainFrm, MainFrm);
+  //Application.CreateForm(TMameHolding, MameHolding);
   Application.Run;
 end.

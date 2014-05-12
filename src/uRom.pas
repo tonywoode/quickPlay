@@ -119,6 +119,7 @@ type
     procedure RunIPS(Emu : TObject; IPSIndex : Integer; Tools : TQPExeList; RunOpt :TQPRunOptions);
     Procedure SetLanguage(); 
     Procedure SetMameGameCategory(Ini : TMemIniFile);
+    Procedure SetMameGameLanguage(Ini : TMemIniFile);
     procedure SetMameMultiplayer(Ini : TMemIniFile);
     Procedure ToCSV(var CodeList : TStrings; Opt : TQPExportOpt);
     Procedure ToHTML(var CodeList : TStrings; EList : TObjectList; Opt : TQPExportOpt);
@@ -1043,6 +1044,28 @@ Begin
 
   _GameType := Temp;
 End;
+
+Procedure TQPRom.SetMameGameLanguage(Ini : TMemIniFile);
+var
+  Temp : String;  // Variable for holding search criteria.
+Begin
+
+  //This function determines a games language. For MAME only!!
+
+  // if it has a shortname then use this to search with
+  // if it doesnt then try to extract the zip file name and work from that.
+  If _MAMEname <> '' then
+    Temp := _MAMEname
+  else
+    Temp := ChangeFileExt(Extractfilename(_path), '');
+
+  Temp := ini.ReadString('Category', temp , 'Unknown');
+
+  StrReplace(Temp, ' / ','/');
+
+  _GameType := Temp;
+End;
+
 
 {-----------------------------------------------------------------------------}
 Procedure TQPROM.ToCSV(var CodeList : TStrings; Opt : TQPExportOpt);

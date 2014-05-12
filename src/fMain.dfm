@@ -159,6 +159,10 @@ object MainFrm: TMainFrm
         OnChange = pgSideBarChange
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -205,7 +209,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end

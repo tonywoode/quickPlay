@@ -1065,39 +1065,47 @@ Begin
 
   // if it has a shortname then use this to search with
   // if it doesnt then try to extract the zip file name and work from that.
-  If _MAMEname <> '' then
-    Temp := _MAMEname
-  else
-    Temp := ChangeFileExt(Extractfilename(_path), '');
 
-  Sections := TStringList.Create;
-  RomsInSection := TStringList.create;
+  // we only want to mess with language if it hasn't already been set, or we suspect
+  // its at default. Why the caution here and not in other Mame ini's? Because
+  // Language.ini isn't perfect and Orfax's Perl script also attempts to set language
+  // Using a different mechanism
+  if (_Language = J_ENG) or (_Language = '') then
 
-  ini.ReadSections(Sections);  //Get the section names for each section into an array
+    Begin
+      If (_MAMEname <> '') then
+        Temp := _MAMEname
+      else
+        Temp := ChangeFileExt(Extractfilename(_path), '');
 
-   //then for each section through the roms in each section getting those into an array
-   for I := 0 to (Sections.Count - 1) do
-      Begin
-      ini.ReadSectionValues(Sections[I], RomsInSection);
-      //we now have an array of roms in this section, so for each rom, check for a match to our rom
-      for J := 0 to (RomsInSection.Count -1) do
-          Begin
-              IniRom := RomsInSection[J];
-              if Temp = IniRom then     //compare this romname with what we have
+     Sections := TStringList.Create;
+     RomsInSection := TStringList.create;
+
+     ini.ReadSections(Sections);  //Get the section names for each section into an array
+
+      //then for each section through the roms in each section getting those into an array
+       for I := 0 to (Sections.Count - 1) do
+         Begin
+         ini.ReadSectionValues(Sections[I], RomsInSection);
+         //we now have an array of roms in this section, so for each rom, check for a match to our rom
+         for J := 0 to (RomsInSection.Count -1) do
               Begin
-                Temp := Sections[I]; //if its a match set it
-                break; //and leave the loop immediately - first rom wins....
-              end;
-          end;
-      end;
+                  IniRom := RomsInSection[J];
+                  if Temp = IniRom then     //compare this romname with what we have
+                  Begin
+                    Temp := Sections[I]; //if its a match set it
+                    break; //and leave the loop immediately - first rom wins....
+                 end;
+             end;
+         end;
 
-   if (Temp <> _MAMEname) then //hope we never get a mame rom called the same as its language...
-  _Language := Temp;
-  //else leave it as it was (handy because Orfax's Perl script also tries to set language)...
-  FreeAndNil(Sections);
-  FreeAndNil(RomsInSection);
-End;
+       if (Temp <> _MAMEname) then //hope we never get a mame rom called the same as its language...
+      _Language := Temp; //else leave it as it was
+      FreeAndNil(Sections);
+      FreeAndNil(RomsInSection);
+    End;
 
+ End;
 {-----------------------------------------------------------------------------}
 Procedure TQPROM.ToCSV(var CodeList : TStrings; Opt : TQPExportOpt);
 var

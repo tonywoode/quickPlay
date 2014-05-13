@@ -174,7 +174,7 @@ sub ParseQPFile
 				$rec->{LANGUAGE} = "French" if ($rec->{QPNAME} =~ /\(French/i);
 				$rec->{LANGUAGE} = "German" if ($rec->{QPNAME} =~ /\(German/i);
 				$rec->{LANGUAGE} = "Italian" if ($rec->{QPNAME} =~ /\(Ital/i);
-				$rec->{LANGUAGE} = "Portuguese" if ($rec->{QPNAME} =~ /\(Brazil/i);
+				$rec->{LANGUAGE} = "Brazilian Portuguese" if ($rec->{QPNAME} =~ /\(Brazil/i);
 				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Hispanic/i);
 				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spain/i);
 				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spanish/i);

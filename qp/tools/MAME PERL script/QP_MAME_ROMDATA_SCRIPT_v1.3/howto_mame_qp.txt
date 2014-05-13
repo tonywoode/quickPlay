@@ -12,7 +12,7 @@ ActivePerl
 
 You will also have to setup MAME to run under Quickplay.
 It is advised you also have the following up to date files in 
-Quickplays "dats" folder: catver.ini & nplayers.ini
+Quickplays "dats" folder: catver.ini, nplayers.ini, and languages.ini
 
 Step 1: create the MAME XML info file.
     1.1 mame -listxml > mame_details.xml
@@ -31,11 +31,14 @@ Step 2: create an initial Quickplay MAME ROMData.dat file
     2.7 select the Arcade ROMs menu and select the 
         "Scan Current Folder with catver.ini" submenu. The Game Type
         column should now be filled.
-    2.8 select the Arcade ROMs menu and select the
+    2.8 select the Arcade ROMs menu and select the 
+        "Scan Current Folder with Languages.ini" submenu. The Languages
+        column should now be filled.
+    2.9 select the Arcade ROMs menu and select the
         "Scan Current Folder with NPlayers.ini" submneu. The Players
         column should now be filled.
-    2.9 close Quickplay
-    2.10 in Quickplays "data" folder there should be a MAME folder
+    2.10 close Quickplay
+    2.11 in Quickplays "data" folder there should be a MAME folder
          (I can't be exact as to what this is called, as you named
          it when setting up Quickplay to run MAME). Inside that
          folder should be the ROMData.dat file you need. Be sure to
@@ -51,32 +54,11 @@ Step 3: run the perl script
         and ROMData.dat.
     3.3 rename ROMData.dat to ROMData.orig.dat
     3.4 run the following command:
-        qp_mame.pl mame_details.xml ROMData.orig.dat
+        perl qp_mame.pl mame_details.xml ROMData.orig.dat
+    3.5 When prompted select whether you want all Mame roms or just those in your input
     3.5 the following file should be created: ROMData.dat
     3.6 move the ROMData.dat file over the MAME folders ROMData.dat
         file in the Quickplays data folder.
 
 Step 4: restart Quickplay and check that the MAME ROMs have been
         renamed.
-
-Please be aware the following games may not be able to be played
-in Quickplay if you have your MAME ROMs in a split set. If you
-are not sure what I mean, you most likely have a split set, as
-this is the most common way I have seen MAME ROMs distributed.
-
-calspeda
-candance
-galpanib
-gauntd24
-jdreddb
-natodefa
-vaportrp
-wotwc
-
-This is because these games have all their ROMs in the parent set,
-and there is no file for them (eg. calspeda.zip). Without a file
-there is no way for Quickplay to play these games. You can create
-an empty file called calspeda.zip but if you use a ROM management
-tool, like clrmamepro, this will remove them as they are
-redundant.
-

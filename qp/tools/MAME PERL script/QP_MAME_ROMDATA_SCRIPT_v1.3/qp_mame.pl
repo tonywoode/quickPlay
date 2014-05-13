@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #
 #
-
+sub announce;
 sub CheckMameFileValid;
 sub ParseMAMEFile;
 sub ParseQPFile;
@@ -10,8 +10,27 @@ sub TranslateAmp;
 
 $QPS = chr(172);
 %allrecs = ();
+#Preamble
+print "\n\n\n\n\n\n\nQuickPlay romdata script by Orfax\n\n\n\n\nMake sure these files are called:\n";
+print "Romdata.dat\tand\tmame_details.xml\n\nSee the readme for instructions\n\n\n";
+announce;
+#Give user choice of behaviour
+CHOICE: while ( $AllRoms = <STDIN> )
+		{
+			chomp($AllRoms);
+			if ( ( uc($AllRoms) eq uc("1") ) || ( $AllRoms eq "" ) ) 
+				{ 
+				last CHOICE ;
+				}
+			else {
+				print "\nYou typed:\t$AllRoms\n\n";
+				print "Try again - type either \"1\" or press Return:\t\n\n";
+				announce;
+				}
+		}
 
-
+		
+		
 # open MAME XML file
 open(XMLFILE, $ARGV[0]) or die "Cannot open MAME XML file\n";
 open(QPDATFILE, $ARGV[1]) or die "Cannot open Quickplay dat file\n";
@@ -34,17 +53,29 @@ $c3 = "</IPS>";
 foreach $key (sort keys %allrecs)
 {
 	$val = $allrecs{$key};
-	
-	print NEWQPDATFILE "$val->{QPNAME}$QPS$val->{NAME}$QPS$val->{CLONEOF}$QPS$QPS$val->{FILE}$QPS$val->{EMULATOR}$QPS$val->{COMPANY}$QPS$val->{YEAR}$QPS$val->{GAMETYPE}$QPS$QPS$val->{LANGUAGE}$QPS$QPS$val->{COMMENT}$QPS$c1$QPS$c1$QPS$c2$QPS$c3$QPS$val->{PLAYERS}$QPS$QPS\n";
 
 	if ($val->{PARSED} eq "")
 	{
 		print "!!!!game $val->{NAME} does not have a file associated with it\n";
-
+	}
+	if ( ($val->{PARSED} eq "YES") || ($AllRoms) ) {
+		print NEWQPDATFILE "$val->{QPNAME}$QPS$val->{NAME}$QPS$val->{CLONEOF}$QPS$QPS$val->{FILE}$QPS$val->{EMULATOR}$QPS$val->{COMPANY}$QPS$val->{YEAR}$QPS$val->{GAMETYPE}$QPS$QPS$val->{LANGUAGE}$QPS$QPS$val->{COMMENT}$QPS$c1$QPS$c1$QPS$c2$QPS$c3$QPS$val->{PLAYERS}$QPS$QPS\n";
 	}
 }
 
 close(NEWQPDATFILE);
+
+
+
+
+#subroutines
+#------------------------------------------------------------------------------
+sub announce 
+{
+print "By Default I will only output roms that are in your input Romdata.dat\n";
+print "I can, instead, output ALL the roms that are the input Mame XML you've supplied\n";
+print "If you want that, enter '1' now, otherwise hit return\t";
+}
 
 #------------------------------------------------------------------------------
 # CheckMameFileValid

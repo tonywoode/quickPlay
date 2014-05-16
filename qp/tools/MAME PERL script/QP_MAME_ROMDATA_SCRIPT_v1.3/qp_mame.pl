@@ -10,8 +10,8 @@ sub ResetRecord;
 sub TranslateAmp;
 
 # define variables, constants, lists
-$QPS = chr(172);
-%allrecs = ();
+$QPS = chr(172); #i.e.: ¬
+%allrecs = (); #list of mame game names
 $c1 = "0"; #these used for printing
 $c2 = "<IPS>";
 $c3 = "</IPS>";
@@ -45,13 +45,14 @@ close(NEWQPDATFILE);
 # preamble
 sub preamble 
 {
-	print "\n\n\n\n\n\n\nQuickPlay romdata script by Orfax\n\n\n\n\nMake sure you call the script with 2 arguements:\n";
-	print "1 - path to mame xml\tand\2 - path to romdata\n\nSee the readme for instructions\n\n\n";
+	print "\n\n\n\n\n\n\nQuickPlay romdata script by Orfax\n\n\n\n\nMake sure you call the script with 2 arguments:\n";
+	print "1 - path to mame xml\tand 2 - path to romdata\n\nSee the readme for instructions\n\n\n";
+	
+	#Give user choice of behaviour
 	print "By Default I will only output roms that are in your input Romdata.dat\n";
 	print "I can, instead, output ALL the roms that are the input Mame XML you've supplied\n";
 	print "If you want that, enter '1' now, otherwise hit return\t";
 	
-	#Give user choice of behaviour
 	CHOICE: while ( $AllRoms = <STDIN> )
 		{
 			chomp($AllRoms);
@@ -67,7 +68,6 @@ sub preamble
 		}
 	
 }
-
 
 #------------------------------------------------------------------------------
 # ParseMAMEFile
@@ -188,21 +188,24 @@ sub ParseQPFile
 				$rec->{PARSED} = "YES";
 
 				# now set any known languages properly
-				$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(Japan/i);
-				$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(ver JAA/i);
-				$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(J /i);
-				$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(JPN\)/i);
-				$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ / Japan/i);
-				$rec->{LANGUAGE} = "French" if ($rec->{QPNAME} =~ /\(France/i);
-				$rec->{LANGUAGE} = "French" if ($rec->{QPNAME} =~ /\(French/i);
-				$rec->{LANGUAGE} = "German" if ($rec->{QPNAME} =~ /\(German/i);
-				$rec->{LANGUAGE} = "Italian" if ($rec->{QPNAME} =~ /\(Ital/i);
-				$rec->{LANGUAGE} = "Brazilian Portuguese" if ($rec->{QPNAME} =~ /\(Brazil/i);
-				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Hispanic/i);
-				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spain/i);
-				$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spanish/i);
-				$rec->{LANGUAGE} = "Chinese" if ($rec->{QPNAME} =~ /\(Chin/i);
-				$rec->{LANGUAGE} = "Korean" if ($rec->{QPNAME} =~ /\(Korea/i);
+				if ( ( $rec->{LANGUAGE} eq "English" ) || ( $rec->{LANGUAGE} eq "" ) ) # If language has already been set, don't alter it
+				{
+					$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(Japan/i);
+					$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(ver JAA/i);
+					$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(J /i);
+					$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ /\(JPN\)/i);
+					$rec->{LANGUAGE} = "Japanese" if ($rec->{QPNAME} =~ / Japan/i);
+					$rec->{LANGUAGE} = "French" if ($rec->{QPNAME} =~ /\(France/i);
+					$rec->{LANGUAGE} = "French" if ($rec->{QPNAME} =~ /\(French/i);
+					$rec->{LANGUAGE} = "German" if ($rec->{QPNAME} =~ /\(German/i);
+					$rec->{LANGUAGE} = "Italian" if ($rec->{QPNAME} =~ /\(Ital/i);
+					$rec->{LANGUAGE} = "Brazilian Portuguese" if ($rec->{QPNAME} =~ /\(Brazil/i);
+					$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Hispanic/i);
+					$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spain/i);
+					$rec->{LANGUAGE} = "Spanish" if ($rec->{QPNAME} =~ /\(Spanish/i);
+					$rec->{LANGUAGE} = "Chinese" if ($rec->{QPNAME} =~ /\(Chin/i);
+					$rec->{LANGUAGE} = "Korean" if ($rec->{QPNAME} =~ /\(Korea/i);
+				}
 			}
 		}
 	}

@@ -1,23 +1,58 @@
 #!/usr/bin/perl
 #
 #
-sub announce;
-sub CheckMameFileValid;
+sub preamble;
 sub ParseMAMEFile;
+sub CheckMameFileValid;
 sub ParseQPFile;
+sub MakeQPDatFile;
 sub ResetRecord;
 sub TranslateAmp;
-sub MakeQPDatFile;
 
+# define variables, constants, lists
 $QPS = chr(172);
 %allrecs = ();
+$c1 = "0"; #these used for printing
+$c2 = "<IPS>";
+$c3 = "</IPS>";
 
-#Preamble
-print "\n\n\n\n\n\n\nQuickPlay romdata script by Orfax\n\n\n\n\nMake sure you call the script with 2 arguements:\n";
-print "1 - path to mame xml\tand\2 - path to romdata\n\nSee the readme for instructions\n\n\n";
-announce;
-#Give user choice of behaviour
-CHOICE: while ( $AllRoms = <STDIN> )
+# Main Program Flow
+#------------------------------------------------------------------------------
+# ask user what they want to do
+preamble;
+
+# open XML and Romdata files
+open(XMLFILE, $ARGV[0]) or die "Cannot open MAME XML file\n";
+open(QPDATFILE, $ARGV[1]) or die "Cannot open Quickplay dat file\n";
+
+# take in the info from the files, then close them
+ParseMAMEFile;
+ParseQPFile;
+close(XMFILE);
+close(QPDATFILE);
+
+# open new QuickPlay ROMData.dat file for writing, and write to it
+open(NEWQPDATFILE, ">ROMData.dat");
+print NEWQPDATFILE "ROM DataFile Version : 1.1\n";
+MakeQPDatFile;
+
+#exit
+close(NEWQPDATFILE);
+
+
+# Subroutines
+#------------------------------------------------------------------------------
+# preamble
+sub preamble 
+{
+	print "\n\n\n\n\n\n\nQuickPlay romdata script by Orfax\n\n\n\n\nMake sure you call the script with 2 arguements:\n";
+	print "1 - path to mame xml\tand\2 - path to romdata\n\nSee the readme for instructions\n\n\n";
+	print "By Default I will only output roms that are in your input Romdata.dat\n";
+	print "I can, instead, output ALL the roms that are the input Mame XML you've supplied\n";
+	print "If you want that, enter '1' now, otherwise hit return\t";
+	
+	#Give user choice of behaviour
+	CHOICE: while ( $AllRoms = <STDIN> )
 		{
 			chomp($AllRoms);
 			if ( ( uc($AllRoms) eq uc("1") ) || ( $AllRoms eq "" ) ) 
@@ -30,70 +65,9 @@ CHOICE: while ( $AllRoms = <STDIN> )
 				announce;
 				}
 		}
-
-		
-		
-# open XML and Romdata files
-open(XMLFILE, $ARGV[0]) or die "Cannot open MAME XML file\n";
-open(QPDATFILE, $ARGV[1]) or die "Cannot open Quickplay dat file\n";
-
-ParseMAMEFile;
-ParseQPFile;
-
-close(XMFILE);
-close(QPDATFILE);
-
-# open QuickPlay ROMData.dat file for writing
-open(NEWQPDATFILE, ">ROMData.dat");
-print NEWQPDATFILE "ROM DataFile Version : 1.1\n";
-
-#define some constants used for printing
-$c1 = "0";
-$c2 = "<IPS>";
-$c3 = "</IPS>";
-
-MakeQPDatFile;
-
-close(NEWQPDATFILE);
-
-
-
-
-#subroutines
-#------------------------------------------------------------------------------
-sub announce 
-{
-	print "By Default I will only output roms that are in your input Romdata.dat\n";
-	print "I can, instead, output ALL the roms that are the input Mame XML you've supplied\n";
-	print "If you want that, enter '1' now, otherwise hit return\t";
+	
 }
 
-#------------------------------------------------------------------------------
-# CheckMameFileValid
-sub CheckMameFileValid
-{
-	# check first line for xml version tag
-	$line = <XMLFILE>;
-	chomp $line;
-
-	if (not $line =~ /^<\?xml version="1.0"\?>$/)
-	{
-		die "input file not valid XML file\n";
-	}
-
-	# check file for mame tag
-	while ( (not $line =~ /^<mame build="/) &&
-			(not eof XMLFILE) )
-	{
-		$line = <XMLFILE>;
-		chomp $line;
-	}
-
-	if (eof XMLFILE)
-	{
-		die "not a valid MAME XML file\n";
-	}
-}
 
 #------------------------------------------------------------------------------
 # ParseMAMEFile
@@ -135,6 +109,33 @@ sub ParseMAMEFile
 			$allrecs{$rec->{NAME}} = $rec;
 			ResetRecord;
 		}
+	}
+}
+
+#------------------------------------------------------------------------------
+# CheckMameFileValid
+sub CheckMameFileValid
+{
+	# check first line for xml version tag
+	$line = <XMLFILE>;
+	chomp $line;
+
+	if (not $line =~ /^<\?xml version="1.0"\?>$/)
+	{
+		die "input file not valid XML file\n";
+	}
+
+	# check file for mame tag
+	while ( (not $line =~ /^<mame build="/) &&
+			(not eof XMLFILE) )
+	{
+		$line = <XMLFILE>;
+		chomp $line;
+	}
+
+	if (eof XMLFILE)
+	{
+		die "not a valid MAME XML file\n";
 	}
 }
 

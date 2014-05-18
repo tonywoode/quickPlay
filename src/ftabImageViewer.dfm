@@ -59,14 +59,12 @@ object tabImageViewer: TtabImageViewer
     object lblImageCount: TLabel
       Left = 14
       Top = 0
-      Width = 288
-      Height = 28
+      Width = 32
+      Height = 13
       Align = alClient
       Alignment = taCenter
       Caption = 'X OF X'
       Layout = tlCenter
-      ExplicitWidth = 32
-      ExplicitHeight = 13
     end
   end
   object TimerImgs: TTimer

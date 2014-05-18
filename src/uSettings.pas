@@ -33,6 +33,7 @@ Type
     LanguageFile : TFileName;
     SysFileExtFile : TFileName;
     ToolsFile : TFileName;
+    EmulatorsFile : TFileName;
 
   end;
 
@@ -101,6 +102,7 @@ Type
       procedure CreateSysDat(path: string);
       procedure CreateSysFileExt(path: string);
       procedure CreateTools(path: string);
+      procedure CreateEmulators(path: string);
       procedure CreateTypeDat(path : string);
       Function ExtractModeToPath(Mode : TQPExtractDest) : String;
       Procedure HideShowCol(Directory : String);
@@ -382,6 +384,29 @@ begin
   end;
 end;
 
+{-----------------------------------------------------------------------------}
+procedure TQPSettings.CreateEmulators(path: string);
+var
+  dat : Tstringlist;
+  tmpStream: TResourceStream;
+begin
+
+  if not _AllowWrite then
+    Exit;
+
+  dat := Tstringlist.Create;
+  try
+    tmpStream := TResourceStream.Create( HInstance, 'Emulators_txt', 'TEXT' );
+    try
+      dat.LoadFromStream( tmpStream );
+    finally
+      FreeAndNil(tmpStream);
+    end;
+    dat.SaveToFile(path);
+  finally
+    FreeAndNil(dat);
+  end;
+end;
 {-----------------------------------------------------------------------------}
 procedure TQPSettings.CreateTypeDat(path : string);
 var
@@ -780,6 +805,7 @@ begin
   Paths.LanguageFile := Paths.CfgDir + 'language.txt';
   Paths.SysFileExtFile := Paths.CfgDir + 'SystemFileExts.ini';
   Paths.ToolsFile := Paths.CfgDir + 'tools.ini';
+  Paths.EmulatorsFile := Paths.CfgDir + 'emulators.ini';
   If (DirectoryExists(Paths.ROMSDir) = false) and
      (DirectoryExists(Paths.CfgDir) = false) then
     _NoDats := True
@@ -818,6 +844,10 @@ begin
   //Check is the tools.ini file exists, if it doesnt - create it
   if not fileexists(Paths.ToolsFile) then
     CreateTools(Paths.ToolsFile);
+
+  //Check is the emulators.ini file exists, if it doesnt - create it
+  if not fileexists(Paths.EmulatorsFile) then
+    CreateEmulators(Paths.EmulatorsFile);
 
   //make sure the Data directory exists.
   if not DirectoryExists(Paths.ROMSDir) then

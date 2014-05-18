@@ -4,6 +4,7 @@
 // Author:      John Scott
 // Project
 // Resorector:  Sean Green
+// Resorector:  Tony Woode
 // Homepage:    http://quickplay.sf.net
 // new home page :http://www.quickplayfrontend.com/
 // Description: QuickPlay is a multi-emulator frontend, key features include
@@ -49,6 +50,7 @@
 //                "Rename Mame Roms" now directs users to Perl script and (extensive) online support
 //                Mame Icons now show parent icon if needed and if they can
 //                Mame languages ini setup
+//                Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
 //------------------------------------------------------------------------
 unit fMain;
 

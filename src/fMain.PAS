@@ -3902,7 +3902,7 @@ begin
   CompressStatusBar := 'Compression Support - ' + uQPCompObj.Compression.ListCompressorsByName(cmRead);
 
   SystemList := TObjectList.Create(True);
-  EmuList := TQPEmuList.Create(Settings.Paths.CfgDir + 'emulators.ini', Settings.AllowWrite);
+  EmuList := TQPEmuList.Create(Settings.Paths.CfgDir + 'Emulators.ini', Settings.AllowWrite);
   ToolList := TQPToolList.Create(Settings.Paths.CfgDir + 'Tools.ini', Settings.AllowWrite);
   RomList := TQPRomList.Create(Settings.AllowWrite);
   FavList := TQPRomList.Create(Settings.AllowWrite);

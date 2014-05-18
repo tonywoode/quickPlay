@@ -111,6 +111,10 @@ object FrmEmuDlg: TFrmEmuDlg
     TabOrder = 2
     object TabConfiguration: TTabSheet
       Caption = 'Emulator Configuration'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object VTEmuOpt: TVirtualStringTree
         Left = 0
         Top = 0
@@ -155,7 +159,7 @@ object FrmEmuDlg: TFrmEmuDlg
           end
           item
             Position = 1
-            Width = 286
+            Width = 290
             WideText = 'Value'
           end>
       end

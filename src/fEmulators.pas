@@ -482,7 +482,7 @@ begin
   pgEmuOpt.ActivePageIndex := 0;
 
   //create our EMUcopy objectlist to hold a copy of the emulators list
-  Emucopy := TQPEmuList.Create(MainFrm.Settings.Paths.CfgDir+'emulators.ini', True);
+  Emucopy := TQPEmuList.Create(MainFrm.Settings.Paths.CfgDir+'Emulators.ini', True);
 
   VTEmus.StateImages := EmuCopy.ExeIcons;
 

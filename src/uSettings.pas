@@ -804,8 +804,8 @@ begin
   Paths.GameTypeFile := Paths.CfgDir + 'type.txt';
   Paths.LanguageFile := Paths.CfgDir + 'language.txt';
   Paths.SysFileExtFile := Paths.CfgDir + 'SystemFileExts.ini';
-  Paths.ToolsFile := Paths.CfgDir + 'tools.ini';
-  Paths.EmulatorsFile := Paths.CfgDir + 'emulators.ini';
+  Paths.ToolsFile := Paths.CfgDir + 'Tools.ini';
+  Paths.EmulatorsFile := Paths.CfgDir + 'Emulators.ini';
   If (DirectoryExists(Paths.ROMSDir) = false) and
      (DirectoryExists(Paths.CfgDir) = false) then
     _NoDats := True
@@ -841,11 +841,11 @@ begin
   if not FileExists(Paths.SysFileExtFile) then
     CreateSysFileExt(Paths.SysFileExtFile);
 
-  //Check is the tools.ini file exists, if it doesnt - create it
+  //Check is the Tools.ini file exists, if it doesnt - create it
   if not fileexists(Paths.ToolsFile) then
     CreateTools(Paths.ToolsFile);
 
-  //Check is the emulators.ini file exists, if it doesnt - create it
+  //Check is the Emulators.ini file exists, if it doesnt - create it
   if not fileexists(Paths.EmulatorsFile) then
     CreateEmulators(Paths.EmulatorsFile);
 

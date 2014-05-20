@@ -74,6 +74,5 @@ begin
   Application.Initialize;
   Application.Title := 'Quick Play - Phoenix';
   Application.CreateForm(TMainFrm, MainFrm);
-  //Application.CreateForm(TMameHolding, MameHolding);
   Application.Run;
 end.

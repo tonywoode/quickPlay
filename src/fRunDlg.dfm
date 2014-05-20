@@ -219,6 +219,7 @@ object FrmRunRom: TFrmRunRom
     Top = 431
     Width = 308
     Height = 21
+    ReadOnly = True
     TabOrder = 5
   end
 end

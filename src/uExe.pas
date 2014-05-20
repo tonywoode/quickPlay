@@ -14,7 +14,7 @@ Type
     _name : String;             //The name of exe - PrimaryID!
     _Version : String;          //The exe version.
     _path : TFileName;          //The exe's path.
-    _cfg : TFileName;      //Stores the path to the EXEs configuration file.
+    _cfg : TFileName;           //Stores the path to the EXEs configuration file.
     _HomePage : String;         //Web address for exe, if there is one.
     _parameters : String;       //Parameters for running EXE, can use special QP variables.
     _PreLaunchCmd : String;     //Full Command to execute before running this exe.
@@ -451,7 +451,7 @@ begin
         ujProcesses.RunProcess(Self.DecodeParameterVariables(Self._AfterLaunchCmd, ROMObj, Tools), Self.AfterLaunchWait);
 
       Self.AfterRunROMConfigure(ZipList, ROMObj, ExtrDir);
-    
+
     finally
       FreeAndNil(ZipList);
     end;
@@ -483,4 +483,3 @@ end;
 {-----------------------------------------------------------------------------}
 
 end.
- 

@@ -2,7 +2,7 @@ unit uExe;
 
 interface
 
-uses SysUtils, Classes, uROM, uExeList, ujProcesses;
+uses SysUtils, StrUtils, Classes, uROM, uExeList, ujProcesses;
 
 Type
   TQPEXE = class(TObject)
@@ -438,14 +438,29 @@ begin
       end
       else
       begin
-        //run with the standard RunProcess command.
-        if Self._ShortExe then
-          EmuPath := ExtractShortPathName(Self._path)
-        else
-          emuPath := Self._path;
+      {
+      Mutltiloader functionality: if the emulator cmd line contains a call to
+      %EXEPATH%, we are going to assume the caller does NOT wish to call the
+      emulator FIRST in their cmd call - this will allow us to setup a tool
+      to be called first in a cmd call rather than the found emulator, which
+      opens up a lot of possibilities not least hard-codable multiloader e-find configs
+
+      One interesting consideration with this implementation is that somewhere in the
+      command line we MUST have the executable stated......probably a good thing....
+      }
+      //check if the command line contains %EXEPATH%
+        if AnsiContainsText(_parameters, '%EXEPATH%') then
+          EmuPath := ''    //if it does, don't call the exe
+          else
+          begin
+              //run with the standard RunProcess command.
+              if Self._ShortExe then
+                EmuPath := ExtractShortPathName(Self._path)
+              else
+                emuPath := Self._path;
+          end;
         RunProcess(EmuPath + ' ' + CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority);
       end;
-
       //run the After launch command.
       if Self._AfterLaunchCmd <> '' then
         ujProcesses.RunProcess(Self.DecodeParameterVariables(Self._AfterLaunchCmd, ROMObj, Tools), Self.AfterLaunchWait);

@@ -3,7 +3,7 @@ unit fRunDlg;
 interface
 
 uses
-  Windows, SysUtils, Classes, Controls, Forms,
+  Windows, SysUtils, StrUtils, Classes, Controls, Forms,
   Dialogs, StdCtrls, uRom, uEmu, fJWinFontForm, fParamVars;
 
 type
@@ -117,11 +117,16 @@ Begin
   end;
 
   //check if the emulator exe is to be launched in short name format
-  If ChkShortExe.Checked then
-    EPath := ExtractShortPathName(Emu.path)
-  else
-    EPath := Emu.path;
-
+  //and check if we are going to omit the emu call when we run (for multiloader - see UExe)
+  if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
+       EPath := ''    //if it does, don't call the exe
+         else
+         begin
+            If ChkShortExe.Checked then
+               EPath := ExtractShortPathName(Emu.path)
+            else
+               EPath := Emu.path;
+         end;
   OldParam := Emu.Parameters;
   try
     Emu.Parameters := TxtParam.Text;

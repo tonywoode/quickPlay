@@ -361,7 +361,7 @@ end;
 
 Procedure TQPExe.Run(ROMObj : TQPROM; Tools : TQPExeList; ExtrDir : String);
 var
-  RPath, HelpCmd, CmdLine, EmuPath : string;
+  RPath, HelpCmd, CmdLine, EmuPath, EmuCall : string;
   ZipList : TStringList;
 begin
 
@@ -455,10 +455,12 @@ begin
           emuPath := Self._path;
 
       //check if the command line contains %EXEPATH%
-      if AnsiContainsText(_parameters, '%EXEPATH%') then
-          EmuPath := '' ;   //if it does, don't call the exe
-
-        RunProcess(EmuPath + ' ' + CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority);
+      EmuCall := EmuPath;
+     if AnsiContainsText(_parameters, '%EXEPATH%') then
+          //EmuCall := '' ;   //if it does, don't call the exe
+            RunProcess(CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority)
+     else
+     RunProcess(EmuCall + ' ' + CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority);
       end;
       //run the After launch command.
       if Self._AfterLaunchCmd <> '' then

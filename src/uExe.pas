@@ -448,17 +448,16 @@ begin
       One interesting consideration with this implementation is that somewhere in the
       command line we MUST have the executable stated......probably a good thing....
       }
+                    //run with the standard RunProcess command.
+      if Self._ShortExe then
+          EmuPath := ExtractShortPathName(Self._path)
+      else
+          emuPath := Self._path;
+
       //check if the command line contains %EXEPATH%
-        if AnsiContainsText(_parameters, '%EXEPATH%') then
-          EmuPath := ''    //if it does, don't call the exe
-          else
-          begin
-              //run with the standard RunProcess command.
-              if Self._ShortExe then
-                EmuPath := ExtractShortPathName(Self._path)
-              else
-                emuPath := Self._path;
-          end;
+      if AnsiContainsText(_parameters, '%EXEPATH%') then
+          EmuPath := '' ;   //if it does, don't call the exe
+
         RunProcess(EmuPath + ' ' + CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority);
       end;
       //run the After launch command.

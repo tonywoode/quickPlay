@@ -61,7 +61,7 @@ uses fMain, uJUtilities, JCLStrings, JCLFileUtils, findFile, Clipbrd, uJFile,
 
 Function TFrmRunRom.CommandLine : String;
 var
-  RPath, EPath, OldParam, ExtrPath : String;
+  RPath, EPath, OldParam, OldExe, ExtrPath : String;
   EDest : TQPExtractDest;
 Begin
 
@@ -118,22 +118,22 @@ Begin
 
   //check if the emulator exe is to be launched in short name format
   //and check if we are going to omit the emu call when we run (for multiloader - see UExe)
-  if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
-       EPath := ''    //if it does, don't call the exe
-         else
-         begin
-            If ChkShortExe.Checked then
-               EPath := ExtractShortPathName(Emu.path)
-            else
-               EPath := Emu.path;
-         end;
+
   OldParam := Emu.Parameters;
+  //OldExe := Emu.Path;
   try
     Emu.Parameters := TxtParam.Text;
-
+    If ChkShortExe.Checked then
+        EPath := ExtractShortPathName(Emu.path)
+    else
+        EPath := Emu.path;
+    if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
+        EPath := '';
     result := Epath + ' ' + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
   finally
     Emu.Parameters := OldParam;
+    //Emu.Path := OldExe;
+
   end;
 End;
 

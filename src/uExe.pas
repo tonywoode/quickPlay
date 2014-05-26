@@ -361,7 +361,7 @@ end;
 
 Procedure TQPExe.Run(ROMObj : TQPROM; Tools : TQPExeList; ExtrDir : String);
 var
-  RPath, HelpCmd, CmdLine, EmuPath, EmuCall : string;
+  RPath, HelpCmd, CmdLine, CmdLineWithExe, EmuPath: string;
   ZipList : TStringList;
 begin
 
@@ -438,6 +438,13 @@ begin
       end
       else
       begin
+
+      //run with the standard RunProcess command.
+      if Self._ShortExe then
+          EmuPath := ExtractShortPathName(Self._path)
+      else
+          emuPath := Self._path;
+
       {
       Mutltiloader functionality: if the emulator cmd line contains a call to
       %EXEPATH%, we are going to assume the caller does NOT wish to call the
@@ -448,19 +455,15 @@ begin
       One interesting consideration with this implementation is that somewhere in the
       command line we MUST have the executable stated......probably a good thing....
       }
-                    //run with the standard RunProcess command.
-      if Self._ShortExe then
-          EmuPath := ExtractShortPathName(Self._path)
-      else
-          emuPath := Self._path;
 
-      //check if the command line contains %EXEPATH%
-      EmuCall := EmuPath;
-     if AnsiContainsText(_parameters, '%EXEPATH%') then
-          //EmuCall := '' ;   //if it does, don't call the exe
-            RunProcess(CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority)
-     else
-     RunProcess(EmuCall + ' ' + CmdLine, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority);
+      // check if the command line contains %EXEPATH%.
+      // Run cmdline normally if it doesn't, exclude EmuPath if it does
+      CmdLineWithExe := CmdLine;
+      if not AnsiContainsText(_parameters, '%EXEPATH%') then
+        CmdLineWithExe := EmuPath + ' ' + CmdLine;
+
+      RunProcess(CmdLineWithExe, Self._WaitForEXEEnd, ExtractFilePath(Self._path), SW_SHOWNORMAL, _Priority)
+
       end;
       //run the After launch command.
       if Self._AfterLaunchCmd <> '' then

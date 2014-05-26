@@ -21,9 +21,9 @@ object FrmRunRom: TFrmRunRom
   object TLabel
     Left = 8
     Top = 434
-    Width = 69
+    Width = 154
     Height = 13
-    Caption = 'Command Line'
+    Caption = 'Command Line That Will Be Run:'
   end
   object BtnRun: TButton
     Left = 248
@@ -214,12 +214,17 @@ object FrmRunRom: TFrmRunRom
       TabOrder = 1
     end
   end
-  object lblCommand: TEdit
-    Left = 83
-    Top = 431
-    Width = 308
-    Height = 21
+  object lblCommand: TRichEdit
+    Left = 8
+    Top = 453
+    Width = 393
+    Height = 74
+    Hint = 'Right Click to Copy'
+    ParentShowHint = False
     ReadOnly = True
+    ScrollBars = ssVertical
+    ShowHint = True
     TabOrder = 5
+    OnMouseDown = lblCommandMouseDown
   end
 end

@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, SysUtils, StrUtils, Classes, Controls, Forms,
-  Dialogs, StdCtrls, uRom, uEmu, fJWinFontForm, fParamVars;
+  Dialogs, StdCtrls, uRom, uEmu, fJWinFontForm, fParamVars, ComCtrls;
 
 type
   TFrmRunRom = class(TJWinFontForm)
@@ -27,7 +27,7 @@ type
     lblZipStatus: TLabel;
     lblPath: TEdit;
     lblArchiveOutput: TEdit;
-    lblCommand: TEdit;
+    lblCommand: TRichEdit;
     procedure FormDestroy(Sender: TObject);
     procedure TxtParamExit(Sender: TObject);
     procedure TxtParamEnter(Sender: TObject);
@@ -375,6 +375,7 @@ var
 begin
   If Button = mbRight then
   begin
+    lblCommand.SelectAll;
     Clip := ClipBoard;
     Clip.AsText := lblCommand.Text;
   end;

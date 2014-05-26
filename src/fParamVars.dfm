@@ -4,7 +4,7 @@ object FrmParamVars: TFrmParamVars
   BorderStyle = bsToolWindow
   Caption = 'Parameter Variables'
   ClientHeight = 224
-  ClientWidth = 437
+  ClientWidth = 448
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,7 +22,7 @@ object FrmParamVars: TFrmParamVars
   object VTVars: TVirtualStringTree
     Left = 0
     Top = 0
-    Width = 437
+    Width = 448
     Height = 224
     Align = alClient
     DefaultNodeHeight = 20
@@ -41,7 +41,7 @@ object FrmParamVars: TFrmParamVars
     TreeOptions.SelectionOptions = [toDisableDrawSelection]
     OnGetText = VTVarsGetText
     OnPaintText = VTVarsPaintText
-    ExplicitHeight = 204
+    ExplicitWidth = 437
     Columns = <
       item
         Position = 0
@@ -50,7 +50,7 @@ object FrmParamVars: TFrmParamVars
       end
       item
         Position = 1
-        Width = 268
+        Width = 279
         WideText = 'Desc'
       end>
   end

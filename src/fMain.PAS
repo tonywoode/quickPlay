@@ -51,7 +51,7 @@
 //                Mame Icons now show parent icon if needed and if they can
 //                Mame languages ini setup
 //              Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
-//              Calling %EXEPATH% as param now MOVES the position of the emulator call to the command line instead of repeating the emu call
+//              The first call to %EXEPATH% as a CMD param now MOVES the position of the emu call in the CMDline instead of repeating emu call
 //------------------------------------------------------------------------
 unit fMain;
 

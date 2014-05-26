@@ -50,7 +50,8 @@
 //                "Rename Mame Roms" now directs users to Perl script and (extensive) online support
 //                Mame Icons now show parent icon if needed and if they can
 //                Mame languages ini setup
-//                Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
+//              Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
+//              Calling %EXEPATH% as param now MOVES the position of the emulator call to the command line instead of repeating the emu call
 //------------------------------------------------------------------------
 unit fMain;
 

@@ -53,7 +53,7 @@ src/*.dcu
 #Personal Efind inis - not for sharing as the user must setup their own or they will get confused
 qp/EFind/Custom.ini
 qp/EFind/Gamebase.ini
-qp/EFind/MultiLoader.ini
+
 
 
 

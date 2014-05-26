@@ -14,6 +14,5 @@ del "tools/Romdata Magician/RomData Magician.ini"
 echo.Cleaning up possible EFind files
 del "EFind/Custom.ini"
 del "EFind/Gamebase.ini"
-del "EFind/MultiLoader.ini"
 
 pause

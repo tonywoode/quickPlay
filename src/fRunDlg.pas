@@ -123,9 +123,9 @@ Begin
   try
     Emu.Parameters := TxtParam.Text;
     If ChkShortExe.Checked then
-        EPath := ExtractShortPathName(Emu.path)
+        EPath := ExtractShortPathName(Emu.path) + ' '
     else
-        EPath := Emu.path;
+        EPath := Emu.path + ' ';
 
     { Mutliloader functionality: If we've called %EXEPATH% we'll assume
       user doesn't want to call the emulator as the first arg.
@@ -134,7 +134,8 @@ Begin
 
     if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
         EPath := '';
-    result := Epath + ' ' + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
+
+    result := Epath + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
 
   finally
     Emu.Parameters := OldParam;

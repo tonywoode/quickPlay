@@ -34,7 +34,7 @@ begin
   _Vars := TStringList.Create;
   _Vars.BeginUpdate;
   try
-    _Vars.Capacity := 10;
+    _Vars.Capacity := 11;
 
     _Vars.Add('%ROM%=The full path to the selected ROM.');
     _vars.Add('%ROMFILENAME%=The filename of the ROM, includes file extension.');
@@ -45,6 +45,7 @@ begin
     _vars.Add('%TOOL:toolvariable%=Launch tool specified by "toolvariable"');
     _vars.Add('%EXECFG%=Emulator/Tool configuration file.');
     _vars.Add('%EXEPATH%=Full path to associated emulator/Tool');
+    _vars.Add('       - Note: MOVES POSITION OF EMULATOR CALL');
     _vars.Add('%EXEDIR%=The associated emulators/Tool directory');
   finally
     _Vars.EndUpdate();

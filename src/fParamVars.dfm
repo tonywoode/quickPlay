@@ -3,7 +3,7 @@ object FrmParamVars: TFrmParamVars
   Top = 0
   BorderStyle = bsToolWindow
   Caption = 'Parameter Variables'
-  ClientHeight = 204
+  ClientHeight = 224
   ClientWidth = 437
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -23,10 +23,11 @@ object FrmParamVars: TFrmParamVars
     Left = 0
     Top = 0
     Width = 437
-    Height = 204
+    Height = 224
     Align = alClient
     DefaultNodeHeight = 20
     Header.AutoSizeIndex = 1
+    Header.DefaultHeight = 17
     Header.Font.Charset = DEFAULT_CHARSET
     Header.Font.Color = clWindowText
     Header.Font.Height = -11
@@ -40,6 +41,7 @@ object FrmParamVars: TFrmParamVars
     TreeOptions.SelectionOptions = [toDisableDrawSelection]
     OnGetText = VTVarsGetText
     OnPaintText = VTVarsPaintText
+    ExplicitHeight = 204
     Columns = <
       item
         Position = 0

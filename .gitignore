@@ -24,7 +24,6 @@ src/_history/
 
 #Be aware that tools in qpFiles/tools are standalone and if run up may start making their own ini files. We want to prevent this:
 qp/tools/Format History to Tab/FH2T.ini
-qp/tools/QUICKPLAY Multiloader/ForciblyWinmount.exe
 qp/tools/Romdata Magician/RomData Magician.ini
 
 

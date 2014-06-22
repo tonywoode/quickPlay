@@ -52,6 +52,8 @@
 //                Mame languages ini setup
 //              Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
 //              The first call to %EXEPATH% as a CMD param now MOVES the position of the emu call in the CMDline instead of repeating emu call
+//5-14          Mame Perl script updated inc. support for 7z and fully merged sets
+//6-14          Mame History process updated
 //------------------------------------------------------------------------
 unit fMain;
 

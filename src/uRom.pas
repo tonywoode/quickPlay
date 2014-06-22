@@ -566,20 +566,18 @@ begin
               test := matches[l];
 
 
-              if JCLStrings.StrCompare(matches[l], GameName) = 0 then
+              if (JCLStrings.StrCompare(matches[l], GameName) = 0) or (JCLStrings.StrCompare(matches[l], GameName+',') = 0) then
+            //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
             begin
               Start := k;  //the index of the line, not the list
               Break//we are done.
-            end;
-
-            //I could not figure out how to or an if, so do another check to see if there is a
-            //comma at the end. This will be the for all non mame sets
-              if JCLStrings.StrCompare(matches[l], GameName+',') = 0 then   //the "other case"
-            begin
-              Start := k;  //the index of the line, not the list
-              Break//we are done.
-            end;
-
+            end
+            //feature - mameUI will lookup the parent if we don't have info on the child. Now, so do we....
+              else if (_ParentName <> '') and ( (JCLStrings.StrCompare(matches[l], _ParentName) = 0) or (JCLStrings.StrCompare(matches[l], _ParentName+',') = 0) ) then
+                begin
+                  Start := k;  //the index of the line, not the list
+                  Break//we are done.
+                end;
            end;
           end;
          end;

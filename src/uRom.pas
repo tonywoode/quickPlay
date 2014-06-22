@@ -542,7 +542,8 @@ begin
       //Delete( GameName, pos('[',GameName)-1, Length(GameName) );
       inList.LoadFromFile(HistoryFile);
      fileType :=   inList[0];
-     if JCLStrings.StrSearch('## History.dat', fileType ) > 0 then
+     fileType :=   AnsiLowerCase(fileType); //fixes bug in mameHistory0153 - commas otherwise won't deliniate
+     if JCLStrings.StrSearch('## history.dat', fileType ) > 0 then
           fileType := 'mame'
         else
           fileType := 'other';  //we could always look for more detail i.e ##  Good2600

@@ -522,12 +522,21 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
+ Function ScanHistoryFileForMameName(var listIndex: Integer; var searchRom: string; var GameName: string): Integer;
+ begin
+    if (JCLStrings.StrCompare(searchRom, GameName) = 0) or (JCLStrings.StrCompare(searchRom, GameName+',') = 0) then
+    //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
+        Result := listIndex  //the index of the line, not the list
+    else Result := -1;
+ end;
+
+ {-----------------------------------------------------------------------------}
 
 Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
 var
   inList, matches : TStringList;
-  start, i , j, k, l: Integer;
-  fileType, GameName, line , test: String;
+  Start, i , j, k, l, listIndex: Integer;
+  fileType, GameName, line , searchRom: String;
 begin
   inList := TStringList.Create;
   matches := TStringList.Create;
@@ -563,22 +572,25 @@ begin
 
           for l := 0 to matches.Count-1 do
           begin
-              test := matches[l];
+              searchRom := matches[l];
+              listIndex := k;
+              Start := ScanHistoryFileForMameName(listIndex, searchRom, GameName);
 
-
-              if (JCLStrings.StrCompare(matches[l], GameName) = 0) or (JCLStrings.StrCompare(matches[l], GameName+',') = 0) then
+          end;
+          if (Start <> -1) then Break;
+              //if (JCLStrings.StrCompare(matches[l], GameName) = 0) or (JCLStrings.StrCompare(matches[l], GameName+',') = 0) then
             //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
-            begin
-              Start := k;  //the index of the line, not the list
-              Break//we are done.
-            end
+            //begin
+              //Start := k;  //the index of the line, not the list
+              //Break//we are done.
+            //end
             //feature - mameUI will lookup the parent if we don't have info on the child. Now, so do we....
-              else if (_ParentName <> '') and ( (JCLStrings.StrCompare(matches[l], _ParentName) = 0) or (JCLStrings.StrCompare(matches[l], _ParentName+',') = 0) ) then
-                begin
-                  Start := k;  //the index of the line, not the list
-                  Break//we are done.
-                end;
-           end;
+              //else if (_ParentName <> '') and ( (JCLStrings.StrCompare(matches[l], _ParentName) = 0) or (JCLStrings.StrCompare(matches[l], _ParentName+',') = 0) ) then
+               // begin
+                //  Start := k;  //the index of the line, not the list
+                 // Break//we are done.
+                //end;
+           //end;
           end;
          end;
 

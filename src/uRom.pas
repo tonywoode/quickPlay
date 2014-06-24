@@ -556,25 +556,25 @@ Start := -1;//defult to -1 for not found
          end;
         end;
         result := Start;
+        FreeAndNil(matches);
 end;
  {-----------------------------------------------------------------------------}
 
 Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
 var
-  inList, matches : TStringList;
-  Start, i , j, k, l, listIndex: Integer;
-  fileType, GameName, line , searchRom: String;
+  inList : TStringList;
+  Start, i , j: Integer;
+  fileType, GameName: String;
 begin
   inList := TStringList.Create;
-  matches := TStringList.Create;
-  Start := -1;//defult to -1 for not found
+  Start := -1;//default to -1 for not found
   try
 
     if _MAMEName <> '' then
       GameName := _MameName
     else
       GameName := ExtractFileName(ChangeFileExt(_Path, ''));
-     // Delete( GameName, pos('(',GameName)-1, Length(GameName) );
+     // Delete( GameName, pos('(',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
       //Delete( GameName, pos('[',GameName)-1, Length(GameName) );
       inList.LoadFromFile(HistoryFile);
      fileType :=   inList[0];
@@ -587,50 +587,9 @@ begin
      Start :=  ScanHistoryFileForMameName(inList,fileType,GameName);
      if (Start = -1) and (_ParentName <> '' ) then Start := ScanHistoryFileForMameName(inList,fileType,_ParentName);
 
-    //we need to look at all games in the $info= not just one, so bust by commas
-	  //  for k := 1 to inList.Count-1 do
-    //    begin
-     //    if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
-      //   begin
- //         line := inList[k];
-   ///       JCLStrings.StrReplace( line, '$info=', '');
-      //    if fileType='other' then //we will use a different default separator for this scope if its not a mame history file, that way gamenames can include commas
- //           JCLStrings.StrTokenToStrings(line,'?',matches )
-    //      else
-   //       JCLStrings.StrTokenToStrings(line,',',matches );
-
-    //      for l := 0 to matches.Count-1 do
-  //        begin
-    //          searchRom := matches[l];
-      //        listIndex := k;
-        ///      if (JCLStrings.StrCompare(searchRom, GameName) = 0) or (JCLStrings.StrCompare(searchRom, GameName+',') = 0) then
-           //   begin //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
- //                 Start := listIndex;  //the index of the LINE, not the LIST
-   //               Break
-     //         end;
-   //       end;
-    //     end;
-     //   end;
-              //if (JCLStrings.StrCompare(matches[l], GameName) = 0) or (JCLStrings.StrCompare(matches[l], GameName+',') = 0) then
-            //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
-            //begin
-              //Start := k;  //the index of the line, not the list
-              //Break//we are done.
-            //end
-            //feature - mameUI will lookup the parent if we don't have info on the child. Now, so do we....
-              //else if (_ParentName <> '') and ( (JCLStrings.StrCompare(matches[l], _ParentName) = 0) or (JCLStrings.StrCompare(matches[l], _ParentName+',') = 0) ) then
-               // begin
-                //  Start := k;  //the index of the line, not the list
-                 // Break//we are done.
-                //end;
-           //end;
-          //end;
-         //end;
-
     Output.BeginUpdate;
     if Start <> -1 then
-    begin
-      //find bio from that point.
+    begin //find bio from that point.
       for j := Start to inList.Count-1 do
       begin
         if JCLStrings.StrCompare(inList[j], '$bio') = 0 then

@@ -522,14 +522,41 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
- Function ScanHistoryFileForMameName(var listIndex: Integer; var searchRom: string; var GameName: string): Integer;
- begin
-    if (JCLStrings.StrCompare(searchRom, GameName) = 0) or (JCLStrings.StrCompare(searchRom, GameName+',') = 0) then
-    //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
-        Result := listIndex  //the index of the line, not the list
-    else Result := -1;
- end;
+Function ScanHistoryFileForMameName(var inList: TStringList; var fileType: string; var GameName: string): Integer;
+var
+  matches : TStringList;
+  k,l, listIndex, Start: Integer;
+  line, SearchRom: String;
 
+begin
+matches := TStringList.Create;
+Start := -1;//defult to -1 for not found
+ //we need to look at all games in the $info= not just one, so bust by commas
+	    for k := 1 to inList.Count-1 do
+        begin
+         if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
+         begin
+          line := inList[k];
+          JCLStrings.StrReplace( line, '$info=', '');
+          if fileType='other' then //we will use a different default separator for this scope if its not a mame history file, that way gamenames can include commas
+            JCLStrings.StrTokenToStrings(line,'?',matches )
+          else
+            JCLStrings.StrTokenToStrings(line,',',matches );
+
+          for l := 0 to matches.Count-1 do
+          begin
+              searchRom := matches[l];
+              listIndex := k;
+              if (JCLStrings.StrCompare(searchRom, GameName) = 0) or (JCLStrings.StrCompare(searchRom, GameName+',') = 0) then
+              begin //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
+                  Start := listIndex;  //the index of the LINE, not the LIST
+                  Break
+              end;
+          end;
+         end;
+        end;
+        result := Start;
+end;
  {-----------------------------------------------------------------------------}
 
 Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
@@ -557,27 +584,31 @@ begin
         else
           fileType := 'other';  //we could always look for more detail i.e ##  Good2600
 
+     Start :=  ScanHistoryFileForMameName(inList,fileType,GameName);
     //we need to look at all games in the $info= not just one, so bust by commas
-	    for k := 1 to inList.Count-1 do
-        begin
-         if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
-         begin
-          line := inList[k];
-          JCLStrings.StrReplace( line, '$info=', '');
-          if fileType='other' then     //if we see a comma followed by a space this is not a mame dat. it is
-                                                                  //important to seach for this because a comman is part of the rom name
-            JCLStrings.StrTokenToStrings(line,'?',matches )
-          else
-            JCLStrings.StrTokenToStrings(line,',',matches );
+	  //  for k := 1 to inList.Count-1 do
+    //    begin
+     //    if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
+      //   begin
+ //         line := inList[k];
+   ///       JCLStrings.StrReplace( line, '$info=', '');
+      //    if fileType='other' then //we will use a different default separator for this scope if its not a mame history file, that way gamenames can include commas
+ //           JCLStrings.StrTokenToStrings(line,'?',matches )
+    //      else
+   //       JCLStrings.StrTokenToStrings(line,',',matches );
 
-          for l := 0 to matches.Count-1 do
-          begin
-              searchRom := matches[l];
-              listIndex := k;
-              Start := ScanHistoryFileForMameName(listIndex, searchRom, GameName);
-
-          end;
-          if (Start <> -1) then Break;
+    //      for l := 0 to matches.Count-1 do
+  //        begin
+    //          searchRom := matches[l];
+      //        listIndex := k;
+        ///      if (JCLStrings.StrCompare(searchRom, GameName) = 0) or (JCLStrings.StrCompare(searchRom, GameName+',') = 0) then
+           //   begin //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
+ //                 Start := listIndex;  //the index of the LINE, not the LIST
+   //               Break
+     //         end;
+   //       end;
+    //     end;
+     //   end;
               //if (JCLStrings.StrCompare(matches[l], GameName) = 0) or (JCLStrings.StrCompare(matches[l], GameName+',') = 0) then
             //we do a second check to see if there is a comma at the end. This will be the for all non mame sets- the "other" case
             //begin
@@ -591,8 +622,8 @@ begin
                  // Break//we are done.
                 //end;
            //end;
-          end;
-         end;
+          //end;
+         //end;
 
     Output.BeginUpdate;
     if Start <> -1 then

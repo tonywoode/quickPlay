@@ -585,6 +585,8 @@ begin
           fileType := 'other';  //we could always look for more detail i.e ##  Good2600
 
      Start :=  ScanHistoryFileForMameName(inList,fileType,GameName);
+     if (Start = -1) and (_ParentName <> '' ) then Start := ScanHistoryFileForMameName(inList,fileType,_ParentName);
+
     //we need to look at all games in the $info= not just one, so bust by commas
 	  //  for k := 1 to inList.Count-1 do
     //    begin

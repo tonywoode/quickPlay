@@ -110,6 +110,7 @@ type
     Function CreateIPSROM(ROMPath, IPSPath : TFileName; ExtrDir : String; CustomName : String = '') : TFileName;
     procedure DeleteIPS(Index : Integer);
     procedure FromString(strRom : String);
+    Procedure GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
     Procedure GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
     Procedure GetMAMEInfoFromFile(var Output : TStrings; MAMEInfoFile : TFileName);
     procedure GuessGoodMerge( Pref1, Pref2, Pref3 : String);
@@ -522,7 +523,7 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
-Function ScanHistoryFileForMameName(var inList: TStringList; var fileType: string; var GameName: string): Integer;
+Function ScanMameDatFileForMameName(var inList: TStringList; var fileType: string; var GameName: string): Integer;
 var
   matches : TStringList;
   k,l, listIndex, Start: Integer;
@@ -559,8 +560,10 @@ Start := -1;//defult to -1 for not found
         FreeAndNil(matches);
 end;
  {-----------------------------------------------------------------------------}
-
-Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
+ //The immediately following mame history and dat search procedures defer to this shared module, which uses the above dat scan function to search
+ //  mameHistory.dat and mameInfo.dat files for a child or parent romname. If we don't find the child, we lookup the parent
+ //  the differences between the 
+Procedure TQPRom.GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
 var
   inList : TStringList;
   Start, i , j: Integer;
@@ -576,16 +579,19 @@ begin
       GameName := ExtractFileName(ChangeFileExt(_Path, ''));
      // Delete( GameName, pos('(',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
       //Delete( GameName, pos('[',GameName)-1, Length(GameName) );
-      inList.LoadFromFile(HistoryFile);
-     fileType :=   inList[0];
-     fileType :=   AnsiLowerCase(fileType); //fixes bug in mameHistory0153 - commas otherwise won't deliniate
-     if JCLStrings.StrSearch('## history.dat', fileType ) > 0 then
-          fileType := 'mame'
-        else
-          fileType := 'other';  //we could always look for more detail i.e ##  Good2600
+    inList.LoadFromFile(MAMEDatFile);
 
-     Start :=  ScanHistoryFileForMameName(inList,fileType,GameName);
-     if (Start = -1) and (_ParentName <> '' ) then Start := ScanHistoryFileForMameName(inList,fileType,_ParentName);
+
+    fileType :=   inList[0];
+    fileType :=   AnsiLowerCase(fileType); //fixes bug in mameHistory0153 - commas otherwise won't deliniate
+    if ( JCLStrings.StrSearch('## history.dat', fileType ) > 0 ) or ( JCLStrings.StrSearch('# mameinfo.dat', fileType ) > 0  ) then
+         fileType := 'mame'
+    else
+         fileType := 'other';  //we could always look for more detail i.e ##  Good2600
+
+    Start :=  ScanMameDatFileForMameName(inList,fileType,GameName);
+    if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName);
+    if (Start <> -1) and (datType = 'info') then Start := Start+2; //if its an info file we need to filter out the identifier that says $mame...
 
     Output.BeginUpdate;
     if Start <> -1 then
@@ -613,81 +619,27 @@ begin
   end;
 end;
 
+ {-----------------------------------------------------------------------------}
+
+Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
+var
+  datType: String;
+
+begin
+datType := 'history';
+GetMAMEDatEntryFromFile(datType,Output, HistoryFile );
+
+end;
+
 {-----------------------------------------------------------------------------}
 
 Procedure TQPRom.GetMAMEInfoFromFile(var Output : TStrings; MAMEInfoFile : TFileName);
 var
-  inList, matches : TStringList;
-  start, i , k, l: Integer;
-  fileType, GameName, line , test: String;
+  datType: String;
+
 begin
-  inList := TStringList.Create;
-  matches := TStringList.Create;
-  Start := -1;//defult to -1 for not found
-  try
-
-    if _MAMEName <> '' then
-      GameName := _MameName
-    else
-      GameName := ExtractFileName(ChangeFileExt(_Path, ''));
-     // Delete( GameName, pos('(',GameName)-1, Length(GameName) );
-      //Delete( GameName, pos('[',GameName)-1, Length(GameName) );
-
-    inList.LoadFromFile(MAMEInfoFile);
-     fileType :=   inList[0];
-     if JCLStrings.StrSearch('# MAMEINFO.DAT', fileType ) > 0 then
-          fileType := 'mame'
-        else
-          fileType := 'other';  //we could always look for more detail i.e ##  Good2600
-
-     //we need to look at all games in the $info= not just one, so bust by commas
-	    for k := 1 to inList.Count-1 do
-        begin
-         if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
-         begin
-          line := inList[k];
-          JCLStrings.StrReplace( line, '$info=', '');
-          if fileType='other' then     //if we see a comma followed by a space this is not a mame dat. it is
-                                                                  //important to seach for this because a comman is part of the rom name
-            JCLStrings.StrTokenToStrings(line,'?',matches )
-          else
-            JCLStrings.StrTokenToStrings(line,',',matches );
-
-
-          for l := 0 to matches.Count-1 do
-          begin
-          test :=   matches[l];
-            if JCLStrings.StrCompare(matches[l], GameName) = 0 then
-            begin
-              Start := k +2;  //the index of the line, not the list (pluss add two to skip the identifiers )
-              Break//we are done.
-           end;
-
-            //I could not figure out how to or an if, so do another check to see if there is a
-            //comma at the end. This will be the for all non mame sets
-              if JCLStrings.StrCompare(matches[l], GameName+',') = 0 then   //the "other case"
-            begin
-              Start := k;  //the index of the line, not the list
-              Break//we are done.
-            end;
-
-          end;
-         end;
-        end;
-
-    Output.BeginUpdate;
-    if Start <> -1 then
-      for i := Start to inList.Count-1 do
-      begin
-        if JCLStrings.StrCompare(inList[i], '$end') = 0 then
-          Break
-        else
-          Output.Add(inList[i]);
-      end;
-    Output.EndUpdate;
-  finally
-    FreeAndNil(inList);
-  end;
+datType := 'info';
+GetMAMEDatEntryFromFile(datType,Output, MAMEInfoFile );
 end;
 
 {-----------------------------------------------------------------------------}

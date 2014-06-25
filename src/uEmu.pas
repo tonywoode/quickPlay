@@ -262,6 +262,8 @@ Var
 Begin
   If IsMame then
     If not FileExists(ChangeFileExt(_Path, '.ini')) and
+       not FileExists(ExtractFilePath(_Path) + 'mame.ini') and   //bugfix - we weren't looking for mame's primary ini lookup - a file called mame.ini. But amusingly we WERE creating it if we didn't find 'emu.ini'
+       not FileExists(ExtractFilePath(_Path) + 'ini\mame.ini') and      //and remember this ini if its mameui (TODO: write out this path correctly if the ini IS needed)
        not FileExists(ChangeFileExt(_Path, '.cfg')) then
       if MessageDlg(QP_MAME_INI_NOT_FOUND,
             mtConfirmation, [mbYes, mbNo], 0) = mrYes then

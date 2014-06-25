@@ -258,20 +258,29 @@ end;
 
 Procedure TQPEmu.MameConfigCheck();
 Var
-  CommandLine : String;
+  CommandLine, pathToWrite : String;
 Begin
   If IsMame then
     If not FileExists(ChangeFileExt(_Path, '.ini')) and
        not FileExists(ExtractFilePath(_Path) + 'mame.ini') and   //bugfix - we weren't looking for mame's primary ini lookup - a file called mame.ini. But amusingly we WERE creating it if we didn't find 'emu.ini'
-       not FileExists(ExtractFilePath(_Path) + 'ini\mame.ini') and      //and remember this ini if its mameui (TODO: write out this path correctly if the ini IS needed)
+       not FileExists(ExtractFilePath(_Path) + 'ini\mame.ini') and      //and remember this ini if its mameui
        not FileExists(ChangeFileExt(_Path, '.cfg')) then
       if MessageDlg(QP_MAME_INI_NOT_FOUND,
             mtConfirmation, [mbYes, mbNo], 0) = mrYes then
       begin
         CommandLine := ExtractShortPathName(_Path) + ' -createconfig';
+        //assume that if emu is a mame type, and has an ini FOLDER, its mameUI or similar, and mame.ini wants to be in there not in root
+        if DirectoryExists(ExtractFilePath(_Path) + 'ini\') then
+            begin
+            pathToWrite := ExtractFilePath(_Path);
+            pathToWrite := pathToWrite + 'ini\';
+            end
+        else
+            pathToWrite := ExtractFilePath(_Path);
+
         case Win32Platform of
-        0,1: RunProcess('command.com /c '+CommandLine, True, ExtractFilePath(_Path), SW_SHOWMINIMIZED); //Win32s and Win95
-        2: RunProcess('cmd.exe /c '+CommandLine, True, ExtractFilePath(_Path),SW_SHOWMINIMIZED); // WinNT and Win2000
+        0,1: RunProcess('command.com /c '+CommandLine, True, pathToWrite, SW_SHOWMINIMIZED); //Win32s and Win95
+        2: RunProcess('cmd.exe /c '+CommandLine, True, pathToWrite,SW_SHOWMINIMIZED); // WinNT and Win2000
         end;
 
       end;

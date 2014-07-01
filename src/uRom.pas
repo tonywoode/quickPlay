@@ -562,7 +562,8 @@ end;
  {-----------------------------------------------------------------------------}
  //The immediately following mame history and dat search procedures defer to this shared module, which uses the above dat scan function to search
  //  mameHistory.dat and mameInfo.dat files for a child or parent romname. If we don't find the child, we lookup the parent
- //  the differences between the 
+ //  the differences between the formats are minor, the code changing delimiters and dealing with $bio are for history.dat only
+ //  whereas the info dat needs to be offset a couple of lines at the start to deal with a tag "$mame"
 Procedure TQPRom.GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
 var
   inList : TStringList;

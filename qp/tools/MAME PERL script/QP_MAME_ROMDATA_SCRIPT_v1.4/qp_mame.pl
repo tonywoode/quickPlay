@@ -36,7 +36,7 @@ open(QPDATFILE, $ARGV[1]) or die "Cannot open Quickplay dat file\n";
 ParseMAMEFile;
 my ($ext_guess, $path_guess) = ParseQPFile;
 
-close(XMFILE);
+close(XMLFILE);
 close(QPDATFILE);
 
 # open new QuickPlay ROMData.dat file for writing, and write to it

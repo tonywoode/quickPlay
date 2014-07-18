@@ -24,17 +24,23 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     ActivePage = TabLayout
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 677
     object TabLayout: TTabSheet
       Caption = 'Layout'
       ImageIndex = 2
-      ExplicitWidth = 669
       object lblRealEmuIcons: TLabel
         Left = 312
-        Top = 279
+        Top = 263
         Width = 296
         Height = 13
         Caption = '(These two options can cause QuickPlay to start very slowly.)'
+      end
+      object Label1: TLabel
+        Left = 311
+        Top = 328
+        Width = 104
+        Height = 26
+        Caption = 'Additional Icons Path (Mess system Icons)'
+        WordWrap = True
       end
       object ChkSidebarTabs: TCheckBox
         Left = 312
@@ -772,7 +778,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
       end
       object ChkEmuRealIcons: TCheckBox
         Left = 311
-        Top = 298
+        Top = 282
         Width = 278
         Height = 17
         Caption = 'Use Real Emulator Icons'
@@ -829,6 +835,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             Width = 241
             Height = 89
             Header.AutoSizeIndex = 0
+            Header.DefaultHeight = 17
             Header.Font.Charset = DEFAULT_CHARSET
             Header.Font.Color = clWindowText
             Header.Font.Height = -11
@@ -848,8 +855,8 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         end
       end
       object ChkToolRealIcons: TCheckBox
-        Left = 311
-        Top = 321
+        Left = 312
+        Top = 305
         Width = 266
         Height = 17
         Caption = 'Use Real Tools Icons'
@@ -867,14 +874,26 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           'None')
         TabOrder = 1
       end
+      object MessIconPath: TEdit
+        Left = 429
+        Top = 328
+        Width = 179
+        Height = 21
+        TabOrder = 6
+      end
+      object BtnIconFind: TButton
+        Left = 613
+        Top = 328
+        Width = 25
+        Height = 21
+        Caption = '...'
+        TabOrder = 7
+        OnClick = BtnImageFindClick
+      end
     end
     object TabTreeConfig: TTabSheet
       Caption = 'List Settings'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpColours: TGroupBox
         Left = 136
         Top = 16
@@ -1136,6 +1155,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Font.Name = 'Tahoma'
         Font.Style = []
         Header.AutoSizeIndex = 0
+        Header.DefaultHeight = 17
         Header.Font.Charset = DEFAULT_CHARSET
         Header.Font.Color = clWindowText
         Header.Font.Height = -11
@@ -1157,7 +1177,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Columns = <
           item
             Position = 0
-            Width = 129
+            Width = 125
             WideText = 'Caption'
           end>
       end
@@ -1190,7 +1210,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitWidth = 677
     object Image1: TImage
       Left = 8
       Top = 1

@@ -60,6 +60,9 @@ type
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
     RadGrpDirExpand: TRadioGroup;
+    MessIconPath: TEdit;
+    BtnIconFind: TButton;
+    Label1: TLabel;
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
       var Allowed: Boolean);

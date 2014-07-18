@@ -181,9 +181,8 @@ Var
   Ini : TMemIniFile;
   List : TMemoryStream;
   tmpStrings : TStringList;
-  iconPath1 : String;
-  iconPath2 : String;
-  iconPath3 : String;
+  qpIconPath : String;
+  messIconPath : String;
   oldSize : Integer;
 begin
 
@@ -228,10 +227,10 @@ begin
   try
     Image := TIcon.Create;
 	  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
-    iconPath1 := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
-    iconPath2 := Ini.ReadString('DirOptions', 'IconPath1', '') + '\';
+    qpIconPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
+    messIconPath := Ini.ReadString('DirOptions', 'MessIconPath', '') + '\';
 
-    Find.Directory := IconPath1;
+    Find.Directory := MessIconPath;
     find.Filter := '*.ico';
     Find.Recurse := False;
     Find.Execute;
@@ -253,7 +252,7 @@ begin
         end;
       end;
 
-      Find.Directory := IconPath2;
+      Find.Directory := messIconPath;
       Find.Execute;
       oldSize := i;//grab the size of the first path
       For i := 0 to Find.TotalFile-1 do

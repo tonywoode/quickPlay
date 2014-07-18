@@ -60,7 +60,7 @@ type
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
     RadGrpDirExpand: TRadioGroup;
-    MessIconDirPath: TEdit;
+    TxtMessIconDirPath: TEdit;
     BtnIconDirFind: TButton;
     Label1: TLabel;
     procedure TxtBGImagePathChange(Sender: TObject);
@@ -163,6 +163,7 @@ begin
 
   ChkBGImage.Checked := Cfg.EnableBGImage;
   TxtBGImagePath.Text := Cfg.BGImageValue;
+
   ChkShowHints.Checked := Cfg.ShowHints;
   ChkRowSelect.Checked := Cfg.RowSelect;
   ChkHotTrack.Checked := cfg.HotTrack;
@@ -447,7 +448,6 @@ end;
 procedure TFrmAppearanceOptions.BtnIconDirFindClick(Sender: TObject);
 var
   jvBrowse: TJvBrowseForFolderDialog;
-  messIconPath: string;
 begin
 
   jvBrowse := TJvBrowseForFolderDialog.Create(self);
@@ -455,7 +455,7 @@ begin
       if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
         begin
         //put it in the text box
-        MessIconDirPath.Text := jvBrowse.Directory;
+        TxtMessIconDirPath.Text := jvBrowse.Directory;
         //add the directory to the ini in the right section
         //ListDirs.Items.Add(jvBrowse.Directory);
         end;

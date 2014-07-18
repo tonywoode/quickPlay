@@ -874,8 +874,8 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           'None')
         TabOrder = 1
       end
-      object MessIconDirPath: TEdit
-        Left = 429
+      object TxtMessIconDirPath: TEdit
+        Left = 428
         Top = 328
         Width = 179
         Height = 21

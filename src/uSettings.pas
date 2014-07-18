@@ -229,6 +229,7 @@ Begin
     Ini.WriteBool('DirOptions', 'ChkDirHotTrack', false);
     Ini.WriteBool('DirOptions', 'ChkDirRowSel', false);
     Ini.WriteBool('DirOptions', 'ChkDirHints', true);
+    Ini.WriteString('DirOptions', 'MessIconPath', '');
 
     //Media Options
     Ini.WriteBool('Main', 'ChkSearchROMdir', true);

@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
   Dialogs, ExtDlgs, StdCtrls, ExtCtrls, VirtualTrees, ComCtrls, Contnrs, Spin,
-  fjWinFontForm;
+  fjWinFontForm, JvBrowseFolder;
 
 type
   TFrmAppearanceOptions = class(TjWinFontForm)
@@ -446,22 +446,21 @@ end;
 
 procedure TFrmAppearanceOptions.BtnIconDirFindClick(Sender: TObject);
 var
-  DirDlg : TOpenDialog;
+  jvBrowse: TJvBrowseForFolderDialog;
+  messIconPath: string;
 begin
 
-  DirDlg := TOpenDialog.Create(self);
+  jvBrowse := TJvBrowseForFolderDialog.Create(self);
   try
-
-    if DirectoryExists(MainFrm.Settings.Paths.AppDir + 'images') then
-      PicDlg.InitialDir := MainFrm.Settings.Paths.AppDir + 'images';
-
-    PicDlg.Filter := 'ICO Images (*.gif)|*.gif|PNG Images (*.png)|*.png|Bitmap Images|*.bmp|All Files|*.*';
-    if PicDlg.Execute then
-      if (PicDlg.FileName <> '') AND (fileexists(PicDlg.FileName)) then
-        TxtBGImagePath.Text := PicDlg.FileName;
-
+      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
+        begin
+        //put it in the text box
+        MessIconDirPath.Text := jvBrowse.Directory;
+        //add the directory to the ini in the right section
+        //ListDirs.Items.Add(jvBrowse.Directory);
+        end;
   finally
-    FreeAndNil(PicDlg);
+    FreeAndNil(jvBrowse);
   end;
 end;
 

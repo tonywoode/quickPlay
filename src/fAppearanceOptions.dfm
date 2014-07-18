@@ -874,21 +874,21 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           'None')
         TabOrder = 1
       end
-      object MessIconPath: TEdit
+      object MessIconDirPath: TEdit
         Left = 429
         Top = 328
         Width = 179
         Height = 21
         TabOrder = 6
       end
-      object BtnIconFind: TButton
+      object BtnIconDirFind: TButton
         Left = 613
         Top = 328
         Width = 25
         Height = 21
         Caption = '...'
         TabOrder = 7
-        OnClick = BtnImageFindClick
+        OnClick = BtnIconDirFindClick
       end
     end
     object TabTreeConfig: TTabSheet
@@ -1041,6 +1041,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           Width = 179
           Height = 21
           TabOrder = 4
+          OnChange = TxtBGImagePathChange
         end
         object chkBGImage: TCheckBox
           Left = 16

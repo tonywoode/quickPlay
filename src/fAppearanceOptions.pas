@@ -60,9 +60,10 @@ type
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
     RadGrpDirExpand: TRadioGroup;
-    MessIconPath: TEdit;
-    BtnIconFind: TButton;
+    MessIconDirPath: TEdit;
+    BtnIconDirFind: TButton;
     Label1: TLabel;
+    procedure TxtBGImagePathChange(Sender: TObject);
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
       var Allowed: Boolean);
@@ -70,6 +71,7 @@ type
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: WideString);
     procedure BtnColourDefaultsClick(Sender: TObject);
     procedure BtnImageFindClick(Sender: TObject);
+    procedure BtnIconDirFindClick(Sender: TObject);
     procedure BtnFontChangeClick(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
     procedure VTShowColsGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
@@ -242,6 +244,11 @@ begin
 
   if pos('Strikethrough', lblFontStyle.Caption) <> 0 then
     Cfg.VTFont.Style := Cfg.VTFont.Style + [fsstrikeout];
+
+end;
+
+procedure TFrmAppearanceOptions.TxtBGImagePathChange(Sender: TObject);
+begin
 
 end;
 
@@ -426,6 +433,29 @@ begin
       PicDlg.InitialDir := MainFrm.Settings.Paths.AppDir + 'images';
 
     PicDlg.Filter := 'GIF Images (*.gif)|*.gif|PNG Images (*.png)|*.png|Bitmap Images|*.bmp|All Files|*.*';
+    if PicDlg.Execute then
+      if (PicDlg.FileName <> '') AND (fileexists(PicDlg.FileName)) then
+        TxtBGImagePath.Text := PicDlg.FileName;
+
+  finally
+    FreeAndNil(PicDlg);
+  end;
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TFrmAppearanceOptions.BtnIconDirFindClick(Sender: TObject);
+var
+  DirDlg : TOpenDialog;
+begin
+
+  DirDlg := TOpenDialog.Create(self);
+  try
+
+    if DirectoryExists(MainFrm.Settings.Paths.AppDir + 'images') then
+      PicDlg.InitialDir := MainFrm.Settings.Paths.AppDir + 'images';
+
+    PicDlg.Filter := 'ICO Images (*.gif)|*.gif|PNG Images (*.png)|*.png|Bitmap Images|*.bmp|All Files|*.*';
     if PicDlg.Execute then
       if (PicDlg.FileName <> '') AND (fileexists(PicDlg.FileName)) then
         TxtBGImagePath.Text := PicDlg.FileName;

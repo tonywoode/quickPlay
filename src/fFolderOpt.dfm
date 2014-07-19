@@ -26,10 +26,6 @@ object FrmFolder: TFrmFolder
     TabOrder = 0
     object TabGeneral: TTabSheet
       Caption = 'General Options'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpMirror: TGroupBox
         Left = 8
         Top = 28
@@ -85,7 +81,7 @@ object FrmFolder: TFrmFolder
           Width = 201
           Height = 21
           Enabled = False
-          ItemHeight = 0
+          ItemHeight = 13
           Sorted = True
           TabOrder = 1
           OnChange = cmbEmuChange
@@ -254,10 +250,6 @@ object FrmFolder: TFrmFolder
     object TabMerged: TTabSheet
       Caption = 'GoodMerge Support'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblMergeTitle: TLabel
         Left = 48
         Top = 24
@@ -362,7 +354,7 @@ object FrmFolder: TFrmFolder
         Width = 169
         Height = 21
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 13
         TabOrder = 1
       end
       object CmbGMpref2: TComboBox
@@ -371,7 +363,7 @@ object FrmFolder: TFrmFolder
         Width = 169
         Height = 21
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 13
         TabOrder = 2
       end
       object CmbGMpref3: TComboBox
@@ -380,7 +372,7 @@ object FrmFolder: TFrmFolder
         Width = 169
         Height = 21
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 13
         TabOrder = 3
       end
     end

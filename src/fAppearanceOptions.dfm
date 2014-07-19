@@ -34,7 +34,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Height = 13
         Caption = '(These two options can cause QuickPlay to start very slowly.)'
       end
-      object Label1: TLabel
+      object MessIconLabel: TLabel
         Left = 311
         Top = 328
         Width = 104
@@ -881,7 +881,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Height = 21
         TabOrder = 6
       end
-      object BtnIconDirFind: TButton
+      object BtnMessIconDirFind: TButton
         Left = 613
         Top = 328
         Width = 25
@@ -1041,7 +1041,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           Width = 179
           Height = 21
           TabOrder = 4
-          OnChange = TxtBGImagePathChange
         end
         object chkBGImage: TCheckBox
           Left = 16

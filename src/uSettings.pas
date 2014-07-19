@@ -62,6 +62,7 @@ Type
 
       _bUseRealEmuIcons : Boolean;
       _bUseRealToolIcons : Boolean;
+      _sMessIconDir : string; //icons dir for system/romlist icons in sidebar roms panel.
       _bSaveCols : boolean;     //save column widths and positions.
       _bRomImages : boolean;    //allow ICONS in the ROMs listing.
       _bIncVersion : boolean;   //include an emulator version string in the rom listing.
@@ -145,7 +146,7 @@ Type
 
       Property UseRealEmuIcons : Boolean read _bUseRealEmuIcons write _bUseRealEmuIcons;
       Property UseRealToolIcons : Boolean read _bUseRealToolIcons write _bUseRealToolIcons;
-
+      Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
       Property NoDats : Boolean Read _NoDats Write _NoDats;
       Property DatsCurrent : Boolean Read _DatsUpToDate write _DatsUpToDate;
       //Ratings properties.
@@ -229,7 +230,6 @@ Begin
     Ini.WriteBool('DirOptions', 'ChkDirHotTrack', false);
     Ini.WriteBool('DirOptions', 'ChkDirRowSel', false);
     Ini.WriteBool('DirOptions', 'ChkDirHints', true);
-    Ini.WriteString('DirOptions', 'MessIconPath', '');
 
     //Media Options
     Ini.WriteBool('Main', 'ChkSearchROMdir', true);
@@ -563,7 +563,7 @@ begin
     try
 
       //check that all dat files are up to date.
-      If StrCompare(Ini.ReadString('Version', 'QP', ''), '3.8.1') = 0 then
+      If StrCompare(Ini.ReadString('Version', 'QP', ''), '3.8.1') = 0 then   //todo - check this
         _DatsUpToDate := False;
 
       MainFrm.WindowLayout := Ini.ReadInteger('Windows', 'WindowLayout', qpwNormal);
@@ -600,7 +600,8 @@ begin
       RunOptions.GeneralPowerScheme := Ini.ReadString('Main', 'PwrScheme', QP_DONT_CHANGE);
 
       _bUseRealEmuIcons := Ini.ReadBool('IconThread', 'Emus', True);
-      _bUseRealToolIcons := Ini.ReadBool('IconThread', 'Tools' , True); 
+      _bUseRealToolIcons := Ini.ReadBool('IconThread', 'Tools' , True);
+      _sMessIconDir := Ini.ReadString('IconThread', 'MessIconPath', '');
 
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));
@@ -1001,6 +1002,7 @@ begin
 
     Ini.WriteBool('IconThread', 'Emus', _bUseRealEmuIcons);
     Ini.WriteBool('IconThread', 'Tools', self._bUseRealToolIcons);
+    Ini.WriteString('IconThread', 'MessIconPath', self._sMessIconDir);
 
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);

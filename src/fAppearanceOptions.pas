@@ -59,11 +59,11 @@ type
     GrpColView: TGroupBox;
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
-    RadGrpDirExpand: TRadioGroup;
     TxtMessIconDirPath: TEdit;
-    BtnIconDirFind: TButton;
-    Label1: TLabel;
-    procedure TxtBGImagePathChange(Sender: TObject);
+    BtnMessIconDirFind: TButton;
+    MessIconLabel: TLabel;
+    RadGrpDirExpand: TRadioGroup;
+
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
       var Allowed: Boolean);
@@ -248,11 +248,6 @@ begin
 
 end;
 
-procedure TFrmAppearanceOptions.TxtBGImagePathChange(Sender: TObject);
-begin
-
-end;
-
 {-----------------------------------------------------------------------------}
 
 procedure TFrmAppearanceOptions.FormCreate(Sender: TObject);
@@ -309,6 +304,7 @@ begin
     ChkSidebarTabs.Checked := Settings.ShowTabsInSideBar;
     ChkEmuRealIcons.Checked := Settings.UseRealEmuIcons;
     ChkToolRealIcons.Checked := Settings.UseRealToolIcons;
+    TxtMessIconDirPath.Text :=  Settings.MessIconDir;
 
     // UI settings
     Case WindowLayout of
@@ -377,6 +373,7 @@ begin
 
     Settings.UseRealEmuIcons := ChkEmuRealIcons.Checked;
     Settings.UseRealToolIcons := ChkToolRealIcons.Checked;
+    Settings.MessIconDir := TxtMessIconDirPath.Text;
 
 
     //Save the default columns, put them in an array and save them
@@ -451,6 +448,7 @@ var
 begin
 
   jvBrowse := TJvBrowseForFolderDialog.Create(self);
+
   try
       if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
         begin

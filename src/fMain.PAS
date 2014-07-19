@@ -55,6 +55,8 @@
 //              Mame Perl script updated inc. support for 7z and fully merged sets
 //6-14          Mame History process fixed and updated
 //              Mame Info process fixed and updated
+//7-14          Mess Efind updated to 0153
+//              Mess Icon directory can now complement QP's own icons - added to appearance options
 //------------------------------------------------------------------------
 unit fMain;
 

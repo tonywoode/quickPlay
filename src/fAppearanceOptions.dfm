@@ -27,6 +27,10 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     object TabLayout: TTabSheet
       Caption = 'Layout'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblRealEmuIcons: TLabel
         Left = 312
         Top = 263
@@ -894,6 +898,10 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     object TabTreeConfig: TTabSheet
       Caption = 'List Settings'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GrpColours: TGroupBox
         Left = 136
         Top = 16
@@ -1177,7 +1185,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Columns = <
           item
             Position = 0
-            Width = 125
+            Width = 129
             WideText = 'Caption'
           end>
       end

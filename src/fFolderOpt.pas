@@ -181,7 +181,7 @@ Var
   Ini : TMemIniFile;
   List : TMemoryStream;
   tmpStrings : TStringList;
-  qpIconPath : String;
+  qpIconDirPath : String;
   messIconDirPath : String;
   oldSize : Integer;
 begin
@@ -227,10 +227,10 @@ begin
   try
     Image := TIcon.Create;
 	  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
-    qpIconPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
+    qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
     messIconDirPath := Ini.ReadString('IconThread', 'MessIconPath', '') + '\';
 
-    Find.Directory := MessIconDirPath;
+    Find.Directory := qpIconDirPath;
     find.Filter := '*.ico';
     Find.Recurse := False;
     Find.Execute;

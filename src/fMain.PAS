@@ -1611,9 +1611,9 @@ var
   Icon : TIcon;
   pos : Integer;
 
-  iconPath1 : String;  //defult
-  iconPath2 : String; //ini 1
-  iconPath3 : String; //ini 2
+  qpIconDirPath : String;  //default
+  messIconDirPath : String; //Mess icon directory set in appearance options
+
 begin
 
   //this function determines whether a node uses a custom icon in the
@@ -1629,8 +1629,8 @@ begin
     Ini := TMemIniFile.Create(inifile);
 
     Ini2 := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
-    iconPath1 := MainFrm.Settings.Paths.AppDir + 'icons\'  ;
-    iconPath2 := Ini2.ReadString('DirOptions', 'IconPath1', '') + '\';
+    qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'  ;
+    messIconDirPath := Ini2.ReadString('IconThread', 'MessIconPath', '') + '\';
     try
       //all these IFS just check that a icon is specified and it exists
       if Ini.ReadBool('Icon', 'ChkIcon', false) then
@@ -1641,15 +1641,15 @@ begin
           //add it to the array.
           Icon := TIcon.Create;
           try
-            if FileExists(iconPath1+Ini.ReadString('Icon','CmbIcon', '')) then
+            if FileExists(qpIconDirPath+Ini.ReadString('Icon','CmbIcon', '')) then
             begin
-            Icon.LoadFromFile(iconPath1+Ini.ReadString('Icon','CmbIcon', ''));
+            Icon.LoadFromFile(qpIconDirPath+Ini.ReadString('Icon','CmbIcon', ''));
               pos := EmuFolders.AddIcon(Icon);
               TreeImages := pos;
             end;
-            if FileExists(iconPath2+Ini.ReadString('Icon','CmbIcon', '')) then
+            if FileExists(messIconDirPath+Ini.ReadString('Icon','CmbIcon', '')) then
             begin
-            Icon.LoadFromFile(iconPath2+Ini.ReadString('Icon','CmbIcon', ''));
+            Icon.LoadFromFile(messIconDirPath+Ini.ReadString('Icon','CmbIcon', ''));
               pos := EmuFolders.AddIcon(Icon);
               TreeImages := pos;
             end;

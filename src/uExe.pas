@@ -87,7 +87,7 @@ implementation
 uses Windows, Forms, ShellAPI,
      JCLStrings, JCLShell,
      uQPCompObj, ujFile, uToolList, uQPConst, uTools, uQPMiscTypes, ujCompressResourceStrs,
-     ujCompression, uJUtilities;
+     ujCompression, uJUtilities, fMain;
 
 {-----------------------------------------------------------------------------}
 
@@ -473,6 +473,7 @@ begin
 
     finally
       FreeAndNil(ZipList);
+      setCurrentDir(MainFrm.Settings.Paths.AppDir);  //bugfix #32 - we should always go back to QP dir after a run operation 
     end;
 
   end;

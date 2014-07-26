@@ -23,6 +23,8 @@ implementation
 Procedure TtabTextOnly.LoadText(inText : TStrings; useFont : TFont);
 begin
   memoText.Font.Assign(useFont);
+  memoText.ScrollBars := ssVertical;  //feature request #25 - word wrap history and info....
+  memoText.WordWrap := True;
 
   if inText.Text <> '' then
     memoText.Lines.Assign(inText)

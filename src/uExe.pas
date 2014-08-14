@@ -230,7 +230,13 @@ begin
 
   //Emu specific variables
   JCLStrings.StrReplace(Result, '%EXECFG%', self._cfg, [rfIgnoreCase, rfReplaceAll]);
-  JCLStrings.StrReplace(Result, '%EXEPATH%', self._path, [rfIgnoreCase, rfReplaceAll]);
+
+  //bugfix - if we call %EXEPATH% in a cmd it should ALSO respect 8:3 format choice
+  if Self._ShortExe then
+          JCLStrings.StrReplace(Result, '%EXEPATH%', ExtractShortPathName(Self._path), [rfIgnoreCase, rfReplaceAll])
+      else
+          JCLStrings.StrReplace(Result, '%EXEPATH%', self._path, [rfIgnoreCase, rfReplaceAll]);
+
   JCLStrings.StrReplace(Result, '%EXEDIR%', ExtractFilePath(self._path), [rfIgnoreCase, rfReplaceAll]);
 
   //Tool specific variables.

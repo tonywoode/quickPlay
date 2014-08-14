@@ -280,7 +280,7 @@ begin
         ChkCompress.Enabled := False;
       end;
     end;
-      
+    
     ChkShortEXE.Checked := Emu.ShortExe;
     ChkScrSvr.Checked := Emu.DisableScreenSaver;
     ChkWinKey.Checked := Emu.DisableWinKey;

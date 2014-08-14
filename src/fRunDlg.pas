@@ -128,14 +128,12 @@ Begin
         EPath := Emu.path + ' ';
 
     { Mutliloader functionality: If we've called %EXEPATH% we'll assume
-      user doesn't want to call the emulator as the first arg.
-      Starting a command line call with ''' ' would be a bad idea, but this
-      is just for the display box }
+      user doesn't want to call the emulator as the first arg. }
 
     if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
-        EPath := '';
-
-    result := Epath + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
+        result := Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath)
+    else
+        result := Epath + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
 
   finally
     Emu.Parameters := OldParam;
@@ -280,7 +278,7 @@ begin
         ChkCompress.Enabled := False;
       end;
     end;
-    
+
     ChkShortEXE.Checked := Emu.ShortExe;
     ChkScrSvr.Checked := Emu.DisableScreenSaver;
     ChkWinKey.Checked := Emu.DisableWinKey;

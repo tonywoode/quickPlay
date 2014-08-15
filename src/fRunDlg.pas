@@ -63,6 +63,7 @@ Function TFrmRunRom.CommandLine : String;
 var
   RPath, EPath, OldParam, ExtrPath : String;
   EDest : TQPExtractDest;
+  OldShortExe : Boolean;
 Begin
 
   If (not FileExists(ROM.Path)) and
@@ -120,6 +121,7 @@ Begin
   //and check if we are going to omit the emu call when we run (for multiloader - see UExe)
 
   OldParam := Emu.Parameters;
+  OldShortExe := Emu.ShortExe;
   try
     Emu.Parameters := TxtParam.Text;
     If ChkShortExe.Checked then
@@ -138,7 +140,7 @@ Begin
     if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
       begin
         result := Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
-        Emu.ShortExe := ChkShortEXE.Checked;
+        //Emu.ShortExe := ChkShortEXE.Checked;
       end
     else
       begin
@@ -147,6 +149,7 @@ Begin
       end;
   finally
     Emu.Parameters := OldParam;
+    Emu.ShortExe := OldShortExe;
   end;
 End;
 

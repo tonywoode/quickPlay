@@ -40,7 +40,7 @@ if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 ::If there isn't an emu, we have an error that will hang the script, bomb out instead
 IF EXIST %EMU% GOTO CARRYON
-IF EXIST ".\QUICKPLAY MULTILOADER README.txt" (notepad.exe ".\QUICKPLAY MULTILOADER README.txt" & EXIT)
+IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
 :CARRYON
@@ -50,11 +50,11 @@ cd /d %EMU%\..
 
 set _ROMNAME=%1
 ::We uncompress most types of zip with 7Zip, but for .mou files if you have winmount we can run the compressed image
-if (%~x1)==(.zip) goto UNZIP
-if (%~x1)==(.rar) goto UNZIP
-if (%~x1)==(.ace) goto UNZIP
-if (%~x1)==(.7z) goto UNZIP
-if (%~x1)==(.mou) goto WINMOUNT
+if /I (%~x1)==(.zip) goto UNZIP
+if /I (%~x1)==(.rar) goto UNZIP
+if /I (%~x1)==(.ace) goto UNZIP
+if /I (%~x1)==(.7z) goto UNZIP
+if /I (%~x1)==(.mou) goto WINMOUNT
 
 :LOAD
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after

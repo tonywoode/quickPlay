@@ -6,8 +6,7 @@ OR CALLED IT PROPERLY. SORRY. CLOSE THIS README TO CONTINUE
 
 USAGE: Multiloader ["PATH TO ROM"] ["PATH TO EMU"] ["EMU PARAMETERS" {eg: "-CD"}] ["DIRECT MOUNT" {PASS IMAGE TO EMULATOR INSTEAD OF TO DEAMON TOOLS - 1 is yes, anything else is no}]
 
-MULTILOADER is a loader script for CD and DVD images to use with QuickPlay that can also use Daemon Tools, 7Zip and Winmount to mount and
-run pretty much any CD/DVD compressed/uncompressed image type in any emulator. It is separate from Quickplay and this is not ideal (Quickplay will soon run the code itself), but it does give a lot of flexibility. We can now even bypass having to uncompress images (if you use Winmount and your image is in .mou format: Using a tool like winmount that can access compressed images is good because it takes ages to decompress a DVD)
+MULTILOADER is a loader script for CD and DVD images to use with QuickPlay that can also use Daemon Tools, 7Zip and Winmount to mount and run pretty much any CD/DVD compressed/uncompressed image type in any emulator. It is separate from Quickplay and this is not ideal (Quickplay will soon run the code itself), but it does give a lot of flexibility. We can now even bypass having to uncompress images (if you use Winmount and your image is in .mou format: Using a tool like winmount that can access compressed images is good because it takes ages to decompress a DVD)
 
 Multiloader does this:
 	1) Accesses almost all types of CD/DVD image formats, whether or not the image has been compressed as .7z, .zip, .rar, .mou etc

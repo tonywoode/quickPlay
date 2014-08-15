@@ -121,35 +121,31 @@ Begin
   //and check if we are going to omit the emu call when we run (for multiloader - see UExe)
 
   OldParam := Emu.Parameters;
-  OldShortExe := Emu.ShortExe;
+  OldShortExe := Emu.ShortExe; //we don't want to actually permanently change this value for the emulator
   try
     Emu.Parameters := TxtParam.Text;
     If ChkShortExe.Checked then
     begin
         EPath := ExtractShortPathName(Emu.path) + ' ';
-        Emu.ShortExe := ChkShortEXE.Checked;
+        {we need to kick off the listener to change the text for 8:3 status if the emu call is not the 1st arg.
+        This doesn't actually make the command-line change, that's done in UExe - its just for the run dialog text }
+         Emu.ShortExe := ChkShortEXE.Checked;
     end
     else
     begin
         EPath := Emu.path + ' ';
-        Emu.ShortExe := ChkShortEXE.Checked;
+        Emu.ShortExe := ChkShortEXE.Checked;  //ditto if the state has changed the text in the run dialog needs to change
     end;
     { Mutliloader functionality: If we've called %EXEPATH% we'll assume
       user doesn't want to call the emulator as the first arg. }
 
     if AnsiContainsText(Emu.parameters, '%EXEPATH%') then
-      begin
-        result := Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
-        //Emu.ShortExe := ChkShortEXE.Checked;
-      end
+        result := Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath)
     else
-      begin
         result := Epath + Emu.DecodeParameterVariables(ROM, MainFrm.ToolList, RPath);
-
-      end;
   finally
     Emu.Parameters := OldParam;
-    Emu.ShortExe := OldShortExe;
+    Emu.ShortExe := OldShortExe;  //return the 8:3 status just like John did with params in the line above. Not ideal.
   end;
 End;
 

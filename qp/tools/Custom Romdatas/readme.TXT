@@ -22,7 +22,4 @@ These are currently available at http://www.quickplayfrontend.com/index.php?show
 
 Please visit there if you'd like to set these up
 
-
-
 ******************************************************
-butter100fly 2012 

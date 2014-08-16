@@ -38,6 +38,7 @@ for /f "tokens=2* delims==" %%J in ('find "NOMOUNT=" ^< multiloader.ini') do (se
 :CMD_LINE_EMU
 if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
+:CHECK_EMU
 ::If there isn't an emu, we have an error that will hang the script, bomb out instead
 IF EXIST %EMU% GOTO CARRYON
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
@@ -62,31 +63,31 @@ if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 
 :: Mount daemon tools, load emu and passes full rom path to it
 :: After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
-
 if exist "C:\Program Files\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTLite.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe"
-if (%_DT%)==() echo. You don't seem to have Deamon Tools installed, this isn't going to work
+if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools executable ""DTLite.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 %_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
 %_DT% -unmount SCSI, 0
 
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH
-"C:\Program Files\WinMount\winmount" -unmountall
+%_WM% -unmountall
 if exist "%_SCRIPTDIR%ForciblyWinmount.exe" start "" "%_SCRIPTDIR%ForciblyWinmount.exe"
 goto FINISH
 
 :WINMOUNT
-::Pass arguements to winmount. If winmount wasn't already running, it was hanging the script. 
+::Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. 
 ::So start it and don't wait as the loop does the waiting for it
-
 ::set flags first to tell script later that we are doing winmount
+::note the user must have drive X free. I'd prefer this than trying to mount B:
+if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
 set _TEMPDIR="x:\"
 
 if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
-if (%_WM%)==() echo. You don't seem to have Winmount installed, this isn't going to work
+if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 start "" %_WM% -m %1 -drv:x:\
 
 :watch
@@ -94,8 +95,12 @@ IF EXIST x:\*.* goto mount
 goto watch
 
 :UNZIP
+if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
+if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
+if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 :: 7zip uncompresses image files and names its folder in rom dir after archive file 
-"C:\Program Files\7-Zip\7z.exe" e %1 -o%_TEMPDIR%
+:: We will always overwrite if files exists, the tempdir is 8:3 named so enourmously unlikely to be yours
+%_7Z% e %1 -o%_TEMPDIR% -y
 goto MOUNT
 
 :MOUNT
@@ -105,7 +110,18 @@ goto MOUNT
 FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%Y"
 goto LOAD
 
+:ERROR_POPUP
+::http://stackoverflow.com/questions/774175/how-can-i-open-a-message-box-in-a-windows-batch-file
+echo X=MSGBOX (%ERROR_MESSAGE%,0+48,"QuickPlay Multiloader Error") > %temp%\TEMPmessage.vbs
+call %temp%\TEMPmessage.vbs
+del %temp%\TEMPmessage.vbs /f /q
+::echo X=MsgBox("Message Description",0+16,"Title") >msg.vbs
+::–you can write any numbers from 0,1,2,3,4 instead of 0 (before the ‘+’ symbol) & here is the meaning of each number:
+::0 = Ok Button, 1 = Ok/Cancel Button, 2 = Abort/Retry/Ignore button, 3 = Yes/No/Cancel, 4 = Yes/No  
+::–you can write any numbers from 16,32,48,64 instead of 16 (after the ‘+’ symbol) & here is the meaning of each number:
+::16 – Critical Icon, 32 – Warning Icon, 48 – Warning Message Icon, 64 – Information Icon  
+
 :FINISH
 if exist %_TEMPDIR% rd /s /q %_TEMPDIR%
-FOR %%Z IN (EMU OPTIONS _TEMPDIR _ROMNAME _DT _WM _WINMOUNTING NOMOUNT) DO SET %%Z=
+FOR %%Z IN (EMU OPTIONS _TEMPDIR _ROMNAME _DT _7Z _WM _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 exit

@@ -1,4 +1,4 @@
-QUICKPLAY MULTI LOADER SCRIPT 	V1.2.0.4 	 butter100fly 2014
+QUICKPLAY MULTI LOADER SCRIPT 	V1.3.0.0 	 butter100fly 2014
 ************************************************************************
 THE README HAS OPENED, PROBABLY BECAUSE YOU HAVEN'T SET THIS TOOL UP
 OR CALLED IT PROPERLY. SORRY. CLOSE THIS README TO CONTINUE
@@ -29,14 +29,18 @@ See the "multiloader" EFind
 
 OR, TO SETUP MANUALLY IN QUICKPLAY
 ----------------------------------
-Imagine I have setup the PC Engine-CD emulator emulator Mednafen and I find that I have zipped .bin and .cue image files for my CD games. When I select it in Quickplay, I want a way to extract a game, pass it directly to mednafen, and start mednafen.
+Imagine I have setup the PC-Engine CD emulator emulator Mednafen and I find that I have zipped .bin and .cue image files for my CD games. When I select it in Quickplay, I want a way to extract a game, pass it directly to mednafen, and start mednafen.
 
-We will setup a new emulator in Quickplay for the system we wish to load (say, NEC PC-Engine) That means we probably want to name the emulator "Mednafen PC-Engine Multiloader". We setup the emulator as if we are setting up Mednafen - we provide the path to mednafen.exe.
+We will setup a new emulator in Quickplay for the system we wish to load (say, NEC PC-Engine). That means we probably want to name the emulator "Mednafen PC-Engine Multiloader". We setup the emulator as if we are setting up Mednafen - we provide the path to mednafen.exe.
 Then we do this in the Command Line Parameters section:  In the command to run we fill in this:
 
-%Tool:MULTILOADER% "%EXEPATH%" "-cd"
+%Tool:MULTILOADER% "%ROM%" "%EXEPATH%" "-cd"
 
-NOTE THE QUOTATION MARKS. This will launch the Mutliloader tool setup by default in Quickplay (If you look at the tool you'll see it calls "%ROM%" for you), passing "%EXEPATH%" passes the path you just setup to Mednafen, and then passing the -cd parameter passes that parameter to Mednafen itself. The script will uncompress your image for you and pass it to Daemon tools. 
+NOTE THE QUOTATION MARKS. This will 
+*launch the Mutliloader tool setup by default in Quickplay
+*pass the Rom filepath to it so it can work out what to do with it
+*next passing "%EXEPATH%" passes the path you just setup to Mednafen
+*and then lastly passing the -cd parameter passes that parameter to Mednafen itself. The script will uncompress your image for you and pass it to Daemon tools. 
 
 If, instead, Mednafen could take the uncompressed image file directly, so we didn't need Daemon Tools to mount it, we would tell Multiloader to 'Directly Mount' with a 1 at the end, like so:
 
@@ -44,7 +48,7 @@ If, instead, Mednafen could take the uncompressed image file directly, so we did
 
 Note how we need the "" even with no parameters, and we need the 1 in quote marks also
 
-WE ALSO SHOULD TICK ALL THE BOXES FOR COMPRESSION TYPES IN THE EMULATOR SETUP - that's because we WANT Quickplay to pass compressed images to the script, and not try to decompress the image itself
+WE ALSO SHOULD TICK ALL THE BOXES FOR COMPRESSION TYPES IN THE EMULATOR SETUP - that's because we WANT Quickplay to pass compressed images to the script, and not try to decompress the image itself (QuickPlay's own decompression features are more useful for goodmerge sets than for compressed disk images)
 
 
 
@@ -58,8 +62,8 @@ WE ALSO SHOULD TICK ALL THE BOXES FOR COMPRESSION TYPES IN THE EMULATOR SETUP - 
 Here are some notes for advanced use:
 
 * remember that 7zip, Deamon tools and Winmount need to be at the default install locations ie: C:\Program Files\Winmount\Winmount.exe - the functions that use the progs won't work unless they are
-* some of the more "exotic" game names you might want to select "use short name (8:3) for exe's" in QP or call "shortrom" - this just makes the command line shorter as over a certain character limit it will refuse to work or error. This only applies to a very few systems' games
-* Includes a compiled autoHK script (forciblyunmount.exe) that gets around a problem with winmount where if you have multiple explorer windows open it pulls up a prompt when you exit the game.
+* some of the more "exotic" game names you might want to select "use short name (8:3) for exe's" in QP and/or call "shortrom" - this just makes the command line shorter as over a certain character limit it will refuse to work or error. This only applies to a very few systems' games
+* Includes a compiled autoHK script (forciblyunmount.exe) that gets around a bug with winmount where if you have multiple explorer windows open it pulls up a prompt when you exit the game.
 * works with 64-bit default install locations for the apps it uses, or 32-bit default install locations, prefers 64-bit locations
 * has an ini file for standalone use where you can state the path to your emulator (just put e.g.: dolphin.exe if your running it from the emulator directory). Then you don't need quickplay - you can just drag an image file onto the script. (good for testing)
 * Its just a compiled cmd script with icon and the autohk script added - see the source folder for the full soure code (you don't need this folder)

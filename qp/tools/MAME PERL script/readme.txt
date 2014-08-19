@@ -3,7 +3,7 @@ QP_MAME_ROMDATA_EXTRAS-V1.4 - PERL SCRIPT BY ORFAX - README BY BUTTER100FLY
 
 ***This is not a GUI-based tool - you have to do some work*******
 *******************This just opens this readme*********************
-***The script can be found in QP's TOOLS folder in the "MAME PERL Script" folder*******
+***The script can be found in QP's TOOLS folder in the "MAME PERL Script\QP_MAME_ROMDATA_SCRIPT" folder*******
 
 -----CLOSE THIS WINDOW TO CONTINUE BACK TO QP--------
 

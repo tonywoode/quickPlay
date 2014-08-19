@@ -1,4 +1,11 @@
 @echo off
+echo.Really Delete all these QuickPlay directories?
+choice
+IF NOT ERRORLEVEL 2 IF ERRORLEVEL 1 goto CARRYON
+exit
+
+:CARRYON
+echo.OK let's delete this data && pause
 echo.Cleaning Up QP Directory for Release
 cd qp
 rd /S /Q data

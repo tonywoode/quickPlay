@@ -11,5 +11,5 @@ as a ROM and use the Start command as the "Emulator". Alternatively if you have 
 (for instance if you have setup a windows game to get passed parameters by using a shortcut)
 you can use Explorer instead of start if you want to.
 
-You'll find the start command also setup here as a Tool in QuickPlay, so you can also call %TOOL:START% in a command
+You'll find the start command also setup here as a Tool in QuickPlay, so you can also call %TOOL:Start% in a command
 line if you need

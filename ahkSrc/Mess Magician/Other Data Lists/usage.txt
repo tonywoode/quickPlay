@@ -1,0 +1,29 @@
+<info name="usage" value="CD-Rom System Card required" />
+<info name="usage" value="CoCo 3 Only" />
+<info name="usage" value="Enter 'SYS 20182' to run" />
+<info name="usage" value="Enter 'SYS 24576' to run" />
+<info name="usage" value="Enter 'SYS 28681' to run" />
+<info name="usage" value="Enter 'SYS 32592' to run" />
+<info name="usage" value="Enter 'SYS 32692' to run" />
+<info name="usage" value="Enter 'SYS 40960' to run" />
+<info name="usage" value="Enter 'SYS 41000' to run" />
+<info name="usage" value="Enter 'SYS 45056' to run" />
+<info name="usage" value="Enter 'SYS 700' to run" />
+<info name="usage" value="Game Express CD Card required" />
+<info name="usage" value="Game Paddles required" />
+<info name="usage" value="OSb required" />
+<info name="usage" value="Requires a Kantronics interface II" />
+<info name="usage" value="Requires a Pocket Modem" />
+<info name="usage" value="Requires driving controller" />
+<info name="usage" value="Requires ECS and Intellivoice"/>
+<info name="usage" value="Requires ECS and Keyboard"/>
+<info name="usage" value="Requires ECS and Music Synthesizer"/>
+<info name="usage" value="Requires roller controller" />
+<info name="usage" value="Requires Super Action Controllers" />
+<info name="usage" value="Supports driving controller" />
+<info name="usage" value="Supports roller controller" />
+<info name="usage" value="Supports Super Action Controllers" />
+<info name="usage" value="This cart has unique Left and Right overlays"/>
+<info name="usage" value="Uses Intellivoice"/>
+<info name="usage" value="Will not run on Intellivision 2"/>
+<info name="usage" value="You must type 'X=USR(32768)' from the BASIC prompt to initialize it." />

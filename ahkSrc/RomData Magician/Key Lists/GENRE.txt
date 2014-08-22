@@ -1,0 +1,253 @@
+Action¬Compilation / Action¬Compilation / Multi-Genre Action
+Action / 2D¬Action / 2D Action
+Action / 3D¬Action / 3D Action¬Action / Third-Person 3D Action
+Action / Ability
+Action / Combat¬Action / Side-Scrolling Combat
+Action / 1st Person¬Action / First-Person Action
+Action / Flight Combat¬Action / Flight Combat Sim
+Action / Multi-Genre¬Action / Multi-Genre Action
+Action / Overhead View¬Action / Overhead View Action
+Action / Stealth
+Adventure¬Compilation / Adventure
+Adventure / Action¬Adventure / Action Adventure¬Action / Adventure¬Action / Action Adventure
+Adventure / 1st Person¬Adventure / First-Person Adventure
+Adventure / Interactive Movie
+Adventure / Survival Horror
+Adventure / Text-Based¬Adventure / Text-Based Adventure
+Adventure / 3rd Person¬Adventure / Third-Person Adventure
+Application
+Arcade
+Battleship
+Blank
+Ball & Paddle¬Action / Ball and Paddle
+BIOS¬Bios
+Breakout
+Breakout *Mature*
+Casino¬Slot machine¬Gambling¬Traditional / Gambling
+Casino *Mature*¬X/Adult / Adult Casino Game
+Climbing
+Compilation¬Compilation / Miscellaneous Collection¬Compilation / Multi-Genre Compilation
+Computing¬Home / Computer Maintenance¬Home / Desktop Customization¬Home / Development Tools¬Home / Operating System
+Demo
+Driving¬Racing¬Racing / Arcade¬Racing / Driving¬Racing / Miscellaneous Racing¬Racing/Car¬Racing/Motor¬Platform/Racing¬Compilation / Racing¬Moto racing¬Racing / Demolition/Combat¬Racing / Extreme Racing¬Racing / Futuristic Racing¬Racing / Futuristic-Extreme¬Racing / Go-Kart Racing¬Racing / Kart¬Racing / Miniature/Radio Control Racing¬Racing / Mission-Based Racing¬Racing / Monster Truck Racing¬Racing / Rally/Off-Road Racing¬Racing / Snowmobile Racing
+Driving / 1st Person
+Driving / Boat¬Racing / Boat/Watercraft Racing
+Driving / Plane¬Racing / Aircraft Racing
+Driving / Race¬Driving/Race¬Racing / Overhead View Racing¬Racing / Drag Racing
+Driving / Race (chase view)¬Driving/Race Chase
+Driving / Race (chase view) Bike
+Driving / Race 1st Person Bike¬Driving / Race 1st P Bike
+Driving / Race 1st Person
+Driving / Race Bike¬Racing / Bike ¬Racing / Bike¬Racing / Motocross¬Racing / Motorcycle Racing¬Racing / Bicycling
+Driving / Race Track¬Racing / NASCAR/Stock Car Racing¬Racing/F1-Car¬Racing / Sports Car Racing¬Sports / Sports Car Racing¬F1 racing¬Racing / F1 Simulation¬Racing / Formula-1/Indy Racing
+Editor
+Educational¬Educational / Educational -- General¬Compilation / Educational
+Educational / Art¬Educational / Art/Paint
+Educational / Edutainment¬Edutainment
+Educational / General College
+Educational / General Early Childhood
+Educational / General Elementary
+Educational / General High School
+Educational / General Middle School
+Educational / Geography
+Educational / History
+Educational / Interactive Book
+Educational / Language
+Educational / Math
+Educational / Music
+Educational / Quiz Game
+Educational / Reading
+Educational / Science
+Educational / Social Interaction
+Educational / Spelling
+Educational / Sports Instruction
+Educational / Test Preparation
+Educational / Typing
+Educational / Writing
+Emulator
+Fighter / 2.5D¬Fighter/Horizontal 2.5D
+Fighter / 2D¬Fighter/Horizontal 2D¬Fighting / 2D Fighting
+Fighter / 3D¬Fighting / 3D Fighting
+Fighter / Field
+Fighter / Misc.¬Fighter¬Fighting¬Fighting / Beat 'em up¬Compilation / Fighting¬Fighter/Adventure
+Fighter / Multiplay
+Fighter / Versus¬Fighter/Versus¬Fighting / Versus
+Fighter / Versus *Mature*
+Fighter / Versus Co-op
+Fighter / Vertical
+Game Creator
+Game Enhancer
+Hack
+Home¬Compilation / Home
+Home / Design¬Home / Art/Paint¬Home / Crafts/Design¬Home / Home Design/Improvement¬Drawing
+Home / Fashion and Beauty
+Home / Genealogy
+Home / Personal Management
+Home / Productivity¬Home / Productivity / Productivity
+Home / Reference
+Maze¬Action / Maze¬Maze/Surround
+Maze *Mature*
+Maze / Digging¬Maze/Digging
+Maze / Digging *Mature*
+Maze / Driving¬Maze/Car¬Maze/Driving
+Maze / Fighter
+Maze / Outline
+Maze / Outline *Mature*
+Maze / Shooter Large
+Maze / Shooter Small
+Maze / Shooter Small *Mature*
+Maze / Surround
+Mini-Games
+Misc.¬Action / Miscellaneous¬Misc¬Misc.¬Traditional / Miscellaneous Game¬Various¬Other¬Action / Party¬Board Game / Party¬Boyd File¬Breeding¬Buena Vista Interactive¬Compilation / Traditional¬Garfield - Big¬¬Simulation / Giant Robot Sim¬Space¬Spaceship¬Traditional¬Traditional / Game Show¬Traditional / Hidden Object¬Traditional / Logic Game¬Traditional / Trivia Game¬Traditional / Word Game
+Misc. *Mature*¬Adult¬Adult/Misc¬X/Adult / Adult Miscellaneous¬X/Adult / Adult Action Game¬X/Adult / Adult Game Show¬X/Adult / Adult Graphic Adventure¬¬X/Adult / Adult Screen Saver¬X/Adult / Adult Text-Based Adventure
+Multiplay
+Multiplay *Mature*
+Music
+Music / Movie¬Home / Movies/Music
+Movie
+Movie *Mature*¬X/Adult / Adult Interactive Movie¬X/Adult / Adult Movie
+Pinball
+Pinball / 2D¬Traditional / 2D Pinball
+Pinball / 3D¬Traditional / 3D Pinball
+Pinball *Mature*
+Pinball / Pachinko *Mature*
+Platform¬Action / Fixed Screen Platform¬Platform / Adventure
+Platform / 2D
+Platform / 3D¬Action / 3D Platform
+Platform / Fighter¬Platform/Fighter
+Platform / Fighter Scrolling¬Platform/Fighter Scrolling
+Platform / Run Jump¬Platform/Run Jump
+Platform / Run Jump *Mature*
+Platform / Run Junp Scrolling¬Platform/Run Jump Scrolling
+Platform / Shooter¬Action / Platform Shooter¬Platform/Shooter
+Platform / Shooter Scrolling¬Action / Side-Scrolling Platform
+Puzzle¬Platform / Puzzle¬Puzzle / Ability¬Puzzle / Action Puzzle¬Puzzle / Adventure Puzzle¬Puzzle/Platform¬Action / Action Puzzle¬Compilation / Puzzle
+Puzzle *Mature*¬X/Adult / Adult Puzzle Game
+Puzzle / Cards¬¬Traditional / Card Game¬Cards
+Puzzle / Cards *Mature*¬X/Adult / Adult Card Game
+Puzzle / Drop¬Puzzle/Drop
+Puzzle / Drop *Mature*
+Puzzle / Match
+Puzzle / Match *Mature*
+Puzzle / Maze¬Puzzle / Maze Puzzle¬Puzzle/Maze¬Maze/Puzzle
+Puzzle / Outline¬Puzzle/Outline
+Puzzle / Outline *Mature*
+Puzzle / Sliding¬Puzzle/Sliding¬Traditional / Tile Game¬¬Traditional / Jigsaw Puzzle
+Puzzle / Sliding *Mature*
+Puzzle / Toss
+Puzzle / Toss *Mature*
+Quiz¬Quiz game
+Quiz / Chinese
+Quiz / English
+Quiz / English *Mature*
+Quiz / French
+Quiz / German
+Quiz / Italian
+Quiz / Japanese
+Quiz / Japanese *Mature*
+Quiz / Korean
+Quiz / Music English
+Quiz / Music Japanese
+Quiz / Spanish
+Rhythm¬Simulation / Singing/Voice Sim
+Rhythm / Dance¬Simulation / Dancing Sim
+Rhythm / Instruments¬Simulation / Musical Instrument/Band Sim
+Role-Playing¬Role-Playing (RPG)¬RPG¬RPG (Rol Playing Game)¬Role-Playing / Miscellaneous¬Simulation / RPG
+Role-Playing / 1st Person¬Role-Playing / 1st Person RPG¬Role-Playing / First-Person RPG¬Role-Playing / First-Person Action RPG¬Compilation / Role-Playing
+Role-Playing / Isometric¬Role-Playing / Isometric RPG¬Role-Playing / Isometric Action RPG
+Role-Playing / Persistent World Online RPG
+Role-Playing / 3rd Person 2D¬Role-Playing / Third-Person 2D RPG¬Role-Playing / Third-Person 2D Action RPG
+Role-Playing / 3rd Person 3D¬Role-Playing / Third-Person 3D RPG¬Role-Playing / Third-Person 3D Action RPG
+Shooter / 1st Person¬FPS¬Shooter / First-Person Shooter¬Shooter / FPS (First Person Shooter)¬Shooter/1st Person
+Shooter / 2D
+Shooter / 3rd Person¬Shooter / TPS (Third Person Shooter)¬Shooter/3rd Person
+Shooter / 3D¬Shooter/3D¬Shooter / Third-Person 3D Shooter
+Shooter / Command
+Shooter / Driving¬Shooter/Car¬Shooter/Driving¬Shooter / Vehicle Shooter
+Shooter / Driving (chase view)
+Shooter / Driving 1st Person
+Shooter / Driving Diagonal¬Shooter/Driving Diagonal
+Shooter / Driving Horizontal
+Shooter / Driving Vertical
+Shooter / Field¬Shooter/Field
+Shooter / Field *Mature*
+Shooter / Flying¬Shooter / Aerial fighting¬Shooter/Flying¬Aerial fighting
+Shooter / Flying (chase view)
+Shooter / Flying 1st Person
+Shooter / Flying Diagonal¬Shooter/Flying Diagonal
+Shooter / Flying Horizontal¬Shooter/Flying Horizontal
+Shooter / Flying Horizontal *Mature*
+Shooter / Flying Vertical¬Shooter/Flying Vertical
+Shooter / Flying Vertical *Mature*
+Shooter / Gallery¬Shooter/Gallery
+Shooter / Gallery *Mature*
+Shooter / Gun¬Shooter/Gun¬Gun shooter¬Shooter / Shooter with Weapon Peripheral
+Shooter / Misc.¬Shooter¬Action / Fixed Screen Shooter¬Compilation / Shooter¬Shooter / Fixed Screen Shooter¬Shooter / Overhead Free-Roaming Shooter¬Shooter / Platform Shooter¬Shooter / Squad-Based Shooter¬Shooter/Space¬Shooter/Sub
+Shooter / Misc. Horizontal¬Shooter / Side-Scrolling Shooter
+Shooter / Misc. Vertical¬Shooter / Vertical Scrolling Shooter
+Shooter / Versus
+Shooter / Walking¬Shooter/Walking
+Simulation¬Simulation / Miscellaneous Sim¬Compilation / Simulation¬Racing / Simulation
+Simulation / Business¬Simulation / Business Sim
+Simulation / Construction¬Simulation / Construction/Building Sim
+Simulation / Dating¬Simulation / Dating Sim
+Simulation / Flight¬Simulation / Flight Sim¬Simulation / Flight Combat Sim
+Simulation / Ground Vehicle Combat¬Simulation / Ground Vehicle Combat Sim
+Simulation / Life Development¬Simulation / Life Development Sim
+Simulation / Political¬Simulation / Political Sim
+Simulation / Space Combat¬Simulation / Space Combat Sim
+Simulation / Sports Management¬Simulation / Sports Management Sim
+Simulation / Train¬Simulation / Train Sim
+Sports¬Sports / Misc.¬Sports / Miscellaneous Sport¬Sports / Multi-Sports¬Sports/Misc¬Compilation / Sports¬Sports / Billiards¬Sports / Cricket¬Sports / Extreme Sports¬Sports / Football¬Sports / Futuristic¬Sports / Hunting¬Sports / Ice Skating¬Sports / Inline Skating¬Sports / Mixed Martial Arts¬Sports / Olympics¬Sports / Rugby¬Sports / Shooting¬Sports / Snowboarding¬Sports / Surfing¬Sports / Water Skiing¬Sports/Olympic¬Racing / Running¬Rugby
+Sports / Armwresting
+Sports / Baseball¬Sports/Baseball¬Baseball
+Sports / Basketball¬Sports/Basketball¬Basketball
+Sports / Bowling¬Bowling¬Sports/Bowling
+Sports / Boxing¬Boxing¬Sports/Boxing
+Sports / Bull Fighting
+Sports / Darts
+Sports / Dodgeball¬Sports / Dodge Ball¬Sports/DodgeBall
+Sports / Fishing¬Fishing
+Sports / Football Amer.¬Football Amer.¬Football US¬Sports / Football (American)¬Sports/Football Amer.
+Sports / Footbal Rugby
+Sports / Golf¬Golf¬Sports / Golf / Golf¬Sports / Miniature Golf¬Sports/Golf¬Sports/MiniGolf
+Sports / Handball
+Sports / Hang Gliding¬Sports / Gliding/Parachuting
+Sports / Hockey¬Hockey¬Sports/Hockey
+Sports / Horse Racing¬Racing / Horse¬Racing / Horse Racing
+Sports / Horseshoes
+Sports / Multiplay
+Sports / Ping pong
+Sports / Pool¬Pool¬Sports/Pool
+Sports / Pool *Mature*
+Sports / Shuffleboard
+Sports / Skateboarding¬Sports/Skateboarding
+Sports / Skiing
+Sports / SkyDiving
+Sports / Soccer¬Soccer¬Sports/Soccer
+Sports / Sumo¬Sports/Sumo
+Sports / Swimming¬Sports/Swimming
+Sports / Tennis¬Sports/Tennis¬Tennis
+Sports / Track & Field
+Sports / Volleyball¬Sports/VolleyBall¬Volleyball
+Sports / Wrestling¬Wrestling
+Strategy¬Role-Playing / Strategy RPG¬Strategy / RPG¬Strategy / Action Strategy¬Compilation / Strategy¬Simulation / Naval Combat Sim
+Strategy / 2D Real-Time¬Strategy / 2D Real-Time Strategy
+Strategy / 3D Real-Time¬Strategy / 3D Real-Time Strategy
+Strategy / 2D Turn-Based¬Strategy / 2D Turn-Based Strategy¬Simulation / 2D Turn-Based Strategy
+Strategy / 3D Turn-Based¬Strategy / 3D Turn-Based Strategy
+Strategy / Card Battle
+Strategy / Empire-Building¬Simulation / World-Building Sim
+Strategy / Persistent World Online RTS
+Tabletop¬Traditional / Board Game¬Board game¬Boardgame
+Tabletop / Chess¬Board Game / Chess¬Chess
+Tabletop *Mature*¬X/Adult / Adult Board Game
+Tabletop / Hanafuda¬Board Game / Hanafuda
+Tabletop / Hanafuda *Mature*
+Tabletop / Mahjong¬Mahjong¬Board Game / Mahjong
+Tabletop / Mahjong *Mature*
+Tabletop / Othello
+Tabletop / Othello *Mature*
+Tabletop / Renju
+Tabletop / Shougi
+Utility

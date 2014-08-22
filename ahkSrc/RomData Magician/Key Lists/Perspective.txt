@@ -1,0 +1,27 @@
+1st Person¬1st-Person Perspective
+1st Person / Action¬First-Person Action
+1st Person / Adventure¬First-Person Adventure
+1st Person / Shooter¬First-Person Shooter
+2D / Action¬2D Action
+2D / Fighter¬2D Fighting
+2D / Strategy Real-Time¬2D Real-Time Strategy
+2D / Strategy Turn-Based¬2D Turn-Based Strategy
+3D / Strategy Real-Time¬3D Real-Time Strategy
+3rd Person¬3rd-Person Perspective
+Fixed Screen / Platform¬Fixed Screen Platform
+Fixed Screen / Shooter¬Fixed Screen Shooter
+¬Misc.¬Giant Robot Sim¬Hidden Object¬Logic Game¬Party¬Trivia Game¬Word Game¬Action Adventure¬Miscellaneous Adaptor¬Adventure¬Text-Based Adventure¬Adventure Puzzle¬Ball and Paddle¬Board Game¬Card Game¬Combat¬Demolition/Combat¬Development Tools¬Educational -- General¬Football (American)¬Formula-1 / Indy Racing¬Formula-1/Indy Racing¬Gambling¬Geography¬Golf¬Ground Vehicle Combat Sim¬Hunting¬Interactive Movie¬Maze¬Motorcycle Racing¬Multi-Genre Action¬Music¬Persistent World Online RPG¬Personal Management¬Printer¬Action Puzzle¬Quiz Game¬Reference¬Miscellaneous Sim¬Business Sim¬Sports Management Sim¬Flight Sim¬Miscellaneous Sport¬Strategy RPG
+Isometric
+Overhead¬Top-Down
+Overhead / Free-Roaming / Shooter¬Overhead Free-Roaming Shooter
+Overhead / Action¬Overhead View Action
+Overhead / Racing¬Overhead View Racing
+Platform¬Platform Shooter
+Horizontal Scrolling¬Side-Scrolling
+Horizontal Scrolling / Combat¬Side-Scrolling Combat
+Horizontal Scrolling / Platform¬Side-Scrolling Platform
+Horizontal Scrolling / Shooter¬Side-Scrolling Shooter
+3rd Person 2D / Role-Playing¬Third-Person 2D RPG
+3rd Person 3D / Role-Playing¬Third-Person 3D Action RPG¬Third-Person 3D RPG
+3rd Person / Adventure¬Third-Person Adventure
+Vertical Scrolling / Shooter¬Vertical Scrolling Shooter

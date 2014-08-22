@@ -1,0 +1,33 @@
+<info name="programmer" value="	Bill Aspromonte"/>
+<info name="programmer" value="Alan Miller"/>
+<info name="programmer" value="Bob Whitehead"/>
+<info name="programmer" value="Brad Stewart"/>
+<info name="programmer" value="Carol Shaw"/>
+<info name="programmer" value="Christopher H. Omarzu"/>
+<info name="programmer" value="Craig Nelson"/>
+<info name="programmer" value="Dan Hitchens"/>
+<info name="programmer" value="Dave Rolfe"/>
+<info name="programmer" value="David Crane"/>
+<info name="programmer" value="David Rolfe"/>
+<info name="programmer" value="Dennis Koble"/>
+<info name="programmer" value="Dennis M. Kiss"/>
+<info name="programmer" value="Douglas Neubauer"/>
+<info name="programmer" value="Ed Temple"/>
+<info name="programmer" value="Garry Kitchen"/>
+<info name="programmer" value="Gary Palmer"/>
+<info name="programmer" value="Gary Shannon"/>
+<info name="programmer" value="Grady Ward"/>
+<info name="programmer" value="Hal Finney"/>
+<info name="programmer" value="Hal Finney, Glenn Hightower"/>
+<info name="programmer" value="Howard Scott Warshaw"/>
+<info name="programmer" value="Joel H. Martin"/>
+<info name="programmer" value="John	Perkins"/>
+<info name="programmer" value="John Russell"/>
+<info name="programmer" value="Larry Kaplan"/>
+<info name="programmer" value="Larry Zwick"/>
+<info name="programmer" value="Michael Callahan"/>
+<info name="programmer" value="Michael Case, Lenny Carlson"/>
+<info name="programmer" value="Michael Feinstein"/>
+<info name="programmer" value="Steve Cartwright"/>
+<info name="programmer" value="Steve Woita"/>
+<info name="programmer" value="Warren Robinett"/>

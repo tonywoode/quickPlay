@@ -1,0 +1,38 @@
+<info name="author" value=" Peter Jennings" />
+<info name="author" value="Al Baker" />
+<info name="author" value="Andreas Arens" />
+<info name="author" value="B.J. Chambless" />
+<info name="author" value="Dale A. Lear" />
+<info name="author" value="Dale Disharoon &amp; Bill Groetzinger " />
+<info name="author" value="Dan Gorlin" />
+<info name="author" value="Dave Rolfe" />
+<info name="author" value="David Crandall" />
+<info name="author" value="David Levy &amp; Richard Lang" />
+<info name="author" value="Douglas J. Morgan, Phil Landmeier, Keith Kiyohara, and April Landmeier" />
+<info name="author" value="Glenn Sogge" />
+<info name="author" value="Greg L. Zumwalt &amp; Mark W. Easter" />
+<info name="author" value="Greg Zumwalt &amp; Mark Easter" />
+<info name="author" value="Greg Zumwalt" />
+<info name="author" value="Harlow B. Staley" />
+<info name="author" value="J.G. Johnson &amp; P.J. Rihan" />
+<info name="author" value="James Garon" />
+<info name="author" value="Jesse Taylor" />
+<info name="author" value="John Gabbard" />
+<info name="author" value="Kenneth Kalish" />
+<info name="author" value="Leah R. O&apos;Connor" />
+<info name="author" value="Lou Haehn" />
+<info name="author" value="M. Voorsanger" />
+<info name="author" value="M.J. Kerry" />
+<info name="author" value="Michael Aichlmayr" />
+<info name="author" value="Michael Marks &amp; Peter Jennings" />
+<info name="author" value="Mike Kerry" />
+<info name="author" value="Paul Kanevsky" />
+<info name="author" value="Rick Adams" />
+<info name="author" value="Robert Arnstein" />
+<info name="author" value="Robert G. Kilgus" />
+<info name="author" value="Ron Krebs" />
+<info name="author" value="Scott A. Cabit" />
+<info name="author" value="Steve Bjork" />
+<info name="author" value="Tim Swisher" />
+<info name="author" value="TJZ &amp; RJT" />
+<info name="author" value="Tom Loughry" />

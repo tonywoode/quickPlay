@@ -1,0 +1,4 @@
+<feature name="rotation" value="LEFT" />
+<feature name="rotation" value="RIGHT" />
+<feature name="mirroring" value="horizontal" />
+<feature name="mirroring" value="vertical" />

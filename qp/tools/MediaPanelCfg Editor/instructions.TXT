@@ -1,7 +1,7 @@
 QuickPlay Media Panel Config Editor
 by Matt McLemore aka Tempest
 
-1. You can open a .txt file Or you can edit your MediaPanelCfg.ini by browsing to the MediaPanelCfg.ini, and then selecting a system.You cannot open a system from the MediaPanelCfg.ini that does not have a 'AddInfo' key
+1. You can edit your MediaPanelCfg.ini by selecting a system, or open any .txt file via the open menu.You cannot open a system from the MediaPanelCfg.ini that does not have a 'AddInfo' key
 2. If you wish, you can edit the text in the bottom half of the Gui.
 3. If you edited a system, and wish to save it back to the same system, use 'Save'
 4. If you opened a text file, or wish to save the ini to a different system, use 'Save As'

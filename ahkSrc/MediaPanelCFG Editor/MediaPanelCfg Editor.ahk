@@ -30,9 +30,12 @@ Gui, Add, ListBox, w200 h500 vSystem gGetSelection
 Gui, 1:Default
 GuiControl, Focus, eText
 Gui, Show
-CurrentFile=.\..\..\dats\MediaPanelCfg.ini
-Goto, OpenMediaCfg
-Return
+IfExist,.\..\..\dats\MediaPanelCfg.ini
+{
+	CurrentFile=.\..\..\dats\MediaPanelCfg.ini
+	Goto, OpenMediaCfg
+}
+	Return
 
 ConvertFromHex:
  GuiControlGet, Hex, 1:, eHex

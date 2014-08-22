@@ -10,6 +10,7 @@ Gui, Destroy
 Gui, +AlwaysOnTop
 Menu, FileMenu, Add, &Open%A_Tab%Ctrl+O, OpenFile
 Menu, FileMenu, Add, &Save%A_Tab%Ctrl+S, SaveFile
+Menu, FileMenu, Add, &New System%A_Tab%Ctrl+N, OpenMediaCfg
 ;Menu, FileMenu, Add, &Save As%A_Tab%F12, SaveAs
 Menu, MenuBar, Add, &File, :FileMenu
 Menu, FileMenu, Disable, &Save%A_Tab%Ctrl+S
@@ -29,6 +30,8 @@ Gui, Add, ListBox, w200 h500 vSystem gGetSelection
 Gui, 1:Default
 GuiControl, Focus, eText
 Gui, Show
+CurrentFile=C:\Emulators\QUICKPLAY\QuickPlayFrontend\qp\dats\MediaPanelCfg.ini
+Goto, OpenMediaCfg
 Return
 
 ConvertFromHex:
@@ -70,15 +73,37 @@ Return
 OpenFile:
  Save= 0
  Gui +OwnDialogs
+ 
  FileSelectFile, CurrentFile,,, Open 'QP\dats\MediaPanelCfg.ini' or any text file, *.ini;*.txt
- If CurrentFile =
+ If CurrentFile=
  {
+  MsgBox, Current File = %CurrentFile%
   MsgBox, Press {Ctrl}Q to exit.
   Goto, OpenFile
  }
  Menu, FileMenu, Enable, &Save%A_Tab%Ctrl+S
 ; Menu, FileMenu, Enable, &Save As%A_Tab%F12
- FileRead, FileContents, %CurrentFile%
+ Goto, ParseFile
+Return
+
+OpenMediaCfg:
+ Save= 0
+ Gui +OwnDialogs
+ 
+ ;FileSelectFile, CurrentFile,,, Open 'QP\dats\MediaPanelCfg.ini' or any text file, *.ini;*.txt
+ ;If CurrentFile=
+ ;{
+ ;MsgBox, Current File = %CurrentFile%
+ ;MsgBox, Press {Ctrl}Q to exit.
+ ;Goto, OpenFile
+ ;}
+ Menu, FileMenu, Enable, &Save%A_Tab%Ctrl+S
+; Menu, FileMenu, Enable, &Save As%A_Tab%F12
+ Goto, ParseFile
+Return
+
+ParseFile:
+FileRead, FileContents, %CurrentFile%
  SplitPath, CurrentFile,,,CurrentExt
  If CurrentExt = ini
     GetSystem()

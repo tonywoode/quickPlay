@@ -11,8 +11,10 @@ Gui, +AlwaysOnTop
 Menu, FileMenu, Add, &Open%A_Tab%Ctrl+O, OpenFile
 Menu, FileMenu, Add, &Save%A_Tab%Ctrl+S, SaveFile
 Menu, FileMenu, Add, &New System%A_Tab%Ctrl+N, OpenMediaCfg
+Menu, HelpMenu, Add, &Help%A_Tab%Ctrl+H, HelpFile
 ;Menu, FileMenu, Add, &Save As%A_Tab%F12, SaveAs
 Menu, MenuBar, Add, &File, :FileMenu
+Menu, MenuBar, Add, &Help, :HelpMenu
 Menu, FileMenu, Disable, &Save%A_Tab%Ctrl+S
 ;Menu, FileMenu, Disable, &Save As%A_Tab%F12
 Gui, Menu, MenuBar
@@ -74,6 +76,7 @@ ConvertFromText:
 Return
 
 OpenFile:
+ Gui, +AlwaysOnTop
  Save= 0
  Gui +OwnDialogs
  
@@ -89,6 +92,7 @@ OpenFile:
 Return
 
 OpenMediaCfg:
+ Gui, +AlwaysOnTop
  Save= 0
  Gui +OwnDialogs
  
@@ -118,6 +122,7 @@ FileRead, FileContents, %CurrentFile%
 Return
 
 SaveFile:
+ Gui, +AlwaysOnTop
  Save = 1
  If CurrentExt <> ini
  {
@@ -180,6 +185,14 @@ GetSelection:
  }
  Else
  Gui, 1:Show,, %Title%
+Return
+
+HelpFile:
+ IfExist instructions.txt
+	Gui, -AlwaysOnTop
+	Run instructions.txt
+	WinWait instructions.TXT - Notepad
+	WinActivate
 Return
 
 #IfWinActive ahk_class AutoHotkeyGUI, Hex:

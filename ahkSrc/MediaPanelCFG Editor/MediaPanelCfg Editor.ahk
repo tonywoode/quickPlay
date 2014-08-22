@@ -30,7 +30,7 @@ Gui, Add, ListBox, w200 h500 vSystem gGetSelection
 Gui, 1:Default
 GuiControl, Focus, eText
 Gui, Show
-CurrentFile=C:\Emulators\QUICKPLAY\QuickPlayFrontend\qp\dats\MediaPanelCfg.ini
+CurrentFile=.\..\..\dats\MediaPanelCfg.ini
 Goto, OpenMediaCfg
 Return
 
@@ -77,7 +77,6 @@ OpenFile:
  FileSelectFile, CurrentFile,,, Open 'QP\dats\MediaPanelCfg.ini' or any text file, *.ini;*.txt
  If CurrentFile=
  {
-  MsgBox, Current File = %CurrentFile%
   MsgBox, Press {Ctrl}Q to exit.
   Goto, OpenFile
  }

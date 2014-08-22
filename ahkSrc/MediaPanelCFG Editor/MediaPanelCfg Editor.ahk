@@ -64,8 +64,8 @@ ConvertFromText:
   Char += 0
   TempVar := SubStr(Char,3,2)
   TempVar := StrLen(TempVar) = 1 ? "0" TempVar : TempVar
-  If TempVar in 0A,0D
-     TempVar := "0A0D"
+  ;If TempVar in 0A,0D
+  ;   TempVar := "0A0D"
   Hex.= TempVar
  }
  SetFormat, Integer, d

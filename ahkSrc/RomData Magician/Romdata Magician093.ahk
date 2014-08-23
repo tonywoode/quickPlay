@@ -14,7 +14,7 @@ InitializeVars()
 {
  Global
  ScriptName = RomData Magician
- Version=.92
+ Version=.93
  ScriptIni = RomData Magician.ini
  IfNotExist, %ScriptIni%
    Gosub, CreateIni
@@ -33,8 +33,7 @@ InitializeVars()
  GlobalsFromSection(ScriptIniContent, "Settings")
  IllegalChars := ".,<>:;'""/|\(){}=-+!``%^&*~ "
 
- QPFolder := SubStr( A_ScriptDir, 1, InStr( A_ScriptDir, "\", "False", 0) -1)
- QPFolder := SubStr( QPFolder, 1, InStr( QPFolder, "\", "False", 0) -1)
+ QPFolder=.\..\..
  IfNotExist, %QPfolder%\data\
  {
   MsgBox, %QPfolder%\data\`ndoes not exist.

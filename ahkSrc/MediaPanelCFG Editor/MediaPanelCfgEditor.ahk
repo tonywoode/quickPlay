@@ -95,14 +95,7 @@ OpenMediaCfg:
  Gui, +AlwaysOnTop
  Save= 0
  Gui +OwnDialogs
- 
- ;FileSelectFile, CurrentFile,,, Open 'QP\dats\MediaPanelCfg.ini' or any text file, *.ini;*.txt
- ;If CurrentFile=
- ;{
- ;MsgBox, Current File = %CurrentFile%
- ;MsgBox, Press {Ctrl}Q to exit.
- ;Goto, OpenFile
- ;}
+
  Menu, FileMenu, Enable, &Save%A_Tab%Ctrl+S
 ; Menu, FileMenu, Enable, &Save As%A_Tab%F12
  Goto, ParseFile

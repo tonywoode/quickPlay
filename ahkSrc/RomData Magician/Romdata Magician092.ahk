@@ -1,7 +1,9 @@
+
 #NoEnv
 #SingleInstance Force
 SetWorkingDir, %A_ScriptDir%
-InitializeVars() 
+
+InitializeVars()
 CreateGUIs()
 Gosub, SRLV_Load
 Gui, Show, Maximize, %ScriptName%
@@ -12,16 +14,33 @@ InitializeVars()
 {
  Global
  ScriptName = RomData Magician
+ Version=.92
  ScriptIni = RomData Magician.ini
+ IfNotExist, %ScriptIni%
+   Gosub, CreateIni
+ Loop, 100
+ {
+  Sleep, 50
+  IfExist, %ScriptIni%
+    Break
+  If A_Index = 100
+  {
+   MsgBox, Could not find/create file:`n%A_ScriptDir%\%ScriptIni%
+   ExitApp
+  }
+ }
  FileRead, ScriptIniContent, %ScriptIni%
  GlobalsFromSection(ScriptIniContent, "Settings")
  IllegalChars := ".,<>:;'""/|\(){}=-+!``%^&*~ "
- IfNotExist, %ScriptIni%
-   Gosub, CreateIni
- IniRead, QPFolder, %ScriptIni%, General, QPath, Error
- If (QPFolder = "Error") OR (QPFolder = "")
-    Gosub, GetQPFolder
- Glob(list, QPfolder . "\data\*\RomData.dat", 1,1)  ; Get List of Romdata Folders
+
+ QPFolder := SubStr( A_ScriptDir, 1, InStr( A_ScriptDir, "\", "False", 0) -1)
+ QPFolder := SubStr( QPFolder, 1, InStr( QPFolder, "\", "False", 0) -1)
+ IfNotExist, %QPfolder%\data\
+ {
+  MsgBox, %QPfolder%\data\`ndoes not exist.
+  ExitAPP
+ }
+ Glob(list, QPfolder . "\data\*\RomData.dat", 1,1)
  Loop, Parse, List, `n
  {
   Pos := InStr(A_LoopField, "\Data\") + 6
@@ -34,30 +53,18 @@ InitializeVars()
   ExitApp
  }
  StringReplace, FolderList, FolderList, |, ||
- 
- ; Get List of Systems / Emulators
-; Process, Priority,, High
-; StartTime := A_TickCount
- IniRead, SystemIniFilePath, %ScriptIni%, General, SystemIniFilePath, Error
- If (SystemIniFilePath = "Error") OR (SystemIniFilePath = "")
-    Gosub, GetIniFilePath
- Glob(IniPaths, SystemIniFilePath . "\*\*.ini", 0,1)
+
+
+
+ Glob(IniPaths, A_Scriptdir . "\GoodMerge System Ini and History Files\*\*.ini", 0,1)
  FileRead, emulatorsini, %QPFolder%\dats\emulators.ini
  FileRead, QPSystem, %Scriptini%
  SystemNames := ini_getAllSectionNames(emulatorsini)
-
-
-; Process, Priority,, Normal
-; ElapsedTime := (A_TickCount - StartTime)/1000
-; dt = 20000101000000
-; dt += ElapsedTime, seconds
-; FormatTime, ElapsedTime, %dt%, H:mm:ss
- 
- IniRead, RatingsMode, %QPFolder%\dats\settings.ini, Ratings, Mode
- IniRead, RatingsLow, %QPFolder%\dats\settings.ini, Ratings, low
- IniRead, RatingsHigh, %QPFolder%\dats\settings.ini, Ratings, high
+ IniRead, RatingsMode, %QPFolder%\dats\settings.ini, Ratings, Mode, 3
+ IniRead, RatingsLow, %QPFolder%\dats\settings.ini, Ratings, low, 1
+ IniRead, RatingsHigh, %QPFolder%\dats\settings.ini, Ratings, high, 5
  IniRead, RatingsCustom, %QPFolder%\dats\settings.ini, Ratings, Custom
- DefaultRatings := " - Crap, - Poor, - Average, - Good, - Excellent" 
+ DefaultRatings := " - Crap, - Poor, - Average, - Good, - Excellent"
  StringSplit, DefaultRatings, DefaultRatings, `,
  TempVar := "1-5 with Text,Stars (1-5),Numeric Range,Custom"
  Loop, Parse, TempVar, `,
@@ -69,11 +76,11 @@ InitializeVars()
  RomDataOptions := "Language,Rating,Year,Comment,Company,GameType,Players"
  CommentOptions := "Controls|Perspective|Systems|ESRB"
  StringSplit, CommentOptions, CommentOptions, |
- 
+
  OptionsToSimplify := "Controls|Developer|ESRB|Genre|Perspective|Players|Publisher|Systems|Type"
  Loop, Parse, OptionsToSimplify, |
  {
-  CurrentList := A_LoopField 
+  CurrentList := A_LoopField
   FileRead, Contents, Key Lists\%A_LoopField%.txt
   Loop, Parse, Contents, `r, `n%A_Space%
   {
@@ -83,7 +90,7 @@ InitializeVars()
     Var := SubStr(A_LoopField, 1, Pos-1)
     Loop, Parse, A_LoopField, ¬
     {
-     LoopField := Varize(A_LoopField) 
+     LoopField := Varize(A_LoopField)
      %CurrentList%_%LoopField% := Var
     }
    }
@@ -98,34 +105,18 @@ InitializeVars()
  Settings := ini_getAllValues(ini, "Settings")
 }
 
-GetQPFolder:
- Loop
- {
-  FileSelectFolder, QPFolder, *%QPFolder%, 0, Browse to your QuickPlay Folder.
-  IfNotExist %QPFolder%\Efind
-    MsgBox, Unable to verify Quick Play folder location`n Press {CTRL} Q to exit.
-  Else Break
- }
- IniWrite, %QPFolder%, %ScriptIni%, General, QPath
-Return
-
-GetIniFilePath:
-  FileSelectFolder, SystemIniFilePath, *%SystemIniFilePath%, 0, Browse to your System Ini Files
-  IniWrite, %SystemIniFilePath%, %ScriptIni%, General, SystemIniFilePath
-Return
-
 CreateGUIs()
 {
  Global
  ListViewWidth := A_ScreenWidth-5
  ListViewHeight := A_ScreenHeight-380
- Gui, 1:Default ; Main Gui
+ Gui, 1:Default
  Gui, +OwnDialogs
 
 ;  300   200        0        0      0     200      150     70     90      70      70         0        150     50          0       0    0   0    0     0     100           0           0
 ;   1     2         3        4      5      6       7       8      9       10      11         12       13      14         15      16   17   18   19    20     21           22          23
 ; Name|Rom Name|ParentName|ZipName|path|Emulator|Company|Year|Game Type|Rating|Language|Parameters|Comment|NumPlayed|ParamMode|<IPS>|IPS1|IPS2|IPS3|</IPS>|Players|DefaultGoodMerge|System
-                                                       
+
  Gui, Add, ListView, x2 y10 w%ListViewWidth% h%ListViewHeight% vQuickPlayLV
  , Name|Rom Name|ParentName|ZipName|path|Emulator|Company|Year|Game Type|Rating|Language|Parameters|Comment|Played|ParamMode|<IPS>|IPS1|IPS2|IPS3|</IPS>|Players|DefaultGoodMerge|System|LookUpName|LookUpSystem
  ColWidth =   350,300,300,0,0,0,200,70,90,70,70,0,150,50,0,0,0,0,0,0,100,0,0,280,170
@@ -161,10 +152,10 @@ CreateGUIs()
  Gui, Add, Text, x10 yp+25, Current Folder
  Gui, Font, Norm
  Gui, Add, DropDownList, x30 yp+25 w220 vSelectedFolder gLoadRomData, %FolderList%
- Gui, Add, Button, x270 ys+212 h30 w126, Preview
- Gui, Add, Button, x270 yP+40 h30 w126, Save
+ Gui, Add, Button, x270 ys+212 h30 w126 gPreview, GO!
+ Gui, Add, Button, x270 yP+40 h30 w126 gSave, Save RomData
  Gui, Add, StatusBar, x30 w324
- 
+
   ;Language
  Gui, Font, Bold
  Gui, Add, GroupBox, Section xs+420 ys w380 h305, Language
@@ -177,23 +168,22 @@ CreateGUIs()
  Gui, Add, Text, xp y+3, Language:
  Gui, Add, Edit, xp y+3 w85 r1 vNewLanguage
  Gui, Add, Button, xp y+14 w85 gSRLV_Add, Add New
- Gui, Add, Button, xp y+14 w85 gSRLV_Replace, Replace   
+ Gui, Add, Button, xp y+14 w85 gSRLV_Replace, Replace
  Gui, Add, Button, xp y+14 w85 gSRLV_Remove, Delete
  Gui, Add, Button, xp y+14 w85 gSRLV_Clear, Delete All
  Gui, Add, Button, xp y+14 w38 gSRLV_Up, /\
  Gui, Add, Button, x+10 yp w38 gSRLV_Down, \/
- 
- Menu, FileMenu, Add, QuickPlay Folder, GetQPFolder
- Menu, FileMenu, Add, Ini Files Folder, GetIniFilePath
- Menu, MyMenuBar, Add, &File, :FileMenu
- Menu, CreditsMenu, Add, Credits, ShowCredits
- Menu, MyMenuBar, Add, About, :CreditsMenu
+
+ Menu, MyMenuBar, Add, About, ShowCredits
  Gui, Menu, MyMenuBar
- ;Credits
- WinH = 48          ; Height of GUI
- YPos := WinH   ; Bottom of GUI Window
+
+ WinH = 48
+ YPos := WinH
  CreditsText =
  (LTrim
+ 
+    %ScriptName%%Version%
+ 
     Author:`t Matt McLemore Aka 'Tempest'
     
     
@@ -249,7 +239,7 @@ SRLV:
  If A_GuiEvent = Normal
  {
   EditRow := A_EventInfo
-  LV_GetText( text, A_EventInfo, 1) 
+  LV_GetText( text, A_EventInfo, 1)
   GuiControl,, Newcode, %Text%
   LV_GetText( text, A_EventInfo, 2)
   GuiControl,, NewLanguage, %Text%
@@ -312,11 +302,11 @@ SRLV_Down:
  LV_MoveRow(false)
 Return
 
-LV_MoveRow(moveup = true) 
+LV_MoveRow(moveup = true)
 {
  Loop, % (allr := LV_GetCount("Selected"))
     max := LV_GetNext(max)
- Loop, %allr% 
+ Loop, %allr%
  {
   cur := LV_GetNext(cur)
   If ((cur = 1 && moveup) || (max = LV_GetCount() && !moveup))
@@ -376,10 +366,10 @@ GuiClose:
    ExitApp
 Return
 
-;#IfWinActive, RomData Magician
- ^Q::ExitApp 
+
+ ^Q::ExitApp
  ^R::Reload
-;#IfWinActive 
+
 
 AllNone:
  Gui, Submit, NoHide
@@ -411,7 +401,8 @@ Return
 
 ;************************************ Preview Selected Options *************************************
 
-ButtonPreview:
+
+Preview:
  GoSub, SaveIniSettings
  Gosub, SRLV_Save
  If ResetPlayed  = 1
@@ -460,7 +451,7 @@ ButtonPreview:
 ; Name|Rom Name|ParentName|ZipName|path|Emulator|Company|Year|Game Type|Rating|Language|Parameters|Comment|NumPlayed|ParamMode|<IPS>|IPS1|IPS2|IPS3|</IPS>|Players|DefaultGoodMerge|System
 
  Gui, ListView, QuickPlayLV
-; GuiControl, -Redraw, QuickPlayLV
+
  If ResetPlayed = 1
     LV_Modify(RowNumber, "Col14", "0")
  Loop % LV_GetCount()
@@ -484,7 +475,7 @@ ButtonPreview:
   PlayersCol++
   SB_SetText("   Current Title:  " . FullTitle)
   If IniFileExists = 0
-     Continue     
+     Continue
 
   If AddLanguage = 1
   {
@@ -516,7 +507,7 @@ ButtonPreview:
     LV_Modify(RowNumber, "Col11", NewLanguage)
    }
   }
-     
+
   If AddComment = 1
   {
    If WriteComment = 1
@@ -525,13 +516,13 @@ ButtonPreview:
    If (TempVar = "") OR (WriteComment = 1)
    {
     CommentType := CommentOptions%SelectedComment%
-    NewComment = %vSystem%_%Section%_%CommentType%  ;%CurrentPrefix%%_VarPrefixDelim%%CurrentVarName% = %CurrentVarContent%
+    NewComment = %vSystem%_%Section%_%CommentType%
     NewComment := %NewComment%
     If (SimplifyData = 1) AND (NewComment <> "")
     {
      NewComment := Varize(NewComment)
-     TempVar = %CommentType%_%NewComment% ;%CurrentList%_%LoopField% := Var (ESRB_ao=Adults Only)
-     NewComment := %TempVar%   
+     TempVar = %CommentType%_%NewComment%
+     NewComment := %TempVar%
     }
     StringReplace, NewComment, NewComment, |, %A_Space%/%A_Space%, A
     LV_Modify(RowNumber, "Col13", NewComment)
@@ -551,13 +542,13 @@ ButtonPreview:
     {
      NewGameType := Varize(NewGameType)
      TempVar = Genre_%NewGameType%
-     NewGameType := %TempVar%   
+     NewGameType := %TempVar%
     }
     StringReplace, NewGameType, NewGameType, |, %A_Space%/%A_Space%, A
     LV_Modify(RowNumber, "Col9", NewGameType)
-   }   
+   }
   }
-;MsgBox, %AddRating%`n%WriteRating%`n%
+
   If AddRating = 1
   {
    If WriteRating = 1
@@ -586,7 +577,7 @@ ButtonPreview:
       NewRating := Rating
       If Rating < %RatingsLow%
          Rating = 0
-     } 
+     }
      Else If SelectedRating = 4
      {
       Rating := Round(NewRating * CustomRatings0 / 5)
@@ -610,7 +601,7 @@ ButtonPreview:
     If (Pos = 0) AND (YearFromTitle = 1)
        Pos := RegExMatch(FullTitle, "\((\d{4})\)", NewYear)
     LV_Modify(RowNumber, "Col8", NewYear1)
-   }   
+   }
   }
 ; OptionsToSimplify := "Controls|Developer|ESRB|Genre|Perspective|Players|Publisher|Systems|Type"
   If AddCompany = 1
@@ -628,13 +619,13 @@ ButtonPreview:
     {
      Developer := Varize(Developer)
      TempVar = Developer_%Developer%
-     Developer := %TempVar%   
+     Developer := %TempVar%
     }
     If (SimplifyData = 1) AND (Publisher <> "")
     {
      Publisher := Varize(Publisher)
      TempVar = Publisher_%Publisher%
-     Publisher := %TempVar%   
+     Publisher := %TempVar%
     }
     NewCompany := Publisher
     If SelectedCompany = 1
@@ -656,7 +647,7 @@ ButtonPreview:
     Else NewCompany := Publisher
 
     LV_Modify(RowNumber, "Col7", NewCompany)
-   }     
+   }
   }
 
   If AddPlayers = 1
@@ -672,7 +663,7 @@ ButtonPreview:
     {
      NewPlayers := Varize(NewPlayers)
      TempVar = Players_%NewPlayers%
-     NewPlayers := %TempVar%   
+     NewPlayers := %TempVar%
     }
     LV_Modify(RowNumber, "Col"PlayersCol, NewPlayers)
    }
@@ -712,7 +703,7 @@ LoadRomData:
   }
   RowNumber ++
   StringSplit, Data, A_LoopField, ¬
-  ;%Emulator% := System  (Ini File Name)
+
   Emulator := Data6
   vEmulator := Varize(Emulator)
   If %vEmulator% =
@@ -720,10 +711,11 @@ LoadRomData:
    SB_SetText("   Finding Ini File Path For " . Emulator)
    Ini_Read(System, emulatorsini, Emulator, "system")
    Ini_Read(GoodName, QpSystem, "QP system to Ini", System)
+   %vEmulator% := System
+   vSystem := Varize(System)
+
    If (System <> "ERROR") AND (System <> "")
    {
-    %vEmulator% := System
-    vSystem := Varize(System)
     Loop, Parse, IniPaths, `n
     {
      SplitPath, A_LoopField,,,, OutFileName
@@ -732,6 +724,7 @@ LoadRomData:
       StringSplit, OutFileName, OutFileName, _
       If GoodName = %OutFileName1%
       {
+
        %vSystem%IniPath := A_LoopField
        Break
       }
@@ -764,14 +757,14 @@ LoadRomData:
    TempVar := %TempVar%
    StringReplace, Data, Data1, `,, ¬, A
    If Data Not In %TempVar%
-;   MsgBox, 0, %ScriptName%, %Data1%`n%TempVar%
+
       LookUpName := RegExReplace(Data1, "[({[].+?[)}\]]")
    LookUpName = %LookUpName%
   }
 
   LV_Add("",Data1,Data2,Data3,Data4,Data5,Data6,Data7,Data8,Data9,Data10,Data11,Data12,Data13
           ,Data14,Data15, "<IPS>", "", "", "", "</IPS>", Data21, Data22, Data23, LookupName, %vEmulator%)
-  
+
   IPS_Index = 17
   While IPS_Index < 20
   {
@@ -791,10 +784,14 @@ Return
 ;   1     2         3        4      5      6       7       8      9       10      11         12       13      14         15      16   17   18   19    20     21           22          23
 ; Name|Rom Name|ParentName|ZipName|path|Emulator|Company|Year|Game Type|Rating|Language|Parameters|Comment|NumPlayed|ParamMode|<IPS>|IPS1|IPS2|IPS3|</IPS>|Players|DefaultGoodMerge|System
 
-ButtonSave:
+
+
+
+
+Save:
  Gui, Submit, NoHide
  Gui, ListView, QuickPlayLV
-; LV_ModifyCol(4, "Sort")
+
  NewRomData := ROMDataFileVersion
  Loop % LV_GetCount()
  {
@@ -806,7 +803,7 @@ ButtonSave:
   }
   Loop, 3
   {
-   LV_GetText(Text, RowNumber, A_Index+16) ;Does <IPS> and </IPS> need to be Added?
+   LV_GetText(Text, RowNumber, A_Index+16)
    If Text <>
       NewRomData .= Text "¬"
   }
@@ -937,10 +934,852 @@ Return
 ;*********************************** Copyright (c) 2010, Tuncay ************************************
 ;************************ http://www.autohotkey.com/forum/topic46226.html **************************
 
-#Include C:\Program Files (x86)\AutoHotkey\Lib\ini_Tuncay.ahk
 
-;*********************************** Globals from Ini By Tuncay ************************************
-;************************ http://www.autohotkey.com/forum/topic27928.html **************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ini_getValue(ByRef _Content, _Section, _Key, _PreserveSpace = False)
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+    {
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    }
+
+    RegEx = `aiU)(?:\R|^)\s*%_Section%\s*(?:\R\s*|\R\s*.+\s*=\s*.*?\s*(?=\R)|\R\s*[;#].*?(?=\R))*\R\s*\Q%_Key%\E\s*=(.*)(?=\R|$)
+
+    If RegExMatch(_Content, RegEx, Value)
+    {
+        If Not _PreserveSpace
+        {
+            Value1 = %Value1%
+            FirstChar := SubStr(Value1, 1, 1)
+            If (FirstChar = """" AND SubStr(Value1, 0, 1)= """"
+                OR FirstChar = "'" AND SubStr(Value1, 0, 1)= "'")
+            {
+                StringTrimLeft, Value1, Value1, 1
+                StringTrimRight, Value1, Value1, 1
+            }
+        }
+        ErrorLevel = 0
+    }
+    Else
+    {
+        ErrorLevel = 1
+        Value1 =
+    }
+    Return Value1
+}
+
+
+
+
+
+ini_getKey(ByRef _Content, _Section, _Key)
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+
+
+    RegEx = `aiU)(?:\R|^)\s*%_Section%\s*(?:\R\s*|\R\s*.+\s*=\s*.*?\s*(?=\R)|\R\s*[;#].*?(?=\R))*\R(\s*\Q%_Key%\E\s*=.*)(?=\R|$)
+    If RegExMatch(_Content, RegEx, Value)
+        ErrorLevel = 0
+    Else
+    {
+        ErrorLevel = 1
+        Value1 =
+    }
+    Return Value1
+}
+
+
+
+
+
+ini_getSection(ByRef _Content, _Section)
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    RegEx = `aisUS)^.*(%_Section%\s*\R?.*)(?:\R*\s*(?:\[.*?|\R))?$
+    If RegExMatch(_Content, RegEx, Value)
+        ErrorLevel = 0
+    Else
+    {
+        ErrorLevel = 1
+        Value1 =
+    }
+    Return Value1
+}
+
+
+
+
+
+ini_getAllValues(ByRef _Content, _Section = "", ByRef _count = "")
+{
+    RegEx = `aisUmS)^(?=.*)(?:\s*\[\s*?.*\s*?]\s*|\s*?.+\s*?=(.*))(?=.*)$
+    If (_Section != "")
+        Values := RegExReplace(ini_getSection(_Content, _Section), RegEx, "$1`n", Match)
+    Else
+        Values := RegExReplace(_Content, RegEx, "$1`n", Match)
+    If Match
+    {
+        Values := RegExReplace(Values, "`aS)\R+", "`n")
+
+        Values := RegExReplace(Values, "`aS)\[.*?]\R+|\R+$|\R+ +$", "")
+        StringReplace, Values, Values, `n, `n, UseErrorLevel
+        _count := ErrorLevel ? ErrorLevel : 0
+        StringTrimLeft, Values, Values, 1
+        ErrorLevel = 0
+    }
+    Else
+    {
+        ErrorLevel = 1
+        _count = 0
+        Values =
+    }
+    Return Values
+}
+
+
+
+
+
+ini_getAllKeyNames(ByRef _Content, _Section = "", ByRef _count = "")
+{
+    RegEx = `aisUmS)^.*(?:\s*\[\s*?.*\s*?]\s*|\s*?(.+)\s*?=.*).*$
+    If (_Section != "")
+        KeyNames := RegExReplace(ini_getSection(_Content, _Section), RegEx, "$1", Match)
+    Else
+        KeyNames := RegExReplace(_Content, RegEx, "$1", Match)
+    If Match
+    {
+        KeyNames := RegExReplace(KeyNames, "S)\R+", ",")
+
+        KeyNames := RegExReplace(KeyNames, "S)\[.*?],+|,+$|,+ +", "")
+        StringReplace, KeyNames, KeyNames, `,, `,, UseErrorLevel
+        _count := ErrorLevel ? ErrorLevel : 0
+        StringTrimLeft, KeyNames, KeyNames, 1
+        ErrorLevel = 0
+    }
+    Else
+    {
+        ErrorLevel = 1
+        _count = 0
+        KeyNames =
+    }
+    Return KeyNames
+}
+
+
+
+
+
+ini_getAllSectionNames(ByRef _Content, ByRef _count = "")
+{
+    RegEx = `aisUmS)^.*(?:\s*\[\s*?(.*)\s*?]\s*|.+=.*).*$
+    SectionNames := RegExReplace(_Content, RegEx, "$1", MatchNum)
+    If MatchNum
+    {
+        SectionNames := RegExReplace(SectionNames, "S)\R+", ",", _count)
+
+        SectionNames := RegExReplace(SectionNames, "S),+ +", "")
+        StringReplace, SectionNames, SectionNames, `,, `,, UseErrorLevel
+        _count := ErrorLevel ? ErrorLevel : 0
+        _count := _count ? _count : 0
+        StringTrimRight, SectionNames, SectionNames, 1
+        ErrorLevel = 0
+    }
+    Else
+    {
+        ErrorLevel = 1
+        _count = 0
+        SectionNames =
+    }
+    Return SectionNames
+}
+
+
+
+
+
+
+
+
+
+
+
+ini_replaceValue(ByRef _Content, _Section, _Key, _Replacement = "", _PreserveSpace = False)
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    If Not _PreserveSpace
+    {
+        _Replacement = %_Replacement%
+        FirstChar := SubStr(_Replacement, 1, 1)
+        If (FirstChar = """" AND SubStr(_Replacement, 0, 1)= """"
+            OR FirstChar = "'" AND SubStr(_Replacement, 0, 1)= "'")
+        {
+            StringTrimLeft, _Replacement, _Replacement, 1
+            StringTrimRight, _Replacement, _Replacement, 1
+        }
+    }
+
+    RegEx = `aiU)((?:\R|^)\s*%_Section%\s*(?:\R\s*|\R\s*.+\s*=\s*.*?\s*(?=\R)|\R\s*[;#].*?(?=\R))*\R\s*\Q%_Key%\E\s*=).*((?=\R|$))
+    _Content := RegExReplace(_Content, RegEx, "$1" . _Replacement . "$2", isReplaced, 1)
+    If isReplaced
+        ErrorLevel = 0
+    Else
+        ErrorLevel = 1
+    Return isReplaced
+}
+
+
+
+
+
+ini_replaceKey(ByRef _Content, _Section, _Key, _Replacement = "")
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    If _Replacement !=
+    {
+        _Replacement = %_Replacement%
+        _Replacement = `n%_Replacement%
+    }
+
+    RegEx = `aiU)((?:\R|^)\s*%_Section%\s*(?:\R\s*|\R\s*.+\s*=\s*.*?\s*(?=\R)|\R\s*[;#].*?(?=\R))*)\R\s*\Q%_Key%\E\s*=.*((?=\R|$))
+    _Content := RegExReplace(_Content, RegEx, "$1" . _Replacement . "$2", isReplaced, 1)
+    If isReplaced
+        ErrorLevel = 0
+    Else
+        ErrorLevel = 1
+    Return isReplaced
+}
+
+
+
+
+ini_replaceSection(ByRef _Content, _Section, _Replacement = "")
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    RegEx = `aisU)^(\s*?.*)%_Section%\s*\R?.*(\R*\s*(?:\[.*|\R))?$
+    _Content := RegExReplace(_Content, RegEx, "$1" . _Replacement . "$2", isReplaced, 1)
+    If isReplaced
+        ErrorLevel = 0
+    Else
+        ErrorLevel = 1
+    Return isReplaced
+}
+
+
+
+
+
+
+
+
+
+
+
+ini_insertValue(ByRef _Content, _Section, _Key, _Value, _PreserveSpace = False)
+{
+    If (_Section = "")
+        _Section = (?:\[.*])?
+    Else
+         _Section = \[\s*?\Q%_Section%\E\s*?]
+    If Not _PreserveSpace
+    {
+        _Value = %_Value%
+        FirstChar := SubStr(_Value, 1, 1)
+        If (FirstChar = """" AND SubStr(_Value, 0, 1)= """"
+            OR FirstChar = "'" AND SubStr(_Value, 0, 1)= "'")
+        {
+            StringTrimLeft, _Value, _Value, 1
+            StringTrimRight, _Value, _Value, 1
+        }
+    }
+
+    RegEx = S`aiU)((?:\R|^)\s*%_Section%\s*(?:\R\s*|\R\s*.+\s*=\s*.*?\s*(?=\R)|\R\s*[;#].*?(?=\R))*\R\s*\Q%_Key%\E\s*=.*?)((?=\R|$))
+    _Content := RegExReplace(_Content, RegEx, "$1" . _Value . "$2", isInserted, 1)
+    If isInserted
+        ErrorLevel = 0
+    Else
+        ErrorLevel = 1
+    Return isInserted
+}
+
+
+
+
+
+
+ini_insertKey(ByRef _Content, _Section, _Key)
+{
+    StringLeft, K, _Key, % InStr(_Key, "=") - 1
+    sectionCopy := ini_getSection(_Content, _Section)
+    keyList := ini_getAllKeyNames(sectionCopy)
+    isInserted = 0
+    If K Not In %keyList%
+    {
+        sectionCopy .= "`n" . _Key
+        isInserted = 1
+    }
+    If isInserted
+    {
+        ini_replaceSection(_Content, _Section, sectionCopy)
+        ErrorLevel = 0
+    }
+    Else
+    {
+        ErrorLevel = 1
+    }
+    Return isInserted
+}
+
+
+
+
+ini_insertSection(ByRef _Content, _Section, _Keys = "")
+{
+    RegEx = `aisU)^.*\R*\[\s*?\Q%_Section%\E\s*?]\s*\R+.*$
+    If Not RegExMatch(_Content, RegEx)
+    {
+        _Content = %_Content%`n[%_Section%]`n%_Keys%
+        isInserted = 1
+        ErrorLevel = 0
+    }
+    Else
+    {
+        isInserted = 0
+        ErrorLevel = 1
+    }
+    Return isInserted
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ini_load(ByRef _Content, _Path = "", _convertNewLine = false)
+{
+    ini_buildPath(_Path)
+    error := true
+    Loop, %_Path%, 0, 0
+    {
+        _Path := A_LoopFileLongPath
+        error := false
+        Break
+    }
+    If (error = false)
+    {
+        FileRead, _Content, %_Path%
+        If (ErrorLevel)
+        {
+            error := true
+        }
+        Else
+        {
+            FileGetSize, fileSize, %_Path%
+            If (fileSize != StrLen(_Content))
+            {
+                error := true
+            }
+        }
+    }
+    If (error)
+    {
+        _Content := ""
+    }
+    Else If (_convertNewLine)
+    {
+        StringReplace, _Content, _Content, `r`n, `n, All
+    }
+    ErrorLevel := error
+    Return _Path
+}
+
+
+
+
+
+
+ini_save(ByRef _Content, _Path = "", _convertNewLine = true, _overwrite = true)
+{
+    ini_buildPath(_Path)
+    error := false
+    If (_overwrite)
+    {
+        Loop, %_Path%, 0, 0
+        {
+            _Path := A_LoopFileLongPath
+            Break
+        }
+        If FileExist(_Path)
+        {
+            FileDelete, %_Path%
+            If (ErrorLevel)
+            {
+                error := true
+            }
+        }
+    }
+    Else If FileExist(_Path)
+    {
+        error := true
+    }
+    If (error = false)
+    {
+        If (_convertNewLine)
+        {
+            StringReplace, _Content, _Content, `r`n, `n, All
+            StringReplace, _Content, _Content, `n, `r`n, All
+            FileAppend, %_Content%, %_Path%
+        }
+        Else
+        {
+            FileAppend, %_Content%, *%_Path%
+        }
+        If (ErrorLevel)
+        {
+            error := true
+        }
+    }
+    ErrorLevel := error
+    Return _Path
+}
+
+
+ini_buildPath(ByRef _path)
+{
+
+    If (_Path = "")
+    {
+        _Path := RegExReplace(A_ScriptFullPath, "S)\..*?$") . ".ini"
+    }
+    Else If (SubStr(_Path, 0, 1) = "\")
+    {
+        _Path .= RegExReplace(A_ScriptName, "S)\..*?$") . ".ini"
+    }
+    Else
+    {
+        If (InStr(FileExist(_Path), "D"))
+        {
+
+            _Path .= "\" . RegExReplace(A_ScriptName, "S)\..*?$") . ".ini"
+        }
+        Else
+        {
+
+            SplitPath, _Path,, fileDir, fileExtension, fileNameNoExt
+            If (fileDir = "")
+            {
+                fileDir := A_WorkingDir
+            }
+            If (fileExtension = "")
+            {
+                fileExtension := "ini"
+            }
+            If (fileNameNoExt = "")
+            {
+                fileNameNoExt := RegExReplace(A_ScriptName, "S)\..*?$")
+            }
+            _Path := fileDir . "\" . fileNameNoExt . "." . fileExtension
+        }
+    }
+    Return 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ini_repair(_Content, _PreserveSpace = False, _CommentSymbols = ";#", _LineDelim = "`n")
+{
+    If (_CommentSymbols != "")
+    {
+        regex = `aiUSm)(?:\R\s*|(s*|\t*))[%_CommentSymbols%].*?(?=\R)
+        _Content := RegExReplace(_Content, regex, "$1")
+    }
+    Loop, Parse, _Content, `n, `r
+    {
+        If (RegExMatch(A_LoopField, "`aiSm)\[\s*(.+?)\s*]", Match))
+        {
+            newIni .= _LineDelim . "[" . Match1 . "]"
+            section := Match1
+            KeyList := ""
+        }
+        Else If (RegExMatch(A_LoopField, "`aiSm)\s*(\b(?:.+?|\s?)\b)\s*=(.*)", Match))
+        {
+            If (_PreserveSpace = false)
+            {
+                Match2 = %Match2%
+            }
+            If Match1 Not in %KeyList%
+            {
+                KeyList .= "," . Match1
+            }
+            Else
+            {
+
+
+                ini_replaceKey(newIni, section, Match1, "")
+            }
+            newIni .= _LineDelim . Match1 . "=" . Match2
+        }
+    }
+    StringReplace, newIni, newIni, %_LineDelim%
+    If (newIni != "")
+    {
+        ErrorLevel := 0
+    }
+    Else
+    {
+        ErrorLevel := 1
+    }
+    Return newIni
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ini_mergeKeys(ByRef _Content, ByRef _source, _updateMode = 1)
+{
+    steps := 0
+    laststep := 0
+    destSectionNames := ini_getAllSectionNames(_Content), sourceSectionNames := ini_getAllSectionNames(_source)
+    Loop, Parse, sourceSectionNames, `,
+    {
+        sectionName := A_LoopField
+        sourceSection := ini_getSection(_source, sectionName)
+        If sectionName Not In %destSectionNames%
+        {
+            _Content .= "`n" . sourceSection
+            steps++
+            Continue
+        }
+        Else
+        {
+            destSection := ini_getSection(_Content, sectionName), destKeyNames := ini_getAllKeyNames(destSection), sourceKeyNames := ini_getAllKeyNames(sourceSection)
+            Loop, Parse, sourceKeyNames, `,
+            {
+                keyName := A_LoopField
+                If keyName Not In %destKeyNames%
+                {
+                    destSection .= "`n" . ini_getKey(sourceSection, sectionName, keyName)
+                    steps++
+                    Continue
+                }
+                Else If (_updateMode = 1)
+                {
+                    ini_replaceValue(destSection, sectionName, keyName, ini_getValue(sourceSection, sectionName, keyName))
+                    steps++
+                }
+                Else If (_updateMode = 2)
+                {
+                    ini_replaceValue(destSection, sectionName, keyName, ini_getValue(destSection, sectionName, keyName) . ini_getValue(sourceSection, sectionName, keyName))
+                    steps++
+                }
+                Else If (_updateMode = 3)
+                {
+                    If ((sourceValue := ini_getValue(sourceSection, sectionName, keyName)) > ini_getValue(destSection, sectionName, keyName))
+                    {
+                        ini_replaceValue(destSection, sectionName, keyName, sourceValue)
+                        steps++
+                    }
+                }
+                Else If (_updateMode = 4)
+                {
+                    ini_replaceKey(destSection, sectionName, keyName, "")
+                    steps++
+                }
+            }
+            If (laststep != steps)
+            {
+                laststep := steps
+                ini_replaceSection(_Content, sectionName, destSection)
+            }
+        }
+    }
+    If (steps > 0)
+    {
+        ErrorLevel := 0
+    }
+    Else
+    {
+        ErrorLevel := 1
+    }
+    Return steps
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ini_exportToGlobals(ByRef _Content, _CreateIndexVars = false, _Prefix = "ini", _Seperator = "_", _SectionSpaces = "", _PreserveSpace = False)
+{
+    Global
+    Local secCount := 0, keyCount := 0, i := 0, Section, Section1, currSection, Pair, Pair1, Pair2, FirstChar
+    If (_Prefix != "")
+    {
+        _Prefix .= _Seperator
+    }
+    Loop, Parse, _Content, `n, `r
+    {
+        If (Not RegExMatch(A_LoopField, "`aiSm)\[\s*(.+?)\s*]", Section))
+        {
+            If (RegExMatch(A_LoopField, "`aiSm)\s*(\b(?:.+?|\s?)\b)\s*=(.*)", Pair))
+            {
+                If (!_PreserveSpace)
+                {
+                    StringReplace, Pair1, Pair1, %A_Space%, , All
+                    Pair2 = %Pair2%
+                    FirstChar := SubStr(Pair2, 1, 1)
+                    If (FirstChar = """" AND SubStr(Pair2, 0, 1)= """"
+                        OR FirstChar = "'" AND SubStr(Pair2, 0, 1)= "'")
+                    {
+                        StringTrimLeft, Pair2, Pair2, 1
+                        StringTrimRight, Pair2, Pair2, 1
+                    }
+                }
+                StringReplace, currSection, currSection, %A_Space%, %_SectionSpaces%, All
+                %_Prefix%%currSection%%_Seperator%%Pair1% := Pair2
+                keyCount++
+                If (_CreateIndexVars)
+                {
+                    %_Prefix%%currSection%0++
+                    i := %_Prefix%%currSection%0
+                    %_Prefix%%currSection%%i% := Pair1
+                }
+            }
+        }
+        Else
+        {
+            currSection := Section1
+            If (_CreateIndexVars)
+            {
+                StringReplace, currSection, currSection, %A_Space%, %_SectionSpaces%, All
+                secCount++
+                %_Prefix%%secCount% := currSection
+            }
+        }
+    }
+    If (_CreateIndexVars)
+    {
+        %_Prefix%0 := secCount
+    }
+    If (secCount = 0 AND keyCount = 0)
+    {
+        ErrorLevel = 1
+    }
+    Else
+    {
+        ErrorLevel = 0
+    }
+    Return keyCount
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ini_Read(ByRef _OutputVar, ByRef _Content, _Section, _Key, _Default = "ERROR")
+{
+    If (_Section != "")
+    {
+        BackupErrorLevel := ErrorLevel
+        _OutputVar := ini_getValue(_Content, _Section, _Key)
+        If ErrorLevel
+        {
+            _OutputVar := _Default
+        }
+        ErrorLevel := BackupErrorLevel
+    }
+    Else
+    {
+        _OutputVar := _Default
+    }
+    Return
+}
+
+
+
+
+
+
+
+
+Ini_Write(_Value, ByRef _Content, _Section, _Key)
+{
+    If (_Section = "")
+    {
+        ErrorLevel = 1
+    }
+    Else
+    {
+        ini_replaceValue(_Content, _Section, _Key, _Value)
+    }
+    Return
+}
+
+
+
+
+
+
+
+
+Ini_Delete(ByRef _Content, _Section, _Key = "")
+{
+    If (_Section = "")
+    {
+        ErrorLevel = 1
+    }
+    Else
+    {
+        If (_Key != "")
+        {
+            ini_replaceKey(_Content, _Section, _Key, "")
+        }
+        Else
+        {
+            ini_replaceSection(_Content, _Section, "")
+        }
+    }
+    Return
+}
+; #Include C:\Program Files (x86)\AutoHotkey\Lib\ini_Tuncay.ahk
+
+
+
 
 globalsFromIni( FileContent, CurrentSystem, _VarPrefixDelim = "_")
 {
@@ -981,13 +1820,13 @@ globalsFromSection(FileContent, Section)
    If (SectionFound = 1)
    {
     DelimPos := InStr(A_LoopField, "=")
-    If DelimPos = 0 
+    If DelimPos = 0
        Break
     StringLeft, CurrentVarName, A_LoopField, % DelimPos - 1
     StringTrimLeft, CurrentVarContent, A_LoopField, %DelimPos%
     %CurrentVarName% = %CurrentVarContent%
    }
-   Else 
+   Else
    {
     If (A_LoopField = "[" Section "]")
        SectionFound = 1
@@ -1004,8 +1843,8 @@ getAllSectionNames(ByRef _Content, ByRef _count = "")
     If MatchNum
     {
         SectionNames := RegExReplace(SectionNames, "S)\R+", ",", _count)
-        ; Workaround, whitespaces only should be eliminated.
-        SectionNames := RegExReplace(SectionNames, "S),+ +", "") 
+
+        SectionNames := RegExReplace(SectionNames, "S),+ +", "")
         StringTrimRight, SectionNames, SectionNames, 1
         ErrorLevel = 0
     }

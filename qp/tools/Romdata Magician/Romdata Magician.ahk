@@ -360,9 +360,9 @@ Return
 GuiClose:
  Gui, 99:Hide
  GoSub, SaveIniSettings
- MsgBox, 8196,, Exit %ScriptName%?
- IfMsgBox Yes
-   ExitApp
+ ;MsgBox, 8196,, Exit %ScriptName%?
+ ;IfMsgBox Yes
+  ExitApp
 Return
 
 

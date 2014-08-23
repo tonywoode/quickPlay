@@ -1,4 +1,4 @@
-ROMDATA MAGICIAN version 0.91 - 2011 - by Matt McLemore a.k.a Tempest 
+ROMDATA MAGICIAN version 0.93 - 2014 - by Matt McLemore a.k.a Tempest 
 
 
 Romdata Magician takes Tempest's System INI files and compares them to QuickPlay's Romdata.dat's for systems you've set up in QuickPlay. It will fill in missing data that exist in the INI files into QuickPlay's Romdata.dats. It can over write or just add to data and you can select how and what is overwritten.

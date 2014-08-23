@@ -174,6 +174,7 @@ CreateGUIs()
  Gui, Add, Button, x+10 yp w38 gSRLV_Down, \/
 
  Menu, MyMenuBar, Add, About, ShowCredits
+ Menu, MyMenuBar, Add, Help, HelpFile
  Gui, Menu, MyMenuBar
 
  WinH = 48
@@ -230,6 +231,12 @@ ShowCredits:
   }
  }
 Return
+
+HelpFile:
+ IfExist Readme.txt
+	Run Readme.txt
+Return
+
 
 ;**************************** String Replacement ListView Labels/Subs ******************************
 

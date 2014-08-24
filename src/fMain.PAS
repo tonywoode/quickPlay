@@ -57,6 +57,8 @@
 //              Mame Info process fixed and updated
 //7-14          Mess Efind updated to 0153
 //              Mess Icon directory can now complement QP's own icons - added to appearance options
+//8-14          Tempest's tools have been altered with hard-coded paths and help files for easy use within QP
+//              System Ini Files' game history dat files now set themseleves up as Game History media panel items for new users for the 29 goodsets we made them for
 //------------------------------------------------------------------------
 unit fMain;
 

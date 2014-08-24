@@ -34,6 +34,7 @@ Type
     SysFileExtFile : TFileName;
     ToolsFile : TFileName;
     EmulatorsFile : TFileName;
+    MediaPanelCfgFile : TFileName;
 
   end;
 
@@ -104,6 +105,7 @@ Type
       procedure CreateSysFileExt(path: string);
       procedure CreateTools(path: string);
       procedure CreateEmulators(path: string);
+      procedure CreateMediaPanelCfg(path: string);
       procedure CreateTypeDat(path : string);
       Function ExtractModeToPath(Mode : TQPExtractDest) : String;
       Procedure HideShowCol(Directory : String);
@@ -398,6 +400,29 @@ begin
   dat := Tstringlist.Create;
   try
     tmpStream := TResourceStream.Create( HInstance, 'Emulators_txt', 'TEXT' );
+    try
+      dat.LoadFromStream( tmpStream );
+    finally
+      FreeAndNil(tmpStream);
+    end;
+    dat.SaveToFile(path);
+  finally
+    FreeAndNil(dat);
+  end;
+end;
+{-----------------------------------------------------------------------------}
+procedure TQPSettings.CreateMediaPanelCfg(path: string);
+var
+  dat : Tstringlist;
+  tmpStream: TResourceStream;
+begin
+
+  if not _AllowWrite then
+    Exit;
+
+  dat := Tstringlist.Create;
+  try
+    tmpStream := TResourceStream.Create( HInstance, 'Media_txt', 'TEXT' );
     try
       dat.LoadFromStream( tmpStream );
     finally
@@ -808,6 +833,7 @@ begin
   Paths.SysFileExtFile := Paths.CfgDir + 'SystemFileExts.ini';
   Paths.ToolsFile := Paths.CfgDir + 'Tools.ini';
   Paths.EmulatorsFile := Paths.CfgDir + 'Emulators.ini';
+  Paths.MediaPanelCfgFile := Paths.CfgDir + 'MediaPanelCfg.ini';
   If (DirectoryExists(Paths.ROMSDir) = false) and
      (DirectoryExists(Paths.CfgDir) = false) then
     _NoDats := True
@@ -850,6 +876,10 @@ begin
   //Check is the Emulators.ini file exists, if it doesnt - create it
   if not fileexists(Paths.EmulatorsFile) then
     CreateEmulators(Paths.EmulatorsFile);
+
+   //Check is the MediaPanelCfg.ini file exists, if it doesnt - create it
+  if not fileexists(Paths.MediaPanelCfgFile) then
+    CreateMediaPanelCfg(Paths.MediaPanelCfgFile);
 
   //make sure the Data directory exists.
   if not DirectoryExists(Paths.ROMSDir) then

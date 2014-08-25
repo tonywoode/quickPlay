@@ -2730,8 +2730,11 @@ end;
 procedure TMainFrm.ActCatVerExecute(Sender: TObject);
 begin
   try
+  if (MessageDlg('This will scan the current romdata with Catver.ini  '+#13+#10+'Do you want to do that?', mtInformation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
+    begin
     RomList.SetMameCategories(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
+    end;
   except
     on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
@@ -2742,8 +2745,11 @@ end;
 procedure TMainFrm.ActLangIniExecute(Sender: TObject);
 begin
   try
+  if (MessageDlg('This will scan current romdata with Languages.txt '+#13+#10+'It could take some time '+#13+#10+'Do you want to do that?', mtInformation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
+    begin
     RomList.SetMameLanguages(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
+    end;
   except
     on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
@@ -2770,7 +2776,7 @@ begin
       if Mame.ShowModal = mrOk then
         FillRoms(GetSelectedTxt);
     finally
-      FreeAndNil(Mame);      
+      FreeAndNil(Mame);
     end;
 end;
 
@@ -2794,8 +2800,11 @@ end;
 procedure TMainFrm.ActNPlayersExecute(Sender: TObject);
 begin
   try
+  if (MessageDlg('This will scan the current romdata with NPlayers.ini  '+#13+#10+'Do you want to do that?', mtInformation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
+    begin
     RomList.SetMameMultiPlayer(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
+    end;
   except
     on E: EJException do MessageDlg(E.Message, mtError, [mbOK], poMainFormCenter);
   end;
@@ -2830,10 +2839,10 @@ begin
    MergeFrm := TFrmMAMEMerged.Create(self);
    try
     MergeFrm.EnableZincMode := True;
-    
+
      If MergeFrm.ShowModal = MrOK then
        FillRoms(GetSelectedTxt);
-       
+
    finally
      FreeAndNil(MergeFrm);
    end;

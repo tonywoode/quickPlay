@@ -41,7 +41,6 @@ object FrmParamVars: TFrmParamVars
     TreeOptions.SelectionOptions = [toDisableDrawSelection]
     OnGetText = VTVarsGetText
     OnPaintText = VTVarsPaintText
-    ExplicitWidth = 437
     Columns = <
       item
         Position = 0

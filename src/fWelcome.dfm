@@ -42,9 +42,6 @@ object FrmWelcome: TFrmWelcome
     TabOrder = 1
     object TabWelcome: TTabSheet
       Caption = 'TabWelcome'
-      ExplicitLeft = 8
-      ExplicitTop = 31
-      ExplicitHeight = 250
       object lblbigWelcome: TLabel
         Left = 16
         Top = 32
@@ -75,8 +72,6 @@ object FrmWelcome: TFrmWelcome
     object TabEmus: TTabSheet
       Caption = 'TabEmus'
       ImageIndex = 1
-      ExplicitWidth = 405
-      ExplicitHeight = 250
       object lblEmus: TLabel
         Left = 16
         Top = 32
@@ -327,8 +322,6 @@ object FrmWelcome: TFrmWelcome
     object TabROMS: TTabSheet
       Caption = 'TabROMS'
       ImageIndex = 2
-      ExplicitWidth = 405
-      ExplicitHeight = 250
       object lblROMs: TLabel
         Left = 16
         Top = 32
@@ -415,8 +408,6 @@ object FrmWelcome: TFrmWelcome
     object TabDone: TTabSheet
       Caption = 'TabDone'
       ImageIndex = 3
-      ExplicitWidth = 405
-      ExplicitHeight = 250
       object lblDone: TLabel
         Left = 16
         Top = 32

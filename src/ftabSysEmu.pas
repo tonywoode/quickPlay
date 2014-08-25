@@ -33,7 +33,11 @@ begin
     ImgQP.Picture.LoadFromFile(Img);
 
   if ShowInfo then
-    MemoInfo.Lines.Assign(Text)
+  begin
+    MemoInfo.Lines.Assign(Text);
+    memoInfo.ScrollBars := ssVertical;  //feature request #25 - word wrap history and info....
+    memoInfo.WordWrap := True;
+  end
   else
     MemoInfo.Hide;
 

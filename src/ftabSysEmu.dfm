@@ -49,7 +49,7 @@ object TabSysEmu: TTabSysEmu
     Font.Style = [fsBold, fsUnderline]
     ParentFont = False
     OnClick = lblHomePageClick
-    ExplicitTop = 524
+    ExplicitWidth = 61
   end
   object memoInfo: TMemo
     Left = 0

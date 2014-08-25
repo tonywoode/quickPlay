@@ -23,6 +23,7 @@ object TabQuickplay: TTabQuickplay
     AutoSize = True
     Center = True
     Proportional = True
+    Stretch = True
   end
   object PanLinks: TPanel
     Left = 0

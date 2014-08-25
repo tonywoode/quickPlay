@@ -24,6 +24,7 @@ object tabImageViewer: TtabImageViewer
     AutoSize = True
     Center = True
     Proportional = True
+    Stretch = True
     ExplicitHeight = 464
   end
   object PanImgControls: TPanel
@@ -59,12 +60,14 @@ object tabImageViewer: TtabImageViewer
     object lblImageCount: TLabel
       Left = 14
       Top = 0
-      Width = 32
-      Height = 13
+      Width = 288
+      Height = 28
       Align = alClient
       Alignment = taCenter
       Caption = 'X OF X'
       Layout = tlCenter
+      ExplicitWidth = 32
+      ExplicitHeight = 13
     end
   end
   object TimerImgs: TTimer

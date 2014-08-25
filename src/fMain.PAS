@@ -2745,7 +2745,7 @@ end;
 procedure TMainFrm.ActLangIniExecute(Sender: TObject);
 begin
   try
-  if (MessageDlg('This will scan current romdata with Languages.txt '+#13+#10+'It could take some time '+#13+#10+'Do you want to do that?', mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
+  if (MessageDlg('This will scan current romdata with Languages.txt '+#13+#10+'It takes some time '+#13+#10+'Do you want to do that?', mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
     begin
     RomList.SetMameLanguages(MainFrm.Settings.Paths.CfgDir);
     VTRoms.Invalidate;
@@ -2766,7 +2766,7 @@ end;
 
 procedure TMainFrm.ActMameRenExecute(Sender: TObject);
 var
-  //The Mame fundctionality doesn't work. We need to make it work
+  //The Mame functionality doesn't work. We need to make it work
   //For now, a holding page....
   Mame : TMameHolding; //Mame : TDatReader;
 

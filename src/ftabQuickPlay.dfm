@@ -22,6 +22,7 @@ object TabQuickplay: TTabQuickplay
     Align = alClient
     AutoSize = True
     Center = True
+    Proportional = True
   end
   object PanLinks: TPanel
     Left = 0

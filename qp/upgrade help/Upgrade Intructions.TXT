@@ -1,30 +1,28 @@
 __________________________________________________________________________________________________
-QUICKPLAY FRONTEND v4.0: UPGRADE INSTRUCTIONS AND RENAMER HOTKEY EXE 1.6: FOR EXISTING USERS ONLY
+QUICKPLAY FRONTEND v5.0.0: UPGRADE INSTRUCTIONS AND RENAMER HOTKEY EXE 1.6: FOR EXISTING USERS ONLY
 __________________________________________________________________________________________________
 
-1) PLease keep a copy of your OLD QuickPlay for now - install all the files from qp-4.0.0 in a different folder to your old QuickPlay files.
-****Explanation: We are going to copy some files from old QuickPlay to QP 4.0 to maintain your configs. Quickplay is small and standalone - it doesn't matter where it lives, you can move it and run more than one copy without issue***
+1) PLease keep a copy of your OLD QuickPlay for now - install all the files from qp-5.0.0 in a different folder to your old QuickPlay files.
+****Explanation: We are going to copy some files from old QuickPlay to QP 5.0.0 to maintain your configs. Quickplay is small and standalone - it doesn't matter where it lives, you can move it and run more than one copy without issue***
 
-2) run up qp 4.0 at this point. It will create a dats folder and a data folder. Just exit again straight away - you don't need the first run wizard
+2) run up qp 5.0.0 at this point. It will create a dats folder and a data folder. Just exit again straight away - you don't need the first run wizard
 
-3) delete qp 4.0's data folder and Copy your old one in its place
+3) delete qp 5.0.0's data folder and Copy your old one in its place
 
-4) merge (via windows drag/drop) your old dats folder into qp 4.0's dats folder but choose NOT to overwrite any files - we want the new files in qp 4.0's dats folder to stay, and your other old files to join them
+4) merge (via windows drag/drop) your old dats folder into qp 5.0.0's dats folder but choose NOT to overwrite any files - we want the new files in qp 5.0.0's dats folder to stay, and your other old files to join them
 
-5) run "replace systems_1.6.exe" from its current location (in the same folder as these instructions). This will rename emulators.ini and media panel.ini entries to match the new definitive system names in the latest efind and systems.dat (if you've already installed my efind1.5 you don't need to do this - if you wonder what its going to do look at the source in the "source" folder)
+5) If you have a REALLY old version of EFinds (i.e.: you've never downloaded efind v1.5 or above from the QuickPlay site) run "replace systems_1.6.exe" from its current location (in the same folder as these instructions). This will rename emulators.ini and media panel.ini entries to match the new definitive system names in the latest efind and systems.dat (if you've already installed my efind1.5 you don't need to do this - if you wonder what its going to do look at the source in the "source" folder)
 
-6) move any of your own images, icons and custom searches from old to new qp's relvant folders. You can merge these folders. Don't move anything from the old Efind folder
+6) move any of your own images, icons and custom searches from old to new qp's relvant folders. You can merge these folders. Don't move anything from the old Efind folder unless you added it there yourself
 
-7) Start QuickPlay 4.0. Depending on how qp feels, your system names in your romdata folders may need to be reconfirmed. If individual systems are having a problem playing all of the roms, just ctrl+a to Select all roms in the folder, right click, goto "Rom Properties" and reselect the emulator
+7) Start QuickPlay 5.0.0. Depending on how qp feels, your system names in your romdata folders may need to be reconfirmed. If individual systems are having a problem playing all of the roms, just ctrl+a to Select all roms in the folder, right click, goto "Rom Properties" and reselect the emulator
 
 done
 
-* don't forget to run a new efind (scan your windows folder if you like pc games for the start command and explorer. Also remember quickplay won't like emulators for different systems that are called the same thing ("emulator.exe") - look in the efinder files and you'll see that eg: m2 emulator is better renamed (by you) as m2.exe, there are only a few examples of this, most emu's by Elsemi)
+* don't forget to run a new efind (scan your windows folder if you like pc games for the start command and explorer commands. Also remember QuickPlay won't like emulators for different systems that are called the same thing ("emulator.exe") - look in the efinder files and you'll see that eg: m2 emulator is better renamed (by you) as m2.exe, there are only a few examples of this, most emu's by Elsemi)
 
 * don't forget to setup the new multiloader for your CD and DVD based systems. See the tools sidebar tab
 
 * and Look closer in that tools tab for new tools you haven't used yet, and goto the forums download section for more things you can setup
 
 hope you enjoy the new version
-
-butter100fly 09/12

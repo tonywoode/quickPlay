@@ -23,7 +23,7 @@ object MameHolding: TMameHolding
     TabOrder = 1
     object Link2: TLabel
       Left = 28
-      Top = 82
+      Top = 74
       Width = 478
       Height = 13
       Cursor = crHandPoint
@@ -43,16 +43,14 @@ object MameHolding: TMameHolding
       OnMouseDown = Link2MouseDown
     end
     object Link1: TLabel
-      Left = 28
-      Top = 33
-      Width = 464
+      Left = 116
+      Top = 30
+      Width = 315
       Height = 13
       Cursor = crHandPoint
       Hint = 'right-click to copy to clipboard'
       Align = alCustom
-      Caption = 
-        'http://www.quickplayfrontend.com/index.php?showtopic=48&view=fin' +
-        'dpost&p=739'
+      Caption = 'http://quickplay.sourceforge.net/wiki/index.php/MAME'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlue
       Font.Height = -11
@@ -74,8 +72,8 @@ object MameHolding: TMameHolding
         'ructions here'
     end
     object Instructions2: TLabel
-      Left = 106
-      Top = 56
+      Left = 103
+      Top = 49
       Width = 352
       Height = 13
       Caption = 

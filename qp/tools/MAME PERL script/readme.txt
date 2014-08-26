@@ -9,7 +9,7 @@ QP_MAME_ROMDATA_EXTRAS-V1.4 - PERL SCRIPT BY ORFAX - README BY BUTTER100FLY
 
 The below text can be found in much MUCH nicer format with all the pics in the right places at:
 
-http://www.quickplayfrontend.com/index.php?showtopic=48
+http://quickplay.sourceforge.net/wiki/index.php/MAME
 
 
 So please go there and follow instructions for setting up MAME in QuickPlay. Or follow what's below here looking at the pictures in the Pics folder.
@@ -17,7 +17,7 @@ So please go there and follow instructions for setting up MAME in QuickPlay. Or 
 ______________________________________________________________________
 
 [updated July 2014]
-MAME has got to be the trickiest thing to setup in QuickPlay - so I've threatened for a long time to do a walkthrough. I also wanted to post up-to-date tools. Here's both together, so this guide is for using Qrfax's script with all the correct things done in the right order to make everything work (if you're using my pre-made Mame romdata.dat then you can pretty much skip stages 3 to 6). We want everything in QP to be easy, and most things are, but in the case of MAME I think this full guide is necessary
+MAME has got to be the trickiest thing to setup in QuickPlay - so I've threatened for a long time to do a walkthrough. This guide is for using Qrfax's Perl script with all the correct things done in the right order to make everything work (if you're using my pre-made Mame romdata.dat then you can pretty much skip stages 3 to 6). We want everything in QP to be easy, and most things are, but in the case of MAME I think this full guide is necessary
 
 So, I installed activperl from HERE (www.activestate.com/activeperl/downloads) and followed Orfax's (orfax.awardspace.com/?page_id=64) method for creating my own MAME QuickPlay romdata. All worked great, but over time Orfax hasn't updated his script. So I have, doing things like making sure it works with 7zip roms, and it works with a fully merged set. You need to install ActivePerl to run Orfax's script (its about 60 meg and there really is nothing to do except install - just accept any defaults and leave it sitting there or you can uninstall it after doing this if you want). If you want the CHD's to work they must be in correctly named folders in your Mame Roms directory ie: make sure you've datted your set properly in CLRMAMEpro. Basically MAME / MAMEUI has to know where everything is and work before you do this, because all QP does is pass the MAME name to MAME/MAMEUI (QP calls this %ROMMAME% an example is: 1941)
 

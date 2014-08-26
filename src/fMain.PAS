@@ -3,10 +3,9 @@
 // Version:     4.0
 // Author:      John Scott
 // Project
-// Resorector:  Sean Green
-// Resorector:  Tony Woode
-// Homepage:    http://quickplay.sf.net
-// new home page :http://www.quickplayfrontend.com/
+// Ressurrector:  Sean Green
+// Ressurrector:  Tony Woode
+// Homepage:    http://www.quickplayfrontend.com/
 // Description: QuickPlay is a multi-emulator frontend, key features include
 //              extreme ease of use
 //              EmuFinder for adding your emulators quickly
@@ -19,7 +18,7 @@
 //                      MAME game renamer, and year
 //              Image Panel for displaying images for ROMs
 //
-// License:      BSD License
+// License:     BSD License
 //
 //change log: 4.0
 //9-10-10:      Attempted to dive in to a language I would normaly never
@@ -32,10 +31,10 @@
 //9-20-10       Added a check for [!] if no language as found.
 //              also added the option per folder to show only [!] roms if
 //                so desired
-//9-22-10       Fixed gif error and scrol error
+//9-22-10       Fixed gif error and scroll error
 //              QP now looks for noimagefound.jpg when no image was found
 //              The run rom dialog box now uses edit fields for that text that
-//                tends to wrap around, in some cases MESS, making it impossible to read.
+//                tends to wrap around, in some cases making it impossible to read.
 //9-23-10       Added a rom Height slide bar
 //9-28-10       removed image in media panel when it says welcome.
 //10-16-10      Corrected readin maminfo and mamehistory files. ( clones now work ) [ creidt to tempest, member of the QP boards ]
@@ -75,7 +74,7 @@ uses Windows, Classes, SysUtils, Graphics, Controls, Forms,
 
 type
 
-  //TTracxkBar does not have mouse events, so make them here
+  //TTrackBar does not have mouse events, so make them here
   TTrackBar  = class(ComCtrls.TTrackbar)
   protected
     property OnMouseUp;

@@ -15,7 +15,7 @@ It is advised you also have the following up to date files in
 Quickplays "dats" folder: catver.ini, nplayers.ini, and languages.ini
 
 Step 1: create the MAME XML info file.
-    1.1 mame -listxml > mame_details.xml
+    1.1 mame64 -listxml > mame_details.xml
     1.2 move the mame_details.xml file to the location of the
         perl script.
 
@@ -24,6 +24,8 @@ Step 2: create an initial Quickplay MAME ROMData.dat file
     2.2 in the ROM list, right click on any ROM and select
         Clear ROM list
     2.3 select the ROMs menu entry and select the Scan for ROMS
+	  (even if you have Merged Roms, don't select 'Scan Merged Roms' 
+	  from the Arcade Roms Menu - that's not the best way to do it at the moment)
     2.4 add all your folders that your MAME ROMs live in to the 
         Folders to Scan box
     2.5 set your System and Emulator drop down boxes for MAME

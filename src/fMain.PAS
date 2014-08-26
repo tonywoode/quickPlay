@@ -4129,7 +4129,7 @@ begin
   AddToLog('Object Cleanup code executed, preparing to FreeAndNil');
   {$ENDIF}
 
-  //Free the Quickplay objects we have created.
+  //Free the QuickPlay objects we have created.
   DirList.Clear;
   ROMlist.Clear;
   FavList.Clear;

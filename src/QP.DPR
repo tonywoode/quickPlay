@@ -59,7 +59,7 @@ uses
   ftabThumbBrowser in 'ftabThumbBrowser.pas' {tabThumbBrowser},
   ftabImageViewer in 'ftabImageViewer.pas' {tabImageViewer},
   ftabTextOnly in 'ftabTextOnly.pas' {tabTextOnly},
-  ftabQuickPlay in 'ftabQuickPlay.pas' {TabQuickplay},
+  ftabQuickPlay in 'ftabQuickPlay.pas' {TabQuickPlay},
   ftabSysEmu in 'ftabSysEmu.pas' {TabSysEmu},
   uQPMiscTypes in 'uQPMiscTypes.pas',
   fParamVars in 'fParamVars.pas' {FrmParamVars},

@@ -266,7 +266,7 @@ begin
       AddPanel(TTabQuickPlay, TABQUICKPLAY, 'QuickPlay');
   end
   else
-    //this system wasnt found, use the default Quickplay Logo
+    //this system wasnt found, use the default QuickPlay Logo
     AddPanel(TTabQuickPlay, TABQUICKPLAY, 'QuickPlay');
 
   _pgc.Pages[0].TabVisible := False;

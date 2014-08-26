@@ -158,8 +158,8 @@ QP_EDITEFIND_BAD_EXE = 'No EXE name, record will not be saved, do you want to fi
 QP_EDITEFIND_BAD_SYS = 'No system supplied, record will not be saved, do you want to fix this error?';
 
 //Emu Finder form
-QP_EFIND_NO_FILES = 'No Emu-Finder data files were found, please check they exist - they should be located in a directory called EFIND in the main Quickplay directory';
-QP_EFIND_NO_DIR = 'EFIND Directory does not exist, please reinstall Quickplay to obtain the Emu-Finder data files';
+QP_EFIND_NO_FILES = 'No Emu-Finder data files were found, please check they exist - they should be located in a directory called EFIND in the main QuickPlay directory';
+QP_EFIND_NO_DIR = 'EFIND Directory does not exist, please reinstall QuickPlay to obtain the Emu-Finder data files';
 
 //Emulators form
 QP_EMUFRM_NO_SYS = 'No current system found, please click a node on the Systems tree.';
@@ -203,7 +203,7 @@ QP_DONT_CHANGE = 'Do not change power scheme';
 //Extract Mode Strings
 QP_EXTRACT_GENERAL = 'Use General Extraction Setting';
 QP_EXTRACT_ROM_DIR = 'Extract to ROMs Directory';
-QP_EXTRACT_QP_TEMP = 'Extract to Quickplays Temp Directory';
+QP_EXTRACT_QP_TEMP = 'Extract to QuickPlays Temp Directory';
 QP_EXTRACT_SYS_TEMP = 'Extract to Windows Temp Directory';
 
 implementation

@@ -4,7 +4,7 @@
 {
 
 This unit contains the Settings Class, which is used to store all of
-Quickplays variables and settings, and has code to maintain these settings.
+QuickPlays variables and settings, and has code to maintain these settings.
 Also contains code to create default files such as Types and System
 
 }

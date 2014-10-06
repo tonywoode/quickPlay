@@ -741,7 +741,7 @@ object MainFrm: TMainFrm
           Width = 89
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 1
           Text = 'By Name'
@@ -761,7 +761,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'
@@ -1545,6 +1545,9 @@ object MainFrm: TMainFrm
       end
       object N24: TMenuItem
         Caption = '-'
+      end
+      object CheckforUpdates1: TMenuItem
+        Action = actCheckForUpdates
       end
       object About1: TMenuItem
         Action = ActAbout

@@ -348,7 +348,6 @@ type
     Fromthisfolder2: TMenuItem;
     Fromanyfolder1: TMenuItem;
     actCheckForUpdates: TAction;
-    QuickPlayOriginalHomepage: TMenuItem;
     SlideBar : TTrackBar;
     Label1: TLabel;
     JoyCntrl: TJvJoystick;

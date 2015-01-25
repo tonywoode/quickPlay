@@ -12,13 +12,13 @@
 :: Please encase all 4 in "quotation marks" and include empty emulator options ie: "" if you need to set direct mount after
 ::
 :: So in QuickPLay you would call, for example: 
-::		"%ROM%" "C:\Emulators\Mednafen\Mednafen.exe"
+::		"%ROM%" "P:\Mednafen\Mednafen.exe"
 :: (we don't need direct mount and there are no options)
 :: Or 
-::		"%ROM%" "C:\Emulators\Magic Engine\pce.exe" "" "1"
+::		"%ROM%" "P:\Magic Engine\pce.exe" "" "1"
 :: (we need the "" because we need direct mounting after)
 :: Actually we can improve that one to pass -cd to Magic Engine:
-:: 		"%ROM%" "C:\Emulators\Magic Engine\pce.exe" "-cd" "1"
+:: 		"%ROM%" "P:\Magic Engine\pce.exe" "-cd" "1"
 ::-------------------------------------------------------------------------------
 
  :: Get script dir as we may need to run forciblyunmount.exe from it later

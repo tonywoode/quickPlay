@@ -54,7 +54,7 @@ EXIT
 :CARRYON
 ::set a temp directory for rom, either in rom dir or in the dir the user set
 :: use shortname (in case we need it for unzip) then CD to EMU directory
-if (%TEMPDIR%)==() (for /D %%X IN (%1) DO SET _TEMPDIR="%%~dpnsX\") else (for /D %%X IN (%1) DO SET _TEMPDIR="%TEMPDIR%%%~nsX\")
+if (%TEMPDIR%)==() (for /D %%X IN (%1) DO SET _TEMPDIR="%%~dpnsX\") else (for /D %%X IN (%1) DO SET _TEMPDIR="%TEMPDIR%\%%~nsX\")
 cd /d %EMU%\..
 
 set _ROMNAME=%1

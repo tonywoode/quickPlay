@@ -1,4 +1,4 @@
-QUICKPLAY MULTI LOADER SCRIPT 	V1.3.0.0 	 butter100fly 2014
+QUICKPLAY MULTI LOADER SCRIPT 	V1.3.1.0 	 butter100fly 2015
 ************************************************************************
 THE README HAS OPENED, PROBABLY BECAUSE YOU HAVEN'T SET THIS TOOL UP
 OR CALLED IT PROPERLY. SORRY. CLOSE THIS README TO CONTINUE
@@ -50,13 +50,11 @@ Note how we need the "" even with no parameters, and we need the 1 in quote mark
 
 WE ALSO SHOULD TICK ALL THE BOXES FOR COMPRESSION TYPES IN THE EMULATOR SETUP - that's because we WANT Quickplay to pass compressed images to the script, and not try to decompress the image itself (QuickPlay's own decompression features are more useful for goodmerge sets than for compressed disk images)
 
-
-
-
-
-
-
-
+WHERE DOES MULTILOADER EXTRACT ZIPS TO?
+---------------------------------------
+You can set this location in the Multiloader.ini - set TEMPDIR=
+Then each fileset gets downloaded into a 'shortname' version of its own filename in that folder
+If you haven't set a location, the zip will always extract to a shortname folder in the ROM directory
 
 ***********************************************
 Here are some notes for advanced use:

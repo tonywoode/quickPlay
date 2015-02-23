@@ -3,8 +3,6 @@
 ##    Which means YOU MAY NEED TO ALTER YOUR GLOBAL GITCONFIG
 ##
 
-
-
 #All delphi compiled units in the DCU dir
 dcu/
 
@@ -53,7 +51,5 @@ src/*.dcu
 qp/EFind/Custom.ini
 qp/EFind/Gamebase.ini
 
-
-
-
-
+#Starting editing from a mac
+*.DS_Store

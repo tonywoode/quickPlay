@@ -1,11 +1,10 @@
 ﻿@echo off & SETLOCAL
-:: CD/DVD MULTILOADER SCRIPT v1.3.1 - butter100fly 2015
-:: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with and mount in Daemon Tools
-:: if its not I just mount it, Launches emu with params, clears up after
-:: For V1.2 I added command line parameters you can call when calling the script. 
-:: It will prioritise anything after "%ROM%" in the command line over what's in the ini, or you don't have to have the ini
-:: For V1.2.1 I made it so you could say where to extract zips in the ini. If you don't have the ini, that location will be the rom dir
-:: You must call them in this order: 
+:: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
+:: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
+:: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
+:: For V1.3 I made it so you could say where to extract zips in the ini
+:: For V1.4 I made it compatible with Daemon Tools 5, and also zips can now open directly in daemon tools
+:: There are command line parameters you can call when calling the script. You must call them in this order: 
 :: First "PATH TO ROM"  
 :: Secondly "EMULATOR EXECUTABLE" 
 :: Thirdly "OPTIONS TO PASS TO EMULATOR (eg.:-CD)"
@@ -30,17 +29,24 @@
 if (%b2eprogrampathname%)==() (set _SCRIPTDIR="%~dp0") else (set _SCRIPTDIR=%b2eprogrampathname%)
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
+:: You must set these in the ini file: where to extract to, which drive letter for daemon tools
+:: ,and which for daemon's zip support
+for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
+if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR="%%~dpnsN\") else (for /D %%I IN (%1) DO SET _TEMPDIR="%TEMPDIR%\%%~nsN\")
+for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
+if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
+for /f "tokens=2* delims==" %%K in ('find "DEAMON_ZIP_DRIVE=" ^< %_INIFILE%') do (set DEAMON_ZIP_DRIVE=%%K)
+if (%DAEMON_ZIP_DRIVE%)==() (SET _DAEMON_ZIP_DRIVE=L) else (SET _DAEMON_ZIP_DRIVE=%DAEMON_ZIP_DRIVE%)
 ::-------------------------------------------------------------------------------------
 :: You can set Emu and Options from MULTILOADER.INI if you want to hard-code the loader
 :: (Most users will just want to launch from QuickPlay so won't need this)
 ::-------------------------------------------------------------------------------------
-for /f "tokens=2* delims==" %%K in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%K)
 IF NOT (%1)==() goto CMD_LINE_EMU
-for /f "tokens=2* delims==" %%H in ('find "EMU=" ^< %_INIFILE%') do (set EMU=%%H)
+for /f "tokens=2* delims==" %%L in ('find "EMU=" ^< %_INIFILE%') do (set EMU=%%L)
 ::IF there's no EMU set in the ini, also ignore options and nomount setting
 IF (%EMU%)==() goto CMD_LINE_EMU
-for /f "tokens=2* delims==" %%I in ('find "OPTIONS=" ^< %_INIFILE%') do (set OPTIONS=%%I)
-for /f "tokens=2* delims==" %%J in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOMOUNT=%%J)
+for /f "tokens=2* delims==" %%M in ('find "OPTIONS=" ^< %_INIFILE%') do (set OPTIONS=%%M)
+for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOMOUNT=%%N)
 
 :CMD_LINE_EMU
 if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
@@ -54,7 +60,7 @@ EXIT
 :CARRYON
 ::set a temp directory for rom, either in rom dir or in the dir the user set
 :: use shortname (in case we need it for unzip) then CD to EMU directory
-if (%TEMPDIR%)==() (for /D %%X IN (%1) DO SET _TEMPDIR="%%~dpnsX\") else (for /D %%X IN (%1) DO SET _TEMPDIR="%TEMPDIR%\%%~nsX\")
+
 cd /d %EMU%\..
 
 set _ROMNAME=%1
@@ -74,9 +80,9 @@ if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 if exist "C:\Program Files\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTLite.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools executable ""DTLite.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-%_DT% -mount SCSI, 0, %_ROMNAME%
+%_DT% -mount SCSI, %_DAEMON_DRIVE%, %_ROMNAME%
 %EMU% %OPTIONS%
-%_DT% -unmount SCSI, 0
+%_DT% -unmount %_DAEMON_DRIVE%
 
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH

@@ -121,7 +121,7 @@ goto MOUNT
 :: then we probe for which type of file we have and go to the appropriate section
 :: The reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: search is recursive, so image can be in subfolder
-FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%Y"
+FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
 :ERROR_POPUP

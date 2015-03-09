@@ -35,8 +35,7 @@ for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEM
 if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR="%%~dpnsN\") else (for /D %%I IN (%1) DO SET _TEMPDIR="%TEMPDIR%")
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
-for /f "tokens=2* delims==" %%K in ('find "DEAMON_ZIP_DRIVE=" ^< %_INIFILE%') do (set DEAMON_ZIP_DRIVE=%%K)
-if (%DAEMON_ZIP_DRIVE%)==() (SET _DAEMON_ZIP_DRIVE=L) else (SET _DAEMON_ZIP_DRIVE=%DAEMON_ZIP_DRIVE%)
+
 ::-------------------------------------------------------------------------------------
 :: You can set Emu and Options from MULTILOADER.INI if you want to hard-code the loader
 :: (Most users will just want to launch from QuickPlay so won't need this)

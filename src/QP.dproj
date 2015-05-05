@@ -1,0 +1,255 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F36E9404-4964-46CD-A134-45E8EFBAE6AF}</ProjectGuid>
+        <MainSource>QP.DPR</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>16.1</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_Optimize>false</DCC_Optimize>
+        <VerInfo_Locale>2057</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_PentiumSafeDivide>true</DCC_PentiumSafeDivide>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_E>false</DCC_E>
+        <DCC_DebugInformation>1</DCC_DebugInformation>
+        <DCC_N>true</DCC_N>
+        <DCC_K>false</DCC_K>
+        <DCC_RangeChecking>true</DCC_RangeChecking>
+        <DCC_WriteableConstants>true</DCC_WriteableConstants>
+        <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
+        <DCC_UsePackage>VCL50;VCLX50;VCLSMP50;VCLDB50;VCLADO50;ibevnt50;VCLBDE50;VCLDBX50;QRPT50;TEEUI50;TEEDB50;TEE50;DSS50;TEEQR50;VCLIB50;VCLMID50;VCLIE50;INETDB50;INET50;NMFAST50;WEBMID50;dclaxserver50;DragDropD5;RXDB5;graphicsex9;dcl3rdparty;G32_D5;GridPackd5;DSMixer_d5;INDY50;ICSDEL50;JVMYCOMP100_R50;JvPBGoodies100_R50;FlatStyle_D5;dfwD5;ProgramTrackerPackage;Vsf5;tziptv5;LightColorPropertyD_D5;MacOS8Platiinum;TMSD5;rtl;vcl;vclx;VclSmp;JvCoreD10R;JvWizardD10R;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_MajorVer>4</VerInfo_MajorVer>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DcuOutput>..\dcu</DCC_DcuOutput>
+        <DCC_ExeOutput>..\qp</DCC_ExeOutput>
+        <VerInfo_Keys>CompanyName=John Scott;FileDescription=Quickplay the multi-emulator frontend;FileVersion=4.0.0.0;InternalName=qp.exe;LegalCopyright=John Scott;LegalTrademarks=John Scott;OriginalFilename=qp.exe;ProductName=QuickPlay - Phoenix;ProductVersion=4.0</VerInfo_Keys>
+        <DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
+        <SanitizedProjectName>QP</SanitizedProjectName>
+        <DCC_UnitSearchPath>$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\FindFile;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\GraphicEx;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\HIDKomponente;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JohnLib;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Common;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Win32API;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Icon_MainIcon>QP_Icon.ico</Icon_MainIcon>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Icon_MainIcon>QP_Icon.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="fAbout.pas">
+            <Form>AboutBox</Form>
+        </DCCReference>
+        <DCCReference Include="fAddaRom.pas">
+            <Form>AddRomForm</Form>
+        </DCCReference>
+        <DCCReference Include="fBackup.pas">
+            <Form>FrmBackup</Form>
+        </DCCReference>
+        <DCCReference Include="fColumns.pas">
+            <Form>FrmColumn</Form>
+        </DCCReference>
+        <DCCReference Include="fCustomRomData.pas">
+            <Form>FrmROMData</Form>
+        </DCCReference>
+        <DCCReference Include="fEditEmuFind.pas">
+            <Form>FrmEFindEdit</Form>
+        </DCCReference>
+        <DCCReference Include="fEmuChanges.pas">
+            <Form>EmuChangeFrm</Form>
+        </DCCReference>
+        <DCCReference Include="fEmuFind.pas">
+            <Form>EmuFinder</Form>
+        </DCCReference>
+        <DCCReference Include="fEmulators.pas">
+            <Form>FrmEmuDlg</Form>
+        </DCCReference>
+        <DCCReference Include="fExport.pas">
+            <Form>ROMexport</Form>
+        </DCCReference>
+        <DCCReference Include="fFav.pas">
+            <Form>FavForm</Form>
+        </DCCReference>
+        <DCCReference Include="fFind.pas">
+            <Form>FindForm</Form>
+        </DCCReference>
+        <DCCReference Include="fFolderOpt.pas">
+            <Form>FrmFolder</Form>
+        </DCCReference>
+        <DCCReference Include="fIPS.pas">
+            <Form>FrmIPS</Form>
+        </DCCReference>
+        <DCCReference Include="fMain.PAS">
+            <Form>MainFrm</Form>
+        </DCCReference>
+        <DCCReference Include="fMameMerge.pas">
+            <Form>FrmMAMEMerged</Form>
+        </DCCReference>
+        <DCCReference Include="fMameRename.pas">
+            <Form>DatReader</Form>
+        </DCCReference>
+        <DCCReference Include="fMigrate.pas">
+            <Form>FrmMigrate</Form>
+        </DCCReference>
+        <DCCReference Include="fOptions.pas">
+            <Form>PrefForm</Form>
+        </DCCReference>
+        <DCCReference Include="fRomProperties.pas">
+            <Form>FrmRomProp</Form>
+        </DCCReference>
+        <DCCReference Include="fRunDlg.pas">
+            <Form>FrmRunRom</Form>
+        </DCCReference>
+        <DCCReference Include="fScan.pas">
+            <Form>ScanForm</Form>
+        </DCCReference>
+        <DCCReference Include="fScanRecursive.pas">
+            <Form>RecursiveFrm</Form>
+        </DCCReference>
+        <DCCReference Include="fTxtEditor.pas">
+            <Form>EditCfgForm</Form>
+        </DCCReference>
+        <DCCReference Include="fWelcome.pas">
+            <Form>FrmWelcome</Form>
+        </DCCReference>
+        <DCCReference Include="fZip.pas">
+            <Form>FrmCompressionTools</Form>
+        </DCCReference>
+        <DCCReference Include="uEmuUtils.pas"/>
+        <DCCReference Include="uRom.pas"/>
+        <DCCReference Include="uRomUtils.pas"/>
+        <DCCReference Include="uRomList.pas"/>
+        <DCCReference Include="uSettings.pas"/>
+        <DCCReference Include="uEmu.pas"/>
+        <DCCReference Include="uEmuList.pas"/>
+        <DCCReference Include="uQPDir.pas"/>
+        <DCCReference Include="uQuery.pas"/>
+        <DCCReference Include="uQPVTEditor.pas"/>
+        <DCCReference Include="uQPVTQueryEditor.pas"/>
+        <DCCReference Include="uQPConst.pas"/>
+        <DCCReference Include="fTools.pas">
+            <Form>FrmToolCfg</Form>
+        </DCCReference>
+        <DCCReference Include="uEmuFindObj.pas"/>
+        <DCCReference Include="uExe.pas"/>
+        <DCCReference Include="fCompressFilePicker.pas">
+            <Form>FrmCompressPicker</Form>
+        </DCCReference>
+        <DCCReference Include="uTools.pas"/>
+        <DCCReference Include="uExeList.pas"/>
+        <DCCReference Include="uToolList.pas"/>
+        <DCCReference Include="fMediaPanelOptions.pas">
+            <Form>FrmMediaPanelOptions</Form>
+        </DCCReference>
+        <DCCReference Include="fAppearanceOptions.pas">
+            <Form>FrmAppearanceOptions</Form>
+        </DCCReference>
+        <DCCReference Include="uMediaPanelClasses.pas"/>
+        <DCCReference Include="uMediaSystemClass.pas"/>
+        <DCCReference Include="uMediaTabClass.pas"/>
+        <DCCReference Include="uMediaMiscTypes.pas"/>
+        <DCCReference Include="fMediaAddDefaultTab.pas">
+            <Form>FrmAddDefaultTab</Form>
+        </DCCReference>
+        <DCCReference Include="ftabThumbBrowser.pas">
+            <Form>tabThumbBrowser</Form>
+        </DCCReference>
+        <DCCReference Include="ftabImageViewer.pas">
+            <Form>tabImageViewer</Form>
+        </DCCReference>
+        <DCCReference Include="ftabTextOnly.pas">
+            <Form>tabTextOnly</Form>
+        </DCCReference>
+        <DCCReference Include="ftabQuickPlay.pas">
+            <Form>TabQuickPlay</Form>
+        </DCCReference>
+        <DCCReference Include="ftabSysEmu.pas">
+            <Form>TabSysEmu</Form>
+        </DCCReference>
+        <DCCReference Include="uQPMiscTypes.pas"/>
+        <DCCReference Include="fParamVars.pas">
+            <Form>FrmParamVars</Form>
+        </DCCReference>
+        <DCCReference Include="uQPCompObj.pas"/>
+        <DCCReference Include="uVersionCheckThread.pas"/>
+        <DCCReference Include="fMameHolding.pas">
+            <Form>MameHolding</Form>
+        </DCCReference>
+        <None Include="QP.todo"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">QP.DPR</Source>
+                </Source>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

@@ -22,11 +22,11 @@
 :: 		"%ROM%" "P:\Magic Engine\pce.exe" "-cd" "1"
 ::-------------------------------------------------------------------------------
 
-:: Get script dir (may need to run forciblyunmount.exe from it later)
+:: Get script dir as we may need to run forciblyunmount.exe from it later
 :: B2E converter by Faith Kodak is great, but will lose $0. the 'CD' trick doesn't work in his compiled exes either
-:: for /f "delims=" %%G in ('CD') do (set _SCRIPTDIR=%%G\)
 :: So, in order to get the script dir, we EITHER use a little trick from faith, or if that variable doesn't
 :: exist, we assume you're running from the bat and that $0 is the actual script dir
+::for /f "delims=" %%G in ('CD') do (set _SCRIPTDIR=%%G\)
 if (%b2eprogrampathname%)==() (set _SCRIPTDIR="%~dp0") else (set _SCRIPTDIR=%b2eprogrampathname%)
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
@@ -58,11 +58,13 @@ IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
 :CARRYON
-::set a temp directory for rom, either in rom dir or in the dir the user set, use shortname (in case we need it for unzip) then CD to EMU directory
+::set a temp directory for rom, either in rom dir or in the dir the user set
+:: use shortname (in case we need it for unzip) then CD to EMU directory
+
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
 ::We uncompress most types of zip with 7Zip, but for .mou files if you have winmount we can run the compressed image
-if /I (%~x1)==(.zip) goto MOUNT_ZIP
+if /I (%~x1)==(.zip) goto UNZIP
 if /I (%~x1)==(.rar) goto UNZIP
 if /I (%~x1)==(.ace) goto UNZIP
 if /I (%~x1)==(.7z) goto UNZIP
@@ -76,10 +78,9 @@ if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 if exist "C:\Program Files\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTLite.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools executable ""DTLite.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-%_DT% -mount dt, %_DAEMON_DRIVE%, %_ROMNAME%
+%_DT% -mount SCSI, %_DAEMON_DRIVE%, %_ROMNAME%
 %EMU% %OPTIONS%
 %_DT% -unmount %_DAEMON_DRIVE%
-if (%_DT_ZIP_MOUNTING%)==YES (%_DT% -unmount %_DAEMON_ZIP_DRIVE%)
 
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH
@@ -105,15 +106,6 @@ start "" %_WM% -m %1 -drv:x:\
 IF EXIST x:\*.* goto mount
 goto watch
 
-:MOUNT_ZIP
-if exist "C:\Program Files\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTLite.exe"
-if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe"
-if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools executable ""DTLite.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-%_DT% -mount dt, %_DAEMON_ZIP_DRIVE%, %_ROMNAME%
-FOR /R %_DAEMON_ZIP_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
-set _DT_ZIP_MOUNTING=YES
-goto LOAD
-
 :UNZIP
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
@@ -121,6 +113,7 @@ if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" i
 :: 7zip uncompresses image files and names its folder in rom dir after archive file 
 :: We will always overwrite if files exists, the tempdir is 8:3 named so enormously unlikely to be yours
 %_7Z% e %1 -o%_TEMPDIR% -y
+goto MOUNT
 
 :MOUNT
 :: then we probe for which type of file we have and go to the appropriate section

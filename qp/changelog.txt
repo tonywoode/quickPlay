@@ -1,0 +1,508 @@
+QuickPlay 4.1.0
+
+* Added new tool.ini files and support for Butterfly100's new tools files. More to do...
+* Includes many fixes from the new community
+* Tools sidebar now populates with all community supplied tools on first launch - Tools either launch or provide docs about their use
+* Updated, cleaned up and attributed icons
+* Fixed .gif not displaying
+* Added ReactOS CMD command and improved support for Start and Explorer commands
+* Updates to Arcade functionality
+* "Rename Mame Roms" now directs users to Perl script and (extensive) online support
+* Mame Icons now show parent icon if needed and if they can
+* Mame languages ini setup
+* Emulators.ini now instatiates on 1st run with ReactOS for PC Games (Start and Explorer)
+* The first call to %EXEPATH% as a CMD param now MOVES the position of the emu call in the CMDline instead of repeating emu call
+* Mame Perl script updated inc. support for 7z and fully merged sets
+* Mame History process fixed and updated
+* Mame Info process fixed and updated
+* Mess Efind updated to 0153
+* Mess Icon directory can now complement QP's own icons - added to appearance options
+* Tempest's tools have been altered with hard-coded paths and help files for easy use within QP
+* System Ini Files' game history dat files now set themseleves up as Game History media panel items for new users for the 29 goodsets we made them for
+* Sorted resizing of GFX assets in media panel
+* Multiloader now available as a TOOL,Multiloader updated,Multiloader now configured for various systems in EFinds
+
+QuickPlay 3.9.0
+
+* 9-10-10: Attempted to dive in to a language I would normaly never touch. Main goal is to continue this wonderful program.
+* Changed version to 3.9.0
+* Fixed home page and forum links
+* Removed update check, the way it works is, if the downloadable version is not = to the current, then suggest an upgrade. Instead of greater than. I dont know how to change that...
+* 9-20-10: Added a check for ! if no language as found.
+* Also added the option per folder to show only ! roms if so desired.
+* 9-22-10: Fixed gif error and scroll error QP now looks for noimagefound.jpg when no image was found.
+* The run rom dialog box now uses edit fields for that text that tends to wrap around, in some cases MESS, making it impossible to read.
+* 9-23-10: Added a rom Height slide bar
+* 10-16-10: Corrected readin maminfo and mamehistory files. ( clones now work ) (credit to tempest, member of the QP bords)
+
+QuickPlay 3.8.4
+
+* Experimental support for using Windows System fonts.
+* Updated 7-zip support. Now includes write support.
+* Command-line parameters for disabling certain UI elements.
+* Automatically check for updates
+* Ability to launch emulators with custom Process priority
+* Made changes to the Compressed file picker dialog.
+* Drive Migration wizard doesnt change IPS file information
+* Retain currently selected tab in Media Panel when moving ROMS
+* ROM Properties Next/Back buttons dont use the filtered view of the ROM list
+* Add Ability to modify more properties when using multiple ROMS
+
+Quickplay 3.8.3
+
+* Add support for media images/icons inside ZIP files (and ONLY zip files)
+* Uncompress File Picker uncompresses all files first
+* Add a ROM doesnt use the editted System File Exts
+* Appearance Options Hidden by other options
+* Equal amount of ROMs and Real MAME Icons causes crash
+* Last System in the list is left off in Emulator Management screen
+* Update DelphiZip Component
+* Update VirtualTreeview Component
+* Update JCL + JVCL
+
+Quickplay 3.8.2
+
+* Emulator finder was totally broken
+
+Quickplay 3.8.1
+New Features
+
+* Run Random ROM thats never been played
+* Power Scheme Changing when running ROM. This is both a global option and you can override on a per-emulator basis.
+* Temp uncompressing folder setting. This is both a global option and you can override on a per-emulator basis.
+* Ability to change whether Quickplay fully expands all folders on startup, or just first level folders, or no folders.
+
+Bug Fixes
+
+* Run Random fails if the ROM has no linked emulator
+* Using GoodMerge mode Quickplay would scan EVERY file on folder load
+* MAME Merge Scan Not working
+* Main ROM listing scrolls across when clicking on long roms
+* Upgrade to new version of Virtual Treeview component
+
+Quickplay 3.8
+
+* Entirely re-written media panel, totally over the top customisability too..
+* Add in customisable ROM good codes for the GoodMerge support area.
+* Archive contents picker for more than one ROM in archive files.
+* New global wallpaper settings
+* Add in ROM specific parameters
+* GoodMerge right-click to set default ROM to run
+* Quickplay is slow to start due to Emu Real Icons Thread - option to disable this.
+* EmuFinder form looks like ass. Make it a wizard
+* Directory Scrollbars not updating
+* Multi-Directory Scanner, pressing the browse button and then cancelling it failed
+* Deleting a folder always selects the First node.
+* Scanned Filters need saving
+* New Folder Button Always asks Root Node question
+* MAME rename file empty
+* UI Tidy up. Icons & Captions
+* Menu entry for editing emulators config file.
+* Move Virtual Folder results into Separate tab in sidebar.
+* Emulator Management Crash on close
+* Customisable Ratings
+* Disable Root Node Bug
+* Disabling Show Root Node removes custom icons
+* ROM popup menu doesnt appear with a blank list
+* Add in some weblinks to help menu
+* Options screen tidy up.
+* EmuFinder Data Files- Add Kega Fusion to EmuFinder Inis
+
+Quickplay 3.7.7
+
+* Fixed bug MAME ROM icons causing an exception. Dodgy code moment..
+
+Quickplay 3.7.6
+
+* Fixed integer overflow bug when trying to add a load of ROMs at once.
+
+Quickplay 3.7.5
+
+* Fixed bug where editing emulators after going through the firstrun wizard renamed all emulators..
+* Changed default romlist colours back to 'standard' window colours. go to options and click "default" to reset these colours.
+* Changed behaviour of file picker when adding in compression support. Now u just get "all formats" instead of a separate entry for zip, rar, etc..
+
+Quickplay 3.7.4
+
+* Fixed - Running game pauses for 4-5 seconds, caused by the hint box.. doh..
+* Fixed - Zinc roms not finding proper images with filenames the same as zips.
+* Fixed - Number of times played not actually working..
+
+QuickPlay 3.7.3
+
+* fixed bug where "mame-scanned" roms wouldnt actually run.. how embarrassing..
+* Fixed bug where MAME i686 would never run because quickplay was looking for the wrong configuration file.
+* Fixed bug where MAME/Zinc scan would fail if you selected to use the catver file, but it didnt exist.
+* Changed default commandline for new roms to add quotes.
+* Run With list is now alphabetically sorted.
+* Fixed MAME config file check question appeared after quickplay had minimised.. doh..
+
+QuickPlay 3.7.2
+
+* Basic ZiNc Support. Use Emu-Finder to configure this emulator, and scan the ROMS using the ZiNc scanner, found in the Arcade ROMs menu.
+* Re-instated "use QP temp directory for extraction" setting. Workaround for a bug where if you have a zipped copy of a game, and an unzipped copy in the same folder, QuickPlay will extract the zipped version over the unzipped version, and then delete it.. oops.
+* Added right click menu for GoodMerge ROMs, a lot of menu entries do nothing - this is by design!
+* Fixed - No tabs setting wasnt sticking
+* Fixed - Run Dialog was wiping out Emulator compression settings
+* Fixed - When adding new emulators, compression options werent loading
+* Fixed - uncompressed games wont run in a goodmerge folder
+* Fixed - Changing the default emulator in the directory mirroring options, didnt change the ROMs emulator on the next re-scan.
+
+QuickPlay 3.7.1
+
+* Background images are now working again
+* New Option to disable the tabs in the sidebar
+* New option to only show ROM folders in the sidebar, no virtual folders and no ROM root node
+* Bug Fixed - Pressing enter on ROM sometimes launched the wrong ROM
+* Made a few small changes to try and fix the slow emulator launch performance some people are experiencing.
+
+QuickPlay 3.7
+
+* Emulator properties totally rewritten, uses special variables.
+* Goodmerge ROMsets now support.
+* Ability to add 'Tools' to QuickPlay, instead of adding non-emulators into your emulator database.
+* Compression support totally rewritten. Currently has full support for Zips and READ-ONLY support for 7z, RARs and ACE files.
+* Fixed bug with Emulator management screen crashing on close.
+* Options to re-arrange window layout
+* New options for configuring the Thumbnail browser (which has also been replaced with a nicer looking one).
+* Queries enhanced to allow "Not equals" and "does not contain" type searches.
+* Backup and restore now includes the virtual searches directory.
+* Ability to edit previously saved virtual folders.
+* Ability to create entirely new ROMS from an IPS patch.
+* Default IPS file option. Pick an IPS to be ALWAYS applied when running a ROM (except when using another IPS patch).Also reworked the IPS editor, it sucked before, and it sucks a little less now.
+* Zip/Compression utilities form re-written.
+* Emu-Finder Data Editor updated, you can now exit without saving changes, and now supports new emulator launch method.
+* Emulators panel on main form now has 'fancy icons', also fancy icon loading has been speeded up.
+* Better support for adding the same emulator twice into QuickPlay.
+* And lots more that I didnt take a note of.. sorry.
+
+QuickPlay 3.6.1
+
+* Fixed Access violation in the Emulator management screen when you clicked on a system node.
+* Fixed ROM properties dialog adding in extra quotes to the rom path, thus making it invalid
+* Fixed while editting a ROM on the main screen, if you finish your edit by pressing enter it would launch the ROM.
+
+QuickPlay 3.6
+
+* Virtual Folders, Using the find dialog, you can save your search as a virtual folder and QuickPlay will re-execute your search anytime you want. This has the advantage of making sure your search returns the most up to date information
+* Added support for NPlayers.ini
+* Improved ROM properties dialog with Next and Back buttons
+* new tool which can create data files from your roms custom data - this file can then be used in other folks QP, to scan in your data.
+* New External Launcher program for emulators which run crappily when launched from quickplay.
+* removed pointless mouse emulator thing.
+* Removed the Quickplay custom message dialog. It looked crap.
+* Moved the list of launchable emulators into its own tree on the main form.
+* Improved the rom filtering, now you can filter by other columns.
+* Loads of other changes that I cant remember.. :)
+
+Fixes
+
+* Fixed divide by zero bug with Favourites.
+* Fixed issue from Beta where new systems.dat was not being created.
+* Fixed issue where emulators which didnt support commandlines were not available for linking to roms.
+* Sorted out a lot of issues with editors in the virtual treeview.
+
+QuickPlay 3.5.2
+
+* Made help file less ugly
+* For Real MAME Icons, if the ROM doesnt have an icon then use the standard 'ROM' icon.
+* Attempted to solve a bug where pressing Return on a ROM would launch it twice
+* New Minimising code (again)
+* Option to use Old minimising code, incase you have problems
+* Some reports that directory lists werent sorted have hopefully been rectified
+* Added in additional folders to the migration wizard. It now fixes Media + Mirrors
+* Added a 'backup/restore' data tool. Now once you have QuickPlay working you can save all the settings and have them as a backup if you screw something up later!
+* Improved handling of Read-Only drives.
+* QuickPlay will not try to write to read only drives
+* If you run from a read only drive, you can change settings
+* Windows Temp directory now used for extracting if you choose a drive that is ReadOnly for extracting
+* If you run from readonly media and have not configured QuickPlay , then QuickPlay will use a Temp directory allowing you to work with the program.
+
+Version 3.5.1
+Fixes
+
+* Fixed issue where very large fonts would be cut off vertically.
+* You can now use linebreaks in the ROM comment field without it crashing QuickPlay
+* Try again to sort out the minimising problems!
+* Migration wizard now changes the emulators working directory.
+* added Enter shortcut to launch ROMs.
+* Wont crash when invalid icons are put in the icons directory. An invalid icon is usually when a bitmap has been renamed to a .ico
+* Now you can edit the name of the emulator in the EmuFinder results list
+* Added ability to use the '#' character in parameter strings to indicate you don't want a space before/after the commandline
+* Updated the zipmaster component and ZIP dll.
+* Run ROM dialog has gone through some internal changes (and been re-ordered)
+* command-line can now be copied to clipboard by right-clicking.
+* Now you can edit the name of the emulator in the EmuFinder results list
+* Added ability to use the '#' character in parameter strings to indicate you don't want a space before/after the commandline
+* Updated the zipmaster component and ZIP dll.
+* Run ROM dialog has gone through some internal changes (and been re-ordered)
+* command-line can now be copied to clipboard by right-clicking.
+* Upgraded the commandline output for the runrom dialog
+* Added option to choose the extraction directory.
+
+Version 3.5
+New Features
+
+* Ability to scan inside a zip file. Now you can put all your ROMs inside one big zip file and can quickplay will scan inside the archive and store all the ROMS. Use the standard scan dialog and check the "scan inside zip files" option. Or you scan a single zip file by using the 'Add A ROM' dialog.
+* A NEW Getting starting wizard.
+* File Paths transfer wizard. If you move your roms on your hard drive you can update QPs data files without rescanning your roms using this wizard.
+* New option to switch off QP's temp file (used for extracting ROMs before running). If turned off QP will extract into the directory which contains the original zip file. The main purpose for this is Save States - now they wont be deleted! Also if you do decide to use the QP temp dir then your save states should also remain intact!
+* New Option to remember last folder and ROM on startup/shutdown.
+* 2 new ROM properties - Comment and Company.
+* New emulator properties to allow support for even more emulators:
+* Integrates into shell
+* Emulator requires NO rompath (emu.exe ROM) - activates suboption -> ROM name with extension.
+* MAME suboption - add -ROMPATH to end of command line.
+* Updated EmuFinder data files to reflect these changes.
+* Each Folder can now have its own 'visible column' settings. There are now a 'general' settings which can be over-riden in each folder.
+* option to turn off hints in the ROM listing and Directory listing.
+* Added new emulator icons, and made any custom folder icons slightly larger so they are more clear.
+* if you right-click on the link for the homepage (in the about dialog) it copies it to the clipboard. Pointless i know..
+* Now compiled in Delphi 7PE
+
+Fixes
+
+* Made a few improvements to the Multi-Dir scanner. Now there is the option to set an emulator to a folder AND all its subfolders.
+* Made changes to minimise/restore code, hopefully this will eliminate the remaining problems
+* Fixed situation where if you enabled 'Mame Real Game Icons' and set an invalid path no icons would appear - now the default 'chip' returns.
+* Fixed bug where if you selected multiple roms and went to ROM properties - and saved your changes, the WRONG roms would be changed!
+* fixed bug where if you right click on VTdir on NO nodes causes an exception.
+* Fixed Crash when using MAME scan 'All Directories'
+* When using the ROM properties form in 'multiple ROMS' mode, 'blank' settings erased any custom data. Now it doesnt.
+* Rewrite the Find dialog - should eliminate problems running certain roms.
+* Updated support for both 'versions' of the catver.ini file. Although both versions have always worked, there were bugs in this support. These have now been fixed and both versions are now fully supported (and interchangeable!)
+
+Version 3.4.3
+
+* MAME scan form now saves previous entered data and new option to retain users custom data with scan (slower) or just erase custom data (fast)
+* Scan dialog has been altered, you now now scan multiple directories at once.
+* Quickplay now stores a Clones Parent, and also you now use this Parent ROM in any Media searchs. (See tools/preferences/ and the check box in the media search panel)
+* Quickplay will now remember if it closed maximised and will open maximised next time its run.
+* Updated Game Type list to reflect new additions in CatVer.ini file.
+* Added basic support for ePSXe the playstation emulator. (use the Emu-Finder wizard to get it working easily)
+* New option to turn off the -rompath parameter for MAME. only enable this option if you have valid MAME.ini rom paths entered. If you are not sure - leave this option unchecked or your games will not run.
+* Added run random game from this folder, and run random game from any folder.
+* Upgraded zip.dll to latest version
+* Fixed a bug where in certain situations a deleted ROM would not be deleted properly.
+* Fixed a bug where users could try to create a directory with no parent directory selected - the created directory just wouldnt work!
+* Fixed a bug which prevented the 'Find ROMs' dialog from launching a ROM.
+* Fixed bug where if you tried to run a rom and Quickplay was maximised - quickplay then wouldnt minimise.
+
+Version 3.4.2
+
+* Improvements to Clone support, now Real Icons work and Jump to ROM work
+* Fixed a crash when IPS were added to ROMs
+* Saved Column Sizes check box now working again
+* Scan merged roms now allows you to scan multiple directories at the same type AND automatically parse CatVer.ini with the results
+* MadExcept now working so bug reports can be mailed
+
+Version 3.4.1
+New/Improved Features
+
+* Improved Directory Mirroring, now multiple directories on your hard drive can be mirrored in one QuickPlay directory, although there is a still a speed issue when scanning thousands of files!
+* Improved the Export options, now you can export to XML and Text, and the HTML output has been updated to XHTML.
+* Added editors into the main ROM listing, now instead of having to solely use the ROM properties dialog you can edit a ROMs value directly in the listing.
+* Experimental support for Merged MAME files. This uses MAME itself to scan directories and is SLOW!
+* Directory List and Image Panel now save there sizes and revert to these sizes when QuickPlay is reloaded.
+
+Bug Fixes
+
+* Removed strange entry in the File menu.
+* Fixed bug where clicking 'Reset Totals' in the options screen would crash QuickPlay if a ROM listing was loaded.
+
+Version 3.4
+Major changes 'under the hood'! Heres the list!
+
+* Directory Multi-Scanner - you can scan multiple directories from one handy screen.
+* Large update of the Emu-Finder data files, a lot of new emulators have been added
+* Finally got round to creating some decent looking background images for Quickplay.
+* New emulator property - enclose ROM path in speech marks, for added compatibility with emulators.
+* New Emulator propery - supports command-lines, now emulators can be marked as explicitly supporting command lines, or not - in which case Quickplay will try to filter out these emulators when you try to run a ROM.
+* New Emulator property - Homepage, which obviously allows you to visit the emulator homepage (homepages have been added to the Emu-Finder data files so they can be automatically set up for supported emulators)
+* Added Year property for ROMS.
+* Emulator management dialog completely rewritten.
+* Favourites dialog has been rewritten, and you can now have as many favourites as you want.
+* MAME game renamer rewritten and is faster and now includes year information too for every MAME ROM
+* Changes to the directory tree. It's now a virtual treeview (so its faster) and it has a new 'branch', emulators, which lists all available emulators (filtered by system) so you can just run an emulator without any special parameters - which makes it suitable for emulators which dont support command lines.
+* The ROM filter now includes any ROM which has the search criteria in it. If you want the functionality of the old filter style, simply click on the rom listing and start typing - yes incremental search is back!
+* Moved the options around (again), and I think I'm finally happy with where things are!
+* Mass file zipper now has configurable levels of compression.
+* Toolbars can now be hidden.
+* The 'Other Media Found' box will not appear if no other media has been found.
+* Quickplay has gone virtual - Mike Lischke's excellent Virtual Treeview component is used extensively throughout Quickplay.
+* Tweaked lots of code for speed increases and lower memory utilisation
+* Update following Delphi Components - TZipMaster (1.72) and VirtualTreeview(3.8.3)
+* Removed HTML Links panel (pointless feature) - no longer requires THTMlist box to compile.
+* Removed TDADirScan Component. Replaced TdfsBrowseDirectory component with the JVCL equivalent..
+* Improved error handling by using MADexcept.
+
+Version 3.3.3
+Mostly a bug fixing release, however a few cosmetic features added
+
+* Added in options to include Emulator Version number on ROM listings
+* Added in option to use a larger (32x32) ROM list icon.
+
+Bug Fixs
+
+* fixed a few problems with commandline preview in run rom dialog box.
+* Fix for the zip files code, it always put zipped files to c:\, now it will put them in the proper place!
+* various code changes to better manage memory for Real Icons, hopefully eliminating a lot of 'out of memory' problems. Also fixed an issue with the sorting algorithms and icons.
+* QuickPlay wasnt generating its default language and game type files, this is now fixed
+
+Version 3.3.2
+New Features
+
+* Added in Experimental Real Game Icons support.
+
+Bug fixes
+
+* Fixed problem where emulators which don't support ZIP files get passed ZIP files instead of extracted files!
+* Fixed issue where if folder monitoring was set up, and then emulator name was changed the folder mirroring would lose its emulator.
+
+Version 3.3.1
+Bug Fix release
+
+* Fixs problem where emulator gets sent the wrong 'Working Directory' variable.
+
+Version 3.3
+New Features
+
+* Changed emulator launching process, it 'seems' to run the emulator faster, although this needs verified!
+* Added in Directory Mirroring facility. Basically you set up a folder to mirror a directory and then click the 'rescan' button and Quickplay will automatically make sure its data and the actually folder match.
+* IPS patcher now built in. Thanks to my brother Dan for the code. (don't ask what an IPS is, I haven't a clue..)
+* You can now search for ROMs by filename and ROM name.
+* Added in custom message box, which provides more options for feedback to users
+
+Other Fixes
+
+* Fixed the tab order on every form! Yes it was extremely dull..
+* Fixed a situation where an emulator doesn't support ZIP files but the ROM isn't zipped and wont launch.
+* Fixed the code for saving information about columns, previously it didn't take into account all columns
+* Fixed sorting routines, they now completely work.
+* Improved the Emu-Finder Edit data files screen, its much easier to use now.
+* Added in options to configure media searches further than before.
+* General code cleanup - updated TThemeManager, TVirtualTree and GraphicsEX libraries.
+
+Version 3.2
+
+* Added in GIF support for images
+* added in Rom Filtering - by means of text box at top of ROM listing
+* Removal of the all-powerful QPRoutines.pas file, replaced with more object-orientated design.
+* fixed problem where last ROM doesn't appear
+* Fixed some issues where .ZIP is different from .zip
+* updated Tree view and Theme manager to newest versions.
+* removed ABFOneInstance component.
+* removed RXSplit component. now using TSplitter.
+* Various other bug fixes.
+
+Version 3.1
+
+* Mouse can now be controlled via a game pad, although I *think* the game pad has to be a DirectX compatible device. -thanks to Jon for his request
+* Zip Renamer has been upgraded to allow you to rename the file inside to match the zip file name - Thanks to Donny for this request.
+* Bug where the media panel sometimes didn't display the image found has been fixed. - Thanks to Don for this bug alert
+
+Version 3.0
+
+* Toolbars and Menu bars now use 'MS Office' style
+* QuickPlay can now Check for Updates online
+* Folder Option Screen added
+* Error messages can be emailed to developer (requires default mail client)
+* Media Panel now added. Images can be loaded in image viewer which other media can be run in the default viewer for that system
+* Columns in the ROM listing can be turned on and off
+* Game types are now in a list for easy selection
+* Rom Properties is now located in its own form, rather than silly panel at the bottom of the screen
+* Rom Properties have been upgraded and are now incompatible with older QP records
+* Emulator records have been upgraded and are now incompatible with older QP records
+* EmuFinder DAT files have been changed to INI files and a new editor has been added
+* Emu-Finder has had an overhaul and is easier to use
+* Run ROM function is rewritten and less flaky
+* Run ROM dialog now added.
+* Scan ROMs can now set a default language and rating for each ROM
+* Themes have been removed - they were pants anyway
+* Rename a ROM on disk and all save states etc are renamed too.
+* Source code tidied up and a few small bugs fixed.
+
+Version 2.5.3
+
+* Added in a Mass Zip verifier tool. Now you can scan a huge set of zip files to see if they are 'valid'
+* Tried AGAIN to fix the directory tree problem. I think its fixed now!
+* Tidied up the emu-wizard dialog.
+* Removed the TAboutBox component, and created a smaller about box. Subsequently you don't need the TAboutBox component to compile.
+
+Version 2.5.2 - MORE bug fixes..M
+
+* Fixed a problem with the emutree icons where it would sometimes display a weird icon!
+* Added in proper zip messages.
+* TRIED to fix a problem with the directory tree where a directory appears and it shouldn't be there!
+* Fixed a problem where the default theme might not load at startup.
+
+Version 2.5.1 - Bug fixes
+
+* Fixed a problem with the win32 Emulator option being lost in emulation sort.
+* Fixed a problem with some of the column sizes being lost when they were supposed to be saved
+
+Version 2.5 - Its been a long time coming....
+
+* Fixed some Window Minimising problems, and added option to disable Minimising the program when running a ROM.
+* Added in a Mass File Zipper and Unzipper. Also a zip file renaming tool.
+* Added saving of column positions
+* Added in more sorting routines so you can sort ROMs by the main columns
+* Added in a lot of error checking routines, QP now checks dat files exist, registry data exists and an error log is now output IF an error does occur.
+* Option for emulators to use win32 long file names when launching ROMs.
+* Now takes advantage of the Windows XP theme support
+* Emulation links panel, which contains links to popular emulation sites
+* Full resize options for the main form now incorporated
+* Fixed a 100% CPU usage bug... apparently this has been around for a while, but I never noticed it before!
+* A lot of the code has been written, and tidied up.
+* Massive increase in speed when renaming MAME ROMs
+* Now supports the CatVer.ini file to find MAME game types.
+* HUGE update on the EmuFinder data files. Nearly every emulator on Zophars Domain is supported.
+* EmuTree-Icons are now supported, thanks to SlitherX for this suggestion
+* Basic Theme support. You can now alter nearly every aspect of the main form.
+
+Version 2.0 - Major Improvements!
+
+* Multiple Sub-directories now supported, with Drag and Drop between different directories, now you can quickly move your ROMs!
+* Drag and Drop between folders AND drag files from Explorer into QuickPlay and they can be added to your database.
+* Massively increased ROM list speed - we're talking off the scale here!!
+* Deleting emulators will now check to see if it has a related data file and will delete this file.
+* Fixed the EmuFinder problem, where it didn't pick up GameBoy emulators properly.
+* EmuFinder also has better support for MAME, and its constant filename changes!
+* MAME game renamer has had a slight speed increase, and should be less likely to stop working for no reason!
+* Interface design has been improved.
+
+Version 1.1.5 - Small improvements
+
+* Added update ROMs when you change related emulator's properties
+* Slightly increased the ROM list loading time.
+* Create Shortcut on desktop option
+* Various other fixes
+
+Version 1.1 - A Few Upgrades!
+
+* Added Output Roms to HTML options, with special 'Missing MAME Games' incorporating links from MAME.DK
+* Found a way to speed up the loading of ROMs!
+* Added Refresh Button
+* Option to Save Column Sizes
+* Various Functions re-written for more speed!
+* Other various bug fixes.
+
+Version 1.0 - First Completed version of QuickPlay
+
+* Added this help file!
+* Added Rom Properties panel on main window.
+* More options have been added to preferences
+* Remembered to put in shortcut keys for the menus!!
+* Improved the Orphan File checker - now checks favourites for orphaned files.
+* When deleting emulators if you remove ROMs related to the emulator the favourites are also checked.
+* Allow Favourites to be edited.
+
+Version 0.9 - First Release of QuickPlay
+
+* Folder based database now operational
+* Emu-Finder completed, although not fully tested
+* Top 10 Roms implemented
+* MAME Game re-naming implemented
+* Basic Options Screen included
+* Emulator Ini file editing
+

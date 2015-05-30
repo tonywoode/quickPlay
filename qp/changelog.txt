@@ -1,3 +1,20 @@
+Quickplay v4.1.1 
+ 
+* automate scraping changes from git commits
+* Added the project's changelog
+* master branch uses stable multiloader
+* Removed scaffolding for daemon zip mounts
+* Fixed long-standing bug with multiloader imp
+* Multiloader is now uncompiled - compiled was just too annoying
+* Multiloader adapted for DTlite major version change
+* added gitattirbutes for osx commits
+* now a trailing \ in the ini doesn't matter
+* exe from loader bat recompiled
+* batch loader altered to allow user extraction path
+* source code files live with their assets to be useful
+* removed 'original homepage' link from help menu
+* Reinstated manual update check in help menu
+ 
 QuickPlay 4.1.0
 
 * Added new tool.ini files and support for Butterfly100's new tools files. More to do...

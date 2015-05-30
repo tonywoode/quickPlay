@@ -1,14 +1,21 @@
+* changelog echoes to project log and placeholds for web
 * automate scraping changes from git commits
 * Added the project's changelog
+* version number
 * master branch uses stable multiloader
+* return imp to state stashed
 * Removed scaffolding for daemon zip mounts
+* syntax
 * Fixed long-standing bug with multiloader imp
-* Multiloader is now uncompiled - compiled was just too annoying
-* Multiloader adapted for DTlite major version change
+* Compiled multiloader is just too annoying
+* Multiloader adapted for DTlite majorversion change
+* explained attributes file
 * added gitattirbutes for osx commits
 * now a trailing \ in the ini doesn't matter
 * exe from loader bat recompiled
+* ini and readme for batch updated to reflect changes
 * batch loader altered to allow user extraction path
 * source code files live with their assets to be useful
+* Changed some paths
 * removed 'original homepage' link from help menu
 * Reinstated manual update check in help menu

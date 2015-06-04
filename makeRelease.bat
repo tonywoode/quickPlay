@@ -1,8 +1,17 @@
 @ECHO OFF & SETLOCAL
 ::SET git tags from and to (to capture commits in that period)
 :VARIABLES
-SET LASTVERSION=v4.1.0
-SET THISVERSION=v4.1.1
+::-------------------------------------------------------------------------------
+:: Get Version info from settings file*******
+::-------------------------------------------------------------------------------
+set VERSIONFILE=Version.txt
+IF NOT EXIST %VERSIONFILE% (echo "There's no version file, I should probably generate one for you" && goto exit)
+for /f "tokens=2* delims==" %%H in ('find "THISVERSION=" ^< %VERSIONFILE%') do (set THISVERSION=%%H)
+for /f "tokens=2* delims==" %%H in ('find "LASTVERSION=" ^< %VERSIONFILE%') do (set LASTVERSION=%%H)
+::If we haven't read the version info, bomb
+IF (%THISVERSION%)==() (echo "You need to set version names in the config file" && goto exit)
+IF (%LASTVERSION%)==() (echo "You need to set version names in the config file" && goto exit)
+
 SET NOTEPADPLUSPLUS="C:\Program Files (x86)\Notepad++\notepad++.exe"
 SET SEVENZIP="C:\Program Files\7-Zip\7z.exe"
 ::todo need to make it so this could be quoted - needs param expansion ~
@@ -46,7 +55,7 @@ DEL "%RELEASEDIR%\qp\EFind\Gamebase.ini"
 ECHO.Cleaning up the old exe
 DEL "%RELEASEDIR%\qp\qp384.exe"
 
-ECHO.Cleaned Up Files, time to make the release notes...
+ECHO.Cleaned Up Files, time to make the release notes
 PAUSE
 :CHANGELOG
 ECHO. Generating a nix line-ending changelog
@@ -87,7 +96,7 @@ ECHO.Made ZIP, now testing...
 SET error=%errorlevel%
 IF %error% EQU 0 ECHO.all OK
 IF %error% NEQ 0 GOTO PROBLEM
-ECHO.ARCHIVE FOLDER CHECKS OK - DELETING SOURCE....
+ECHO.ARCHIVE FOLDER CHECKS OK - DELETING SOURCE
 PAUSE
 rd /s /q %RELEASEDIR%\qp 2>&1
 SET error=%errorlevel%
@@ -96,9 +105,10 @@ IF %error% NEQ 0 GOTO PROBLEM
 GOTO END
 
 :PROBLEM
-ECHO. Sorry bud, something went wrong zipping....
+ECHO. Sorry bud, something went wrong zipping
 PAUSE
 
 :END
 ECHO.done - upload me!
+ECHO.(if you did make a mistake though don't forget the release notes in the dev dir)
 PAUSE

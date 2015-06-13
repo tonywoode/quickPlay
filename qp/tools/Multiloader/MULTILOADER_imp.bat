@@ -75,9 +75,9 @@ if /I (%~x1)==(.mou) goto WINMOUNT
 if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 :: Mount daemon tools, load emu and passes full rom path to it
 :: After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
-if exist "C:\Program Files\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTLite.exe"
-if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTLite.exe"
-if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools executable ""DTLite.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
+if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
+if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 %_DT% -mount SCSI, %_DAEMON_DRIVE%, %_ROMNAME%
 %EMU% %OPTIONS%
 %_DT% -unmount %_DAEMON_DRIVE%

@@ -1,3 +1,17 @@
+Quickplay v4.1.1 
+ 
+* Multiloader patched for Changes in DeamonTools v10
+* Added the project's changelog
+* Fixed long-standing bug with multiloader imp
+* Multiloader code exposed - compiled multiloader got too annoying. Users can now change live
+* Multiloader adapted for DTlite v9 major-version change
+* exe from loader bat recompiled
+* ini and readme for batch updated to reflect changes
+* batch loader altered to allow user extraction path
+* source code files live with their assets to be useful
+* removed 'original homepage' link from help menu
+* Reinstated manual update check in help menu
+ 
 QuickPlay 4.1.0
 
 * Added new tool.ini files and support for Butterfly100's new tools files. More to do...

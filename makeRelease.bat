@@ -44,13 +44,13 @@ ROBOCOPY /mir qp\ %RELEASEDIR%\qp\
 DIR %RELEASEDIR%\qp || (ECHO. EXITING - UNSAFE && EXIT)
 
 :DELETE
-ECHO.Really Delete the relevant QuickPlay directories IN %RELEASEDIR%?
+ECHO.Ok copied. Now its safe to delete the relevant QuickPlay directories IN %RELEASEDIR%\qp, right?
 CHOICE
 IF NOT ERRORLEVEL 2 IF ERRORLEVEL 1 GOTO CARRYON
 EXIT
 
 :CARRYON
-ECHO.OK let's delete this data && PAUSE
+ECHO.OK let's delete this data
 ECHO.Cleaning Up QP Directory FOR Release
 RD /S /Q %RELEASEDIR%\qp\data
 RD /S /Q %RELEASEDIR%\qp\dats
@@ -78,7 +78,7 @@ IF EXIST %NOTEPADPLUSPLUS% (%NOTEPADPLUSPLUS% %RELEASEDIR%\changelogLF)
 PAUSE
 
 ECHO. appending that list to the changelog
-ECHO. Quickplay %THISVERSION% > %RELEASEDIR%\changewin.txt
+ECHO.Quickplay %THISVERSION% > %RELEASEDIR%\changewin.txt
 ECHO. >> %RELEASEDIR%\changeWin.txt
 :: http://stackoverflow.com/questions/3110031/batch-file-convert-lf-to-crlf
 TYPE %RELEASEDIR%\changelogLF | FIND "" /V >> %RELEASEDIR%\changewin.txt

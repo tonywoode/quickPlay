@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #
 #
-
+#use warnings;
 use File::Path qw(make_path);
 use File::Basename;
 
@@ -224,7 +224,7 @@ sub ParseQPFile
 			}
 		}
 	}
-if ($ext_guess == '') { $ext_guess = '.zip'; } #guess its a zipped set if we didn't find an extension for whatever reason
+if ($ext_guess eq '') { $ext_guess eq '.zip'; } #guess its a zipped set if we didn't find an extension for whatever reason
 return $ext_guess, $path_guess;
 }
 

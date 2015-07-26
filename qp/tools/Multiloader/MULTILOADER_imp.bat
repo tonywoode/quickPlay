@@ -82,6 +82,8 @@ if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line ex
 %EMU% %OPTIONS%
 %_DT% -unmount %_DAEMON_DRIVE%
 
+
+
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH
 %_WM% -unmountall

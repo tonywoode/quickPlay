@@ -90,9 +90,9 @@ sub ParseMAMEFile
 	while ($line=<XMLFILE>)
 	{
 		chomp $line;
-		if ($line =~ /<game\s.*name="([^"]*)"\ssourcefile/)
+		if ($line =~ /<(game|machine)\s.*name="([^"]*)"\ssourcefile/) #"game" changed to "machine" in Mame 0.163
 		{
-			$rec->{NAME}=TranslateAmp($1);
+			$rec->{NAME}=TranslateAmp($2); #(so i needed another capturing group)
 			if ($line =~ /cloneof="([^"]*)"/)
 			{
 				$rec->{CLONEOF}=TranslateAmp($1);
@@ -114,7 +114,7 @@ sub ParseMAMEFile
 		{
 			$rec->{COMMENT}=TranslateAmp($1);
 		}
-		elsif ($line =~ /^\s*<\/game>$/)
+		elsif ($line =~ /^\s*<\/(game|machine)>$/) #"game" changed to "machine" in Mame 0.163
 		{
 			$allrecs{$rec->{NAME}} = $rec;
 			ResetRecord;

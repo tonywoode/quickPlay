@@ -90,7 +90,7 @@ sub ParseMAMEFile
 	while ($line=<XMLFILE>)
 	{
 		chomp $line;
-		if ($line =~ /<(game|machine)\s.*name="([^"]*)"\ssourcefile/) #"game" changed to "machine" in Mame 0.163
+		if ($line =~ /<(game|machine)\s.*name="([^"]*)"\ssourcefile/ && $line !~ /runnable="no"/ )  #"game" changed to "machine" in Mame 0.163
 		{
 			$rec->{NAME}=TranslateAmp($2); #(so i needed another capturing group)
 			if ($line =~ /cloneof="([^"]*)"/)

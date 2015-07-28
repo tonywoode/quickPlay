@@ -284,7 +284,8 @@ sub TranslateAmp
 	$string =~ s/&lt;/</g;
 	$string =~ s/&gt;/>/g;
 	$string =~ s/&quot;/"/g;
-
+	$string =~ s/&apos;/'/g;
+	
 	return $string;
 }
 

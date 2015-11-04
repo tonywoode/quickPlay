@@ -1,3 +1,10 @@
+Quickplay v4.1.2 
+ 
+* added messmameUI, for now, as an arcade cab
+* mame script now updated for changes in Mame 0.163, incremented to v1.5
+* fix bugs in mame script
+* fixed bug in html file I/O
+ 
 Quickplay v4.1.1 
  
 * Multiloader patched for Changes in DeamonTools v10

@@ -1,4 +1,4 @@
-﻿SETLOCAL
+﻿ECHO OFF & SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
 :: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
@@ -33,7 +33,7 @@ IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 :: You must set these in the ini file: where to extract to, which drive letter for daemon tools
 :: ,and which for daemon's zip support
 for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
-if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR="%%~dpnsN\") else (for /D %%I IN (%1) DO SET _TEMPDIR="%TEMPDIR%")
+if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) DO SET _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 
@@ -97,7 +97,7 @@ goto FINISH
 ::note the user must have drive X free. I'd prefer this than trying to mount B:
 if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
-set _TEMPDIR="x:\"
+set _TEMPDIR=x:\
 
 if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
@@ -112,16 +112,18 @@ goto watch
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-:: 7zip uncompresses image files and names its folder in rom dir after archive file 
-:: We will always overwrite if files exists, the tempdir is 8:3 named so enormously unlikely to be yours
-%_7Z% e %1 -o%_TEMPDIR% -y
+
+::Copy zip to scratch dir
+robocopy %~dp1 "%_TEMPDIR%"   "%~nx1" /Z /J /COPY:D /DCOPY:D /MT:15 /ETA
+::unzip that in same dir
+%_7Z% e "%_TEMPDIR%\%~nx1" -o"%_TEMPDIR%" -y
 goto MOUNT
 
 :MOUNT
 :: then we probe for which type of file we have and go to the appropriate section
 :: The reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: search is recursive, so image can be in subfolder
-FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+FOR /R "%_TEMPDIR%" %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
 :ERROR_POPUP
@@ -136,6 +138,6 @@ del %temp%\TEMPmessage.vbs /f /q
 ::16 – Critical Icon, 32 – Warning Icon, 48 – Warning Message Icon, 64 – Information Icon  
 
 :FINISH
-if exist %_TEMPDIR% rd /s /q %_TEMPDIR%
+if exist "%_TEMPDIR%" rd /s /q "%_TEMPDIR%"
 FOR %%Z IN (EMU OPTIONS _TEMPDIR _INIFILE _ROMNAME _DT _7Z _WM _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 exit

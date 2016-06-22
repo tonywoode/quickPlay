@@ -64,10 +64,10 @@ EXIT
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
 ::We uncompress most types of zip with 7Zip, but for .mou files if you have winmount we can run the compressed image
-if /I (%~x1)==(.zip) goto UNZIP
-if /I (%~x1)==(.rar) goto UNZIP
-if /I (%~x1)==(.ace) goto UNZIP
-if /I (%~x1)==(.7z) goto UNZIP
+if /I (%~x1)==(.zip) goto MOVEIT
+if /I (%~x1)==(.rar) goto MOVEIT
+if /I (%~x1)==(.ace) goto MOVEIT
+if /I (%~x1)==(.7z) goto MOVEIT
 if /I (%~x1)==(.mou) goto WINMOUNT
 
 :LOAD
@@ -81,8 +81,6 @@ if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line ex
 %_DT% -mount SCSI, %_DAEMON_DRIVE%, %_ROMNAME%
 %EMU% %OPTIONS%
 %_DT% -unmount %_DAEMON_DRIVE%
-
-
 
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH
@@ -98,25 +96,33 @@ goto FINISH
 if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
 set _TEMPDIR=x:\
-
 if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 start "" %_WM% -m %1 -drv:x:\
 
-:watch
+:WATCH
 IF EXIST x:\*.* goto mount
 goto watch
+
+:MOVEIT
+::If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
+::http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
+::todo: its claimed in that link that this might not work on non-english language windows!?!
+dir %1 | find "<SYMLINK>" && (
+  ::Copy zip to scratch dir
+  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA
+  set SOURCEZIP=%_TEMPDIR%\%~nx1
+  goto unzip
+)
+set SOURCEZIP=%1
+goto unzip
 
 :UNZIP
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-
-::Copy zip to scratch dir
-robocopy %~dp1 "%_TEMPDIR%"   "%~nx1" /Z /J /COPY:D /DCOPY:D /MT:15 /ETA
-::unzip that in same dir
-%_7Z% e "%_TEMPDIR%\%~nx1" -o"%_TEMPDIR%" -y
+%_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y
 goto MOUNT
 
 :MOUNT

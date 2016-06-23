@@ -36,6 +36,7 @@ for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEM
 if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) DO SET _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
+for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
 ::-------------------------------------------------------------------------------------
 :: You can set Emu and Options from MULTILOADER.INI if you want to hard-code the loader
@@ -111,7 +112,7 @@ goto watch
 ::todo: its claimed in that link that this might not work on non-english language windows!?!
 dir %1 | find "<SYMLINK>" && (
   ::Copy zip to scratch dir
-  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA
+  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA /R:5 /W:2
   set SOURCEZIP=%_TEMPDIR%\%~nx1
   goto unzip
 )
@@ -122,7 +123,8 @@ goto unzip
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-%_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y
+::y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
+%_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y -aos
 goto MOUNT
 
 :MOUNT
@@ -144,6 +146,12 @@ del %temp%\TEMPmessage.vbs /f /q
 ::16 – Critical Icon, 32 – Warning Icon, 48 – Warning Message Icon, 64 – Information Icon  
 
 :FINISH
-if exist "%_TEMPDIR%" rd /s /q "%_TEMPDIR%"
-FOR %%Z IN (EMU OPTIONS _TEMPDIR _INIFILE _ROMNAME _DT _7Z _WM _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
+::if you have specified a tempdir and you do want to police it, wipe it recursively
+if (%_CLEANTEMP%)==(YES) ( 
+	if NOT (%TEMPDIR%)==() (
+		 if exist "%_TEMPDIR%" rd /s /q "%_TEMPDIR%"
+	)
+)
+
+FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 exit

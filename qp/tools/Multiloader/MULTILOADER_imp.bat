@@ -1,4 +1,5 @@
-﻿ECHO OFF & SETLOCAL
+﻿::ECHO OFF & 
+SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
 :: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
@@ -131,8 +132,41 @@ goto MOUNT
 :: then we probe for which type of file we have and go to the appropriate section
 :: The reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: search is recursive, so image can be in subfolder
-FOR /R "%_TEMPDIR%" %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+
+::we make a list of files in the archive, then in order we search for the file ending.
+%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
+FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
+	FOR /F "skip=16 usebackq skip=2 delims= tokens=*" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
+	
+	
+)
+echo %ROMFOUND%
+FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _BOY=%%t %%u
+echo "%_BOY%"
+pause
+
+::FOR /F "skip=16 eol= tokens=6*" %%i in (%_TEMPDIR%\list.txt) do @echo %%i %%j >> %_TEMPDIR%\list2.txt
+::for /f "delims=" %%t in (%_TEMPDIR%\list2.txt) do (find "%%t" *.* )
+::pause
+::FOR /F %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO FIND %%Y %_TEMPDIR%\list2.txt > %_TEMPDIR%\result.txt
+::FOR %%Y in (%_TEMPDIR%\list.txt ) DO echo %%Y
+::pause
+
+::get the name of the files in the archive
+:: FOR /F %%i in (%_7Z% l "%SOURCEZIP%") do @echo %%i %%j >> %_TEMPDIR%\temp.txt
+%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
+
+::for each filetype, see if there is a file in that list named the best filetype
+
+::first get all the files we could run, so they will be in order of filetype, with best being on the bottom
+FOR /R "%_TEMPDIR%" %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO (
+ set _ROMNAME="%%~nxY" 
+ FOR /F "skip=16 eol= tokens=6*" %%i in (%_TEMPDIR%\list.txt) do echo "%%i"
+ )
+ echo found it, its %_ROMNAME%
+pause
 goto LOAD
+
 
 :ERROR_POPUP
 ::http://stackoverflow.com/questions/774175/how-can-i-open-a-message-box-in-a-windows-batch-file

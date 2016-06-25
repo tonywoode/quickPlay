@@ -131,40 +131,16 @@ goto MOUNT
 :MOUNT
 :: then we probe for which type of file we have and go to the appropriate section
 :: The reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
-:: search is recursive, so image can be in subfolder
-
-::we make a list of files in the archive, then in order we search for the file ending.
+:
+::we make a list of files in the archive
 %_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
-	FOR /F "skip=16 usebackq skip=2 delims= tokens=*" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
-	
-	
+	FOR /F "usebackq skip=2 delims= tokens=*" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
 echo %ROMFOUND%
-FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _BOY=%%t %%u
-echo "%_BOY%"
-pause
-
-::FOR /F "skip=16 eol= tokens=6*" %%i in (%_TEMPDIR%\list.txt) do @echo %%i %%j >> %_TEMPDIR%\list2.txt
-::for /f "delims=" %%t in (%_TEMPDIR%\list2.txt) do (find "%%t" *.* )
-::pause
-::FOR /F %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO FIND %%Y %_TEMPDIR%\list2.txt > %_TEMPDIR%\result.txt
-::FOR %%Y in (%_TEMPDIR%\list.txt ) DO echo %%Y
-::pause
-
-::get the name of the files in the archive
-:: FOR /F %%i in (%_7Z% l "%SOURCEZIP%") do @echo %%i %%j >> %_TEMPDIR%\temp.txt
-%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
-
-::for each filetype, see if there is a file in that list named the best filetype
-
-::first get all the files we could run, so they will be in order of filetype, with best being on the bottom
-FOR /R "%_TEMPDIR%" %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO (
- set _ROMNAME="%%~nxY" 
- FOR /F "skip=16 eol= tokens=6*" %%i in (%_TEMPDIR%\list.txt) do echo "%%i"
- )
- echo found it, its %_ROMNAME%
-pause
+FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u
+set _ROMNAME="%_TEMPDIR%\%_CUE%"
+del %_TEMPDIR%\list.txt
 goto LOAD
 
 

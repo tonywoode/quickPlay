@@ -129,16 +129,16 @@ if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" i
 goto MOUNT
 
 :MOUNT
-:: then we probe for which type of file we have and go to the appropriate section
-:: The reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
-:
 ::we make a list of files in the archive
 %_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
+::probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
+::after we get the line from find that corresponds to the found cueing file
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
 	FOR /F "usebackq skip=2 delims= tokens=*" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
-echo %ROMFOUND%
+::pick out the filename from that line of FIND
 FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u
+::Make a valid URI
 set _ROMNAME="%_TEMPDIR%\%_CUE%"
 del %_TEMPDIR%\list.txt
 goto LOAD

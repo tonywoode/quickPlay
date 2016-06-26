@@ -1,5 +1,4 @@
-﻿::ECHO OFF & 
-SETLOCAL
+﻿ECHO OFF & SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
 :: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
@@ -45,7 +44,7 @@ for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _
 ::-------------------------------------------------------------------------------------
 IF NOT (%1)==() goto CMD_LINE_EMU
 for /f "tokens=2* delims==" %%L in ('find "EMU=" ^< %_INIFILE%') do (set EMU=%%L)
-::IF there's no EMU set in the ini, also ignore options and nomount setting
+:: IF there's no EMU set in the ini, also ignore options and nomount setting
 IF (%EMU%)==() goto CMD_LINE_EMU
 for /f "tokens=2* delims==" %%M in ('find "OPTIONS=" ^< %_INIFILE%') do (set OPTIONS=%%M)
 for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOMOUNT=%%N)
@@ -54,18 +53,18 @@ for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOM
 if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 :CHECK_EMU
-::If there isn't an emu, we have an error that will hang the script, bomb out instead
+:: If there isn't an emu, we have an error that will hang the script, bomb out instead
 IF EXIST %EMU% GOTO CARRYON
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
 :CARRYON
-::set a temp directory for rom, either in rom dir or in the dir the user set
-:: use shortname (in case we need it for unzip) then CD to EMU directory
+:: set a temp directory for rom, either in rom dir or in the dir the user set
+::  use shortname (in case we need it for unzip) then CD to EMU directory
 
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
-::We uncompress most types of zip with 7Zip, but for .mou files if you have winmount we can run the compressed image
+:: uncompress most archives with 7Zip, but for .mou files if you have winmount we can run the compressed image
 if /I (%~x1)==(.zip) goto MOVEIT
 if /I (%~x1)==(.rar) goto MOVEIT
 if /I (%~x1)==(.ace) goto MOVEIT
@@ -91,10 +90,10 @@ if exist "%_SCRIPTDIR%ForciblyWinmount.exe" start "" "%_SCRIPTDIR%ForciblyWinmou
 goto FINISH
 
 :WINMOUNT
-::Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. 
-::So start it and don't wait as the loop does the waiting for it
-::set flags first to tell script later that we are doing winmount
-::note the user must have drive X free. I'd prefer this than trying to mount B:
+:: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. 
+:: So start it and don't wait as the loop does the waiting for it
+:: set flags first to tell script later that we are doing winmount
+:: note the user must have drive X free. I'd prefer this than trying to mount B:
 if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
 set _TEMPDIR=x:\
@@ -108,12 +107,12 @@ IF EXIST x:\*.* goto mount
 goto watch
 
 :MOVEIT
-::If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
-::http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
-::todo: its claimed in that link that this might not work on non-english language windows!?!
+:: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
+:: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
+:: todo: its claimed in that link that this might not work on non-english language windows!?!
 dir %1 | find "<SYMLINK>" && (
-  ::Copy zip to scratch dir
-  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA /R:5 /W:2
+  :: Copy zip to scratch dir
+  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
   set SOURCEZIP=%_TEMPDIR%\%~nx1
   goto unzip
 )
@@ -124,44 +123,46 @@ goto unzip
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-::y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
+:: y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
 %_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y -aos
 goto MOUNT
 
 :MOUNT
-::we make a list of files in the archive
+:: we make (once) a list of files in the archive
 %_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
-::probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
-::after we get the line from find that corresponds to the found cueing file
+:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
+:: after we get the line from find that corresponds to the found cueing file
+:: skip=2 won't evaluate the first output line of find
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
-	FOR /F "usebackq skip=2 delims= tokens=*" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
+	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
-::pick out the filename from that line of FIND
-FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u
-::Make a valid URI
-set _ROMNAME="%_TEMPDIR%\%_CUE%"
 del %_TEMPDIR%\list.txt
+:: pick out the filename from that line of FIND
+(FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u) || set ERROR_MESSAGE="Didn't pick up a file to mount" && goto ERROR_POPUP
+:: make valid uri
+set _ROMNAME="%_TEMPDIR%\%_CUE%"
+
 goto LOAD
 
 
 :ERROR_POPUP
-::http://stackoverflow.com/questions/774175/how-can-i-open-a-message-box-in-a-windows-batch-file
+:: http://stackoverflow.com/questions/774175/how-can-i-open-a-message-box-in-a-windows-batch-file
 echo X=MSGBOX (%ERROR_MESSAGE%,0+48,"QuickPlay Multiloader Error") > %temp%\TEMPmessage.vbs
 call %temp%\TEMPmessage.vbs
 del %temp%\TEMPmessage.vbs /f /q
-::echo X=MsgBox("Message Description",0+16,"Title") >msg.vbs
-::–you can write any numbers from 0,1,2,3,4 instead of 0 (before the ‘+’ symbol) & here is the meaning of each number:
-::0 = Ok Button, 1 = Ok/Cancel Button, 2 = Abort/Retry/Ignore button, 3 = Yes/No/Cancel, 4 = Yes/No  
-::–you can write any numbers from 16,32,48,64 instead of 16 (after the ‘+’ symbol) & here is the meaning of each number:
-::16 – Critical Icon, 32 – Warning Icon, 48 – Warning Message Icon, 64 – Information Icon  
+:: echo X=MsgBox("Message Description",0+16,"Title") >msg.vbs
+:: –you can write any numbers from 0,1,2,3,4 instead of 0 (before the ‘+’ symbol) & here is the meaning of each number:
+:: 0 = Ok Button, 1 = Ok/Cancel Button, 2 = Abort/Retry/Ignore button, 3 = Yes/No/Cancel, 4 = Yes/No  
+:: –you can write any numbers from 16,32,48,64 instead of 16 (after the ‘+’ symbol) & here is the meaning of each number:
+:: 16 – Critical Icon, 32 – Warning Icon, 48 – Warning Message Icon, 64 – Information Icon  
 
 :FINISH
-::if you have specified a tempdir and you do want to police it, wipe it recursively
+:: if you have specified a tempdir and you do want to police it, wipe it recursively
 if (%_CLEANTEMP%)==(YES) ( 
 	if NOT (%TEMPDIR%)==() (
 		 if exist "%_TEMPDIR%" rd /s /q "%_TEMPDIR%"
 	)
 )
 
-FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
+FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 exit

@@ -111,8 +111,17 @@ goto watch
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
 dir %1 | find "<SYMLINK>" && (
-  :: Copy zip to scratch dir
-  robocopy %~dp1 "%_TEMPDIR%" "%~nx1" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+  :: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
+  ::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both
+  ::  robocopy and the list function of 7zip
+  :: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
+  ::  but tht didn't work for me, instead we use the nix-style backtick of for /f
+  for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+	:: must check for existing file else we'll robocopy the whole dir
+	if exist %1 (
+		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+	)
+  )
   set SOURCEZIP=%_TEMPDIR%\%~nx1
   goto unzip
 )
@@ -129,16 +138,20 @@ goto MOUNT
 
 :MOUNT
 :: we make (once) a list of files in the archive
-%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
-:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
+:: 7z list command doesn't like short names (a bug with 7z)
+:: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
+ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+	%_7Z% l "%_TEMPDIR%/%%i" > %_TEMPDIR%\list.txt
+ )
+	:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after we get the line from find that corresponds to the found cueing file
 :: skip=2 won't evaluate the first output line of find
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
 	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
-del %_TEMPDIR%\list.txt
 :: pick out the filename from that line of FIND
 (FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u) || set ERROR_MESSAGE="Didn't pick up a file to mount" && goto ERROR_POPUP
+del %_TEMPDIR%\list.txt
 :: make valid uri
 set _ROMNAME="%_TEMPDIR%\%_CUE%"
 

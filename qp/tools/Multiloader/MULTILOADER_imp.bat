@@ -64,15 +64,9 @@ set _ROMNAME="%~s1"
 ::  but that didn't work for me, instead we use the nix-style backtick of for /f
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i && GOTO unzip)
+	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i && GOTO CHECK_ARCHIVE_TYPE)
 )
-pause
-	:: uncompress most archives with 7Zip, but for .mou files if you have winmount we can run the compressed image
-if /I (%~x1)==(.zip) goto MOVEIT
-if /I (%~x1)==(.rar) goto MOVEIT
-if /I (%~x1)==(.ace) goto MOVEIT
-if /I (%~x1)==(.7z) goto MOVEIT
-if /I (%~x1)==(.mou) goto WINMOUNT
+
 
 :MOVEIT
 :: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
@@ -90,10 +84,18 @@ dir %1 | find "<SYMLINK>" && (
 	)
   )
   set SOURCEZIP=%_TEMPDIR%\%~nx1
-  goto unzip
+  goto CHECK_ARCHIVE_TYPE
 )
 set SOURCEZIP=%1
-goto unzip
+
+:CHECK_ARCHIVE_TYPE
+if /I (%~x1)==(.zip) goto UNZIP
+if /I (%~x1)==(.rar) goto UNZIP
+if /I (%~x1)==(.ace) goto UNZIP
+if /I (%~x1)==(.7z) goto UNZIP
+:: if you have winmount we can run the compressed image
+if /I (%~x1)==(.mou) goto WINMOUNT
+
 
 :LOAD
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after
@@ -121,8 +123,9 @@ set _TEMPDIR=x:\
 if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-start "" %_WM% -m %1 -drv:x:\
+start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
 
+pause
 :WATCH
 IF EXIST x:\*.* goto mount
 goto watch

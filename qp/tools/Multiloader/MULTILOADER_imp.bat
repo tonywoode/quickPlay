@@ -125,10 +125,13 @@ if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program File
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
 
-pause
 :WATCH
-IF EXIST x:\*.* goto mount
+IF EXIST x:\*.* goto carryon
 goto watch
+
+:CARRYON
+FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+goto LOAD
 
 :UNZIP
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"

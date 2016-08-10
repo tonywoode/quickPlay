@@ -22,16 +22,12 @@
 :: 		"%ROM%" "P:\Magic Engine\pce.exe" "-cd" "1"
 ::-------------------------------------------------------------------------------
 
-:: Get script dir as we may need to run forciblyunmount.exe from it later
-:: B2E converter by Faith Kodak is great, but will lose $0. the 'CD' trick doesn't work in his compiled exes either
-:: So, in order to get the script dir, we EITHER use a little trick from faith, or if that variable doesn't
-:: exist, we assume you're running from the bat and that $0 is the actual script dir
-::for /f "delims=" %%G in ('CD') do (set _SCRIPTDIR=%%G\)
+:: Get script dir (may need to run forciblyunmount.exe from it later). B2E converter by Faith Kodak is great, but will lose $0. the 'CD' trick doesn't work in his compiled exes either
+:: So, in order to get the script dir, we EITHER use a little trick from faith, or if that variable doesn't exist, we assume you're running from the bat and that $0 is the actual script dir
 if (%b2eprogrampathname%)==() (set _SCRIPTDIR="%~dp0") else (set _SCRIPTDIR=%b2eprogrampathname%)
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
-:: You must set these in the ini file: where to extract to, which drive letter for daemon tools
-:: ,and which for daemon's zip support
+:: You must set these in the ini file: where to extract to, which drive letter for daemon tools ,and which for daemon's zip support
 for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
 if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) DO SET _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
@@ -54,28 +50,55 @@ if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 :CHECK_EMU
 :: If there isn't an emu, we have an error that will hang the script, bomb out instead
-IF EXIST %EMU% GOTO CARRYON
+IF EXIST %EMU% GOTO START_PROCESSING
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
-:CARRYON
-:: set a temp directory for rom, either in rom dir or in the dir the user set
-::  use shortname (in case we need it for unzip) then CD to EMU directory
-
+:START_PROCESSING
+:: set a temp directory for rom, either in rom dir or in the dir the user set. use shortname (in case we need it for unzip) then CD to EMU directory
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
-:: uncompress most archives with 7Zip, but for .mou files if you have winmount we can run the compressed image
+
+::don't try moving files that we've already got cached
+:: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
+::  but that didn't work for me, instead we use the nix-style backtick of for /f
+
+for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i && GOTO unzip)
+)
+pause
+	:: uncompress most archives with 7Zip, but for .mou files if you have winmount we can run the compressed image
 if /I (%~x1)==(.zip) goto MOVEIT
 if /I (%~x1)==(.rar) goto MOVEIT
 if /I (%~x1)==(.ace) goto MOVEIT
 if /I (%~x1)==(.7z) goto MOVEIT
 if /I (%~x1)==(.mou) goto WINMOUNT
 
+:MOVEIT
+:: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
+:: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
+:: todo: its claimed in that link that this might not work on non-english language windows!?!
+dir %1 | find "<SYMLINK>" && (
+  :: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
+  ::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both
+  ::  robocopy and the list function of 7zip
+
+  for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+	:: must check for existing file else we'll robocopy the whole dir
+	if exist %1 (
+		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+	)
+  )
+  set SOURCEZIP=%_TEMPDIR%\%~nx1
+  goto unzip
+)
+set SOURCEZIP=%1
+goto unzip
+
 :LOAD
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after
 if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
-:: Mount daemon tools, load emu and passes full rom path to it
-:: After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
+:: Mount daemon tools, load emu and passes full rom path to it. After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
 if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
@@ -90,10 +113,8 @@ if exist "%_SCRIPTDIR%ForciblyWinmount.exe" start "" "%_SCRIPTDIR%ForciblyWinmou
 goto FINISH
 
 :WINMOUNT
-:: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. 
-:: So start it and don't wait as the loop does the waiting for it
-:: set flags first to tell script later that we are doing winmount
-:: note the user must have drive X free. I'd prefer this than trying to mount B:
+:: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. So start it and don't wait as the loop does the waiting for it
+:: set flags first to tell script later that we are doing winmount, note the user must have drive X free
 if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
 set _TEMPDIR=x:\
@@ -106,28 +127,6 @@ start "" %_WM% -m %1 -drv:x:\
 IF EXIST x:\*.* goto mount
 goto watch
 
-:MOVEIT
-:: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
-:: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
-:: todo: its claimed in that link that this might not work on non-english language windows!?!
-dir %1 | find "<SYMLINK>" && (
-  :: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
-  ::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both
-  ::  robocopy and the list function of 7zip
-  :: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
-  ::  but tht didn't work for me, instead we use the nix-style backtick of for /f
-  for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	:: must check for existing file else we'll robocopy the whole dir
-	if exist %1 (
-		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
-	)
-  )
-  set SOURCEZIP=%_TEMPDIR%\%~nx1
-  goto unzip
-)
-set SOURCEZIP=%1
-goto unzip
-
 :UNZIP
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
@@ -137,15 +136,15 @@ if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" i
 goto MOUNT
 
 :MOUNT
-:: we make (once) a list of files in the archive
-:: 7z list command doesn't like short names (a bug with 7z)
+:: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
  for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	%_7Z% l "%_TEMPDIR%/%%i" > %_TEMPDIR%\list.txt
  )
-	:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
-:: after we get the line from find that corresponds to the found cueing file
-:: skip=2 won't evaluate the first output line of find
+
+:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
+:: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
+
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
 	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )

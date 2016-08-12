@@ -1,4 +1,4 @@
-﻿ECHO OFF & SETLOCAL
+﻿@ECHO OFF && SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
 :: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
@@ -58,13 +58,14 @@ EXIT
 :: set a temp directory for rom, either in rom dir or in the dir the user set. use shortname (in case we need it for unzip) then CD to EMU directory
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
-
+echo %1
 ::don't try moving files that we've already got cached
 :: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
 ::  but that didn't work for me, instead we use the nix-style backtick of for /f
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i && GOTO CHECK_ARCHIVE_TYPE)
+	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i
+	GOTO CHECK_ARCHIVE_TYPE)
 )
 
 
@@ -83,7 +84,7 @@ dir %1 | find "<SYMLINK>" && (
 		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 	)
   )
-  set SOURCEZIP=%_TEMPDIR%\%~nx1
+  set SOURCEZIP="%_TEMPDIR%\%~nx1"
   goto CHECK_ARCHIVE_TYPE
 )
 set SOURCEZIP=%1

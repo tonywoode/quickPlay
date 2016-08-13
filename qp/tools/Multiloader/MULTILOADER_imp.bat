@@ -1,4 +1,5 @@
-﻿@ECHO OFF && SETLOCAL
+﻿::ECHO OFF &
+SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
 :: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
@@ -58,26 +59,26 @@ EXIT
 :: set a temp directory for rom, either in rom dir or in the dir the user set. use shortname (in case we need it for unzip) then CD to EMU directory
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
-echo %1
+
 ::don't try moving files that we've already got cached
 :: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
 ::  but that didn't work for me, instead we use the nix-style backtick of for /f
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	if EXIST "%_TEMPDIR%\%%i" (set SOURCEZIP=%_TEMPDIR%\%%i
-	GOTO CHECK_ARCHIVE_TYPE)
+	if EXIST "%_TEMPDIR%\%%i" (
+		set SOURCEZIP=%_TEMPDIR%\%%i
+		GOTO CHECK_ARCHIVE_TYPE
+	)
 )
-
 
 :MOVEIT
 :: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
-dir %1 | find "<SYMLINK>" && (
-  :: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
-  ::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both
-  ::  robocopy and the list function of 7zip
 
+dir %1 | find "<SYMLINK>" && (
+:: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
+::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
   for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	:: must check for existing file else we'll robocopy the whole dir
 	if exist %1 (

@@ -56,6 +56,11 @@ IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
 :START_PROCESSING
+if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
+if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
+if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
+if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
+if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
 :: set a temp directory for rom, either in rom dir or in the dir the user set. use shortname (in case we need it for unzip) then CD to EMU directory
 cd /d %EMU%\..
 set _ROMNAME="%~s1"
@@ -64,11 +69,18 @@ set _ROMNAME="%~s1"
 :: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
 ::  but that didn't work for me, instead we use the nix-style backtick of for /f
 
+::but do test zips (can't test winmount files) and if they aren't good, move them again
+f /I (%ARCHIVE_TYPE%)==(zip) (
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set SOURCEZIP=%_TEMPDIR%\%%i
-		GOTO CHECK_ARCHIVE_TYPE
+			(C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%/%%i") || (
+				echo "Problem with zip in cache - retrying"
+				GOTO MOVEIT
+			)
+			GOTO CHECK_ARCHIVE_TYPE
 	)
+)
 )
 
 :MOVEIT
@@ -91,13 +103,9 @@ dir %1 | find "<SYMLINK>" && (
 set SOURCEZIP=%1
 
 :CHECK_ARCHIVE_TYPE
-if /I (%~x1)==(.zip) goto UNZIP
-if /I (%~x1)==(.rar) goto UNZIP
-if /I (%~x1)==(.ace) goto UNZIP
-if /I (%~x1)==(.7z) goto UNZIP
+if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
+if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 :: if you have winmount we can run the compressed image
-if /I (%~x1)==(.mou) goto WINMOUNT
-
 
 :LOAD
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after

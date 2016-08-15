@@ -74,8 +74,8 @@ f /I (%ARCHIVE_TYPE%)==(zip) (
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set SOURCEZIP=%_TEMPDIR%\%%i
-			(C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%/%%i") || (
-				echo "Problem with zip in cache - retrying"
+			("C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%\%%i") || (
+				echo *****Problem with zip in cache - retrying*****
 				GOTO MOVEIT
 			)
 			GOTO CHECK_ARCHIVE_TYPE
@@ -154,9 +154,7 @@ goto MOUNT
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
- for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	%_7Z% l "%_TEMPDIR%/%%i" > %_TEMPDIR%\list.txt
- )
+	%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
 
 :: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)

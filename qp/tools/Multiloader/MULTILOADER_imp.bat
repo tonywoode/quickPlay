@@ -155,7 +155,7 @@ goto MOUNT
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
-	%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
+%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
 
 :: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
@@ -163,12 +163,36 @@ goto MOUNT
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
 	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
-:: pick out the filename from that line of FIND
-(FOR /F "tokens=6* eol=" %%t in ("%ROMFOUND%") do set _CUE=%%t %%u) || set ERROR_MESSAGE="Didn't pick up a file to mount" && goto ERROR_POPUP
+
+:GETNAME
+:: Pick out the filename from that line of 7zip output - note that sometimes the date and time
+:: are filled in, sometimes not, and the name is unquoted. 
+::I decided in the end to try to do a standard for loop in batch: iterating to the right
+::  searching for a substring match to a file name in the extraction directory (which serves the
+::  dual purpose of making sure the file has actually been extracted)
+::To get the string length for the loop is in itself not trivial 
+:: http://stackoverflow.com/questions/30143520/how-to-reverse-strings-in-a-batch-file
+:: http://stackoverflow.com/questions/10672885/how-to-count-the-characters-in-a-string-with-batch
+
+SETLOCAL ENABLEDELAYEDEXPANSION
+set STR=%ROMFOUND%
+call :Stringlength result "!STR!"
+echo %result%
+
+for /L %%i in (0,1,%RESULT%) do (
+ set num=%%i
+	set NEW_STR=!STR:~%%i!
+	echo !NEW_STR!
+	if [!NEW_STR!]==[] ( echo string is empty now) else (
+		if EXIST "%_TEMPDIR%\!NEW_STR!" ( 
+			set _ROMNAME="%_TEMPDIR%\!NEW_STR!"
+		)
+	)
+)
+SETLOCAL DISABLEDELAYEDEXPANSION
+echo romname to load is %_ROMNAME%
 del %_TEMPDIR%\list.txt
 :: make valid uri
-set _ROMNAME="%_TEMPDIR%\%_CUE%"
-
 goto LOAD
 
 
@@ -192,4 +216,28 @@ if (%_CLEANTEMP%)==(YES) (
 )
 
 FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
-exit
+exit /b
+
+
+exit /b
+
+:Stringlength <resultVar> <stringVar>
+::this doesn't seem entirely accurate (my tested file was off by 10 chars)
+::(doubtless due to the resolution?), so this may prove a problem for any very short disc names
+(   
+    setlocal EnableDelayedExpansion
+    set "s=!%~2!#"
+    set "len=0"
+    for %%P in (512 256 128 64 32 16 8 4 2 1) do (
+        if "!s:~%%P,1!" NEQ "" ( 
+            set /a "len+=%%P"
+            set "s=!s:~%%P!"
+        )
+    )
+)
+( 
+    endlocal
+    set "%~1=%len%"
+    exit /b
+)
+

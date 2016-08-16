@@ -177,9 +177,10 @@ FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cu
 set STR=%ROMFOUND%
 SETLOCAL ENABLEDELAYEDEXPANSION
 call :Stringlength result "!STR!"
+set /a padded_result=!result!+20
 echo %result%
 
-for /L %%i in (0,1,%RESULT%) do (
+for /L %%i in (0,1,!PADDED_RESULT!) do (
  set num=%%i
 	set NEW_STR=!STR:~%%i!
 	echo !NEW_STR!

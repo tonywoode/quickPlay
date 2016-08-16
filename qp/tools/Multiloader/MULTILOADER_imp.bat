@@ -115,9 +115,9 @@ if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-%_DT% -mount SCSI, %_DAEMON_DRIVE%, %_ROMNAME%
+%_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
-%_DT% -unmount %_DAEMON_DRIVE%
+%_DT% -unmount SCSI, 0
 
 :WINUNMOUNT
 if (%_WINMOUNTING%)==() goto FINISH

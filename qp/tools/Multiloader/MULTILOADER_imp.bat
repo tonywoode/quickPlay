@@ -174,8 +174,8 @@ FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cu
 :: http://stackoverflow.com/questions/30143520/how-to-reverse-strings-in-a-batch-file
 :: http://stackoverflow.com/questions/10672885/how-to-count-the-characters-in-a-string-with-batch
 
-SETLOCAL ENABLEDELAYEDEXPANSION
 set STR=%ROMFOUND%
+SETLOCAL ENABLEDELAYEDEXPANSION
 call :Stringlength result "!STR!"
 echo %result%
 

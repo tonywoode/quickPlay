@@ -93,12 +93,12 @@ dir %1 | find "<SYMLINK>" && (
 :: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 ::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
   for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	:: must check for existing file else we'll robocopy the whole dir
+	rem must check for existing file else we'll robocopy the whole dir
 	if exist %1 (
 		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 	)
   )
-  set SOURCEZIP="%_TEMPDIR%\%~nx1"
+  set SOURCEZIP=%_TEMPDIR%\%~nx1
   goto CHECK_ARCHIVE_TYPE
 )
 set SOURCEZIP=%1
@@ -134,7 +134,7 @@ set _TEMPDIR=x:\
 if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-start "" %_WM% -m %SOURCEZIP% -drv:x:\
+start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
 
 :WATCH
 IF EXIST x:\*.* goto carryon

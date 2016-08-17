@@ -59,24 +59,27 @@ if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
-:: set a temp directory for rom, either in rom dir or in the dir the user set. use shortname (in case we need it for unzip) then CD to EMU directory
+:: set a temp directory for rom, either in rom dir or in the dir the user set.
 cd /d %EMU%\..
+::use shortname (in case we need it for unzip) then CD to EMU directory
+:: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
 set _ROMNAME=%~s1
 
 :: don't try moving files that we've already got cached
 ::   Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
 ::   but that didn't work for me, instead we use the nix-style backtick of for /f
-:: but do test zips: if they aren't good, move them again
-:: mous will always try to recopy from source, sorry about that...
+:: Do test zips previously cached, and recopy them if they appear corrupt
+::   TODO: mous will never try to RE-copy from source, so delete corrupt mous manually
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set SOURCEZIP=%_TEMPDIR%\%%i
-			("C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%\%%i") || (
-				echo *****Problem with zip in cache - retrying*****
-				GOTO MOVEIT
+		if [%ARCHIVE_TYPE%]==[zip] (
+			"C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%\%%i") || (
+					echo *****Problem with zip in cache - retrying*****
+					GOTO MOVEIT
 			)
-			GOTO CHECK_ARCHIVE_TYPE
+		GOTO CHECK_ARCHIVE_TYPE
 		)
 	)
 )
@@ -132,7 +135,6 @@ if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinM
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
-pause
 
 :WATCH
 IF EXIST x:\*.* goto carryon

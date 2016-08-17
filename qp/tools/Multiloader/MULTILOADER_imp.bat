@@ -44,38 +44,43 @@ IF (%EMU%)==() goto CMD_LINE_EMU
 for /f "tokens=2* delims==" %%M in ('find "OPTIONS=" ^< %_INIFILE%') do (set OPTIONS=%%M)
 for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOMOUNT=%%N)
 
+:: Use shortname (in case we need it for unzip) then CD to EMU directory
+:: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
+set _ROMNAME=%~s1
+
+
 :CMD_LINE_EMU
 if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
-:CHECK_EMU
+
 :: If there isn't an emu, we have an error that will hang the script, bomb out instead
-IF EXIST %EMU% GOTO START_PROCESSING
+:CHECK_EMU
+IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CHECK_CACHE)
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
-:START_PROCESSING
+
+:: don't try moving files that we've already got cached
+:: Do test zips previously cached, and recopy them if they appear corrupt
+:CHECK_CACHE
+:: we won't get far in windows emulation without 7zip
+call :CHECK_7Z
+
 if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
-:: set a temp directory for rom, either in rom dir or in the dir the user set.
-cd /d %EMU%\..
-::use shortname (in case we need it for unzip) then CD to EMU directory
-:: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
-set _ROMNAME=%~s1
 
-:: don't try moving files that we've already got cached
 ::   Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
-::   but that didn't work for me, instead we use the nix-style backtick of for /f
-:: Do test zips previously cached, and recopy them if they appear corrupt
+::     but that didn't work for me, instead we use the nix-style backtick of for /f
 ::   TODO: mous will never try to RE-copy from source, so delete corrupt mous manually
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set SOURCEZIP=%_TEMPDIR%\%%i
 		if [%ARCHIVE_TYPE%]==[zip] (
-			"C:\Program Files\7-Zip\7z.exe" l "%_TEMPDIR%\%%i") || (
+			%_7z% l "%_TEMPDIR%\%%i") || (
 					echo *****Problem with zip in cache - retrying*****
 					GOTO MOVEIT
 			)
@@ -84,11 +89,11 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	)
 )
 
-:MOVEIT
+
 :: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
-
+:MOVEIT
 dir %1 | find "<SYMLINK>" && (
 rem Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 rem are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
@@ -103,18 +108,19 @@ rem are notoriously long, so we need to use dir /B in order to get the long name
 )
 set SOURCEZIP=%1
 
+
+:: if you have winmount we can run the compressed image directly
 :CHECK_ARCHIVE_TYPE
 if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
-:: if you have winmount we can run the compressed image
 
-:LOAD
+
+:: Mount the image (or not)
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after
+:LOAD
 if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
 :: Mount daemon tools, load emu and passes full rom path to it. After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
-if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
-if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
-if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
 %_DT% -unmount SCSI, 0
@@ -125,15 +131,13 @@ if (%_WINMOUNTING%)==() goto FINISH
 if exist "%_SCRIPTDIR%ForciblyWinmount.exe" start "" "%_SCRIPTDIR%ForciblyWinmount.exe"
 goto FINISH
 
-:WINMOUNT
 :: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. So start it and don't wait as the loop does the waiting for it
 :: set flags first to tell script later that we are doing winmount, note the user must have drive X free
+:WINMOUNT
 if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
 set _WINMOUNTING=YES
 set _TEMPDIR=x:\
-if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
-if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
-if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+call :CHECK_WINMOUNT
 start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
 
 :WATCH
@@ -145,28 +149,26 @@ FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi 
 goto LOAD
 
 :UNZIP
-if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
-if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
-if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 :: y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
 %_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y -aos
 goto MOUNT
 
+::we have to know where the runnable disc image is 
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
 %_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
 
-:: probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
+:: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
 
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
 	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
 )
 
-:GETNAME
 :: Pick out the filename from that line of 7zip output - note that sometimes the date and time
 :: are filled in, sometimes not, and the name is unquoted. 
+:GETNAME
 ::I decided in the end to try to do a standard for loop in batch: iterating to the right
 ::  searching for a substring match to a file name in the extraction directory (which serves the
 ::  dual purpose of making sure the file has actually been extracted)
@@ -193,7 +195,6 @@ for /L %%i in (0,1,!PADDED_RESULT!) do (
 SETLOCAL DISABLEDELAYEDEXPANSION
 echo romname to load is %_ROMNAME%
 del %_TEMPDIR%\list.txt
-:: make valid uri
 goto LOAD
 
 
@@ -217,14 +218,16 @@ if (%_CLEANTEMP%)==(YES) (
 )
 
 FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
-exit /b
-
 
 exit /b
 
-:Stringlength <resultVar> <stringVar>
+
+
+
+
+:STRINGLENGTH <resultVar> <stringVar>
 ::this doesn't seem entirely accurate (my tested file was off by 10 chars)
-::(doubtless due to the resolution?), so this may prove a problem for any very short disc names
+::(the resolution?), a problem for short names, hence i padded the result at the callsite
 (   
     setlocal EnableDelayedExpansion
     set "s=!%~2!#"
@@ -241,4 +244,23 @@ exit /b
     set "%~1=%len%"
     exit /b
 )
+
+
+:CHECK_7Z
+if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
+if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
+if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+
+
+:CHECK_DT
+if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
+if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
+if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+
+
+:CHECK_WINMOUNT
+if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
+if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
+if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+
 

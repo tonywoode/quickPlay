@@ -63,12 +63,11 @@ if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
 cd /d %EMU%\..
 set _ROMNAME=%~s1
 
-::don't try moving files that we've already got cached
-:: Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
-::  but that didn't work for me, instead we use the nix-style backtick of for /f
-
-::but do test zips (can't test winmount files) and if they aren't good, move them again
-::mous will always try to recopy from source, sorry about that...
+:: don't try moving files that we've already got cached
+::   Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
+::   but that didn't work for me, instead we use the nix-style backtick of for /f
+:: but do test zips: if they aren't good, move them again
+:: mous will always try to recopy from source, sorry about that...
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
@@ -78,8 +77,8 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 				GOTO MOVEIT
 			)
 			GOTO CHECK_ARCHIVE_TYPE
+		)
 	)
-)
 )
 
 :MOVEIT
@@ -88,8 +87,8 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
 
 dir %1 | find "<SYMLINK>" && (
-:: Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
-::  are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
+rem Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
+rem are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
   for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	rem must check for existing file else we'll robocopy the whole dir
 	if exist %1 (
@@ -133,6 +132,7 @@ if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinM
 if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
 if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
+pause
 
 :WATCH
 IF EXIST x:\*.* goto carryon

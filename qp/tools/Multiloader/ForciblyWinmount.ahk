@@ -1,4 +1,6 @@
-; Forcibly unmount ahk script for QuickPlay v1.0 - butter100fly 082012
+; Forcibly unmount ahk script v1.0 for QuickPlay
+;  this script itself doesn't get run, it is comiled to executable and
+;  the exe gets called
 #NoEnv
 #SingleInstance force
 #NoTrayIcon

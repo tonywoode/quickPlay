@@ -1,4 +1,4 @@
-﻿::ECHO OFF &
+::@ECHO OFF & 
 SETLOCAL
 :: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
 :: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 

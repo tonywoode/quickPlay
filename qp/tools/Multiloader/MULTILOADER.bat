@@ -9,5 +9,6 @@ SETLOCAL
 
 if (%b2eprogrampathname%)==() (set _SCRIPTDIR="%~dp0") else (set _SCRIPTDIR=%b2eprogrampathname%)
 pushd %_SCRIPTDIR%
+if ("%b2eargs%")==() (set _PARAMS=%*) else (set _PARAMS=%b2eargs%)
 %_SCRIPTDIR%MULTILOADER_imp.bat %b2eargs%
 popd

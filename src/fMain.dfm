@@ -2,8 +2,8 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 678
-  ClientWidth = 1038
+  ClientHeight = 530
+  ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -103,8 +103,8 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 659
-    Width = 1038
+    Top = 511
+    Width = 964
     Height = 19
     Panels = <
       item
@@ -117,23 +117,23 @@ object MainFrm: TMainFrm
   object PanContent: TPanel
     Left = 0
     Top = 0
-    Width = 1038
-    Height = 659
+    Width = 964
+    Height = 511
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 659
+      Height = 511
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
     end
     object SplitImage: TSplitter
-      Left = 863
+      Left = 789
       Top = 0
-      Height = 659
+      Height = 511
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,7 +144,7 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 659
+      Height = 511
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
@@ -152,7 +152,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 0
         Width = 209
-        Height = 659
+        Height = 511
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
@@ -163,7 +163,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 602
+            Height = 454
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -468,15 +468,15 @@ object MainFrm: TMainFrm
     object RomPanel: TPanel
       Left = 212
       Top = 0
-      Width = 651
-      Height = 659
+      Width = 577
+      Height = 511
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
       object PanRomTop: TPanel
         Left = 0
         Top = 0
-        Width = 651
+        Width = 577
         Height = 29
         Align = alTop
         BevelOuter = bvNone
@@ -561,8 +561,8 @@ object MainFrm: TMainFrm
       object VTRoms: TVirtualStringTree
         Left = 0
         Top = 53
-        Width = 651
-        Height = 606
+        Width = 577
+        Height = 458
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -699,7 +699,7 @@ object MainFrm: TMainFrm
       object PanFilter: TPanel
         Left = 0
         Top = 29
-        Width = 651
+        Width = 577
         Height = 24
         Align = alTop
         BevelOuter = bvNone
@@ -784,10 +784,10 @@ object MainFrm: TMainFrm
       end
     end
     object pgMediaPanel: TPageControl
-      Left = 866
+      Left = 792
       Top = 0
       Width = 172
-      Height = 659
+      Height = 511
       Align = alRight
       MultiLine = True
       TabOrder = 2

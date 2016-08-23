@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 575
+  ClientHeight = 600
   ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -99,11 +99,11 @@ object MainFrm: TMainFrm
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  PixelsPerInch = 120
+  PixelsPerInch = 96
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 556
+    Top = 581
     Width = 964
     Height = 19
     Panels = <
@@ -113,21 +113,19 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitTop = 531
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 964
-    Height = 556
+    Height = 581
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 531
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 556
+      Height = 581
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -135,7 +133,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 789
       Top = 0
-      Height = 556
+      Height = 581
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -146,29 +144,26 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 556
+      Height = 581
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 531
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 556
+        Height = 581
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitHeight = 531
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitHeight = 503
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 499
+            Height = 524
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -207,7 +202,6 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
-            ExplicitHeight = 474
             Columns = <
               item
                 Position = 0
@@ -475,11 +469,10 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 577
-      Height = 556
+      Height = 581
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 531
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -569,7 +562,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 577
-        Height = 503
+        Height = 528
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -621,7 +614,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitHeight = 478
         Columns = <
           item
             Position = 0
@@ -749,7 +741,7 @@ object MainFrm: TMainFrm
           Width = 89
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 1
           Text = 'By Name'
@@ -769,7 +761,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 13
+          ItemHeight = 0
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'
@@ -795,12 +787,11 @@ object MainFrm: TMainFrm
       Left = 792
       Top = 0
       Width = 172
-      Height = 556
+      Height = 581
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitHeight = 531
     end
     object Edit1: TEdit
       Left = 640

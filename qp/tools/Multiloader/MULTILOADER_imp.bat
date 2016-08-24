@@ -46,10 +46,10 @@ for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOM
 
 :: Use shortname (in case we need it for unzip) then CD to EMU directory
 :: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
-set _ROMNAME=%~s1
 
 
 :CMD_LINE_EMU
+set _ROMNAME=%~s1
 if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 
@@ -66,6 +66,7 @@ EXIT
 :: we won't get far in windows emulation without 7zip
 call :CHECK_7Z
 
+if /I (%~x1)==(.gcz) set ARCHIVE_TYPE=gcz
 if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
@@ -111,6 +112,7 @@ set SOURCEZIP=%1
 
 :: if you have winmount we can run the compressed image directly
 :CHECK_ARCHIVE_TYPE
+if /I (%ARCHIVE_TYPE%)==(gcz) goto LOAD
 if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 
@@ -211,11 +213,15 @@ del %temp%\TEMPmessage.vbs /f /q
 
 :FINISH
 :: if you have specified a tempdir and you do want to police it, wipe it recursively
-if (%_CLEANTEMP%)==(YES) ( 
-	if NOT (%TEMPDIR%)==() (
-		 if exist "%_TEMPDIR%" rd /s /q "%_TEMPDIR%"
-	)
-)
+if [%_CLEANTEMP%]==[YES] (
+	if NOT ["%_TEMPDIR%"]==[""] (
+		if exist "%_TEMPDIR%" (
+			rd /s /q "%_TEMPDIR%"
+		)
+	) 
+)	
+
+
 
 FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 

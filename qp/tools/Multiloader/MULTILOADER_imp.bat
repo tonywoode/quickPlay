@@ -66,7 +66,8 @@ EXIT
 :: we won't get far in windows emulation without 7zip
 call :CHECK_7Z
 
-if /I (%~x1)==(.gcz) set ARCHIVE_TYPE=gcz
+if /I (%~x1)==(.gcz) set ARCHIVE_TYPE=proprietary
+if /I (%~x1)==(.cso) set ARCHIVE_TYPE=proprietary
 if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
@@ -112,7 +113,7 @@ set SOURCEZIP=%1
 
 :: if you have winmount we can run the compressed image directly
 :CHECK_ARCHIVE_TYPE
-if /I (%ARCHIVE_TYPE%)==(gcz) goto LOAD
+if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
 if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 

@@ -73,7 +73,7 @@ set _ROMNAME=%~1
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
-if (%NOMOUNT%)==(1) goto WINMOUNT
+if (%NOMOUNT%)==(1) goto ZIPMOUNT
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 
@@ -89,10 +89,10 @@ call :CHECK_DT
 %_DT% -unmount SCSI, 0
 GOTO finish
 
-:: Pass arguments to winmount
-:WINMOUNT
+:: mount zips
+:ZIPMOUNT
 %_DT% -mount SCSI, 0, "%_ROMNAME%"
-set _WINMOUNTING=YES
+set _ZIPMOUNTING=YES
 FOR /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
@@ -169,7 +169,7 @@ if [%_CLEANTEMP%]==[YES] (
 
 
 
-FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _WINMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
+FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _ZIPMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
 
 exit /b
 

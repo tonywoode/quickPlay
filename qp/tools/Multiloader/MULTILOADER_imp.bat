@@ -81,7 +81,7 @@ if /I (%ARCHIVE_TYPE%)==(zip) (
 
 :: Mount the image or the zip
 :LOAD
-if (%NOMOUNT%)==(1) ( %EMU% %OPTIONS% "%_ROMNAME%" &GOTO unmount )
+if (%NOMOUNT%)==(1) ( %EMU% %OPTIONS% %_ROMNAME% &GOTO unmount )
 :: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%

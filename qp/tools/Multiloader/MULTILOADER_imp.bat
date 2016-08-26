@@ -126,11 +126,13 @@ if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 :: Mount the image (or not)
 :: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after
 :LOAD
-if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & goto WINUNMOUNT
+if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & GOTO unmount
+::& goto WINUNMOUNT
 :: Mount daemon tools, load emu and passes full rom path to it. After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
+:UNMOUNT
 %_DT% -unmount SCSI, 0
 
 :WINUNMOUNT

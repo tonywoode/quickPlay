@@ -80,7 +80,7 @@ if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
-		set SOURCEZIP=%_TEMPDIR%\%%i
+		set _ROMNAME=%_TEMPDIR%\%%i
 		if [%ARCHIVE_TYPE%]==[zip] (
 			%_7z% l "%_TEMPDIR%\%%i") || (
 					echo *****Problem with zip in cache - retrying*****
@@ -105,10 +105,11 @@ rem are notoriously long, so we need to use dir /B in order to get the long name
 		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 	)
   )
-  set SOURCEZIP=%_TEMPDIR%\%~nx1
+  set _ROMNAME=%_TEMPDIR%\%~nx1
   goto CHECK_ARCHIVE_TYPE
 )
-set SOURCEZIP=%1
+TODO: required at all? (tilde removes quotes)
+set _ROMNAME=%~1
 
 
 :: if you have winmount we can run the compressed image directly
@@ -141,26 +142,24 @@ if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X 
 set _WINMOUNTING=YES
 set _TEMPDIR=x:\
 call :CHECK_WINMOUNT
-start "" %_WM% -m "%SOURCEZIP%" -drv:x:\
+start "" %_WM% -m "%_ROMNAME%" -drv:x:\
 
 :WATCH
-IF EXIST x:\*.* goto carryon
-goto watch
+@IF NOT EXIST x:\*.* goto watch
 
-:CARRYON
 FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
 :UNZIP
 :: y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
-%_7Z% e "%SOURCEZIP%" -o"%_TEMPDIR%" -y -aos
+%_7Z% e "%_ROMNAME%" -o"%_TEMPDIR%" -y -aos
 goto MOUNT
 
 ::we have to know where the runnable disc image is 
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
-%_7Z% l "%SOURCEZIP%" > %_TEMPDIR%\list.txt
+%_7Z% l "%_ROMNAME%" > %_TEMPDIR%\list.txt
 
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)

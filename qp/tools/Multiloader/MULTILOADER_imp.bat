@@ -1,31 +1,6 @@
 ::@ECHO OFF & 
 SETLOCAL
-:: CD/DVD MULTILOADER SCRIPT v1.4 - butter100fly 2015
-:: Pass an image to me, I work out if its compressed or not, if it is I work out which prog to extract it with 
-:: and mount in Daemon Tools, if its not I just mount it, Launch emu with params, and clear up after
-:: For V1.3 I made it so you could say where to extract zips in the ini
-:: For V1.4 I made it compatible with Daemon Tools 5, and also zips can now open directly in daemon tools
-
-:: There are command line parameters you can call when calling the script. You must call them in this order: 
-:: First "PATH TO ROM"  
-:: Secondly "EMULATOR EXECUTABLE" 
-:: Thirdly "OPTIONS TO PASS TO EMULATOR (eg.:-CD)"
-:: Fourthly "Direct Mount" - PASS IMAGE TO EMULATOR INSTEAD OF TO DEAMON TOOLS - 1 is yes, anything else is no
-:: Please encase all 4 in "quotation marks" and include empty emulator options ie: "" if you need to set direct mount after
-::
-:: So in QuickPLay you would call, for example: 
-::		"%ROM%" "P:\Mednafen\Mednafen.exe"
-:: (we don't need direct mount and there are no options)
-:: Or 
-::		"%ROM%" "P:\Magic Engine\pce.exe" "" "1"
-:: (we need the "" because we need direct mounting after)
-:: Actually we can improve that one to pass -cd to Magic Engine:
-:: 		"%ROM%" "P:\Magic Engine\pce.exe" "-cd" "1"
-::-------------------------------------------------------------------------------
-
-:: Get script dir (may need to run forciblyunmount.exe from it later). B2E converter by Faith Kodak is great, but will lose $0. the 'CD' trick doesn't work in his compiled exes either
-:: So, in order to get the script dir, we EITHER use a little trick from faith, or if that variable doesn't exist, we assume you're running from the bat and that $0 is the actual script dir
-if (%b2eprogrampathname%)==() (set _SCRIPTDIR="%~dp0") else (set _SCRIPTDIR=%b2eprogrampathname%)
+set _SCRIPTDIR="%~dp0"
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
 :: You must set these in the ini file: where to extract to, which drive letter for daemon tools ,and which for daemon's zip support
@@ -35,51 +10,34 @@ for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (se
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
-::-------------------------------------------------------------------------------------
-:: You can set Emu and Options from MULTILOADER.INI if you want to hard-code the loader
-:: (Most users will just want to launch from QuickPlay so won't need this)
-::-------------------------------------------------------------------------------------
-IF NOT (%1)==() goto CMD_LINE_EMU
-for /f "tokens=2* delims==" %%L in ('find "EMU=" ^< %_INIFILE%') do (set EMU=%%L)
-:: IF there's no EMU set in the ini, also ignore options and nomount setting
-IF (%EMU%)==() goto CMD_LINE_EMU
-for /f "tokens=2* delims==" %%M in ('find "OPTIONS=" ^< %_INIFILE%') do (set OPTIONS=%%M)
-for /f "tokens=2* delims==" %%N in ('find "NOMOUNT=" ^< %_INIFILE%') do (set NOMOUNT=%%N)
-
 :: Use shortname (in case we need it for unzip) then CD to EMU directory
 :: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
-
-
-:CMD_LINE_EMU
 set _ROMNAME=%~s1
-if exist %2 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
+set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 
-:: If there isn't an emu, we have an error that will hang the script, bomb out instead
+:: If there isn't an emu, we have an error that will hang the script, blow up
 :CHECK_EMU
-IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CHECK_CACHE)
+IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CACHE)
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
 
 :: don't try moving files that we've already got cached
 :: Do test zips previously cached, and recopy them if they appear corrupt
-:CHECK_CACHE
+:CACHE
 :: we won't get far in windows emulation without 7zip
 call :CHECK_7Z
-
 if /I (%~x1)==(.gcz) set ARCHIVE_TYPE=proprietary
 if /I (%~x1)==(.cso) set ARCHIVE_TYPE=proprietary
 if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
-if /I (%~x1)==(.mou) set ARCHIVE_TYPE=mou
 
 ::   Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
 ::     but that didn't work for me, instead we use the nix-style backtick of for /f
-::   TODO: mous will never try to RE-copy from source, so delete corrupt mous manually
-
+::   TODO: non 7zip/7z will never try to RE-copy from source, so delete corrupt one's manually
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set _ROMNAME=%_TEMPDIR%\%%i
@@ -113,36 +71,25 @@ rem are notoriously long, so we need to use dir /B in order to get the long name
 TODO: required at all? (tilde removes quotes)
 set _ROMNAME=%~1
 
-
-:: if you have winmount we can run the compressed image directly
+:: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
 if (%NOMOUNT%)==(1) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
-if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 
 
-
-:: Mount the image (or not)
-:: if we want to pass direct to emu we look for 1 in the ini, just pass romname to emu, and goto exit after
+:: Mount the image or the zip
 :LOAD
 if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & GOTO unmount
-::& goto WINUNMOUNT
-:: Mount daemon tools, load emu and passes full rom path to it. After emu exits, unmounts daemon and deletes temp files, temp folder, and temp variables
+:: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
 :UNMOUNT
 %_DT% -unmount SCSI, 0
+GOTO finish
 
-:WINUNMOUNT
-if (%_WINMOUNTING%)==() goto FINISH
-%_WM% -unmountall
-if exist "%_SCRIPTDIR%ForciblyWinmount.exe" start "" "%_SCRIPTDIR%ForciblyWinmount.exe"
-goto FINISH
-
-:: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. So start it and don't wait as the loop does the waiting for it
-:: set flags first to tell script later that we are doing winmount, note the user must have drive X free
+:: Pass arguments to winmount
 :WINMOUNT
 %_DT% -mount SCSI, 0, "%_ROMNAME%"
 set _WINMOUNTING=YES
@@ -261,11 +208,3 @@ if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" i
 if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-
-
-:CHECK_WINMOUNT
-if exist "C:\Program Files\WinMount\winmount.exe" set _WM="C:\Program Files\WinMount\winmount.exe"
-if exist "C:\Program Files (x86)\WinMount\winmount.exe" set _WM="C:\Program Files (x86)\Winmount\Winmount.exe"
-if (%_WM%)==() set ERROR_MESSAGE="Please ensure the Winmount executable ""winmount.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-
-

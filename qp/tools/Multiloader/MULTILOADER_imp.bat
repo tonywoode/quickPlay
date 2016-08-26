@@ -114,9 +114,11 @@ set _ROMNAME=%~1
 
 :: if you have winmount we can run the compressed image directly
 :CHECK_ARCHIVE_TYPE
+if (%NOMOUNT%)==(1) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
 if /I (%ARCHIVE_TYPE%)==(mou) goto WINMOUNT
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
+
 
 
 :: Mount the image (or not)
@@ -138,16 +140,12 @@ goto FINISH
 :: Pass arguments to winmount. If winmount wasn't already running, it was hanging the script. So start it and don't wait as the loop does the waiting for it
 :: set flags first to tell script later that we are doing winmount, note the user must have drive X free
 :WINMOUNT
-if exist x:\nul set ERROR_MESSAGE="Winmount needs to use drive X, but a drive X is already mounted. Try to unmount it. Sorry!" && goto ERROR_POPUP
+%_DT% -mount SCSI, 0, "%_ROMNAME%"
 set _WINMOUNTING=YES
-set _TEMPDIR=x:\
-call :CHECK_WINMOUNT
-start "" %_WM% -m "%_ROMNAME%" -drv:x:\
 
-:WATCH
-@IF NOT EXIST x:\*.* goto watch
-
-FOR /R %_TEMPDIR% %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+FOR /R K:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+echo %_ROMNAME%
+pause
 goto LOAD
 
 :UNZIP

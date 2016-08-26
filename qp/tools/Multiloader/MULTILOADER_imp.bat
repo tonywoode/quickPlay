@@ -73,14 +73,15 @@ set _ROMNAME=%~1
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
-if (%NOMOUNT%)==(1) goto ZIPMOUNT
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
-if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
-
+if /I (%ARCHIVE_TYPE%)==(zip) (
+	if [%NOMOUNT%]==[1] goto ZIPMOUNT
+	goto UNZIP
+)
 
 :: Mount the image or the zip
 :LOAD
-if (%NOMOUNT%)==(1) %EMU% %OPTIONS% %_ROMNAME% & GOTO unmount
+if (%NOMOUNT%)==(1) ( %EMU% %OPTIONS% "%_ROMNAME%" &GOTO unmount )
 :: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
@@ -166,16 +167,11 @@ if [%_CLEANTEMP%]==[YES] (
 		)
 	) 
 )	
-
-
-
 FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _ZIPMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
-
 exit /b
 
 
-
-
+::UTILITY FUNCTIONS
 
 :STRINGLENGTH <resultVar> <stringVar>
 ::this doesn't seem entirely accurate (my tested file was off by 10 chars)

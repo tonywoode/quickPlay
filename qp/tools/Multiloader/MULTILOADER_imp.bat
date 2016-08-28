@@ -106,13 +106,13 @@ goto MOUNT
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
-%_7Z% l "%_ROMNAME%" > %_TEMPDIR%\list.txt
+%_7Z% l "%_ROMNAME%" > %_TEMPDIR%\archive.txt
 
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
 
 FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
-	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\list.txt "%%Y"`) do set ROMFOUND=%%v
+	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v
 )
 
 :: Pick out the filename from that line of 7zip output - note that sometimes the date and time
@@ -126,12 +126,13 @@ FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cu
 :: http://stackoverflow.com/questions/10672885/how-to-count-the-characters-in-a-string-with-batch
 
 set STR=%ROMFOUND%
+ECHO %STR%> %_TEMPDIR%\archive.txt
+FOR %%? IN (%_TEMPDIR%\archive.txt) DO ( SET /A strlength=%%~z? - 2 )
 SETLOCAL ENABLEDELAYEDEXPANSION
-call :Stringlength result "!STR!"
-set /a padded_result=!result!+20
+set /a result=!strlength!
 echo %result%
 
-for /L %%i in (0,1,!PADDED_RESULT!) do (
+for /L %%i in (0,1,!RESULT!) do (
  set num=%%i
 	set NEW_STR=!STR:~%%i!
 	echo !NEW_STR!
@@ -143,7 +144,7 @@ for /L %%i in (0,1,!PADDED_RESULT!) do (
 )
 SETLOCAL DISABLEDELAYEDEXPANSION
 echo romname to load is %_ROMNAME%
-del %_TEMPDIR%\list.txt
+del %_TEMPDIR%\archive.txt§
 goto LOAD
 
 
@@ -172,27 +173,6 @@ exit /b
 
 
 ::UTILITY FUNCTIONS
-
-:STRINGLENGTH <resultVar> <stringVar>
-::this doesn't seem entirely accurate (my tested file was off by 10 chars)
-::(the resolution?), a problem for short names, hence i padded the result at the callsite
-(   
-    setlocal EnableDelayedExpansion
-    set "s=!%~2!#"
-    set "len=0"
-    for %%P in (512 256 128 64 32 16 8 4 2 1) do (
-        if "!s:~%%P,1!" NEQ "" ( 
-            set /a "len+=%%P"
-            set "s=!s:~%%P!"
-        )
-    )
-)
-( 
-    endlocal
-    set "%~1=%len%"
-    exit /b
-)
-
 
 :CHECK_7Z
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"

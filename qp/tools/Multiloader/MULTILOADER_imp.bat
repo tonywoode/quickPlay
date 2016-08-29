@@ -59,15 +59,12 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
 :MOVEIT
-echo before we start var is %var%
 dir %1 | find "<SYMLINK>" && (
 rem Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 rem are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
   for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	rem must check for existing file else we'll robocopy the whole dir
 	if exist %1 (
-	echo var is %var%
-	echo romname is %_ROMNAME%
 	rem we need to keep our scope now for this call to work else %2 will end up being the parent scopes
 		( call :getPath "!_ROMNAME!" var
 		  rem todo - much care needed here - make sure var is not empty of we might make a copy of all files in the cache into the emu dir
@@ -101,6 +98,7 @@ GOTO finish
 
 :: mount zips
 :ZIPMOUNT
+call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 set _ZIPMOUNTING=YES
 FOR /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"

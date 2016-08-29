@@ -1,5 +1,7 @@
 ::@ECHO OFF & 
 SETLOCAL
+SETLOCAL ENABLEDELAYEDEXPANSION
+
 set _SCRIPTDIR="%~dp0"
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
@@ -12,6 +14,7 @@ for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _
 
 :: Use shortname (in case we need it for unzip) then CD to EMU directory
 :: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
+:: we SHOULD always quote the assignment but 7zip hates quoted 8:3 names, so if we're likely to end up with one, don't quote it
 set _ROMNAME=%~s1
 set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
@@ -40,7 +43,7 @@ if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
 ::   TODO: non 7zip/7z will never try to RE-copy from source, so delete corrupt one's manually
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
-		set _ROMNAME=%_TEMPDIR%\%%i
+		set _ROMNAME="%_TEMPDIR%\%%i"
 		if [%ARCHIVE_TYPE%]==[zip] (
 			%_7z% l "%_TEMPDIR%\%%i") || (
 					echo *****Problem with zip in cache - retrying*****
@@ -56,20 +59,28 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
 :MOVEIT
+echo before we start var is %var%
 dir %1 | find "<SYMLINK>" && (
 rem Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 rem are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
   for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	rem must check for existing file else we'll robocopy the whole dir
 	if exist %1 (
-		robocopy %~dp1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+	echo var is %var%
+	echo romname is %_ROMNAME%
+		(call :getPath "!_ROMNAME!" var
+		echo var is !var!
+		echo romname is %_ROMNAME%
+		pause
+		rem make sure var is not empty of we'll make a copy of all files in the cache into the symlink
+		robocopy !var! "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2)
 	)
-  )
-  set _ROMNAME=%_TEMPDIR%\%~nx1
+  set _ROMNAME="%_TEMPDIR%\%%i"
+	)
+
   goto CHECK_ARCHIVE_TYPE
 )
-TODO: required at all? (tilde removes quotes)
-set _ROMNAME=%~1
+
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
@@ -92,21 +103,21 @@ GOTO finish
 
 :: mount zips
 :ZIPMOUNT
-%_DT% -mount SCSI, 0, "%_ROMNAME%"
+%_DT% -mount SCSI, 0, %_ROMNAME%
 set _ZIPMOUNTING=YES
 FOR /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
 :UNZIP
 :: y causes us to confirm any prompt, aos causes us to not overwrite existing files, which will cause a problem if a corrupted bin got made from a failed extract previously
-%_7Z% e "%_ROMNAME%" -o"%_TEMPDIR%" -y -aos
+%_7Z% e %_ROMNAME% -o"%_TEMPDIR%" -y -aos
 goto MOUNT
 
 ::we have to know where the runnable disc image is 
 :MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
-%_7Z% l "%_ROMNAME%" > %_TEMPDIR%\archive.txt
+%_7Z% l %_ROMNAME% > %_TEMPDIR%\archive.txt
 
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
@@ -178,9 +189,14 @@ exit /b
 if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
-
+exit /b
 
 :CHECK_DT
 if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+exit /b
+
+:getPath
+set "%2=%~dp1"
+exit /b

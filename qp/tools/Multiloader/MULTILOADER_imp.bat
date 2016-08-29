@@ -68,16 +68,14 @@ rem are notoriously long, so we need to use dir /B in order to get the long name
 	if exist %1 (
 	echo var is %var%
 	echo romname is %_ROMNAME%
-		(call :getPath "!_ROMNAME!" var
-		echo var is !var!
-		echo romname is %_ROMNAME%
-		pause
-		rem make sure var is not empty of we'll make a copy of all files in the cache into the symlink
-		robocopy !var! "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2)
+	rem we need to keep our scope now for this call to work else %2 will end up being the parent scopes
+		( call :getPath "!_ROMNAME!" var
+		  rem todo - much care needed here - make sure var is not empty of we might make a copy of all files in the cache into the emu dir
+		  robocopy !var! "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+		)
 	)
-  set _ROMNAME="%_TEMPDIR%\%%i"
-	)
-
+	set _ROMNAME="%_TEMPDIR%\%%i"
+  )
   goto CHECK_ARCHIVE_TYPE
 )
 
@@ -198,5 +196,7 @@ if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line ex
 exit /b
 
 :getPath
+::http://stackoverflow.com/questions/14848870/how-to-get-a-the-directory-path-from-a-variable-in-a-cmd-batch-file
+:: check that address for exclamation marks
 set "%2=%~dp1"
 exit /b

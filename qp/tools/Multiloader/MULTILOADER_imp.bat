@@ -1,6 +1,13 @@
 ::@ECHO OFF & 
-SETLOCAL
-SETLOCAL ENABLEDELAYEDEXPANSION
+::don't use delayed expansion until necessary or your exclamation marks are toast
+SETLOCAL DISABLE DELAYEDEXPANSION
+
+:: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
+::
+:: We want to end up calling unquoted 8:3 names to our apps, or quoted fullnames. The principle is always quote SET vars and never usage of vars. 
+:: The exception is any SET which explicitly sets a shortname.
+::
+:: A unit test for this sript will test for passing in fullnames and shortnames for roms, and test roms that include ampersands and exclamation marks
 
 set _SCRIPTDIR="%~dp0"
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
@@ -12,16 +19,14 @@ for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (se
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
-:: Use shortname (in case we need it for unzip) then CD to EMU directory
-:: TODO: we may have shortname anyway, but why explicitly convert to shortname if we don't?
-:: we SHOULD always quote the assignment but 7zip hates quoted 8:3 names, so if we're likely to end up with one, don't quote it
-set _ROMNAME=%~s1
-set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
+:: Use shortname for rom (in case we need it for unzip). 7zip+robocopy hate quoted 8:3 names, so if we're likely to end up with one, don't quote it
+set _ROMNAME=%~s1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 
-:: If there isn't an emu, we have an error that will hang the script, blow up
+::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script, so exit
 :CHECK_EMU
 IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CACHE)
+:BLOW UP
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
@@ -38,9 +43,13 @@ if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
 
-::   Batch can't set variables to output like nix, says set /p can read from a file here http://stackoverflow.com/a/19024533,
+
+::  A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
+::   are notoriously long, so we get the long name for both robocopy and the list function of 7zip with dir /B
+::  http://stackoverflow.com/a/34473971. Batch can't set variables to output like nix, says set /p can read from a file http://stackoverflow.com/a/19024533,
 ::     but that didn't work for me, instead we use the nix-style backtick of for /f
 ::   TODO: non 7zip/7z will never try to RE-copy from source, so delete corrupt one's manually
+
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	if EXIST "%_TEMPDIR%\%%i" (
 		set _ROMNAME="%_TEMPDIR%\%%i"
@@ -60,15 +69,13 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
 :MOVEIT
 dir %1 | find "<SYMLINK>" && (
-rem Copy zip to scratch dir. A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
-rem are notoriously long, so we need to use dir /B in order to get the long name - http://stackoverflow.com/a/34473971 for both robocopy and the list function of 7zip
-  for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+rem Copy zip to scratch dir. 
+	for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	rem must check for existing file else we'll robocopy the whole dir
-	if exist %1 (
-	rem we need to keep our scope now for this call to work else %2 will end up being the parent scopes
-		( call :getPath "!_ROMNAME!" var
-		  rem todo - much care needed here - make sure var is not empty of we might make a copy of all files in the cache into the emu dir
-		  robocopy !var! "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+		if exist %1 (
+			rem todo - more care needed here - main danger is zipping up the whole of the cachedir or romdir
+			rem convert drive and path to shortnam standardise things as robocopy blows up on quoted shortnames
+			robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 		)
 	)
 	set _ROMNAME="%_TEMPDIR%\%%i"
@@ -182,19 +189,14 @@ exit /b
 ::UTILITY FUNCTIONS
 
 :CHECK_7Z
-if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if exist "C:\Program Files (x86)\7-Zip\7z.exe" set _7Z="C:\Program Files (x86)\7-Zip\7z.exe"
+if exist "C:\Program Files\7-Zip\7z.exe" set _7Z="C:\Program Files\7-Zip\7z.exe"
 if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 exit /b
 
 :CHECK_DT
-if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
+if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
 if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 exit /b
 
-:getPath
-::http://stackoverflow.com/questions/14848870/how-to-get-a-the-directory-path-from-a-variable-in-a-cmd-batch-file
-:: check that address for exclamation marks
-set "%2=%~dp1"
-exit /b

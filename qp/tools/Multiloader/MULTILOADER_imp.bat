@@ -4,10 +4,12 @@ SETLOCAL DISABLE DELAYEDEXPANSION
 
 :: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
 ::
-:: We want to end up calling unquoted 8:3 names to our apps, or quoted fullnames. The principle is always quote SET vars and never usage of vars. 
+:: We want to end up calling either unquoted 8:3 romnames to our apps, or quoted fullnames.
+:: Yet we may get quoted or unquoted 8:3 as input, or fullnames 
+:: The principle to cast if possible, and always quote when setting vars and never when using vars. 
 :: The exception is any SET which explicitly sets a shortname.
 ::
-:: A unit test for this sript will test for passing in fullnames and shortnames for roms, and test roms that include ampersands and exclamation marks
+:: A unit test for this sript will test fullnames and shortnames, and roms that include ampersands and exclamation marks
 
 set _SCRIPTDIR="%~dp0"
 IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
@@ -25,7 +27,7 @@ set _ROMNAME=%~s1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 ::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script, so exit
 :CHECK_EMU
-IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CACHE)
+IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CLASSIFY_ZIP)
 :BLOW UP
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
@@ -33,7 +35,7 @@ EXIT
 
 :: don't try moving files that we've already got cached
 :: Do test zips previously cached, and recopy them if they appear corrupt
-:CACHE
+:CLASSIFY_ZIP
 :: we won't get far in windows emulation without 7zip
 call :CHECK_7Z
 if /I (%~x1)==(.gcz) set ARCHIVE_TYPE=proprietary
@@ -41,9 +43,12 @@ if /I (%~x1)==(.cso) set ARCHIVE_TYPE=proprietary
 if /I (%~x1)==(.zip) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.rar) set ARCHIVE_TYPE=zip
 if /I (%~x1)==(.ace) set ARCHIVE_TYPE=zip
-if /I (%~x1)==(.7z) set ARCHIVE_TYPE=zip
+if /I (%~x1)==(.7z)  set ARCHIVE_TYPE=zip
 
+:: Daemon tools can mount archives, but only zips right now
+if /I (%~x1)==(.zip) set ZIP_MOUNTABLE=yes
 
+:CACHE
 ::  A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 ::   are notoriously long, so we get the long name for both robocopy and the list function of 7zip with dir /B
 ::  http://stackoverflow.com/a/34473971. Batch can't set variables to output like nix, says set /p can read from a file http://stackoverflow.com/a/19024533,
@@ -87,7 +92,7 @@ rem Copy zip to scratch dir.
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
-if /I (%ARCHIVE_TYPE%)==(zip) (
+if /I (%ZIP_MOUNTABLE%)==(yes) (
 	if [%NOMOUNT%]==[1] goto ZIPMOUNT
 	goto UNZIP
 )

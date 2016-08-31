@@ -2,6 +2,8 @@
 ::don't use delayed expansion until necessary or your exclamation marks are toast
 SETLOCAL DISABLE DELAYEDEXPANSION
 
+for /f "tokens=* delims==" %%N in ('echo %2 ^| findstr nullDC') do (set NULLDC=YES)
+
 :: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
 ::
 :: We want to end up calling unquoted 8:3 names to our apps, or quoted fullnames. The principle is always quote SET vars and never usage of vars. 
@@ -94,7 +96,13 @@ if /I (%ARCHIVE_TYPE%)==(zip) (
 
 :: Mount the image or the zip
 :LOAD
-if (%NOMOUNT%)==(1) ( %EMU% %OPTIONS% %_ROMNAME% &GOTO unmount )
+::with a regrettable exception for nulldc. (It has an odd command line). This is ugly
+if (%NOMOUNT%)==(1) ( 
+	if not [%NULLDC%]==[YES] (
+		%EMU% %OPTIONS% %_ROMNAME% & GOTO unmount 
+	)
+	%EMU% -config nullDC_GUI:Fullscreen=1 -config ImageReader:LoadDefaultImage=1 -config ImageReader:DefaultImage=%_ROMNAME% & GOTO unmount
+)
 :: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%

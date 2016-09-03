@@ -32,7 +32,7 @@ SET RELEASEDIR=..\Release
 ECHO.-------------------------------------------------------------------------------
 ECHO. QUICKPLAY RELEASE TOOL
 ECHO. Let's prepare the release from %LASTVERSION% to %THISVERSION%
-ECHO. Mirror QP to %RELEASEDIR%?
+ECHO. We'll being by mirroring QP to %RELEASEDIR% - ok?
 ECHO.-------------------------------------------------------------------------------
 SET /P Select=Type 'y' FOR Yes Or 'n' FOR No:
 IF /i %Select%==y (SET GO=yes) ELSE SET GO=no

@@ -82,9 +82,8 @@ rem Copy zip to scratch dir.
 			rem convert drive and path to shortnam standardise things as robocopy blows up on quoted shortnames
 			robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 		)
-	)
 	set _ROMNAME="%_TEMPDIR%\%%i"
-  )
+    )
   goto CHECK_ARCHIVE_TYPE
 )
 

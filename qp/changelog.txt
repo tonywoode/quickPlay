@@ -1,3 +1,29 @@
+Quickplay v4.1.3 
+ 
+* New full Retroarch Efind (everything but MESS: that's to follow next!)
+* Multiloader Cache
+	- now can cache archived images locally in a temp directory 
+	- uses robocopy and looks for symlinks
+	- checks cache before redownloading
+	- checks your local copies of archives and recopy if they got interrupted/corrupted
+* Multiloader functions/upgrade
+	- upgraded to use daemon tools lite 10.4 - the newest and actually best! Vastly improved performance
+	- you can now mount a zip in daemon tools and pass the iso to the emulator
+	- we now look in archives using 7zip to find the runnable iso
+	- made multiloaders for some PSP, Gamecube, NDS and Dreamcast emus (which enables us to cache those systems' games too)
+	- added Saturn emulator SFF to multiloader
+	- supports the non-typical command line of NullDC the Dreamcast emu
+* Multiloader maintainance
+	- fixed a bug where you sometimes had to click a rom twice to (multi-)load it
+	- removed winmount from the multiloader (this was great but got discontinued)
+	- fixed exclamation marks and ampersands in paths
+	- fixed to consitently use 8:3 names or shortnames
+* Efind
+	- fixed bug with efind window and large displays
+	- fixed issue with results screen
+* added background images submitted by dar3255
+* Corrected system names for some odd systems
+ 
 Quickplay v4.1.2 
  
 * added messmameUI, for now, as an arcade cab

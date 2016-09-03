@@ -1,3 +1,8 @@
+Quickplay v4.1.4 
+ 
+* correct syntax error in mutliloader
+
+ 
 Quickplay v4.1.3 
  
 * New full Retroarch Efind (everything but MESS: that's to follow next!)

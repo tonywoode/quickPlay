@@ -93,8 +93,8 @@ rem Copy zip to scratch dir.
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
 if /I (%ZIP_MOUNTABLE%)==(yes) (
 	if [%NOMOUNT%]==[1] goto ZIPMOUNT
-	goto UNZIP
 )
+if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 
 :: Mount the image or the zip
 :LOAD

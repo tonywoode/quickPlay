@@ -1,6 +1,6 @@
 ::@ECHO OFF & 
 ::don't use delayed expansion until necessary or your exclamation marks are toast
-SETLOCAL DISABLE DELAYEDEXPANSION
+SETLOCAL DISABLEDELAYEDEXPANSION
 
 :: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
 ::
@@ -21,16 +21,54 @@ for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (se
 if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
-:: Use shortname for rom (in case we need it for unzip). 7zip+robocopy hate quoted 8:3 names, so if we're likely to end up with one, don't quote it
-set _ROMNAME=%~s1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
+:: Parameters you pass to me
+set _ROMNAME=%1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
-
-::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script, so exit
+::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script
 :CHECK_EMU
-IF EXIST %EMU% (cd /d %EMU%\.. && GOTO CLASSIFY_ZIP)
+IF EXIST %EMU% (cd /d %EMU%\.. && GOTO SHORT_TO_LONG_NAME)
 :BLOW UP
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
+
+:: Callers might use shortname for rom, However 7zip+robocopy hate quoted 8:3 names, but everything else hates
+::   you to pass unquoted *:3 names around (they might well contain !,^,&)
+::   the only bure batch solution in the world lies here: http://stackoverflow.com/a/34473971/3536094
+:SHORT_TO_LONG_NAME
+:: Validate path
+set "test=%~1"
+if "%test:**=%" neq "%test%" goto :err
+if "%test:?=%"  neq "%test%" goto :err
+if not exist "%test%"  goto :err
+
+:: Initialize
+set "returnPath="
+set "sourcePath=%~f1"
+
+:: Resolve file name, if present
+if not exist "%~1\*" (
+  for /f "eol=: delims=" %%F in ('dir /b "%~1"') do set "returnPath=%%~nxF"
+  set "sourcePath=%~f1\.."
+)
+
+:resolvePath :: one folder at a time
+for %%F in ("%sourcePath%") do (
+  if "%%~nxF" equ "" (
+    for %%P in ("%%~fF%returnPath%") do set _ROMNAME=%%~P
+    goto :CLASSIFY_ZIP
+  )
+  for %%P in ("%sourcePath%\..") do (
+    for /f "delims=> tokens=2" %%A in (
+      'dir /ad /x "%%~fP"^|findstr /c:">          %%~nxF "'
+    ) do for /f "tokens=1*" %%B in ("%%A") do set "returnPath=%%C\%returnPath%"
+  ) || set "returnPath=%%~nxF\%returnPath%"
+  set "sourcePath=%%~dpF."
+)
+goto :resolvePath
+
+:err
+>&2 echo Path not found
+exit /b 1
 
 
 :: don't try moving files that we've already got cached
@@ -67,8 +105,6 @@ for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 		)
 	)
 )
-
-
 :: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
@@ -79,7 +115,8 @@ rem Copy zip to scratch dir.
 	rem must check for existing file else we'll robocopy the whole dir
 		if exist %1 (
 			rem todo - more care needed here - main danger is zipping up the whole of the cachedir or romdir
-			rem convert drive and path to shortnam standardise things as robocopy blows up on quoted shortnames
+			rem convert drive and path to shortname to standardise things as robocopy blows up on quoted shortnames
+			rem TODO - %~dps1 will break if you pass in an 8:3 name that contains special chars like %, !
 			robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 		)
 	set _ROMNAME="%_TEMPDIR%\%%i"
@@ -163,7 +200,7 @@ for /L %%i in (0,1,!RESULT!) do (
 )
 SETLOCAL DISABLEDELAYEDEXPANSION
 echo romname to load is %_ROMNAME%
-del %_TEMPDIR%\archive.txt§
+del %_TEMPDIR%\archive.txt
 goto LOAD
 
 

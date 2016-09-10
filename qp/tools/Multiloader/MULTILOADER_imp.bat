@@ -26,49 +26,15 @@ set _ROMNAME=%1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
 ::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script
 :CHECK_EMU
-IF EXIST %EMU% (cd /d %EMU%\.. && GOTO SHORT_TO_LONG_NAME)
+IF EXIST %EMU% (cd /d %EMU%\.. && GOTO START_ME)
 :BLOW UP
 IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
 EXIT
 
-:: Callers might use shortname for rom, However 7zip+robocopy hate quoted 8:3 names, but everything else hates
-::   you to pass unquoted *:3 names around (they might well contain !,^,&)
-::   the only bure batch solution in the world lies here: http://stackoverflow.com/a/34473971/3536094
-:SHORT_TO_LONG_NAME
-:: Validate path
-set "test=%~1"
-if "%test:**=%" neq "%test%" goto :err
-if "%test:?=%"  neq "%test%" goto :err
-if not exist "%test%"  goto :err
-
-:: Initialize
-set "returnPath="
-set "sourcePath=%~f1"
-
-:: Resolve file name, if present
-if not exist "%~1\*" (
-  for /f "eol=: delims=" %%F in ('dir /b "%~1"') do set "returnPath=%%~nxF"
-  set "sourcePath=%~f1\.."
-)
-
-:resolvePath :: one folder at a time
-for %%F in ("%sourcePath%") do (
-  if "%%~nxF" equ "" (
-    for %%P in ("%%~fF%returnPath%") do set _ROMNAME=%%~P
-    goto :CLASSIFY_ZIP
-  )
-  for %%P in ("%sourcePath%\..") do (
-    for /f "delims=> tokens=2" %%A in (
-      'dir /ad /x "%%~fP"^|findstr /c:">          %%~nxF "'
-    ) do for /f "tokens=1*" %%B in ("%%A") do set "returnPath=%%C\%returnPath%"
-  ) || set "returnPath=%%~nxF\%returnPath%"
-  set "sourcePath=%%~dpF."
-)
-goto :resolvePath
-
-:err
->&2 echo Path not found
-exit /b 1
+:START_ME
+Set "longname=blank"
+call :SHORT_TO_LONG_NAME %_ROMNAME% longname
+SET _ROMNAME = "%longname%"
 
 
 :: don't try moving files that we've already got cached
@@ -181,7 +147,7 @@ FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cu
 :: http://stackoverflow.com/questions/30143520/how-to-reverse-strings-in-a-batch-file
 :: http://stackoverflow.com/questions/10672885/how-to-count-the-characters-in-a-string-with-batch
 
-set STR=%ROMFOUND%
+set STR="%ROMFOUND%"
 ECHO %STR%> %_TEMPDIR%\archive.txt
 FOR %%? IN (%_TEMPDIR%\archive.txt) DO ( SET /A strlength=%%~z? - 2 )
 SETLOCAL ENABLEDELAYEDEXPANSION
@@ -193,15 +159,20 @@ for /L %%i in (0,1,!RESULT!) do (
 	set NEW_STR=!STR:~%%i!
 	echo !NEW_STR!
 	if [!NEW_STR!]==[] ( echo string is empty now) else (
-		if EXIST "%_TEMPDIR%\!NEW_STR!" ( 
-			set _ROMNAME="%_TEMPDIR%\!NEW_STR!"
+	rem we need to put quotes around our variable (eg: &) so we need to look for romname without the last "
+	echo looking for "%_TEMPDIR%\!NEW_STR:~0, -1!"
+		if EXIST "%_TEMPDIR%\!NEW_STR:~0, -1!" (
+		echo FOUND IT!
+		set _ROMNAME="%_TEMPDIR%\!NEW_STR:~0, -1!"
+		pause
+		SETLOCAL DISABLEDELAYEDEXPANSION
+		del %_TEMPDIR%\archive.txt
+		goto :LOAD
+		rem TODO - the loop continues with no imput for a time after the goto, but has no effect - we must be calling getname again with no input......chase this
 		)
 	)
 )
-SETLOCAL DISABLEDELAYEDEXPANSION
-echo romname to load is %_ROMNAME%
-del %_TEMPDIR%\archive.txt
-goto LOAD
+
 
 
 :ERROR_POPUP
@@ -250,3 +221,43 @@ if (%NOMOUNT%)==(1) (
 	)
 )
 exit /b
+
+
+:: Callers might use shortname for rom, However 7zip+robocopy hate quoted 8:3 names, but everything else hates
+::   you to pass unquoted *:3 names around (they might well contain !,^,&)
+::   the only bure batch solution in the world lies here: http://stackoverflow.com/a/34473971/3536094
+:SHORT_TO_LONG_NAME
+:: Validate path
+set "test=%~1"
+if "%test:**=%" neq "%test%" goto :err
+if "%test:?=%"  neq "%test%" goto :err
+if not exist "%test%"  goto :err
+
+:: Initialize
+set "returnPath="
+set "sourcePath=%~f1"
+
+:: Resolve file name, if present
+if not exist "%~1\*" (
+  for /f "eol=: delims=" %%F in ('dir /b "%~1"') do set "returnPath=%%~nxF"
+  set "sourcePath=%~f1\.."
+)
+
+:resolvePath :: one folder at a time
+for %%F in ("%sourcePath%") do (
+  if "%%~nxF" equ "" (
+    for %%P in ("%%~fF%returnPath%") do set "%~2=%%~P"
+    exit /b 0
+  )
+  for %%P in ("%sourcePath%\..") do (
+    for /f "delims=> tokens=2" %%A in (
+      'dir /ad /x "%%~fP"^|findstr /c:">          %%~nxF "'
+    ) do for /f "tokens=1*" %%B in ("%%A") do set "returnPath=%%C\%returnPath%"
+  ) || set "returnPath=%%~nxF\%returnPath%"
+  set "sourcePath=%%~dpF."
+)
+goto :resolvePath
+
+:err
+>&2 echo Path not found
+exit /b 1

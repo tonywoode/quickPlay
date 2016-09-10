@@ -4,37 +4,34 @@ SETLOCAL DISABLEDELAYEDEXPANSION
 
 :: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
 ::
-:: We want to end up calling either unquoted 8:3 romnames to our apps, or quoted fullnames.
-:: Yet we may get quoted or unquoted 8:3 as input, or fullnames 
-:: The principle to cast if possible, and always quote when setting vars and never when using vars. 
-:: The exception is any SET which explicitly sets a shortname.
-::
-:: A unit test for this sript will test fullnames and shortnames, and roms that include ampersands and exclamation marks
+:: We may get quoted or unquoted 8:3 as input, or fullnames: general principle: cast if possible, 
+::  and always quote when setting vars and never when using vars. 
+:: Unit test will test fullnames and shortnames, and roms that include ampersands and exclamation marks
 
 set _SCRIPTDIR="%~dp0"
-IF EXIST %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
+if exist %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
 :: You must set these in the ini file: where to extract to, which drive letter for daemon tools ,and which for daemon's zip support
 for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
-if (%TEMPDIR%)==() (for /D %%I IN (%1) DO SET _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) DO SET _TEMPDIR=%TEMPDIR%)
+if (%TEMPDIR%)==() (for /D %%I IN (%1) do set _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) do set _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
-if (%DAEMON_DRIVE%)==() (SET _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
+if (%DAEMON_DRIVE%)==() (set _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
 :: Parameters you pass to me
 set _ROMNAME=%1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
 
-::  then CD to EMU directory - If there isn't an emu, we have an error that will hang the script
+:: CD to EMU dir - If there isn't an emu, we have an error that will hang the script
 :CHECK_EMU
-IF EXIST %EMU% (cd /d %EMU%\.. && GOTO START_ME)
+if exist %EMU% (cd /d %EMU%\.. && goto START_ME)
 :BLOW UP
-IF EXIST ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
-EXIT
+if exist ".\README.txt" (notepad.exe ".\README.txt" & EXIT)
+exit /b
 
 :START_ME
-Set "longname=blank"
-call :SHORT_TO_LONG_NAME %_ROMNAME% longname
-SET _ROMNAME = "%longname%"
+Set "longname=undefined"
+call SHORT_TO_LONG_NAME %_ROMNAME% longname
+set _ROMNAME = "%longname%"
 
 
 :: don't try moving files that we've already got cached
@@ -60,14 +57,14 @@ if /I (%~x1)==(.zip) set ZIP_MOUNTABLE=yes
 ::   TODO: non 7zip/7z will never try to RE-copy from source, so delete corrupt one's manually
 
 for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	if EXIST "%_TEMPDIR%\%%i" (
+	if exist "%_TEMPDIR%\%%i" (
 		set _ROMNAME="%_TEMPDIR%\%%i"
 		if [%ARCHIVE_TYPE%]==[zip] (
 			%_7z% l "%_TEMPDIR%\%%i") || (
 					echo *****Problem with zip in cache - retrying*****
-					GOTO MOVEIT
+					goto MOVEIT
 			)
-		GOTO CHECK_ARCHIVE_TYPE
+		goto CHECK_ARCHIVE_TYPE
 		)
 	)
 )
@@ -102,21 +99,21 @@ if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 :: Mount the image or the zip
 :LOAD
 call :CHECK_EXCEPTIONS
-if (%NOMOUNT%)==(1) (%EMU% %OPTIONS% %_ROMNAME% & GOTO unmount)
+if (%NOMOUNT%)==(1) (%EMU% %OPTIONS% %_ROMNAME% & goto unmount)
 :: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 %EMU% %OPTIONS%
 :UNMOUNT
 %_DT% -unmount SCSI, 0
-GOTO finish
+goto finish
 
 :: mount zips
 :ZIPMOUNT
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 set _ZIPMOUNTING=YES
-FOR /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+for /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
 goto LOAD
 
 :UNZIP
@@ -133,8 +130,8 @@ goto MOUNT
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
 
-FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) DO (
-	FOR /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v
+for %%Y in (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) do (
+	for /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v
 )
 
 :: Pick out the filename from that line of 7zip output - note that sometimes the date and time
@@ -148,8 +145,8 @@ FOR %%Y IN (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cu
 :: http://stackoverflow.com/questions/10672885/how-to-count-the-characters-in-a-string-with-batch
 
 set STR="%ROMFOUND%"
-ECHO %STR%> %_TEMPDIR%\archive.txt
-FOR %%? IN (%_TEMPDIR%\archive.txt) DO ( SET /A strlength=%%~z? - 2 )
+echo %STR%> %_TEMPDIR%\archive.txt
+for %%? IN (%_TEMPDIR%\archive.txt) do ( set /A strlength=%%~z? - 2 )
 SETLOCAL ENABLEDELAYEDEXPANSION
 set /a result=!strlength!
 echo %result%
@@ -161,19 +158,19 @@ for /L %%i in (0,1,!RESULT!) do (
 	if [!NEW_STR!]==[] ( echo string is empty now) else (
 	rem we need to put quotes around our variable (eg: &) so we need to look for romname without the last "
 	echo looking for "%_TEMPDIR%\!NEW_STR:~0, -1!"
-		if EXIST "%_TEMPDIR%\!NEW_STR:~0, -1!" (
-		echo FOUND IT!
+		if exist "%_TEMPDIR%\!NEW_STR:~0, -1!" (
+		echo FOUND ROM
 		set _ROMNAME="%_TEMPDIR%\!NEW_STR:~0, -1!"
-		pause
 		SETLOCAL DISABLEDELAYEDEXPANSION
 		del %_TEMPDIR%\archive.txt
-		goto :LOAD
-		rem TODO - the loop continues with no imput for a time after the goto, but has no effect - we must be calling getname again with no input......chase this
+		goto LOAD
+		exit /b
+		rem batch needs to loop all iterations, you'll have to wait...
 		)
 	)
 )
-
-
+echo ***** EXITING - DIDN'T FIND THE ROM *****
+goto FINISH
 
 :ERROR_POPUP
 :: http://stackoverflow.com/questions/774175/how-can-i-open-a-message-box-in-a-windows-batch-file
@@ -189,13 +186,13 @@ del %temp%\TEMPmessage.vbs /f /q
 :FINISH
 :: if you have specified a tempdir and you do want to police it, wipe it recursively
 if [%_CLEANTEMP%]==[YES] (
-	if NOT ["%_TEMPDIR%"]==[""] (
+	if not ["%_TEMPDIR%"]==[""] (
 		if exist "%_TEMPDIR%" (
 			rd /s /q "%_TEMPDIR%"
 		)
 	) 
 )	
-FOR %%Z IN (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _ZIPMOUNTING ERRORMESSAGE NOMOUNT) DO SET %%Z=
+for %%Z in (EMU OPTIONS _TEMPDIR _CLEANTEMP _INIFILE _ROMNAME _DT _7Z _WM _CUE _ZIPMOUNTING ERRORMESSAGE NOMOUNT) do set %%Z=
 exit /b
 
 
@@ -217,7 +214,7 @@ exit /b
 for /f "tokens=* delims==" %%N in ('echo %EMU% ^| findstr nullDC') do (set NULLDC=YES)
 if (%NOMOUNT%)==(1) ( 
 	if [%NULLDC%]==[YES] ( 
-		%EMU% -config nullDC_GUI:Fullscreen=1 -config ImageReader:LoadDefaultImage=1 -config ImageReader:DefaultImage=%_ROMNAME% & GOTO unmount
+		%EMU% -config nullDC_GUI:Fullscreen=1 -config ImageReader:LoadDefaultImage=1 -config ImageReader:DefaultImage=%_ROMNAME% & goto unmount
 	)
 )
 exit /b
@@ -229,9 +226,9 @@ exit /b
 :SHORT_TO_LONG_NAME
 :: Validate path
 set "test=%~1"
-if "%test:**=%" neq "%test%" goto :err
-if "%test:?=%"  neq "%test%" goto :err
-if not exist "%test%"  goto :err
+if "%test:**=%" neq "%test%" goto err
+if "%test:?=%"  neq "%test%" goto err
+if not exist "%test%"  goto err
 
 :: Initialize
 set "returnPath="
@@ -256,7 +253,7 @@ for %%F in ("%sourcePath%") do (
   ) || set "returnPath=%%~nxF\%returnPath%"
   set "sourcePath=%%~dpF."
 )
-goto :resolvePath
+goto resolvePath
 
 :err
 >&2 echo Path not found

@@ -30,7 +30,7 @@ exit /b
 
 :START_ME
 Set "longname=undefined"
-call SHORT_TO_LONG_NAME %_ROMNAME% longname
+call :SHORT_TO_LONG_NAME %_ROMNAME% longname
 set _ROMNAME = "%longname%"
 
 
@@ -80,13 +80,16 @@ rem Copy zip to scratch dir.
 			rem todo - more care needed here - main danger is zipping up the whole of the cachedir or romdir
 			rem convert drive and path to shortname to standardise things as robocopy blows up on quoted shortnames
 			rem TODO - %~dps1 will break if you pass in an 8:3 name that contains special chars like %, !
-			robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+			goto copy
+			
 		)
 	set _ROMNAME="%_TEMPDIR%\%%i"
     )
   goto CHECK_ARCHIVE_TYPE
 )
 
+:copy
+robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE

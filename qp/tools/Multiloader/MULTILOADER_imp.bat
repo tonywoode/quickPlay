@@ -33,6 +33,9 @@ Set "longname=undefined"
 call :SHORT_TO_LONG_NAME %_ROMNAME% longname
 set _ROMNAME = "%longname%"
 
+call :SPLITNAMEANDPATH %_ROMNAME%
+echo %rompath%
+echo %filename%
 
 :: don't try moving files that we've already got cached
 :: Do test zips previously cached, and recopy them if they appear corrupt
@@ -79,17 +82,13 @@ rem Copy zip to scratch dir.
 		if exist %1 (
 			rem todo - more care needed here - main danger is zipping up the whole of the cachedir or romdir
 			rem convert drive and path to shortname to standardise things as robocopy blows up on quoted shortnames
-			rem TODO - %~dps1 will break if you pass in an 8:3 name that contains special chars like %, !
-			goto copy
-			
+			robocopy %ROMPATH% "%_TEMPDIR%" %FILENAME% /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 		)
 	set _ROMNAME="%_TEMPDIR%\%%i"
     )
   goto CHECK_ARCHIVE_TYPE
 )
 
-:copy
-robocopy %~dps1 "%_TEMPDIR%" "%%i" /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
@@ -261,3 +260,11 @@ goto resolvePath
 :err
 >&2 echo Path not found
 exit /b 1
+
+::the dot is so robocopy wont blow up due to trailing slash
+:SPLITNAMEANDPATH 
+set rompath="%~dp1."
+set filename="%~nx1"
+exit /b
+
+

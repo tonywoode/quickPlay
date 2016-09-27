@@ -18,8 +18,8 @@ for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (se
 if (%DAEMON_DRIVE%)==() (set _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
-:: Parameters you pass to me
-set _ROMNAME=%1 & set EMU=%2 & set OPTIONS=%~3 & set NOMOUNT=%~4
+:: Parameters you pass to me - don't put a space before the ampersands or the var string gets a space
+set _ROMNAME=%1& set EMU=%2& set OPTIONS=%~3& set NOMOUNT=%~4& set OVERRIDE=%~5
 
 :: CD to EMU dir - If there isn't an emu, we have an error that will hang the script
 :CHECK_EMU
@@ -36,6 +36,11 @@ set _ROMNAME = "%longname%"
 call :SPLITNAMEANDPATH %_ROMNAME%
 echo %rompath%
 echo %filename%
+
+:: here's the order we'll look for filetypes in (reverse) unless you override
+:MAKELIST
+set typeList=(.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi)
+set typeListWithWildcards=(*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi)
 
 :: don't try moving files that we've already got cached
 :: Do test zips previously cached, and recopy them if they appear corrupt
@@ -115,7 +120,10 @@ goto finish
 call :CHECK_DT
 %_DT% -mount SCSI, 0, %_ROMNAME%
 set _ZIPMOUNTING=YES
-for /R %_DAEMON_DRIVE%:\ %%Y IN (*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi) DO set _ROMNAME="%%~sY"
+::we need a string with brackets, so don't enclose the assignment in brackets
+if NOT [%OVERRIDE%]==[] set typeListWithWildcards=(*.%OVERRIDE%)
+for /R %_DAEMON_DRIVE%:\ %%Y IN %typeListWithWildcards% DO set _ROMNAME="%%~sY"
+
 goto LOAD
 
 :UNZIP
@@ -131,8 +139,8 @@ goto MOUNT
 
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
-
-for %%Y in (.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi) do (
+if NOT [%OVERRIDE%]==[] set typeList=(.%OVERRIDE%)
+for %%Y in %typeList% do (
 	for /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v
 )
 

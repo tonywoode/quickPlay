@@ -53,3 +53,6 @@ qp/EFind/Gamebase.ini
 
 #Starting editing from a mac
 *.DS_Store
+
+#starting some node
+node_modules/

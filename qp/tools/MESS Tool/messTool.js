@@ -1,17 +1,18 @@
-var fs        = require('fs')
+"use strict"
+
+const fs        = require('fs')
   , path      = require('path')
   , XmlStream = require('xml-stream')
 
-var stream = fs.createReadStream("inputs/mame.xml"),
-    xml = new XmlStream(stream),
-    attr,
-    prev,
-    name,
+const stream = fs.createReadStream("inputs/mame.xml"),
+    xml = new XmlStream(stream)
+
+let prev,
     system
 
 
 xml.on("updateElement: machine", function(machine) {
-  attr = machine.$.name
+  const attr = machine.$.name
   if (machine.softwarelist 
      && attr !== prev 
      && machine.driver.$.emulation === "good"
@@ -23,11 +24,9 @@ xml.on("updateElement: machine", function(machine) {
     const separator = " "
     const numberOfWords = 1
     const firstWordOfCompany = company.split(separator, numberOfWords)
-    if (systemName.indexOf(firstWordOfCompany) === 0) { system = systemName}
+    if (systemName.indexOf(firstWordOfCompany) === 0 || company === "<unknown>") { system = systemName}
     else { system = company + " " + machine.description }
-    //const pattern = '^' + company + '.*'
-    //pattern.test(system)
-    //if (result) { console.log("yeah") }
+
     console.log(system + " aka " + attr + " has at least one softlist, its a good system, and its not a clone")
     prev = attr
   }

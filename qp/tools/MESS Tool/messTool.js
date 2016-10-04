@@ -4,11 +4,11 @@ const fs        = require('fs')
   , path      = require('path')
   , XmlStream = require('xml-stream')
 
-const stream = fs.createReadStream("inputs/mame.xml"),
-    xml = new XmlStream(stream)
+const stream = fs.createReadStream("inputs/mame.xml")
+  , xml = new XmlStream(stream)
 
-let prev,
-    system
+let prev
+  , system
 
 
 xml.on("updateElement: machine", function(machine) {

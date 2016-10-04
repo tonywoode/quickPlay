@@ -10,18 +10,34 @@ String.prototype.hexEncodedelim = function(delim){
   }).join(delim || "")
 }
 
+/*
+ * stackoverflow/a/57807 - 2's complement means we'll get negative numbers over a certain size
+ * we prob also need to pad single numerals
+ */
+function decimalToHex(d, padding) {
+  var hex = Number(d).toString(16)
+  padding = typeof (padding) === "undefined" || padding === null ? padding = 2 : padding
+  while (hex.length < padding ) {
+    hex = "0" + hex
+  }
+  return hex
+}
 
 const
   fs = require('fs'),
-  stream = process.argv[2],
+  string = process.argv[2],
   //first convert to hex
-  hexxed = stream.hexEncodedelim().toUpperCase(),
-  //then add a CRLF
+  hexxed = string.hexEncodedelim().toUpperCase(),
+  //but our pascal strings (and their computed length) include a CRLF on the end
   hexxedAndReturned = hexxed + "0D0A",
-  //next get the number of characters in the string you just made, rem length is a prop not function§
-  numChars = hexxedAndReturned.length
-  console.log(numChars)
-
+  lengthOf0D0A = 2, //when unhexed, that is...
+  stringLength = (string.length + lengthOf0D0A).toString().length,
+  hexnum = decimalToHex(stringLength),
+  lengthOfAByte = 8,
+  endPaddingNeeded = lengthOfAByte - stringLength
+  console.log("padding needed is " + endPaddingNeeded)
+  
+  
   console.log("answer is " + hexxedAndReturned)
   //return hexxed
 

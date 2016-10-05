@@ -30,33 +30,32 @@ function decimalToHex(d, minLength) {
   return hex.toUpperCase()
 }
 
+/*
+ * Equally this wouldn't cope with an absurdly large path
+ */
+function makeZerosAtEndOfString(len, str){
+  return (str.length===len ? str : makeZerosAtEndOfString(len, str + '0'))
+}
+
+// main code
+
 // first convert the string to hex and end with win-style termination
 const
   string = process.argv[2],
   hexxed = string.showAsHex().toUpperCase(),
   terminator = '0D0A',  ///our pascal strings (and their computed length) include a CRLF on the end
-  lengthOf0D0A = 2, //when unhexed (length here always means of the string representations)
-  hexxedAndReturned = hexxed + terminator
+  lengthOf0D0A = 2, //when unhexed (length here means of the string representations)
+  hexxedAndReturned = hexxed + terminator,
 
-// now we need to convert the string length to hex and pad it to fit a byte
-//   so when we compute length here, we're talking about the number of chars the hex takes up
-const stringSize = string.length + lengthOf0D0A
-
-let 
-  hexnum = decimalToHex(stringSize)
-
-const 
+// then encode the string length as a byte of hex
+  stringSize = string.length + lengthOf0D0A,
+  hexnum = decimalToHex(stringSize),
   lengthOfAByte = 8,
-  digitsLength = hexnum.toString().length,
-  endPaddingNeeded = lengthOfAByte - digitsLength
-  while (hexnum.toString().length < lengthOfAByte) { 
-    hexnum = hexnum + "0" 
-  } 
-  
-//a pascal string has the length in hex first, followed by the string in hex  
-const
-  pascalified = hexnum + hexxedAndReturned
+  paddedHexNum = makeZerosAtEndOfString(lengthOfAByte, hexnum),
 
+// a pascal string has the length in hex first, followed by the string in hex  
+  pascalified = paddedHexNum + hexxedAndReturned
+ 
   console.log(pascalified)
   return pascalified
 

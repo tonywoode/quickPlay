@@ -27,7 +27,7 @@ function decimalToHex(d, minLength) {
   while (hex.length < minLength ) {
     hex = "0" + hex
   }
-  return hex
+  return hex.toUpperCase()
 }
 
 // first convert the string to hex and end with win-style termination

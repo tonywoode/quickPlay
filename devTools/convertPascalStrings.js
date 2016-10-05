@@ -18,23 +18,20 @@ String.prototype.showAsHex = function(delim){
  * certain size, but since these are file paths its irrelevant
  * need to pad single numerals also
  */
-function decimalToHex(d, minLength) {
-  let  hex = Number(d).toString(16)
-  minLength =  (
-    typeof (minLength) === "undefined" || minLength === null ? 
-      minLength = 2 : minLength
+function ensureNumberHasMinLength(d, minLen) {
+  minLen =  (
+    typeof (minLen) === "undefined" || minLen === null ? 
+      minLen = 2 : minLen
   )
-  while (hex.length < minLength ) {
-    hex = "0" + hex
-  }
-  return hex.toUpperCase()
+  return (d.length === minLen ? 
+      d.toUpperCase() : ensureNumberHasMinLength('0' + d, minLen))
 }
 
 /*
  * Equally this wouldn't cope with an absurdly large path
  */
-function makeZerosAtEndOfString(len, str){
-  return (str.length===len ? str : makeZerosAtEndOfString(len, str + '0'))
+function makeZerosAtEndOfString(str, len) {
+  return (str.length === len ? str : makeZerosAtEndOfString(str + '0', len))
 }
 
 // main code
@@ -49,9 +46,10 @@ const
 
 // then encode the string length as a byte of hex
   stringSize = string.length + lengthOf0D0A,
-  hexnum = decimalToHex(stringSize),
+  hexnum = Number(stringSize).toString(16),
+  hexnumTwoDigit = ensureNumberHasMinLength(hexnum),
   lengthOfAByte = 8,
-  paddedHexNum = makeZerosAtEndOfString(lengthOfAByte, hexnum),
+  paddedHexNum = makeZerosAtEndOfString(hexnumTwoDigit, lengthOfAByte),
 
 // a pascal string has the length in hex first, followed by the string in hex  
   pascalified = paddedHexNum + hexxedAndReturned

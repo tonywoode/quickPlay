@@ -7,21 +7,18 @@ const fs      = require('fs')
 const stream = fs.createReadStream("inputs/mame.xml")
   , xml      = new XmlStream(stream)
 
-
-let prev
-  , system
-
+//program flow
 makeArray(function(array){
   sanitise(array, function(callback){
-  printArrayToFile(callback)
+    printArrayToFile(callback)
   })
 })
-
 
 
 function makeArray(callback){
 
   const systems = []
+  let prev
 
   xml.on("updateElement: machine", function(machine) {
     const attr = machine.$.name
@@ -37,7 +34,7 @@ function makeArray(callback){
         ,  numberOfWords = 1
         ,  firstWordOfCompany = company.split(separator, numberOfWords)
      // if (systemName.indexOf(firstWordOfCompany) === 0 || company === "<unknown>") { system = systemName}
-       system = company + " " + machine.description
+       const system = company + " " + machine.description
       systems.push(system)
      // console.log(system + " aka " + attr + " has at least one softlist, its a good system, and its not a clone")
       prev = attr

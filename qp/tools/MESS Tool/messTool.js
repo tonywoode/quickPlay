@@ -28,13 +28,14 @@ function makeArray(callback){
        && !machine.$.cloneof
     ) {
       //don't want systems with two manufacturers names eg atari atari 2600
-      const company = machine.manufacturer
+      const 
+          company = machine.manufacturer
         , systemName = machine.description
-        , separator = " "
-        ,  numberOfWords = 1
-        ,  firstWordOfCompany = company.split(separator, numberOfWords)
+      //  , separator = " "
+      //  ,  numberOfWords = 1
+      //  ,  firstWordOfCompany = company.split(separator, numberOfWords)
      // if (systemName.indexOf(firstWordOfCompany) === 0 || company === "<unknown>") { system = systemName}
-       const system = company + " " + machine.description
+        , system = company + " " + machine.description
       systems.push(system)
      // console.log(system + " aka " + attr + " has at least one softlist, its a good system, and its not a clone")
       prev = attr
@@ -42,7 +43,7 @@ function makeArray(callback){
   })
 
   xml.on("end", function(){
-  callback(systems,callback)
+    callback(systems,callback)
   })
 }
 

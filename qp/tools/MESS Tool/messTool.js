@@ -8,14 +8,20 @@ const stream = fs.createReadStream("inputs/mame.xml")
   , xml      = new XmlStream(stream)
 
 //program flow
-makeArray(function(array){
-  sanitise(array, function(callback){
-    printArrayToFile(callback)
+mockSystems(function(systems){
+  sanitise(systems, function(callback){
+    printSystemsToFile(callback)
   })
 })
 
 
-function makeArray(callback){
+function mockSystems(callback){
+  const input = fs.readFileSync("inputs/newsystems.dat")
+    ,  systems = JSON.parse(input)
+  callback(systems,callback)
+}
+
+function makeSystems(callback){
 
   const systems = []
   let prev
@@ -31,12 +37,18 @@ function makeArray(callback){
       const 
           company = machine.manufacturer
         , systemName = machine.description
+      const node = {}
+      node.company = company
+      node.system = systemName
+      systems.push(node)
+      //systems[company] = systemName
+     // console.log(systems)
       //  , separator = " "
       //  ,  numberOfWords = 1
       //  ,  firstWordOfCompany = company.split(separator, numberOfWords)
      // if (systemName.indexOf(firstWordOfCompany) === 0 || company === "<unknown>") { system = systemName}
-        , system = company + " " + machine.description
-      systems.push(system)
+     //   , system = company + " " + machine.description
+     // systems.push(system)
      // console.log(system + " aka " + attr + " has at least one softlist, its a good system, and its not a clone")
       prev = attr
     }
@@ -47,18 +59,23 @@ function makeArray(callback){
   })
 }
 
-function sanitise(array, callback){
- const cleanedArray = array
- callback(cleanedArray)
+function sanitise(systems, callback){
+ const cleanedSystems = systems
+ callback(cleanedSystems)
 }
 
-function printArrayToFile(array){
-  const opPath = ("outputs/newsystems.dat")
-  const output = fs.createWriteStream(opPath)
-  const newsystems = array.sort()
-  output.on('error', function(err) { console.log("couldn't write the file") });
+function printSystemsToFile(systems){
   
-  //console.log(newsystems.toString());
-  newsystems.forEach(function(v) { output.write(v + '\n'); });
-  output.end();
+ console.log(JSON.stringify(systems))
+  process.exit()
+  const opPath = ("outputs/newsystems.dat")
+  fs.writeFileSync(opPath, JSON.stringify(systems))
+  //const newsystems = systems.sort()
+  //output.on('error', function(err) { console.log("couldn't write the file") });
+  
+  //console.log(newsystems.toString())
+  //const jsonobj = JSON.stringify(systems)
+  //output.write(jsonobj)
+  //systems.forEach(function(v) { output.write(v + '\n'); });
+  //output.end();
 }

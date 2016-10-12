@@ -66,8 +66,11 @@ function sanitise(systems, callback){
 
 function printSystemsToFile(systems){
   
- console.log(JSON.stringify(systems))
+  console.log(JSON.stringify(systems))
+  systems.forEach(function (v){console.log(v.company + " " + v.system) })
+  //remember we still need to sort it really
   process.exit()
+
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))
   //const newsystems = systems.sort()

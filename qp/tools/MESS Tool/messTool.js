@@ -1,11 +1,11 @@
 "use strict"
 
-const fs      = require('fs')
+const 
+    fs      = require('fs')
   , path      = require('path')
   , XmlStream = require('xml-stream')
   , R         = require('Ramda')
-
-const stream = fs.createReadStream("inputs/mame.xml")
+  , stream = fs.createReadStream("inputs/mame.xml")
   , xml      = new XmlStream(stream)
 
 //program flow
@@ -17,13 +17,14 @@ mockSystems(function(systems){
 
 
 function mockSystems(callback){
-  const input = fs.readFileSync("inputs/newsystems.dat")
+  const 
+       input = fs.readFileSync("inputs/newsystems.dat")
     ,  systems = JSON.parse(input)
+  
   callback(systems,callback)
 }
 
 function makeSystems(callback){
-
   const systems = []
   let prev
 
@@ -38,7 +39,8 @@ function makeSystems(callback){
       const 
           company = machine.manufacturer
         , systemName = machine.description
-      const node = {}
+        , node = {}
+      
       node.company = company
       node.system = systemName
       systems.push(node)
@@ -62,39 +64,29 @@ function makeSystems(callback){
 
 function sanitise(systems, callback){
  const
+  // if the first word of company is repeated in the system name, remove it from the system name
      separator = " "
   ,  numberOfWords = 1
-  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
-  const cleanedSystems = R.map(removeDupe, systems)
+  ,  removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
+  ,  cleanedSystems = R.map(removeDupe, systems)
+
+
   callback(cleanedSystems)
 }
 
 function printSystemsToFile(systems){
-
-  console.log(JSON.stringify(systems))
-  const flatSystems = systems.map(function (v){return v.company + " " + v.system })
-  const sortedFlatSystems = flatSystems.sort()
+  const 
+      flatSystems = systems.map(function (v){return v.company + " " + v.system })
+    , sortedFlatSystems = flatSystems.sort()
+  
   flatSystems.forEach(function (v){console.log(v)})
-  //systems.forEach(function (v){console.log(v.company + " " + v.system) })
-  //remember we still need to sort it really
   process.exit()
-
-  console.log(JSON.stringify(systems))
-  systems.forEach(function (v){console.log(v.company + " " + v.system) })
-  //remember we still need to sort it really
-  process.exit()
-
-
 
 
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))
-  //const newsystems = systems.sort()
   //output.on('error', function(err) { console.log("couldn't write the file") });
   
-  //console.log(newsystems.toString())
-  //const jsonobj = JSON.stringify(systems)
-  //output.write(jsonobj)
   //systems.forEach(function(v) { output.write(v + '\n'); });
   //output.end();
 }

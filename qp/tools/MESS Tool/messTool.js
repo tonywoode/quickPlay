@@ -61,18 +61,31 @@ function makeSystems(callback){
 }
 
 function sanitise(systems, callback){
-  //const regex = new RegExp(machines[0].company)
-  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company + '\\W', "i"), "")} )
+ const
+     separator = " "
+  ,  numberOfWords = 1
+  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
   const cleanedSystems = R.map(removeDupe, systems)
- callback(cleanedSystems)
+  callback(cleanedSystems)
 }
 
 function printSystemsToFile(systems){
-  
+
+  console.log(JSON.stringify(systems))
+  const flatSystems = systems.map(function (v){return v.company + " " + v.system })
+  const sortedFlatSystems = flatSystems.sort()
+  flatSystems.forEach(function (v){console.log(v)})
+  //systems.forEach(function (v){console.log(v.company + " " + v.system) })
+  //remember we still need to sort it really
+  process.exit()
+
   console.log(JSON.stringify(systems))
   systems.forEach(function (v){console.log(v.company + " " + v.system) })
   //remember we still need to sort it really
   process.exit()
+
+
+
 
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))

@@ -62,7 +62,7 @@ function makeSystems(callback){
 
 function sanitise(systems, callback){
   //const regex = new RegExp(machines[0].company)
-  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company, "i"), "")} )
+  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company + '\\W', "i"), "")} )
   const cleanedSystems = R.map(removeDupe, systems)
  callback(cleanedSystems)
 }

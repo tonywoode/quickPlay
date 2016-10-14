@@ -3,6 +3,7 @@
 const fs      = require('fs')
   , path      = require('path')
   , XmlStream = require('xml-stream')
+  , R         = require('Ramda')
 
 const stream = fs.createReadStream("inputs/mame.xml")
   , xml      = new XmlStream(stream)
@@ -60,7 +61,9 @@ function makeSystems(callback){
 }
 
 function sanitise(systems, callback){
- const cleanedSystems = systems
+  //const regex = new RegExp(machines[0].company)
+  const removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company, "i"), "")} )
+  const cleanedSystems = R.map(removeDupe, systems)
  callback(cleanedSystems)
 }
 

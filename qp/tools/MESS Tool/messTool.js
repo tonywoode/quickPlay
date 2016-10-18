@@ -75,9 +75,13 @@ function sanitise(systems, callback){
 }
 
 function printSystemsToFile(systems){
-  const 
-      flatSystems = systems.map(function (v){return v.company + " " + v.system })
-    , sortedFlatSystems = flatSystems.sort()
+
+  const munge = systems =>  R.pipe(
+    R.sortBy(R.prop('company')),
+    R.map(({company, system}) => `${company} ${system}`)
+  )(systems)
+
+  const flatSystems = munge(systems)
   
   flatSystems.forEach(function (v){console.log(v)})
   process.exit()

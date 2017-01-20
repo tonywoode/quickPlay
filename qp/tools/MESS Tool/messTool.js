@@ -68,7 +68,8 @@ function sanitise(systems, callback){
   , numberOfWords = 1
   , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
   , l2 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l1)
-  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), l2)
+  , lpenulatimate = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
+  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), lpenulatimate)
 
   callback(llast)
 }

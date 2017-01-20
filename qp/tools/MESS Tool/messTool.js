@@ -64,17 +64,13 @@ function makeSystems(callback){
 
 function sanitise(systems, callback){
  const
-  // if the first word of company is repeated in the system name, remove it from the system name
-     separator = " "
-  ,  numberOfWords = 1
-  ,  removeUnknown    = ( {company, system } ) => ( {company: company.replace(new RegExp("<unknown>"), ""),system} )
-  ,  removedUnknowns  = R.map(removeUnknown, systems)
-  ,  shortenCommodore = ( {company, system } ) => ( {company: company.replace(new RegExp("Commodore Business Machines"), "Commodore"),system} )
-  ,  shortened        = R.map(shortenCommodore,removedUnknowns)
-  ,  removeDupe       = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
-  ,  cleanedSystems   = R.map(removeDupe, shortened)
+    separator = " "
+  , numberOfWords = 1
+  , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
+  , l2 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l1)
+  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), l2)
 
-  callback(cleanedSystems)
+  callback(llast)
 }
 
 function printSystemsToFile(systems){

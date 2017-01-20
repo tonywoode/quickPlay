@@ -68,8 +68,9 @@ function sanitise(systems, callback){
   , numberOfWords = 1
   , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
   , l2 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l1)
-  , lpenulatimate = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
-  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), lpenulatimate)
+  , l3 = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
+  , lz = R.map( ( {company, system } ) => ( {company: company,system: system.replace(/.*\(MSX..*\)/, "")} ), l3)
+  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), lz)
 
   callback(llast)
 }
@@ -78,7 +79,7 @@ function printSystemsToFile(systems){
 
   const munge = systems =>  R.pipe(
     R.sortBy(R.prop('company')),
-    R.map(({company, system}) => (company ===""? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
+    R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
   )(systems)
 
   const flatSystems = munge(systems)

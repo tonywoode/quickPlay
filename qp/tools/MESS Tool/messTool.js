@@ -67,10 +67,12 @@ function sanitise(systems, callback){
   // if the first word of company is repeated in the system name, remove it from the system name
      separator = " "
   ,  numberOfWords = 1
-  ,  removeUnknown = ( {company, system } ) => ( {company: company.replace(new RegExp("<unknown>"), ""),system} )
-  ,  removedUnknowns = R.map(removeUnknown, systems)
-  ,  removeDupe = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
-  ,  cleanedSystems = R.map(removeDupe, removedUnknowns)
+  ,  removeUnknown    = ( {company, system } ) => ( {company: company.replace(new RegExp("<unknown>"), ""),system} )
+  ,  removedUnknowns  = R.map(removeUnknown, systems)
+  ,  shortenCommodore = ( {company, system } ) => ( {company: company.replace(new RegExp("Commodore Business Machines"), "Commodore"),system} )
+  ,  shortened        = R.map(shortenCommodore,removedUnknowns)
+  ,  removeDupe       = ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )
+  ,  cleanedSystems   = R.map(removeDupe, shortened)
 
   callback(cleanedSystems)
 }

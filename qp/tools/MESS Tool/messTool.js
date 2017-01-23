@@ -69,7 +69,9 @@ function sanitise(systems, callback){
   , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
   , l2 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l1)
   , l3 = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
-  , lz = R.map( ( {company, system } ) => ( {company: company,system: system.replace(/.*\(MSX..*\)/, "")} ), l3)
+  , l4 = R.filter( ( {company, system} ) => !system.match( /.*\(MSX..*\)/ ) , l3) //careful here - we must now put back a generic MSX1 and MSX2
+  , l5 = R.append( {"company":"","system":"MSX1"}, l4 )
+  , lz = R.append( {"company":"","system":"MSX2"}, l5 )
   , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), lz)
 
   callback(llast)
@@ -78,16 +80,17 @@ function sanitise(systems, callback){
 function printSystemsToFile(systems){
 
   const munge = systems =>  R.pipe(
-    R.sortBy(R.prop('company')),
-    R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
+      R.sortBy(R.prop('company'))
+    , R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
   )(systems)
 
   const flatSystems = munge(systems)
-  
-  flatSystems.forEach(function (v){console.log(v)})
+ 
+  const compare = (a, b) => a.localeCompare(b)
+
+  const orderedFlatSystems = flatSystems.sort(compare)
+  orderedFlatSystems.forEach(function (v){console.log(v)})
   process.exit()
-
-
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))
   //output.on('error', function(err) { console.log("couldn't write the file") });

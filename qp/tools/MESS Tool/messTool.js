@@ -68,7 +68,8 @@ function sanitise(systems, callback){
   , lc = R.map( ( {company, system } ) => ( {company: company.replace(/Amstrad .*/, `Amstrad`), system: (company.match(`Amstrad`) && ( system.match(/(CPC|GX4000)/)) )? `CPC` : system}), lb )
   , ld = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)}), lc)
   , le = R.map( ( {company, system } ) => ( {company, system: (company.match(`Apple`) && system.match(/II.*/))? `II` : system}), ld)
-  , lx = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system}), le)
+  , lf = R.map( ( {company, system } ) => ( {company, system: (company.match(`Atari`) && system.match(/(400|^800.*|XE Game System)/))? `400/600/800/1200/XE` : system}), le)
+  , lx = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system}), lf)
   , ly = R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX1` : system}), lx )
   , lz = R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system}), ly )
   , llast = R.uniq(lz) //so in anything above, we can duplicate to become unique....

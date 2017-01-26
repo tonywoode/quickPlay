@@ -57,18 +57,12 @@ function sanitise(systems, callback){
     separator = " "
   , numberOfWords = 1
   , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
-  , l2 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l1)
+  , l2 = R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), l1)
   , l3 = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
-  , isItMSX = (   {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system : system.match(/MSX1/)? `MSX1` : system}) 
-  , l5 = R.map( isItMSX, l2 )
-  //, l4 = R.uniqWith( (a, b) => a.system.match(/MSX1/) && b.system.match(/MSX1/) , l3   )
-  //, l5 = R.uniqWith( (a, b) => a.system.match(/MSX2/) && b.system.match(/MSX2/) , l4   )
-callback(l5)
-process.exit()
-//    , l4 = R.reject( ( {company, system} ) => system.match( /.*\(MSX..*\)/ ) , l3) //careful here - we must now put back a generic MSX1 and MSX2/// str.replace(regex) function (the first argument is the whole match - captured group return value is what its replaced with)
-//  , l5 = R.append( {"company":"","system":"MSX1"}, l4 )
-//  , lz = R.append( {"company":"","system":"MSX2"}, l5 )
-//  , llast = R.map( ( {company, system} ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), lz)
+  , l4 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l3)
+  , l5 = R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system : system.match(/MSX1/)? `MSX1` : system}), l4 )
+  , l6 = R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system : system.match(/MSX2/)? `MSX2` : system}), l5 )
+  , llast = R.uniq(l6)
 
   callback(llast)
 }

@@ -56,13 +56,22 @@ function sanitise(systems, callback){
  const
     separator = " "
   , numberOfWords = 1
+
+  //general rules
   , l1 = R.map( ( {company, system } ) => ( {company: company.replace(/<unknown>/, ``),system} ), systems)
-  , l2 = R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), l1)
-  , l3 = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)} ), l2)
-  , l4 = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system} ), l3)
-  , l5 = R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system : system.match(/MSX1/)? `MSX1` : system}), l4 )
-  , l6 = R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system : system.match(/MSX2/)? `MSX2` : system}), l5 )
-  , llast = R.uniq(l6)
+  , l2 = R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} ), l1) //take company from system name if they repeat
+  , l3 = R.map( ( {company, system } ) => ( {company, system: system.replace(/(\(NTSC\)|\(PAL\))/, ``)}), l2 )
+
+  //system specific
+  , la = R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/BBC/))? `BBC` : system}), l3 )
+  , lb = R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/Electron/))? `Atom` : system}), la )
+  , lc = R.map( ( {company, system } ) => ( {company: company.replace(/Amstrad .*/, `Amstrad`), system: (company.match(`Amstrad`) && ( system.match(/(CPC|GX4000)/)) )? `CPC` : system}), lb )
+  , ld = R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)}), lc)
+  , le = R.map( ( {company, system } ) => ( {company, system: (company.match(`Apple`) && system.match(/II.*/))? `II` : system}), ld)
+  , lx = R.map( ( {company, system } ) => ( {company: company.replace(/Commodore Business Machines/, `Commodore`),system}), le)
+  , ly = R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX1` : system}), lx )
+  , lz = R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system}), ly )
+  , llast = R.uniq(lz) //so in anything above, we can duplicate to become unique....
 
   callback(llast)
 }

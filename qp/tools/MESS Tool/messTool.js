@@ -90,10 +90,10 @@ function sanitise(systems, callback){
   , lw = R.map( ( {company, system } ) => ( {company: company.replace(`Interton Electronic`, `Interton`), system: (company.match(`Interton`) && system.match(`VC 4000`))? `VC4000` : system}), lv)
   , lx = R.map( ( {company, system } ) => ( {company: company.replace(`Jupiter Cantab`, `Jupiter`),system}), lw)
   , ly = R.map( ( {company, system } ) => ( {company, system: (company.match(`Kyosei`) && system.match(`Kyotronic 85`))? `Kyotronic` : system}), lx)
-  , lz = R.map( ( {company, system } ) => ( {company: company.replace(/Luxor/, `problem`),system}), ly)//this one isn't working
+  , lz = R.map( ( {company, system } ) => ( {company: company.replace(`Luxor Datorer AB`, `Luxor`),system:  (company.match(`Luxor`) && system.match(/ABC.*/))? `ABC`: system}), ly)
   , laa = R.map( ( {company, system } ) => ( {company: company.replace(`Matra & Hachette`, `Tandy Radio Shack`), system: (company.match(`Matra & Hachette`) && system.match(`Alice 32`))? `MC-10` : system}), lz)
   , lab = R.map( ( {company, system } ) => ( {company: company.replace(`Memotech Ltd`, `Memotech`), system: (company.match(`Memotech`) && system.match(`MTX .*`))? `MTX` : system}), laa)
-  , lac = R.map( ( {company, system } ) => ( {company, system:  (company.match(`Mikroelektronica`) && system.match(`Pyldin-601`))? `Pyldin`: system}),  la)
+  , lac = R.map( ( {company, system } ) => ( {company, system:  (company.match(`Mikroelektronica`) && system.match(`Pyldin-601`))? `Pyldin`: system}),  lab)
   , lad = R.map( ( {company, system } ) => ( {company: company.replace(`Nascom Microcomputers`, ``), system: (company.match(``) && system.match(/^2$/)? `Nascom` : system)}),  lac)
   , lae = R.map( ( {company, system } ) => ( {company, system:  (company.match(`Nintendo`) && system.match(`Entertainment System / Famicom`))? `NES`: system}),  lad)
   , laf = R.map( ( {company, system } ) => ( {company, system:  (company.match(`Nintendo`) && system.match(`Game Boy Color`))? `Game Boy`: system}),  lae)

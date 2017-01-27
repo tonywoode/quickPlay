@@ -52,9 +52,11 @@ function makeSystems(callback){
   })
 }
 
+
 function sanitise(systems, callback){
  const
     separator = " "
+  , genericCompanyReplace = (oldword, newword) =>  R.map( ( {company, system } ) => ( {company: company.replace(oldword, newword),system}))
   , numberOfWords = 1
   , res = R.pipe(
   //general rules
@@ -71,7 +73,7 @@ function sanitise(systems, callback){
   , R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Apple`) && system.match(/II.*/))? `II` : system}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Atari`) && system.match(/(400|^800.*|XE Game System)/))? `400/600/800/1200/XE` : system}))
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Bally Manufacturing`, `Bally`),system}))
+  , genericCompanyReplace("Bally Manufacturing","Bally")
   , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Bandai`) && system.match(`Super Vision 8000`))? `Super Vision` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(`Bondwell Holding`, ``), system: (company.match(`Bondwell`))? system=`Bondwell` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(`Commodore Business Machines`, `Commodore`),system}))

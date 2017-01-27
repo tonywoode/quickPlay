@@ -56,24 +56,29 @@ function makeSystems(callback){
 function sanitise(systems, callback){
  const
     separator = " "
-  , genericCompanyReplace = (oldword, newword) =>  R.map( ( {company, system } ) => ( {company: company.replace(oldword, newword),system}))
   , numberOfWords = 1
+  
+  //replacement functions
+  , companyReplace = (oldword, newword) =>  R.map( ( {company, system } ) => ( {company: company.replace(oldword, newword),system}))
+  , systemReplace =  (company, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(company) && system.match(oldsystem))? newsystem : system}))
+  //transforms  
   , res = R.pipe(
   //general rules
-    R.map( ( {company, system } ) => ( {company: company.replace(`<unknown>`, ``),system} ))
+    companyReplace(`<unknown>`, ``)
   , R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX1` : system}))
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system})) 
   , R.map( ( {company, system } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``)})) //now MSX has gone, every bracketed item is unnecessary
 
     //system specific
-  , R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/BBC/))? `BBC` : system}))
+  , systemReplace(`Acorn`, /BBC/, `BBC`) 
+  //, R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/BBC/))? `BBC` : system}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/Electron/))? `Atom` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(/Amstrad .*/, `Amstrad`), system: (company.match(`Amstrad`) && ( system.match(/(CPC|GX4000)/)) )? `CPC` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Apple`) && system.match(/II.*/))? `II` : system}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Atari`) && system.match(/(400|^800.*|XE Game System)/))? `400/600/800/1200/XE` : system}))
-  , genericCompanyReplace("Bally Manufacturing","Bally")
+  , companyReplace("Bally Manufacturing","Bally")
   , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Bandai`) && system.match(`Super Vision 8000`))? `Super Vision` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(`Bondwell Holding`, ``), system: (company.match(`Bondwell`))? system=`Bondwell` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(`Commodore Business Machines`, `Commodore`),system}))

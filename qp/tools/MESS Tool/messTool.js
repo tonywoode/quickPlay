@@ -59,8 +59,8 @@ function sanitise(systems, callback){
   , numberOfWords = 1
   
   //replacement functions
-  , companyReplace = (oldword, newword) =>  R.map( ( {company, system } ) => ( {company: company.replace(oldword, newword),system}))
-  , systemReplace =  (company, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(company) && system.match(oldsystem))? newsystem : system}))
+  , companyReplace = (oldword, newword)              => R.map( ( {company, system } ) => ( {company: company.replace(oldword, newword),system}))
+  , systemReplace  = (company, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(company) && system.match(oldsystem))? newsystem : system}))
   //transforms  
   , res = R.pipe(
   //general rules
@@ -72,9 +72,10 @@ function sanitise(systems, callback){
 
     //system specific
   , systemReplace(`Acorn`, /BBC/, `BBC`) 
-  //, R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/BBC/))? `BBC` : system}))
-  , R.map( ( {company, system } ) => ( {company, system: (company.match(`Acorn`) && system.match(/Electron/))? `Atom` : system}))
-  , R.map( ( {company, system } ) => ( {company: company.replace(/Amstrad .*/, `Amstrad`), system: (company.match(`Amstrad`) && ( system.match(/(CPC|GX4000)/)) )? `CPC` : system}))
+  , systemReplace(`Acorn`, /Electron/, `Atom`)
+  , companyReplace(/Amstrad .*/, `Amstrad`)
+  , systemReplace(`Amstrad`, /CPC|GX4000/, `CPC`)
+  //, R.map( ( {company, system } ) => ( {company: company.replace(/Amstrad .*/, `Amstrad`), system: (company.match(`Amstrad`) && ( system.match(/(CPC|GX4000)/)) )? `CPC` : system}))
   , R.map( ( {company, system } ) => ( {company: company.replace(/Apple Computer/, `Apple`),system: system.replace(/Macintosh /, ``)}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Apple`) && system.match(/II.*/))? `II` : system}))
   , R.map( ( {company, system } ) => ( {company, system: (company.match(`Atari`) && system.match(/(400|^800.*|XE Game System)/))? `400/600/800/1200/XE` : system}))

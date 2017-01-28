@@ -59,8 +59,8 @@ function sanitise(systems, callback){
   , numberOfWords = 1
   
   //replacement functions
-  , companyReplace = (oldCompany, newCompany)        => R.map( ( {company, system } ) => ( {company: company.replace(oldCompany, newCompany),system}))
-  , systemReplace  = (company, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(company) && system.match(oldsystem))? newsystem : system}))
+  , companyReplace = (oldCompany, newCompany)            => R.map( ( {company, system } ) => ( {company: company.replace(oldCompany, newCompany),system}))
+  , systemReplace  = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system}))
   //transforms  
   , res = R.pipe(
   //general rules
@@ -70,14 +70,14 @@ function sanitise(systems, callback){
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system})) 
   , R.map( ( {company, system } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``)})) //now MSX has gone, every bracketed item is unnecessary
 
-    //system specific
+    //system specific (btw replace accepts a regex by default, but i'm trying to show what's a string and what's a regex)
   , systemReplace(`Acorn`, /BBC/, `BBC`), systemReplace(`Acorn`, /Electron/, `Atom`)
   , companyReplace(/Amstrad .*/, `Amstrad`), systemReplace(`Amstrad`, /(CPC|GX4000)/, `CPC`)
   , companyReplace(/Apple Computer/, `Apple`), systemReplace(`Apple`, /Macintosh /, ``), systemReplace(`Apple`,/II.*/,`II`) 
   , systemReplace(`Atari`,/(400|^800.*|XE Game System)/, `400/600/800/1200/XE`)
   , companyReplace("Bally Manufacturing","Bally")
-  , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Bandai`) && system.match(`Super Vision 8000`))? `Super Vision` : system}))
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Bondwell Holding`, ``), system: (company.match(`Bondwell`))? system=`Bondwell` : system}))
+  , systemReplace(`Bandai`,`Super Vision 8000`, `Super Vision`) 
+  , systemReplace(`Bondwell Holding`, `.*`, `Bondwell`), companyReplace(`Bondwell Holding`, ``)
   , R.map( ( {company, system } ) => ( {company: company.replace(`Commodore Business Machines`, `Commodore`),system}))
   , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Commodore`) && system.match(/B500|P500/))? `500/600/700` : system}))
   , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Commodore`) && system.match(/PET .*|CBM .*/))? `PET/CBM` : system}))

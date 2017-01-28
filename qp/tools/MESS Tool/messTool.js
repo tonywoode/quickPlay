@@ -78,7 +78,7 @@ function sanitise(systems, callback){
   , systemReplace(`Atari`,/(400|^800.*|XE Game System)/, `400/600/800/1200/XE`)
   , companyReplace("Bally Manufacturing","Bally")
   , systemReplace(`Bandai`,`Super Vision 8000`, `Super Vision`) 
-  , systemReplace(`Bondwell Holding`, `.*`, `Bondwell`), companyReplace(`Bondwell Holding`, ``)
+  , systemReplace(`Bondwell Holding`, `.*`, `Bondwell`), companyReplace(`Bondwell Holding`, ``) //change company after
   , companyReplace(`Commodore Business Machines`, `Commodore`), systemReplace(`Commodore`, /B500|P500/, `500/600/700`) 
     , systemReplace(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systemReplace(`Commodore`, /64|128/, `64/128`)
     , systemReplace(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`) 
@@ -93,24 +93,15 @@ function sanitise(systems, callback){
   , companyReplace(`Interton Electronic`, `Interton`)
   , companyReplace(`Jupiter Cantab`, `Jupiter`)
   , systemReplace(`Kyosei`, `Kyotronic 85`, `Kyotronic`)
-
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Luxor Datorer AB`, `Luxor`),system:  (company.match(`Luxor`) && system.match(/ABC.*/))? `ABC`: system}))
-
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Matra & Hachette`, `Tandy Radio Shack`), system: (company.match(`Matra & Hachette`) && system.match(`Alice 32`))? `MC-10` : system}))
-
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Memotech Ltd`, `Memotech`), system: (company.match(`Memotech`) && system.match(`MTX .*`))? `MTX` : system}))
-
-  , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Mikroelektronica`) && system.match(`Pyldin-601`))? `Pyldin`: system}))
-
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Nascom Microcomputers`, ``), system: (company.match(``) && system.match(/^2$/)? `Nascom` : system)}))
-
-  , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Nintendo`) && system.match(`Entertainment System / Famicom`))? `NES`: system}))
-
-  , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Nintendo`) && system.match(`Game Boy Color`))? `Game Boy`: system}))
-
-  , R.map( ( {company, system } ) => ( {company, system:  (company.match(`Nintendo`) && system.match(`Super Entertainment System / Super Famicom `))? `SNES`: system}))
-
-  , R.map( ( {company, system } ) => ( {company: company.replace(`Nippon Electronic Company`, `NEC`), system: system.match(`PC Engine`)? `PC Engine\\TurboGrafx-16` : system}))
+  , companyReplace(`Luxor Datorer AB`, `Luxor`), systemReplace(`Luxor`, /ABC.*/, `ABC`)
+  , systemReplace(`Matra & Hachette`, `Alice 32`, `MC-10`), companyReplace(`Matra & Hachette`, `Tandy Radio Shack`) //change company after
+  , companyReplace(`Memotech Ltd`, `Memotech`), systemReplace(`Memotech`, `MTX .*`, `MTX`) 
+  , systemReplace(`Mikroelektronika`, `Pyldin-601`, `Pyldin`)
+  , systemReplace(`Nascom Microcomputers`, `2`, `Nascom`), companyReplace(`Nascom Microcomputers`, ``) //change company after
+  , systemReplace(`Nintendo`, `Entertainment System / Famicom`, `NES`)
+  , systemReplace(`Nintendo`, `Game Boy Color`, `Game Boy`)
+  , systemReplace(`Nintendo`, `Super Entertainment System / Super Famicom `, `SNES`)
+  , companyReplace(`Nippon Electronic Company`, `NEC`), systemReplace(`NEC`, `PC Engine`, `PC Engine\\TurboGrafx-16`)
 
   // lastly dedupe all the dupes we just made in those transforms
   , R.uniq //so in anything above, we can duplicate to become unique....

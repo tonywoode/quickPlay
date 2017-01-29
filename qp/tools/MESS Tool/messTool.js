@@ -84,7 +84,7 @@ function sanitise(systems, callback){
   , systemReplace(`Bondwell Holding`, `.*`, `Bondwell`), companyReplace(`Bondwell Holding`, ``) //change company after
   , companyReplace(`Commodore Business Machines`, `Commodore`), systemReplace(`Commodore`, /B500|P500/, `500/600/700`) 
     , systemReplace(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systemReplace(`Commodore`, /64|128/, `64/128`)
-    , systemReplace(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`) 
+    , systemReplace(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systemReplace(`Commodore`, `VIC-1001`, `VIC-20`) 
   , systemReplace(`EACA`,`Colour Genie EG2000`, `Colour Genie`)
   , systemReplace(`Elektronika`,`BK 0010`, `BK`)
   , systemReplace(`Emerson`, `Arcadia 2001`, `Arcadia`)

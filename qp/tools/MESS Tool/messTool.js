@@ -74,7 +74,10 @@ function sanitise(systems, callback){
     //system specific (btw replace accepts regex or string by default, but i'm trying to show what's intended as a string and what's a regex)
   , systemReplace(`Acorn`, /BBC/, `BBC`), systemReplace(`Acorn`, /Electron/, `Atom`)
   , companyReplace(/Amstrad .*/, `Amstrad`), systemReplace(`Amstrad`, /(CPC|GX4000)/, `CPC`)
-  , companyReplace(/Apple Computer/, `Apple`), systemReplace(`Apple`, /Macintosh /, ``), systemReplace(`Apple`,/II.*/,`II`) 
+  , companyReplace(`APF Electronics Inc.`, `APF`), systemReplace(`APF`, `M-1000`, `Imagination Machine`)
+  , companyReplace(/Apple Computer/, `Apple`), systemReplace(`Apple`, /(Macintosh LC|Macintosh II.*)/, `Macintosh II (68020/68030)`)
+    , systemReplace(`Apple`, /Macintosh (Plus|SE|Classic)/, `Macintosh (6800)`), systemReplace(`Apple`,/(^II.*|\]\[|\/\/c|\/\/e)/,`II`)
+    , systemReplace(`Apple`,/\/\/\//,`III`)
   , systemReplace(`Atari`,/(400|^800.*|XE Game System)/, `400/600/800/1200/XE`)
   , companyReplace("Bally Manufacturing","Bally")
   , systemReplace(`Bandai`,`Super Vision 8000`, `Super Vision`) 
@@ -102,6 +105,7 @@ function sanitise(systems, callback){
   , systemReplace(`Nintendo`, `Game Boy Color`, `Game Boy`)
   , systemReplace(`Nintendo`, `Super Entertainment System / Super Famicom `, `SNES`)
   , companyReplace(`Nippon Electronic Company`, `NEC`), systemReplace(`NEC`, `PC Engine`, `PC Engine\\TurboGrafx-16`)
+  , systemReplace(`Non Linear Systems`, `Kaypro II - 2/83`, `Kaypro`)
 
   // lastly dedupe all the dupes we just made in those transforms
   , R.uniq //so in anything above, we can duplicate to become unique....

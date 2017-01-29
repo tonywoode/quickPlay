@@ -67,11 +67,11 @@ function sanitise(systems, callback){
   //general rules
     companyReplace(`<unknown>`, ``)
   , R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
-  , R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX1` : system}))
+  , R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system}))
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system})) 
   , R.map( ( {company, system } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``)})) //now MSX has gone, every bracketed item is unnecessary
 
-    //system specific (btw replace accepts regex or string by default, but i'm trying to show what's intended as a string and what's a regex)
+    //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systemReplace(`Acorn`, /BBC/, `BBC`), systemReplace(`Acorn`, /Electron/, `Atom`)
   , companyReplace(/Amstrad .*/, `Amstrad`), systemReplace(`Amstrad`, /(CPC|GX4000)/, `CPC`)
   , companyReplace(`APF Electronics Inc.`, `APF`), systemReplace(`APF`, `M-1000`, `Imagination Machine`)
@@ -104,8 +104,23 @@ function sanitise(systems, callback){
   , systemReplace(`Nintendo`, `Entertainment System / Famicom`, `NES`)
   , systemReplace(`Nintendo`, `Game Boy Color`, `Game Boy`)
   , systemReplace(`Nintendo`, `Super Entertainment System / Super Famicom `, `SNES`)
-  , companyReplace(`Nippon Electronic Company`, `NEC`), systemReplace(`NEC`, `PC Engine`, `PC Engine\\TurboGrafx-16`)
+  , companyReplace(`Nippon Electronic Company`, `NEC`), systemReplace(`NEC`, `PC Engine`, `PC Engine/TurboGrafx-16`)
   , systemReplace(`Non Linear Systems`, `Kaypro II - 2/83`, `Kaypro`)
+  , companyReplace(`Data Applications International`, `DAI`), systemReplace(`DAI`, `DAI Personal Computer`, `Personal Computer`)
+  , companyReplace(`Elektronika inzenjering` , ``)
+  , systemReplace(`International Business Machines`, `IBM PC 5150`, `PC 5150`), companyReplace(`International Business Machines`, `IBM`) //change company after
+  , systemReplace(`Interton`, `Electronic VC 4000` , `VC 4000`)
+  , systemReplace(``, `Orion128` , `Orion`) //note these assume youve transformed <unknown> already
+  , systemReplace(``, `PK8020Korvet` , `Korvet PK`)
+  , companyReplace(`Jungle Soft / KenSingTon / Chintendo / Siatronics`, '')
+  , systemReplace(/Welback Holdings .*/ , `Mega Duck / Cougar Boy`, `Mega Duck/Couger Boy`), companyReplace(/Welback Holdings .*/, ``) //change company after
+  , companyReplace(`Miles Gordon Technology plc`, `MGT`)
+  , companyReplace(`Processor Technology Corporation`, `PTC`), systemReplace(`PTC`, `SOL-20`, `Sol`)
+  , systemReplace(``, `Radio86RK` , `Radio-86RK`) //seems MESS made the mistake here...
+  , systemReplace(`Sanyo`, `MBC-55x`, `MBC`)
+  , systemReplace(`SNK`, /(Neo-Geo$|Neo-Geo AES)/, `Neo Geo`), systemReplace(`SNK`, `Neo-Geo CDZ`, `Neo Geo CD`) //wikipedia says mess is wrong
+    , systemReplace(`SNK`, `NeoGeo Pocket`, `Neo Geo Pocket`) //mess says mess is wrong....
+
 
   // lastly dedupe all the dupes we just made in those transforms
   , R.uniq //so in anything above, we can duplicate to become unique....

@@ -1,7 +1,5 @@
 3D Engine
 3DO
-APF Imagination Machine
-AT&T 3B1
 Aamber Pegasus
 Acorn 6809
 Acorn Archimedes
@@ -10,6 +8,7 @@ Acorn System 1
 Amstrad CPC
 Amstrad NC Notepad
 Amstrad PCW
+APF Imagination Machine
 Apple I
 Apple II
 Apple III
@@ -20,6 +19,7 @@ Apple Power Macintosh (PowerPC)
 Applied Technologies Microbee
 Apricot
 Arcade
+AT&T 3B1
 Atari 2600
 Atari 400/600/800/1200/XE
 Atari 5200
@@ -27,19 +27,18 @@ Atari 7800
 Atari Jaguar
 Atari Lynx
 Atari ST
-BBC
 Bally Professinal Arcade
 Bandai Super Vision
 Bandai Wonderswan
+BBC
 Be Inc. BeBox
 Belogic Uzebox
 Bondwell
-CBR
-COMX 35
 Cambridge Z88
 Capcom CPS Changer
 Casio Loopy
 Casio PV
+CBR
 CHIP-8
 Coleco ColecoVision
 Commodore +4/C16
@@ -51,11 +50,12 @@ Commodore Kim-1
 Commodore Max/UltiMax
 Commodore PET/CBM
 Commodore VIC-20
+COMX 35
 Corvus Systems Concept
 Cybiko Classic
 DAI Personal Computer
-DOS
 Dick Smith Super-80
+DOS
 Dragon Data Dragon
 EACA Colour Genie
 EAW P8000
@@ -76,9 +76,9 @@ Fujitsi Micro 7
 Fujitsu FM-Towns
 Funtech Super A'Can
 Galaksija
-GCE Vectrex
-Game Park Holdings GP32/GP2X
 Game and Watch
+Game Park Holdings GP32/GP2X
+GCE Vectrex
 Grundy NewBrain
 Hartung Game Master
 HomeLab Series Homelab
@@ -94,27 +94,27 @@ Korvet PK
 Kyosei Kyotronic
 Lenin Lviv
 Lianozovo Electromechanical Factory Mikrosha
-MGT Sam Coupe
-MSX
-MSX2
 Magnavox Odyssey 2
 Mattel Aquarius
 Mattel Intellivision
 Mattel Juicebox
 Megaduck/Cougar Boy
 Memotech MTX
+MGT Sam Coupe
 Microkey Primo
 Micronique Hector
 Microsoft Xbox
 Microsoft Xbox 360
 Mikroelektronica Pyldin
 Milton Bradley MicroVision
+MSX
+MSX2
 Multitech Micro Professor
 Music
+Nascom
 NEC PC Engine FX
 NEC PC Engine\TurboGrafx-16
 NEC PC Series
-Nascom
 Nichibutsu My Vision
 Nintendo 64
 Nintendo DS
@@ -136,27 +136,23 @@ Osborne-1
 PBNO Bashkiria
 PC Games
 PDF Reader
-Pinball
 Philips CD-i
 Philips VG5000
+Pinball
 Pioneer Laseractive
 PTC Sol
 Radio-86RK
 RCA Cosmac VIP
 RCA Studio II
-Retroarch Games
 Research Machines Nimbus
+Retroarch Games
 Robotron BIC A5105
 Robotron KC series
 Robotron Z1013
 Robotron Z9001
 SAM SKB Partner
-Sanyo MBC
-SGI IRIS/Indy/Indigo
-SNK Neo Geo
-SNK Neo Geo CD
-SNK Neo Geo Pocket
 Samsung SPC-1000
+Sanyo MBC
 Sanyo PHC
 Sega CD
 Sega Dreamcast
@@ -165,8 +161,9 @@ Sega Genesis/32X
 Sega Master System
 Sega Multi-System
 Sega Pico
-Sega SG-1000/SC-3000/SF-7000
 Sega Saturn
+Sega SG-1000/SC-3000/SF-7000
+SGI IRIS/Indy/Indigo
 Sharp MZ
 Sharp X1
 Sharp X68000
@@ -174,18 +171,21 @@ Sinclair QL
 Sinclair ZX Spectrum
 Sinclair ZX-80
 Sinclair ZX-81
-Sony PSP
+SNK Neo Geo
+SNK Neo Geo CD
+SNK Neo Geo Pocket
 Sony Playstation
 Sony Playstation 2
 Sony Playstation 3
 Sony PocketStation
+Sony PSP
 Sony SMC
 Sord M5
 Specialist
 Spectravideo SVI
 Tandy 2000
-Tandy Radio Shack TRS-80 CoCo
 Tandy Radio Shack MC-10
+Tandy Radio Shack TRS-80 CoCo
 Tangerine Microtan
 Tatung Einstein TC-01
 Telegames Personal Arcade
@@ -205,8 +205,8 @@ Vector
 Victor 9000 /Sirius S1
 Video
 Video Technology Creativision
-Video Technology/Yeno MisterX
 Video Technology Laser Mk1
+Video Technology/Yeno MisterX
 VideoBrain Family Computer
 Videoton TVC
 Vii

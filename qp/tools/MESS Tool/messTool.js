@@ -82,9 +82,11 @@ function sanitise(systems, callback){
   , compRep(`Bally Manufacturing`,`Bally`)
   , systRep(`Bandai`,`Super Vision 8000`, `Super Vision`) 
   , systRep(`Bondwell Holding`, /.*/, `Bondwell`), compRep(`Bondwell Holding`, ``) //change company after
+  , systRep(`Casio`, `PV-1000`, `PV`)
   , compRep(`Commodore Business Machines`, `Commodore`), systRep(`Commodore`, /B500|P500/, `500/600/700`) 
     , systRep(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systRep(`Commodore`, /64|128/, `64/128`)
     , systRep(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systRep(`Commodore`, `VIC-1001`, `VIC-20`) 
+  , compRep(`Comx World Operations Ltd`, `COMX`)
   , systRep(`EACA`,`Colour Genie EG2000`, `Colour Genie`)
   , systRep(`Elektronika`,`BK 0010`, `BK`)
   , systRep(`Emerson`, `Arcadia 2001`, `Arcadia`)
@@ -131,6 +133,7 @@ function sanitise(systems, callback){
   , systRep(`Thomson`, `MO5 NR`, `MO5`), systRep(`Thomson`, /(TO7.*|TO9.*)/, `TO7/TO9`)
   , compRep(`V. I. Lenin`, `Lenin`), systRep(`Lenin`, `PK-01 Lviv`, `Lviv`)
   , systRep(`Video Technology`, /Laser.*/, `Laser Mk1`)
+  , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
 
   // lastly dedupe all the dupes we just made in those transforms

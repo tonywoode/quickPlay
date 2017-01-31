@@ -1,17 +1,17 @@
 "use strict"
 
 const 
-    fs      = require('fs')
+    fs        = require('fs')
   , path      = require('path')
   , XmlStream = require('xml-stream')
   , R         = require('Ramda')
-  , stream = fs.createReadStream("inputs/mame.xml")
-  , xml      = new XmlStream(stream)
+  , stream    = fs.createReadStream("inputs/mame.xml")
+  , xml       = new XmlStream(stream)
 
 //program flow
-mockSystems(function(systems){
-  sanitise(systems, function(callback){
-    printSystemsToFile(callback)
+makeSystems(function(systems){
+  makeSystemsList(systems, function(callback){
+    printSystemsList(callback)
   })
 })
 
@@ -26,24 +26,18 @@ function mockSystems(callback){
 
 function makeSystems(callback){
   const systems = []
-  let prev
 
   xml.on("updateElement: machine", function(machine) {
-    const attr = machine.$.name
     if (machine.softwarelist 
-       && attr !== prev 
        && machine.driver.$.emulation === "good"
-       && !machine.$.cloneof
     ) {
-      const 
-          company = machine.manufacturer
-        , systemName = machine.description
-        , node = {}
+      const node = {}
       
-      node.company = company
-      node.system = systemName
+      node.company = machine.manufacturer
+      node.system = machine.description //to munge
+      node.call = machine.$.name
+      node.cloneof = machine.$.cloneof
       systems.push(node)
-      prev = attr
     }
   })
 
@@ -53,7 +47,7 @@ function makeSystems(callback){
 }
 
 
-function sanitise(systems, callback){
+function makeSystemsList(systems, callback){
  const
     separator = " "
   , numberOfWords = 1
@@ -61,8 +55,11 @@ function sanitise(systems, callback){
   //replacement functions
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system } ) => ( {company: company.replace(oldCompany, newCompany),system}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system}))
-
+  , isAClone = ( {thiscompany, system, call, cloneof } ) => !(cloneof) 
+  
   //transforms  
+  , noClones = R.filter( isAClone, systems)
+    
   , res = R.pipe(
   //general rules
     compRep(`<unknown>`, ``)
@@ -138,12 +135,15 @@ function sanitise(systems, callback){
 
   // lastly dedupe all the dupes we just made in those transforms
   , R.uniq //so in anything above, we can duplicate to become unique....
-  )(systems)
+  )(noClones)
+  
   callback(res)
 }
 
-function printSystemsToFile(systems){
+function printSystemsList(systems){
 
+  console.log(JSON.stringify(systems))
+  
   const munge = systems =>  R.pipe(
       R.sortBy(R.prop('company'))
     , R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 

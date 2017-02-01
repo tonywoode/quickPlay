@@ -10,8 +10,8 @@ const
 
 //program flow
 mockSystems(function(systems){
-  makeSystemsList(systems, function(callback){
-    printSystemsList(callback)
+  mungeCompanyAndSytemsNames(systems, function(callback){
+    makeSystemsList(callback)
   })
 })
 
@@ -47,25 +47,16 @@ function makeSystems(callback){
 }
 
 
-function makeSystemsList(systems, callback){
+function mungeCompanyAndSytemsNames(systems, callback){
  const
-    separator = " "
-  , numberOfWords = 1
-  
   //replacement functions
-  , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof } ) => ( {company: company.replace(oldCompany, newCompany),system, call, cloneof}))
+   compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof } ) => ( {company: company.replace(oldCompany, newCompany),system, call, cloneof}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system, call, cloneof}))
   
   //transforms  
   , res = R.pipe(
-  //general rules
    compRep(`<unknown>`, ``)
-  , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), ""), call, cloneof} )) //take company from system name if they repeat
-  , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system, call, cloneof}))
-  , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system, call, cloneof})) 
-  , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``), call, cloneof})) //now MSX has gone, every bracketed item is unnecessary
-
-    //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
+      //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systRep(`Acorn`, /BBC/, `BBC`), systRep(`Acorn`, /Electron/, `Atom`)
   , compRep(/Amstrad .*/, `Amstrad`), systRep(`Amstrad`, /(CPC|GX4000)/, `CPC`)
   , compRep(`APF Electronics Inc.`, `APF`), systRep(`APF`, `M-1000`, `Imagination Machine`)
@@ -129,22 +120,26 @@ function makeSystemsList(systems, callback){
   , systRep(`Video Technology`, /Laser.*/, `Laser Mk1`)
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
-
-  // lastly dedupe all the dupes we just made in those transforms
   )(systems)
   
   callback(res)
 }
 
-function printSystemsList(systems){
+function makeSystemsList(systems){
 
   console.log(JSON.stringify(systems))
-  
-  const munge = systems =>  R.pipe(
+ const   
+     separator = " "
+   , numberOfWords = 1
+   ,  munge = systems =>  R.pipe(
       R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-    , R.sortBy(R.prop('company'))
+    , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), ""), call, cloneof} )) //take company from system name if they repeat
+    , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system, call, cloneof}))
+    , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system, call, cloneof})) 
+    , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``), call, cloneof})) //now MSX has gone, every bracketed item is unnecessary
     , R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
-    , R.uniq //now we've filtered by company/system, we want to flatten to a systemes list
+    , R.uniq // lastly dedupe all the dupes we made in all those transforms
+    , R.sortBy(R.prop('company'))
   )(systems)
 
   const flatSystems = munge(systems)

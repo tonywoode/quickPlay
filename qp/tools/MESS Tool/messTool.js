@@ -9,7 +9,7 @@ const
   , xml       = new XmlStream(stream)
 
 //program flow
-makeSystems(function(systems){
+mockSystems(function(systems){
   makeSystemsList(systems, function(callback){
     printSystemsList(callback)
   })
@@ -42,8 +42,6 @@ function makeSystems(callback){
   })
 
   xml.on("end", function(){
-    console.log(JSON.stringify(systems))
-    process.exit()
     callback(systems,callback)
   })
 }
@@ -55,18 +53,17 @@ function makeSystemsList(systems, callback){
   , numberOfWords = 1
   
   //replacement functions
-  , compRep = (oldCompany, newCompany)            => R.map( ( {company, system } ) => ( {company: company.replace(oldCompany, newCompany),system}))
-  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system}))
+  , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof } ) => ( {company: company.replace(oldCompany, newCompany),system, call, cloneof}))
+  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system, call, cloneof}))
   
   //transforms  
   , res = R.pipe(
   //general rules
-    R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-  , compRep(`<unknown>`, ``)
-  , R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
-  , R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system}))
-  , R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system})) 
-  , R.map( ( {company, system } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+   compRep(`<unknown>`, ``)
+  , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), ""), call, cloneof} )) //take company from system name if they repeat
+  , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system, call, cloneof}))
+  , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system, call, cloneof})) 
+  , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``), call, cloneof})) //now MSX has gone, every bracketed item is unnecessary
 
     //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systRep(`Acorn`, /BBC/, `BBC`), systRep(`Acorn`, /Electron/, `Atom`)
@@ -134,7 +131,6 @@ function makeSystemsList(systems, callback){
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
 
   // lastly dedupe all the dupes we just made in those transforms
-  , R.uniq //so in anything above, we can duplicate to become unique....
   )(systems)
   
   callback(res)
@@ -145,8 +141,10 @@ function printSystemsList(systems){
   console.log(JSON.stringify(systems))
   
   const munge = systems =>  R.pipe(
-      R.sortBy(R.prop('company'))
+      R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
+    , R.sortBy(R.prop('company'))
     , R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
+    , R.uniq //now we've filtered by company/system, we want to flatten to a systemes list
   )(systems)
 
   const flatSystems = munge(systems)
@@ -155,7 +153,6 @@ function printSystemsList(systems){
 
   const orderedFlatSystems = flatSystems.sort(compare)
   orderedFlatSystems.forEach(function (v){console.log(v)})
-  process.exit()
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))
   //output.on('error', function(err) { console.log("couldn't write the file") });

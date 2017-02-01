@@ -32,9 +32,9 @@ function makeSystems(callback){
        && machine.driver.$.emulation === "good"
     ) {
       const node = {}
-      
+      //make an array of these objects: { company, system, call, cloneof }
       node.company = machine.manufacturer
-      node.system = machine.description //to munge
+      node.system = machine.description 
       node.call = machine.$.name
       node.cloneof = machine.$.cloneof
       systems.push(node)
@@ -42,6 +42,8 @@ function makeSystems(callback){
   })
 
   xml.on("end", function(){
+    console.log(JSON.stringify(systems))
+    process.exit()
     callback(systems,callback)
   })
 }
@@ -55,14 +57,12 @@ function makeSystemsList(systems, callback){
   //replacement functions
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system } ) => ( {company: company.replace(oldCompany, newCompany),system}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system}))
-  , isAClone = ( {thiscompany, system, call, cloneof } ) => !(cloneof) 
   
   //transforms  
-  , noClones = R.filter( isAClone, systems)
-    
   , res = R.pipe(
   //general rules
-    compRep(`<unknown>`, ``)
+    R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
+  , compRep(`<unknown>`, ``)
   , R.map( ( {company, system } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system}))
   , R.map( ( {company, system } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system})) 
@@ -135,7 +135,7 @@ function makeSystemsList(systems, callback){
 
   // lastly dedupe all the dupes we just made in those transforms
   , R.uniq //so in anything above, we can duplicate to become unique....
-  )(noClones)
+  )(systems)
   
   callback(res)
 }

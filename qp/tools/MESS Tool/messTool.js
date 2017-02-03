@@ -49,10 +49,15 @@ function makeSystems(callback){
 
 function mungeCompanyAndSytemsNames(systems, callback){
  const
-  //replacement functions
-   compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof } ) => ( {company: company.replace(oldCompany, newCompany),system, call, cloneof}))
-  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof } ) => ( {company, system: (company.match(thisCompany) && system.match(oldsystem))? newsystem : system, call, cloneof}))
+  //first create+populate 2 new properties for munging
+   systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
   
+  //replacement functions
+  , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
+  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany,mungedSystem: (mungedCompany.match(thisCompany) && system.match(oldsystem))? newsystem : mungedSystem}))
+  ,   separator = " "
+   , numberOfWords = 1
+
   //transforms  
   , res = R.pipe(
    compRep(`<unknown>`, ``)
@@ -120,26 +125,27 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Video Technology`, /Laser.*/, `Laser Mk1`)
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
-  )(systems)
+  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+ , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
+
+  
+  )(systemsAugmented)
+
+  
   
   callback(res)
 }
 
 function makeSystemsList(systems){
 
-  console.log(JSON.stringify(systems))
  const   
-     separator = " "
-   , numberOfWords = 1
-   ,  munge = systems =>  R.pipe(
+       munge = systems =>  R.pipe(
       R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-    , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(new RegExp(company.split(separator, numberOfWords) + '\\W', "i"), ""), call, cloneof} )) //take company from system name if they repeat
-    , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX1/)? '' : company, system: system.match(/MSX1/)? `MSX` : system, call, cloneof}))
-    , R.map( ( {company, system, call, cloneof } ) => ( {company: system.match(/MSX2/)? '' : company, system: system.match(/MSX2/)? `MSX2` : system, call, cloneof})) 
-    , R.map( ( {company, system, call, cloneof } ) => ( {company, system: system.replace(/(\(.*\)|\(.*\))/, ``), call, cloneof})) //now MSX has gone, every bracketed item is unnecessary
-    , R.map(({company, system}) => ((company ==="" || system ==="")? ``:`${company}` + ` `) + `${system}`) //if there's a company name, print it first 
+       , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
+    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem})) 
+        , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
     , R.uniq // lastly dedupe all the dupes we made in all those transforms
-    , R.sortBy(R.prop('company'))
+    , R.sortBy(R.prop('mungedCompany'))
   )(systems)
 
   const flatSystems = munge(systems)
@@ -147,6 +153,8 @@ function makeSystemsList(systems){
   const compare = (a, b) => a.localeCompare(b)
 
   const orderedFlatSystems = flatSystems.sort(compare)
+  console.log(JSON.stringify(systems, null, '\t'))
+  process.exit()
   orderedFlatSystems.forEach(function (v){console.log(v)})
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))

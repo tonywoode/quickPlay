@@ -54,13 +54,16 @@ function mungeCompanyAndSytemsNames(systems, callback){
   
   //replacement functions
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
-  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany,mungedSystem: (mungedCompany.match(thisCompany) && system.match(oldsystem))? newsystem : mungedSystem}))
+  , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany,mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
   ,   separator = " "
    , numberOfWords = 1
 
   //transforms  
   , res = R.pipe(
-   compRep(`<unknown>`, ``)
+    R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+ , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
+
+  , compRep(`<unknown>`, ``)
       //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systRep(`Acorn`, /BBC/, `BBC`), systRep(`Acorn`, /Electron/, `Atom`)
   , compRep(/Amstrad .*/, `Amstrad`), systRep(`Amstrad`, /(CPC|GX4000)/, `CPC`)
@@ -68,7 +71,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , compRep(/Apple Computer/, `Apple`), systRep(`Apple`, /(Macintosh LC|Macintosh II.*)/, `Macintosh II (68020/68030)`)
     , systRep(`Apple`, /Macintosh (Plus|SE|Classic)/, `Macintosh (6800)`), systRep(`Apple`,/(^II.*|\]\[|\/\/c|\/\/e)/,`II`)
     , systRep(`Apple`,/\/\/\//,`III`)
-  , systRep(`Atari`,/(400|^800.*|XE Game System)/, `400/600/800/1200/XE`)
+  , systRep(`Atari`,/(400|800.*|XE Game System)/, `400/600/800/1200/XE`)
   , compRep(`Bally Manufacturing`,`Bally`)
   , systRep(`Bandai`,`Super Vision 8000`, `Super Vision`) 
   , systRep(`Bondwell Holding`, /.*/, `Bondwell`), compRep(`Bondwell Holding`, ``) //change company after
@@ -125,9 +128,6 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Video Technology`, /Laser.*/, `Laser Mk1`)
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
-  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
- , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
-
   
   )(systemsAugmented)
 

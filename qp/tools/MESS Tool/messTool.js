@@ -57,9 +57,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
       if (referredSystem === undefined){console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`)}
     }
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
-  , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem: cloneof? lookupCall(cloneof, call) : mungedSystem }), systemsAugmented )//actually we want this right at the end don't we as we want the ultimate system name after all munging
-    console.log(JSON.stringify(systemsDeCloned, null, '\t'))
-  process.exit()//replacement functions
+ // , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem: cloneof? lookupCall(cloneof, call) : mungedSystem }), systemsAugmented )//actually we want this right at the end don't we as we want the ultimate system name after all munging
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
   , separator = " "
@@ -67,8 +65,10 @@ function mungeCompanyAndSytemsNames(systems, callback){
 
   //transforms  
   , res = R.pipe(
-   R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
- , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
+    R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
+  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem}))   
+  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
 
   , compRep(`<unknown>`, ``)
       //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
@@ -136,7 +136,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
   
-  )(systemsDeCloned)
+  )(systemsAugmented)
 
   
   
@@ -147,10 +147,9 @@ function makeSystemsList(systems){
 
  const   
        munge = systems =>  R.pipe(
-   // R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
-    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem})) 
-    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
+    R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
+
+    ,  R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
     , R.uniq // lastly dedupe all the dupes we made in all those transforms
     , R.sortBy(R.prop('mungedCompany'))
   )(systems)
@@ -160,9 +159,9 @@ function makeSystemsList(systems){
   const compare = (a, b) => a.localeCompare(b)
 
   const orderedFlatSystems = flatSystems.sort(compare)
-  console.log(JSON.stringify(systems, null, '\t'))
-  process.exit()
   orderedFlatSystems.forEach(function (v){console.log(v)})
+  process.exit()
+
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, JSON.stringify(systems))
   //output.on('error', function(err) { console.log("couldn't write the file") });

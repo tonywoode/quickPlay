@@ -50,19 +50,12 @@ function makeSystems(callback){
 function mungeCompanyAndSytemsNames(systems, callback){
  const
   //first create+populate 2 new properties for munging
-   systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
-//you'll find that hx21i looks up (is a cloneof) hx21 which is a machine with preliminary emulation status, the same applies for hx22i loking up hx22, macintoshXL looking up lisa2, and the same with pc8201a looking up pc8201. In each case we are told that the system itself is emulated good, but the system its a cloneof is not. If this is true, really the system type is the clone.....i would need a lookup chart, which is a pity....
-, lookupCall = (cloneof, call) =>  {
-  console.log("looking up " + cloneof)
-  const referredSystem = R.find(R.propEq(`call`, cloneof))(systemsAugmented)
-  let referredName = ''
-  //console.log("referred system is" + JSON.stringify(referredSystem))
-  //console.log("the system name of the referred system is " + referredSystem['mungedSystem'])
-  //for (var key in referredSystem){console.log(key + ": " + referredSystem[key])}
-  if (referredSystem !==undefined){referredName = referredSystem['call']; return referredName}
-  if (referredSystem === undefined){console.log(`${call} says its a cloneof ${cloneof} but ${cloneof} is emulated badly`)}
-  //const referredName = referredSystem.mungedSystem
-}
+    systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
+  , lookupCall = (cloneof, call) =>  {
+      const referredSystem = R.find(R.propEq(`call`, cloneof))(systemsAugmented)
+      if (referredSystem !== undefined){return referredSystem.mungedSystem}//really we want to return the final system type at the end of processing
+      if (referredSystem === undefined){console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`)}
+    }
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
   , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem: cloneof? lookupCall(cloneof, call) : mungedSystem }), systemsAugmented )//actually we want this right at the end don't we as we want the ultimate system name after all munging
     console.log(JSON.stringify(systemsDeCloned, null, '\t'))

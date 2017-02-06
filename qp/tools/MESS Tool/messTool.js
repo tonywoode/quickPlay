@@ -141,11 +141,9 @@ function mungeCompanyAndSytemsNames(systems, callback){
 
 function makeSystemsList(systems){
 
- const   
-       munge = systems =>  R.pipe(
-    R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-
-    ,  R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
+ const munge = systems =>  R.pipe(
+      R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
+    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
     , R.uniq // lastly dedupe all the dupes we made in all those transforms
     , R.sortBy(R.prop('mungedCompany'))
   )(systems)
@@ -174,14 +172,14 @@ function makeFinalSystemTypes(systems){
   const
      lookupCall = (cloneof, call) =>  {
       const referredSystem = R.find(R.propEq(`call`, cloneof))(systemsWithType)
-      if (referredSystem !== undefined){return referredSystem.systemType}//really we want to return the final system type at the end of processing
-      if (referredSystem === undefined){console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`)}
+      return referredSystem === undefined ? console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`) : referredSystem.systemType
     }
   //now, before we replace the clone systems with the system type they are cloned from, we need to get our type property together
-   , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
+  , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
 
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
-  , systemsDeCloned = R.map( ({company, system, call, cloneof, systemType }) => ({company, system, call, cloneof, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType )//actually we want this right at the end don't we as we want the ultimate system name after all munging
+  , systemsDeCloned = R.map( ({company, system, call, cloneof, systemType }) => ({company, system, call, cloneof, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
+  
   console.log(JSON.stringify(systemsDeCloned, null, '\t'))
   process.exit()
 

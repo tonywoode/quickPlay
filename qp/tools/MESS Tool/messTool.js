@@ -11,7 +11,8 @@ const
 //program flow
 mockSystems(function(systems){
   mungeCompanyAndSytemsNames(systems, function(callback){
-    makeSystemsList(callback)
+    //makeSystemsList(callback)
+    makeFinalSystemTypes(callback)
   })
 })
 
@@ -51,13 +52,8 @@ function mungeCompanyAndSytemsNames(systems, callback){
  const
   //first create+populate 2 new properties for munging
     systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
-  , lookupCall = (cloneof, call) =>  {
-      const referredSystem = R.find(R.propEq(`call`, cloneof))(systemsAugmented)
-      if (referredSystem !== undefined){return referredSystem.mungedSystem}//really we want to return the final system type at the end of processing
-      if (referredSystem === undefined){console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`)}
-    }
-  //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
- // , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem: cloneof? lookupCall(cloneof, call) : mungedSystem }), systemsAugmented )//actually we want this right at the end don't we as we want the ultimate system name after all munging
+
+
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
   , separator = " "
@@ -169,3 +165,30 @@ function makeSystemsList(systems){
   //systems.forEach(function(v) { output.write(v + '\n'); });
   //output.end();
 }
+
+
+
+
+function makeFinalSystemTypes(systems){
+
+  const
+     lookupCall = (cloneof, call) =>  {
+      const referredSystem = R.find(R.propEq(`call`, cloneof))(systems)
+      if (referredSystem !== undefined){return referredSystem.mungedSystem}//really we want to return the final system type at the end of processing
+      if (referredSystem === undefined){console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`)}
+    }
+  //now, before we replace the clone systems with the system type they are cloned from, we need to get our type property together
+   , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
+
+  console.log(JSON.stringify(systemsWithType, null, '\t'))
+  process.exit()
+  //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
+  , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem: cloneof? lookupCall(cloneof, call) : mungedSystem }), systems )//actually we want this right at the end don't we as we want the ultimate system name after all munging
+  console.log(JSON.stringify(systemsDeCloned, null, '\t'))
+  process.exit()
+
+}
+
+
+
+

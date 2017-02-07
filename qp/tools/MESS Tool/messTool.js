@@ -12,7 +12,7 @@ const
 mockSystems(function(systems){
   mungeCompanyAndSytemsNames(systems, function(callback){
     makeSystemsList(callback)
-    //makeFinalSystemTypes(callback)
+    makeFinalSystemTypes(callback)
   })
 })
 
@@ -153,11 +153,10 @@ function makeSystemsList(systems){
   const compare = (a, b) => a.localeCompare(b)
 
   const orderedFlatSystems = flatSystems.sort(compare)
-  orderedFlatSystems.forEach((v) => console.log(v) )
+  //orderedFlatSystems.forEach((v) => console.log(v) )
 
   const opPath = ("outputs/newsystems.dat")
   fs.writeFileSync(opPath, orderedFlatSystems.join('\n'))
-  process.exit()
   //output.on('error', function(err) { console.log("couldn't write the file") });
   
   //systems.forEach(function(v) { output.write(v + '\n'); });
@@ -180,16 +179,33 @@ function makeFinalSystemTypes(systems){
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
   , systemsDeCloned = R.map( ({company, system, call, cloneof, systemType }) => ({company, system, call, cloneof, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
-  console.log(JSON.stringify(systemsDeCloned, null, '\t'))
-  //print(systemsDeCloned)
-  process.exit()
+ // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
+  print(systemsDeCloned)
+  //process.exit()
 
 }
 
 function print(systems){
    const opPath = ("outputs/mess.ini")
-   const efinder = R.map ( ( {systemType } ) => ( `${systemType} \n` ) )(systems)
-   fs.writeFileSync(opPath, efinder)
+   const efinder = R.map ( ( {company, system, call, cloneof, systemType } ) => (
+    `[${company} ${system}]
+Exe Name=retroarch.exe
+Config Name=retroarch
+System=${systemType} 
+HomePage=http://wiki.libretro.com/index.php
+param=${call}
+isWin32=1
+CmdLine=1
+ShellEx=0
+Verify=0
+ShortExe=0
+DisWinKey=1
+DisScrSvr=1
+Compression=2E7A69703D300D0A2E7261723D300D0A2E6163653D300D0A2E377A3D300D0A
+`
+  ) )(systems)
+  fs.writeFileSync(opPath, efinder.join('\n'))
+  process.exit()
 }
 
 

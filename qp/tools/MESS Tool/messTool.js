@@ -11,8 +11,8 @@ const
 //program flow
 mockSystems(function(systems){
   mungeCompanyAndSytemsNames(systems, function(callback){
-    //makeSystemsList(callback)
-    makeFinalSystemTypes(callback)
+    makeSystemsList(callback)
+    //makeFinalSystemTypes(callback)
   })
 })
 
@@ -53,7 +53,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   //first create+populate 2 new properties for munging
     systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
 
-
+   // These are the main replacement functions to munge MESS' company name and system name
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
   , separator = " "
@@ -153,11 +153,11 @@ function makeSystemsList(systems){
   const compare = (a, b) => a.localeCompare(b)
 
   const orderedFlatSystems = flatSystems.sort(compare)
-  orderedFlatSystems.forEach(function (v){console.log(v)})
-  process.exit()
+  orderedFlatSystems.forEach((v) => console.log(v) )
 
   const opPath = ("outputs/newsystems.dat")
-  fs.writeFileSync(opPath, JSON.stringify(systems))
+  fs.writeFileSync(opPath, orderedFlatSystems.join('\n'))
+  process.exit()
   //output.on('error', function(err) { console.log("couldn't write the file") });
   
   //systems.forEach(function(v) { output.write(v + '\n'); });
@@ -181,10 +181,16 @@ function makeFinalSystemTypes(systems){
   , systemsDeCloned = R.map( ({company, system, call, cloneof, systemType }) => ({company, system, call, cloneof, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
   console.log(JSON.stringify(systemsDeCloned, null, '\t'))
+  //print(systemsDeCloned)
   process.exit()
 
 }
 
+function print(systems){
+   const opPath = ("outputs/mess.ini")
+   const efinder = R.map ( ( {systemType } ) => ( `${systemType} \n` ) )(systems)
+   fs.writeFileSync(opPath, efinder)
+}
 
 
 

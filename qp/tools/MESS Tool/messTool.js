@@ -174,10 +174,10 @@ function makeFinalSystemTypes(systems){
       return referredSystem === undefined ? console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`) : referredSystem.systemType
     }
   //now, before we replace the clone systems with the system type they are cloned from, we need to get our type property together
-  , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
+  , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
 
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
-  , systemsDeCloned = R.map( ({company, system, call, cloneof, systemType }) => ({company, system, call, cloneof, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
+  , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
  // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
   print(systemsDeCloned)
@@ -187,8 +187,8 @@ function makeFinalSystemTypes(systems){
 
 function print(systems){
    const opPath = ("outputs/mess.ini")
-   const efinder = R.map ( ( {company, system, call, cloneof, systemType } ) => (
-    `[${company} ${system}]
+   const efinder = R.map ( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => (
+    `[${mungedCompany} ${mungedSystem}]
 Exe Name=retroarch.exe
 Config Name=retroarch
 System=${systemType} 

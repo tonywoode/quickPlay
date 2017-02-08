@@ -192,9 +192,11 @@ function makeFinalSystemTypes(systems){
  *   that need re-application, along with some new concerns regarding the output format
  */
 function print(systems){
-   const opPath = ("outputs/mess.ini") 
-    const systemsForDisplay =  R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), ""), systemType} ), systems) //take company from system name if they repeat
-   const efinder = R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
+
+   const efinder = R.pipe(
+      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), ""), systemType} )) //take company from system name if they repeat
+    // systRep(`Apple`,/(^II.*|\]\[|\/\/c|\/\/e)/,`II`)
+    , R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
 `[Retroarch MESS ${mungedCompany} ${displaySystem}]
 Exe Name=retroarch.exe
 Config Name=retroarch
@@ -210,7 +212,12 @@ DisWinKey=1
 DisScrSvr=1
 Compression=2E7A69703D300D0A2E7261723D300D0A2E6163653D300D0A2E377A3D300D0A
 `
-  ) )(systemsForDisplay)
+    ) )
+
+  )(systems)
+
+
+  const opPath = ("outputs/mess.ini")
   fs.writeFileSync(opPath, efinder.join('\n'))
   process.exit()
 }

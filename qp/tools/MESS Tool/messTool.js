@@ -7,7 +7,8 @@ const
   , R         = require('Ramda')
   , stream    = fs.createReadStream("inputs/mame.xml")
   , xml       = new XmlStream(stream)
-
+  , separator = " "
+  , numberOfWords = 1
 //program flow
 mockSystems(function(systems){
   mungeCompanyAndSytemsNames(systems, function(callback){
@@ -56,8 +57,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
    // These are the main replacement functions to munge MESS' company name and system name
   , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
-  , separator = " "
-  , numberOfWords = 1
+
 
   //transforms  
   , res = R.pipe(
@@ -90,6 +90,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , compRep(`Exidy Inc`, `Exidy`)
   , systRep(`Fairchild`, `Channel F II`, `Channel F`)
   , systRep(`Fujitsu`, `FM-7`, `Micro 7`)
+  , compRep(`Franklin Computer`, `Franklin`)
   , compRep(`General Consumer Electronics`, `GCE`)
   , compRep(`Interton Electronic`, `Interton`)
   , compRep(`Jupiter Cantab`, `Jupiter`)
@@ -185,10 +186,16 @@ function makeFinalSystemTypes(systems){
 
 }
 
+/*
+ * A subtlty here is that we want to print the munged COMPANY name (to avoid xx Computer Electronics Holding Ltd AB etc), but we want to largely keep 
+ *   MESS' original system name to capture what makes each system different. However there are some considerations that also apply to system munging 
+ *   that need re-application, along with some new concerns regarding the output format
+ */
 function print(systems){
-   const opPath = ("outputs/mess.ini")
-   const efinder = R.map ( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => (
-`[Retroarch MESS ${mungedCompany} ${mungedSystem}]
+   const opPath = ("outputs/mess.ini") 
+    const systemsForDisplay =  R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), ""), systemType} ), systems) //take company from system name if they repeat
+   const efinder = R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
+`[Retroarch MESS ${mungedCompany} ${displaySystem}]
 Exe Name=retroarch.exe
 Config Name=retroarch
 System=${systemType} 
@@ -203,7 +210,7 @@ DisWinKey=1
 DisScrSvr=1
 Compression=2E7A69703D300D0A2E7261723D300D0A2E6163653D300D0A2E377A3D300D0A
 `
-  ) )(systems)
+  ) )(systemsForDisplay)
   fs.writeFileSync(opPath, efinder.join('\n'))
   process.exit()
 }

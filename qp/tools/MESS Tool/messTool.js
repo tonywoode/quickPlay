@@ -208,8 +208,9 @@ function print(systems){
    const efinder = R.pipe(
       R.map( ( {system, call, displayCompany, systemType } ) => ( {call, displayCompany, displaySystem: displayCompany == ``? system : system.replace(new RegExp(displayCompany.split(separator, numberOfWords) + `\\W`, `i`), ``), systemType} )) //take company from system name if they repeat
     , R.map( ( {call, displayCompany, displaySystem, systemType } ) => ( {call, displayCompany, displaySystem: displaySystem.replace(/\]\[/, `II`), systemType}))
-    , R.map ( ( {call, displayCompany, displaySystem, systemType } ) => (
-`[Retroarch MESS ${displayCompany} ${displaySystem}]
+    , R.map( ( {call, displayCompany, displaySystem, systemType } ) => ( {call, displayMachine: displayCompany == `` ? `${displaySystem}` : `${displayCompany} ${displaySystem}`, systemType }))
+    , R.map ( ( {call, displayMachine, systemType } ) => (
+`[Retroarch MESS ${displayMachine}]
 Exe Name=retroarch.exe
 Config Name=retroarch
 System=${systemType} 

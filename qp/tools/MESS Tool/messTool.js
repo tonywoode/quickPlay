@@ -12,8 +12,10 @@ const
 //program flow
 mockSystems(function(systems){
   mungeCompanyAndSytemsNames(systems, function(callback){
-    makeSystemsList(callback)
+    mungeCompanyForType(callback)
+  //  makeSystemsList(callback)
     makeFinalSystemTypes(callback)
+    
   })
 })
 
@@ -61,10 +63,10 @@ function mungeCompanyAndSytemsNames(systems, callback){
 
   //transforms  
   , res = R.pipe(
-    R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
-  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem}))   
-  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
-  , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
+    //R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
+  //, R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem}))   
+ // , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+   R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
 
   , compRep(/(<unknown>|<generic>)/, ``)
       //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
@@ -138,6 +140,20 @@ function mungeCompanyAndSytemsNames(systems, callback){
   callback(res)
 }
 
+
+function mungeCompanyForType(systems){
+ const 
+   systemsWithDisplayComp = R.pipe(
+      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, displayCompany: mungedCompany, mungedSystem})) //we need a new field to capture the name to display rather than munge to system type
+    , R.map( ( {company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, displayCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
+    , R.map( ( {company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, displayCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem}))   
+    , R.map( ( {company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``), displayCompany})) //now MSX has gone, every bracketed item is unnecessary
+     )(systems)
+
+  makeFinalSystemTypes(systemsWithDisplayComp)
+}
+
+
 function makeSystemsList(systems){
 
  const munge = systems =>  R.pipe(
@@ -171,10 +187,10 @@ function makeFinalSystemTypes(systems){
       return referredSystem === undefined ? console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`) : referredSystem.systemType
     }
   //now, before we replace the clone systems with the system type they are cloned from, we need to get our type property together
-  , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
+  , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
 
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
-  , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
+  , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
  // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
   print(systemsDeCloned)
@@ -190,10 +206,10 @@ function makeFinalSystemTypes(systems){
 function print(systems){
 
    const efinder = R.pipe(
-      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: mungedCompany == ``? system : system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + `\\W`, `i`), ``), systemType} )) //take company from system name if they repeat
-    , R.map( ( {system, call, mungedCompany, displaySystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: (mungedCompany.match(`Apple`) && displaySystem.match(/\]\[.*/))? `II` : displaySystem, systemType}))
-    , R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
-`[Retroarch MESS ${mungedCompany} ${displaySystem}]
+      R.map( ( {system, call, displayCompany, systemType } ) => ( {call, displayCompany, displaySystem: displayCompany == ``? system : system.replace(new RegExp(displayCompany.split(separator, numberOfWords) + `\\W`, `i`), ``), systemType} )) //take company from system name if they repeat
+    , R.map( ( {call, displayCompany, displaySystem, systemType } ) => ( {call, displayCompany, displaySystem: displaySystem.replace(/\]\[/, `II`), systemType}))
+    , R.map ( ( {call, displayCompany, displaySystem, systemType } ) => (
+`[Retroarch MESS ${displayCompany} ${displaySystem}]
 Exe Name=retroarch.exe
 Config Name=retroarch
 System=${systemType} 

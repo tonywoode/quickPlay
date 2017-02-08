@@ -196,6 +196,7 @@ function print(systems){
    const efinder = R.pipe(
       R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), ""), systemType} )) //take company from system name if they repeat
     // systRep(`Apple`,/(^II.*|\]\[|\/\/c|\/\/e)/,`II`)
+    , R.map( ( {system, call, mungedCompany, displaySystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: (mungedCompany.match(`Apple`) && displaySystem.match(/\]\[.*/))? `II` : displaySystem}))
     , R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
 `[Retroarch MESS ${mungedCompany} ${displaySystem}]
 Exe Name=retroarch.exe

@@ -134,9 +134,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
   
   )(systemsAugmented)
-
-  
-  
+    
   callback(res)
 }
 
@@ -163,8 +161,6 @@ function makeSystemsList(systems){
   //systems.forEach(function(v) { output.write(v + '\n'); });
   //output.end();
 }
-
-
 
 
 function makeFinalSystemTypes(systems){
@@ -194,8 +190,7 @@ function makeFinalSystemTypes(systems){
 function print(systems){
 
    const efinder = R.pipe(
-      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), ""), systemType} )) //take company from system name if they repeat
-    // systRep(`Apple`,/(^II.*|\]\[|\/\/c|\/\/e)/,`II`)
+      R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: mungedCompany == ``? system : system.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + `\\W`, `i`), ``), systemType} )) //take company from system name if they repeat
     , R.map( ( {system, call, mungedCompany, displaySystem, systemType } ) => ( {system, call, mungedCompany, displaySystem: (mungedCompany.match(`Apple`) && displaySystem.match(/\]\[.*/))? `II` : displaySystem, systemType}))
     , R.map ( ( {system, call, mungedCompany, displaySystem, systemType } ) => (
 `[Retroarch MESS ${mungedCompany} ${displaySystem}]

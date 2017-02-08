@@ -66,7 +66,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
   , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
 
-  , compRep(`<unknown>`, ``)
+  , compRep(/(<unknown>|<generic>)/, ``)
       //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systRep(`Acorn`, /BBC/, `BBC`), systRep(`Acorn`, /Electron/, `Atom`)
   , compRep(/Amstrad .*/, `Amstrad`), systRep(`Amstrad`, /(CPC|GX4000)/, `CPC`)
@@ -188,7 +188,7 @@ function makeFinalSystemTypes(systems){
 function print(systems){
    const opPath = ("outputs/mess.ini")
    const efinder = R.map ( ( {company, system, call, cloneof, mungedCompany, mungedSystem, systemType } ) => (
-    `[${mungedCompany} ${mungedSystem}]
+`[Retroarch MESS ${mungedCompany} ${mungedSystem}]
 Exe Name=retroarch.exe
 Config Name=retroarch
 System=${systemType} 

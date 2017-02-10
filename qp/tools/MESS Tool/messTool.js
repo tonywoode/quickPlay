@@ -235,10 +235,13 @@ function madeDat(systems){
   , R.uniq
    )(systems)
  const flatShit = lister(systems)
-  console.log(JSON.stringify(flatShit,null,'\t'))
-    process.exit()
    const opPath = ("outputs/ooohsystems.dat")
-  fs.writeFileSync(opPath, flatShit.join('\n'))
+
+ const compare = (a, b) => a.localeCompare(b)
+
+  const ordered = flatShit.sort(compare)
+
+  fs.writeFileSync(opPath, ordered.join('\n'))
   process.exit()
 
 }

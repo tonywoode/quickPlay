@@ -62,10 +62,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
 
 
   //transforms  
-  , res = R.pipe(
-    //R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX1/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX1/)? `MSX` : mungedSystem}))
-  //, R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedSystem.match(/MSX2/)? '' : mungedCompany, mungedSystem: mungedSystem.match(/MSX2/)? `MSX2` : mungedSystem}))   
- // , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``)})) //now MSX has gone, every bracketed item is unnecessary
+  , mungedSystems = R.pipe(
    R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
 
   , compRep(/(<unknown>|<generic>)/, ``)
@@ -83,7 +80,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Casio`, `PV-1000`, `PV`)
   , compRep(`Commodore Business Machines`, `Commodore`), systRep(`Commodore`, /(B500|P500)/, `500/600/700`) 
   , systRep(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systRep(`Commodore`, /\b(64|128)/, `64/128`)
-  , systRep(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systRep(`Commodore`, `VIC-1001`, `VIC-20`) 
+  , systRep(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systRep(`Commodore`, `VIC-1001`, `VIC-20`), systRep(`Commodore`, `264`, `+4/C16`) 
   , compRep(`Comx World Operations Ltd`, `COMX`)
   , systRep(`EACA`,`Colour Genie EG2000`, `Colour Genie`)
   , systRep(`Elektronika`,`BK 0010`, `BK`)
@@ -109,7 +106,7 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Non Linear Systems`, `Kaypro II - 2/83`, `Kaypro`)
   , compRep(`Data Applications International`, `DAI`), systRep(`DAI`, `DAI Personal Computer`, `Personal Computer`)
   , compRep(`Elektronika inzenjering` , ``)
-  , systRep(`International Business Machines`, `IBM PC 5150`, `PC 5150`), compRep(`International Business Machines`, `IBM`) //change company after
+  , systRep(`International Business Machines`, `IBM PC 5150`, `PC`), compRep(`International Business Machines`, `IBM`) //change company after
   , systRep(`Interton`, `Electronic VC 4000` , `VC 4000`)
   , systRep(``, `Orion128` , `Orion`) //note these assume youve transformed <unknown> already
   , systRep(``, `PK8020Korvet` , `Korvet PK`)
@@ -134,10 +131,9 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Video Technology`, /Laser.*/, `Laser Mk1`)
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
-  
   )(systemsAugmented)
     
-  callback(res)
+  callback(mungedSystems)
 }
 
 
@@ -186,17 +182,14 @@ function makeFinalSystemTypes(systems){
       const referredSystem = R.find(R.propEq(`call`, cloneof))(systemsWithType)
       return referredSystem === undefined ? console.log(`PROBLEM: ${call} says its a (working) cloneof ${cloneof} but ${cloneof} is emulated badly?`) : referredSystem.systemType
     }
-  //now, before we replace the clone systems with the system type they are cloned from, we need to get our type property together
+  //before we replace the clone systems with the system type they are cloned from, we need to get our type property together
   , systemsWithType = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: (mungedCompany ==="" || mungedSystem ==="")? `${mungedSystem}`:`${mungedCompany} ${mungedSystem}`}), systems )
 
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
   , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
- //i'm unhappy with the system type of Commodore 264 for everything C16 and Plus 4...
-  , systemsRenameC264 = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: systemType === undefined? systemType :systemType.replace(`Commodore 264`, `Commodore +4/C16`) }), systemsDeCloned ) 
  // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
-  print(systemsRenameC264)
-  //process.exit()
+  print(systemsDeCloned)
 
 }
 
@@ -211,7 +204,8 @@ function print(systems){
       R.map( ( {system, call, displayCompany, systemType } ) => ( {call, displayCompany, displaySystem: displayCompany == ``? system : system.replace(new RegExp(displayCompany.split(separator, numberOfWords) + `\\W`, `i`), ``), systemType} )) //take company from system name if they repeat
     , R.map( ( {call, displayCompany, displaySystem, systemType } ) => ( {call, displayCompany, displaySystem: displaySystem.replace(/\]\[/, `II`), systemType}))
     , R.map( ( {call, displayCompany, displaySystem, systemType } ) => ( {call, displayMachine: displayCompany == `` ? `${displaySystem}` : `${displayCompany} ${displaySystem}`, systemType }))
-    , R.map ( ( {call, displayMachine, systemType } ) => (
+)(systems)
+    const efinderToPrint = R.map ( ( {call, displayMachine, systemType } ) => (
 `[Retroarch MESS ${displayMachine}]
 Exe Name=retroarch.exe
 Config Name=retroarch
@@ -227,15 +221,25 @@ DisWinKey=1
 DisScrSvr=1
 Compression=2E7A69703D300D0A2E7261723D300D0A2E6163653D300D0A2E377A3D300D0A
 `
-    ) )
-
-  )(systems)
+    ), efinder )
 
 
   const opPath = ("outputs/mess.ini")
-  fs.writeFileSync(opPath, efinder.join('\n'))
-  process.exit()
+  fs.writeFileSync(opPath, efinderToPrint.join('\n'))
+  madeDat(efinder)
 }
 
+function madeDat(systems){
+ const lister = systems =>  R.pipe(
+    R.map( ({call, displayMachine, systemType }) => (`${systemType}`))
+  , R.uniq
+   )(systems)
+ const flatShit = lister(systems)
+  console.log(JSON.stringify(flatShit,null,'\t'))
+    process.exit()
+   const opPath = ("outputs/ooohsystems.dat")
+  fs.writeFileSync(opPath, flatShit.join('\n'))
+  process.exit()
 
+}
 

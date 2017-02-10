@@ -81,9 +81,9 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , systRep(`Bandai`,`Super Vision 8000`, `Super Vision`) 
   , systRep(`Bondwell Holding`, /.*/, `Bondwell`), compRep(`Bondwell Holding`, ``) //change company after
   , systRep(`Casio`, `PV-1000`, `PV`)
-  , compRep(`Commodore Business Machines`, `Commodore`), systRep(`Commodore`, /B500|P500/, `500/600/700`) 
-    , systRep(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systRep(`Commodore`, /64|128/, `64/128`)
-    , systRep(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systRep(`Commodore`, `VIC-1001`, `VIC-20`) 
+  , compRep(`Commodore Business Machines`, `Commodore`), systRep(`Commodore`, /(B500|P500)/, `500/600/700`) 
+  , systRep(`Commodore`, /PET .*|CBM .*/, `PET/CBM`), systRep(`Commodore`, /\b(64|128)/, `64/128`)
+  , systRep(`Commodore`, `VIC-10 / Max Machine / UltiMax`, `Max/Ultimax`), systRep(`Commodore`, `VIC-1001`, `VIC-20`) 
   , compRep(`Comx World Operations Ltd`, `COMX`)
   , systRep(`EACA`,`Colour Genie EG2000`, `Colour Genie`)
   , systRep(`Elektronika`,`BK 0010`, `BK`)
@@ -192,8 +192,10 @@ function makeFinalSystemTypes(systems){
   //next we'd like to change the munged system of every machine that has a cloneof property to be the system that points to
   , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
+ //i'm unhappy with the system type of Commodore 264 for everything C16 and Plus 4...
+  , systemsRenameC264 = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: systemType === undefined? systemType :systemType.replace(`Commodore 264`, `Commodore +4/C16`) }), systemsDeCloned ) 
  // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
-  print(systemsDeCloned)
+  print(systemsRenameC264)
   //process.exit()
 
 }

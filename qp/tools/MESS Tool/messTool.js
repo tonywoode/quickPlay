@@ -9,23 +9,21 @@ const
   , xml       = new XmlStream(stream)
   , separator = " "
   , numberOfWords = 1
-//program flow
-mockSystems(function(systems){
-  mungeCompanyAndSytemsNames(systems, function(callback){
-    mungeCompanyForType(callback)
-  //  makeSystemsList(callback)
-    makeFinalSystemTypes(callback)
-    
-  })
-})
 
+//program flow
+makeSystems(function(systems){
+  const a = mungeCompanyAndSytemsNames(systems)
+  const b = mungeCompanyForType(a)
+  const c  = makeFinalSystemTypes(b)
+
+})
 
 function mockSystems(callback){
   const 
        input = fs.readFileSync("inputs/newsystems.dat")
     ,  systems = JSON.parse(input)
   
-  callback(systems,callback)
+  callback(systems, callback)
 }
 
 function makeSystems(callback){
@@ -46,26 +44,28 @@ function makeSystems(callback){
   })
 
   xml.on("end", function(){
-    callback(systems,callback)
+    callback(systems)
   })
 }
 
 
-function mungeCompanyAndSytemsNames(systems, callback){
+function mungeCompanyAndSytemsNames(systems){
  const
-  //first create+populate 2 new properties for munging
-    systemsAugmented = R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }), systems )
+    systemsAugmented = R.pipe(
+      //first create+populate 2 new properties for munging
+      R.map( ({company, system, call, cloneof }) => ({company, system, call, cloneof, mungedCompany: company, mungedSystem: system }))
+    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
+    )(systems)
 
-   // These are the main replacement functions to munge MESS' company name and system name
-  , compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
+
+  // These are the main replacement functions to munge MESS' company name and system name
+  const compRep = (oldCompany, newCompany)            => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany: mungedCompany.replace(oldCompany, newCompany), mungedSystem}))
   , systRep = (thisCompany, oldsystem, newsystem) => R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: (mungedCompany.match(thisCompany) && mungedSystem.match(oldsystem))? newsystem : mungedSystem}))
 
 
   //transforms  
-  , mungedSystems = R.pipe(
-   R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(new RegExp(mungedCompany.split(separator, numberOfWords) + '\\W', "i"), "")} )) //take company from system name if they repeat
-
-  , compRep(/(<unknown>|<generic>)/, ``)
+   const mungedSystems = R.pipe(
+   compRep(/(<unknown>|<generic>)/, ``)
       //system specific (btw replace accepts regex or string by default (i'm trying to show what's intended), but match matches only regex
   , systRep(`Acorn`, /BBC/, `BBC`), systRep(`Acorn`, /Electron/, `Atom`)
   , compRep(/Amstrad .*/, `Amstrad`), systRep(`Amstrad`, /(CPC|GX4000)/, `CPC`)
@@ -132,8 +132,8 @@ function mungeCompanyAndSytemsNames(systems, callback){
   , compRep(`Visual Technology Inc` , `Visual`)
   , systRep(`Watara`, `Super Vision`, `Supervision`) //again MESS seems to be wrong
   )(systemsAugmented)
-    
-  callback(mungedSystems)
+   return mungedSystems 
+//  callback(mungedSystems)
 }
 
 
@@ -148,32 +148,6 @@ function mungeCompanyForType(systems){
 
   makeFinalSystemTypes(systemsWithDisplayComp)
 }
-
-
-function makeSystemsList(systems){
-
- const munge = systems =>  R.pipe(
-      R.filter(( {thiscompany, system, call, cloneof } ) => !(cloneof)) //the systems list is a taxonomy
-    , R.map( ( {company, system, call, cloneof, mungedCompany, mungedSystem } ) => ( (mungedCompany ==="" || mungedSystem ==="")? ``:`${mungedCompany}` + ` `) + `${mungedSystem}`) //if there's a company name, print it first 
-    , R.uniq // lastly dedupe all the dupes we made in all those transforms
-    , R.sortBy(R.prop('mungedCompany'))
-  )(systems)
-
-  const flatSystems = munge(systems)
- 
-  const compare = (a, b) => a.localeCompare(b)
-
-  const orderedFlatSystems = flatSystems.sort(compare)
-  //orderedFlatSystems.forEach((v) => console.log(v) )
-
-  const opPath = ("outputs/newsystems.dat")
-  fs.writeFileSync(opPath, orderedFlatSystems.join('\n'))
-  //output.on('error', function(err) { console.log("couldn't write the file") });
-  
-  //systems.forEach(function(v) { output.write(v + '\n'); });
-  //output.end();
-}
-
 
 function makeFinalSystemTypes(systems){
 
@@ -230,19 +204,20 @@ Compression=2E7A69703D300D0A2E7261723D300D0A2E6163653D300D0A2E377A3D300D0A
 }
 
 function madeDat(systems){
- const lister = systems =>  R.pipe(
+ const lister =  R.pipe(
     R.map( ({call, displayMachine, systemType }) => (`${systemType}`))
   , R.uniq
    )(systems)
- const flatShit = lister(systems)
    const opPath = ("outputs/ooohsystems.dat")
 
  const compare = (a, b) => a.localeCompare(b)
 
-  const ordered = flatShit.sort(compare)
+  const ordered = lister.sort(compare)
 
   fs.writeFileSync(opPath, ordered.join('\n'))
   process.exit()
+  //output.on('error', function(err) { console.log("couldn't write the file") });
+  //systems.forEach(function(v) { output.write(v + '\n'); });
 
 }
 

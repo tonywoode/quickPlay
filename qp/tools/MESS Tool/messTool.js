@@ -11,11 +11,13 @@ const
   , numberOfWords = 1
 
 //program flow
-makeSystems(function(systems){
-  const a = mungeCompanyAndSytemsNames(systems)
-  const b = mungeCompanyForType(a)
-  const c  = makeFinalSystemTypes(b)
-
+mockSystems(function(systems){
+  R.pipe(
+     mungeCompanyAndSytemsNames
+  ,  mungeCompanyForType
+  ,  makeFinalSystemTypes
+  ,  print
+  )(systems)
 })
 
 function mockSystems(callback){
@@ -146,7 +148,7 @@ function mungeCompanyForType(systems){
     , R.map( ( {company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem } ) => ( {company, system, call, cloneof, mungedCompany, mungedSystem: mungedSystem.replace(/\W\(.*\)/, ``), displayCompany})) //now MSX has gone, every bracketed item is unnecessary
      )(systems)
 
-  makeFinalSystemTypes(systemsWithDisplayComp)
+  return systemsWithDisplayComp
 }
 
 function makeFinalSystemTypes(systems){
@@ -163,7 +165,7 @@ function makeFinalSystemTypes(systems){
   , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType ) // this step belongs at the end
   
  // console.log(JSON.stringify(systemsDeCloned, null, '\t'))
-  print(systemsDeCloned)
+  return systemsDeCloned
 
 }
 

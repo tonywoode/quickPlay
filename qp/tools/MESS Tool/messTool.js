@@ -219,7 +219,9 @@ function makeFinalSystemTypes(systems){
 
       //change the munged system of every machine that has a cloneof property to be the system that points to: should come at the end of munging system names
     , systemsDeCloned = R.map( ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType }) => 
-        ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: cloneof? lookupCall(cloneof, call) : systemType }), systemsWithType
+        ({company, system, call, cloneof, mungedCompany, displayCompany, mungedSystem, systemType: 
+          cloneof? lookupCall(cloneof, call) : systemType 
+        }), systemsWithType
       )
   
   return systemsDeCloned

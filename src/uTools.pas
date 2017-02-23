@@ -9,6 +9,11 @@ type
   TQPTool = Class(TQPExe)
   private
     _VarName : String;
+    _ToolRelativePath : String;
+    _ToolStatedPath : String;
+    _QPFolder : String;
+    _ToolPathIsRelative : Boolean;
+
   public
     constructor Create;
     procedure Assign(InTool : TQPTool);
@@ -47,8 +52,19 @@ procedure TQPTool.LoadFromIni(SectionName : String; var Ini : TMemIniFile);
 var
   CompStream : TMemoryStream;
 begin
+  //bugfix #38 - You can't have a batch file tool with a relative path in tools.ini as
+  //  omitting fullpath confuses current dir for bats vis a vis CreateProcess in Delphi's sysUtils
+  _QPFolder := getCurrentDir();
+  _ToolStatedPath := Ini.ReadString(SectionName, 'Path','');
+  _ToolRelativePath := ExtractRelativePath(_QPFolder, _ToolStatedPath);
+  _ToolPathIsRelative := _ToolRelativePath = _ToolStatedPath;
+  _path := _ToolStatedPath;
+  if _ToolPathIsRelative then
+    _path := _QPFolder + '\' + _ToolStatedPath;
+
   _name := SectionName;
-  _path := Ini.ReadString(SectionName, 'Path','');
+
+  //getCurrentDir() + '\' + Ini.ReadString(SectionName, 'Path','');
   _HomePage := Ini.ReadString(SectionName, 'HomePage','');
   _parameters := Ini.ReadString(SectionName, 'parameters', '');
   _CmdLine := Ini.ReadBool(SectionName, 'CmdLine', true);
@@ -86,7 +102,16 @@ begin
     exit;
   Ini.EraseSection(_Name);
   Ini.WriteString(_Name, 'Version', _Version);
-  Ini.WriteString(_Name, 'path', _path);
+
+  //if the toolpath was relative to QP's dir,
+  //and if you haven't changed it in this session
+  //write the original relative path back to disk
+  if ( _ToolPathIsRelative ) and (_path = _QPFolder + '\' + _ToolStatedPath )
+  then
+    Ini.WriteString(_Name, 'path', _ToolStatedPath)
+  else
+    Ini.WriteString(_Name, 'path', _path);
+
   Ini.WriteString(_Name, 'HomePage', _HomePage);
   Ini.WriteString(_Name, 'parameters', _parameters);
   Ini.WriteBool(_Name, 'CmdLine', _CmdLine);

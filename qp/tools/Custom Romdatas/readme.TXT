@@ -19,7 +19,7 @@ and more. Often they include other assets like screenshots and icons
 
 AND come with full instructions
 
-These are currently available at http://www.quickplayfrontend.com/index.php?showforum=16
+These are currently available at http://forums.quickplayfrontend.com/viewforum.php?f=5
 
 Please visit there if you'd like to set these up
 

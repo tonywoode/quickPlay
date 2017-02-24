@@ -25,6 +25,8 @@ type
     LblMaintainer1: TLabel;
     LblThanks: TLabel;
     LblIcons: TLabel;
+    lblVTVer: TLabel;
+    Label1: TLabel;
     procedure LblLinkClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure LblLinkMouseDown(Sender: TObject; Button: TMouseButton;
@@ -49,6 +51,7 @@ end;
 procedure TAboutBox.FormCreate(Sender: TObject);
 begin
   Version.Caption := QPVer;
+  lblVTVer.Caption := VirtualTrees.VTVersion;
 end;
 
 procedure TAboutBox.LblLinkMouseDown(Sender: TObject; Button: TMouseButton;

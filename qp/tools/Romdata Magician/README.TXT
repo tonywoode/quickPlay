@@ -60,9 +60,9 @@ and lastly....
 
 [QP system to Ini] section of the ini file
 
-Here is where RomData Magician matches up the system names in QuickPlay to Ini names of the ini files. If you're using the latest QuickPlay E-Find then the system names should match to each ini filename without issue.
+Here is where RomData Magician matches up the system names in QuickPlay to Ini names of the ini files. The latest QuickPlay E-Find ensures the system names should match to each ini filename without issue.
 
-So Amtrad CPC=GoodCPC means that RomData Magician will look for an ini file starting with GoodCPC when QuickPlay has a system called Amstrad CPC.
+So Amstrad CPC=GoodCPC means that RomData Magician will look for an ini file starting with GoodCPC when QuickPlay has a system called Amstrad CPC.
 (in fact at the moment the file is called GoodCPC_202_GM_V1.ini)
 
 But you may need to go in here and alter/add anything if you've made/altered your own system names in QuickPlay. Otherwise the defaults should work fine.

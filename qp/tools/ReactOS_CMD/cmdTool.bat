@@ -1,2 +1,2 @@
 @echo off 
-if (%*)==() (ReadMe.txt) ELSE (CMD.exe /C %*)
+if (%*)==() (start ReadMe.txt) ELSE (CMD.exe /C %*)

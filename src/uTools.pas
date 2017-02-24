@@ -12,7 +12,7 @@ type
     _ToolRelativePath : String;
     _ToolStatedPath : String;
     _QPFolder : String;
-    _ToolPathIsRelative : Boolean;
+    _ToolPathLoadedAsRelative : Boolean;
 
   public
     constructor Create;
@@ -21,7 +21,6 @@ type
     procedure SaveIntoIni(var Ini : TMemIniFile);
 
     Property VarName : String read _VarName write _VarName;
-    Property ToolPathIsRelative : Boolean read _ToolPathIsRelative write _ToolPathIsRelative;
   end;
 
   PQPTool = ^TQPTool;
@@ -58,10 +57,9 @@ begin
   _QPFolder := getCurrentDir();
   _ToolStatedPath := Ini.ReadString(SectionName, 'Path','');
   _ToolRelativePath := ExtractRelativePath(_QPFolder, _ToolStatedPath);
-  _ToolPathIsRelative := _ToolRelativePath = _ToolStatedPath;
+  _ToolPathLoadedAsRelative := _ToolRelativePath = _ToolStatedPath;
   _path := _ToolStatedPath;
-  if _ToolPathIsRelative then _relativePath := _ToolStatedPath;
-  if _ToolPathIsRelative then
+  if _ToolPathLoadedAsRelative then
   begin
     _path := _QPFolder + '\' + _ToolStatedPath;
     _relativePath := _ToolStatedPath;
@@ -106,12 +104,10 @@ begin
   Ini.EraseSection(_Name);
   Ini.WriteString(_Name, 'Version', _Version);
 
-  //if the toolpath was relative to QP's dir,
-  //and if you haven't changed it in this session
-  //write the original relative path back to disk
-  if ( _ToolPathIsRelative ) and (_path = _QPFolder + '\' + _ToolStatedPath )
+  //if the toolpath is relative to QP's dir, write the relative path back to disk
+  if ( _relativePath <> '' )
   then
-    Ini.WriteString(_Name, 'path', _ToolStatedPath)
+    Ini.WriteString(_Name, 'path', _relativePath)
   else
     Ini.WriteString(_Name, 'path', _path);
 

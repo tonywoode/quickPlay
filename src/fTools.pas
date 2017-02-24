@@ -150,18 +150,26 @@ begin
     TxtName.SetFocus;
     exit;
   end;
-  
+
   if FileExists(TxtFileName.Text) then   //a relative path is caught by this somehow
     _Tool.Path := TxtFileName.Text;
+
 
   //if you've changed a relative path to something else, invalidate the relative path setting
   if (TxtFileName.Text <> _Tool.RelativePath) then
     _Tool.RelativePath := '';
 
   //if you haven't changed the relative path, keep the full path in memory
-  //TODO: if you change a full path to a relative path, we don't see the relative path as valid
   if (_Tool.RelativePath <> '') and (TxtFileName.Text = _Tool.RelativePath) then
     _Tool.Path := getCurrentDir() + '\' + TxtFileName.Text;
+
+  //if you just changed to a relative path, store it as full and mark it as relative
+  if (FileExists(getCurrentDir() + '\' + TxtFileName.Text)) then
+    begin
+      _Tool.RelativePath := TxtFileName.Text;
+      _Tool.Path  := getCurrentDir() + '\' + TxtFileName.Text;
+    end;
+
 
   if not FileExists(TxtFileName.Text) then
   begin

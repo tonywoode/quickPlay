@@ -3,101 +3,102 @@ object FrmToolCfg: TFrmToolCfg
   Top = 285
   BorderStyle = bsDialog
   Caption = 'Tool Configuration'
-  ClientHeight = 559
-  ClientWidth = 473
+  ClientHeight = 731
+  ClientWidth = 619
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poOwnerFormCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object lblFileName: TLabel
-    Left = 8
-    Top = 39
-    Width = 41
-    Height = 13
+    Left = 10
+    Top = 51
+    Width = 50
+    Height = 17
     Caption = 'File Path'
   end
   object lblName: TLabel
-    Left = 24
-    Top = 9
-    Width = 27
-    Height = 13
+    Left = 31
+    Top = 12
+    Width = 35
+    Height = 17
     Caption = 'Name'
   end
   object lblHomepage: TLabel
-    Left = 8
-    Top = 67
-    Width = 51
-    Height = 13
+    Left = 10
+    Top = 88
+    Width = 66
+    Height = 17
     Caption = 'Homepage'
   end
   object TxtFileName: TJvFilenameEdit
-    Left = 72
-    Top = 36
-    Width = 393
-    Height = 21
+    Left = 94
+    Top = 47
+    Width = 514
+    Height = 25
     ClipboardCommands = []
     AddQuotes = False
     Filter = 
       'Executable Files (*.exe,*.bat,*.com)|*.exe;*.bat;*.com|All Files' +
       '|*.*'#39
     DialogOptions = [ofHideReadOnly, ofFileMustExist]
+    ButtonWidth = 27
     TabOrder = 1
   end
   object TxtName: TEdit
-    Left = 72
-    Top = 6
-    Width = 393
-    Height = 21
+    Left = 94
+    Top = 8
+    Width = 514
+    Height = 25
     TabOrder = 0
   end
   object BtnOK: TButton
-    Left = 307
-    Top = 528
-    Width = 75
-    Height = 25
+    Left = 401
+    Top = 690
+    Width = 99
+    Height = 33
     Caption = '&OK'
     ModalResult = 1
     TabOrder = 3
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 387
-    Top = 528
-    Width = 75
-    Height = 25
+    Left = 506
+    Top = 690
+    Width = 98
+    Height = 33
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 4
   end
   object TxtHomepage: TEdit
-    Left = 72
-    Top = 64
-    Width = 393
-    Height = 21
+    Left = 94
+    Top = 84
+    Width = 514
+    Height = 25
     TabOrder = 2
   end
   object pgToolOpt: TPageControl
-    Left = 8
-    Top = 96
-    Width = 457
-    Height = 426
+    Left = 10
+    Top = 126
+    Width = 598
+    Height = 557
     ActivePage = TabOptions
     TabOrder = 5
     object TabOptions: TTabSheet
       Caption = 'General Configuration'
       object lblParamVar: TLabel
-        Left = 3
-        Top = 97
-        Width = 430
-        Height = 213
+        Left = 4
+        Top = 127
+        Width = 562
+        Height = 278
         AutoSize = False
         Caption = 
           'Available Variables'#13#10'------------------------------------'#13#10'%ROM%' +
@@ -113,61 +114,61 @@ object FrmToolCfg: TFrmToolCfg
         WordWrap = True
       end
       object lblCompression: TLabel
-        Left = 15
-        Top = 335
-        Width = 61
-        Height = 26
+        Left = 20
+        Top = 438
+        Width = 79
+        Height = 34
         Caption = 'Compression'#13#10'Support'
       end
       object lblVarBlank: TLabel
-        Left = 295
-        Top = 36
-        Width = 111
-        Height = 13
+        Left = 386
+        Top = 47
+        Width = 138
+        Height = 17
         Caption = '(leave blank to disable)'
       end
       object lblVariable: TLabel
-        Left = 8
-        Top = 36
-        Width = 68
-        Height = 13
+        Left = 10
+        Top = 47
+        Width = 85
+        Height = 17
         Caption = 'Variable Name'
       end
       object lblParams: TLabel
-        Left = 26
-        Top = 65
-        Width = 50
-        Height = 26
+        Left = 34
+        Top = 85
+        Width = 63
+        Height = 34
         Caption = 'Parameter'#13#10'Format'
       end
       object ChkLstCompress: TCheckListBox
-        Left = 101
-        Top = 316
-        Width = 119
-        Height = 73
-        ItemHeight = 13
+        Left = 132
+        Top = 413
+        Width = 156
+        Height = 96
+        ItemHeight = 17
         TabOrder = 0
       end
       object TxtVariable: TEdit
-        Left = 101
-        Top = 33
-        Width = 185
-        Height = 21
+        Left = 132
+        Top = 43
+        Width = 242
+        Height = 25
         TabOrder = 1
       end
       object TxtSpecialParam: TEdit
-        Left = 101
-        Top = 68
-        Width = 344
-        Height = 21
+        Left = 132
+        Top = 89
+        Width = 450
+        Height = 25
         TabOrder = 2
         Text = '%ROM%'
       end
       object ChkSupportsParam: TCheckBox
-        Left = 8
-        Top = 8
-        Width = 289
-        Height = 17
+        Left = 10
+        Top = 10
+        Width = 378
+        Height = 23
         Caption = 'Supports Parameters'
         TabOrder = 3
       end
@@ -175,44 +176,49 @@ object FrmToolCfg: TFrmToolCfg
     object TabMedia: TTabSheet
       Caption = 'Media Options'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblSysImage: TLabel
-        Left = 8
-        Top = 56
-        Width = 53
-        Height = 13
+        Left = 10
+        Top = 73
+        Width = 68
+        Height = 17
         Caption = 'Tool Image'
       end
       object ChkAddToolTab: TCheckBox
-        Left = 8
-        Top = 16
-        Width = 265
-        Height = 17
+        Left = 10
+        Top = 21
+        Width = 347
+        Height = 22
         Caption = 'Add Tools Media Tab'
         TabOrder = 0
       end
       object TxtToolImage: TJvFilenameEdit
-        Left = 88
-        Top = 54
-        Width = 305
+        Left = 115
+        Top = 71
+        Width = 399
         Height = 21
         AddQuotes = False
         DialogKind = dkOpenPicture
         DialogOptions = [ofHideReadOnly, ofPathMustExist, ofFileMustExist]
+        ButtonWidth = 27
         TabOrder = 1
       end
       object ChkShowAddInfo: TCheckBox
-        Left = 8
-        Top = 96
-        Width = 313
-        Height = 17
+        Left = 10
+        Top = 126
+        Width = 410
+        Height = 22
         Caption = 'Show Additional Information'
         TabOrder = 2
       end
       object MemoToolInfo: TMemo
-        Left = 40
-        Top = 120
-        Width = 369
-        Height = 197
+        Left = 52
+        Top = 157
+        Width = 483
+        Height = 258
         ScrollBars = ssBoth
         TabOrder = 3
       end

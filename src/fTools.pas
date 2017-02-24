@@ -66,6 +66,7 @@ begin
   _Tool.Assign(Tool);
   TxtName.Text := _Tool.Name;
   TxtFileName.Text := _Tool.Path;
+  if (Tool.RelativePath <> '') then TxtFileName.Text := Tool.RelativePath;
   TxtHomePage.Text := _Tool.HomePage;
   ChkSupportsParam.Checked := _Tool.CmdLine;
   TxtVariable.Text := _Tool.VarName;
@@ -150,9 +151,19 @@ begin
     exit;
   end;
   
-  if FileExists(TxtFileName.Text) then
-    _Tool.Path := TxtFileName.Text
-  else
+  if FileExists(TxtFileName.Text) then   //a relative path is caught by this somehow
+    _Tool.Path := TxtFileName.Text;
+
+  //if you've changed a relative path to something else, invalidate the relative path setting
+  if (TxtFileName.Text <> _Tool.RelativePath) then
+    _Tool.RelativePath := '';
+
+  //if you haven't changed the relative path, keep the full path in memory
+  //TODO: if you change a full path to a relative path, we don't see the relative path as valid
+  if (_Tool.RelativePath <> '') and (TxtFileName.Text = _Tool.RelativePath) then
+    _Tool.Path := getCurrentDir() + '\' + TxtFileName.Text;
+
+  if not FileExists(TxtFileName.Text) then
   begin
     ModalResult := MrNone;
     MessageDlg(J_FILE_NOT_EXIST, mtError, [mbOK], 0);

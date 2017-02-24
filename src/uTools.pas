@@ -21,6 +21,7 @@ type
     procedure SaveIntoIni(var Ini : TMemIniFile);
 
     Property VarName : String read _VarName write _VarName;
+    Property ToolPathIsRelative : Boolean read _ToolPathIsRelative write _ToolPathIsRelative;
   end;
 
   PQPTool = ^TQPTool;
@@ -59,12 +60,14 @@ begin
   _ToolRelativePath := ExtractRelativePath(_QPFolder, _ToolStatedPath);
   _ToolPathIsRelative := _ToolRelativePath = _ToolStatedPath;
   _path := _ToolStatedPath;
+  if _ToolPathIsRelative then _relativePath := _ToolStatedPath;
   if _ToolPathIsRelative then
+  begin
     _path := _QPFolder + '\' + _ToolStatedPath;
-
+    _relativePath := _ToolStatedPath;
+  end;
   _name := SectionName;
 
-  //getCurrentDir() + '\' + Ini.ReadString(SectionName, 'Path','');
   _HomePage := Ini.ReadString(SectionName, 'HomePage','');
   _parameters := Ini.ReadString(SectionName, 'parameters', '');
   _CmdLine := Ini.ReadBool(SectionName, 'CmdLine', true);

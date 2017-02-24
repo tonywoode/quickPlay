@@ -14,6 +14,7 @@ Type
     _name : String;             //The name of exe - PrimaryID!
     _Version : String;          //The exe version.
     _path : TFileName;          //The exe's path.
+    _relativePath :TFileName;    //In case its a tool whose path is realtive to the QP dir
     _cfg : TFileName;           //Stores the path to the EXEs configuration file.
     _HomePage : String;         //Web address for exe, if there is one.
     _parameters : String;       //Parameters for running EXE, can use special QP variables.
@@ -44,6 +45,7 @@ Type
     Property Name : String Read _Name Write _Name;
     Property Version : String Read _Version Write _Version;
     Property Path : TfileName Read _path Write _path;
+    Property RelativePath : TfileName Read _relativePath Write _relativePath;
     Property CfgFile : TFileName Read _cfg Write _cfg;
     Property HomePage : String Read _HomePage Write _HomePage;
     Property IconIndex : Integer Read _IconIndex Write _IconIndex;
@@ -168,6 +170,7 @@ begin
   _name := Source.Name;
   _Version := Source.Version;
   _path := Source.Path;
+  _relativePath := Source.relativePath;
   _cfg := Source.CfgFile;
   _HomePage := Source.HomePage;
   _Parameters := Source.Parameters;

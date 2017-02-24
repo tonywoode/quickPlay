@@ -23,7 +23,7 @@ SET LASTVERSION=%var2%
 IF (%THISVERSION%)==() (ECHO. "somethings gone wrong" && goto EXIT)
 IF (%LASTVERSION%)==() (ECHO. "Somethings gone wrong" && goto EXIT)
 
-SET NOTEPADPLUSPLUS="C:\Program Files (x86)\Notepad++\notepad++.exe"
+SET NOTEPADPLUSPLUS="C:\Program Files\Notepad++\notepad++.exe"
 SET SEVENZIP="C:\Program Files\7-Zip\7z.exe"
 ::todo need to make it so this could be quoted - needs param expansion ~
 SET RELEASEDIR=..\Release

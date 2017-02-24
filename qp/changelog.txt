@@ -1,3 +1,31 @@
+Quickplay v4.1.5 
+ 
+* Some protection against Windows changing 8:3 path defaults for devices
+  - fixed issue with hazemd in the modern age
+  - Basic solution for shortname issues in multiloader
+
+* A bunch of changes that allow us to get rid of precompiled executables
+  - prepared supplementary files for a world without compiled exes
+  - relative path tools should now work consistently throughout
+  - bugfix #38 - You can't have a batch file tool with a relative path in tools.ini
+  - replaced react's cmd.exe with the exe from IRTriarge (virustotal doesnt false positive on it)
+
+* added game and watch emu/frontend
+
+* Minor tweaks to retroarch toolset
+  - updated retroarch efind for latest version of Retroarch
+  - improved RetroArch assets
+  - doc for retroarch after some tests
+
+* More multiloader fixes and features (after a large change in previous release)
+  - allow for override of filetype in zip or mount situations (for emus that have strange requirements)
+  - fixed bugs with longnames in paths
+  - Fixed unquoted chars in loop for name find
+  - fixed a bug with dealing with zips
+  - fixed a bug where we'd loop instead of exit if we didn't find 7zip/daemon tools
+  - remove winmount files
+  - change to directly running the batch file as a tool
+ 
 Quickplay v4.1.4 
  
 * correct syntax error in mutliloader

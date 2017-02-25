@@ -175,9 +175,11 @@ end;
 Procedure TFrmFolder.Init();
 Var
   I : Integer;
+  newIndex : Integer;
   temp1, TempLbl : String;
   Image : TIcon;
   Find : ThhFindFile;
+  filehandle : String;
   Ini : TMemIniFile;
   List : TMemoryStream;
   tmpStrings : TStringList;
@@ -242,30 +244,32 @@ begin
 
         try
           //if this fails then the specified file is not really an icon.
-          Image.LoadFromFile(Find.Files[i]);
+          fileHandle := Find.Files[i];
+          Image.LoadFromFile(fileHandle);
           //if it didnt fail then we can add it to the icon list and combo
           IconList.AddIcon(Image);
-          CmbIcon.ItemsEx.AddItem(ExtractFileName(Find.files[i]),i,i,i,0,nil)
+          CmbIcon.ItemsEx.AddItem(ExtractFileName(fileHandle),i,i,i,0,nil)
         //if it failed, add it to the failure stringlist
         except
-          tmpStrings.Add(ExtractFileName(Find.Files[i]));
+          tmpStrings.Add(ExtractFileName(fileHandle));
         end;
       end;
 
       Find.Directory := messIconDirPath;
       Find.Execute;
       oldSize := i;//grab the size of the first path
+      //do the same loop again, this time its gonna take MUCH longer
+      //TODO: why don't we need an 'if messIconDirPath'?
       For i := 0 to Find.TotalFile-1 do
       begin
         try
-          //if this fails then the specified file is not really an icon.
-          Image.LoadFromFile(Find.Files[i]);
-          //if it didnt fail then we can add it to the icon list and combo
+          newIndex := i+oldSize;
+          fileHandle := Find.Files[i];
+          Image.LoadFromFile(fileHandle);
           IconList.AddIcon(Image);
-          CmbIcon.ItemsEx.AddItem(ExtractFileName(Find.files[i]),i+oldSize,i+oldSize,i+oldSize,0,nil)
-        //if it failed, add it to the failure stringlist
+          CmbIcon.ItemsEx.AddItem(ExtractFileName(fileHandle),newIndex,newIndex,newIndex,0,nil)
         except
-          tmpStrings.Add(ExtractFileName(Find.Files[i+oldSize]));
+          tmpStrings.Add(ExtractFileName(Find.Files[newIndex]));
         end;
       end;
       If tmpStrings.Count > 0 then

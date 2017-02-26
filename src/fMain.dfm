@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 600
+  ClientHeight = 625
   ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 581
+    Top = 606
     Width = 964
     Height = 19
     Panels = <
@@ -113,19 +113,21 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 581
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 964
-    Height = 581
+    Height = 606
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 581
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 581
+      Height = 606
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +135,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 789
       Top = 0
-      Height = 581
+      Height = 606
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,26 +146,29 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 581
+      Height = 606
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 581
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 581
+        Height = 606
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 581
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitHeight = 553
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 524
+            Height = 549
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -202,6 +207,7 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
+            ExplicitHeight = 524
             Columns = <
               item
                 Position = 0
@@ -469,10 +475,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 577
-      Height = 581
+      Height = 606
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 581
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -562,7 +569,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 577
-        Height = 528
+        Height = 553
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -614,6 +621,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 528
         Columns = <
           item
             Position = 0
@@ -787,11 +795,12 @@ object MainFrm: TMainFrm
       Left = 792
       Top = 0
       Width = 172
-      Height = 581
+      Height = 606
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 581
     end
     object Edit1: TEdit
       Left = 640
@@ -1208,7 +1217,6 @@ object MainFrm: TMainFrm
       Category = 'Help'
       Caption = 'QuickPlay Original Homepage'
       ImageIndex = 16
-      OnExecute = actQPOriginalHomepageExecute
     end
     object actQPForums: TAction
       Category = 'Help'

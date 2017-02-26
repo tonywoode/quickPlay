@@ -396,7 +396,6 @@ type
     procedure actMediaOptionsExecute(Sender: TObject);
     procedure actAppearanceOptionsExecute(Sender: TObject);
     procedure actQPHomepageExecute(Sender: TObject);
-    procedure actQPOriginalHomepageExecute(Sender: TObject);
     procedure actQPForumsExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure ActClearRomsExecute(Sender: TObject);
@@ -2706,7 +2705,7 @@ end;
 
 procedure TMainFrm.actQPForumsExecute(Sender: TObject);
 begin
-  ujUtilities.OpenHomePage('http://www.quickplayfrontend.com/index.php?act=idx');
+  ujUtilities.OpenHomePage('http://www.forums.quickplayfrontend.com/');
 end;
 
 {-----------------------------------------------------------------------------}
@@ -2714,11 +2713,6 @@ end;
 procedure TMainFrm.actQPHomepageExecute(Sender: TObject);
 begin
   ujUtilities.OpenHomePage('http://www.quickplayfrontend.com/');
-end;
-
-procedure TMainFrm.actQPOriginalHomepageExecute(Sender: TObject);
-begin
-  ujUtilities.OpenHomePage('http://quickplay.sf.net');
 end;
 
 {-----------------------------------------------------------------------------}

@@ -1,0 +1,15 @@
+{
+  "name": "replace-qp-systems",
+  "version": "1.0.0",
+  "description": "change systems names if the sensible people of the world agree",
+  "main": "replace-qp-systems.js",
+  "dependencies": {
+    "replace-in-file": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

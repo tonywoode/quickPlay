@@ -2,17 +2,16 @@
 
 const fs = require('fs')
 const replace = require('replace-in-file')
-const filenamePassed = process.argv.slice(2).toString()
-const inputFile = fs.readFileSync(filenamePassed, "utf8")
+//const filenamePassed = process.argv.slice(2).toString()
+const filenamePassed = "/Users/twoode/Desktop/test_replacetext/Mess64_0153.ini"
 
 const changesToMake = {
   
   "Aamber Pegasus" : "Technosys Aamber Pegasus",
   "Bandai Wonderswan" : "Bandai WonderSwan",
   "BBC" : "Acorn BBC",
-  "Gameboy" : "Game Boy",
-  "Gameboy Advance" : "Game Boy Advance",
-  "VC4000" : "VC 4000 ",
+  "GameBoy" : "Game Boy", //will also catch eg: "Gameboy Advance, GameBoy Light, GameBoy Color
+  "VC4000" : "VC 4000",
   "Osbourne-1" : "Osbourne 1",
   "Mattel Juicebox" : "Mattel Juice Box",
   "Megaduck/Cougar Boy" : "Mega Duck / Cougar Boy", //What do we do about my lack of spaces around the / eh)
@@ -27,38 +26,51 @@ const changesToMake = {
 
 }
 
-const romdataDats = {
-  //every romdata.dat, be careful not to change any file paths
+const oldName = `GameBoy`
+const newName = `Game Boy`
+
+const tester = {
+  //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (shit that applies to the media panel stuff also, bugger)
   //but also these other file types can go in because they match one of the rules and def do not match the other
-  files: [
-    `../data/**/*.dat`,
-    `../dats/favs.dat`,
-    `../search/*.tmp`
-  ],
-  from: `¬.*${key}`,//we need capturing groups here
-  to: `¬${value}¬`
+  from: new RegExp(String.raw`\[(.*)${oldName}`, `g`), //using es6 tagged templates here to avoid double-escaping 
+  to: `$1${newName}`,
 }
 
-const emulatorsIni = {
-  //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (that applies to the media panel replacements also)
-  //but also these other file types can go in because they match one of the rules and def do not match the other
-  files: [
-    `../dats/emulators.ini`,
-    `../dats/MediaPanelCfg.ini`,
-    `../dats/SystemFileExts.ini`,
-    `../EFind/*.ini`
-  ],
-  from: /[.*`${key}`.*]/, //we have to use capture groups here 
-  to: `${value}`,
-  from: /system=.*${key}/,
-  to: /system=ummmm...../
-}
 
-const systemsDat = {
-  files: `../dats/systems.dat`,
-  from: /.*${key}/, //same issue...
-  to: `${value}`
-}
+//
+// const romdataDats = {
+//  //every romdata.dat, be careful not to change any file paths
+//  //but also these other file types can go in because they match one of the rules and def do not match the other
+//  files: [
+//    `../data/**/*.dat`,
+//    `../dats/favs.dat`,
+//    `../search/*.tmp`
+//  ],
+//  from: `¬.*${key}`,//we need capturing groups here
+//  to: `¬${value}¬`
+//}
+
+
+//const emulatorsIni = {
+//  //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (that applies to the media panel replacements also)
+//  //but also these other file types can go in because they match one of the rules and def do not match the other
+//  files: [
+//    `../dats/emulators.ini`,
+//    `../dats/MediaPanelCfg.ini`,
+//    `../dats/SystemFileExts.ini`,
+//    `../EFind/*.ini`
+//  ],
+//  from: /[.*`${key}`.*]/, //we have to use capture groups here 
+//  to: `${value}`,
+//  from: /system=.*${key}/,
+//  to: /system=ummmm...../
+//}
+//
+//const systemsDat = {
+//  files: `../dats/systems.dat`,
+//  from: /.*${key}/, //same issue...
+//  to: `${value}`
+//}
 
 
 const transform = (options) => {
@@ -74,7 +86,7 @@ const transform = (options) => {
   }
 
 }
-
-transform(romdataDats)
-transform(emulatorsIni)
-transform(systemsDat)
+transform(tester)
+//transform(romdataDats)
+//transform(emulatorsIni)
+//transform(systemsDat)

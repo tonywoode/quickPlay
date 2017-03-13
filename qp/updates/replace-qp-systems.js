@@ -3,7 +3,7 @@
 const fs = require('fs')
 const replace = require('replace-in-file')
 //const filenamePassed = process.argv.slice(2).toString()
-const filenamePassed = "/Users/twoode/Desktop/test_replacetext/Mess64_0153.ini"
+const rootDir = "/Users/twoode/Desktop/qp copy"
 
 const changesToMake = {
   
@@ -29,11 +29,21 @@ const changesToMake = {
 const oldName = `GameBoy`
 const newName = `Game Boy`
 
-const tester = {
+const emulatorsIni = {
   //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (shit that applies to the media panel stuff also, bugger)
   //but also these other file types can go in because they match one of the rules and def do not match the other
-  from: new RegExp(String.raw`\[(.*)${oldName}`, `g`), //using es6 tagged templates here to avoid double-escaping 
-  to: `$1${newName}`,
+ files: [
+    `${rootDir}/dats/emulators.ini`,
+    `${rootDir}/dats/MediaPanelCfg.ini`,
+    `${rootDir}/dats/SystemFileExts.ini`,
+    `${rootDir}/EFind/*.ini`
+  ],
+
+  from: [
+    new RegExp(String.raw`\[(.*)${oldName}`, `g`), //using es6 tagged templates here to avoid double-escaping 
+    new RegExp(String.raw`(system=.*)${oldName}`, `g`)//remember these replace sequentially in the 'to', but we don't acutally need it here
+  ],
+  to: `$1${newName}`
 }
 
 
@@ -50,22 +60,6 @@ const tester = {
 //  to: `¬${value}¬`
 //}
 
-
-//const emulatorsIni = {
-//  //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (that applies to the media panel replacements also)
-//  //but also these other file types can go in because they match one of the rules and def do not match the other
-//  files: [
-//    `../dats/emulators.ini`,
-//    `../dats/MediaPanelCfg.ini`,
-//    `../dats/SystemFileExts.ini`,
-//    `../EFind/*.ini`
-//  ],
-//  from: /[.*`${key}`.*]/, //we have to use capture groups here 
-//  to: `${value}`,
-//  from: /system=.*${key}/,
-//  to: /system=ummmm...../
-//}
-//
 //const systemsDat = {
 //  files: `../dats/systems.dat`,
 //  from: /.*${key}/, //same issue...
@@ -74,11 +68,9 @@ const tester = {
 
 
 const transform = (options) => {
-  //we're going to merge this files property into the options object to DRY it
-  const file = { files: filenamePassed }
 
   try {
-    let changedFiles = replace.sync(Object.assign(options, file))
+    let changedFiles = replace.sync(Object.assign(options))
     console.log(`replaced content in ${options.files}` )
   }
   catch (error) {
@@ -86,7 +78,7 @@ const transform = (options) => {
   }
 
 }
-transform(tester)
+transform(emulatorsIni)
 //transform(romdataDats)
 //transform(emulatorsIni)
 //transform(systemsDat)

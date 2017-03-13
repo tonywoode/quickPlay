@@ -29,7 +29,7 @@ const changesToMake = {
 const oldName = `GameBoy`
 const newName = `Game Boy`
 
-const emulatorsIni = {
+const iniFiles = {
   //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (shit that applies to the media panel stuff also, bugger)
   //but also these other file types can go in because they match one of the rules and def do not match the other
  files: [
@@ -40,31 +40,34 @@ const emulatorsIni = {
   ],
 
   from: [
+    //this first form here should only replace MESS and Retroarch system names so we need to specifically look for those names later in romdatas
+    //(this acutally massively helps us out otherwise we'd need a truly ugly regex to capture a romdata.dat's emulator column and not the file paths too)
     new RegExp(String.raw`\[(.*)${oldName}`, `g`), //using es6 tagged templates here to avoid double-escaping 
     new RegExp(String.raw`(system=.*)${oldName}`, `g`)//remember these replace sequentially in the 'to', but we don't acutally need it here
   ],
   to: `$1${newName}`
 }
 
+const dats = {
+  //every romdata.dat, be careful not to change any file paths
+  //but also these other file types can go in because they match one of the rules and def do not match the other
+  files: [
+    `${rootDir}/data/**/*.dat`,
+    `${rootDir}/dats/favs.dat`,
+    `${rootDir}/search/*.tmp`
+  ],
+  from: [
+    new RegExp(String.raw`¬(MESS.*$){oldName}`),
+    new RegExp(String.raw`¬(RetroArch.*$){oldName}`)
+  ],
+  to: `¬$1${newName}`
+}
 
-//
-// const romdataDats = {
-//  //every romdata.dat, be careful not to change any file paths
-//  //but also these other file types can go in because they match one of the rules and def do not match the other
-//  files: [
-//    `../data/**/*.dat`,
-//    `../dats/favs.dat`,
-//    `../search/*.tmp`
-//  ],
-//  from: `¬.*${key}`,//we need capturing groups here
-//  to: `¬${value}¬`
-//}
-
-//const systemsDat = {
-//  files: `../dats/systems.dat`,
-//  from: /.*${key}/, //same issue...
-//  to: `${value}`
-//}
+const systemsDat = {
+  files: `${rootDir}/dats/systems.dat`,
+  from: new RegExp(String.raw`(.*)${oldName}`),
+  to: `$1${newName}`
+}
 
 
 const transform = (options) => {
@@ -78,7 +81,7 @@ const transform = (options) => {
   }
 
 }
-transform(emulatorsIni)
-//transform(romdataDats)
-//transform(emulatorsIni)
-//transform(systemsDat)
+
+transform(iniFiles)
+transform(dats)
+transform(systemsDat)

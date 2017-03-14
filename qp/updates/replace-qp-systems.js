@@ -1,9 +1,6 @@
-#!/usr/bin/env node
-
 const fs = require('fs')
 const replace = require('replace-in-file')
-//const filenamePassed = process.argv.slice(2).toString()
-const rootDir = "/Users/twoode/Desktop/qp copy"
+const rootDir = '/Users/twoode/Desktop/qp copy'
 
 const changesToMake = {
   
@@ -29,9 +26,15 @@ const changesToMake = {
 const oldName = `GameBoy`
 const newName = `Game Boy`
 
+
+
+/*
+ * Replace systems in these ini files - you'll find them in emulators.ini twice – once in the title so anything between [], and once in the system= 
+ *   it would be BAD to change it in the path to the emulator or paths in media panel
+ *   some of these file match onee rule, emulators.ini matches them all
+ */
 const iniFiles = {
-  //in each object twice – once in the title so anything between [], and once in the system=, it would be BAD to change it in the path to the emulator (shit that applies to the media panel stuff also, bugger)
-  //but also these other file types can go in because they match one of the rules and def do not match the other
+
  files: [
     `${rootDir}/dats/emulators.ini`,
     `${rootDir}/dats/MediaPanelCfg.ini`,
@@ -40,40 +43,58 @@ const iniFiles = {
   ],
 
   from: [
-    //this first form here should only replace MESS and Retroarch system names so we need to specifically look for those names later in romdatas
-    //(this acutally massively helps us out otherwise we'd need a truly ugly regex to capture a romdata.dat's emulator column and not the file paths too)
-    new RegExp(String.raw`\[(.*)${oldName}`, `g`), //using es6 tagged templates here to avoid double-escaping 
-    new RegExp(String.raw`(system=.*)${oldName}`, `g`)//remember these replace sequentially in the 'to', but we don't acutally need it here
+    //this first form here needs only replace MESS and Retroarch system names - note that we specifically look for those names later in 'dats'
+    //(helps us out: otherwise we'd need a truly ugly regex to capture a romdata.dat's emulator column, and not the file paths too)
+    new RegExp(String.raw`(\[.*)${oldName}`, `g`), //using es6 tagged templates in these  to avoid double-escaping 
+    new RegExp(String.raw`(\[RetroArch )${oldName}`, `g`), //sometimes we have a double like "RetroArch GameBoy/GameBoy Color"
+    new RegExp(String.raw`(system=.*)${oldName}`, `g`) //remember these replace sequentially in the 'to', but we don't acutally need it here
   ],
+
   to: `$1${newName}`
+
 }
 
+/*
+ * everything that follows the romdata.dat form, be careful not to change any file paths
+ */
 const dats = {
-  //every romdata.dat, be careful not to change any file paths
-  //but also these other file types can go in because they match one of the rules and def do not match the other
+
   files: [
     `${rootDir}/data/**/*.dat`,
     `${rootDir}/dats/favs.dat`,
     `${rootDir}/search/*.tmp`
   ],
+
   from: [
-    new RegExp(String.raw`¬(MESS.*$){oldName}`),
-    new RegExp(String.raw`¬(RetroArch.*$){oldName}`)
+    //since there are only emulators mentioned in a romdata.dat, no systems, we only need to change these:
+    new RegExp(String.raw`\¬(MESS.*)${oldName}`, `g`),
+    new RegExp(String.raw`\¬(RetroArch.*)${oldName}`, `g`)
   ],
-  to: `¬$1${newName}`
+
+  to: `\¬$1${newName}`,
+
+  encoding: `latin1` //the less-than character's code point in win-1252 isnt happy as utf8
+
 }
 
+/*
+ * Replace in the plain text systems list
+ */
 const systemsDat = {
+
   files: `${rootDir}/dats/systems.dat`,
-  from: new RegExp(String.raw`(.*)${oldName}`),
+  
+  from: new RegExp(String.raw`(.*)${oldName}`, `g`),
+  
   to: `$1${newName}`
+
 }
 
 
 const transform = (options) => {
 
   try {
-    let changedFiles = replace.sync(Object.assign(options))
+    let changedFiles = replace.sync(options)
     console.log(`replaced content in ${options.files}` )
   }
   catch (error) {

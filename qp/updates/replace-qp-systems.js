@@ -98,7 +98,10 @@ const transform = (options) => {
 
 }
 
-R.map(transform(iniFiles({oldName, newName}), changesToMake ))
+//R.map(change => transform(iniFiles(change)), changesToMake)
+changesToMake
+.map(iniFiles)
+.forEach(transform)
 //transform(iniFiles)
 //transform(dats)
 //transform(systemsDat)

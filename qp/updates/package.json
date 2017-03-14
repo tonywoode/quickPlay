@@ -4,6 +4,7 @@
   "description": "change systems names if the sensible people of the world agree",
   "main": "replace-qp-systems.js",
   "dependencies": {
+    "ramda": "^0.23.0",
     "replace-in-file": "^2.4.0"
   },
   "devDependencies": {},

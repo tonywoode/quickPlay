@@ -5,23 +5,23 @@ const rootDir = '/Users/twoode/Desktop/qp copy'
 const changesToMake = [
   
   { oldName : "Aamber Pegasus",                      newName : "Technosys Aamber Pegasus"},
-  { oldName : "Bandai Wonderswan",                   newName : "Bandai WonderSwan"},
   { oldName : "BBC",                                 newName : "Acorn BBC"},
+  { oldName : "Bally Professinal Arcade",            newName : "Bally Professional Arcade"},
+  { oldName : "Bandai Wonderswan",                   newName : "Bandai WonderSwan"},
   { oldName : "GameBoy",                             newName : "Game Boy"}, //will also catch eg: "Gameboy Advance, GameBoy Light, GameBoy Color
-  { oldName : "VC4000",                              newName : "VC 4000"},
-  { oldName : "Osbourne-1",                          newName : "Osbourne 1"},
+  { oldName : "Interton VC4000",                     newName : "Interton VC 4000"},
   { oldName : "Mattel Juicebox",                     newName : "Mattel Juice Box"},
-  { oldName : "Megaduck/Cougar Boy",                 newName : "Mega Duck / Cougar Boy"}, //What do we do about my lack of spaces around the / eh)
-  { oldName : "PBNO Bashkiria",                      newName :  "BNPO Bashkiria"},
-  { oldName : "NEC PC Engine\TurboGrafx-16",         newName : "NEC PC Engine/TurboGrafx-16"}, //not sure if its mess but everything else is forward slash
-  { oldName : "Osbourne-1",                          newName : "Osbourne 1"},
+  { oldName : "Megaduck/Cougar Boy",                 newName : "Mega Duck/Cougar Boy"}, //MESS puts a space around slashes like this but i decided not to? TODO: correct this?
+  { oldName : "NEC PC Engine\\\\TurboGrafx-16",      newName : "NEC PC Engine/TurboGrafx-16"}, //Everything else is forward slash. This is very silly, despite String.raw later, we still need to quadruple escape a single escape....
+  { oldName : "Osborne-1",                           newName : "Osbourne 1"},
+  { oldName : "Osbourne-1",                          newName : "Osbourne 1"},//these should be a single regex
+  { oldName : "PBNO Bashkiria",                      newName : "BNPO Bashkiria"},
   { oldName : "Sega GameGear",                       newName : "Sega Game Gear"},
   { oldName : "Tatung Einstein TC-01",               newName : "Tatung Einstein"}, //mess has TC-01 too, but there aren’t any other tatung einsteins
-  { oldName : "Texas Instruments",                   newName : "Texas Instruments TI-99"}, //same principle but there ARE other Texas Instruments - this is going to mess up other TI names, however so
-  { oldName : "Texas Instruments TI-99 TI",          newName : "Texas Instruments TI"}, //this is an issue with replacement strings, if they can't be regexs themselves we lose power
   { oldName : "Texas Instruments TI-99 Calculators", newName : "Texas Instruments Calculators"},
-  { oldName : "Video Technology Creativision",       newName : "Video Technology CreatiVision"},
-  { oldName : "Bally Professinal Arcade",            newName : "Bally Professional Arcade"}
+  { oldName : "Texas Instruments TI-99 TI",          newName : "Texas Instruments TI"}, //this is an issue with replacement strings, if they can't be regexs themselves we lose power
+  { oldName : "Texas Instruments",                   newName : "Texas Instruments TI-99"}, //same principle but there ARE other Texas Instruments - this is going to mess up other TI names, however so
+  { oldName : "Video Technology Creativision",       newName : "Video Technology CreatiVision"}
 
 ]
 

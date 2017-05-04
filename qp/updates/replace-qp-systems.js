@@ -5,9 +5,11 @@ const rootDir = '../'
 const changesToMake = [
   
   { oldName : "Aamber Pegasus",                      newName : "Technosys Aamber Pegasus"},
+  { oldName : "Applied Technologies Microbee",       newName : "Applied Technology Microbee"},
   { oldName : "BBC",                                 newName : "Acorn BBC"},
   { oldName : "Bally Professinal Arcade",            newName : "Bally Professional Arcade"},
   { oldName : "Bandai Wonderswan",                   newName : "Bandai WonderSwan"},
+  { oldName : "Commodore Max/UltiMax",               newName : "Commodore Max/Ultimax"},
   { oldName : "GameBoy",                             newName : "Game Boy"}, //will also catch eg: "Gameboy Advance, GameBoy Light, GameBoy Color
   { oldName : "Interton VC4000",                     newName : "Interton VC 4000"},
   { oldName : "Mattel Juicebox",                     newName : "Mattel Juice Box"},
@@ -21,8 +23,12 @@ const changesToMake = [
   { oldName : "Texas Instruments TI-99 Calculators", newName : "Texas Instruments Calculators"},
   { oldName : "Texas Instruments TI-99 TI",          newName : "Texas Instruments TI"}, //this is an issue with replacement strings, if they can't be regexs themselves we lose power
   { oldName : "Texas Instruments",                   newName : "Texas Instruments TI-99"}, //same principle but there ARE other Texas Instruments - this is going to mess up other TI names, however so
+  { oldName : "Thompson MO5",       				 newName : "Thomson MO5"},
+  { oldName : "Thompson MO6",       				 newName : "Thomson MO6"},
+  { oldName : "Thompson TO7/TO9",       			 newName : "Thomson TO7/TO9"},
+  { oldName : "Thompson TO8",       				 newName : "Thomson TO8"},
   { oldName : "Video Technology Creativision",       newName : "Video Technology CreatiVision"}
-
+ 
 ]
 
 /*

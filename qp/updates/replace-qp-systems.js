@@ -1,6 +1,6 @@
 const fs      = require('fs')
 const replace = require('replace-in-file')
-const rootDir = '/Users/twoode/Desktop/qp copy'
+const rootDir = '../'
 
 const changesToMake = [
   

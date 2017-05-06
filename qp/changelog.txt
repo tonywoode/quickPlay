@@ -1,3 +1,18 @@
+Quickplay v4.2.0 
+ 
+* new systems dat in resources - even corrects some names MAME/MESS got wrong
+* added new Efinds for Mame and Retroarch's Mess
+* add all new automatedsoftlists for Retroarch and Mame
+* added movers for the softlists
+* remove Mess Magician as a tool
+* updates tool executable
+* retroarch.ini: fixed bug 40 - retroarch core format
+* resolved char encoding issue
+* included update script that conforms system/machine names
+* start to write system name updates mechanism
+* about box was right costrained a bit
+* corrected references to forum
+ 
 Quickplay v4.1.5 
  
 * Some protection against Windows changing 8:3 path defaults for devices

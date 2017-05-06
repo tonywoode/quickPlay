@@ -1,0 +1,5 @@
+ROM DataFile Version : 1.1
+SimpliCalc¬simpcalc¬¬¬./qp.exe¬MAME Commodore VIC-1001 (Japan) -SOFTLIST vic1001_flop NTSC only¬Commodore¬1981¬¬¬¬¬serial:VIC-3301,ram:16K¬0¬1¬<IPS>¬</IPS>¬¬¬
+VicFile¬vicfile¬¬¬./qp.exe¬MAME Commodore VIC-1001 (Japan) -SOFTLIST vic1001_flop NTSC only¬Commodore¬1981¬¬¬¬¬serial:VIC-3304,ram:16K¬0¬1¬<IPS>¬</IPS>¬¬¬
+VicFile (Alt)¬vicfilea¬vicfile¬¬./qp.exe¬MAME Commodore VIC-1001 (Japan) -SOFTLIST vic1001_flop NTSC only¬Commodore¬1981¬¬¬¬¬serial:VIC-3304,ram:16K¬0¬1¬<IPS>¬</IPS>¬¬¬
+VicWriter¬vicwrite¬¬¬./qp.exe¬MAME Commodore VIC-1001 (Japan) -SOFTLIST vic1001_flop NTSC only¬Commodore¬1981¬¬¬¬¬serial:VIC-3305,ram:8K¬0¬1¬<IPS>¬</IPS>¬¬¬

@@ -1,0 +1,37 @@
+ROM DataFile Version : 1.1
+Apple I Basic¬basic¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at E000.EFFFR, enter at E000R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apple I Basic (Alt)¬basica¬basic¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at E000.EFFFR, enter at E000R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Adventure¬adventur¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 280.30FFR, enter at 280R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Applesoft Lite¬aslite¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 6000.7EFFR, enter at 6000R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apple 30th¬apple30¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 280.FFFR, enter at 280R¬0¬1¬<IPS>¬</IPS>¬¬¬
+ASMmchess¬asmchess¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 300.BFFR, enter at 300R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Codebreaker¬codebrkr¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 280.BFFRE000.EFFFR, enter at 280R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Life¬life¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 2000.21FFR, enter at 2000R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lunar Lander¬llander¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 300.0A00R, enter at 0300R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mastermind¬mastmind¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 300.03FFR, enter at 0300R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microchess¬microchs¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 1000.18FFR, enter at 1000R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pasart¬pasart¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 300.5FFR, enter at 300R¬0¬1¬<IPS>¬</IPS>¬¬¬
+TypingTutor¬typtutor¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load at 280.15FFR, enter at 280R¬0¬1¬<IPS>¬</IPS>¬¬¬
+AceyDucey¬aceyduc¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR800.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apple I Enhanced Checkers¬alicetel¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blackjack¬blckjack¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR800.0FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bowling¬bowling¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Buzzword¬buzzword¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Columns¬columns¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Concentration¬concentr¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Craps¬craps¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deal or No Deal¬dealnod¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+ELIZA¬eliza¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Football¬football¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR400.2FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hamurabi¬hamurabi¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hangman¬hangman¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+HiLo¬hilo¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR800.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lunar Lander (ASCII Graphics)¬llandera¬llander¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR0300.0FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Matrix¬matrix¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Slots¬slots¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek¬startrek¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek 2003¬start2k3¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<homebrew>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.3FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Stopwatch¬stopwtch¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR0300.0FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+TREK II¬trek2¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR0300.2FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+WordCross¬wordx¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wumpus¬wumpus¬¬¬./qp.exe¬Retroarch Apple I -SOFTLIST apple1 (MAME)¬<unknown>¬19??¬¬¬¬¬usage:First load BASIC, then load at 4A.00FFR300.FFFR, enter at E2B3R¬0¬1¬<IPS>¬</IPS>¬¬¬

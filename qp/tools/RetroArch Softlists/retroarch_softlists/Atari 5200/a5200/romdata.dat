@@ -1,0 +1,107 @@
+ROM DataFile Version : 1.1
+5200 Menu (Prototype)¬5200menu¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+A.E. (Prototype)¬aep¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Brderbund Software Inc¬1982¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Activision Decathlon¬decathln¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FC-008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroids (Prototype)¬asteroid¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200,serial:CX5201¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Chase¬achase¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1984¬¬¬¬¬slot:a5200_2chips,serial:9560¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ballblazer¬ballblaz¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari / Lucasfilm¬1986¬¬¬¬¬slot:a5200,serial:CX5255¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barroom Baseball (Prototype)¬barbball¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Battlezone (Prototype)¬bzone¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5239¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beamrider¬beamridr¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-009¬0¬1¬<IPS>¬</IPS>¬¬¬
+Berzerk¬berzerk¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5221¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Belt (Prototype)¬blckbelt¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5231¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blaster (Prototype)¬blaster¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blue-Print¬blueprnt¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬CBS Electronics / Bally Midway MFG. Co.¬1982¬¬¬¬¬slot:a5200,serial:80033¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bounty Bob Strikes Back!¬bbsb¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Big Five Software¬1984¬¬¬¬¬slot:a5200_bbsb¬0¬1¬<IPS>¬</IPS>¬¬¬
+Buck Rogers - Planet of Zoom¬buckrog¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Sega¬1983¬¬¬¬¬slot:a5200_2chips,serial:005-02¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede¬centiped¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,peripheral:trackball,serial:CX5212¬0¬1¬<IPS>¬</IPS>¬¬¬
+Choplifter!¬choplift¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5253¬0¬1¬<IPS>¬</IPS>¬¬¬
+Congo Bongo¬congo¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Sega¬1983¬¬¬¬¬slot:a5200_2chips,serial:006-02¬0¬1¬<IPS>¬</IPS>¬¬¬
+Countermeasure¬cntrmsre¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5210¬0¬1¬<IPS>¬</IPS>¬¬¬
+David Crane's Pitfall II - Lost Caverns¬pitfall2¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-011¬0¬1¬<IPS>¬</IPS>¬¬¬
+Defender¬defender¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5218¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug¬digdug¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5211¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Dreadnaught Factor¬dfactor¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-005¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Legacy (Prototype)¬flegacy¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5256¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frisky Tom (Prototype)¬friskyt¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger¬frogger¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200,serial:9530¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger II: Threeedeep!¬frogger2¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200_2chips,serial:9090¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galaxian¬galaxian¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5206¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gorf¬gorf¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬CBS Electronics / Bally Midway MFG. Co.¬1982¬¬¬¬¬slot:a5200,serial:80013¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gremlins¬gremlins¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5257¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gyruss¬gyruss¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1984¬¬¬¬¬slot:a5200_2chips,serial:9080¬0¬1¬<IPS>¬</IPS>¬¬¬
+H.E.R.O.¬hero¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1984¬¬¬¬¬slot:a5200,serial:FZ-007¬0¬1¬<IPS>¬</IPS>¬¬¬
+James Bond¬jbond¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1984¬¬¬¬¬slot:a5200_2chips,serial:9100¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joust¬joust¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5240¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jr Pacman (Prototype)¬jrpacman¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200_2chips,serial:CX5251¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jungle Hunt¬jungleh¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5222¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Shoot Out¬kshoot¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬CBS Electronics / Kay Enterprizes Co.¬1982¬¬¬¬¬slot:a5200,serial:80503¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kaboom!¬kaboom¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,peripheral:trackball,serial:FZ-001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kangaroo¬kangaroo¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5229¬0¬1¬<IPS>¬</IPS>¬¬¬
+Keystone Kapers¬keykaper¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-006¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Last Starfighter (Prototype)¬laststar¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5260¬0¬1¬<IPS>¬</IPS>¬¬¬
+Looney Tunes Hotel (Prototype)¬looneyh¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mario Bros.¬mario¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5247¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meebzork (Prototype)¬meebzork¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+MegaMania¬megmania¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1984¬¬¬¬¬slot:a5200,serial:FZ-003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meteorites¬meteorit¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Electra Concepts¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microgammon SB (Prototype)¬microgam¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Millipede (Prototype)¬milliped¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5248¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miner 2049er¬mine2049¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Big Five Software¬1983¬¬¬¬¬slot:a5200,serial:BF1912¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miniature Golf (Prototype)¬minigolf¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5230¬0¬1¬<IPS>¬</IPS>¬¬¬
+Missile Command¬missile¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5202¬0¬1¬<IPS>¬</IPS>¬¬¬
+Montezuma's Revenge¬montezum¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1984¬¬¬¬¬slot:a5200_2chips,serial:9460¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moon Patrol¬mpatrol¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5241¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mountain King¬mking¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬CBS Electronics¬1983¬¬¬¬¬slot:a5200,serial:80083¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr. Do!'s Castle¬docastle¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1984¬¬¬¬¬slot:a5200,serial:9420¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man¬mspacman¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5243¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man¬pacman¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5208¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pengo¬pengo¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5236¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pitfall!¬pitfall¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1984¬¬¬¬¬slot:a5200,serial:FZ-004¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pole Position¬polepos¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,peripheral:trackball,serial:CX5217¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye¬popeye¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200_2chips,serial:9510¬0¬1¬<IPS>¬</IPS>¬¬¬
+Q*bert¬qbert¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200,serial:9500¬0¬1¬<IPS>¬</IPS>¬¬¬
+Qix¬qix¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5221¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quest for Quintana Roo¬quintana¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Sunrise¬1984¬¬¬¬¬slot:a5200,serial:1603¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Baseball¬rsbaseb¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5209¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Basketball (19831216)¬rsbasket¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5219¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Basketball (Prototype, 19831031)¬rsbasket1¬rsbasket¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5219¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Basketball (Prototype, 19821105)¬rsbasket2¬rsbasket¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5219¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Football¬rsfootb¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,peripheral:trackball,serial:CX5207¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Soccer¬rssoccer¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,peripheral:trackball,serial:CX5213¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Tennis¬rstennis¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5214¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rescue on Fractalus!¬fractal¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari / Lucasfilm¬1986¬¬¬¬¬slot:a5200,serial:CX5254¬0¬1¬<IPS>¬</IPS>¬¬¬
+River Raid¬riveraid¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Road Runner (Prototype)¬roadrun¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5242¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robotron: 2084¬robotron¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5225¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Dungeon¬spcedngn¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5232¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Invaders¬spaceinv¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5204¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Shuttle - A Journey Into Space¬shuttle¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1983¬¬¬¬¬slot:a5200,serial:FZ-012¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spitfire (Prototype)¬spitfire¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sport Goofy (Prototype)¬sprtgoof¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips,serial:CX5237¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Raiders¬starraid¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips,serial:CX5202¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek¬startrek¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Sega¬1982¬¬¬¬¬slot:a5200_2chips,serial:004-02¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars - Return of the Jedi - Death Star Battle¬jedidsb¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200,serial:9060¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars - The Arcade Game¬starwars¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200_2chips,serial:9040¬0¬1¬<IPS>¬</IPS>¬¬¬
+Stargate (Prototype)¬stargate¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200_2chips,serial:CX5252¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Breakout¬sbrkout¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200,peripheral:trackball,serial:CX5203¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Cobra¬scobra¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:a5200,serial:9550¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Pac-Man (Prototype)¬spacman¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tempest (Prototype)¬tempest¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5220¬0¬1¬<IPS>¬</IPS>¬¬¬
+Track and Field (Prototype)¬trackfld¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5258¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vanguard¬vanguard¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200,serial:CX5216¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizard of Wor¬wow¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬CBS Electronics¬1983¬¬¬¬¬slot:a5200,serial:80003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xari Arena (Prototype)¬xari¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xevious (Prototype)¬xevious¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1984¬¬¬¬¬slot:a5200,serial:CX5246¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yellow Sub Demo¬yllowsub¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zaxxon¬zaxxon¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Sega¬1984¬¬¬¬¬slot:a5200,serial:008-02¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zenji¬zenji¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1984¬¬¬¬¬slot:a5200,serial:FZ-010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zone Ranger¬zonerngr¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Activision¬1984¬¬¬¬¬slot:a5200,serial:FZ-101¬0¬1¬<IPS>¬</IPS>¬¬¬
+PAM: Pete's Test (USA)¬petetest¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+PAM Diag 2.0¬pamdiag2¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari PAM Diagnostics (Rev 2.3)¬pamdg23¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1983¬¬¬¬¬slot:a5200_2chips¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari PAM Final System Test (Rev 1.0)¬finaltst¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boogie (Demo)¬boogie¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬Atari¬1982¬¬¬¬¬slot:a5200¬0¬1¬<IPS>¬</IPS>¬¬¬
+Castle Blast¬cblast¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬<unlicensed>¬2002¬¬¬¬¬slot:a5200,developer:Ronen Habot¬0¬1¬<IPS>¬</IPS>¬¬¬
+Castle Crisis¬ccrisis¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬<unlicensed>¬2004¬¬¬¬¬slot:a5200,developer:Bryan Edewaard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Koffi: Yellow Kopter¬koffiyk¬¬¬./qp.exe¬Retroarch Atari 5200 -SOFTLIST a5200 (MAME)¬<unlicensed>¬2002¬¬¬¬¬slot:a5200,developer:Ron Lloyd¬0¬1¬<IPS>¬</IPS>¬¬¬

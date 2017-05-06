@@ -1,0 +1,151 @@
+ROM DataFile Version : 1.1
+7800 Pro System Diagnostic Test (v1.0)¬diagtest¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬198?¬¬¬¬¬slot:a78_rom,serial:CB101195¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ace of Aces (NTSC)¬aceofaceu¬aceoface¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / NOVA Game Design. Inc.¬1988¬¬¬¬¬slot:a78_sg,serial:CX7846¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ace of Aces (PAL)¬aceoface¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / NOVA Game Design. Inc.¬1988¬¬¬¬¬slot:a78_sg,serial:CX7846¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Brigade (NTSC)¬alienbrgu¬alienbrg¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1989¬¬¬¬¬slot:a78_sg9,peripheral:lightgun,serial:CX7855¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Brigade (PAL)¬alienbrg¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1989¬¬¬¬¬slot:a78_sg9,serial:CX7855¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroids (NTSC)¬asteroid¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7802¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroids Deluxe (NTSC)¬astdelux¬asteroid¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroids Deluxe (PAL)¬astdeluxp¬asteroid¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ballblazer (NTSC)¬ballblazu¬ballblaz¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Lucasfilm¬1987¬¬¬¬¬slot:a78_pokey,serial:CX7815¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ballblazer (PAL)¬ballblaz¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Lucasfilm¬1987¬¬¬¬¬slot:a78_pokey,serial:CX7815¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barnyard Blaster (NTSC)¬barnblstu¬barnblst¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,peripheral:lightgun,serial:CX7859¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barnyard Blaster (PAL)¬barnblst¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,serial:CX7859¬0¬1¬<IPS>¬</IPS>¬¬¬
+Baseball (PAL)¬baseball¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute Entertainment, Inc¬1989¬¬¬¬¬slot:a78_rom,serial:AV-045-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beef Drop (NTSC, Added Pokey Chip)¬beefdrop¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_pokey,developer:Ken Siders¬0¬1¬<IPS>¬</IPS>¬¬¬
+b*nQ (NTSC)¬bonq¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Ken Siders¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basketbrawl (NTSC)¬bsktbrwlu¬bsktbrwl¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7880¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basketbrawl (PAL)¬bsktbrwl¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7880¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede (NTSC)¬centipedu¬centiped¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7801¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede (PAL)¬centiped¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7801¬0¬1¬<IPS>¬</IPS>¬¬¬
+Choplifter! (NTSC)¬chopliftu¬choplift¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Brderbund¬1987¬¬¬¬¬slot:a78_rom,serial:CX7821¬0¬1¬<IPS>¬</IPS>¬¬¬
+Choplifter! (PAL)¬choplift¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Brderbund¬1987¬¬¬¬¬slot:a78_rom,serial:CX7821¬0¬1¬<IPS>¬</IPS>¬¬¬
+Commando (NTSC)¬commandou¬commando¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Data East¬1989¬¬¬¬¬slot:a78_sg_pokey,serial:CX7838¬0¬1¬<IPS>¬</IPS>¬¬¬
+Commando (PAL)¬commando¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Data East¬1989¬¬¬¬¬slot:a78_sg_pokey,serial:CX7838¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crack'ed (NTSC)¬crackedu¬cracked¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1987¬¬¬¬¬slot:a78_sg,serial:CX7836¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crack'ed (PAL)¬cracked¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1987¬¬¬¬¬slot:a78_sg,serial:CX7836¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crossbow (NTSC)¬crossbowu¬crossbow¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Exidy¬1988¬¬¬¬¬slot:a78_sg9,peripheral:lightgun,serial:CX7844¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crossbow (PAL)¬crossbow¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Exidy¬1988¬¬¬¬¬slot:a78_sg9,peripheral:lightgun,serial:CX7844¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dark Chambers (NTSC)¬darkchamu¬darkcham¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,serial:CX7837¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dark Chambers (PAL)¬darkcham¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,serial:CX7837¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desert Falcon (NTSC)¬dsrtflcnu¬dsrtflcn¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1987¬¬¬¬¬slot:a78_rom,serial:CX7811¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desert Falcon (NTSC, Alternate)¬dsrtflcna¬dsrtflcn¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1987¬¬¬¬¬slot:a78_rom,serial:CX7811¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desert Falcon (PAL)¬dsrtflcn¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1987¬¬¬¬¬slot:a78_rom,serial:CX7811¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug (NTSC)¬digdugu¬digdug¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7803¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug (PAL)¬digdug¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7803¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong (NTSC)¬dkongu¬dkong¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7848¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong (PAL)¬dkong¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7848¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong Jr. (NTSC)¬dkongjru¬dkongjr¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7849¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong Jr. (PAL)¬dkongjr¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7849¬0¬1¬<IPS>¬</IPS>¬¬¬
+Double Dragon (NTSC)¬ddragonu¬ddragon¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Activision / Technos¬1989¬¬¬¬¬slot:a78_act,serial:AM-050-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Double Dragon (PAL)¬ddragon¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Activision / Technos¬1989¬¬¬¬¬slot:a78_act,serial:AM-050-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+F-18 Hornet (NTSC)¬f18u¬f18¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute Entertainment¬1988¬¬¬¬¬slot:a78_abs,serial:AP-044-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+F-18 Hornet (PAL)¬f18¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute Entertainment¬1988¬¬¬¬¬slot:a78_abs,serial:AP044-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fatal Run (NTSC)¬fatalrunu¬fatalrun¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7854¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fatal Run (PAL)¬fatalrun¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7854¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fight Night (NTSC)¬fightnu¬fightn¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Accolade¬1988¬¬¬¬¬slot:a78_sg,serial:CX7851¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fight Night (PAL)¬fightn¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Accolade¬1988¬¬¬¬¬slot:a78_sg,serial:CX7851¬0¬1¬<IPS>¬</IPS>¬¬¬
+Food Fight (NTSC)¬foodfu¬foodf¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7804¬0¬1¬<IPS>¬</IPS>¬¬¬
+Food Fight (PAL)¬foodf¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7804¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galaga (NTSC)¬galagau¬galaga¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7805¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galaga (PAL)¬galaga¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7805¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 198801xx)¬gatop1¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1988¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 198712xx)¬gatop2¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 198711xx)¬gatop3¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 19870727)¬gatop4¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 19870623)¬gatop5¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 19870611)¬gatop6¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 19870523)¬gatop7¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+GATO (NTSC, Prototype, 19870424)¬gatop8¬gatop1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Spectrum Holobyte¬1987¬¬¬¬¬slot:a78_rom,serial:CX7827¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hangly-Man (NTSC)¬hangly¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hat Trick (NTSC)¬hattricku¬hattrick¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Bally Sente¬1987¬¬¬¬¬slot:a78_rom,serial:CX7829¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hat Trick (PAL)¬hattrick¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Bally Sente¬1987¬¬¬¬¬slot:a78_rom,serial:CX7829¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ikari Warriors (NTSC)¬ikariu¬ikari¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / SNK¬1990¬¬¬¬¬slot:a78_sg,serial:CX7862¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ikari Warriors (PAL)¬ikari¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7862¬0¬1¬<IPS>¬</IPS>¬¬¬
+Impossible Mission (NTSC)¬impmissu¬impmiss¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Epyx¬1987¬¬¬¬¬slot:a78_sg_ram,serial:CX7832¬0¬1¬<IPS>¬</IPS>¬¬¬
+Impossible Mission (PAL)¬impmiss¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Epyx¬1987¬¬¬¬¬slot:a78_sg_ram,serial:CX7832¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jinks (NTSC)¬jinksu¬jinks¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Softgold¬1989¬¬¬¬¬slot:a78_sg_ram,serial:CX7857¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jinks (PAL)¬jinks¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Softgold¬1989¬¬¬¬¬slot:a78_sg_ram,serial:CX7857¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jr. Pac-Man (NTSC)¬jrpacman¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2009¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joust (NTSC)¬joustu¬joust¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Williams¬1984¬¬¬¬¬slot:a78_rom,serial:CX7806¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joust (PAL)¬joust¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Williams¬1984¬¬¬¬¬slot:a78_rom,serial:CX7806¬0¬1¬<IPS>¬</IPS>¬¬¬
+Karateka (NTSC)¬karatekau¬karateka¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Brderbund¬1987¬¬¬¬¬slot:a78_rom,serial:CX7822¬0¬1¬<IPS>¬</IPS>¬¬¬
+Karateka (PAL)¬karateka¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Brderbund¬1987¬¬¬¬¬slot:a78_sg,serial:CX7822¬0¬1¬<IPS>¬</IPS>¬¬¬
+Klax (NTSC, Prototype)¬klax¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1992¬¬¬¬¬slot:a78_sg,serial:CX7888,usage:Keep Button 1 pressed during Atari logo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kung-Fu Master (NTSC)¬kungfumu¬kungfum¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute / Data East / Irem¬1989¬¬¬¬¬slot:a78_rom,serial:AM-039-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kung-Fu Master (PAL)¬kungfum¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute / Data East / Irem¬1989¬¬¬¬¬slot:a78_rom,serial:AM-039-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mario Bros. (NTSC)¬mariou¬mario¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7850¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mario Bros. (PAL)¬mario¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Nintendo¬1988¬¬¬¬¬slot:a78_rom,serial:CX7850¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mat Mania Challenge (NTSC)¬matmaniau¬matmania¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Technos¬1989¬¬¬¬¬slot:a78_sg,serial:CX7863¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mat Mania Challenge (PAL)¬matmania¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Technos¬1989¬¬¬¬¬slot:a78_sg,serial:CX7863¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mean 18 (NTSC)¬mean18u¬mean18¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Accolade¬1989¬¬¬¬¬slot:a78_sg,serial:CX7847¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mean 18 (PAL)¬mean18¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Accolade¬1989¬¬¬¬¬slot:a78_sg,serial:CX7847¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meltdown (NTSC)¬meltdownu¬meltdown¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,peripheral:lightgun,serial:CX7875¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meltdown (PAL)¬meltdown¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,peripheral:lightgun,serial:CX7875¬0¬1¬<IPS>¬</IPS>¬¬¬
+Missing In Action (Prototype)¬mia¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬TNT Games¬1989¬¬¬¬¬slot:a78_sg9,serial:CX7890¬0¬1¬<IPS>¬</IPS>¬¬¬
+Midnight Mutants (NTSC)¬midnightu¬midnight¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7879¬0¬1¬<IPS>¬</IPS>¬¬¬
+Midnight Mutants (PAL)¬midnight¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7879¬0¬1¬<IPS>¬</IPS>¬¬¬
+Motor Psycho (NTSC)¬mpsychou¬mpsycho¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7852¬0¬1¬<IPS>¬</IPS>¬¬¬
+Motor Psycho (PAL)¬mpsycho¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7852¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Attack (NTSC)¬mspacatk¬mspacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man (NTSC)¬mspacmanu¬mspacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7807¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man (PAL)¬mspacman¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_rom,serial:CX7807¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja Golf (NTSC)¬ninjaglfu¬ninjaglf¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7870¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja Golf (PAL)¬ninjaglf¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7870¬0¬1¬<IPS>¬</IPS>¬¬¬
+One On One (NTSC)¬1on1u¬1on1¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Electronic Arts¬1987¬¬¬¬¬slot:a78_rom,serial:CX7824¬0¬1¬<IPS>¬</IPS>¬¬¬
+One On One (PAL)¬1on1¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Electronic Arts¬1987¬¬¬¬¬slot:a78_rom,serial:CX7824¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pete Rose Baseball (NTSC)¬baseballu¬baseball¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute Entertainment, Inc¬1989¬¬¬¬¬slot:a78_rom,serial:AV-045-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man (NTSC)¬pacman¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ultra Pac-Man (NTSC)¬ultrapac¬pacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man Collection! (NTSC)¬paccollu¬pacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man Collection! (PAL)¬paccoll¬pacman¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man Plus (NTSC)¬pacplus¬pacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Pollux (NTSC)¬pacpolux¬pacman¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pit Fighter (Prototype)¬pitfight¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬199?¬¬¬¬¬slot:a78_sg,serial:CX7891¬0¬1¬<IPS>¬</IPS>¬¬¬
+Planet Smashers (NTSC)¬planetsmu¬planetsm¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7868¬0¬1¬<IPS>¬</IPS>¬¬¬
+Planet Smashers (PAL)¬planetsm¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7868¬0¬1¬<IPS>¬</IPS>¬¬¬
+Plutos (Prototype)¬plutos¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Tynesoft¬1990¬¬¬¬¬slot:a78_sg_ram¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pole Position II (NTSC)¬polepos2u¬polepos2¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Namco¬1987¬¬¬¬¬slot:a78_rom,serial:CX7808¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pole Position II (PAL)¬polepos2¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Namco¬1987¬¬¬¬¬slot:a78_rom,serial:CX7808¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rampage (NTSC)¬rampage¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Activision¬1989¬¬¬¬¬slot:a78_act,serial:AM-049-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rescue on Fractalus (NTSC, Prototype)¬fractal¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1984¬¬¬¬¬slot:a78_sg_ram,serial:CX7816¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robotron: 2084 (NTSC)¬robotron¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Williams¬1984¬¬¬¬¬slot:a78_rom,serial:CX7809¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Baseball (NTSC)¬rsbaseb¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,serial:CX7834¬0¬1¬<IPS>¬</IPS>¬¬¬
+Santa Simon (NTSC)¬santasim¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:a78_rom,developer:Matthias Luedtke¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scrapyard Dog (NTSC)¬scrapdogu¬scrapdog¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7879¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scrapyard Dog (PAL)¬scrapdog¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1990¬¬¬¬¬slot:a78_sg,serial:CX7879¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sentinel (NTSC, Prototype)¬sentinelu¬sentinel¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1991¬¬¬¬¬slot:a78_sg,peripheral:lightgun,serial:CX7869¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sentinel (PAL)¬sentinel¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1991¬¬¬¬¬slot:a78_sg,peripheral:lightgun,serial:CX7869¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sirius (Prototype)¬sirius¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Tynesoft¬1990¬¬¬¬¬slot:a78_sg_ram¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Duel (NTSC)¬spacduelu¬spacduel¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari Interactive¬2007¬¬¬¬¬slot:a78_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Duel (PAL)¬spacduel¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Invader (NTSC)¬spaceinvu¬spaceinv¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2008¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Invader (PAL)¬spaceinv¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2008¬¬¬¬¬slot:a78_rom,developer:Bob DeCrescenzo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars 7800 (NTSC, Hack)¬starwarsu¬starwars¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Gambler172¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars 7800 (PAL, Hack)¬starwars¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:a78_rom,developer:Gambler172¬0¬1¬<IPS>¬</IPS>¬¬¬
+Summer Games (NTSC)¬sumgames¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Epyx¬1987¬¬¬¬¬slot:a78_sg_ram,serial:CX7826¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Huey (NTSC)¬suphueyu¬suphuey¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1989¬¬¬¬¬slot:a78_rom,serial:CX7828¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Huey (PAL)¬suphuey¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari¬1989¬¬¬¬¬slot:a78_rom,serial:CX7828¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Skateboardin' (NTSC)¬supskateu¬supskate¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute Entertainment, Inc.¬1988¬¬¬¬¬slot:a78_rom,serial:AV-047-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Skateboardin' (PAL)¬supskate¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute Entertainment, Inc.¬1988¬¬¬¬¬slot:a78_rom,serial:AV-047-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tank Command (NTSC)¬tank¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Froggo¬1988¬¬¬¬¬slot:a78_sg,serial:FG2003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Title Match Pro Wrestling (NTSC)¬prowresu¬prowres¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute Entertainment, Inc.¬1989¬¬¬¬¬slot:a78_rom,serial:AV-041-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Title Match Pro Wrestling (PAL)¬prowres¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute Entertainment, Inc.¬1989¬¬¬¬¬slot:a78_rom,serial:AV-041-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tomcat - The F-14 Fighter Simulator (NTSC)¬tomcatu¬tomcat¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Absolute Entertainment, Inc.¬1989¬¬¬¬¬slot:a78_rom,serial:AV-046-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tomcat - The F-14 Fighter Simulator (PAL)¬tomcat¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Absolute Entertainment, Inc.¬1989¬¬¬¬¬slot:a78_rom,serial:AV-046-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Touchdown Football¬tdown¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬1988¬¬¬¬¬slot:a78_sg,serial:CX7823¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tower Toppler (NTSC)¬towertopu¬towertop¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / U.S. Gold¬1988¬¬¬¬¬slot:a78_sg_ram,serial:CX7856¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tower Toppler (PAL)¬towertop¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / U.S. Gold¬1988¬¬¬¬¬slot:a78_sg_ram,serial:CX7856¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wasp (NTSC)¬wasp¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2009¬¬¬¬¬slot:a78_rom,developer:Mark Ball¬0¬1¬<IPS>¬</IPS>¬¬¬
+Water Ski (NTSC)¬waterski¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Froggo¬1988¬¬¬¬¬slot:a78_sg,serial:FG2002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Winter Games (NTSC)¬wingames¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Epyx¬1987¬¬¬¬¬slot:a78_sg_ram,serial:CX7831¬0¬1¬<IPS>¬</IPS>¬¬¬
+Winter Games (NTSC, Older?)¬wingameso¬wingames¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Epyx¬1987¬¬¬¬¬slot:a78_sg_ram,serial:CX7831¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xenophobe (NTSC)¬xenophobu¬xenophob¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Bally Midway Mfg. Co.¬1987¬¬¬¬¬slot:a78_sg,serial:CX7858¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xenophobe (PAL)¬xenophob¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Bally Midway Mfg. Co.¬1987¬¬¬¬¬slot:a78_sg,serial:CX7858¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xevious (NTSC)¬xeviousu¬xevious¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7810¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xevious (PAL)¬xevious¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬Atari / Namco¬1984¬¬¬¬¬slot:a78_rom,serial:CX7810¬0¬1¬<IPS>¬</IPS>¬¬¬
+High Score Cartridge¬hiscore¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬Atari¬198?¬¬¬¬¬slot:a78_hsc,serial:CX78HSC¬0¬1¬<IPS>¬</IPS>¬¬¬
+XBoarD Expansion¬xboard¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2005¬¬¬¬¬slot:a78_xboard¬0¬1¬<IPS>¬</IPS>¬¬¬
+XM Expansion Module¬xm¬¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2015?¬¬¬¬¬slot:a78_xm¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong (PAL, Demo, XM enhanced, V1.2)¬dkongxm¬¬¬./qp.exe¬Retroarch Atari 7800 (PAL) -SOFTLIST a7800 PAL only (MAME)¬<homebrew>¬2012¬¬¬¬¬slot:a78_sg9,programmer:TEP392¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong (NTSC, Demo, XM enhanced, V1.2)¬dkongxmu¬dkongxm¬¬./qp.exe¬Retroarch Atari 7800 (NTSC) -SOFTLIST a7800 NTSC only (MAME)¬<homebrew>¬2012¬¬¬¬¬slot:a78_sg9,programmer:TEP392¬0¬1¬<IPS>¬</IPS>¬¬¬

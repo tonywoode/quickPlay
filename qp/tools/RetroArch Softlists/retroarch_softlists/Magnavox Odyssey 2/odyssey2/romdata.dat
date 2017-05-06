@@ -1,0 +1,136 @@
+ROM DataFile Version : 1.1
+Computer Programmer (Euro)¬compprog¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:9¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Intro (USA)¬compintr¬compprog¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AC9406¬0¬1¬<IPS>¬</IPS>¬¬¬
+Newscaster (Euro)¬newscast¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Keyboard Creations! (USA)¬keyboard¬newscast¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AC9433¬0¬1¬<IPS>¬</IPS>¬¬¬
+Musician (Euro)¬musician¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,serial:31¬0¬1¬<IPS>¬</IPS>¬¬¬
+Type & Tell! (USA)¬typetell¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Robert L. Cheezem,serial:AC9440¬0¬1¬<IPS>¬</IPS>¬¬¬
+Playschool Maths (Euro) ~ I've Got Your Number (USA)¬number¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AC9413 (USA) ~ 13 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mathematician/Echo (Euro) ~ Math-a-Magic!/Echo! (USA)¬2mthecho¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for Mathematician/Math-a-Magic, press 2 for Echo,serial:AJ9405 (USA) ~ 7 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mathmaticien/Echo (Fra)¬2mthechf¬2mthecho¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1980¬¬¬¬¬slot:o2_rom,usage:Press 1 for Mathmaticien, press 2 for Echo¬0¬1¬<IPS>¬</IPS>¬¬¬
+Morse (Euro)¬morse¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,serial:45¬0¬1¬<IPS>¬</IPS>¬¬¬
+Morse (Fra)¬morsef¬morse¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nimble Numbers Ned! (USA)¬nimble¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Robert S. Harris,serial:AC9439¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sid the Spellbinder (USA)¬sidspell¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Sam Overton,serial:AC9438¬0¬1¬<IPS>¬</IPS>¬¬¬
+Verkehrsspiele 1 (Ger)¬vrkrspl1¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬CSV/Philips¬1982¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kinder im Verkehr 1 (Ger)¬kndrvrkr¬vrkrspl1¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬CSV/Philips¬1982¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Verkehrsspiele 2 (Ger)¬vrkrspl2¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬CSV/Philips¬1982¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+4 in 1 Row (Euro)¬4in1¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,serial:40¬0¬1¬<IPS>¬</IPS>¬¬¬
+4 en 1 Ligne (Fra)¬4en1¬4in1¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1982¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Monster (Euro) ~ Alien Invaders - Plus! (USA)¬alieninv¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1980¬¬¬¬¬slot:o2_rom,serial:AA9428 (USA) ~ 22 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Skiing (Euro) ~ Alpine Skiing! (USA)¬alpine¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,serial:AK9418 (USA) ~ 25 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ski (Fra)¬ski¬alpine¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1979¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Air-Sea War/Battle (Euro) ~ Armored Encounter!/Sub Chase! (USA)¬2armrsub¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1978¬¬¬¬¬slot:o2_rom,usage:Press A for Armored Encounter/Air-Sea War, press 1 for Sub Chase/Battle,serial:AJ9403 (USA) ~ 4 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atlantis (Euro, USA)¬atlantis¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Imagic¬1983¬¬¬¬¬slot:o2_rom,programmer:Jeff Ronnie¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attack of the Timelord! (USA)¬timelord¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,serial:AC9445¬0¬1¬<IPS>¬</IPS>¬¬¬
+Baseball (Euro) ~ Baseball! (USA)¬baseball¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1980¬¬¬¬¬slot:o2_rom,serial:AJ9408 (USA) ~ 8 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blobbers (Euro)¬blobbers¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,serial:56¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dam Buster (Euro) ~ Blockout!/Breakdown! (USA)¬2blckbrk¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Press 0 then 1 for Blockout/Dam Buster, press 0 then 2 for Breakdown,serial:AA9427 (USA) ~ 29 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Le Mr Magique (Fra)¬magique¬2blckbrk¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1981¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ten Pin Bowling/Basketball (Euro) ~ Bowling!/Basketball! (USA)¬2bwlbskt¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for League Night Bowling, press 2 for Tournament Play Bowling, press 3 for Basketball,serial:AJ9404 (USA) ~ 6 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jeu de Quilles/Basketball (Fra)¬2qllbskt¬2bwlbskt¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for (League Night Bowling), press 2 for (Tournament Play Bowling), press 3 for Basketball¬0¬1¬<IPS>¬</IPS>¬¬¬
+Buraco Negro! (Bra)¬buraco¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1984¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Neutron Star (Euro, Prototype)¬neutron¬buraco¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Las Vegas Gambling (Euro) ~ Casino Slot Machine! (USA)¬casino¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1980¬¬¬¬¬slot:o2_rom,serial:AA9426 (USA) ~ 23 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Las Vegas (Fra)¬lasvegas¬casino¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1980¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Catch the Ball/Noughts and Crosses (Euro)¬2bllcrss¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,usage:Press 1 for Catch the Ball, press 7 for Noughts and Crosses,serial:19¬0¬1¬<IPS>¬</IPS>¬¬¬
+O Malabarista!/Jogo da Velha! (Bra)¬2mlajogo¬2bllcrss¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,usage:Press 1 for O Malabarista, press 7 for Jogo da Velha¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chez Maxime (Fra)¬chezmxme¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chinese Logic (Euro)¬chinese¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:17¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desafio Chins! (Bra)¬desafio¬chinese¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Clay Pigeon! (Bra)¬claypig¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Comando Noturno! (Bra)¬comando¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nightfighter (Euro, Prototype)¬night¬comando¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Conquest of the World (Euro, USA)¬conquest¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,serial:AB9431 (USA) ~ 41 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmic Conflict (Euro)¬cosmic¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick,serial:11¬0¬1¬<IPS>¬</IPS>¬¬¬
+Conflit Cosmique (Can, Fra?)¬conflit¬cosmic¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmic Conflict (Euro, Alt)¬cosmica¬cosmic¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmic Conflict! (USA)¬cosmicu¬cosmic¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick,serial:AJ9411¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demon Attack (Euro, USA)¬demon¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Imagic¬1983¬¬¬¬¬slot:o2_rom,programmer:Dave Johnson¬0¬1¬<IPS>¬</IPS>¬¬¬
+Depth Charge/Marksman (Euro)¬2dpthmrk¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Press 1 for Depth Charge, press 2 for Marksman; Uses the 2nd joystick,serial:16¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bombardeio Submarino!/Tiro ao Alvo! (Bra)¬2bmbalvo¬2dpthmrk¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,usage:Press 1 for Depth Charge, press 2 for Marksman; Uses the 2nd joystick¬0¬1¬<IPS>¬</IPS>¬¬¬
+Electronic Table Football (Euro) ~ Electronic Table Soccer (USA)¬soccer¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1980¬¬¬¬¬slot:o2_rom,serial:AA9423 (USA) ~ 27 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+American Football (Euro) ~ Football! (USA)¬football¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AJ9402 (USA) ~ 3 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Freedom Fighters (Euro) ~ Freedom Fighters! (USA)¬freedom¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,serial:AC9436 (USA) ~ 39 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger (Euro)¬frogger¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick,programmer:Peter Inser¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger (Bra)¬froggerb¬frogger¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick¬0¬1¬<IPS>¬</IPS>¬¬¬
+Golf (Euro)¬golf¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:10¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Golf! (USA)¬compgolf¬golf¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AJ9410¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Great Wall Street Fortune Hunt (Euro, USA)¬gtwallst¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,serial:AC9434 (USA) ~ 46 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wall Street (Bra)¬wallst¬gtwallst¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gunfighter (Euro)¬gunfight¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:14¬0¬1¬<IPS>¬</IPS>¬¬¬
+Showdown in 2100 A.D. (USA)¬showdown¬gunfight¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AK9416¬0¬1¬<IPS>¬</IPS>¬¬¬
+Electronic Ice Hockey/Electronic Soccer (Euro) ~ Hockey!/Soccer! (USA)¬2hckyscr¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,usage:Move joystick when game is on screen.,serial:AK9420 (USA) ~ 36 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Football Electronique/Hockey Electronique (Fra)¬2fblhcky¬2hckyscr¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1981¬¬¬¬¬slot:o2_rom,usage:Move joystick when game is on screen.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Interpol (Euro, Prototype)¬interpol¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬GST Video¬198?¬¬¬¬¬slot:o2_rom,programmer:Mick Rouse¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumping Acrobats (Euro)¬acrobat¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Jim Butler,serial:33¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumping Acrobats (Euro, Alt)¬acrobata¬acrobat¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Jim Butler¬0¬1¬<IPS>¬</IPS>¬¬¬
+P.T. Barnum's Acrobats! (USA)¬ptbarnum¬acrobat¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Jim Butler,serial:AC9443¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crazy Chase (Euro) ~ K.C.'s Krazy Chase! (USA)¬kckrazy¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,serial:AC9442 (USA) ~ 44 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Killer Bees! (USA)¬bees¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,programmer:Robert S. Harris,serial:AC9447¬0¬1¬<IPS>¬</IPS>¬¬¬
+A Labyrinth Game/Supermind (Euro)¬2lbsprmd¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,serial:32¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blackjack (Euro) ~ Las Vegas Blackjack! (USA)¬lsvsblck¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AJ9401 (USA) ~ 5 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blackjack (Fra)¬blackjck¬lsvsblck¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1980¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laser War (Euro)¬laser¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:18¬0¬1¬<IPS>¬</IPS>¬¬¬
+Guerre Lazer (Fra)¬guerre¬laser¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1980¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Invaders from Hyperspace! (USA)¬invaders¬laser¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,serial:AK9414¬0¬1¬<IPS>¬</IPS>¬¬¬
+Balo Travesso! (Bra)¬balao¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Loony Balloon (Euro, Prototype)¬loony¬balao¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Martian Threat (Euro, Prototype)¬martian¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom,programmer:Jake Dowding?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pairs/Space Rendezvous/Logic (Euro)¬3prspclg¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for Pairs 1 player, press 2 for Pairs 2 players, press 3 for Space Rendezvous, press 4 for Logic,serial:2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Matchmaker!/Buzzword!/Logix! (USA)¬3mkrbzlg¬3prspclg¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for Matchmaker 1 player, press 2 for Matchmaker 2 players, press 3 for Buzzword, press 4 for Logix,serial:AJ9407¬0¬1¬<IPS>¬</IPS>¬¬¬
+Misso Impossvel/Viagem Programada (Bra)¬2missprg¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Ectron Eletrnica Ltda.¬198?¬¬¬¬¬slot:o2_rom,usage:Press 1 for Misso Impossvel, press 2 for Viagem Programada¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monkeyshines (Euro) ~ Monkeyshines! (USA)¬monkey¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AB9432 (USA) ~ 37 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Mousing Cat (Euro)¬mousing¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,serial:47¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chat et Souris (Fra)¬chat¬mousing¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Munchkin (Euro)¬munchkin¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:38¬0¬1¬<IPS>¬</IPS>¬¬¬
+K.C. Munchkin! (USA)¬kcmunch¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AC9435¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantom House (Euro, Prototype)¬phantom¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Out of this World!/Helicopter Rescue! (USA)¬2wrldrsc¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1979¬¬¬¬¬slot:o2_rom,usage:Press 3 for Out of this World, press 1 for Helicopter Rescue,serial:AC9419¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basket Game (Euro) ~ Pachinko! (USA)¬pachinko¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AA9425 (USA) ~ 26 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pickaxe Pete (Euro) ~ Pick Axe Pete! (USA)¬pickaxe¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1980¬¬¬¬¬slot:o2_rom,serial:AC9437 (USA) ~ 43 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinball! (USA, Prototype)¬pinball¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,programmer:Don McGuiness¬0¬1¬<IPS>¬</IPS>¬¬¬
+Plantage ~ Play Tag (Euro, Prototype)¬playtag¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Electronic Billiards (Euro) ~ Pocket Billiards! (USA)¬billiard¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1978¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AC9424 (USA) ~ 35 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Billard Amricain (Fra)¬billamer¬billiard¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1978¬¬¬¬¬slot:o2_rom,programmer:Ed Averett¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye (Euro)¬popeye¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom,programmer:Gil Williamson and Charles Dear¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye (Bra)¬popeyeb¬popeye¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom,programmer:Gil Williamson and Charles Dear¬0¬1¬<IPS>¬</IPS>¬¬¬
+Power Lords (USA)¬powerlrd¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,usage:Uses the 2nd joystick,serial:AC9448¬0¬1¬<IPS>¬</IPS>¬¬¬
+Q*bert (Euro)¬qbert¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom,programmer:Gil Williamson and Charles Dear¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quest for the Rings (Euro, USA)¬quest¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AC9429 (USA) ~ 42 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+La Qute des Anneux (Fra)¬laquete¬quest¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1982¬¬¬¬¬slot:o2_rom,programmer:Ed Averett¬0¬1¬<IPS>¬</IPS>¬¬¬
+Baro Vermelho! (Bra)¬battle¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Red Baron (Euro, Prototype)¬baron¬battle¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robot City (Euro, Prototype)¬robot¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Samurai (Euro)¬samurai¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1980¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:15¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynasty! (USA)¬dynasty¬samurai¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AK9421¬0¬1¬<IPS>¬</IPS>¬¬¬
+Satellite Attack (Euro)¬satellit¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:34¬0¬1¬<IPS>¬</IPS>¬¬¬
+UFO! (USA)¬ufo¬satellit¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1982¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AB9430¬0¬1¬<IPS>¬</IPS>¬¬¬
+Syracuse (Fra)¬syracuse¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Jopac¬1981¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Secret of the Pharaohs (Euro)¬pharaohs¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,serial:21¬0¬1¬<IPS>¬</IPS>¬¬¬
+O Segredo do Fara! (Bra)¬farao¬pharaohs¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shark Hunter (Euro, Prototype)¬shark¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬198?¬¬¬¬¬slot:o2_rom,developer:Graham Conduit¬0¬1¬<IPS>¬</IPS>¬¬¬
+Race/Spin-Out/Cryptogram (Euro) ~ Speedway/Spin-Out/Crypto-logic (USA)¬3rcsocpt¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for Race/Speedway, press 2 for 3-lap Spin-out, press 4 for 15-lap Spin-out, press 5 for Cryptogram/Crypto-logic,serial:AC9400 (USA) ~ 1 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Course de Voitures/Autodrome/Cryptogramme (Fra)¬3csaucpt¬3rcsocpt¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1978¬¬¬¬¬slot:o2_rom,usage:Press 1 for Course de Voitures, press 2 for 3-lap Autodrome, press 4 for 15-lap Autodrome, press 5 for Cryptogramme¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spider-Man (Euro, Prototype)¬spider¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬198?¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Stone Sling (Euro)¬stone¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1981¬¬¬¬¬slot:o2_rom,programmer:Robert L. Cheezem,serial:20¬0¬1¬<IPS>¬</IPS>¬¬¬
+Smithereens! (USA)¬smither¬stone¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Robert L. Cheezem,serial:AC9441¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Bee (Euro)¬superbee¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬GST Video¬1983¬¬¬¬¬slot:o2_rom,programmer:Mick Rouse,serial:50¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Bee! (Bra)¬superbeeb¬superbee¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Cobra (Euro)¬cobra¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Cobra (Bra)¬cobrab¬cobra¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬1983¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Take the Money and Run (Euro) ~ Take the Money and Run! (USA)¬moneyrun¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1978¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AJ9412 (USA) ~ 12 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prendre l'Argent et Fuir (Fra)¬prendre¬moneyrun¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1978¬¬¬¬¬slot:o2_rom,programmer:Ed Averett¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flipper Game (Euro) ~ Thunderball! (USA)¬flipper¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1979¬¬¬¬¬slot:o2_rom,serial:AK9415 (USA) ~ 24 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flipper (Fra)¬flipperf¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1980¬¬¬¬¬slot:o2_rom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Turtles (Euro)¬turtles¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1982¬¬¬¬¬slot:o2_rom,programmer:Jim Butler,serial:49¬0¬1¬<IPS>¬</IPS>¬¬¬
+Turtles (USA)¬turtlesu¬turtles¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1983¬¬¬¬¬slot:o2_rom,programmer:Jim Butler,serial:AC9446¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tutankham (Euro, Prototype)¬tutank¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Parker Brothers¬198?¬¬¬¬¬slot:o2_rom,programmer:Gil Williamson and Charles Dear¬0¬1¬<IPS>¬</IPS>¬¬¬
+Electronic Volleyball (Euro) ~ Volleyball! (USA)¬volley¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips (Euro) ~ Magnavox (USA)¬1979¬¬¬¬¬slot:o2_rom,programmer:Ed Averett,serial:AA9422 (USA) ~ 28 (Euro)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Volleyball (Fra)¬volleyf¬volley¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Radiola¬1979¬¬¬¬¬slot:o2_rom,programmer:Ed Averett¬0¬1¬<IPS>¬</IPS>¬¬¬
+Battlefield (Euro) ~ War of Nerves! (USA)¬battlef¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Philips¬1979¬¬¬¬¬slot:o2_rom,serial:AK9417 (USA) ~ 30 (Euro),programmer:Ed Averett¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kill the Attacking Aliens¬ktaa¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬<homebrew>¬2003¬¬¬¬¬slot:o2_rom12,programmer:Soeren Gust¬0¬1¬<IPS>¬</IPS>¬¬¬
+Planet Lander¬plander¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬<homebrew>¬2004¬¬¬¬¬slot:o2_rom,programmer:Ted Szczypiorski¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr. Roboto!¬mrroboto¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬<homebrew>¬2006¬¬¬¬¬slot:o2_rom,programmer:Ted Szczypiorski¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puzzle Piece Panic!¬ppp¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬<homebrew>¬2007¬¬¬¬¬slot:o2_rom,programmer:Ted Szczypiorski¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Voice¬voice¬¬¬./qp.exe¬Retroarch Magnavox Odyssey 2 -SOFTLIST odyssey2 (MAME)¬Magnavox¬1979?¬¬¬¬¬slot:o2_voice¬0¬1¬<IPS>¬</IPS>¬¬¬

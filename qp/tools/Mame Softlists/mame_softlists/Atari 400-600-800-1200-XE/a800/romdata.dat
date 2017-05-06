@@ -1,0 +1,399 @@
+ROM DataFile Version : 1.1
+400/800 SALT Diagnostic Cartridge v1.00¬salt100¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+400/800 SALT Diagnostic Cartridge v2.04¬salt204¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1981¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+400/800 SALT Diagnostic Cartridge v2.05¬salt205¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:TE15644¬0¬1¬<IPS>¬</IPS>¬¬¬
+600xl/800xl SALT Diagnostic Cartridge vSE.02¬saltse02¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+810 Diagnostic Cartridge¬810diag¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:FD100006¬0¬1¬<IPS>¬</IPS>¬¬¬
+1400 Super SALT Diagnostic Cartridge (Rev.C01)¬1400salt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+3-D Tic-Tac-Toe¬3dtictac¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Abracadabra¬abracada¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬TG Software¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+ACE-80XL: Eighty Column Display for Atari Computers v1.1¬ace80xl¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Amiable Computer Enhancements¬1985¬¬¬¬¬slot:a800_ossm091,serial:DT-80¬0¬1¬<IPS>¬</IPS>¬¬¬
+DT-80: Eighty Column Dumb Terminal for the ATR-8000¬dt80¬ace80xl¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Amiable Computer Enhancements¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Action! Programming Language v3.6¬action36¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_ossm091¬0¬1¬<IPS>¬</IPS>¬¬¬
+Action! Programming Language v3.6 (Alt)¬action36a¬action36¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_oss034m¬0¬1¬<IPS>¬</IPS>¬¬¬
+Action! Programming Language v3.5¬action35¬action36¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_oss043m¬0¬1¬<IPS>¬</IPS>¬¬¬
+Adventure Creator¬advcrtor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1984¬¬¬¬¬slot:a800_16k,serial:ADV-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alf in the Color Caves¬alfclrcv¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1984¬¬¬¬¬slot:a800_16k,developer:Joyce Hakansson Associates, Inc,serial:ALF-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atarilab Light Module¬alight¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:AED80014¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atarilab Temperature Module¬atemp¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:AED80013¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Ambush¬alienamb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬DANA¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Garden¬alngrden¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1982¬¬¬¬¬slot:a800_8k,serial:544R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alpha Shield¬alphashd¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1983¬¬¬¬¬slot:a800_8k,serial:33022¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alphabet Zoo¬alphazoo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_16k,serial:ABZ-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Animated Puzzle (Prototype)¬animpuzl¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ant Eater¬anteater¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_8k,serial:05023¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ant Eater (Earlier Version)¬anteatra¬anteater¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_8k,serial:05023¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arex (Pirate)¬arex¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Adventure International¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Assembler Editor Computing Language¬asmedit¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1980¬¬¬¬¬slot:a800_8k,serial:CXL4003, RXG4003 (GER)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Editor Assembler Computing Language¬editasm¬asmedit¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4003¬0¬1¬<IPS>¬</IPS>¬¬¬
+AST 2000¬ast2k¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬<unknown>¬19??¬¬¬¬¬slot:N/A¬0¬1¬<IPS>¬</IPS>¬¬¬
+AST (Atari Super Turbo) for Atari XC12¬ast1¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari Studio¬1988¬¬¬¬¬slot:a800_phoenix¬0¬1¬<IPS>¬</IPS>¬¬¬
+AST (Atari Super Turbo) for Atari 1010¬ast2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari Studio¬1988¬¬¬¬¬slot:a800_phoenix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroids¬asteroid¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1981¬¬¬¬¬slot:a800_8k,serial:CXL4013,usage:3 or 4 player gameplay available only on 400/800 systems¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Chase¬achase¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Exidy¬1982¬¬¬¬¬slot:a800_16k,developer:First Star¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Chase (Re-Badge)¬achase1¬achase¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_16k,developer:First Star,serial:1190¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Grover¬astrgrvr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0502,usage:Keyboard overlay was supplied with cartridge¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari BASIC Programming Language (Rev. C)¬basicc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1986¬¬¬¬¬slot:a800_8k,serial:RX8002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari BASIC Programming Language (Rev. B)¬basicb¬basicc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari BASIC Programming Language (Rev. A)¬basica¬basicc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari LOGO Computing Language¬alogo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8032¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atari LOGO Computing Language (Fra)¬alogof¬alogo¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RXF80??¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microsoft BASIC II Programming Language¬msbasic2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬serial:RX8035¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariArtist¬aartist¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬peripheral:cx77_touch,slot:a800_16k,serial:RX8053¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariWriter (Rev. C)¬awriterc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RX8084¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariWriter (Rev. B)¬awriterb¬awriterc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:RX8084¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariWriter (Rev. A)¬awritera¬awriterc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:RX8084¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariTexte (Fra)¬atexte¬awriterc¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RXF8036¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariTexte (Fra, Prototype)¬atexte1¬awriterc¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RXF8036¬0¬1¬<IPS>¬</IPS>¬¬¬
+Atlantis¬atlantis¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Imagic¬1983¬¬¬¬¬slot:a800_8k,serial:720125-1A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attack at EP-CYG-4¬epcyg4¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attack of the Mutant Camels¬mtntcmls¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬HES¬1983¬¬¬¬¬slot:a800_8k,serial:C518¬0¬1¬<IPS>¬</IPS>¬¬¬
+AtariGraphics¬agraphcs¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,peripheral:cx75_pen,serial:RX8054¬0¬1¬<IPS>¬</IPS>¬¬¬
+Baseball¬baseball¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬InHome¬1983¬¬¬¬¬slot:a800_16k,serial:BR1001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic XE Programming Language v7.2¬basxe72¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic XE Programming Language v4.1¬basxe41¬basxe72¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1985¬¬¬¬¬slot:a800_ossm091¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic XL Programming Language v1.03¬bxl103¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_ossm091¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic XL Programming Language v1.02¬bxl102¬bxl103¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_oss034m¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic XL Programming Language v1.02 (Alt)¬bxl102a¬bxl103¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1983¬¬¬¬¬slot:a800_oss043m¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basketball¬bsktball¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4004,usage:3 or 4 player gameplay available only on 400/800 systems¬0¬1¬<IPS>¬</IPS>¬¬¬
+BC's Quest for Tires¬bcquest¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1983¬¬¬¬¬slot:a800_16k,serial:OTL-201¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beamrider¬beamridr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CA-009-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+BearJam (Fixed)¬bearjamf¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10031A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Berzerk (Prototype)¬berzerk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Big Bird's Funhouse¬bigbrdfh¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0505,usage:Keyboard overlay was supplied with cartridge¬0¬1¬<IPS>¬</IPS>¬¬¬
+Big Bird's Special Delivery¬bigbrdsd¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0109¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blaster (Prototype)¬blaster¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Williams¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boulder Dash¬bdash¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬First Star¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boulders and Bombs¬bldrbmbs¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1982¬¬¬¬¬slot:a800_8k,serial:4L-2540¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bounty Bob Strikes Back!¬bbsb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Big Five Software¬1984¬¬¬¬¬slot:a800_bbsb¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bounty Bob Strikes Back! (Alt)¬bbsba¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Big Five Software¬1984¬¬¬¬¬slot:a800_bbsb¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bristles¬bristles¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬First Star¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Buck Rogers - Planet of Zoom¬buckrog¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1983¬¬¬¬¬slot:a800_16k,serial:005-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Captain Beeble¬cptnbebl¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬InHome¬1983¬¬¬¬¬slot:a800_16k,serial:CR1002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Carnival Massacre¬carnmass¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THB12011¬0¬1¬<IPS>¬</IPS>¬¬¬
+Carnival Massacre (Earlier Version)¬carnmassa¬carnmass¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THB12011¬0¬1¬<IPS>¬</IPS>¬¬¬
+Turbo Blizzard¬turboblz¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬<unknown>¬199?¬¬¬¬¬slot:a800_blizzard,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge Turbo 2000 v3.16¬cturbo2k¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Info-Cell¬199?¬¬¬¬¬slot:a800_blizzard,developer:Pawel Mironczuk,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge dla Turbo 2000 v1.0¬turbo2k¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬DOMAIN SOFT¬1991¬¬¬¬¬slot:a800_blizzard,developer:Tomasz Rolewski,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge dla Turbo 2000 v1.0 (Alt)¬turbo2ka¬turbo2k¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬DOMAIN SOFT¬1991¬¬¬¬¬slot:a800_blizzard,developer:Tomasz Rolewski,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge Systemowy Turbo 2000 (v.1)¬turbo2k1¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬ROBOsoft¬1991¬¬¬¬¬slot:a800_blizzard,developer:Tomasz Rolewski,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge Systemowy Turbo 2000 (v.2)¬turbo2k2¬turbo2k1¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬ROBOsoft¬1991¬¬¬¬¬slot:a800_blizzard,developer:Tomasz Rolewski,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge System Turbo 2000 (JK Soft)¬jturbo2k¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬JK Soft¬1991¬¬¬¬¬slot:a800_blizzard,developer:Bartek Selinger,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cartridge System Turbo 2000¬sturbo2k¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Bartek Selinger¬1991¬¬¬¬¬slot:a800_blizzard,usage:Requires Lower-Silesian Turbo 2000 hardware modification installed in a tape recorder.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Castle Hassle¬castlhas¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k,serial:09-01123¬0¬1¬<IPS>¬</IPS>¬¬¬
+Castles and Keys¬cstlkeys¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_16k,serial:ECPC-13023¬0¬1¬<IPS>¬</IPS>¬¬¬
+Caverns of Mars¬cvrnmars¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:RX8021¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede¬centiped¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:CXL4020¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede (Prototype)¬centpedp¬centiped¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1981¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Checkbook (Prototype)¬checkbk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1980¬¬¬¬¬slot:a800_8k,serial:CXL8001,usage:Requires a special boot disk, currently unavailable.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chess¬chess¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k,serial:1100¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chicken¬chicken¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Des Chiffres et des Lettres (Fra)¬chiffres¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Atari France¬1983¬¬¬¬¬slot:a800_16k,serial:RXF52001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Des Chiffres et des Lettres (Fra, Alt)¬chifresa¬chiffres¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Atari France¬1983¬¬¬¬¬slot:a800_16k,serial:RXF52001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Choplifter!¬choplift¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Brderbund¬1982¬¬¬¬¬slot:a800_16k,serial:ATCART191¬0¬1¬<IPS>¬</IPS>¬¬¬
+Claim Jumper¬clamjmpr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cloudburst¬cloudbst¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬DANA¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+CocoNotes¬coconots¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-9847¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Chess¬compchss¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4009¬0¬1¬<IPS>¬</IPS>¬¬¬
+Compu=Prompt¬cprompt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Compu=Prompt, Inc.¬1987¬¬¬¬¬slot:a800_8k,serial:25078¬0¬1¬<IPS>¬</IPS>¬¬¬
+CPS Super SALT 400/800/XL Diagnostic (Rev. A)¬sprsalt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:FD100335¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computrac 4000-8000¬comptrac¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Computrac¬1983¬¬¬¬¬slot:a800_16k,developer:IDSI¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer War¬compwar¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THA12010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Congo Bongo¬congo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1983¬¬¬¬¬slot:a800_16k,serial:006-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Conquest of the Crown¬conquest¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Lindasoft¬1994¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmic Life¬cosmiclf¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:COS-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmic Tunnels (Prototype)¬cosmtnls¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Datamost¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+CrossFire¬xfire¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1981¬¬¬¬¬slot:a800_8k,serial:CFL-202¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crystal Castles (Prototype)¬ccastles¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crystal Raiders (Reproduction)¬crystalr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Mastertronic¬2001¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Da' Fuzz¬dafuzz¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Danger Ranger (Pirate)¬dngrrngr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Microdeal¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dance Fantasy¬dncfntsy¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Fisher-Price¬1984¬¬¬¬¬slot:a800_8k,serial:DCF-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Decathlon¬decathln¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1983¬¬¬¬¬slot:a800_16k,serial:CC-008-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Defender¬defender¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:CXL4025¬0¬1¬<IPS>¬</IPS>¬¬¬
+Delta Drawing: Learning Program¬dltadraw¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:DLD-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deluxe Invaders¬dxinvadr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_8k,serial:09-01101¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demon Attack¬demonatk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Imagic¬1982¬¬¬¬¬slot:a800_8k,serial:720149-1A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Destiny: The Cruiser (Prototype)¬destiny¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Adventure International¬198?¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diamond Graphic OS v1.0 (Earlier Release)¬diamonde¬diamond3¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Reeve Software¬1988¬¬¬¬¬slot:a800_diamond¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diamond Mine¬diamondm¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k,serial:09-01131¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug¬digdug¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8026¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug (Earlier Release)¬digduga¬digdug¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:RX8026¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong¬dkong¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8031¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong Jr.¬dkongjr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8040¬0¬1¬<IPS>¬</IPS>¬¬¬
+Direct Access¬daccess¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Citibank¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Direct Access (Alt)¬daccessa¬daccess¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Citibank¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Droids¬droids¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬TG Software¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dropzone¬dropzone¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61¬20??¬¬¬¬¬slot:a800_williams,developer:Williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ducks Ahoy!¬duckahoy¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-9889¬0¬1¬<IPS>¬</IPS>¬¬¬
+DynaKillers (Reproduction)¬dynakill¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / GMG¬1999¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Edit 6502¬edit6502¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬LJK¬198?¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+E.T. Phone Home!¬etphone¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8030¬0¬1¬<IPS>¬</IPS>¬¬¬
+Eastern Front - 1941¬eastfrnt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k,serial:RX8039¬0¬1¬<IPS>¬</IPS>¬¬¬
+Educational System Master Cartridge¬edusys¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Educational System Master Cartridge (Re-Badged)¬edusysd¬edusys¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Dorsett Educational Systems¬1983¬¬¬¬¬slot:a800_8k,serial:D4001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Embargo¬embargo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Gebelli Software¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ernie's Magic Shapes¬mgcshaps¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0108¬0¬1¬<IPS>¬</IPS>¬¬¬
+Espial¬espial¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Tigervision¬1984¬¬¬¬¬slot:a800_16k,serial:7-012-468¬0¬1¬<IPS>¬</IPS>¬¬¬
+Excelsor (Pirate)¬excelsor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Players¬1986¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Expando-Vision 1 - Weight Control and Exercise¬expando1¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Stimultech¬1983¬¬¬¬¬slot:a800_8k,usage:Expando-Vision hardware device required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Expando-Vision 2 - Control Smoking and Calm Nerves¬expando2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Stimultech¬1983¬¬¬¬¬slot:a800_8k,usage:Expando-Vision hardware device required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Expando-Vision 3 - Stress Control and Positive Thinking¬expando3¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Stimultech¬1983¬¬¬¬¬slot:a800_8k,usage:Expando-Vision hardware device required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Expando-Vision 4 - Control Drinking and Responsibility¬expando4¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Stimultech¬1983¬¬¬¬¬slot:a800_8k,usage:Expando-Vision hardware device required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Express! v1.12¬express¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Orion Micro Systems¬1989¬¬¬¬¬slot:a800_express¬0¬1¬<IPS>¬</IPS>¬¬¬
+FaceMaker¬facemakr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:FMK-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fantastic Voyage¬fvoyage¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1982¬¬¬¬¬slot:a800_8k,serial:33008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fast Eddie¬fasteddy¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1982¬¬¬¬¬slot:a800_8k,serial:33003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Legacy (Text Menu Version)¬flegacy¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RX8067¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Legacy (Graphic Menu Version)¬flegacym¬flegacy¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RX8067¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Legacy (Prototype)¬legacy¬flegacy¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Orbit¬finalorb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1983¬¬¬¬¬slot:a800_8k,serial:3300?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Firebird¬firebird¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Gebelli Software¬1981¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flapper¬flapper¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_16k,serial:ECPC-11023¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flip and Flop¬flipflop¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬First Star¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fort Apoalypse¬fortapoc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fortune Hunter¬forthntr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fraction Fever¬fracfevr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:FRF-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger¬frogger¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k,serial:1110¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger II - Threedeep!¬frogger2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_16k,serial:1290¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fun with Art¬funart¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galaxian¬galaxian¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:CXL4024¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gateway To Apshai¬apshai¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_16k,serial:614R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gold Mine¬goldmine¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬SpectraVideo¬1983¬¬¬¬¬slot:a800_8k,serial:SB-214¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gorf¬gorf¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1981¬¬¬¬¬slot:a800_8k,serial:09-01102¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gridrunner¬gridrunr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬HES¬1983¬¬¬¬¬slot:a800_8k,serial:C712¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gyruss¬gyruss¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_16k,serial:1280¬0¬1¬<IPS>¬</IPS>¬¬¬
+H.E.R.O.¬hero¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CZ-007-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Halftime Battlin' Bands¬batlband¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-9848¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hard Hat Willy¬hardhatw¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬InHome¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hamsoft / Amtor v1.2¬hamtor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Kantronics¬1984¬¬¬¬¬slot:a800_8k,usage:Kantronics interface II required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hamsoft¬hamsoft¬hamtor¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Kantronics¬1982¬¬¬¬¬slot:a800_8k,usage:Kantronics interface II required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ham Text v1.1¬hamtext¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Kantronics¬198?¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Homebase Electronic Banking¬homebase¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Citibank¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hypnotic Land¬hypnland¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Lindasoft¬1992¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+InstaDOS (Pirate)¬instados¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sunmark¬2002¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+INFO/soft 3000 Text Generator v3.3¬is3000¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬INFO/soft¬1986¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+INFO/soft 5000 Graphic Generator v5.3¬is5000¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬INFO/soft¬1986¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+In-Store Demonstration¬stordemo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_16k,serial:CXL4019¬0¬1¬<IPS>¬</IPS>¬¬¬
+James Bond 007¬jbond¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_16k,serial:1380¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jawbreaker II¬jawbrek2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1982¬¬¬¬¬slot:a800_8k,serial:JBL-202¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jinks¬jinks¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Williams¬20??¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Journey to the Planets¬jrnyplnt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k,serial:09-01124¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joust¬joust¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8044¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jr. Pac-Man (Reproduction)¬jrpacman¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Atari¬1997¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumbo Jet Pilot¬jumbojet¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1982¬¬¬¬¬slot:a800_16k,serial:THA12002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumpman Junior¬jmpmanjr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_16k,serial:594R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jungle Hunt¬jungleh¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8049¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Antiks¬kantiks¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software / K-Byte¬1982¬¬¬¬¬slot:a800_8k,serial:M8786¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Kritters (Re-Badged)¬kritterc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1982¬¬¬¬¬slot:a800_8k,serial:M8788¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Kritters¬kritterk¬kritterc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬K-Byte¬1981¬¬¬¬¬slot:a800_8k,serial:ATR1001¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Shout Out (Re-Badged)¬kshootc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1982¬¬¬¬¬slot:a800_8k,serial:M8784¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Razy Shoot Out¬kshootk¬kshootc¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬K-Byte¬1981¬¬¬¬¬slot:a800_8k,serial:ATR1000¬0¬1¬<IPS>¬</IPS>¬¬¬
+K-Star Patrol¬kpatrol¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software / K-Byte¬1982¬¬¬¬¬slot:a800_8k,serial:M8790¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kaboom!¬kaboom¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1983¬¬¬¬¬slot:a800_8k,serial:CZ-002-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kangaroo (Prototype)¬kangaroo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Keystone Kapers¬keykaper¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_8k,serial:CZ-006-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kickback¬kickback¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1982¬¬¬¬¬slot:a800_8k,serial:THB12004¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kids on Keys¬kidskeys¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:KOK-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+KinderComp¬kindcomp¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1982¬¬¬¬¬slot:a800_8k,serial:KDC-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Koala Painter¬kpainter¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Koala¬1983¬¬¬¬¬slot:a800_16k,peripheral:koala_pad,koala_pen,serial:AT00315-001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laser Gates (Pirate)¬lasrgats¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Imagic¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Learning with Leeper¬leeper¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1983¬¬¬¬¬slot:a800_16k,serial:LLL-201¬0¬1¬<IPS>¬</IPS>¬¬¬
+Leo's 'Lectric Paintbrush¬llpaint¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10011A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Leo's 'Lectric Paintbrush (Fixed)¬llpaintf¬llpaint¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10011A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Letter Perfect (40 Column Version)¬lprfct40¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬LJK¬1981¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Letter Perfect (40 Column Version, Alt)¬lprfct40a¬lprfct40¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬LJK¬1981¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Letter Tutor (Prototype)¬lettrtut¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_8k,peripheral:cx75_pen¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lifespan (Prototype)¬lifespan¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Linking Logic¬linklogc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Fisher-Price¬1984¬¬¬¬¬slot:a800_8k,serial:LNL-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Logic Levels¬logiclvl¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Fisher-Price¬1984¬¬¬¬¬slot:a800_8k,serial:LLV-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+LogicMaster¬logcmstr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10042A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+LogicMaster (Fixed)¬logcmstrf¬logcmstr¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10042A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+M*A*S*H¬mash¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox / 20th Century Fox¬1982¬¬¬¬¬slot:a800_8k,serial:ECPC-01033¬0¬1¬<IPS>¬</IPS>¬¬¬
+MAC-65 Macro Assembler v1.02¬mac65102¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1984¬¬¬¬¬slot:a800_oss034m¬0¬1¬<IPS>¬</IPS>¬¬¬
+MAC-65 Macro Assembler v1.01¬mac65101¬mac65102¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1984¬¬¬¬¬slot:a800_ossm091¬0¬1¬<IPS>¬</IPS>¬¬¬
+MAC-65 Macro Assembler v1.00¬mac65100¬mac65102¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬OSS¬1984¬¬¬¬¬slot:a800_oss043m¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 01 (Spa, Pirate)¬mega1¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 02 (Spa, Pirate)¬mega2¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 03 (Spa, Pirate)¬mega3¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 04 (Spa, Pirate)¬mega4¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 05 (Spa, Pirate)¬mega5¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 06 (Spa, Pirate)¬mega6¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 07 (Spa, Pirate)¬mega7¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 08 (Spa, Pirate)¬mega8¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 09 (Spa, Pirate)¬mega9¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 10 (Spa, Pirate)¬mega10¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 11 (Spa, Pirate)¬mega11¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 12 (Spa, Pirate)¬mega12¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 13 (Spa, Pirate)¬mega13¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 14 (Spa, Pirate)¬mega14¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mega Cartridge 15 (Pirate)¬mega15¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Willysoft¬2004¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meteor (Pirate)¬meteor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Germ-Soft¬198?¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Major League Hockey¬hockey¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_8k,serial:THB12009¬0¬1¬<IPS>¬</IPS>¬¬¬
+Master Type¬mstrtype¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Scarborough Systems¬1983¬¬¬¬¬slot:a800_16k,serial:102¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Encounter¬mathenct¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Hsu Software¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Mileage¬mileage¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_8k,serial:75010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Works - Addition¬mworkadd¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Concepts for Darren¬1985¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Works - Subtraction¬mworksub¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Concepts for Darren¬1985¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Matterhorn¬matrhorn¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Tigervision¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+McDonald's Pac-Mac (Beta 2)¬pacmacb2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+McDonald's Pac-Mac (Beta 1)¬pacmacb1¬pacmacb2¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pocket Modem Software v2.08¬pmodem¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬BOT Engineering¬1984¬¬¬¬¬slot:a800_8k,usage:Pocket Modem required¬0¬1¬<IPS>¬</IPS>¬¬¬
+MegaMania¬megmania¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1983¬¬¬¬¬slot:a800_8k,serial:CZ-003-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Memory Manor¬memmanor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Fisher-Price¬1984¬¬¬¬¬slot:a800_8k,serial:MEM-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microfiler¬micfiler¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬MPP¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microcalc XE v2.2 (Mex)¬microcal¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Grupo SITSA¬19??¬¬¬¬¬slot:a800_sitsa¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microprinter System 800¬micprnt8¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬MSI¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microprinter System 400¬micprnt4¬micprnt8¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬MSI¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+MicroIllustrator¬microill¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_16k,serial:10016A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+MicroMaestro¬maestro¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10021A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+MicroMaestro (Fixed)¬maestrof¬maestro¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Chalkboard¬1983¬¬¬¬¬slot:a800_8k,serial:10021A-3,usage:Chalkboard Inc.'s Powerpad Tablet required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Millipede¬milliped¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,serial:RX8048¬0¬1¬<IPS>¬</IPS>¬¬¬
+Millipede (Prototype)¬millpedp¬milliped¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miner 2049er¬mine2049¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Big Five Software¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miner 2049er (Earlier Release)¬min2049e¬mine2049¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Big Five Software¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Missile Command¬missile¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1981¬¬¬¬¬slot:a800_8k,peripheral:trackball,serial:CXL4012¬0¬1¬<IPS>¬</IPS>¬¬¬
+Missile Command+ (Hack)¬missilep¬missile¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬2006¬¬¬¬¬slot:a800_16k,peripheral:trackball¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mogul Maniac¬mogul¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox / Amiga¬1983¬¬¬¬¬slot:a800_16k,serial:ECPC-03220¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monster Maze¬monstrmz¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1982¬¬¬¬¬slot:a800_8k,serial:564R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Montezuma's Revenge (Prototype)¬montezum¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moogles (Pirate)¬moogles¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moon Patrol¬mpatrol¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8052¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mountain King¬mking¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1983¬¬¬¬¬slot:a800_8k,serial:4L-2541¬0¬1¬<IPS>¬</IPS>¬¬¬
+Movie Musical Madness¬madness¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-9849¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr. Do!'s Castle (Prototype)¬docastle¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr. Cool¬mrcool¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1983¬¬¬¬¬slot:a800_8k,serial:MCL-201¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr. TNT¬mrtnt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬HES¬1983¬¬¬¬¬slot:a800_8k,serial:C730¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man¬mspacman¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8043¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man (Green Cherry Version)¬mspacmang¬mspacman¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8043¬0¬1¬<IPS>¬</IPS>¬¬¬
+Multi Fischa (Mex)¬fischa¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Grupo SITSA¬1985¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Music Composer¬composer¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4007¬0¬1¬<IPS>¬</IPS>¬¬¬
+MyDOS v3.116 (Pirate)¬mydos316¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Wordmark¬1985¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Night Strike!¬nitestrk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬TG Software¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Oil's Well¬oilswell¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sierra On-Line¬1983¬¬¬¬¬slot:a800_16k,serial:OWL-801¬0¬1¬<IPS>¬</IPS>¬¬¬
+Orc Attack¬orcattk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THA12008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Orc Attack (Alt)¬orcattka¬orcattk¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THA12008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ozzy's Orchard¬orchard¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬TG Software¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man¬pacman¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:CXL4022¬0¬1¬<IPS>¬</IPS>¬¬¬
+Paddle Jitter Test (Rev. C)¬paddlec¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pastfinder¬pastfind¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CC-104-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Explorer (Prototype)¬explorer¬pastfind¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peanut Butter Panic¬pnutpanc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_8k,serial:4L-0110¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pengo¬pengo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8045¬0¬1¬<IPS>¬</IPS>¬¬¬
+Picnic Paranoia¬picnic¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pilot Computing Language¬pilot¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1980¬¬¬¬¬slot:a800_8k,serial:CXL4018¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pitfall!¬pitfall¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_8k,serial:CZ-004-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pitfall II - Lost Caverns¬pitfall2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CA-011-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pitstop¬pitstop¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_16k,serial:604R¬0¬1¬<IPS>¬</IPS>¬¬¬
+PlatterMania¬platter¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_8k,serial:554R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pole Position¬polepos¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8034¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pool 400¬pool400¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬IDSI¬1982¬¬¬¬¬slot:a800_8k,serial:AC1001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rack 'em Up! (Re-Badged)¬rackemup¬pool400¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye (USA)¬popeye¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_16k,serial:1150¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye (Euro)¬popeyee¬popeye¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_16k,serial:1150¬0¬1¬<IPS>¬</IPS>¬¬¬
+Porky's¬porkys¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox / 20th Century Fox¬1983¬¬¬¬¬slot:a800_16k,serial:ECPC-02033¬0¬1¬<IPS>¬</IPS>¬¬¬
+Powerstar¬powrstar¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Pandora Software¬1985¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Preppie (Reproduction)¬preppie¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Adventure International¬2001¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prevue (Rev. 06)¬prevue¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Prevue Networks¬1991¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Princess and the Frog¬princess¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 1 (Spa, Pirate)¬prisma1¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬199?¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 2 (Spa, Pirate)¬prisma2¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬199?¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 3 (Spa, Pirate)¬prisma3¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 4 (Spa, Pirate)¬prisma4¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 5 (Spa, Pirate)¬prisma5¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma 6 (Spa, Pirate)¬prisma6¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Prisma Super 15-2 (Spa, Pirate)¬prismas¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Prismasoft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pronto - Electronic Banking and Information Service¬pronto¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Pronto¬1985¬¬¬¬¬slot:a800_16k,serial:22680¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pronto - The Home Information System¬prontoa¬pronto¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Pronto¬1983¬¬¬¬¬slot:a800_16k,serial:22680¬0¬1¬<IPS>¬</IPS>¬¬¬
+Protector II¬protctr2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Q*bert¬qbert¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k,serial:1120¬0¬1¬<IPS>¬</IPS>¬¬¬
+Qix¬qix¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k,serial:CXL4027¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rally Speedway¬speedway¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Adventure International¬1983¬¬¬¬¬slot:a800_16k,serial:053-0171¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealSports Football¬rsfootb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8029¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tennis¬tennis¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8042¬0¬1¬<IPS>¬</IPS>¬¬¬
+Risk (Prototype)¬risk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+River Raid¬riveraid¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1983¬¬¬¬¬slot:a800_8k,serial:CZ-001-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+River Rescue¬rivrresc¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1983¬¬¬¬¬slot:a800_16k,serial:THB12005¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robotron 2084¬robotron¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8033¬0¬1¬<IPS>¬</IPS>¬¬¬
+Satan's Hollow (Unreleased)¬satan¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sea Chase¬seachase¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sea Fox¬seafox¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Brderbund¬1982¬¬¬¬¬slot:a800_16k,serial:ATCART193¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sea Horse Hide 'n Seek¬seahorse¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-9890¬0¬1¬<IPS>¬</IPS>¬¬¬
+Serpentine¬serptine¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Brderbund¬1982¬¬¬¬¬slot:a800_8k,serial:ATCART190¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sesame Street Letter-Go-Round¬letter¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0365,usage:Keyboard overlay was supplied with cartridge¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shamus¬shamus¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Silicon Warrior¬siliconw¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Epyx¬1983¬¬¬¬¬slot:a800_16k,serial:664R¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sistema Controlado por Computadora¬sistema¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬ZZ Top Soft¬1992¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sky Writer¬skywritr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k,serial:RX8059¬0¬1¬<IPS>¬</IPS>¬¬¬
+Slime¬slime¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+SmartDOS v6.1D (Pirate)¬smartdos¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Rana Systems¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Smart Terminal v5.0¬smart50¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬MPP¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Smart Terminal v4.1¬smart41¬smart50¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬MPP¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Soccer¬soccer¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1982¬¬¬¬¬slot:a800_8k,serial:THB12003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Invaders¬spaceinv¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1980¬¬¬¬¬slot:a800_8k,serial:CXL4008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Journey¬journey¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k,serial:09-01116¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Shuttle - A Journey Into Space¬shuttle¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1983¬¬¬¬¬slot:a800_16k,serial:CA-012-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spark Bugs¬sprkbugs¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Speedway Blast¬spedwayb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬IDSI¬1982¬¬¬¬¬slot:a800_8k,serial:AC1021¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spider City¬spidcity¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1983¬¬¬¬¬slot:a800_8k,serial:33015¬0¬1¬<IPS>¬</IPS>¬¬¬
+Springer¬springer¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Tigervision¬1983¬¬¬¬¬slot:a800_16k,serial:7-006-400¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spy Hunter¬spyhunt¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1984¬¬¬¬¬slot:a800_16k,serial:011-03,usage:2 joysticks required to play.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Squish 'Em!¬squishem¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Maze¬starmaze¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1984¬¬¬¬¬slot:a800_16k,serial:11-01222¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Raiders¬starraid¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4011¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek - Strategic Operations Simulator¬startrek¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1983¬¬¬¬¬slot:a800_16k,serial:004-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trux (Prototype)¬startrux¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars - Return of the Jedi - Death Star Battle¬jedidsb¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k,serial:1260¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars - The Arcade Game¬starwars¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1984¬¬¬¬¬slot:a800_16k,serial:1340¬0¬1¬<IPS>¬</IPS>¬¬¬
+Stargate (Prototype)¬stargate¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Starion¬starion¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Story Machine¬storymac¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_16k,serial:SMC-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Submarine Commander¬subcomm¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Thorn EMI¬1982¬¬¬¬¬slot:a800_16k,serial:THA12001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Breakout¬sbrkout¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4006¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Cartridge¬sprcart¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Unerring Master¬199?¬¬¬¬¬slot:a800_blizzard,usage:Requires the Atari Super Turbo hardware modification (or compatible ATT, UM) installed in a tape recorder. ¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Cobra¬scobra¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Parker Brothers¬1983¬¬¬¬¬slot:a800_8k,serial:1140¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super E-Burner¬eburner¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CSS¬1992¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Pac-Man (Prototype)¬spacman¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Sketch Graphics Master¬ssketch¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬PPI¬1984¬¬¬¬¬slot:a800_8k,serial:G2300,usage:Personal Peripherals Inc. Super Sketch device required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Synassembler¬synass¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Synapse¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Zaxxon¬szaxxon¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1983¬¬¬¬¬slot:a800_16k,serial:012-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Superman III (Prototype)¬supermn3¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Survival of the Fittest¬survival¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬IDSI¬1982¬¬¬¬¬slot:a800_8k,serial:ID2103¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tamlilan (Hebrew Text Editor)¬tamlilan¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Aram¬19??¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Target Electronic Banking¬target¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬COVIDEA¬1986¬¬¬¬¬slot:a800_16k,usage:Modem required (and a working Chemical Bank service, obviously inactive for decades)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Telelink I¬telelnk1¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1981¬¬¬¬¬slot:a800_8k,serial:CXL4015¬0¬1¬<IPS>¬</IPS>¬¬¬
+Telelink II¬telelnk2¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1982¬¬¬¬¬slot:a800_tlink2,serial:CXL4016¬0¬1¬<IPS>¬</IPS>¬¬¬
+Test Atari 65-130XE R.2¬test65¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1986¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Designer's Pencil¬designer¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CC-102-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Dreadnaught Factor¬dfactor¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_8k,serial:CZ-005-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Das Thera-Med Zahnschutz-Spiel¬theramed¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Henkel Cosmetics¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Last Starfighter (Prototype)¬laststar¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Learning Phone¬phone¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1985¬¬¬¬¬slot:a800_8k,serial:RX8080¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Monkey Wrench II XL¬mwrnchxl¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Eastern House¬1984¬¬¬¬¬slot:a800_8k_right,usage:You must type 'X=USR(32768)' from the BASIC prompt to initialize it.¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Monkey Wrench II¬mwrench2¬mwrnchxl¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Eastern House¬1983¬¬¬¬¬slot:a800_8k_right¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Monkey Wrench II (Alt)¬mwrench2a¬mwrnchxl¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Eastern House¬1983¬¬¬¬¬slot:a800_8k_right¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Monkey Wrench¬mwrench¬mwrnchxl¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Eastern House¬1981¬¬¬¬¬slot:a800_8k_right¬0¬1¬<IPS>¬</IPS>¬¬¬
+Timebound¬timbound¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1984¬¬¬¬¬slot:a800_16k,serial:4L-0111¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topper¬topper¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Track and Field¬trackfld¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_16k,peripheral:trackfld,serial:RX8069¬0¬1¬<IPS>¬</IPS>¬¬¬
+Turbo System¬turbosys¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Dadok¬1993¬¬¬¬¬slot:a800_phoenix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Turmoil¬turmoil¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1982¬¬¬¬¬slot:a800_8k,serial:33005¬0¬1¬<IPS>¬</IPS>¬¬¬
+Trion¬trion¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox / London Software¬1983¬¬¬¬¬slot:a800_16k,serial:ECPC-02213¬0¬1¬<IPS>¬</IPS>¬¬¬
+Twin Pack¬twinpack¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61¬1998¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Typo¬typo¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1982¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Typo Attack¬typoattk¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1984¬¬¬¬¬slot:a800_8k,serial:RX8057¬0¬1¬<IPS>¬</IPS>¬¬¬
+Up for Grabs¬upgrabs¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Spinnaker¬1983¬¬¬¬¬slot:a800_8k,serial:UFG-AT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Up 'n Down¬upndown¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1984¬¬¬¬¬slot:a800_16k,serial:009-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Up Up and Away (Prototype)¬upupaway¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Ringblack Software¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Easel¬videasel¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Atari¬1979¬¬¬¬¬slot:a800_8k,serial:CXL4005¬0¬1¬<IPS>¬</IPS>¬¬¬
+VisiCopy III¬viscopy3¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬JRC¬1993¬¬¬¬¬slot:a800_phoenix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Poker Card Game¬vpoker¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Atari¬1998¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Webster - The Word Game¬webster¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬CBS Software¬1983¬¬¬¬¬slot:a800_8k,serial:4L-9700¬0¬1¬<IPS>¬</IPS>¬¬¬
+Weltraumkolonie (Ger)¬weltraum¬¬¬./qp.exe¬MAME Atari 800 (PAL) -SOFTLIST a800¬Spinnaker / Ravensburger¬1984¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Whiz Kid¬whizkid¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Romox¬1983¬¬¬¬¬slot:a800_8k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizard of Wor¬wow¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Roklan¬1983¬¬¬¬¬slot:a800_16k¬0¬1¬<IPS>¬</IPS>¬¬¬
+Worm War 1¬wormwar¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sirius¬1982¬¬¬¬¬slot:a800_8k,serial:33002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zaxxon¬zaxxon¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Sega¬1983¬¬¬¬¬slot:a800_16k,serial:008-03¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zenji¬zenji¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_8k,serial:CZ-010-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zone Ranger¬zonerngr¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Activision¬1984¬¬¬¬¬slot:a800_16k,serial:CC-101-04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zybex¬zybex¬¬¬./qp.exe¬MAME Atari 800 (NTSC) -SOFTLIST a800¬Video 61 / Williams¬1999¬¬¬¬¬slot:a800_williams¬0¬1¬<IPS>¬</IPS>¬¬¬

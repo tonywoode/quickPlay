@@ -1,0 +1,220 @@
+ROM DataFile Version : 1.1
+BASIC Interpreter 1Z-013B V1.0A / Applications V1.0A¬1z013b¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1983¬¬¬¬¬part_id:Side B: MZ-1P01 Demo (Color Plotter),usage:Load Side A first, then your Side B program¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Interpreter 1Z-013B V1.0A (Swe)¬1z013bswe¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+10 Games for MZ-700 (Alt)¬10gamesa¬10games¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1983?¬¬¬¬¬part_id:Tape 2 Side B¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Interpreter 1Z-013B V1.0A / Applications V1.0A (Alt)¬1z013b_a¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1983¬¬¬¬¬part_id:Applications V1.0A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basic 700/4¬basic700¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬R. & L. Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC GDP9-BA¬gdp9ba¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC SUTAPEBA¬sutapeba¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Interpreteur K-BASIC 5 (Fra)¬kbasic5¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Bernard Kokanosky¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kuma Interpreter¬kuma¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+T-BASIC+BM+PK(+) (Ned)¬tbasic¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬MZ-GG¬19??¬¬¬¬¬part_id:Documentation¬0¬1¬<IPS>¬</IPS>¬¬¬
+PCG BASIC Interpreter (Ger)¬pcgbasic¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Ursoft¬19??¬¬¬¬¬usage:PCG-700 supported¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC-Interpreter for Parallel Printer (Ger)¬cent2¬1z013b¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Multisoft¬1983¬¬¬¬¬part_id:Documentation,usage:Load documentation from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centronics Interface Utility (Ger)¬cent2dsk¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Multisoft¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+S-BASIC Compiler¬sbasicc¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+S-BASIC Compiler (Ned)¬sbasiccdutch1¬sbasicc¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Marius H. Velimaat¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+S-BASIC Compiler (Ned, Printer Version)¬sbasiccdutch2¬sbasicc¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Marius H. Velimaat¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XBC F V1.02¬xbc¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XBC F V1.02 (Modified)¬xbcmod¬xbc¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬MiKrSoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Sharp MZ-700 Tutorial¬mz700tut¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+6502 Interpreter¬6502i¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+S-BASIC/Vertaler BASICODE-2 (Ned)¬basicod2¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Interpreter PASCAL SP-4015¬sp4015¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Interpreter PASCAL SP-4015:C¬sp4015c¬sp4015¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Interpreter PASCAL SP-4015 (Quick disk hack)¬sp4015qd¬sp4015¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hisoft PASCAL 4T¬hspascal¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hisoft¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+RealFortran¬realfort¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SOSZ80 Fortran V1.0¬sosz80¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MZ-700 Forth¬mz7forth¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharpsoft¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Knight's MZ-700 Forth¬knightsf¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Knight's MZ-700 Forth (Modified)¬knightsfmod¬knightsf¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bienvenue sous LOGO V3.0 (Fra)¬logov30¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1987?¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Z80 Disassembleur V1.1 (Fra)¬z80dis¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+URAS-Z80 V1.1 (Ger)¬urasz80¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+ML SP-8002¬mlsp8002¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spectrum Debugger V1.1R (Cz)¬specdbug¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Proton Software¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sub-Monitor 700¬smonitor¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SUTAM1F¬sutam1f¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SUTAMC9¬sutamc9¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SUTAPEMO¬sutapemo¬sutamc9¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monitor (BASIC)¬monitor¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬R. Scharnagl?¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monitor (Machine code)¬monitor2¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬R. Scharnagl?¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monitor 6¬monitor6¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zen¬zen¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Multisoft¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+3-D Graphikpaket (Ger)¬3dgraph¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+MZ700 Plot (Ger)¬plot¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬RK-Datentechnik¬1985¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+PCGAID-700 V1.0 (Jpn)¬pcgaid¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬HAL Laboratory¬19??¬¬¬¬¬usage:PCG-700 required¬0¬1¬<IPS>¬</IPS>¬¬¬
+PCGAID-700 V1.0 (Euro)¬pcgaide¬pcgaid¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬HAL Laboratory¬19??¬¬¬¬¬usage:PCG-700 required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Multicopy-BV (Ger)¬copy¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+C-Master (Ger)¬cmaster¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Ursoft¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+DBP701+ Datenbanksystem (Ger)¬dbp701¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Kersten & Partner¬1982¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SPA Data (Ger)¬spadata¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1983¬¬¬¬¬serial:MZ-7B55,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Database Filer¬dbfiler¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7B50,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Easidata V1.3 (Ger)¬easidata¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1983¬¬¬¬¬serial:MZ-7B53¬0¬1¬<IPS>¬</IPS>¬¬¬
+Datei Universal (Ger)¬dateiuni¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kalender¬kalender¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Michael Gartner¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apollo Word Processor V2.7¬apollowp¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Apollo Software¬1982¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mole Attack¬moleatck¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬HAL Laboratory¬1982¬¬¬¬¬usage:PCG-700 required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tomahawk (Ger)¬tomahawk¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hiroshi Masuko¬19??¬¬¬¬¬usage:PCG-700 optional¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lissajou-Figur (Ger)¬lissajou¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from PCG-BASIC,usage:PCG-700 required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sin-Berg (Ger)¬sinberg¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from PCG-BASIC,usage:PCG-700 required¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apollo Word Processor V2.8 (Ned)¬apollowp28¬apollowp¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬MZ-GG¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+3D Car Race¬3dcarrac¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Raummhle (Ger)¬raumuhle¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+3-D Way Out¬3dwayout¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ace Racer¬aceracer¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G088,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Advanced Chess¬advchess¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-7G073¬0¬1¬<IPS>¬</IPS>¬¬¬
+Airbus A 310¬airbus¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aliens (Ned)¬aliens¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬G.J. Krijnen¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Antares (Ger)¬antares¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Amityville (Fra)¬amity¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Anthill Raiders¬anthill¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G082,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Apprentissage des Nombres (Fra)¬nombres¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Asteroid Belt¬astbelt¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G055,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro-Blaster¬astrobla¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G056¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attack-A-Tank¬atkatank¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Backgammon¬backgamm¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G052¬0¬1¬<IPS>¬</IPS>¬¬¬
+Base Zero¬basezero¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Biorhythmus (Ger)¬bio700¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Ursoft¬1983¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blast Off¬blastoff¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bloktekeningen¬bloktek¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bomber Man¬bombman¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hudson Soft¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boulder Dash (Fra)¬bouldash¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Breuken 1 (Ned)¬breuken1¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Roger Deneweth?¬1984?¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Calendrier (Fra)¬calendri¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cannon Ball¬cannball¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Catacombes (Fra)¬catacomb¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Catacombes+ (Fra)¬cataplus¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Caterpillar Crawl and Counter Reverse¬ccacr¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07COUN,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Club Golf¬clubgolf¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G062,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Codewoord (Ned)¬codeword¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Commando Plain¬complain¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Competitie (Ned)¬competit¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Comput-A-Slot¬compslot¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-7G072,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computertekenen (Ned)¬comptek¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Connect Four¬connect4¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-7G105¬0¬1¬<IPS>¬</IPS>¬¬¬
+Conveyor¬conveyor¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1983¬¬¬¬¬serial:MZ-7G102,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cribbage¬cribbage¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07CRIB,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Croaker¬croaker¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G092,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cyfax¬cyfax¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demasaso (Fra)¬demasaso¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1985¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Descente aux Enfers (Fra)¬descente¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Destructeurs (Fra)¬destruct¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Domination¬dominat¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G096,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Gorilla¬dgorilla¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Tecno Soft¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Exploding Atoms¬explatom¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07EXPL,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fantastic Grove¬fantgrov¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fighter Command¬fightcom¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G059,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire!!!¬fire¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G093,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fisherman Fred¬fishfred¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flugsimulator (Ger)¬flugsim¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬HOBRA Soft¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Full Speed¬fulspeed¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gate Crasher and Jungle Jinks¬gcajj¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07GATE,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Geboortedatum (Ned)¬geboorte¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Global War III¬globwar3¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Globule (Fra)¬globule¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gobbler¬gobbler¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G049¬0¬1¬<IPS>¬</IPS>¬¬¬
+Greedy Gremlins¬greedyg¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07GREE¬0¬1¬<IPS>¬</IPS>¬¬¬
+Grid¬grid¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Guerre Spatiale (Fra)¬guerre¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+HDC Orgel¬hdcorgel¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hunchy¬hunchy¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G052¬0¬1¬<IPS>¬</IPS>¬¬¬
+Impossible Mission (Fra)¬impomiss¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Isola (Fra)¬isola¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jeux Intergalactiques (Fra)¬jeuxint¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumping-Runner (Fra)¬jumprun¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kamertje Verhuren (Ned)¬kamertje¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬NOS¬1987¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kasboek (Ned)¬kasboek¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬NOS¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kentucky Derby¬kentucky¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC,serial:MZ-7G091¬0¬1¬<IPS>¬</IPS>¬¬¬
+King Solomon's Mines¬ksmines¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬part_id:Program (BASIC),usage:Load from BASIC,serial:MZ-8G047¬0¬1¬<IPS>¬</IPS>¬¬¬
+Knight's Castle¬kcastle¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+UFO (Knight's Computers)¬kcufo¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07UFO¬0¬1¬<IPS>¬</IPS>¬¬¬
+UFO (Solo Software)¬ssufo¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G057¬0¬1¬<IPS>¬</IPS>¬¬¬
+Trucker¬trucker¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lady Bug¬ladybug¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Le Cadre Diabolique¬diaboliq¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Le Mans¬lemans¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lightning Patrol¬lightpat¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-7G085,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lijnenspel¬lijnspel¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mac Pac¬macpac¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Ursoft¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mad Maze¬madmaze¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Manza (Fra)¬manza¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mastermind¬mstrmind¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Matpendu (Fra)¬matpendu¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maze Escape¬mazeesc¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G051¬0¬1¬<IPS>¬</IPS>¬¬¬
+Messing (Ned)¬messing¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mission A¬missiona¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mission Alpha (Fra)¬misalpha¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mission Delta (Fra)¬misdelta¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Morpion (Fra)¬morpion¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Morpius (Fra)¬morpius¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moty¬moty¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Muc Mac¬mucmac¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Musique Suisse¬musiques¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mystery of Munroe Manor¬momm¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬19??¬¬¬¬¬serial:MZ-8G048,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+MZ-700 Klavier (Ger)¬klavier¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬MZ-Verlag¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nakamoto¬nakamoto¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nibbler¬nibbler¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1984¬¬¬¬¬part_id:Part 2,usage:Load Part 1 first, then load Part 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nightmare Park¬nighpark¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬part_id:Part 2,serial:MZ-7G060,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nightmare Park (Bad Dump?)¬nighparkb¬nighpark¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G060,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nite Flite¬niteflit¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1984¬¬¬¬¬serial:MZ-7G071,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Octopussy (Fra)¬octopuss¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mac Pac (Ger)¬macpacg¬macpac¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬DEVIL-Soft¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Panique (Fra)¬panique¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Para Shoot¬parashot¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1983¬¬¬¬¬serial:MZ-7G087,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Patrol Alpha¬patalpha¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Le Pendu (Fra)¬pendu¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Poker¬poker¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07POKE,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Printerfiguren¬printfig¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puissance 4 (Fra)¬puiss4¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puzzle (Fra)¬puzzle¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Qixi¬qixi¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rebond (Fra)¬rebond¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rescue Plane¬rescplan¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reverse¬reverse¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hudson Soft¬1982¬¬¬¬¬serial:MZ-7G044,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rolls-Royce 1906 Silverghost (Ger?)¬rr1906¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Safecracker¬safecrak¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schach 700 (Ger)¬schac700¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hobra Soft¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shogun¬shogun¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sky Chaos¬skychaos¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Soudard (Fra)¬soudard¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+South Pacific¬spacific¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Suicide Run and Space Fighter¬srasf¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬part_id:Space Fighter,serial:MZ-07SUIC,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Bandit¬suprbndt¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Guerilla¬guerilla¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Squash (Ger)¬squash¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Fighter¬starfght¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek¬startrek¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G100,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Strip Poker¬spoker¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Submarine Shooter¬subshoot¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Hudson Soft¬1983¬¬¬¬¬serial:MZ-7G045¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Biorhythm¬biorythm¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1983¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Helicopter¬suprheli¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Nag Soft¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Superior Space Invader¬supinvdr¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬P. Dormand¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Spy (Ned)¬superspy¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Erik van Hattum¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lichtkrantspel (Ned)¬suprtypn¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Henk Barten¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Vrac (Fra)¬suprvrac¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Systeme Expert (Fra)¬sysxpert¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1989¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Telefontarieven (Ned)¬telefon¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬NOS¬1987?¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Three Card Brag¬3crdbrag¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G090,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tape Worm¬tapeworm¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tracker¬tracker¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Solo Software¬1982¬¬¬¬¬serial:MZ-7G089,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Typevaardigheid (Ned)¬typen¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Henk Barten¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Urania II (Fra)¬urania2¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1984¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vicious Viper¬vviper¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬19??¬¬¬¬¬serial:MZ-07VICI,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vol 676 (Fra)¬vol676¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬1986¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vragend Maken (Ned)¬vragend¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬NOS¬1984?¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizards Castle¬wizcastl¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Knight's Computers¬1983¬¬¬¬¬serial:MZ-07WIZA,usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wonder House (Jpn)¬wndrhous¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Task Forts Kochi¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wooky¬wooky¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬BBG Software¬19??¬¬¬¬¬part_id:Wooky II¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xanagrams¬xanagram¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Dean Software¬1983¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Y.A.M.S. (Fra)¬yams¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Jean Franois Campan¬19??¬¬¬¬¬usage:Load from BASIC¬0¬1¬<IPS>¬</IPS>¬¬¬
+10 Games for MZ-700¬10games¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1983?¬¬¬¬¬part_id:Tape 2 Side B: Snake & Snake¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk BASIC Interpreter MZ-2Z009E V1.0A¬mz2z009e¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Bernd Krueger-Knauber?¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Interpreter MZ-5Z008 V1.0A¬mz5z008¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬<unknown>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk BASIC Interpreter MZ-2Z009E V1.0A (Disk?)¬mz2z009ed¬mz2z009e¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+K&P 80-column Disk Basic V3.54 (Ger)¬kp80c354¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Kersten & Partner¬19??¬¬¬¬¬usage:K&P 80-column card supported¬0¬1¬<IPS>¬</IPS>¬¬¬
+K&P 80-column Disk Basic V3.55 (Ger)¬kp80c355¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Kersten & Partner¬19??¬¬¬¬¬usage:K&P 80-column card supported¬0¬1¬<IPS>¬</IPS>¬¬¬
+K&P BASIC V1.04¬kpbasic¬¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Kersten & Partner¬1984¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Interpreter MZ-5Z008 V1.0A (Quick Disk?)¬mz5z008qd¬mz5z008¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬Sharp Corporation¬1984¬¬¬¬¬part_id:Side B: Utilities - File Convert Utility V1.2A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Uni GG BASIC¬unigg¬mz5z008¬¬./qp.exe¬Retroarch Sharp MZ-700 -SOFTLIST mz700_cass (MAME)¬MZ-GG¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬

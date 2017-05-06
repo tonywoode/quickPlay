@@ -1,0 +1,9 @@
+ROM DataFile Version : 1.1
+Advanced Electrical Engineering¬aee¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-3007,usage:Load with RUN "DIR", then load program from list¬0¬1¬<IPS>¬</IPS>¬¬¬
+Editor/Assembler¬ea¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments (unreleased)¬1983¬¬¬¬¬pcb:Mechatronic Systems,ic1:27C512,usage:Load with RUN "ALDS"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Finance¬finance¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-3006,usage:Load with RUN "DIR", then load program from list¬0¬1¬<IPS>¬</IPS>¬¬¬
+Games I¬games1¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-3024,usage:Load with RUN "DIR", then load program from list¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mathematics¬maths¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-3009,usage:Load with RUN "DIR", then load program from list¬0¬1¬<IPS>¬</IPS>¬¬¬
+Memo Processor¬memoproc¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬developer:Telos Software Products,serial:SS-3004,usage:Load with RUN "MP"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Learn Pascal¬pascal¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-1001,usage:Load with RUN "PASCAL"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Statistics¬stats¬¬¬./qp.exe¬MAME Texas Instruments Compact Computer 40 -SOFTLIST cc40_cart¬Texas Instruments¬1983¬¬¬¬¬serial:SS-3008,usage:Load with RUN "DIR", then load program from list¬0¬1¬<IPS>¬</IPS>¬¬¬

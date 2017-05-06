@@ -1,0 +1,1226 @@
+ROM DataFile Version : 1.1
+Daewoo CPC-400/CPC-400S¬cpc400¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Daewoo¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+National FS-4600¬fs4600¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬National¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+National FS-4700¬fs4700¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬National¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+iNational FS-5000¬fs5000¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬National¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+National FS-5000 F1/F2¬fs5500¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬National¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Panasonic FS-A1FM¬fsa1fm¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Panasonic¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Philips NMS-8245/NMS-8250/NMS-8255¬nms8245¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Philips NMS-8245F¬nms8245f¬nms8245¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Philips NMS-8280/NMS-8280G¬nms8280¬nms8245¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Philips VG-8230/VG-8235/VG-8240¬vg8230¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Philips VG-8235F¬vg8235f¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-F700D¬hbf700d¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-F700F¬hbf700f¬hbf700d¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-F700P¬hbf700p¬hbf700d¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-F700S¬hbf700s¬hbf700d¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-F900¬hbf900¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony HB-G900P/HB-G900AP¬hbg900p¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arc¬arc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Parallax¬1990¬¬¬¬¬slot:arc¬0¬1¬<IPS>¬</IPS>¬¬¬
+HalNote (Jpn)¬halnote¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬HAL Kenkyuujo¬1987¬¬¬¬¬slot:halnote,mapper:M60002-0125SP¬0¬1¬<IPS>¬</IPS>¬¬¬
+Snatcher (Jpn)¬snatcher¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1988¬¬¬¬¬slot:sound_snatcher¬0¬1¬<IPS>¬</IPS>¬¬¬
+Snatcher (Jpn, Alt Disk 1)¬snatchera¬snatcher¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1988¬¬¬¬¬slot:sound_snatcher¬0¬1¬<IPS>¬</IPS>¬¬¬
+SD Snatcher (Jpn)¬sdsnatch¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1990¬¬¬¬¬slot:sound_sdsnatch¬0¬1¬<IPS>¬</IPS>¬¬¬
+SD Snatcher (Jpn, Alt Disk 1)¬sdsnatcha¬sdsnatch¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1990¬¬¬¬¬slot:sound_sdsnatch¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dai4 no Unit - The 4th Unit (Jpn)¬4thunit¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data West¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The 4th Unit 2 (Jpn)¬4thunit2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data West¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Abunai Tengu Densetsu (Jpn)¬abunaten¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Adventure Tsukuru v1.00 (Jpn)¬advtsuku¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+L'Affaire... (Spa)¬affaire¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+L'Affaire... (Spa, Alt)¬affairea¬affaire¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Agni no Ishi - The Stone of Agni (Jpn)¬agnishi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬HummingBird Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akanbe Dragon (Jpn)¬akandrgn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Winky Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akanbe Dragon (Jpn, Alt)¬akandrgna¬akandrgn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Winky Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akanbe Dragon (Jpn, Alt 2)¬akandrgnb¬akandrgn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Winky Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Albatross 2 - Masters' History (Jpn)¬albatr2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Albatross 2 - Masters' History (Jpn, Alt Disk 2)¬albatr2a¬albatr2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste 2 (Jpn)¬aleste2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste 2 (Jpn, Alt)¬aleste2a¬aleste2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste 2 (Jpn, Alt 2)¬aleste2b¬aleste2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Algeese no Tsubasa (Jpn)¬algtsub¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Algeese no Tsubasa (Jpn, Alt)¬algtsuba¬algtsub¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Algo Wars (Jpn)¬algowars¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+American Success (Jpn)¬amerisuc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Winky Soft¬1989¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+American Success (Jpn, Alt Disk 1)¬amerisuca¬amerisuc¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Winky Soft¬1989¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Angelus (Jpn)¬angelus¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Angelus (Jpn, Alt)¬angelusa¬angelus¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ankoku Shinwa - Yamato Takeru Densetsu (Jpn)¬ankokush¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tokyo Shoseki¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ankoku Shinwa - Yamato Takeru Densetsu (Jpn, Alt)¬ankokusha¬ankokush¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tokyo Shoseki¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aoki Ookami to Shiroki Mejika - Genchou Hishi (Jpn)¬genchohi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aoki Ookami to Shiroki Mejika - Genchou Hishi (Jpn, Alt Disk 2)¬genchohia¬genchohi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aoki Ookami to Shiroki Mejika - Genghis Khan (Jpn)¬genghis¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aoki Ookami to Shiroki Mejika - Genghis Khan (Jpn, Alt Disk 1)¬genghisa¬genghis¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcus (Jpn)¬arcus¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcus (Jpn, Alt)¬arcusa¬arcus¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcus (Jpn, Alt 2)¬arcusb¬arcus¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcus II - Silent Symphony (Jpn)¬arcus2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcus II - Silent Symphony (Jpn, Alt)¬arcus2a¬arcus2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcusyu - Kagerou no Jidai wo Koete (Jpn)¬arcusyu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arcusyu - Kagerou no Jidai wo Koete (Jpn, Alt)¬arcusyua¬arcusyu¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aura Battler Dunbine (Jpn)¬dunbine¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Family Soft¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Balance of Power (Jpn)¬balpower¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Balance of Power (Jpn, Alt)¬balpowera¬balpower¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ball Out (Jpn)¬ballout¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ball Out 2 (Jpn)¬ballout2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bank Buster (Ned)¬bankbust¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eurosoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bank Buster (Ned, Alt)¬bankbusta¬bankbust¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eurosoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bank Buster (Ned, Alt 2)¬bankbustb¬bankbust¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eurosoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barunba (Jpn)¬barunba¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barunba (Jpn, Alt)¬barunbaa¬barunba¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barunba (Jpn, Alt 2)¬barunbab¬barunba¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barunba (Jpn, Alt 3)¬barunbac¬barunba¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bastard (Jpn)¬bastard¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bastard (Jpn, Alt)¬bastarda¬bastard¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Birdy World (Jpn)¬birdywld¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bishoujo Control (Jpn)¬bishocon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bishoujo Control (Jpn, Alt)¬bishocona¬bishocon¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bishoujo Daizukan (Jpn)¬bishodz¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale - Santa Fe¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bishoujo Shashinkan - Moving School + Studio Cut (Jpn)¬bshash2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Block Terminator (Jpn)¬blckterm¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dot Plan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Breaker (Ned)¬breaker¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Breaker (Ned, Alt)¬breakera¬breaker¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Breaker. (Jpn)¬breakerj¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Jast¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burai Joukan (Jpn)¬burai¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Riverhill Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burai Joukan (Jpn, Alt)¬buraia¬burai¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Riverhill Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burai Gekan - Kanketsu Hen (Jpn)¬burai2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brother Industries¬1992¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burai II (Jpn, Alt)¬burai2a¬burai2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brother Industries¬1992¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cal (Jpn)¬cal¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cal 2 (Jpn)¬cal2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Can Can Bunny Superior (Jpn)¬cancanbs¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Cocktail Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Can Can Bunny Spirits (Jpn)¬cancanb4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Cocktail Soft¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Casablanca (Jpn)¬casablan¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Thinking Rabbit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chaos Angels (Jpn)¬chaosang¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chaos Angels (Jpn, Alt)¬chaosanga¬chaosang¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chaos Angels (Jpn, Alt 2)¬chaosangb¬chaosang¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Chess Game 2 (Ned)¬chessgm2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Chess Game 2 (Ned, Alt)¬chessgm2a¬chessgm2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Chess Game 2 (Ned, Alt 2)¬chessgm2b¬chessgm2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Chess Game 2 (Ned, Alt 3)¬chessgm2c¬chessgm2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chopper II (Ned)¬chopper2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chopper II (Ned, Alt)¬chopper2a¬chopper2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuka Taisen (Jpn)¬chukatai¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuka Taisen (Jpn, Alt)¬chukataia¬chukatai¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuka Taisen (Jpn, Alt 2)¬chukataib¬chukatai¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+City Fight (Jpn)¬cityfght¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+City Fight (Jpn, Alt)¬cityfghta¬cityfght¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Columns (Jpn)¬columns¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Columns (Jpn, Alt)¬columnsa¬columns¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Columns (Jpn, Alt 2)¬columnsb¬columns¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Columns (Jpn, Alt 3)¬columnsc¬columns¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmos Club (Jpn)¬cosmoclb¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Jast¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crescent Moon (Jpn)¬cresmoon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson (Jpn)¬crimson¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson (Jpn, Alt)¬crimsona¬crimson¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson II (Jpn)¬crimson2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬XtalSoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson II (Jpn, Alt)¬crimson2a¬crimson2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬XtalSoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson III (Jpn)¬crimson3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬XtalSoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crimson III (Jpn, Alt Disk 1)¬crimson3a¬crimson3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬XtalSoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D' (Jpn)¬ddash¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D' (Jpn, Alt)¬ddasha¬ddash¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D' (Jpn, Alt 2)¬ddashb¬ddash¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Da Vinci (Jpn)¬davinci¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Popcom Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daikoukai Jidai (Jpn)¬daikokai¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku II - Campaign Version (Jpn)¬daisenr2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku II - Campaign Version (Jpn, Alt)¬daisenr2a¬daisenr2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku (Jpn)¬daisenr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku (Jpn, Alt)¬daisenra¬daisenr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku (Jpn, Alt 2)¬daisenrb¬daisenr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daisenryaku (Jpn, Alt 3)¬daisenrc¬daisenr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daiva Story V - The Cup of Soma (Jpn)¬daiva5¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daiva Story V - The Cup of Soma (Jpn, Alt)¬daiva5a¬daiva5¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Daiva Story V - The Cup of Soma (Jpn, Alt 2)¬daiva5b¬daiva5¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dancing Mai (Jpn)¬dancnmai¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dante (Jpn)¬dante¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dante (Jpn, Alt)¬dantea¬dante¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dante 2 (Jpn)¬dante2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1992¬¬¬¬¬part_id:Save Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dante 2 (Jpn, Alt Disk 2)¬dante2a¬dante2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1992¬¬¬¬¬part_id:Save Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Darwin 4078 (Jpn)¬drwn4078¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hudson Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Darwin 4078 (Jpn, Alt)¬drwn4078a¬drwn4078¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hudson Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Darwin 4078 (Jpn, Alt 2)¬drwn4078b¬drwn4078¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hudson Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Ja (Jpn)¬deja¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dead of the Brain - Shiryou no Sakebi (Jpn)¬deadbrn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dead of the Brain - Shiryou no Sakebi (Jpn, Alt)¬deadbrna¬deadbrn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deep Forest (Jpn)¬dforest¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deep Forest (Jpn, Alt)¬dforesta¬dforest¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deep Forest (Jpn, Alt 2)¬dforestb¬dforest¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Deep Forest (Jpn, Alt 3)¬dforestc¬dforest¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 1 - Cybernetic Hi-School (Jpn)¬dennogak¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 1 - Cybernetic Hi-School (Jpn, Alt)¬dennogaka¬dennogak¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 1 - Cybernetic Hi-School (Jpn, Alt 2)¬dennogakb¬dennogak¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 2 - Cybernetic Hi-School Part 2 - Highway Buster (Jpn)¬dennoga2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 2 - Cybernetic Hi-School Part 2 - Highway Buster (Jpn, Alt)¬dennoga2a¬dennoga2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 2 - Cybernetic Hi-School Part 2 - Highway Buster (Jpn, Alt 2)¬dennoga2b¬dennoga2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 3 - Cybernetic Hi-School Part III - Top wo Nerae! (Jpn)¬dennoga3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dennou Gakuen 3 - Cybernetic Hi-School Part III - Top wo Nerae! (Jpn, Alt)¬dennoga3a¬dennoga3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diablo (Jpn)¬diablo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Broderbund Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diablo (Jpn, Alt)¬diabloa¬diablo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Broderbund Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diablo (Jpn, Alt 2)¬diablob¬diablo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Broderbund Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diablo (Jpn, Alt 3)¬diabloc¬diablo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Broderbund Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gdleen - Digan no Maseki (Jpn)¬gdleen¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Artec¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gdleen - Digan no Maseki (Jpn, Alt)¬gdleena¬gdleen¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Artec¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Digger (Ger)¬digger¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data Beutner¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Digger (Ger, Alt)¬diggera¬digger¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data Beutner¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Digger (Ger, Alt 2)¬diggerb¬digger¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data Beutner¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dios (Jpn)¬dios¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dios (Jpn, Alt)¬diosa¬dios¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dios (Jpn, Alt 2)¬diosb¬dios¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+[Dires] - Giger . Loop (Jpn)¬dires¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+[Dires] - Giger . Loop (Jpn, Alt)¬diresa¬dires¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station - Soukan Junbi-0-Go (Jpn)¬ds00¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station - Soukan-1-Go (Jpn)¬ds01¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station - Dai-2-Go (Jpn)¬ds02¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #3 (Jpn)¬ds03¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #4 (Jpn)¬ds04¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #5 (Jpn)¬ds05¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #6 (Jpn)¬ds06¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #7 (Jpn)¬ds07¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #8 (Jpn)¬ds08¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #9 (Jpn)¬ds09¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #10 (Jpn)¬ds10¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #11 (Jpn)¬ds11¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #12 (Jpn)¬ds12¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #13 (Jpn)¬ds13¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #14 (Jpn)¬ds14¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #15 (Jpn)¬ds15¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #16 (Jpn)¬ds16¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #17 (Jpn)¬ds17¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #18 (Jpn)¬ds18¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #19 (Jpn)¬ds19¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #20 (Jpn)¬ds20¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #21 (Jpn)¬ds21¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #22 (Jpn)¬ds22¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #23 (Jpn)¬ds23¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #24 (Jpn)¬ds24¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #25 (Jpn)¬ds25¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #26 (Jpn)¬ds26¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #27 (Jpn)¬ds27¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #28 (Jpn)¬ds28¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #29 (Jpn)¬ds29¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #30 (Jpn)¬ds30¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #31 (Jpn)¬ds31¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station #32 (Jpn)¬ds32¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station Deluxe 1 (Jpn)¬dsdx1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬part_id:Disk 1 - Rune Master II¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station Deluxe 2 (Jpn)¬dsdx2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬part_id:Disk 2 - Youma Kourin Taikenban¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station Deluxe 3 (Jpn)¬dsdx3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬part_id:Disk 2 - Sum Games Soushuu-hen¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station Special 2 (Jpn)¬dssp2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disc Station Special 5 (Jpn)¬dssp5¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Mystery #4 - The Man I Love (Jpn)¬manilove¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Thinking Rabbit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Doki Doki Card League (Jpn)¬dokicard¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Great¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Doki Doki Card League (Jpn, Alt)¬dokicarda¬dokicard¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Great¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Dome (Jpn)¬dome¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Sacom¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dot Designer's Club (Jpn)¬dotdclub¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dot Designer's Club (Jpn, Alt)¬dotdcluba¬dotdclub¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dot Designer's Club (Jpn, Alt 2)¬dotdclubb¬dotdclub¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dr. Stop! (Jpn)¬drstop¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dr. Stop! (Jpn, Alt)¬drstopa¬drstop¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Buster (Jpn)¬dbuster¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Buster (Jpn, Alt)¬dbustera¬dbuster¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon City X Shitei (Jpn)¬drgcityx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon City X Shitei (Jpn, Alt)¬drgcityxa¬drgcityx¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Eyes (Jpn)¬drageyes¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Technopolis Soft¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Knight (Jpn)¬dknight¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Knight (Jpn, Alt)¬dknighta¬dknight¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Knight II (Jpn)¬dknight2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Knight II (Jpn, Alt)¬dknight2a¬dknight2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Quiz (Jpn)¬drgnquiz¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Quiz (Jpn, Alt)¬drgnquiza¬drgnquiz¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Slayer IV - Drasle Family (Jpn)¬dslayer4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Slayer IV - Drasle Family (Jpn, Alt)¬dslayer4a¬dslayer4¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Slayer - Eiyuu Densetsu (Jpn)¬dslayed¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Slayer - Eiyuu Densetsu (Jpn, Alt)¬dslayeda¬dslayed¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. - Dream Program System (Jpn)¬dps¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. - Dream Program System (Jpn, Alt)¬dpsa¬dps¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. - Dream Program System (Jpn, Alt 2)¬dpsb¬dps¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG - Dream Program System SG (Jpn)¬dpssg¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG - Dream Program System SG (Jpn, Alt)¬dpssga¬dpssg¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG 2 - Dream Program System SG Set 2 (Jpn)¬dpssg2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG 3 - Dream Program System SG Set 3 (Jpn)¬dpssg3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG 3 - Dream Program System SG Set 3 (Jpn, Alt)¬dpssg3a¬dpssg3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+D.P.S. SG 3 - Dream Program System SG Set 3 (Jpn, Alt 2)¬dpssg3b¬dpssg3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Druid (Jpn)¬druid¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nippon Dexter¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dual Targets - The 4th Unit Act. 3 (Jpn)¬dualtarg¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data West¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynamic Publisher (Spa)¬dynampbl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬R.B. Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynamic Publisher (Spa, Alt)¬dynampbla¬dynampbl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬R.B. Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ease - Philips Desktop v1.4 (Euro)¬ease¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ease - Philips Desktop v1.1 (Euro)¬ease11¬ease¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ease - Philips Desktop v1.1 (Euro, Alt)¬ease11a¬ease¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ease - Philips Desktop v1.1 (Ita)¬ease11i¬ease¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ease - Philips Desktop v1.1 (Ita, Alt)¬ease11ia¬ease¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Eindeloos (Ned)¬eindelos¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Radarsoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Endlos (Ger)¬endlos¬eindelos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Radarsoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Endlos (Ger, Alt)¬endlosa¬eindelos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Radarsoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Elle (Jpn)¬elle¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Elle (Jpn, Alt)¬ellea¬elle¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Emerald Dragon (Jpn)¬emeraldd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Glodia¬1990¬¬¬¬¬part_id:Ending Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Emerald Dragon (Jpn, Alt)¬emeraldda¬emeraldd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Glodia¬1990¬¬¬¬¬part_id:Ending Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+L'Empereur (Jpn)¬emperor¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+L'Empereur (Jpn, Alt)¬emperora¬emperor¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+English Holidays (Euro?)¬engholid¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+English Holidays (Euro?, Alt)¬engholida¬engholid¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Estland Monogatari - Estland Campaing (Jpn)¬estland¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Medo¬1991¬¬¬¬¬part_id:Game Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Estland Monogatari - Estland Campaing (Jpn, Alt Game Disk)¬estlanda¬estland¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Medo¬1991¬¬¬¬¬part_id:Game Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Europa Sensen (Jpn)¬eurosens¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Europa Sensen (Jpn, Alt Disk 2)¬eurosensa¬eurosens¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Exterlien (Jpn)¬exterlin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬D.O.¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Exterlien (Jpn, Alt)¬exterlina¬exterlin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬D.O.¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Exterlien (Jpn, Alt 2)¬exterlinb¬exterlin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬D.O.¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Exterlien (Jpn, Alt 3)¬exterlinc¬exterlin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬D.O.¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+F1 Douchuuki (Jpn)¬f1douch¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fahrenheit 451 (Spa, Cracked)¬fahrn451¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Idealogic¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Famicle Parodic 2 (Jpn)¬famipar2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Feedback (Jpn)¬feedback¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tecno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Feedback (Jpn, Alt)¬feedbacka¬feedback¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tecno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Feedback (Jpn, Alt 2)¬feedbackb¬feedback¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tecno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Fighting Wolf AT (Jpn)¬fightwat¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Technopolis Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Fighting Wolf AT (Jpn, Alt)¬fightwata¬fightwat¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Technopolis Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Fighting Wolf AT (Jpn, Alt 2)¬fightwatb¬fightwat¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Technopolis Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Countdown (Ned)¬finalcnt¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Methodic Solutions¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Countdown (Ned)[a]¬finalcnta¬finalcnt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Methodic Solutions¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Fantasy (Jpn)¬ffant¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Fantasy (Jpn, Alt)¬ffanta¬ffant¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Fantasy (Jpn, Alt 2)¬ffantb¬ffant¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Fantasy (Jpn, Alt 3)¬ffantc¬ffant¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Potential (Jpn)¬finalpot¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire Hawk ~ Thexder The Second Contact (Jpn)¬firehawk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire Hawk ~ Thexder The Second Contact (Jpn, Alt)¬firehawka¬firehawk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire Hawk ~ Thexder The Second Contact (Jpn, Alt 2)¬firehawkb¬firehawk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire Hawk ~ Thexder The Second Contact (Jpn, Alt 3)¬firehawkc¬firehawk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fire Hawk ~ Thexder The Second Contact (Jpn, Alt 4)¬firehawkd¬firehawk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+For The Day II (Kor)¬forday2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Mirinae Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+For the Day II (Kor, Alt)¬forday2a¬forday2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Mirinae Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fray - In Magical Adventure (Jpn)¬fray¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:Game Disk 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fray - In Magical Adventure (Jpn, Alt)¬fraya¬fray¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:Game Disk 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fray - In Magical Adventure (Jpn, Alt 2)¬frayb¬fray¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:Game Disk 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fray - In Magical Adventure (Jpn, Demo)¬frayd¬fray¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gaia no Monshou (Jpn)¬gaiamons¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬NCS¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gakuen Monogatari - High School Story (Jpn)¬gakumono¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Great¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gakuen Senki (Jpn)¬gakusenk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galf Streem (Jpn)¬galfstrm¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gall Force - Eternal Story (Jpn)¬galforce¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gall Force - Eternal Story (Jpn, Alt)¬galforcea¬galforce¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Games Collection (Ned)¬gamecoll¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eurosoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Games Collection 2 (Ned)¬gamecol2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eurosoft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gandhara (Jpn)¬gandhara¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gandhara (Jpn, Alt)¬gandharaa¬gandhara¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gandhara (Jpn, Alt 2)¬gandharab¬gandhara¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gaudi - The Wind of Barcelona (Jpn)¬gaudi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gaudi - The Wind of Barcelona (Jpn, Alt)¬gaudia¬gaudi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gaudi - The Wind of Barcelona (Jpn, Alt 2)¬gaudib¬gaudi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ginga Eiyuu Densetsu (Jpn)¬gingaed¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ginga Eiyuu Densetsu (Jpn, Alt Disk 1)¬gingaeda¬gingaed¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ginga Eiyuu Densetsu II (Jpn)¬gingaed2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ginga Eiyuu Densetsu II (Jpn, Alt)¬gingaed2a¬gingaed2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ginga Eiyuu Densetsu II DX Kit (Jpn)¬gingaei6¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1991¬¬¬¬¬usage:Requires "Ginga Eiyuu Densetsu II" to work¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gokudou Jintori (Jpn)¬gokudoji¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micronet¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Golf (Jpn)¬golf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Golf (Jpn, Alt)¬golfa¬golf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Golf (Jpn, Alt 2)¬golfb¬golf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Golf - Course Collection (Jpn)¬golfccol¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Golf - Course Collection (Jpn, Alt)¬golfccola¬golfccol¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gorby no Pipeline Daisakusen (Jpn)¬gorbypip¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gram Cats (Jpn)¬gramcats¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dot Plan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Graph Saurus v1.0 (Jpn)¬graphsar10¬graphsar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Graph Saurus v2.0 (Jpn)¬graphsar¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Graph Saurus v2.0 (Jpn, Alt)¬graphsara¬graphsar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Graph Saurus v2.0 (Jpn, Alt 2)¬graphsarb¬graphsar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Graph Saurus v2.0 (Jpn, Alt 3)¬graphsarc¬graphsar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Greatest Driver (Jpn)¬greatdrv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Greatest Driver (Jpn, Alt)¬greatdrva¬greatdrv¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Greatest Driver (Jpn, Alt 2)¬greatdrvb¬greatdrv¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Grotten van Oberon (Ned)¬oberon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Grotten van Oberon (Ned, SSDD)¬oberona¬oberon¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gulliver (Jpn)¬gulliver¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬C.B.C.¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gunjin Shougi (Jpn)¬gunjnsho¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gunship (Jpn)¬gunship¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Microprose Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gunship (Jpn, Alt)¬gunshipa¬gunship¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Microprose Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gunship (Jpn, Alt 2)¬gunshipb¬gunship¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Microprose Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haja no Fuuin (Jpn)¬hajafuin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haja no Fuuin (Jpn, Alt)¬hajafuina¬hajafuin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haja no Fuuin (Jpn, Alt 2)¬hajafuinb¬hajafuin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Harajuku After Dark (Jpn)¬afterdrk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Harajuku After Dark (Jpn, Alt)¬afterdrka¬afterdrk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Herzog (Jpn)¬herzog¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Herzog (Jpn, Alt)¬herzoga¬herzog¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hideger (Jpn)¬hideger¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hiranya no Mazo (Jpn)¬hiranyan¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hitomi Kobayashi - Puzzle in London (Jpn)¬puzlondn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Informercial¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hitomi Kobayashi - Puzzle in London (Jpn, Alt)¬puzlondna¬puzlondn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Informercial¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hitomi Kobayashi - Puzzle in London (Jpn, Alt 2)¬puzlondnb¬puzlondn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Informercial¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+How Many Robot (Jpn)¬manyrobo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Artdink¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+How Many Robot (Jpn, Alt)¬manyroboa¬manyrobo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Artdink¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydefos (Jpn)¬hydefos¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydefos (Jpn, Alt)¬hydefosa¬hydefos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydefos (Jpn, Alt 2)¬hydefosb¬hydefos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide (Jpn)¬hydlide¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide (Jpn, Alt)¬hydlidea¬hydlide¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide (Jpn, Alt 2)¬hydlideb¬hydlide¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide (Jpn, Alt 3)¬hydlidec¬hydlide¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ifr-Fly (Ned)¬ifrfly¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Inindou - Datou Nobunaga (Jpn)¬inindo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Inindou - Datou Nobunaga (Jpn, Alt)¬inindoa¬inindo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Intruder - Sakura Yashiki no Tansaku (Jpn)¬intruder¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ishido - The Way of Stones (Jpn)¬ishido¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ishin no Arashi (Jpn)¬ishinara¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Isseki ni Kakeru Seishun (Jpn)¬issekini¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Log¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kiss of Murder - Satsui no Seppun (Jpn)¬kissmurd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Riverhill Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+J.B. Harold Series #2 - Manhattan Requiem - Angels Flying in the Dark (Jpn)¬manhatrq¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Riverhill Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jack Nicklaus Golf (Jpn)¬nicklaus¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jack Nicklaus Golf (Jpn, Alt)¬nicklausa¬nicklaus¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jack Nicklaus Golf (Jpn, Alt 2)¬nicklausb¬nicklaus¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jesus (Jpn)¬jesus¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jikuu no Hanayome (Jpn)¬jikunoha¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬part_id:Game Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jikuu no Hanayome (Jpn, Alt)¬jikunohaa¬jikunoha¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬part_id:Game Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jipshi (Jpn)¬jipshi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joker (Jpn)¬joker¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joker (Jpn, Alt Disk 1)¬jokera¬joker¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joker II (Jpn)¬joker2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Joker II (Jpn, Alt)¬joker2a¬joker2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Birdy Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jotunn (Jpn)¬jotunn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jotunn (Jpn, Alt)¬jotunna¬jotunn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kaettekita Tantei-dan X (Jpn)¬kaetantx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Heart Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kagerou Meikyuu (Jpn)¬kagerome¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Heart Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kami no Machi (Jpn)¬kaminoma¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Panther Software¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kamiya Tantei Jimusho - Namida no Canvas (Jpn)¬namicanv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brother Industries¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kimagure Orange Road - Natsu no Mirage (Jpn)¬orangerd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kimagure Orange Road - Natsu no Mirage (Jpn, Alt)¬orangerda¬orangerd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kudokikata Oshiemasu II - Kind Gal's (Jpn)¬kudokik2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kudokikata Oshiemasu II - Kind Gal's (Jpn, Alt)¬kudokik2a¬kudokik2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kudokikata Oshiemasu II - Kind Gal's (Jpn, Alt 2)¬kudokik2b¬kudokik2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kinetic Connection (Jpn)¬kineticc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Konami Game Collection Bangai-hen (Jpn)¬konagcbh¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Koroshi no Dress 2 (Jpn)¬koroshi2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kruiswoord Generator (Ned)¬kruiswrd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Radarsoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hiroku Kubikiri Yakata (Jpn)¬hirokubi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hiroku Kubikiri Yakata (Jpn, Alt)¬hirokubia¬hirokubi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kudokikata Oshiemasu (Jpn)¬kudokika¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kudokikata Oshiemasu (Jpn, Alt)¬kudokikaa¬kudokika¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kugyokuden (Jpn)¬kugyokud¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kugyokuden (Jpn, Alt)¬kugyokuda¬kugyokud¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tecno Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kujaku Ou (Jpn)¬kujaku¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+La Valeur (Jpn)¬lavaleur¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+La Valeur (Jpn, Alt)¬lavaleura¬lavaleur¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laplace no Ma (Jpn)¬laplace¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Humming Bird Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laplace no Ma (Jpn, Alt)¬laplacea¬laplace¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Humming Bird Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Last Armageddon (Jpn)¬lastarmg¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Last Armageddon (Jpn, Alt)¬lastarmga¬lastarmg¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Last Armageddon (Jpn, Alt 2)¬lastarmgb¬lastarmg¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laydock (Jpn)¬laydock¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laydock (Jpn, Alt)¬laydocka¬laydock¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laydock (Jpn, Alt 2)¬laydockb¬laydock¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Laydock (Jpn, Alt 3)¬laydockc¬laydock¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Leather Skirts (Ned)¬leathrsk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Methodic Solutions¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lenam - Sword of Legend (Jpn)¬lenam¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lenam - Sword of Legend (Jpn, Alt)¬lenama¬lenam¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lenam - Sword of Legend (Jpn, Alt 2)¬lenamb¬lenam¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lipstick Adventure (Jpn)¬lipsadv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lipstick Adventure 2 (Jpn)¬lipsadv2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Little Vampire (Jpn)¬lilvamp¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Love Chaser (Jpn)¬lovechas¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Love Chaser (Jpn, Alt)¬lovechasa¬lovechas¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Love Chaser (Jpn, Alt 2)¬lovechasb¬lovechas¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+M.U.L.E. (Jpn)¬mule¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬BPS¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Madou Monogatari 1-2-3 (Jpn)¬madoumon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Madou Monogatari 1-2-3 (Jpn, Alt)¬madoumo1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mahjong Kyo Jidai Special II (Jpn)¬mjkyojs2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micronet¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mahjong Shikaku (Jpn)¬mjshikak¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Bussan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mahjong Shikaku (Jpn, Alt Disk 1)¬mjshikaka¬mjshikak¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Bussan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maison Ikkoku Kanketsu Hen (Jpn)¬mikkokuk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maison Ikkoku Kanketsu Hen (Jpn, Alt)¬mikkokuka¬mikkokuk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maison Ikkoku Kanketsu Hen (Jpn, Alt 2)¬mikkokukb¬mikkokuk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Majin Kyu (Jpn)¬majinkyu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Majin Kyu (Jpn, Alt)¬majinkyua¬majinkyu¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Makai Fukkatsu (Jpn)¬makaifuk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Soft Studio WING¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Makyuu Den (Jpn)¬makyuden¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Software Studio WING¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mrchen Veil (Jpn)¬marchen¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Sacom¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mrchen Veil (Jpn, Alt)¬marchena¬marchen¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Sacom¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mrchen Veil (Jpn, Alt 2)¬marchenb¬marchen¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Sacom¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mask Mania Age Battle (Jpn)¬maskmani¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX-FAN¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Master of Monsters (Jpn)¬mastmons¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Master of Monsters (Jpn, Alt)¬mastmonsa¬mastmons¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Master of Monsters (Jpn, Alt 2)¬mastmonsb¬mastmons¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Membership Golf (Jpn)¬membgolf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Membership Golf (Jpn, Alt)¬membgolfa¬membgolf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mid-Garts Side A (Jpn)¬midgarta¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mid-Garts Side A (Jpn, Alt Disk 1)¬midgartaa¬midgarta¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mid-Garts Side B (Jpn)¬midgartb¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mid-Garts Side B (Jpn, Alt)¬midgartba¬midgartb¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Might and Magic II - Gates to Another World (Jpn)¬mightmg2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Starcraft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Might and Magic II - Gates to Another World (Jpn, Alt)¬mightmg2a¬mightmg2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Starcraft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mighty Battle Skin Panic (Jpn)¬mskinpan¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mighty Battle Skin Panic (Jpn, Alt)¬mskinpana¬mskinpan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mighty Battle Skin Panic (Jpn, Alt 2)¬mskinpanb¬mskinpan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mighty Battle Skin Panic (Jpn, Alt 3)¬mskinpanc¬mskinpan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Gainax¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kidou Senshi Gundam - MS Field (Jpn)¬msfield¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Family Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Fandom Library 8 (Jpn)¬msxffl8¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tokuma Shoten¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Doujin World (Jpn)¬msxdw1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Yuugazoku¬1995¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Doujin World 2 (Jpn)¬msxdw2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Yuugazoku¬1995¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Doujin World 3 (Jpn)¬msxdw3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Yuugazoku¬1996¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Spring (Jpn, Cracked)¬msxsprng¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Train (Jpn)¬msxtrain¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Family Soft¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Navitune (Jpn)¬navitune¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+New Adam & Eve (Jpn)¬adamneve¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nichiyoubi ni Uchuubito ga...? (Jpn)¬nichiyou¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Software Studio WING¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nike (Jpn)¬nike¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Cocktail Soft¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Niko2 (Jpn)¬nikoniko¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Niko2 (Jpn, Alt)¬nikonikoa¬nikoniko¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja (Jpn)¬ninja¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou (Jpn)¬nobunaga¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Zenkokuban (Jpn)¬nobuzenk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Zenkokuban (Jpn, Alt)¬nobuzenka¬nobuzenk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Zenkokuban (Jpn, Alt 2)¬nobuzenkb¬nobuzenk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Sengoku Gunyuuden (Jpn)¬nobuseng¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Sengoku Gunyuuden (Jpn, Alt)¬nobunag6¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Bushou Fuuunroku (Jpn)¬nobubufu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobunaga no Yabou - Bushou Fuuunroku (Jpn, Alt)¬nobubufua¬nobubufu¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nukenin Densetsu (Jpn)¬nukenind¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nukenin Densetsu (Jpn, Alt)¬nukeninda¬nukenind¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nukenin Densetsu - Bangai-hen (Jpn)¬nukenbh¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brain Grey¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekisou Nyancle - Nyancle Racing (Jpn)¬gnyancle¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekisou Nyancle - Nyancle Racing (Jpn, Alt)¬gnyanclea¬gnyancle¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekisou Nyancle - Nyancle Racing (Jpn, Alt 2)¬gnyancleb¬gnyancle¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Onryou Senki (Jpn)¬onryosen¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Software Studio WING¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ouji Binbin Monogatari (Jpn)¬ojibinbm¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬East Cube¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ouji Binbin Monogatari (Jpn, Alt)¬ojibinbma¬ojibinbm¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬East Cube¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Mania (Jpn)¬pacmania¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Mania (Jpn, Alt)¬pacmaniaa¬pacmania¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Namcot¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Palamedes (Jpn)¬palameds¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Palamedes (Jpn, Alt)¬palamedsa¬palameds¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Palamedes (Jpn, Alt 2)¬palamedsb¬palameds¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Les Passagers du Vent (Fra)¬passvent¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 1 (Jpn)¬peachup1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 2 (Jpn)¬peachup2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 3 (Jpn)¬peachup3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 4 (Jpn)¬peachup4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 5 (Jpn)¬peachup5¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 6 (Jpn)¬peachup6¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 7 (Jpn)¬peachup7¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up 8 (Jpn)¬peachup8¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up Special (Jpn)¬peachsp1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peach Up Special II (Jpn)¬peachsp2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Momonoki House¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantasie (Jpn)¬phantas¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantasie II - Ferronrah no Shu (Jpn)¬phantas2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantasie III - The Wrath of Nikademus (Jpn)¬phantas3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bothtec¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantasie IV - The Birth of Hero (Jpn)¬phantas4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Starcraft¬1991¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Phantasie IV - The Birth of Hero (Jpn, Alt)¬phantas4a¬phantas4¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Starcraft¬1991¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 1 (Jpn)¬pinksox1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 2 (Jpn)¬pinksox2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 3 (Jpn)¬pinksox3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 4 (Jpn)¬pinksox4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 5 (Jpn)¬pinksox5¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 6 (Jpn)¬pinksox6¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 7 (Jpn)¬pinksox7¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox 8 (Jpn)¬pinksox8¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox Mania (Jpn)¬pinksxmn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox Mania 2 (Jpn)¬pinksxm2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pink Sox Mania 3 (Jpn)¬pinksxm3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinky Ponky (Jpn)¬pinkypon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinky Ponky 2 (Jpn)¬pinkypn2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinky Ponky 3 (Jpn)¬pinkypn3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Playball III (Jpn)¬playbal3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Playball III (Jpn, Alt)¬playbal3a¬playbal3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Playball III (Jpn, Alt 2)¬playbal3b¬playbal3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pocky (Jpn)¬pocky¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Tail Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pocky (Jpn, Alt)¬pockya¬pocky¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Tail Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Keiji Dai Dageki - Shachou Reijou Yuukai Jiken (Jpn)¬keijidd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Family Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Keiji Dai Dageki - Shachou Reijou Yuukai Jiken (Jpn, Alt)¬keijidda¬keijidd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Family Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kon'yamo Asamade Powerful Mahjong 2 (Jpn)¬powermj2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬dB-Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kon'yamo Asamade Powerful Mahjong 2 (Jpn, Alt)¬powermj2a¬powermj2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬dB-Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Princess Maker (Jpn)¬prinmakr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Princess Maker (Jpn, v2?)¬prinmakra¬prinmakr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Princess Maker (Jpn, v2?, Alt)¬prinmakrb¬prinmakr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pro Yakyu Fan (Jpn)¬proyakfn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psychic War - Cosmic Soldier 2 (Jpn)¬psychwar¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psy-O-Blade (Jpn)¬psyoblad¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psy-O-Blade (Jpn, Alt)¬psyoblada¬psyoblad¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psy-O-Blade (Jpn, Alt 2)¬psyobladb¬psyoblad¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psycho World (Jpn)¬psychwld¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psycho World (Jpn, Alt)¬psychwlda¬psychwld¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psycho World (Jpn, Alt 2)¬psychwldb¬psychwld¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hertz¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puyo Puyo (Jpn)¬puyopuyo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puyo Puyo (Jpn, Alt)¬puyopuyoa¬puyopuyo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puyo Puyo (Jpn, Alt 2)¬puyopuyob¬puyopuyo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quinpl (Jpn)¬quinpl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quinpl (Jpn, Alt)¬quinpla¬quinpl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quinpl (Jpn, Alt 2)¬quinplb¬quinpl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+R.A.D.X.-8 (Ned)¬radx8¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+R.A.D.X.-8 (Ned, Alt)¬radx8a¬radx8¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+R.A.D.X.-8 (Ned, Alt 2)¬radx8b¬radx8¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+R.A.D.X.-8 (Ned, Alt 3)¬radx8c¬radx8¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rance (Jpn)¬rance¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rance (Jpn, Alt)¬rancea¬rance¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rance II (Jpn)¬rance2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Randar no Bouken III - Yami ni Mise Rareta Majutsushi (Jpn)¬randar3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Randar no Bouken III - Yami ni Mise Rareta Majutsushi (Jpn, Alt)¬randar3a¬randar3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Randar no Bouken III - Yami ni Mise Rareta Majutsushi (Jpn, Alt 2)¬randar3b¬randar3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ray Gun (Jpn)¬raygun¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ray Gun (Jpn, Alt)¬rayguna¬raygun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Elf¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Record of Lodoss War - Haiiro no Majo (Jpn)¬lodoss¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Humming Bird Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Record of Lodoss War - Haiiro no Majo (Jpn, Alt)¬lodossa¬lodoss¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Humming Bird Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lodoss Tou Senki - Fukujinzuke (Jpn)¬lodossfk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Humming Bird Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Red Lights of Amsterdam (Ned, Trained?)¬redlight¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Red Lights of Amsterdam (Ned, Trained?, Alt)¬redlighta¬redlight¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rekenwonder (Ned)¬rekenwon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Return of Jelda (Jpn)¬retjelda¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Carry Lab¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Return of Jelda (Jpn, Alt)¬retjeldaa¬retjelda¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Carry Lab¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reviver (Jpn)¬reviver¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Arsys¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reviver (Jpn, Alt)¬revivera¬reviver¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Arsys¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reviver (Jpn, Alt 2)¬reviverb¬reviver¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Arsys¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robo Crush (Jpn)¬robocrsh¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robo Crush (Jpn, Alt)¬robocrsha¬robocrsh¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robo Crush (Jpn, Alt 2)¬robocrshb¬robocrsh¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rogue Alliance (Jpn)¬rogueall¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Starcraft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+RONA - Jiboshin no Shinpan (Jpn)¬rona¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dixie¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+RONA - Jiboshin no Shinpan (Jpn, Alt)¬ronaa¬rona¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dixie¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Royal Blood (Jpn)¬royalbld¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Royal Blood (Jpn, Alt)¬royalblda¬royalbld¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1991¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rune Master - Sangoku Eiketsu Den (Jpn)¬runemst3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rune Master III (Jpn, Alt)¬runemst3a¬runemst3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rune Master III (Jpn, Alt 2)¬runemst3b¬runemst3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rune Worth - Kokui no Kikoushi (Jpn)¬runewort¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rune Worth - Kokui no Kikoushi (Jpn, Alt)¬runeworta¬runewort¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ryuukyuu (Jpn)¬ryukyu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ryuukyuu (Jpn, Alt)¬ryukyua¬ryukyu¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SD Gundam Gachapon Senshi 2 - Capsule Senki (Jpn)¬sdgndgs2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Banpresto¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+SD Gundam Gachapon Senshi 2 - Capsule Senki (Jpn, Alt)¬sdgndgs2a¬sdgndgs2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Banpresto¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sa-Zi-Ri (Jpn)¬saziri¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sa-Zi-Ri (Jpn, Alt)¬saziria¬saziri¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sangokushi (Jpn)¬sangoku¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1986¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sangokushi (Jpn, Alt)¬sangokua¬sangoku¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1986¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sangokushi (Jpn, Alt 2)¬sangokub¬sangoku¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1986¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sangokushi II (Jpn)¬sangoku2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sangokushi II (Jpn, Alt)¬sangoku2a¬sangoku2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Mystery Murder Club - Satsujin Club (Jpn)¬murdclub¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Saurus Lunch Vol. 0 (Jpn)¬saurlnc0¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schwarzschild - Kyouran no Ginga (Jpn)¬schwarzs¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schwarzschild - Kyouran no Ginga (Jpn, Alt)¬schwarzsa¬schwarzs¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schwarzschild II (Jpn)¬schwarz2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schwarzschild II (Jpn, Alt)¬schwarz2a¬schwarz2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Kogado¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seiha (Jpn)¬seiha¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Bussan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seiha (Jpn, Alt)¬seihaa¬seiha¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Bussan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seikimatsu Fly Battler (Jpn)¬seikifly¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX-FAN¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seilane (Jpn)¬seilane¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Sekte (Ned)¬sekte¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Sekte (Ned, Alt)¬sektea¬sekte¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+De Sekte (Ned, Alt 2)¬sekteb¬sekte¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shadow Hunter (Jpn)¬shadowhu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai (Jpn)¬shanghai¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai (Jpn, Alt)¬shanghaia¬shanghai¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai II (Jpn)¬shangh2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai II (Jpn, Alt)¬shangh2a¬shangh2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai II (Jpn, Alt 2)¬shangh2b¬shangh2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shenan Dragon (Jpn)¬shenandr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Technopolis Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shikinjou (Jpn)¬shikinjo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shikinjou (Jpn, Alt)¬shikinjoa¬shikinjo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shin Best Nine Pro Yakyuu (Jpn)¬sbest9py¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shin Maou Golvellius (Jpn)¬sgolvell¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1988¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shin Kugyokuden (Jpn)¬skugyokd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Techno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shin Kugyokuden (Jpn, Alt)¬skugyokda¬skugyokd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Tecno Soft¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Silviana (Jpn)¬silviana¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Silviana (Jpn, Alt)¬silvianaa¬silviana¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Silviana (Jpn, Alt 2)¬silvianab¬silviana¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pack In Video¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sokoban Perfect (Jpn)¬sokoperf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sokoban Perfect (Jpn, Alt)¬sokoperfa¬sokoperf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sokoban Perfect (Jpn, Alt 2)¬sokoperfb¬sokoperf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solitaire Royale (Jpn)¬solitair¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solitaire Royale (Jpn, Alt)¬solitaira¬solitair¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solitaire Royale (Jpn, Alt 2)¬solitairb¬solitair¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Game Arts¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sony Graphics Editor v1.0 (Jpn)¬sonygred¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sorcerian (Jpn)¬sorcer¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sorcerian (Jpn, Alt)¬sorcera¬sorcer¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sorcerian Tsuika Scenario 2 - Sengoku Sorcerian (Jpn, Bad Dump?)¬sorcerexp2¬sorcer¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brother Industries¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sorcerian Tsuika Scenario 3 - Pyramid Sorcerian (Jpn, Bad Dump?)¬sorcerexp3¬sorcer¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Brother Industries¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hoshi no Suna Monogatari (Jpn)¬hoshisun¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬D.O.¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Ship Rendezvous (Jpn)¬ssrendez¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Ship Rendezvous (Jpn, Alt)¬ssrendeza¬ssrendez¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Ship Rendezvous (Jpn, Alt 2)¬ssrendezb¬ssrendez¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Scaptrust¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Steinzeit (Ger)¬steinzet¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data Beutner¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Suikoden - Tenmei no Chikai (Jpn)¬suikoden¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Suikoden - Tenmei no Chikai (Jpn, Alt)¬suikodena¬suikoden¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Koei¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Daisenryaku (Jpn)¬supdaisn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Pink Sox 1 (Jpn)¬spinksx1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Pink Sox 1 (Jpn, Alt)¬spinksx1a¬spinksx1¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Pink Sox 2 (Jpn)¬spinksx2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Wendy Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Shanghai - Dragon's Eye (Jpn)¬sshangh¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hot-B¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Synth Saurus v2.0 (Jpn)¬synthsa2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Bit¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+T.D.F. (Jpn)¬tdf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data West¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+TNT (Fra)¬tnt¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+TNT (Fra, Alt)¬tnta¬tnt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+TNT (Fra, Alt 2)¬tntb¬tnt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Infogrames¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanba (Jpn)¬tanba¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micronet¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tashiro Masashi no Princess ga Ippai (Jpn)¬tashimp¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tashiro Masashi no Princess ga Ippai (Jpn, Alt)¬tashimpa¬tashimp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tashiro Masashi no Princess ga Ippai (Jpn, Alt 2)¬tashimpb¬tashimp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tashiro Masashi no Princess ga Ippai (Jpn, Alt 3)¬tashimpc¬tashimp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tashiro Masashi no Princess ga Ippai (Jpn, Alt 4)¬tashimpd¬tashimp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Sony¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tau Beat (Jpn)¬taubeat¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Madonna no Yuuwaku (Jpn)¬madonna¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dot Plan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Madonna no Yuuwaku (Jpn, Alt)¬madonnaa¬madonna¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Dot Plan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Testament (Jpn)¬testment¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Basho House¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Testament (Jpn, Alt)¬testmenta¬testment¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Basho House¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tetris (Jpn)¬tetrisa¬tetris¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬BPS¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tetris (Jpn, v2?)¬tetris¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬BPS¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Tower? of Cabin - Cabin Panic (Jpn)¬towercab¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Tower? of Cabin - Cabin Panic (Jpn, Alt)¬towercaba¬towercab¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Tower? of Cabin - Cabin Panic (Jpn, Alt 2)¬towercabb¬towercab¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1992¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Thunderbal (Ned)¬thunderb¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Thunderbal (Ned, Alt)¬thunderba¬thunderb¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Thunderbal (Ned, Alt 2)¬thunderbb¬thunderb¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Eaglesoft¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tir-nan-g - Dana no Matsuei (Jpn)¬tirnanog¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tir-nan-g - Dana no Matsuei (Jpn, Alt)¬tirnanoga¬tirnanog¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬System Soft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topografie Europa (Ned)¬topogeur¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topografie Europa (Ned, Alt)¬topogeura¬topogeur¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topografie Wereld (Ned)¬topogwer¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Triton II - Road of Darkness (Jpn)¬triton2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Triton II - Road of Darkness (Jpn, Alt)¬triton2a¬triton2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Xain Soft¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Toushin Toshi (Jpn)¬toshinto¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Toushin Toshi (Jpn, Alt)¬toshintoa¬toshinto¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Toushin Toshi (Jpn, Alt 2)¬toshintob¬toshinto¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Alicesoft¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ultima I - The First Age of Darkness (Jpn)¬ultima¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ultima I - The First Age of Darkness (Jpn, Alt)¬ultimaa¬ultima¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ultima IV - Quest of the Avatar (Jpn)¬ultima4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ultima IV - Quest of the Avatar (Jpn, Alt Disk 2)¬ultima4a¬ultima4¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Pony Canyon¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Undead Line (Jpn)¬undead¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Undead Line (Jpn, Alt)¬undeada¬undead¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Undead Line (Jpn, Alt 2)¬undeadb¬undead¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬T&E Soft¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+UniPaint (Jpn)¬unipaint¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Matsushita¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+UniPaint (Jpn, Alt)¬unipainta¬unipaint¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Matsushita¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+UniPaint (Jpn, Alt 2)¬unipaintb¬unipaint¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Matsushita¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Konami no Uranai Sensation (Jpn)¬uranaisn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Konami no Uranai Sensation (Jpn, Alt)¬uranaisna¬uranaisn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Konami¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Urotsukidoji (Jpn)¬urotsuki¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Urotsukidoji (Jpn, Alt)¬urotsukia¬urotsuki¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Urusei Yatsura - Koi no Survival Birthday (Jpn)¬uruseiya¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Urusei Yatsura - Koi no Survival Birthday (Jpn, Alt)¬uruseiyaa¬uruseiya¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mugen Senshi Valis II (Jpn)¬valis2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mugen Senshi Valis II (Jpn, Alt)¬valis2a¬valis2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Graphics (Jpn)¬videogfx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Matsushita¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shiryou Sensen 2 - War of the Dead Part 2 (Jpn)¬shiryo2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shiryou Sensen 2 - War of the Dead Part 2 (Jpn, Alt)¬shiryo2a¬shiryo2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shiryou Sensen 2 - War of the Dead Part 2 (Jpn, Alt 2)¬shiryo2b¬shiryo2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shiryou Sensen - War of the Dead (Jpn)¬shiryo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shiryou Sensen - War of the Dead (Jpn, Alt)¬shiryoa¬shiryo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fujiko Fujio (A) no Warau Salesman (Jpn)¬warausm1¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Compile¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Warning (Jpn)¬warning¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Cosmos Computer¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Watashi wo Golf ni Tsuretette (Jpn)¬watagolf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+What's Michael? (Jpn)¬whatsmic¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wingman Special (Jpn)¬wingmans¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wing Man Special (Jpn, Alt)¬wingmansa¬wingmans¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Winning Solution (Jpn)¬winsolut¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Cosmos Computer¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizardry - Proving Grounds of Mad Overload (Jpn)¬wizardry¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizardry - Proving Grounds of Mad Overload (Jpn, Alt)¬wizardrya¬wizardry¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wizardry - Proving Grounds of Mad Overload (Jpn, Alt 2)¬wizardryb¬wizardry¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬ASCII¬1987¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maka Fushigi Adventure Little Princess (Jpn)¬lilprinc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Champion Soft¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf (Jpn)¬worldglf¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf (Jpn, Alt)¬worldglfa¬worldglf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf (Jpn, Alt 2)¬worldglfb¬worldglf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf (Jpn, Alt 3)¬worldglfc¬worldglf¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1986¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf II (Jpn)¬worldgl2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf II (Jpn, Alt)¬worldgl2a¬worldgl2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+World Golf II (Jpn, Alt 2)¬worldgl2b¬worldgl2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Enix¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+X-Na (Jpn)¬xna¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+X-Na (Jpn, Alt)¬xnaa¬xna¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fairytale¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak - The Art of Visual Stage (Jpn)¬xak¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:Game Disk 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak - The Art of Visual Stage (Jpn, Alt)¬xaka¬xak¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:Game Disk 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak - The Art of Visual Stage (Jpn, Alt 2)¬xakb¬xak¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1989¬¬¬¬¬part_id:Game Disk 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak II (Jpn)¬xak2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak II (Jpn, Alt)¬xak2a¬xak2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak II (Jpn, Alt 2)¬xak2b¬xak2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak II (Jpn, Alt 3)¬xak2c¬xak2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1990¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak III - The Tower of Gazzel (Jpn)¬xak3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xak III - The Tower of Gazzel (Jpn, Alt)¬xak3a¬xak3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Micro Cabin¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xanadu (Jpn)¬xanadu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xanadu (Jpn, Alt)¬xanadua¬xanadu¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR - Hakai no Guuzou (Jpn)¬xzr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR - Hakai no Guuzou (Jpn, Alt)¬xzra¬xzr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR - Hakai no Guuzou (Jpn, Alt 2)¬xzrb¬xzr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR II (Jpn)¬xzr2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR II (Jpn, Alt)¬xzr2a¬xzr2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+XZR II (Jpn, Alt 2)¬xzr2b¬xzr2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Telenet Japan¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yajiuma Pennant Race (Jpn)¬yajiuma¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Victor¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yaksa (Jpn)¬yaksa¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yaksa (Jpn, Alt)¬yaksaa¬yaksa¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬WolfTeam¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yakyuudou (Jpn)¬yakyudo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Create¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yakyuudou II (Jpn)¬yakyudo2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Create¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yakyuudo II Databook '90 (Jpn)¬yakyudo2d90¬yakyudo2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nihon Bussan¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yoshida Konzern - Shooting Game Construction Tool (Jpn)¬yoshiknz¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yoshida Koumuten Data Library Vol. 1 (Jpn)¬yoshikmd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Youma Kourin (Jpn)¬yomakor¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nippon Dexter¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Youma Kourin (Jpn, Alt)¬yomakora¬yomakor¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nippon Dexter¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Youma Kourin (Jpn, Alt 2)¬yomakorb¬yomakor¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Nippon Dexter¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys - Ancient Ys Vanished Omen (Jpn)¬ys¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys - Ancient Ys Vanished Omen (Jpn, Alt)¬ysa¬ys¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys - Ancient Ys Vanished Omen (Jpn, Alt 2)¬ysb¬ys¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys - Ancient Ys Vanished Omen (Jpn, Alt 3)¬ysc¬ys¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys - Ancient Ys Vanished Omen (Jpn, Alt 4)¬ysd¬ys¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys II - Ancient Ys Vanished The Final Chapter (Jpn)¬ys2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1988¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys II - Ancient Ys Vanished The Final Chapter (Jpn, Alt)¬ys2a¬ys2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1988¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys II - Ancient Ys Vanished The Final Chapter (Jpn, Alt 2)¬ys2b¬ys2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1988¬¬¬¬¬part_id:Data Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys III - Wanderers from Ys (Jpn)¬ys3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ys III - Wanderers from Ys (Jpn, Alt)¬ys3a¬ys3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Falcom¬1989¬¬¬¬¬part_id:User Disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zatsugaku Olympics - Watanabe Wataru Hen (Jpn)¬zatsolym¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Hard¬1988¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zero - The 4th Unit Act. 4 (Jpn)¬zero¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Data West¬1990¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zoo (Ned)¬zoo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zoo (Ned, Alt)¬zooa¬zoo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zoo (Ned, Alt 2)¬zoob¬zoo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Philips¬1987¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zowazo World (Jpn)¬zowazowd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zowazo World (Jpn, Alt)¬zowazowda¬zowazowd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zowazo World (Jpn, Alt 2)¬zowazowdb¬zowazowd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zowazo World (Jpn, Alt 3)¬zowazowdc¬zowazowd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬MSX Magazine¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+3 Square (Ned)¬3square¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Emphasys¬0¬1¬<IPS>¬</IPS>¬¬¬
+La Abadia del Crimen (Spa, Remake)¬abadcrim¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2001¬¬¬¬¬developer:Manuel Pazos¬0¬1¬<IPS>¬</IPS>¬¬¬
+La Abadia del Crimen (Spa, Remake, Alt)¬abadcrima¬abadcrim¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2001¬¬¬¬¬developer:Manuel Pazos¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ablaze (UK?)¬ablaze¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Sandy Brand¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ago Tsu Disk (Jpn)¬agotsu¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:Ago Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akin (Ned)¬akin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien's Slime (Ger)¬aslime¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1990¬¬¬¬¬developer:Ax-Alex & Raketto¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien's Slime (Ger, Alt)¬aslimea¬aslime¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1990¬¬¬¬¬developer:Ax-Alex & Raketto¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien's Slime (Ger, Alt 2)¬aslimeb¬aslime¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1990¬¬¬¬¬developer:Ax-Alex & Raketto¬0¬1¬<IPS>¬</IPS>¬¬¬
+Anma's Amusement Disk (Ned)¬anmaamus¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arc (Ned, Demo)¬arcd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1990¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arc (Ned, Demo, Alt)¬arcda¬arcd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1990¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arc (Ned, Demo 1)¬arcd1¬arc¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arc (Ned, Demo 2)¬arcd2¬arc¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ark-A-Noah (Spa, Demo)¬arkanoah¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2000¬¬¬¬¬developer:Matra¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arm Wrestling (Spa)¬armwrest¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2004¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Arrow of Direction (Jpn)¬aod¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2007¬¬¬¬¬developer:Piroyan Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+ASO Remake (UK?)¬aso¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2012¬¬¬¬¬developer:sharksym ¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Monster (Jpn?)¬astromon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:AH7¬0¬1¬<IPS>¬</IPS>¬¬¬
+Basaro Attacker (Jpn)¬basaratk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Battle Bomber (UK?)¬battlebo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1996¬¬¬¬¬developer:BitBoyz¬0¬1¬<IPS>¬</IPS>¬¬¬
+Be-Bop Bout (Jpn)¬bebopbt¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Mar'z Project¬0¬1¬<IPS>¬</IPS>¬¬¬
+Be-Bop Bout (Jpn, Alt)¬bebopbta¬bebopbt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Mar'z Project¬0¬1¬<IPS>¬</IPS>¬¬¬
+Be-Bop Bout (Jpn, Demo)¬bebopbtd¬bebopbt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Mar'z Project¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bet your life (Ned)¬betlife¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Hegega¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Cyclon (Ned)¬blckcycl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Cyclon (Ned, Alt)¬blckcycla¬blckcycl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Cyclon (Ned, Alt 2)¬blckcyclb¬blckcycl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Cyclon (Ned, Alt 3)¬blckcyclc¬blckcycl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blade Lords (Ned)¬bladelrd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blade Lords (Ned, Alt)¬bladelrda¬bladelrd¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bomb Jack (Spa)¬bombjack¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2004¬¬¬¬¬developer:Kralizec¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bomb Jack (Spa, Demo)¬bombjackd¬bombjack¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2004¬¬¬¬¬developer:Kralizec¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bomberman (Ned)¬bombman¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1996¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bomberman 2 (Ned)¬bombman2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bombaman - Extra Ammo (UK?)¬bombaexa¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2008¬¬¬¬¬developer:TeamBomba¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bozo's Big Adventure (Ned)¬bozoadv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Brain Drive (UK?)¬braindrv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:GW's Workshop¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bubble Dream (UK?)¬bubldrem¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2012¬¬¬¬¬developer:Kotai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bubble Rain (Spa, Demo)¬bublrain¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2001¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bubble Utilize (Jpn)¬bublutil¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cat 'n' Mouse (Spa, Demo)¬catnmous¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2002¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cell 4 (Jpn)¬cell4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2004¬¬¬¬¬developer:Riy¬0¬1¬<IPS>¬</IPS>¬¬¬
+Championship Kinoko Firing Game (Jpn)¬ckinoko¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2001¬¬¬¬¬developer:Tomorrow Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Circle Pamphlet #2 (Jpn)¬circlep2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Conqueror (Jpn)¬conquer¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Taracot¬0¬1¬<IPS>¬</IPS>¬¬¬
+Construction Craze (Ned)¬constrcr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Construction Craze (Ned, Alt)¬constrcra¬constrcr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Coral 2 (Ned, Demo)¬coral2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2004¬¬¬¬¬developer:Infinite¬0¬1¬<IPS>¬</IPS>¬¬¬
+Core Dump (Ned, Demo)¬coredump¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬199?¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Core Fighter (Jpn)¬corefght¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2007¬¬¬¬¬developer:ma-Zone¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cosmo Gang de Puzzle (Jpn)¬cosmogng¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1999¬¬¬¬¬developer:Yashok¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cytron (Ned)¬cytron¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:MSX Club Gouda¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cytron (Ned, Alt)¬cytrona¬cytron¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:MSX Club Gouda¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dahku (Spa, Demo)¬dahkud¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2005¬¬¬¬¬developer:Kralizec¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dahku (Spa, Demo?, Alt)¬dahkuda¬dahkud¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2005¬¬¬¬¬developer:Kralizec¬0¬1¬<IPS>¬</IPS>¬¬¬
+DASS (Ned)¬dass¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dead or Live¬deadlive¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1999¬¬¬¬¬developer:Yashok¬0¬1¬<IPS>¬</IPS>¬¬¬
+DIX (Ned)¬dix¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+DIX (Ned, Alt)¬dixa¬dix¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+DIX (Ned, Demo)¬dixd1¬dix¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+DIX (Ned, Demo, Alt)¬dixd2¬dix¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dizzy (Ned)¬dizzy¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:MSX-Engine¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Ball Z (Kor)¬dbz¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬199?¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Spirit (Demo)¬dspirit¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2013?¬¬¬¬¬developer:Tiny Yarou¬0¬1¬<IPS>¬</IPS>¬¬¬
+Duck Tales (Ned)¬ducktale¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Emphasys¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dungeon Striker (Jpn)¬dungstrk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:MJ-2 Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Eggbert (Ned)¬eggbert¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fony¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Eggbert (Ned, Alt)¬eggberta¬eggbert¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fony¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Eggbert (Ned, Demo)¬eggbertd¬eggbert¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬Fony¬1993¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+F-Zeru Kai (Jpn)¬fzeruexd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Madou Youchien¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fighter's Ragnarok (Jpn)¬fightrag¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1998¬¬¬¬¬developer:Delta-Z¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Bout (Spa)¬fbout¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2000¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+Final Graphics (Ger,  v2.0)¬finalgfx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬H.S.H. Computer¬1989¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frantic (Ned)¬frantic¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frantic (Ned, Alt)¬frantica¬frantic¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galmoon (Jpn)¬galmoon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Maron Team¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galmoon (Jpn, Alt)¬galmoona¬galmoon¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Maron Team¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gals Quest Bangai-hen - The Princess's Pursuit (Jpn)¬galsqstb¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2001¬¬¬¬¬developer:Tomorrows Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekitotsu 7 Narabe (Jpn)¬geki7nar¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Satico¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekitotsu 7 Narabe (Jpn, Alt)¬geki7nara¬geki7nar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Satico¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekitotsu 7 Narabe (Jpn, Alt 2)¬geki7narb¬geki7nar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Satico¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gekitotsu 7 Narabe (Jpn, Alt 3)¬geki7narc¬geki7nar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Satico¬0¬1¬<IPS>¬</IPS>¬¬¬
+Goldrush (Ned, Cracked)¬goldrush¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Vivid¬0¬1¬<IPS>¬</IPS>¬¬¬
+Goldrush (Ned, Cracked 2)¬goldrusha¬goldrush¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Vivid¬0¬1¬<IPS>¬</IPS>¬¬¬
+Goldrush (Ned, Cracked 3)¬goldrushb¬goldrush¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Vivid¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gradius III Legends (Spa)¬gradius3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2001¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Great Gianna Sisters (Ned)¬ggiannas¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Great Gianna Sisters (Ned, Alt)¬ggiannasa¬ggiannas¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Guido's Lost in Plantinus (Ned)¬guidolp¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬developer:MFZ¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hamaraja Night (Jpn)¬hamaraja¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haradius (Jpn)¬haradius¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Impact Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haradius (Jpn, Alt)¬haradiusa¬haradius¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Impact Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Haradius (Jpn, Alt 2)¬haradiusb¬haradius¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Impact Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Humburger (Jpn)¬humburgr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Illusion Sniper's (Jpn)¬illusnip¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Sequence¬0¬1¬<IPS>¬</IPS>¬¬¬
+Indianquest (Jpn)¬indianqs¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Office Pasta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Izumic Ballade (Jpn)¬izumicbl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kanzen Kouryaku Kyokugen (Jpn)¬kkk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kanzen Kouryaku Kyokugen (Jpn, Alt)¬kkka¬kkk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Knuckle Duster (Jpn)¬knuckdst¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Ago Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kokuhaku -Declare-¬kokuhaku¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1998¬¬¬¬¬developer:TPM.CO Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kpiball (Jpn)¬kpiball¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2000¬¬¬¬¬developer:Boh-Ken¬0¬1¬<IPS>¬</IPS>¬¬¬
+Last War 2 (Jpn)¬lastwar2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Nagi-P¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lemmingso (UK?)¬lemmings¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Hackwrench N.I¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lilo - La Conquista de la Fama (Spa)¬lilo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬developer:Kai Magazine¬0¬1¬<IPS>¬</IPS>¬¬¬
+Line-Buster (Ned)¬linebust¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Ax-Alex & Raketto¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lingo MSX2 (Ned)¬lingo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lingo MSX2 (Ned, Alt)¬lingoa¬lingo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lingo MSX2 (Ned, Alt 2)¬lingob¬lingo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Logos Man (Jpn)¬logosman¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:Mo Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magical Coin (Jpn)¬magcoin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Initialize¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magical Labyrinth Remix (Jpn)¬maglabrx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1998¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magical Labyrinth Remix (Jpn, Demo)¬maglabrxd¬maglabrx¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magnar (Ned)¬magnar¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magnar (Ned, Alt)¬magnara¬magnar¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maryu Pie (Jpn)¬maryupie¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:MJ-2 Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mask Kyou Jidai Battle (Jpn)¬mask¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Hayato Takahashi¬0¬1¬<IPS>¬</IPS>¬¬¬
+Match Maniac (Ned)¬matchman¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1996¬¬¬¬¬developer:Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Matrix - Quest for Deliverance (Spa?)¬matrix¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Draken¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mechanical Brain (Jpn, Demo)¬mecbrain¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Sequence¬0¬1¬<IPS>¬</IPS>¬¬¬
+Michi -Tao- (Jpn)¬tao¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Studio Esutoria¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milkymate (Jpn)¬milkymat¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Atsic¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mini Nights (UK?)¬minights¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Hackwrench N.I¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mobius Debugger 2 - Eternal Striker (Jpn, Demo)¬mobiusd¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Sequence¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moon Landing (Jpn)¬moonland¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1998¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mr Hawaii (Jpn)¬mrhawaii¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2004¬¬¬¬¬developer:Riy¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Paint IV (Nor, v4.00)¬msxpnt4¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Juan Salas¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Paint IV (Nor, v4.00, Alt)¬msxpnt4a¬msxpnt4¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Juan Salas¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX Paint IV (Nor, v4.00, Alt 2)¬msxpnt4b¬msxpnt4¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Juan Salas¬0¬1¬<IPS>¬</IPS>¬¬¬
+No Fuss (Ned)¬nofuss¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nobuchou no Yaboyou Zenkokuban (Jpn)¬nobucho¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Ho Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nosh (Ned)¬nosh¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nosh (Ned, Demo?)¬noshprod¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Not Again! (Ned)¬notagain¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Flying Bytes¬0¬1¬<IPS>¬</IPS>¬¬¬
+Not Again! (Ned, Alt)¬notagaina¬notagain¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Flying Bytes¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nuts (Spa?)¬nuts¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1998¬¬¬¬¬developer:Kai Magazine¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 1996-08 (Jpn)¬nvmg9608¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 1996-09 (Jpn)¬nvmg9609¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 1996-11 (Jpn)¬nvmg9611¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 1997-01 (Jpn)¬nvmg9701¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 1997-09 (Jpn)¬nvmg9709¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 2002-06 (Jpn)¬nvmg0206¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 2002-07 (Jpn, Incomplete Dump)¬nvmg0207¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine 2002-08 (Jpn)¬nvmg0208¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+NV Magazine Special 26 (Jpn)¬nvmgsp26¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ounuki no Yabou - Shouten-ki (Jpn)¬ounuki¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Taracot¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pallmith (Jpn)¬pallmith¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Elemental Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pan to Neil (Jpn)¬pan2neil¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2001¬¬¬¬¬developer:Sweet Pastel¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pentaro Odyssey - The Revenge (Spa)¬pentodys¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pentaro Odyssey 2 - The Island (Spa)¬pentody2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2000¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pleasure Hearts (Jpn)¬pleashrt¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1999¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pleasure Hearts (Jpn, Alt)¬pleashrta¬pleashrt¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1999¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Poles (Jpn)¬poles¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pooyan (Fra)¬pooyan¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Gerardin H.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pooyan (Fra, Alt)¬pooyana¬pooyan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Gerardin H.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pooyan (Fra, Alt 2)¬pooyanb¬pooyan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Gerardin H.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pooyan (Fra, Alt 3)¬pooyanc¬pooyan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬19??¬¬¬¬¬developer:Gerardin H.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Post Modern Girl (Jpn)¬pmg¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2001¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Poyo Poyo Life (Jpn)¬poyopoyo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1991¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Poyo Poyo Life II (Jpn)¬poyopoy2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Psycho Ball (Ned)¬psychobl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:RAT¬0¬1¬<IPS>¬</IPS>¬¬¬
+Puddle Land (UK?)¬pudlland¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1999¬¬¬¬¬developer:Analogy¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure - The Quest for the Holy Grail (Ned)¬pumpkadv¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Umax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure - The Quest for the Holy Grail (Ned, Alt)¬pumpkadva¬pumpkadv¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Umax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure - The Quest for the Holy Grail (Ned, Alt 2)¬pumpkadvb¬pumpkadv¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Umax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure II (Ned)¬pumpkad2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Umax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure III (Jpn)¬pumpkad3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬part_id:User Disk,developer:Umax / Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure III (Ned, Demo)¬pumpkad3d¬pumpkad3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬developer:Umax / Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pumpkin Adventure III (Ned, Demo, Alt)¬pumpkad3da¬pumpkad3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬developer:Umax / Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Qop (Ned)¬qop¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Lionsoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quattro (Ned)¬quattro¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1989¬¬¬¬¬developer:First Class Software¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quest Yarou 2.2 (Jpn)¬qstyarou¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬2008¬¬¬¬¬developer:YF-MSX¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quinch (Ned)¬quinch¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:MCE/MSCV¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quiz! Atatchatte 25% (Jpn)¬quizat25¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quiz! Atatchatte 25% (Jpn, Alt)¬quizat25a¬quizat25¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Quiz! Atatchatte 25% - Additional Questions (Jpn)¬quizat25aq¬quizat25¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1996¬¬¬¬¬developer:Gigamix¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rad van Fortuin (Ned)¬radvfort¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rad van Fortuin (Ned, Alt 2)¬radvfortb¬radvfort¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rad van Fortuin (Ned, Alt)¬radvforta¬radvfort¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:NewVision¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rapid Fire (UK?)¬rapidfir¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2002¬¬¬¬¬developer:ZapZap¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rick Dangerous (Ned)¬rickdang¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rick Dangerous - Extra Levels (Ned)¬rickdangxl¬rickdang¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Paragon Productions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Riot (Jpn)¬riot¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1990¬¬¬¬¬developer:Hatimitsu Demon¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rock City (Jpn)¬rockcity¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Karma Phantom¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rock'n Roller (Jpn)¬rocknrol¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1988¬¬¬¬¬developer:Kaeru Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rolling Thunder (Spa)¬rthunder¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Imanok¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sanriku Ouja #0 (Jpn)¬sanriku0¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sanriku Ouja #0 (Jpn, Alt)¬sanriku0a¬sanriku0¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:M-Kai¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sayonara Carmine (Jpn)¬sayocarm¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1999¬¬¬¬¬developer:Tako Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sex Bomb Bunny (Spa, Demo)¬sexbombb¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1999¬¬¬¬¬developer:Matra¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shadow Heroes 2 (Jpn)¬shadowhe¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1993¬¬¬¬¬developer:Syntax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shoulder Blade (Jpn, Bad Dump?)¬shlblade¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:GW's Workshop¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shrines of Enigma (Ned)¬enigma¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Sunrise¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shuffle Puck (Ned)¬shufflep¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:MSX Avengers Doetinchem¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shuffle Puck (Ned, Demo)¬shufflepd¬shufflep¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:MSX Avengers Doetinchem¬0¬1¬<IPS>¬</IPS>¬¬¬
+Soko (Spa?)¬soko¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1995¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solid Snail (Ned)¬solidsnl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Vivid¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solid Snail (Ned, Alt)¬solidsnla¬solidsnl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Vivid¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sonyc (UK?)¬sonyc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1997¬¬¬¬¬developer:Analogy¬0¬1¬<IPS>¬</IPS>¬¬¬
+Split Ball (Jpn)¬splitbal¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1995¬¬¬¬¬developer:Riyuta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Street Neo Fighter II - The World Warrior (Promo 2)¬snf2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Street Neo Fighter II - The World Warrior (Promo 3)¬snf2a¬snf2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Street Neo Fighter II - The World Warrior (Alt)¬snf2b¬snf2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Street Neo Fighter II - The World Warrior (Alt 2)¬snf2c¬snf2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Dynamite Fighters Street (Jpn)¬sdfs¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬199?¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tamanegitori Game (Jpn)¬tamanegi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Onion Software¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tarot (Jpn)¬tarot¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1993¬¬¬¬¬developer:Taracot¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tarotika Voodoo (Jpn)¬tarotika¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1998¬¬¬¬¬developer:TPM.CO Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Teachers Terror (Ned)¬teachter¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Hegega¬0¬1¬<IPS>¬</IPS>¬¬¬
+Teachers Terror (Ned, Alt)¬teachtera¬teachter¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Hegega¬0¬1¬<IPS>¬</IPS>¬¬¬
+Trojka (Ned)¬trojka¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:BCF¬0¬1¬<IPS>¬</IPS>¬¬¬
+Trojka (Ned, Alt)¬trojkaa¬trojka¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1992¬¬¬¬¬developer:BCF¬0¬1¬<IPS>¬</IPS>¬¬¬
+Troxx (Ned)¬troxx¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Troxx (Ned, Alt)¬troxxa¬troxx¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Anma¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tokimeki World Cup (Jpn)¬twcup¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬19??¬¬¬¬¬developer:Atsic¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vectron (Ned)¬vectron¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1989¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Vectron (Ned, Alt)¬vectrona¬vectron¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1989¬¬¬¬¬developer:Parallax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Veroveraar (Ned)¬verovera¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1988¬¬¬¬¬developer:Samosoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Veroveraar (Ned, Alt)¬veroveraa¬verovera¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1988¬¬¬¬¬developer:Samosoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+VS Rotation (Jpn)¬vsrotatn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wellen (UK?)¬wellen¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Frieve¬0¬1¬<IPS>¬</IPS>¬¬¬
+Whipple (Jpn)¬whipple¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Whipple (Jpn, Alt)¬whipplea¬whipple¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1992¬¬¬¬¬developer:Pastel Hope¬0¬1¬<IPS>¬</IPS>¬¬¬
+Winglancer (UK?, v1.04)¬winglanc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬2002¬¬¬¬¬developer:ZapZap¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Witch 'Iz' (Jpn)¬witchiz¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1994¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Witchs Revenge (Ned)¬witchrev¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1993¬¬¬¬¬developer:Umax¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yabubi de Koukou Manken-bu¬yabukoko¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<doujin>¬1997¬¬¬¬¬developer:Ago Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zone Terra (UK?)¬zonterra¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1994¬¬¬¬¬developer:Quadrivium¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zynos on the Adventure Islands (Ned)¬zynos¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Grischasoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zynos on the Adventure Islands (Ned, Alt)¬zynosa¬zynos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Grischasoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zynos on the Adventure Islands (Ned, Alt 2)¬zynosb¬zynos¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<homebrew>¬1991¬¬¬¬¬developer:Grischasoft¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #1 (Jpn)¬msxfan01¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1991¬¬¬¬¬magazine:MSX-FAN No. 1 (1991/10),release:199110xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #2 (Jpn)¬msxfan02¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1991¬¬¬¬¬magazine:MSX-FAN No. 2 (1991/11),release:199111xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #3 (Jpn)¬msxfan03¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1991¬¬¬¬¬magazine:MSX-FAN No. 3 (1991/12),release:199112xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #4 (Jpn)¬msxfan04¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 4 (1992/01),release:199201xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #5 (Jpn)¬msxfan05¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 5 (1992/02),release:199202xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #6 (Jpn)¬msxfan06¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 6 (1992/03),release:199203xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #7 (Jpn)¬msxfan07¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 7 (1992/04),release:199204xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #8 (Jpn)¬msxfan08¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 8 (1992/05),release:199205xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #9 (Jpn)¬msxfan09¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 9 (1992/06),release:199206xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #10 (Jpn)¬msxfan10¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 10 (1992/07),release:199207xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #11 (Jpn)¬msxfan11¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 11 (1992/08),release:199208xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #12 (Jpn)¬msxfan12¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 12 (1992/09),release:199209xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #13 (Jpn)¬msxfan13¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 13 (1992/10),release:199210xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #14 (Jpn)¬msxfan14¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 14 (1992/11),release:199211xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #15 (Jpn)¬msxfan15¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX-FAN No. 15 (1992/12),release:199212xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #16 (Jpn)¬msxfan16¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 16 (1993/01),release:199301xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #17 (Jpn)¬msxfan17¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 17 (1993/02),release:199302xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #18 (Jpn)¬msxfan18¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 18 (1993/03),release:199303xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #19 (Jpn)¬msxfan19¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 19 (1993/04),release:199304xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #20 (Jpn)¬msxfan20¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 20 (1993/06 & 1993/07),release:199306xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #21 (Jpn)¬msxfan21¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 21 (1993/08 & 1993/09),release:199308xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #22 (Jpn)¬msxfan22¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 22 (1993/10 & 1993/11),release:199310xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #23 (Jpn)¬msxfan23¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1993¬¬¬¬¬magazine:MSX-FAN No. 23 (1993/12 & 1994/01),release:199312xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #24 (Jpn)¬msxfan24¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 24 (1994/02 & 1994/03),release:199402xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #24 (Jpn, Cracked Disk 2)¬msxfan24a¬msxfan24¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 24 (1994/02 & 1994/03),release:199402xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #25 (Jpn)¬msxfan25¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 25 (1994/04 & 1994/05),release:199404xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #26 (Jpn)¬msxfan26¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 26 (1994/06 & 1994/07),release:199406xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #27 (Jpn)¬msxfan27¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 27,release:199408xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #28 (Jpn)¬msxfan28¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 28,release:199410xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #29 (Jpn)¬msxfan29¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX-FAN No. 29,release:199412xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #30 (Jpn)¬msxfan30¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1995¬¬¬¬¬magazine:MSX-FAN No. 30,release:199502xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #31 (Jpn)¬msxfan31¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1995¬¬¬¬¬magazine:MSX-FAN No. 31,release:199504xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #32 (Jpn)¬msxfan32¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1995¬¬¬¬¬magazine:MSX-FAN No. 32,release:199506xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+MSX-FAN Disk #33 (Jpn)¬msxfan33¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1995¬¬¬¬¬magazine:MSX-FAN No. 33,release:199508xx¬0¬1¬<IPS>¬</IPS>¬¬¬
+Amazing Cash (Ned)¬amazcash¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1990¬¬¬¬¬magazine:MSX Club Magazine 33?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Amazing Cash (Ned, Alt)¬amazcasha¬amazcash¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1990¬¬¬¬¬magazine:MSX Club Magazine 33?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boggle (Ned)¬boggle¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX Club Magazine 50?,developer:Triple Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boggle (Ned, Alt)¬bogglea¬boggle¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1992¬¬¬¬¬magazine:MSX Club Magazine 50?,developer:Triple Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Force Delta (Ned)¬deltafrc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1990¬¬¬¬¬magazine:MSX Club Magazine ??¬0¬1¬<IPS>¬</IPS>¬¬¬
+Infinity (Ned)¬infinity¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1991¬¬¬¬¬magazine:MSX Club Magazine 18?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Infinity (Ned, Alt)¬infinitya¬infinity¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1991¬¬¬¬¬magazine:MSX Club Magazine 18?¬0¬1¬<IPS>¬</IPS>¬¬¬
+Brisk (Ned)¬brisk¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX Computer & Club Magazine 64,developer:Triple Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Brisk (Ned, Alt)¬briska¬brisk¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1994¬¬¬¬¬magazine:MSX Computer & Club Magazine 64,developer:Triple Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Leprechaun (Ned)¬leprechn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<coverdisk>¬1995¬¬¬¬¬magazine:MSX Computer & Club Magazine 76,developer:Triple Soft¬0¬1¬<IPS>¬</IPS>¬¬¬
+Goody (Spa)¬goody¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Goody (Spa, Alt)¬goodya¬goody¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Last Mission (Spa)¬lastmiss¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<tape2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Last Mission (Spa, Alt)¬lastmissa¬lastmiss¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<tape2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Livingstone Supongo (Spa)¬livingst¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<tape2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+1942 (Jpn)¬1942¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+1942 (Jpn, Alt)¬1942a¬1942¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+AcroJet (Jpn)¬acrojet¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akumajou Dracula (Jpn)¬vampkill¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akumajou Dracula (Jpn, Alt)¬vampkilla¬vampkill¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Akumajou Dracula (Jpn, Alt 2)¬vampkillb¬vampkill¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste (Jpn)¬aleste¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste (Jpn, Alt)¬alestea¬aleste¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Aleste (Jpn, Alt 2)¬alesteb¬aleste¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+American Soccer (Jpn)¬amesoccr¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+American Soccer (Jpn, Alt)¬amesoccra¬amesoccr¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Han Seimei Senki Androgynus (Jpn)¬androgyn¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Han Seimei Senki Androgynus (Jpn, Alt)¬androgyna¬androgyn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Han Seimei Senki Androgynus (Jpn, Alt 2)¬androgynb¬androgyn¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arctic (Jpn)¬arctic¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arkanoid II - Revenge of Doh (Jpn)¬arknoid2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arkanoid II - Revenge of Doh (Jpn, Alt)¬arknoid2a¬arknoid2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arkanoid II - Revenge of Doh (Jpn, Alt 2)¬arknoid2b¬arknoid2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Arkanoid II - Revenge of Doh (Jpn, Alt 3)¬arknoid2c¬arknoid2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Cagliostro no Shiro (Jpn)¬lupin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Cagliostro no Shiro (Jpn, Alt)¬lupina¬lupin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Cagliostro no Shiro (Jpn, Alt 2)¬lupinb¬lupin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Babylon no Ougon Densetsu (Jpn)¬lupin2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Babylon no Ougon Densetsu (Jpn, Alt)¬lupin2a¬lupin2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lupin Sansei - Babylon no Ougon Densetsu (Jpn, Alt 2)¬lupin2b¬lupin2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Inemuri-ryuu Asada Tetsuya no A-kyuu Mahjong (Jpn)¬aclassmj¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ashguine 2 - Kokuu no Gajou (Jpn)¬ashguin2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ashguine 2 - Kokuu no Gajou (Jpn, Alt)¬ashguin2a¬ashguin2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ashguine 2 - Kokuu no Gajou (Jpn, Alt 2)¬ashguin2b¬ashguin2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ashguine - Fukushuu no Honoo (Jpn)¬ashguin3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ashguine - Fukushuu no Honoo (Jpn, Alt)¬ashguin3a¬ashguin3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bubble Bobble (Jpn)¬bublbobl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bubble Bobble (Jpn, Alt)¬bublbobla¬bublbobl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cheese 2 (Jpn)¬cheese2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Cockpit (Jpn)¬cockpit¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Cockpit (Jpn, Alt)¬cockpita¬cockpit¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Cockpit (Jpn, Alt 2)¬cockpitb¬cockpit¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Contra (Jpn)¬contra¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Contra (Jpn, Alt)¬contraa¬contra¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Contra (Jpn, Alt 2)¬contrab¬contra¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynamite Bowl (Jpn)¬dynabowl¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynamite Bowl (Jpn, Alt)¬dynabowla¬dynabowl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dynamite Bowl (Jpn, Alt 2)¬dynabowlb¬dynabowl¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Elthlead (Jpn)¬elthlead¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Elthlead (Jpn, Alt)¬elthleada¬elthlead¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Famicle Parodic (Jpn)¬famiparo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Billiards (Jpn)¬famibill¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Billiards (Jpn, Alt 2)¬famibillb¬famibill¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Billiards (Jpn, Alt)¬famibilla¬famibill¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Boxing (Jpn)¬famiboxi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Boxing (Jpn, Alt)¬famiboxia¬famiboxi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Family Boxing (Jpn, Alt 2)¬famiboxib¬famiboxi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fantasy Zone II - The Tears of Opa-Opa (Jpn)¬fantzon2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fantasy Zone II - The Tears of Opa-Opa (Jpn, Alt)¬fantzon2a¬fantzon2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fleet Commander II (Jpn)¬fleetco2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fleet Commander II (Jpn, Alt)¬fleetco2a¬fleetco2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fleet Commander II (Jpn, Alt 2)¬fleetco2b¬fleetco2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fleet Commander II (Jpn, Alt 3)¬fleetco2c¬fleetco2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ganbare Goemon! Karakuri Douchuu (Jpn)¬ggoemon¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ganbare Goemon! Karakuri Douchuu (Jpn, Alt)¬ggoemona¬ggoemon¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ganbare Goemon! Karakuri Douchuu (Jpn, Alt 2)¬ggoemonb¬ggoemon¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Garyuu Ou (Jpn)¬garyuou¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Garyuu Ou (Jpn, Alt)¬garyuoua¬garyuou¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Girly Block (Jpn)¬grlyblok¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Girly Block (Jpn, Alt)¬grlybloka¬grlyblok¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Girly Block (Jpn, Alt 2)¬grlyblokb¬grlyblok¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Girly Block (Jpn, Alt 3)¬grlyblokc¬grlyblok¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hai no Majutsushi (Jpn)¬hainomaj¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hai no Majutsushi (Jpn, Alt)¬hainomaja¬hainomaj¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hardball (Jpn)¬hardball¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hardball (Jpn, Alt)¬hardballa¬hardball¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Heroes of the Lance (Jpn)¬herolanc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hi no Tori - Houou-hen (Jpn)¬hinotori¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hi no Tori - Houou-hen (Jpn, Alt)¬hinotoria¬hinotori¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hi no Tori - Houou-hen (Jpn, Alt 2)¬hinotorib¬hinotori¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hole in One Special (Jpn)¬holein1s¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hole in One Special (Jpn)[a]¬holein1sa¬holein1s¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide 3 - The Space Memories (Jpn)¬hydlide3¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide 3 - The Space Memories (Jpn, Alt)¬hydlide3a¬hydlide3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hydlide 3 - The Space Memories (Jpn, Alt 2)¬hydlide3b¬hydlide3¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ikari (Jpn)¬ikari¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ikari (Jpn, Alt)¬ikaria¬ikari¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ikari (Jpn, Alt 2)¬ikarib¬ikari¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Labyrinth (Jpn, Alt)¬labyrinta¬labyrint¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Labyrinth (Jpn)¬labyrint¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mad Rider (Jpn)¬madrider¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mad Rider (Jpn, Alt)¬madridera¬madrider¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maison Ikkoku (Jpn)¬mikkoku¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maison Ikkoku (Jpn, Alt)¬mikkokua¬mikkoku¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Higemaru Makaijima - Nanatsu no Shima Daibouken (Jpn)¬higemaru¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Higemaru Makaijima - Nanatsu no Shima Daibouken (Jpn, Alt)¬higemarua¬higemaru¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Malaya no Hihou (Jpn)¬malayahi¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Malaya no Hihou (Jpn, Alt)¬malayahia¬malayahi¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Metal Gear (Jpn)¬mgear¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Metal Gear (Jpn, Alt)¬mgeara¬mgear¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Metal Gear (Jpn, Alt 2)¬mgearb¬mgear¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mon Mon Monster (Jpn)¬monmonmo¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mon Mon Monster (Jpn, Alt)¬monmonmoa¬monmonmo¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nekketsu Juudou (Jpn)¬nekkejud¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nekketsu Juudou (Jpn, Alt)¬nekkejuda¬nekkejud¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nekketsu Juudou (Jpn, Alt 2)¬nekkejudb¬nekkejud¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nekketsu Juudou (Jpn, Alt 3)¬nekkejudc¬nekkejud¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja-kun - Ashura no Shou (Jpn)¬ninjakun¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja-kun - Ashura no Shou (Jpn, Alt)¬ninjakuna¬ninjakun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ninja-kun - Ashura no Shou (Jpn, Alt 2)¬ninjakunb¬ninjakun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ogre (Jpn)¬ogre¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ogre (Jpn, Alt)¬ogrea¬ogre¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ouke no Tani - El Giza no Fuuin (Jpn)¬ouketani¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ouke no Tani - El Giza no Fuuin (Jpn, Alt)¬ouketania¬ouketani¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Out Run (Jpn)¬outrun¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Out Run (Jpn, Alt)¬outruna¬outrun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Out Run (Jpn, Alt 2)¬outrunb¬outrun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Out Run (Jpn, Alt 3)¬outrunc¬outrun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Penguin-kun Wars 2 (Jpn)¬penguin¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Penguin-kun Wars 2 (Jpn, Alt)¬penguina¬penguin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Penguin-kun Wars 2 (Jpn, Alt 2)¬penguinb¬penguin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Penguin-kun Wars 2 (Jpn, Alt 3)¬penguinc¬penguin¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Predator (Jpn)¬predator¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Predator (Jpn, Alt)¬predatora¬predator¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Predator (Jpn, Alt 2)¬predatorb¬predator¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Predator (Jpn, Alt 3)¬predatorc¬predator¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Predator (Jpn, Alt 4)¬predatord¬predator¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Project A2 (Jpn)¬projcta2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Project A2 (Jpn, Alt)¬projcta2a¬projcta2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Project A2 (Jpn, Alt 2)¬projcta2b¬projcta2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rastan Saga (Jpn)¬rastan¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rastan Saga (Jpn, Alt)¬rastana¬rastan¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Romancia (Jpn)¬romancia¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Romancia (Jpn, Alt)¬romanciaa¬romancia¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scramble Formation (Jpn)¬scramble¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scramble Formation (Jpn, Alt)¬scramblea¬scramble¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seikima II Special - Akuma no Gyakushuu (Jpn)¬seikima2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seikima II Special - Akuma no Gyakushuu (Jpn, Alt)¬seikima2a¬seikima2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seikima II Special - Akuma no Gyakushuu (Jpn, Alt 2)¬seikima2b¬seikima2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Seikima II Special - Akuma no Gyakushuu (Jpn, Alt 3)¬seikima2c¬seikima2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Manbow (Jpn)¬spmanbow¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Virgin (Jpn)¬starvirg¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Virgin (Jpn, Alt)¬starvirga¬starvirg¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Virgin (Jpn, Alt 2)¬starvirgb¬starvirg¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Strategic Mars (Jpn)¬stramars¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Strategic Mars (Jpn, Alt)¬stramarsa¬stramars¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Strategic Mars (Jpn, Alt 2)¬stramarsb¬stramars¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Rambo Special (Jpn)¬srambosp¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Rambo Special (Jpn, Alt)¬srambospa¬srambosp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Rambo Special (Jpn, Alt 2)¬srambospb¬srambosp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Rambo Special (Jpn, Alt 3)¬srambospc¬srambosp¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Runner (Jpn)¬srunner¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Runner (Jpn, Alt)¬srunnera¬srunner¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Runner (Jpn, Alt 2)¬srunnerb¬srunner¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Triton (Jpn)¬striton¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Tritorn (Jpn, Alt)¬stritona¬striton¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Tritorn (Jpn, Alt 2)¬stritonb¬striton¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Taiyou no Shinden - Asteka II (Jpn)¬asteka2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Taiyou no Shinden - Asteka II (Jpn, Alt)¬asteka2a¬asteka2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Taiyou no Shinden - Asteka II (Jpn, Alt 2)¬asteka2b¬asteka2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Taiyou no Shinden - Asteka II (Jpn, Alt 3)¬asteka2c¬asteka2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topple Zip (Jpn)¬topzip¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tsuri Kichi Sanpei - Tsuri Sennin Hen (Jpn)¬sanpei2¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tsuri Kichi Sanpei - Tsuri Sennin Hen (Jpn, Alt)¬sanpei2a¬sanpei2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tsuri Kichi Sanpei - Tsuri Sennin Hen (Jpn, Alt 2)¬sanpei2b¬sanpei2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tsuri Kichi Sanpei - Tsuri Sennin Hen (Jpn, Alt 3)¬sanpei2c¬sanpei2¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Usas (Jpn)¬usas¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Usas (Jpn, Alt)¬usasa¬usas¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Usas (Jpn, Alt 2)¬usasb¬usas¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Woody Poco (Jpn)¬woodypoc¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Woody Poco (Jpn, Alt)¬woodypoca¬woodypoc¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xevious - Fardraut Saga (Jpn)¬xevious¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Xevious - Fardraut Saga (Jpn, Alt)¬xeviousa¬xevious¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yuurei-kun (Jpn)¬yuurei¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yuurei-kun (Jpn, Alt)¬yuureia¬yuurei¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yuurei-kun (Jpn, Alt 2)¬yuureib¬yuurei¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zanac EX (Jpn)¬zanacex¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zanac EX (Jpn, Alt)¬zanacexa¬zanacex¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zoids - Chuuou Tairiku no Tatakai (Jpn)¬zoids¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zoids - Chuuou Tairiku no Tatakai (Jpn, Alt)¬zoidsa¬zoids¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zombie Hunter (Jpn)¬zombihun¬¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zombie Hunter (Jpn, Alt)¬zombihuna¬zombihun¬¬./qp.exe¬MAME Mitsubishi ML-G3 (MSX2) -SOFTLIST msx2_flop¬<cart2disk hack>¬19??¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬

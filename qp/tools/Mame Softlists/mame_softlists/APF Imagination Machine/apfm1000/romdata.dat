@@ -1,0 +1,13 @@
+ROM DataFile Version : 1.1
+Boxing¬boxing¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1012¬0¬1¬<IPS>¬</IPS>¬¬¬
+Brickdown / Shooting Gallery¬brickdwn¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1005¬0¬1¬<IPS>¬</IPS>¬¬¬
+Casino 1: Slots / Roulette / Keno¬casino¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1009¬0¬1¬<IPS>¬</IPS>¬¬¬
+Catena¬catena¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Catena (Alt)¬catenaa¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ufo / Sea Monsters / Break It Down / Rebuild / Shoot¬ufo¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:std,serial:MG1010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Character Dump¬chardump¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬Adam Trionfo¬2010¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Move Block¬movblock¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬Adam Trionfo¬2010¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Move Block 2¬mblock02¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬Adam Trionfo¬2010¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Read PIA¬readpia¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬Adam Trionfo¬2010¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+APF Basic¬basic¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬APF¬1979¬¬¬¬¬slot:basic,serial:AL100A¬0¬1¬<IPS>¬</IPS>¬¬¬
+Extended Basic¬ebasic¬¬¬./qp.exe¬MAME APF M-1000 -SOFTLIST apfm1000¬R.L. Recker¬1983¬¬¬¬¬slot:basic¬0¬1¬<IPS>¬</IPS>¬¬¬

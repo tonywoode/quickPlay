@@ -1,0 +1,25 @@
+ROM DataFile Version : 1.1
+BASIC Level III (Jpn)¬basic3¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1985¬¬¬¬¬slot:level3¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Level III (Export)¬basic3e¬basic3¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1985¬¬¬¬¬slot:level3¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC Level 2 (Jpn)¬basic2¬basic3¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1985¬¬¬¬¬¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sega Music Editor (Euro?)¬music¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬198?¬¬¬¬¬slot:music_editor¬0¬1¬<IPS>¬</IPS>¬¬¬
+Music (Jpn)¬musicj¬music¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬slot:music_editor,serial:E-101,alt_title:¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eitango ~ Chuugaku 1-Nen (Jpn)¬chueit1n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-103,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eisakubun ~ Chuugaku 1-Nen (Jpn)¬chueis1n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-104,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eisakubun ~ Chuugaku 1-Nen (Jpn, Alt)¬chueis1na¬chueis1n¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-104,alt_title:()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eibunpou ~ Chuugaku 1-Nen (Jpn)¬chueib1n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-105,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansu ~ Shougaku 4-Nen Jou (Jpn)¬tansan4j¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-106,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansu ~ Shougaku 4-Nen Jou (Jpn, Alt)¬tansan4ja¬tansan4j¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-106,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Kagaku ~ Gensokigou Master (Jpn)¬kagaku¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-107,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nihonshi Nenpyou (Jpn)¬nihonshi¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-108,alt_title:¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sekaishi Nenpyou ~ Monbushou Shidouyouryou Junkyo (Jpn)¬sekaishi¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-109,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eitango ~ Chuugaku 2-Nen (Jpn)¬chueit2n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-110,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eitango ~ Chuugaku 2-Nen (Jpn, Alt)¬chueit2na¬chueit2n¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-110,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eisakubun ~ Chuugaku 2-Nen (Jpn)¬chueis2n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-111,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eisakubun ~ Chuugaku 2-Nen (Jpn, Alt)¬chueis2na¬chueis2n¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-111,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chuugaku Hisshuu Eibunpou ~ Chuugaku 2-Nen (Jpn)¬chueib2n¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-112,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansu ~ Shougaku 4-Nen Ge (Jpn)¬tansan4g¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-113,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansu ~ Shougaku 5-Nen Ge (Jpn)¬tansan5g¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-114,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansu ~ Shougaku 6-Nen Ge (Jpn)¬tansan6g¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-115,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansuu ~ Shougaku 5-Nen Jou (Jpn)¬tansan5j¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-116,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tanoshii Sansuu ~ Shougaku 6-Nen Jou (Jpn)¬tansan6j¬¬¬./qp.exe¬MAME Sega SC-3000 -SOFTLIST sc3000_cart¬Sega¬1983¬¬¬¬¬serial:E-117,alt_title: ()¬0¬1¬<IPS>¬</IPS>¬¬¬

@@ -1,0 +1,15 @@
+ROM DataFile Version : 1.1
+BASIC v1.1¬basic¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:This can be mounted in any slot¬0¬1¬<IPS>¬</IPS>¬¬¬
+FORTH v1.1¬forth11¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load both in "cart1" and "cart2"¬0¬1¬<IPS>¬</IPS>¬¬¬
+FORTH v1.3¬forth13¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load both in "cart1" and "cart2"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galaxy Wars + Hangman¬gwarhang¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load in "cart1"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Invaders v1.1¬invaders11¬invaders¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load in "cart1"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Invaders v1.2¬invaders¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load in "cart1"¬0¬1¬<IPS>¬</IPS>¬¬¬
+MAD v1.1¬mad¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load in "cart1"¬0¬1¬<IPS>¬</IPS>¬¬¬
+MAD v1.1 (Alt)¬mada¬mad¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load in "cart1"¬0¬1¬<IPS>¬</IPS>¬¬¬
+PASCAL v1.0¬pascal¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load both in "cart1" and "cart2"¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tank v1.1 (Tape2ROM)¬tank11¬tank¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:This can be mounted in any slot. Press "L" and then "T" to launch the game.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tank v1.2 (Tape2ROM)¬tank¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:This can be mounted in any slot. Press "L" and then "T" to launch the game.¬0¬1¬<IPS>¬</IPS>¬¬¬
+WORD v1.1¬word11¬word¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:This can be mounted in any slot¬0¬1¬<IPS>¬</IPS>¬¬¬
+WORD v1.2¬word¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:This can be mounted in any slot¬0¬1¬<IPS>¬</IPS>¬¬¬
+XBASIC v1.0¬xbasic¬¬¬./qp.exe¬Retroarch Technosys Aamber Pegasus -SOFTLIST pegasus_cart (MAME)¬<unknown>¬19??¬¬¬¬¬usage:Load both in "cart1", "cart2" and "cart3"¬0¬1¬<IPS>¬</IPS>¬¬¬

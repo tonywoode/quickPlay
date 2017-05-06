@@ -1,0 +1,11 @@
+ROM DataFile Version : 1.1
+COPYFILE¬copyfile¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+EDITASM¬editasm¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+GALAXIANS¬galaxian¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+JETPAC¬jetpac¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+JETSETWILLY¬jetset¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+KAREL¬karel¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+MIKOS¬mikos¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+PASCAL¬pascal¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+PLANETOIDS¬planetoi¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬
+PSSST¬pssst¬¬¬./qp.exe¬MAME Tesla Ondra -SOFTLIST ondra¬<unknown>¬19??¬¬¬¬¬usage:Works only on the Ondra ViLi¬0¬1¬<IPS>¬</IPS>¬¬¬

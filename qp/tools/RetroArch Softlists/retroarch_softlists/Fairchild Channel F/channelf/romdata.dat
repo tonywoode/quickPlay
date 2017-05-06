@@ -1,0 +1,44 @@
+ROM DataFile Version : 1.1
+Democart 1¬democrt1¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Democart 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Democart 2¬democrt2¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬197?¬¬¬¬¬slot:std,series:Democart 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tic-Tac-Toe / Shooting Gallery / Doodle / Quadra-Doodle¬tctactoe¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std,series:Videocart 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Muehle / Tontauben-Schiessen / Kreatives Malspiel / Videoscope (Ger)¬muehle¬tctactoe¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬SABA¬1978¬¬¬¬¬slot:std,series:Videocart 1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desert Fox / Shooting Gallery¬dsrtfox¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std,series:Videocart 2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Blackjack¬vblckjck¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std,series:Videocart 3¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spitfire¬spitfire¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std,series:Videocart 4¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spitfire (Prototype)¬spitfirep¬spitfire¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space War¬spacewar¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 5¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Quiz 1¬mthquiz1¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1976¬¬¬¬¬slot:std,series:Videocart 6¬0¬1¬<IPS>¬</IPS>¬¬¬
+Math Quiz 2¬mthquiz2¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 7¬0¬1¬<IPS>¬</IPS>¬¬¬
+Magic Numbers / Mind Reader / Nim¬magicnum¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 8¬0¬1¬<IPS>¬</IPS>¬¬¬
+Drag Race¬dragrace¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 9¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maze / Jailbreak / Blind-man's-bluff / Trailblazer¬maze¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:maze,series:Videocart 10¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maze / Jailbreak / Blind-man's-bluff / Trailblazer (Alt)¬mazea¬maze¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:maze,series:Videocart 10¬0¬1¬<IPS>¬</IPS>¬¬¬
+Backgammon / Acey-Deucey¬backgamm¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 11¬0¬1¬<IPS>¬</IPS>¬¬¬
+Baseball¬baseball¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 12,usage:Hit CTRL and A to start.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robot War / Torpedo Alley¬robotwar¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 13¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robot War (Prototype)¬robotwarp¬robotwar¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sonar Search¬sonrsrch¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1977¬¬¬¬¬slot:std,series:Videocart 14¬0¬1¬<IPS>¬</IPS>¬¬¬
+Memory Match 1 & 2¬memory¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:std,series:Videocart 15¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dodge It¬dodgeit¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:std,series:Videocart 16¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinball Challenge¬pinball¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:std,series:Videocart 17¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinball Challenge (Alt)¬pinballa¬pinball¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:std,series:Videocart 17¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hangman¬hangman¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:hangman,series:Videocart 18¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ordtvling (Swe)¬ordtvlng¬hangman¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Luxor¬1978¬¬¬¬¬slot:hangman,series:Luxor 18¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rat' Mal (Ger)¬ratmal¬hangman¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬SABA¬197?¬¬¬¬¬slot:hangman,series:SABA 16¬0¬1¬<IPS>¬</IPS>¬¬¬
+Checkers¬checkers¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1978¬¬¬¬¬slot:std,series:Videocart 19¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Whizball¬whizball¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild¬1978¬¬¬¬¬slot:std,series:Videocart 20¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schach (Ger)¬schach¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬SABA¬197?¬¬¬¬¬slot:chess,series:SABA 20¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bowling¬bowling¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Fairchild/Zircon¬1978¬¬¬¬¬slot:std,series:Videocart 21¬0¬1¬<IPS>¬</IPS>¬¬¬
+Slot Machine¬slotmchn¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1980¬¬¬¬¬slot:std,series:Videocart 22¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galactic Space Wars / Lunar Lander¬galactic¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1980¬¬¬¬¬slot:std,series:Videocart 23¬0¬1¬<IPS>¬</IPS>¬¬¬
+Galactic Space Wars (Prototype)¬galacticp¬galactic¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1980¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pro Football¬pfootbll¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1981¬¬¬¬¬slot:std,series:Videocart 24¬0¬1¬<IPS>¬</IPS>¬¬¬
+Football (Prototype)¬football¬pfootbll¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1981¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Casino Poker¬casinop¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1980¬¬¬¬¬slot:std,series:Videocart 25¬0¬1¬<IPS>¬</IPS>¬¬¬
+Draw Poker (Prototype)¬drawpkr¬casinop¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1980¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Invasion¬alieninv¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬1981¬¬¬¬¬slot:std,series:Videocart 26¬0¬1¬<IPS>¬</IPS>¬¬¬
+Werbetextcassette¬werbetxt¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Electronic-Partner¬198?¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Color Organ (Prototype)¬clrorgan¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬Zircon¬19??¬¬¬¬¬slot:std¬0¬1¬<IPS>¬</IPS>¬¬¬
+Channel F Multi-Cart (Final)¬multicrt¬¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬<homebrew>¬2004¬¬¬¬¬slot:multi¬0¬1¬<IPS>¬</IPS>¬¬¬
+Channel F Multi-Cart (Older)¬multicrto¬multicrt¬¬./qp.exe¬Retroarch Fairchild Channel F -SOFTLIST channelf (MAME)¬<homebrew>¬2004¬¬¬¬¬slot:multi_old¬0¬1¬<IPS>¬</IPS>¬¬¬

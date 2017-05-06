@@ -1,0 +1,323 @@
+ROM DataFile Version : 1.1
+4A DOS¬4ados¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Schmidt¬19??¬¬¬¬¬pcb:standard,comment:Requires disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+4A Flyer¬4aflyer¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Triton¬1986¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Adventure¬advent¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott Adams¬1981¬¬¬¬¬pcb:standard,serial:PHM 3041¬0¬1¬<IPS>¬</IPS>¬¬¬
+Edu-Pack¬edupack¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Asgard¬1990¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Link v0.99¬asglink¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Asgard¬1990¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alpiner¬alpiner¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3056¬0¬1¬<IPS>¬</IPS>¬¬¬
+A-Maze-Ing¬amazeing¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3030¬0¬1¬<IPS>¬</IPS>¬¬¬
+Centipede¬centipd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Defender¬defender¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dig Dug¬digdug¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jungle Hunt¬jungleht¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moon Patrol¬moonpatr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ms. Pac-Man¬mspacman¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pac-Man¬pacman¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Picnic Paranoia¬picnicpr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pole Position¬polepos¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Protector II¬protectr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Robotron:2084¬robotron¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shamus¬shamus¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Storm¬superst¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Math Games I¬mathgm1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Addison-Wesley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3084¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Math Games II¬mathgm2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Addison-Wesley¬1982¬¬¬¬¬pcb:standard,serial:PHM 3083¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Math Games III¬mathgm3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Addison-Wesley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3085¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Math Games IV¬mathgm4¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Addison-Wesley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3086¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer Math Games VI¬mathgm6¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Addison-Wesley¬1982¬¬¬¬¬pcb:standard,serial:PHM 3088¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beginning Grammar¬bgrammar¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3003¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beyond Space¬beyspace¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard,comment:Beyond Parsec clone or copy¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blackjack and Poker¬bljpoker¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1980¬¬¬¬¬pcb:standard,serial:PHM 3033¬0¬1¬<IPS>¬</IPS>¬¬¬
+Car Wars¬carwars¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3054¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chisholm Trail¬chisholm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3110¬0¬1¬<IPS>¬</IPS>¬¬¬
+99 Home Sentry¬homesent¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Corcomp¬1986¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peripheral Diagnostic Module¬pertest¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Corcomp¬1985¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI-IBM Copier¬ibmcopy¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Corcomp¬1987¬¬¬¬¬pcb:standard,comment:Copies data from TI to PC disks and back.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Escape¬escape¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+King of the Castle¬kingcast¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Beyond Parsec¬bparsec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬John Phillips¬1988¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Black Hole¬blackhl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Break Thru¬breakth¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1989¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burger Builder¬burgerbd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Desk Top Publisher¬dtpub¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DataBioTics¬1988¬¬¬¬¬pcb:standard,version:1.3¬0¬1¬<IPS>¬</IPS>¬¬¬
+D-Station I¬dstatn1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1988¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+D-Station II - The Conflict Continues!¬dstatn2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1988¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Junkman Junior¬junkmnj¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1986¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mancala¬mancala¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Micro Pinball¬micropb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Software Specialties¬1984¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miniwriter II¬miniwr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DataBioTics¬1985¬¬¬¬¬pcb:standard,version:1.0¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pro Typer¬protyper¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Runner¬starrun¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1987¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Micro Tennis¬tennis¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI Planner¬tiplanr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Angler Dangler¬anglerdg¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Deco¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Astro Fighter¬astroftr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Deco¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burgertime (beta)¬burgertb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Data East USA¬1983¬¬¬¬¬pcb:standard,serial:PHM 3233,version:beta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Burgertime¬burgertm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Data East USA¬1983¬¬¬¬¬pcb:standard,serial:PHM 3233¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mission X¬missionx¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Data East USA¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demonstration (German)¬demode¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demonstration¬demo¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3001¬0¬1¬<IPS>¬</IPS>¬¬¬
+Treasure Island (beta)¬treaislb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Deco¬1983¬¬¬¬¬pcb:standard,serial:PHM 3168,version:beta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Treasure Island¬treasure¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Data East USA¬1983¬¬¬¬¬pcb:standard,serial:PHM 3168¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diagnostic (French)¬diagfr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3000¬0¬1¬<IPS>¬</IPS>¬¬¬
+Diagnostic¬diag¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3000¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Manager 1 (multilingual)¬diskmn1i¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3019,version:1.0¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Manager 1¬diskman1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard,serial:PHM3019,version:1.0,comment:English-only version¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Manager 2¬diskman2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3089,version:2.0¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Manager v3.0¬diskman3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alien Addition¬alienadd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3115¬0¬1¬<IPS>¬</IPS>¬¬¬
+Alligator Mix¬alligmix¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:paged,serial:PHM 3114¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demolition Division¬demoldiv¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3116¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dragon Mix¬dragonmx¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3117¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meteor Multiplication¬meteormt¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3119¬0¬1¬<IPS>¬</IPS>¬¬¬
+Minus Mission¬minusmis¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3118¬0¬1¬<IPS>¬</IPS>¬¬¬
+Verb Viper¬verbvip¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3120¬0¬1¬<IPS>¬</IPS>¬¬¬
+Word Invasion¬wordinva¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3169¬0¬1¬<IPS>¬</IPS>¬¬¬
+Word Radar¬wordradr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DLM Academics¬1982¬¬¬¬¬pcb:standard,serial:PHM 3185¬0¬1¬<IPS>¬</IPS>¬¬¬
+Berlin¬berlin¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Iain Johnson¬19??¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boxer¬boxer¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cannonball Blitz¬canballb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Jlando¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Utilities v4.2¬diskutil¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+BASIC games¬gmsbasic¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:gromemu,comment:BASIC programs stored in GROM: MotoCross-Awari-Carres-Hanoi. Allow for 20 seconds for games to start.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Nature's Way¬nature¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬unknown¬19??¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+One Pass Copy SSSD¬opcopy¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard,comment:Disk copier¬0¬1¬<IPS>¬</IPS>¬¬¬
+Othello¬othello¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬CBS Video¬1982¬¬¬¬¬pcb:standard,serial:PHM 3067¬0¬1¬<IPS>¬</IPS>¬¬¬
+Simon Says¬simon¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Snake plissken¬snakepl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard,comment:Simple Hustle clone.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sorgan II¬sorgan2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬DaTaBioTics¬1988¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Patrol¬spacepat¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sunware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Spy's Demise¬spiesdem¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬CSI Design Group¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Disk Manager¬sdiskmn¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬1984¬¬¬¬¬pcb:gromemu,version:4.0,comment:Similar to TI Disk Manager¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Sketch - Model G2400¬supersk¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Personal Peripherals¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tennis¬tennisv¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Nicesoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tile Breaker¬tilebrk¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Magic Software¬19??¬¬¬¬¬pcb:standard,comment:Breakout clone¬0¬1¬<IPS>¬</IPS>¬¬¬
+U-Boat Jagd¬uboatde¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Saurus¬1984¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Early Learning Fun¬earlylf¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3002¬0¬1¬<IPS>¬</IPS>¬¬¬
+Early LOGO Learning Fun¬earlylog¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3144¬0¬1¬<IPS>¬</IPS>¬¬¬
+Early Reading¬earlyrd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1980¬¬¬¬¬pcb:standard,serial:PHM 3015¬0¬1¬<IPS>¬</IPS>¬¬¬
+Editor/Assembler¬editass¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3055¬0¬1¬<IPS>¬</IPS>¬¬¬
+SMU Electrical Engineering Library¬eleceng¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3045¬0¬1¬<IPS>¬</IPS>¬¬¬
+E.T. In His Adventure at Sea¬etatsea¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+E.T.¬et¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:paged,serial:PHM 3125¬0¬1¬<IPS>¬</IPS>¬¬¬
+Extended Basic v100¬exbasic1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:paged,serial:PHM 3026¬0¬1¬<IPS>¬</IPS>¬¬¬
+Extended Basic v2.5¬exbas25¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬198?¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Extended Basic Plus¬exbaspl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:gromemu,comment:Standard Exbasic with additional functions. Maybe @apesoft.¬0¬1¬<IPS>¬</IPS>¬¬¬
+Extended Basic¬exbasic¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:paged,serial:PHM 3026,version:110¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fantasy¬fantasy¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+fig FORTH¬figforth¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Weiand¬1986¬¬¬¬¬pcb:standard,version:2.0¬0¬1¬<IPS>¬</IPS>¬¬¬
+Football¬football¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3009¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ambulance¬ambulnc¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ant Colony¬antcolb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cave Creatures¬cavecrt¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Driving Demon¬drvdemon¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware - Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Henhouse¬henhouse¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lobster Bay¬lobster¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rabbit Trail¬rabbit¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware - Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schnoz-ola¬schnoz¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Shanghai¬shanghai¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+St. Nick¬stnick¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Vegas¬videovg¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Funware - Romox¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Germ Patrol¬germpat¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Gestion Privee¬gestprv¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+GRAM-based Disassembler (w/o help)¬gramdisn¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Thierry Nouspikel¬1992¬¬¬¬¬pcb:gromemu,version:1.0,comment:Does not include help texts¬0¬1¬<IPS>¬</IPS>¬¬¬
+GRAM-based Disassembler¬gramdis¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Thierry Nouspikel¬1992¬¬¬¬¬pcb:gromemu,version:1.0,comment:Includes help texts¬0¬1¬<IPS>¬</IPS>¬¬¬
+Home Financial Decisions¬homefin¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1978¬¬¬¬¬pcb:standard,serial:PHM 3006¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hopper¬hopper¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard,serial:PHM 3229¬0¬1¬<IPS>¬</IPS>¬¬¬
+Household Budget Management (French)¬hbudgetf¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3007¬0¬1¬<IPS>¬</IPS>¬¬¬
+Household Budget Management¬hbudget¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3007¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hunt The Wumpus¬wumpus¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3023¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hustle¬hustle¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3034¬0¬1¬<IPS>¬</IPS>¬¬¬
+Demon Attack¬demonatb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard,serial:PHM 3219,version:beta,comment:with speech¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Demon Attack¬demonat¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard,serial:PHM 3219¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fathom (beta)¬fathomb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard,serial:PHM 3222,version:beta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fathom¬fathom¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:paged,serial:PHM 3222¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microsurgeon¬microsur¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard,serial:PHM 3220¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moonsweeper¬moonswp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:paged,serial:PHM 3224¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wing War (beta)¬windwarb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wing War¬wingwar¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Imagic¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Wars¬starwars¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬John Phillips¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Strike Three!¬strike3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬John Phillips¬1988¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jumpy¬jumpy¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sofmachine¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Lasso¬lasso¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+M.A.S.H¬mash¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Fox¬1983¬¬¬¬¬pcb:standard,serial:PHM 3158¬0¬1¬<IPS>¬</IPS>¬¬¬
+Maximem Utilities¬maximem¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:gromemu,comment:GROM only¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bigfoot¬bigfoot¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blasto¬blasto¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1980¬¬¬¬¬pcb:standard,serial:PHM 3032¬0¬1¬<IPS>¬</IPS>¬¬¬
+Card Sharp¬cardshp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬198?¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Connect Four¬connect4¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1980¬¬¬¬¬pcb:standard,serial:PHM 3038¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milton Bradley Gamevision¬gamevis¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬198?¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hangman¬hangman¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1981¬¬¬¬¬pcb:standard,serial:PHM 3037¬0¬1¬<IPS>¬</IPS>¬¬¬
+Honey Hunt¬honeyhnt¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Meteor Belt¬meteorbt¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Soundtrack Trolley¬soundtro¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Starship Pegasus¬pegasus¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3147¬0¬1¬<IPS>¬</IPS>¬¬¬
+Championship Baseball¬baseball¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3148,comment:MBX¬0¬1¬<IPS>¬</IPS>¬¬¬
+I'm Hiding¬hiding¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1983¬¬¬¬¬pcb:standard,serial:PHM 3155,comment:MBX¬0¬1¬<IPS>¬</IPS>¬¬¬
+Zero Zap¬zerozap¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1981¬¬¬¬¬pcb:standard,serial:PHM 3036¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mechatronic/PS Extended Basic¬exbasm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Mechatronic¬19??¬¬¬¬¬pcb:paged,comment:Extended Basic with additional functions¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Addition¬addseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3090¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Decimals¬decseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3096¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Division¬divseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3093¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Equations¬equseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3100¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Fractional Numbers¬fracseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3095¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Integers¬intseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3094¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Laws of Arithmetic¬arithseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3099¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Manager¬manager¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Measurement Formulas¬measseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:paged,serial:PHM 3101¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Multiplication¬multseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3092¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Number Readiness¬nbrdyseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1984¬¬¬¬¬pcb:standard,serial:PHM 3098¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Percents¬percseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3097¬0¬1¬<IPS>¬</IPS>¬¬¬
+Milliken Math Sequences - Subtraction¬subseq¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milliken¬1982¬¬¬¬¬pcb:standard,serial:PHM 3091¬0¬1¬<IPS>¬</IPS>¬¬¬
+Moon Mine¬moonmine¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard,serial:PHM 3131¬0¬1¬<IPS>¬</IPS>¬¬¬
+Microsoft Multiplan¬multipln¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3113,version:1.04¬0¬1¬<IPS>¬</IPS>¬¬¬
+Munch Man II¬munchmn2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬John Phillips¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Munch Man (beta)¬munchmnb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3057,version:beta,comment:Different layout, Pacman-like (eats points)¬0¬1¬<IPS>¬</IPS>¬¬¬
+Munch Man¬munchman¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3057¬0¬1¬<IPS>¬</IPS>¬¬¬
+Munchmobile¬munchmob¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬SNK Electronics¬1983¬¬¬¬¬pcb:standard,serial:PHM 3146¬0¬1¬<IPS>¬</IPS>¬¬¬
+Music Maker¬musicmak¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3020¬0¬1¬<IPS>¬</IPS>¬¬¬
+Music SDA¬musicsda¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Chicken Coop¬chickenc¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1986¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Console Writer¬conswr1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard,version:1.1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Console Writer v2.1¬conswr2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Data Base Management System v2.0¬dmbsys¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Fixer v2.0¬diskfx20¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Disk Fixer¬diskfx21¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard,version:2.1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frog Stickers¬frogstk¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Homework Helper+¬homework¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Speed Reading A¬speedrda¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard,comment:adults¬0¬1¬<IPS>¬</IPS>¬¬¬
+Speed Reading B¬speedrdb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard,comment:children¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Duper v1.1¬supduper¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Sort¬supsort¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topper v1¬topper83¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Topper v2¬topper86¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1986¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Donkey Kong¬donkeykg¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Atarisoft¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Number Magic (multilingual)¬numbmagi¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3004¬0¬1¬<IPS>¬</IPS>¬¬¬
+Number Magic¬numbmag¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3004¬0¬1¬<IPS>¬</IPS>¬¬¬
+OS/99¬os9940¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard,version:4.0¬0¬1¬<IPS>¬</IPS>¬¬¬
+Paddleball¬paddlebl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Paint 'N' Print A¬ptprgp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1985¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Paint 'N' Print C¬ptpribm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1985¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Parsec¬parsec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3112¬0¬1¬<IPS>¬</IPS>¬¬¬
+UCSD Pascal Development System¬pascdeb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬198?¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frogger¬frogger¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Parker Brothers¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Popeye¬popeye¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Parker Brothers¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Q-Bert¬qbert¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Parker Brothers¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Personal Real Estate¬prestate¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3022¬0¬1¬<IPS>¬</IPS>¬¬¬
+Personal Record Keeping (German/Italian)¬perrecdi¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Personal Record Keeping¬perrec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3013¬0¬1¬<IPS>¬</IPS>¬¬¬
+Personal Report Generator¬perrep¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3044¬0¬1¬<IPS>¬</IPS>¬¬¬
+Physical Fitness¬fitness¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1978¬¬¬¬¬pcb:standard,serial:PHM 3010¬0¬1¬<IPS>¬</IPS>¬¬¬
+Introduction to Plant Genetics¬genetics¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1984¬¬¬¬¬pcb:standard,serial:PHM 3173¬0¬1¬<IPS>¬</IPS>¬¬¬
+Plato Interpreter¬plato¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Control Data¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3122¬0¬1¬<IPS>¬</IPS>¬¬¬
+Return to Pirate's Isle¬retpirat¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott Adams¬1983¬¬¬¬¬pcb:standard,serial:PHM 3189¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ant-Eater¬anteater¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hen Pecked¬henpeck¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Princess and Frog¬prfrog¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Rotor Raiders¬rotorrd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Typo II¬typo2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Typoman¬typoman¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Navarone¬1987¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Romox Demo¬vidgamlb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Romox¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Saguaro City¬saguaro¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3052,version:beta¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scholastic Spelling - Level 3¬scholsp3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scholastic¬1982¬¬¬¬¬pcb:standard,serial:PHM 3059¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scholastic Spelling - Level 4¬scholsp4¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scholastic¬1982¬¬¬¬¬pcb:standard,serial:PHM 3060¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scholastic Spelling - Level 5¬scholsp5¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scholastic¬1982¬¬¬¬¬pcb:paged,serial:PHM 3061¬0¬1¬<IPS>¬</IPS>¬¬¬
+Scholastic Spelling - Level 6¬scholsp6¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scholastic¬1982¬¬¬¬¬pcb:paged,serial:PHM 3062¬0¬1¬<IPS>¬</IPS>¬¬¬
+Buck Rogers - Planet of Zoom¬buckrog¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sega Enterprises¬1983¬¬¬¬¬pcb:standard,serial:PHM 3226¬0¬1¬<IPS>¬</IPS>¬¬¬
+Congo Bongo¬congobng¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sega Enterprises¬1983¬¬¬¬¬pcb:standard,serial:PHM 3227¬0¬1¬<IPS>¬</IPS>¬¬¬
+Securities Analysis¬securana¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3012¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Trek¬startrek¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sega Enterprises¬1983¬¬¬¬¬pcb:standard,serial:PHM 3225¬0¬1¬<IPS>¬</IPS>¬¬¬
+Accounting Assistant¬accasst¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Activity Accountant¬actacct¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Addition and Subtraction 1¬addsub1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu,serial:PHM 3027¬0¬1¬<IPS>¬</IPS>¬¬¬
+Addition and Subtraction 2¬addsub2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu,serial:PHM 3028¬0¬1¬<IPS>¬</IPS>¬¬¬
+Addition and Subtraction 3¬addsub3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attendance Recorder¬attrec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Class Data Recorder¬cldata¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Course Manager¬coursem¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Decimals 2¬decdeli2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Division 1¬divis1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3049¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fractions 2¬fract2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fractions 1¬fract1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Frog Jump¬frogjump¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Multiplication 2¬mimult¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Multiplication 1¬multip1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu,serial:PHM 3029¬0¬1¬<IPS>¬</IPS>¬¬¬
+Number Bowling¬numbbwl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Numeration 1¬numerat1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu,serial:PHM 3050¬0¬1¬<IPS>¬</IPS>¬¬¬
+Numeration 2¬numerat2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu,serial:PHM 3051¬0¬1¬<IPS>¬</IPS>¬¬¬
+Payroll Assistant¬payroll¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Picture Parts¬picparts¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pyramid Puzzler¬pyramidp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Adventures¬readadv¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Cheers¬readchrs¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Flight¬readflt¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3082¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Fun¬readfun¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3043¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading On¬readon¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3046¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Power¬readpow¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Rainbows¬readrbow¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Rally¬readrly¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3048¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Roundup¬readrnd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1982¬¬¬¬¬pcb:gromemu,serial:PHM 3047¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Trail¬readtrl¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Reading Wonders¬readwon¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Salary Planner¬salaryp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1980¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+School Mailer¬schoolm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1981¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Space Journey¬spcjourn¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Maze¬starmaze¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Decimals 1¬windec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Scott, Foresman¬1983¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+Slymoids¬slymoids¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard,serial:PHM 3197¬0¬1¬<IPS>¬</IPS>¬¬¬
+Barrage¬barrage¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sofmachine¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sneggit¬sneggit¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3145¬0¬1¬<IPS>¬</IPS>¬¬¬
+Soccer¬soccer¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3024¬0¬1¬<IPS>¬</IPS>¬¬¬
+Crossfire¬crossfr¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sierra On-Line¬1983¬¬¬¬¬pcb:standard,serial:PHM 3207¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jawbreaker II¬jawbreak¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sierra On-Line¬1983¬¬¬¬¬pcb:standard,serial:PHM 3194¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mousk-Attack¬mouskat¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Sierra On-Line¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Speech Editor¬speeched¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3011¬0¬1¬<IPS>¬</IPS>¬¬¬
+Facemaker¬facemake¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Spinnaker¬1983¬¬¬¬¬pcb:standard,serial:PHM 3177¬0¬1¬<IPS>¬</IPS>¬¬¬
+Story Machine v1.4¬storymch¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Spinnaker¬1983¬¬¬¬¬pcb:standard,serial:PHM 3178¬0¬1¬<IPS>¬</IPS>¬¬¬
+Midnite Mason¬midnitem¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Software Specialties¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI-Toad¬titoad¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Software Specialties¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Statistik¬statisd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3014¬0¬1¬<IPS>¬</IPS>¬¬¬
+Statistics¬statistc¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3014¬0¬1¬<IPS>¬</IPS>¬¬¬
+Submarine Battle¬submarin¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Sudoku¬sudoku¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tax Investment Record Keeping¬taxrec¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:paged,serial:PHM 3016¬0¬1¬<IPS>¬</IPS>¬¬¬
+Terminal Emulator I¬termemu1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3017¬0¬1¬<IPS>¬</IPS>¬¬¬
+Terminal Emulator II¬termemu2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3035¬0¬1¬<IPS>¬</IPS>¬¬¬
+Testtrainer 1¬testtrai¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,comment:Requires additional tape or disk¬0¬1¬<IPS>¬</IPS>¬¬¬
+Computer War¬compwar¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Micropal - Thorn EMI Video¬1983¬¬¬¬¬pcb:paged¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Attack¬attackb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3031,version:beta,comment:Different sound track¬0¬1¬<IPS>¬</IPS>¬¬¬
+Attack, The¬attack¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3031¬0¬1¬<IPS>¬</IPS>¬¬¬
+The Castle¬castlep¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+River Rescue¬riverres¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Micropal - Thorn EMI Video¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Submarine Commander¬subcomm¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Thorn EMI Video¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI Invaders¬invaders¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3053¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI LOGO II (German)¬logo2d¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1984¬¬¬¬¬pcb:standard,serial:PHM 3109¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI LOGO II (Italian)¬logo2i¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (Europe) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬198?¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI LOGO II¬logo2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1984¬¬¬¬¬pcb:standard,serial:PHM 3109¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI LOGO¬logo1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3040¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI Writer Gram Disk¬writerg¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬<unknown>¬19??¬¬¬¬¬pcb:gromemu¬0¬1¬<IPS>¬</IPS>¬¬¬
+TI-Writer¬writer¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3111¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tombstone City - 21st Century¬tombstn¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1981¬¬¬¬¬pcb:standard,serial:PHM 3052¬0¬1¬<IPS>¬</IPS>¬¬¬
+Touch Typing Tutor¬touchtyp¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3064¬0¬1¬<IPS>¬</IPS>¬¬¬
+Tunnels of Doom¬tundoom¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1982¬¬¬¬¬pcb:standard,serial:PHM 3042¬0¬1¬<IPS>¬</IPS>¬¬¬
+Espial¬espial¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Tigervision¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Miner 2049er¬miner¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Tigervision¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Springer¬springer¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Tigervision¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+VAT Accounting¬vatacct¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3066¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schachmeister¬chessd¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Echecs¬chessf¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Chess¬chess¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3008¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video Games 1¬vgames1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3018¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mind Challengers¬vgames2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:standard,serial:PHM 3025¬0¬1¬<IPS>¬</IPS>¬¬¬
+Video-Graphs¬vgraphs¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1979¬¬¬¬¬pcb:standard,serial:PHM 3005¬0¬1¬<IPS>¬</IPS>¬¬¬
+Face Chase¬facechs¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Video Magic¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Gazer I¬stargz1¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Video Magic¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Gazer II¬stargz2¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Video Magic¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Star Gazer III¬stargz3¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Video Magic¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Peter Pan's Space Odyssey¬ppspcod¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Walt Disney¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Pinocchio's Great Escape¬greatesc¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Walt Disney¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Von Drake's Molecular Mission¬molmiss¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Walt Disney¬1984¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Weight Control & Nutrition¬weight¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1980¬¬¬¬¬pcb:paged,serial:PHM 3021¬0¬1¬<IPS>¬</IPS>¬¬¬
+Key to Spanish 1¬span12¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard,serial:PHM 3126¬0¬1¬<IPS>¬</IPS>¬¬¬
+Key to Spanish 3¬span34¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Key to Spanish 4¬span56¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Texas Instruments¬1983¬¬¬¬¬pcb:standard¬0¬1¬<IPS>¬</IPS>¬¬¬
+Editor Assembler 1987 / Easy Debugger 2.1¬edasseb¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Winfried Winkler/TI¬1987¬¬¬¬¬pcb:standard,comment:Modified Editor/Assembler¬0¬1¬<IPS>¬</IPS>¬¬¬
+Yahtzee¬yathzee¬¬¬./qp.exe¬Retroarch Texas Instruments TI-99/4 Home Computer (US) -SOFTLIST ti99_cart (MAME)¬Milton Bradley¬1980¬¬¬¬¬pcb:standard,serial:PHM 3039¬0¬1¬<IPS>¬</IPS>¬¬¬

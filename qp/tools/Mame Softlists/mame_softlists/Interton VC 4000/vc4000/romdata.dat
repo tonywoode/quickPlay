@@ -1,0 +1,38 @@
+ROM DataFile Version : 1.1
+Autorennen / Car Races / Course Automobile¬carraces¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:1¬0¬1¬<IPS>¬</IPS>¬¬¬
+Blackjack¬blckjack¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:2¬0¬1¬<IPS>¬</IPS>¬¬¬
+Ballspiele / Paddle Games / Jeux De Balle¬paddleg¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:3¬0¬1¬<IPS>¬</IPS>¬¬¬
+Panzerschlacht/Luftkampf / Tank Battle/Air Battle / Bataille De Blindes/Combat Aerien¬tbattle¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:4¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mathematik I / Mathematics I / Mathematique I¬mathema1¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:5¬0¬1¬<IPS>¬</IPS>¬¬¬
+Mathematik II / Mathematics II / Mathematique II¬mathema2¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:6¬0¬1¬<IPS>¬</IPS>¬¬¬
+Luftkampf/Seegefecht / Air/Sea Battle / Combat Aerien/Bataile Navale¬airseaba¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:7¬0¬1¬<IPS>¬</IPS>¬¬¬
+Memory I/Motivsuche / Memory I/Flag Capture / Memory I/Recherche De Motifs¬memory1¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:8¬0¬1¬<IPS>¬</IPS>¬¬¬
+Intelligenz I / Intelligence I¬intel1¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:9¬0¬1¬<IPS>¬</IPS>¬¬¬
+Wintersport / Winter Sports / Sports D'Hiver¬wintersp¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:10¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hippodrom / Hippodrome¬hippodro¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:11¬0¬1¬<IPS>¬</IPS>¬¬¬
+Jagd / Hunting / Chasse¬hunting¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:12¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schach / Chess / Les Echecs¬chess¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:chess2,serial:13¬0¬1¬<IPS>¬</IPS>¬¬¬
+Motocross¬motox¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:14¬0¬1¬<IPS>¬</IPS>¬¬¬
+Intelligenz II / Intelligence II¬intel2¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:15¬0¬1¬<IPS>¬</IPS>¬¬¬
+Intelligenz III / Intelligence III¬intel3¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:16¬0¬1¬<IPS>¬</IPS>¬¬¬
+Circus / Cirque¬circus¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:17¬0¬1¬<IPS>¬</IPS>¬¬¬
+Boxkampf / Boxing Match / Match De Boxe¬boxing¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:rom4k,serial:18¬0¬1¬<IPS>¬</IPS>¬¬¬
+Krieg im Weltraum / Outer Space Combat / Guerre Dans L'Espace¬outersc¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:19¬0¬1¬<IPS>¬</IPS>¬¬¬
+Memory II / Melodie/Melody / Simon¬memory2¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:20¬0¬1¬<IPS>¬</IPS>¬¬¬
+Intelligenz IV/Attacke (Reversi) / Intelligence IV/Attack (Reversi) / Intelligence IV/Attaque (Reversi)¬reversi¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:21¬0¬1¬<IPS>¬</IPS>¬¬¬
+Schach II / Chess II / Les Echecs II¬chess2¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:chess2,serial:22¬0¬1¬<IPS>¬</IPS>¬¬¬
+Flipper / Pinball¬pinball¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:23¬0¬1¬<IPS>¬</IPS>¬¬¬
+Fussball / Soccer / Football¬soccer¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬1979¬¬¬¬¬slot:std,serial:24¬0¬1¬<IPS>¬</IPS>¬¬¬
+Bowling/Kegeln / Bowling/Ninepins / Yeux Quilles¬bowling¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:25¬0¬1¬<IPS>¬</IPS>¬¬¬
+Dame / Draughts / Dames¬draughts¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:26¬0¬1¬<IPS>¬</IPS>¬¬¬
+Golf¬golf¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:27¬0¬1¬<IPS>¬</IPS>¬¬¬
+Cockpit¬cockpit¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬<unknown>¬19??¬¬¬¬¬slot:ram1k,serial:28¬0¬1¬<IPS>¬</IPS>¬¬¬
+Metropolis / Hangman¬metropol¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:29¬0¬1¬<IPS>¬</IPS>¬¬¬
+Solitr / Solitaire¬solitair¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:30¬0¬1¬<IPS>¬</IPS>¬¬¬
+Casino¬casino¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:31¬0¬1¬<IPS>¬</IPS>¬¬¬
+Weltrauminvasoren / Invaders / Invaseur De L'Espace¬invaders¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:32¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super Invaders / Super Invaders / Super Envahisseurs¬superinv¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:33¬0¬1¬<IPS>¬</IPS>¬¬¬
+Backgammon / Jacquet¬backgamm¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:36¬0¬1¬<IPS>¬</IPS>¬¬¬
+Monster-Man¬mnstrman¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:37¬0¬1¬<IPS>¬</IPS>¬¬¬
+Hyperspace / Hyperespace¬hyperspa¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:std,serial:38¬0¬1¬<IPS>¬</IPS>¬¬¬
+Super-Space¬suprspac¬¬¬./qp.exe¬MAME Interton Electronic VC 4000 -SOFTLIST vc4000¬Interton¬19??¬¬¬¬¬slot:ram1k,serial:40¬0¬1¬<IPS>¬</IPS>¬¬¬

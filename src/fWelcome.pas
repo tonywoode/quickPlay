@@ -27,6 +27,7 @@ type
     lblbigWelcome: TLabel;
     BtnPrevious: TButton;
     lblIntro: TLabel;
+    procedure lblCompleteClick(Sender: TObject);
     procedure BtnPreviousClick(Sender: TObject);
     procedure BtnNextClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -73,6 +74,11 @@ begin
     PCWelcome.Pages[i].TabVisible := False;
 
   PCWelcome.ActivePage := TabWelcome;
+end;
+
+procedure TFrmWelcome.lblCompleteClick(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}

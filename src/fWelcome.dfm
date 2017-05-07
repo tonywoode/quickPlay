@@ -3,24 +3,24 @@ object FrmWelcome: TFrmWelcome
   Top = 187
   BorderStyle = bsDialog
   Caption = 'Welcome to QuickPlay'
-  ClientHeight = 361
-  ClientWidth = 478
+  ClientHeight = 472
+  ClientWidth = 625
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object BtnExit: TButton
-    Left = 395
-    Top = 331
-    Width = 75
-    Height = 25
+    Left = 517
+    Top = 433
+    Width = 98
+    Height = 33
     Caption = 'E&xit'
     ModalResult = 1
     TabOrder = 0
@@ -28,13 +28,13 @@ object FrmWelcome: TFrmWelcome
   object PCWelcome: TPageControl
     Left = 0
     Top = 0
-    Width = 478
-    Height = 325
+    Width = 625
+    Height = 425
     ActivePage = TabDone
     Align = alTop
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
+    Font.Height = -15
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
@@ -43,23 +43,23 @@ object FrmWelcome: TFrmWelcome
     object TabWelcome: TTabSheet
       Caption = 'TabWelcome'
       object lblbigWelcome: TLabel
-        Left = 16
-        Top = 32
-        Width = 111
-        Height = 29
+        Left = 21
+        Top = 42
+        Width = 140
+        Height = 36
         Caption = 'Welcome'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -24
+        Font.Height = -30
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblIntro: TLabel
-        Left = 16
-        Top = 80
-        Width = 433
-        Height = 169
+        Left = 21
+        Top = 105
+        Width = 566
+        Height = 221
         AutoSize = False
         Caption = 
           'Thanks for downloading QuickPlay, the multi-emulator frontend.'#13#10 +
@@ -73,23 +73,23 @@ object FrmWelcome: TFrmWelcome
       Caption = 'TabEmus'
       ImageIndex = 1
       object lblEmus: TLabel
-        Left = 16
-        Top = 32
-        Width = 311
-        Height = 29
+        Left = 21
+        Top = 42
+        Width = 394
+        Height = 36
         Caption = 'Step 1 - Adding Emulators'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -24
+        Font.Height = -30
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblemutext: TLabel
-        Left = 16
-        Top = 80
-        Width = 433
-        Height = 138
+        Left = 21
+        Top = 105
+        Width = 566
+        Height = 180
         AutoSize = False
         Caption = 
           'The easiest way to add emulators is to use the '#39'Emu-Finder wizar' +
@@ -100,10 +100,10 @@ object FrmWelcome: TFrmWelcome
         WordWrap = True
       end
       object BtnEFind: TBitBtn
-        Left = 96
-        Top = 234
-        Width = 113
-        Height = 57
+        Left = 126
+        Top = 306
+        Width = 147
+        Height = 75
         Caption = '&Launch Emu-Finder'
         TabOrder = 0
         OnClick = BtnEFindClick
@@ -209,10 +209,10 @@ object FrmWelcome: TFrmWelcome
         Layout = blGlyphTop
       end
       object BtnEmuMan: TBitBtn
-        Left = 248
-        Top = 234
-        Width = 121
-        Height = 57
+        Left = 324
+        Top = 306
+        Width = 159
+        Height = 75
         Hint = 'View All Emulators'
         Caption = '&Emulator Management'
         TabOrder = 1
@@ -323,23 +323,23 @@ object FrmWelcome: TFrmWelcome
       Caption = 'TabROMS'
       ImageIndex = 2
       object lblROMs: TLabel
-        Left = 16
-        Top = 32
-        Width = 221
-        Height = 29
+        Left = 21
+        Top = 42
+        Width = 282
+        Height = 36
         Caption = 'Step 2 - Add ROMs'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -24
+        Font.Height = -30
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblROMText: TLabel
-        Left = 16
-        Top = 80
-        Width = 433
-        Height = 138
+        Left = 21
+        Top = 105
+        Width = 566
+        Height = 180
         AutoSize = False
         Caption = 
           'There are many ways to add ROMs to QuickPlay.  For an indepth lo' +
@@ -350,10 +350,10 @@ object FrmWelcome: TFrmWelcome
         WordWrap = True
       end
       object BtnMultiDir: TBitBtn
-        Left = 184
-        Top = 224
-        Width = 137
-        Height = 57
+        Left = 241
+        Top = 293
+        Width = 179
+        Height = 74
         Caption = 'Multi-Directory Scan'
         TabOrder = 0
         OnClick = BtnMultiDirClick
@@ -409,47 +409,49 @@ object FrmWelcome: TFrmWelcome
       Caption = 'TabDone'
       ImageIndex = 3
       object lblDone: TLabel
-        Left = 16
-        Top = 32
-        Width = 190
-        Height = 29
+        Left = 21
+        Top = 42
+        Width = 240
+        Height = 36
         Caption = 'Setup Complete'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -24
+        Font.Height = -30
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblComplete: TLabel
-        Left = 16
-        Top = 88
-        Width = 433
-        Height = 177
+        Left = 21
+        Top = 115
+        Width = 566
+        Height = 232
         AutoSize = False
         Caption = 
           'QuickPlay initial setup is now complete.  Feel free to experimen' +
           't with the wide range of features in QuickPlay.  '#13#10#13#10'If you do m' +
           'ess up QuickPlays configuration, you can reset all your data and' +
-          ' reload this wizard using the '#39'Tools/Reset Configuration'#39' menu'
+          ' reload this wizard using the '#39'Utilities/Reset Configuration'#39' me' +
+          'nu'
         WordWrap = True
+        OnClick = lblCompleteClick
       end
     end
   end
   object BtnNext: TButton
-    Left = 315
-    Top = 331
-    Width = 75
-    Height = 25
+    Left = 412
+    Top = 433
+    Width = 98
+    Height = 33
     Caption = '&Next'
     TabOrder = 2
     OnClick = BtnNextClick
   end
   object BtnPrevious: TButton
-    Left = 235
-    Top = 331
-    Width = 75
-    Height = 25
+    Left = 307
+    Top = 433
+    Width = 98
+    Height = 33
     Caption = '&Previous'
     Enabled = False
     TabOrder = 3

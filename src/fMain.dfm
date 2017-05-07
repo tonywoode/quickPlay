@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 625
+  ClientHeight = 650
   ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 606
+    Top = 631
     Width = 964
     Height = 19
     Panels = <
@@ -113,19 +113,21 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 606
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 964
-    Height = 606
+    Height = 631
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 606
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 606
+      Height = 631
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +135,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 789
       Top = 0
-      Height = 606
+      Height = 631
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,26 +146,29 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 606
+      Height = 631
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 606
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 606
+        Height = 631
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 606
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitHeight = 578
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 549
+            Height = 574
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -202,6 +207,7 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
+            ExplicitHeight = 549
             Columns = <
               item
                 Position = 0
@@ -469,10 +475,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 577
-      Height = 606
+      Height = 631
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 606
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -562,7 +569,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 577
-        Height = 553
+        Height = 578
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -614,6 +621,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 553
         Columns = <
           item
             Position = 0
@@ -787,11 +795,12 @@ object MainFrm: TMainFrm
       Left = 792
       Top = 0
       Width = 172
-      Height = 606
+      Height = 631
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 606
     end
     object Edit1: TEdit
       Left = 640

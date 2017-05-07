@@ -60,6 +60,9 @@ RD /S /Q %RELEASEDIR%\qp\temp
 ECHO.Cleaning up possible ini files (you may have run up some of the tools)
 DEL "%RELEASEDIR%\qp\tools\Romdata Magician\RomData Magician.ini"
 
+ECHO.Cleaning up a node modules dir in updates/src
+RD /S /Q  "%RELEASEDIR%\qp\updates\src\node_modules"
+
 ECHO.Cleaning up possible EFIND files
 DEL "%RELEASEDIR%\qp\EFIND\Custom.ini"
 DEL "%RELEASEDIR%\qp\EFIND\Gamebase.ini"

@@ -43,7 +43,7 @@ const iniFiles = ({oldName, newName}) => {
       `${rootDir}/dats/emulators.ini`,
       `${rootDir}/dats/MediaPanelCfg.ini`,
       `${rootDir}/dats/SystemFileExts.ini`,
-      `${rootDir}/EFind/*.ini`
+      `${rootDir}/EFind/!(Mess_Mame|Mess_Retroarch)*.ini`
     ],
 
     from: [
@@ -51,7 +51,7 @@ const iniFiles = ({oldName, newName}) => {
       //(helps us out: otherwise we'd need a truly ugly regex to capture a romdata.dat's emulator column, and not the file paths too)
       new RegExp(String.raw`(\[.*)${oldName}`, `g`), //using es6 tagged templates in these  to avoid double-escaping 
       new RegExp(String.raw`(\[RetroArch )${oldName}`, `g`), //sometimes we have a double like "RetroArch GameBoy/GameBoy Color"
-      new RegExp(String.raw`(system=.*)${oldName}`, `g`) //remember these replace sequentially in the 'to', but we don't acutally need it here
+      new RegExp(String.raw`(System=.*)${oldName}`, `g`) //remember these replace sequentially in the 'to', but we don't acutally need it here
     ],
 
     to: `$1${newName}`

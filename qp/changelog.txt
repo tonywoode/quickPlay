@@ -1,3 +1,19 @@
+Quickplay v4.2.1 
+ 
+* updated defaults system list and default extensions for systems
+* various efind tweaks to support mame-mess-retroarch
+* Retroarch non-mess emus renamed to fit better with mess
+* set of efinds for mess-related uis
+* fixup type namings
+* fixed error in updates script
+* real icons set to small icons
+* add folder location to softlists, you can mass-edit to get real icons 
+* Made an embedded systems romdata for mame-mess, "the batman" is back!
+* corrected redirect, MESS now included
+* readmes for the softlists
+* add sourcecode for movers
+* fixed welcome description of utils menu
+ 
 Quickplay v4.2.0 
  
 * new systems dat in resources - even corrects some names MAME/MESS got wrong

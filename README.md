@@ -9,7 +9,7 @@ Powerful Windows universal emulator frontend with support for very many emulator
 
 Is back on [SourceForge](http://quickplay.sourceforge.net/)
 
-##Forum Pages
+## Forum Pages
 
 Join us at [QuickPlay Frontend](http://www.quickplayfrontend.com/)
 

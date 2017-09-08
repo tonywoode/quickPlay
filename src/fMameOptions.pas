@@ -14,15 +14,11 @@ type
     lblMAME: TLabel;
     BtnOK: TButton;
     BtnCancel: TButton;
-    Label1: TLabel;
     lblDir: TLabel;
     jvBrowse: TJvBrowseForFolderDialog;
-    ChkCatVer: TCheckBox;
     ListDirs: TListBox;
     BtnAdd: TJvImgBtn;
     BtnDel: TJvImgBtn;
-    ChkUseOldMAMEMode: TCheckBox;
-    RadGroupCurrScanInfo: TRadioGroup;
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
     procedure BtnAddClick(Sender: TObject);
@@ -80,9 +76,6 @@ begin
     end;
 
     CmbMAME.ItemIndex := -1;
-    ChkCatVer.Checked := Ini.ReadBool('MAMEScan', 'CatVer', false);
-
-    RadGroupCurrScanInfo.ItemIndex :=  Ini.ReadInteger('MAMEScan', 'ScanType', 0);
 
   Finally
     FreeAndNil(Ini);
@@ -107,23 +100,7 @@ begin
     exit;
   end;
 
-  //if the user has asked to catver this scan, make sure the catver file is there!
-  if (ChkCatVer.Checked) then
-    if not FileExists(MainFrm.Settings.Paths.CfgDir + 'catver.ini') then
-    begin
-      MessageDlg(QP_NO_CATVER, mtError, [mbOK], 0);
-      exit;
-    end;
-
-
   Emu := MainFrm.EmuList[MainFrm.EmuList.IndexOfName(CmbMAME.Text)];
-
-  Clear := (RadGroupCurrScanInfo.ItemIndex = 0);
-
-  if _ZincMode then
-    MainFrm.RomList.AddZincROMS(ListDirs.Items, Emu, MainFrm.Settings.Paths.CfgDir, Clear, ChkCatVer.Checked)
-  else
-    MainFrm.RomList.AddMAMEScanned(ListDirs.Items, Emu, MainFrm.Settings.Paths.CfgDir, Clear, ChkCatVer.Checked, ChkUseOldMAMEMode.Checked);
 
   //now we need to reload the ROMs list.
     MainFrm.ClearROMIcons();
@@ -139,8 +116,6 @@ begin
 
     Ini.WriteString('MAMEScan', 'Dirs', DirOutput);
     Ini.WriteString('MAMEScan', 'MAME', CmbMAME.Text);
-    Ini.WriteBool('MAMEScan', 'CatVer', ChkCatVer.Checked);
-    Ini.WriteInteger('MAMEScan', 'ScanType', RadGroupCurrScanInfo.ItemIndex);
 
     if MainFrm.Settings.AllowWrite then
       Ini.UpdateFile;

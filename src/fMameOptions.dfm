@@ -2,7 +2,7 @@ object FrmMameOptions: TFrmMameOptions
   Left = 269
   Top = 223
   BorderStyle = bsDialog
-  Caption = 'Scan Merged ROMs'
+  Caption = 'MAME Options'
   ClientHeight = 436
   ClientWidth = 642
   Color = clBtnFace
@@ -23,17 +23,6 @@ object FrmMameOptions: TFrmMameOptions
     Width = 60
     Height = 16
     Caption = 'Emulators'
-  end
-  object Label1: TLabel
-    Left = 47
-    Top = 332
-    Width = 567
-    Height = 50
-    AutoSize = False
-    Caption = 
-      'Warning scanning make take a while depending on how many ROMs yo' +
-      'u have, please be patient'
-    WordWrap = True
   end
   object lblDir: TLabel
     Left = 5
@@ -57,7 +46,7 @@ object FrmMameOptions: TFrmMameOptions
     Width = 92
     Height = 31
     Caption = '&OK'
-    TabOrder = 7
+    TabOrder = 4
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
@@ -68,15 +57,7 @@ object FrmMameOptions: TFrmMameOptions
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
-    TabOrder = 8
-  end
-  object ChkCatVer: TCheckBox
-    Left = 133
-    Top = 167
-    Width = 495
-    Height = 21
-    Caption = 'Scan Found ROMs with Catver.ini file for GameType and Year'
-    TabOrder = 4
+    TabOrder = 5
   end
   object ListDirs: TListBox
     Left = 133
@@ -115,26 +96,6 @@ object FrmMameOptions: TFrmMameOptions
     HotTrackFont.Style = []
     Images = MainFrm.ImageList1
     ImageIndex = 3
-  end
-  object ChkUseOldMAMEMode: TCheckBox
-    Left = 133
-    Top = 197
-    Width = 495
-    Height = 21
-    Caption = 'Use older MAME command line syntax'
-    TabOrder = 5
-  end
-  object RadGroupCurrScanInfo: TRadioGroup
-    Left = 128
-    Top = 225
-    Width = 505
-    Height = 91
-    Caption = 'Currently Scanned Information'
-    ItemIndex = 0
-    Items.Strings = (
-      'Clear List before adding ROMs (erases custom data - Fast)'
-      'Refresh current ROMs with results (retains custom data - Slow)')
-    TabOrder = 6
   end
   object jvBrowse: TJvBrowseForFolderDialog
     Position = fpFormCenter

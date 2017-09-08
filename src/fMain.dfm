@@ -1511,6 +1511,7 @@ object MainFrm: TMainFrm
     end
     object Tools1: TMenuItem
       Caption = '&Utilities'
+      OnClick = Tools1Click
       object BackupRestoreConfiguration1: TMenuItem
         Action = ActBackupRestore
       end

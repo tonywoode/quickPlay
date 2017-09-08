@@ -21,6 +21,8 @@ uses
   fMain in 'fMain.PAS' {MainFrm},
   fMameMerge in 'fMameMerge.pas' {FrmMAMEMerged},
   fMameRename in 'fMameRename.pas' {DatReader},
+  fMameHolding in 'fMameHolding.pas' {MameHolding},
+  fMameOptions in 'fMameOptions.pas' {FrmMameOptions},
   fMigrate in 'fMigrate.pas' {FrmMigrate},
   fOptions in 'fOptions.pas' {PrefForm},
   fRomProperties in 'fRomProperties.pas' {FrmRomProp},
@@ -64,8 +66,7 @@ uses
   uQPMiscTypes in 'uQPMiscTypes.pas',
   fParamVars in 'fParamVars.pas' {FrmParamVars},
   uQPCompObj in 'uQPCompObj.pas',
-  uVersionCheckThread in 'uVersionCheckThread.pas',
-  fMameHolding in 'fMameHolding.pas' {MameHolding};
+  uVersionCheckThread in 'uVersionCheckThread.pas';
 
 {$R *.RES}
 {$R WindowsXP.RES}

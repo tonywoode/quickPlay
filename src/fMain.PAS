@@ -356,6 +356,7 @@ type
     SlideBarDir: TTrackBar;
     N28: TMenuItem;
     MAMEOptions1: TMenuItem;
+    procedure Tools1Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
@@ -708,7 +709,7 @@ uses StrUtils, FindFile, ShellAPI, IniFiles,
      fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
      fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive,
-     fMameMerge, fWelcome, fMigrate, fBackup,
+     fMameMerge, fMameOptions, fWelcome, fMigrate, fBackup,
      uRomUtils, uEmuUtils, fCustomRomData, uQPVTEditor, uQuery,
      uQPConst, uExe, fTools, uTools, fMediaPanelOptions, fAppearanceOptions,
      fTxtEditor, uMediaMiscTypes, uQPCompObj, ujMiscResourceStrs;
@@ -2840,8 +2841,17 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.ActMameOptionsExecute(Sender: TObject);
+Var
+   MameOptionsFrm : TFrmMameOptions;
 begin
-  ShellExecute(Handle, 'open', PChar('http://quickplay.sourceforge.net/wiki/index.php/MESS'), '', '', sw_Show);
+   MameOptionsFrm := TFrmMameOptions.Create(self);
+   try
+     If MameOptionsFrm.ShowModal = MrOK then
+       FillRoms(GetSelectedTxt);
+
+   finally
+     FreeAndNil(MameOptionsFrm);
+   end;
 end;
 
 {-----------------------------------------------------------------------------}
@@ -5984,6 +5994,11 @@ begin
       _MediaSearch.DoTabChange(pgMediaPanel);
     end;
   end;
+end;
+
+procedure TMainFrm.Tools1Click(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}

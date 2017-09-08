@@ -895,10 +895,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     object TabTreeConfig: TTabSheet
       Caption = 'List Settings'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpColours: TGroupBox
         Left = 178
         Top = 21
@@ -1182,7 +1178,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Columns = <
           item
             Position = 0
-            Width = 169
+            Width = 165
             WideText = 'Caption'
           end>
       end

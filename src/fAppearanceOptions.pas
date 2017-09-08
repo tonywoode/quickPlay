@@ -456,6 +456,10 @@ begin
   jvBrowse := TJvBrowseForFolderDialog.Create(self);
 
   try
+
+   if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
+      jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
+
       if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
         begin
         //put it in the text box

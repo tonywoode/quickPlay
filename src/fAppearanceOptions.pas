@@ -59,10 +59,11 @@ type
     GrpColView: TGroupBox;
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
-    TxtMessIconDirPath: TEdit;
-    BtnMessIconDirFind: TButton;
-    MessIconLabel: TLabel;
+    TxtMameExtrasDirPath: TEdit;
+    BtnMameExtrasDirFind: TButton;
+    MameExtrasLabel: TLabel;
     RadGrpDirExpand: TRadioGroup;
+    procedure MameExtrasLabelClick(Sender: TObject);
 
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
@@ -71,7 +72,7 @@ type
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: WideString);
     procedure BtnColourDefaultsClick(Sender: TObject);
     procedure BtnImageFindClick(Sender: TObject);
-    procedure BtnIconDirFindClick(Sender: TObject);
+    procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure BtnFontChangeClick(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
     procedure VTShowColsGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
@@ -197,6 +198,11 @@ begin
     // end of ROM list setup code
 end;
 
+procedure TFrmAppearanceOptions.MameExtrasLabelClick(Sender: TObject);
+begin
+
+end;
+
 {-----------------------------------------------------------------------------}
 
 Procedure TFrmAppearanceOptions.SaveVTConfig(Index : Integer);
@@ -304,7 +310,8 @@ begin
     ChkSidebarTabs.Checked := Settings.ShowTabsInSideBar;
     ChkEmuRealIcons.Checked := Settings.UseRealEmuIcons;
     ChkToolRealIcons.Checked := Settings.UseRealToolIcons;
-    TxtMessIconDirPath.Text :=  Settings.MessIconDir;
+    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
+
 
     // UI settings
     Case WindowLayout of
@@ -373,8 +380,7 @@ begin
 
     Settings.UseRealEmuIcons := ChkEmuRealIcons.Checked;
     Settings.UseRealToolIcons := ChkToolRealIcons.Checked;
-    Settings.MessIconDir := TxtMessIconDirPath.Text;
-
+    Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
 
     //Save the default columns, put them in an array and save them
     SetLength(Cols, VTRoms.Header.Columns.Count);
@@ -442,7 +448,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmAppearanceOptions.BtnIconDirFindClick(Sender: TObject);
+procedure TFrmAppearanceOptions.BtnMameExtrasDirFindClick(Sender: TObject);
 var
   jvBrowse: TJvBrowseForFolderDialog;
 begin
@@ -453,7 +459,7 @@ begin
       if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
         begin
         //put it in the text box
-        TxtMessIconDirPath.Text := jvBrowse.Directory;
+        TxtMameExtrasDirPath.Text := jvBrowse.Directory;
         //add the directory to the ini in the right section
         //ListDirs.Items.Add(jvBrowse.Directory);
         end;

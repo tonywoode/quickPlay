@@ -3,69 +3,66 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Appearance Options'
-  ClientHeight = 502
-  ClientWidth = 679
+  ClientHeight = 656
+  ClientWidth = 888
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object pgAppearance: TPageControl
     Left = 0
-    Top = 52
-    Width = 679
-    Height = 405
+    Top = 68
+    Width = 888
+    Height = 530
     ActivePage = TabLayout
     Align = alTop
     TabOrder = 0
     object TabLayout: TTabSheet
       Caption = 'Layout'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblRealEmuIcons: TLabel
-        Left = 312
-        Top = 263
-        Width = 296
-        Height = 13
+        Left = 408
+        Top = 344
+        Width = 375
+        Height = 17
         Caption = '(These two options can cause QuickPlay to start very slowly.)'
       end
-      object MessIconLabel: TLabel
-        Left = 311
-        Top = 328
-        Width = 104
-        Height = 26
-        Caption = 'Additional Icons Path (Mess system Icons)'
+      object MameExtrasLabel: TLabel
+        Left = 407
+        Top = 429
+        Width = 126
+        Height = 51
+        Caption = 'Mame Extras Dir (for system Icons, MameTool etc)'
         WordWrap = True
+        OnClick = MameExtrasLabelClick
       end
       object ChkSidebarTabs: TCheckBox
-        Left = 312
-        Top = 240
-        Width = 242
-        Height = 17
+        Left = 408
+        Top = 314
+        Width = 316
+        Height = 22
         Caption = 'Show tabs on Sidebar'
         Checked = True
         State = cbChecked
         TabOrder = 3
       end
       object grpLayout: TGroupBox
-        Left = 9
-        Top = 3
-        Width = 281
-        Height = 270
+        Left = 12
+        Top = 4
+        Width = 367
+        Height = 353
         Caption = 'Layout'
         TabOrder = 0
         object ImgNormal: TImage
-          Left = 8
-          Top = 24
+          Left = 10
+          Top = 31
           Width = 100
           Height = 54
           AutoSize = True
@@ -244,8 +241,8 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             00000000000000000000}
         end
         object ImgPanBottom: TImage
-          Left = 8
-          Top = 206
+          Left = 10
+          Top = 269
           Width = 101
           Height = 53
           AutoSize = True
@@ -427,8 +424,8 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             0000000000000000000000000000000000000000000000000000}
         end
         object ImgDirOnTop: TImage
-          Left = 8
-          Top = 149
+          Left = 10
+          Top = 195
           Width = 101
           Height = 44
           AutoSize = True
@@ -581,8 +578,8 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             000000000000000000000000000000000000}
         end
         object ImgVertical: TImage
-          Left = 8
-          Top = 89
+          Left = 10
+          Top = 116
           Width = 101
           Height = 48
           AutoSize = True
@@ -748,76 +745,76 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             000000000000000000000000000000000000}
         end
         object RadNormal: TRadioButton
-          Left = 112
-          Top = 40
-          Width = 137
-          Height = 17
+          Left = 146
+          Top = 52
+          Width = 180
+          Height = 23
           Caption = 'Normal'
           TabOrder = 0
         end
         object RadVertical: TRadioButton
-          Left = 112
-          Top = 105
-          Width = 137
-          Height = 17
+          Left = 146
+          Top = 137
+          Width = 180
+          Height = 23
           Caption = 'Vertical'
           TabOrder = 1
         end
         object RadDirOnTop: TRadioButton
-          Left = 112
-          Top = 163
-          Width = 153
-          Height = 17
+          Left = 146
+          Top = 213
+          Width = 201
+          Height = 22
           Caption = 'Directory to top'
           TabOrder = 2
         end
         object RadImgToBottom: TRadioButton
-          Left = 112
-          Top = 222
-          Width = 153
-          Height = 17
+          Left = 146
+          Top = 290
+          Width = 201
+          Height = 23
           Caption = 'Image Panel to bottom'
           TabOrder = 3
         end
       end
       object ChkEmuRealIcons: TCheckBox
-        Left = 311
-        Top = 282
-        Width = 278
-        Height = 17
+        Left = 407
+        Top = 369
+        Width = 363
+        Height = 22
         Caption = 'Use Real Emulator Icons'
         TabOrder = 4
       end
       object GrpROMOptions: TGroupBox
-        Left = 296
-        Top = 3
-        Width = 329
-        Height = 217
+        Left = 387
+        Top = 4
+        Width = 430
+        Height = 284
         Caption = 'ROM Options'
         TabOrder = 2
         object ChkCol: TCheckBox
-          Left = 8
-          Top = 72
-          Width = 305
-          Height = 17
+          Left = 10
+          Top = 94
+          Width = 399
+          Height = 22
           Caption = 'Save Column Sizes on application exit'
           ParentShowHint = False
           ShowHint = False
           TabOrder = 2
         end
         object ChkIncVersion: TCheckBox
-          Left = 8
-          Top = 48
-          Width = 305
-          Height = 17
+          Left = 10
+          Top = 63
+          Width = 399
+          Height = 22
           Caption = 'Include Emulator Version in '#39'Emulator'#39' column'
           TabOrder = 1
         end
         object ChkListImages: TCheckBox
-          Left = 8
-          Top = 24
-          Width = 305
-          Height = 17
+          Left = 10
+          Top = 31
+          Width = 399
+          Height = 23
           Hint = 
             'Use images on ROM listing to illustrate whether or not the ROM '#13 +
             #10'actually exists on disk.'
@@ -827,17 +824,17 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           TabOrder = 0
         end
         object GrpColView: TGroupBox
-          Left = 9
-          Top = 94
-          Width = 257
-          Height = 113
+          Left = 12
+          Top = 123
+          Width = 336
+          Height = 148
           Caption = 'Default Visible Columns'
           TabOrder = 3
           object VTShowCols: TVirtualStringTree
-            Left = 8
-            Top = 16
-            Width = 241
-            Height = 89
+            Left = 10
+            Top = 21
+            Width = 316
+            Height = 116
             Header.AutoSizeIndex = 0
             Header.DefaultHeight = 17
             Header.Font.Charset = DEFAULT_CHARSET
@@ -859,18 +856,18 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         end
       end
       object ChkToolRealIcons: TCheckBox
-        Left = 312
-        Top = 305
-        Width = 266
-        Height = 17
+        Left = 408
+        Top = 399
+        Width = 348
+        Height = 22
         Caption = 'Use Real Tools Icons'
         TabOrder = 5
       end
       object RadGrpDirExpand: TRadioGroup
-        Left = 9
-        Top = 279
-        Width = 281
-        Height = 86
+        Left = 12
+        Top = 365
+        Width = 367
+        Height = 112
         Caption = 'Directory Expand Mode'
         Items.Strings = (
           'Full Expand'
@@ -878,21 +875,21 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           'None')
         TabOrder = 1
       end
-      object TxtMessIconDirPath: TEdit
-        Left = 428
-        Top = 328
-        Width = 179
-        Height = 21
+      object TxtMameExtrasDirPath: TEdit
+        Left = 560
+        Top = 429
+        Width = 234
+        Height = 25
         TabOrder = 6
       end
-      object BtnMessIconDirFind: TButton
-        Left = 613
-        Top = 328
-        Width = 25
-        Height = 21
+      object BtnMameExtrasDirFind: TButton
+        Left = 802
+        Top = 429
+        Width = 32
+        Height = 27
         Caption = '...'
         TabOrder = 7
-        OnClick = BtnIconDirFindClick
+        OnClick = BtnMameExtrasDirFindClick
       end
     end
     object TabTreeConfig: TTabSheet
@@ -903,112 +900,112 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
       ExplicitWidth = 0
       ExplicitHeight = 0
       object GrpColours: TGroupBox
-        Left = 136
-        Top = 16
-        Width = 265
-        Height = 177
+        Left = 178
+        Top = 21
+        Width = 346
+        Height = 231
         Caption = 'Colours'
         TabOrder = 0
         object TLabel
-          Left = 7
-          Top = 110
-          Width = 58
-          Height = 26
+          Left = 9
+          Top = 144
+          Width = 74
+          Height = 34
           Caption = 'Selected'#13#10'(unfocused)'
         end
         object TLabel
-          Left = 7
-          Top = 83
-          Width = 46
-          Height = 13
+          Left = 9
+          Top = 109
+          Width = 58
+          Height = 17
           Caption = 'Selection '
         end
         object TLabel
-          Left = 7
-          Top = 52
-          Width = 47
-          Height = 13
+          Left = 9
+          Top = 68
+          Width = 61
+          Height = 17
           Caption = 'Hot-Track'
         end
         object TLabel
-          Left = 7
-          Top = 22
-          Width = 56
-          Height = 13
+          Left = 9
+          Top = 29
+          Width = 74
+          Height = 17
           Caption = 'Background'
         end
         object colHotTrack: TColorBox
-          Left = 89
-          Top = 47
-          Width = 168
+          Left = 116
+          Top = 61
+          Width = 220
           Height = 22
           Selected = clBlue
           ItemHeight = 16
           TabOrder = 1
         end
         object colUnSelected: TColorBox
-          Left = 89
-          Top = 112
-          Width = 168
+          Left = 116
+          Top = 146
+          Width = 220
           Height = 22
           Selected = clBtnFace
           ItemHeight = 16
           TabOrder = 3
         end
         object colSelected: TColorBox
-          Left = 89
-          Top = 78
-          Width = 168
+          Left = 116
+          Top = 102
+          Width = 220
           Height = 22
           Selected = clHighlight
           ItemHeight = 16
           TabOrder = 2
         end
         object colBackground: TColorBox
-          Left = 89
-          Top = 17
-          Width = 168
+          Left = 116
+          Top = 22
+          Width = 220
           Height = 22
           Selected = clWindow
           ItemHeight = 16
           TabOrder = 0
         end
         object BtnColourDefaults: TButton
-          Left = 176
-          Top = 145
-          Width = 81
-          Height = 25
+          Left = 230
+          Top = 190
+          Width = 106
+          Height = 32
           Caption = '&Defaults'
           TabOrder = 4
           OnClick = BtnColourDefaultsClick
         end
       end
       object GrpOptions: TGroupBox
-        Left = 408
-        Top = 16
-        Width = 257
-        Height = 301
+        Left = 534
+        Top = 21
+        Width = 336
+        Height = 394
         Caption = 'Misc Options'
         TabOrder = 1
         object Label4: TLabel
-          Left = 8
-          Top = 172
-          Width = 22
-          Height = 13
+          Left = 10
+          Top = 225
+          Width = 28
+          Height = 17
           Caption = 'Path'
         end
         object TLabel
-          Left = 8
-          Top = 208
-          Width = 75
-          Height = 13
+          Left = 10
+          Top = 272
+          Width = 95
+          Height = 17
           Caption = 'Selection Curve'
         end
         object ChkGridlines: TCheckBox
-          Left = 16
-          Top = 25
-          Width = 209
-          Height = 17
+          Left = 21
+          Top = 33
+          Width = 273
+          Height = 22
           Hint = 'Check option to enable ROM list gridlines'
           Caption = 'Enable Gridlines'
           ParentShowHint = False
@@ -1016,62 +1013,62 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           TabOrder = 0
         end
         object ChkHotTrack: TCheckBox
-          Left = 16
-          Top = 85
-          Width = 225
-          Height = 17
+          Left = 21
+          Top = 111
+          Width = 294
+          Height = 22
           Caption = 'Enable Hot Track'
           ParentShowHint = False
           ShowHint = False
           TabOrder = 2
         end
         object ChkRowSelect: TCheckBox
-          Left = 16
-          Top = 55
-          Width = 217
-          Height = 17
+          Left = 21
+          Top = 72
+          Width = 284
+          Height = 22
           Caption = 'Enable Row Select'
           ParentShowHint = False
           ShowHint = False
           TabOrder = 1
         end
         object chkShowHints: TCheckBox
-          Left = 16
-          Top = 115
-          Width = 225
-          Height = 17
+          Left = 21
+          Top = 150
+          Width = 294
+          Height = 23
           Caption = 'Show Hints'
           TabOrder = 3
         end
         object TxtBGImagePath: TEdit
-          Left = 44
-          Top = 168
-          Width = 179
-          Height = 21
+          Left = 58
+          Top = 220
+          Width = 234
+          Height = 25
           TabOrder = 4
         end
         object chkBGImage: TCheckBox
-          Left = 16
-          Top = 145
-          Width = 225
-          Height = 17
+          Left = 21
+          Top = 190
+          Width = 294
+          Height = 22
           Caption = 'Use Image for Background'
           TabOrder = 5
         end
         object BtnImageFind: TButton
-          Left = 228
-          Top = 168
-          Width = 25
-          Height = 21
+          Left = 298
+          Top = 220
+          Width = 33
+          Height = 27
           Caption = '...'
           TabOrder = 6
           OnClick = BtnImageFindClick
         end
         object TxtSelectionCurve: TSpinEdit
-          Left = 102
-          Top = 204
-          Width = 49
-          Height = 22
+          Left = 133
+          Top = 267
+          Width = 64
+          Height = 27
           MaxValue = 50
           MinValue = 0
           TabOrder = 7
@@ -1079,72 +1076,72 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         end
       end
       object GrpFont: TGroupBox
-        Left = 136
-        Top = 213
-        Width = 265
-        Height = 105
+        Left = 178
+        Top = 279
+        Width = 346
+        Height = 137
         Caption = 'Font Properties'
         TabOrder = 2
         object lblFontStyle: TLabel
-          Left = 48
-          Top = 85
-          Width = 3
-          Height = 13
+          Left = 63
+          Top = 111
+          Width = 4
+          Height = 17
         end
         object lblFontSize: TLabel
-          Left = 48
-          Top = 39
-          Width = 6
-          Height = 13
+          Left = 63
+          Top = 51
+          Width = 8
+          Height = 17
           Caption = '8'
         end
         object lblFontName: TLabel
-          Left = 48
-          Top = 16
-          Width = 38
-          Height = 13
+          Left = 63
+          Top = 21
+          Width = 50
+          Height = 17
           Caption = 'Tahoma'
         end
         object TLabel
-          Left = 8
-          Top = 85
-          Width = 24
-          Height = 13
+          Left = 10
+          Top = 111
+          Width = 30
+          Height = 17
           Caption = 'Style'
         end
         object TLabel
-          Left = 8
-          Top = 62
-          Width = 31
-          Height = 13
+          Left = 10
+          Top = 81
+          Width = 40
+          Height = 17
           Caption = 'Colour'
         end
         object TLabel
-          Left = 8
-          Top = 39
-          Width = 19
-          Height = 13
+          Left = 10
+          Top = 51
+          Width = 23
+          Height = 17
           Caption = 'Size'
         end
         object TLabel
-          Left = 8
-          Top = 16
-          Width = 27
-          Height = 13
+          Left = 10
+          Top = 21
+          Width = 35
+          Height = 17
           Caption = 'Name'
         end
         object ShpFontColour: TShape
-          Left = 48
-          Top = 60
-          Width = 49
-          Height = 17
+          Left = 63
+          Top = 78
+          Width = 64
+          Height = 23
           Brush.Color = clBlack
         end
         object BtnFontChange: TButton
-          Left = 176
-          Top = 77
-          Width = 81
-          Height = 25
+          Left = 230
+          Top = 101
+          Width = 106
+          Height = 32
           Caption = 'Change'
           TabOrder = 0
           OnClick = BtnFontChangeClick
@@ -1152,14 +1149,14 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
       end
       object VTTrees: TVirtualStringTree
         Left = 0
-        Top = 5
-        Width = 129
-        Height = 313
+        Top = 7
+        Width = 169
+        Height = 409
         DefaultNodeHeight = 30
         DragType = dtVCL
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -15
         Font.Name = 'Tahoma'
         Font.Style = []
         Header.AutoSizeIndex = 0
@@ -1185,27 +1182,27 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Columns = <
           item
             Position = 0
-            Width = 129
+            Width = 169
             WideText = 'Caption'
           end>
       end
     end
   end
   object BtnOK: TButton
-    Left = 518
-    Top = 468
-    Width = 75
-    Height = 25
+    Left = 677
+    Top = 612
+    Width = 98
+    Height = 33
     Caption = '&OK'
     ModalResult = 1
     TabOrder = 1
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 598
-    Top = 468
-    Width = 75
-    Height = 25
+    Left = 782
+    Top = 612
+    Width = 98
+    Height = 33
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 2
@@ -1213,13 +1210,13 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
   object PanHeader: TPanel
     Left = 0
     Top = 0
-    Width = 679
-    Height = 52
+    Width = 888
+    Height = 68
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 3
     object Image1: TImage
-      Left = 8
+      Left = 10
       Top = 1
       Width = 48
       Height = 48
@@ -1447,14 +1444,14 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
       Transparent = True
     end
     object lblHeader: TLabel
-      Left = 64
-      Top = 16
-      Width = 192
-      Height = 23
+      Left = 84
+      Top = 21
+      Width = 234
+      Height = 28
       Caption = 'Appearance Options'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -19
+      Font.Height = -23
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False

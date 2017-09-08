@@ -63,7 +63,8 @@ Type
 
       _bUseRealEmuIcons : Boolean;
       _bUseRealToolIcons : Boolean;
-      _sMessIconDir : string; //icons dir for system/romlist icons in sidebar roms panel.
+      _sMameExtrasDir: string;   //root directory for mame assets like icons and ini files
+      _sMessIconDir : string;    //icons dir for system/romlist icons in sidebar roms panel.
       _bSaveCols : boolean;     //save column widths and positions.
       _bRomImages : boolean;    //allow ICONS in the ROMs listing.
       _bIncVersion : boolean;   //include an emulator version string in the rom listing.
@@ -148,6 +149,7 @@ Type
 
       Property UseRealEmuIcons : Boolean read _bUseRealEmuIcons write _bUseRealEmuIcons;
       Property UseRealToolIcons : Boolean read _bUseRealToolIcons write _bUseRealToolIcons;
+      Property MameExtrasDir : string read _sMameExtrasDir write _sMameExtrasDir;
       Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
       Property NoDats : Boolean Read _NoDats Write _NoDats;
       Property DatsCurrent : Boolean Read _DatsUpToDate write _DatsUpToDate;
@@ -627,6 +629,7 @@ begin
       _bUseRealEmuIcons := Ini.ReadBool('IconThread', 'Emus', True);
       _bUseRealToolIcons := Ini.ReadBool('IconThread', 'Tools' , True);
       _sMessIconDir := Ini.ReadString('IconThread', 'MessIconPath', '');
+      _sMameExtrasDir := Ini.ReadString('IconThread', 'MameExtrasPath', '');
 
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));
@@ -1032,7 +1035,7 @@ begin
 
     Ini.WriteBool('IconThread', 'Emus', _bUseRealEmuIcons);
     Ini.WriteBool('IconThread', 'Tools', self._bUseRealToolIcons);
-    Ini.WriteString('IconThread', 'MessIconPath', self._sMessIconDir);
+    Ini.WriteString('IconThread', 'MameExtrasPath', self._sMameExtrasDir);
 
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);

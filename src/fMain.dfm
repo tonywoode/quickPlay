@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 650
+  ClientHeight = 700
   ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 631
+    Top = 681
     Width = 964
     Height = 19
     Panels = <
@@ -118,14 +118,14 @@ object MainFrm: TMainFrm
     Left = 0
     Top = 0
     Width = 964
-    Height = 631
+    Height = 681
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 631
+      Height = 681
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +133,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 789
       Top = 0
-      Height = 631
+      Height = 681
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,7 +144,7 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 631
+      Height = 681
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
@@ -152,7 +152,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 0
         Width = 209
-        Height = 631
+        Height = 681
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
@@ -163,7 +163,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 574
+            Height = 624
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -469,7 +469,7 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 577
-      Height = 631
+      Height = 681
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
@@ -562,7 +562,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 577
-        Height = 578
+        Height = 628
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -787,7 +787,7 @@ object MainFrm: TMainFrm
       Left = 792
       Top = 0
       Width = 172
-      Height = 631
+      Height = 681
       Align = alRight
       MultiLine = True
       TabOrder = 2
@@ -1198,6 +1198,11 @@ object MainFrm: TMainFrm
       Caption = 'Scan for ZiNc ROMs'
       OnExecute = ActZiNcScanExecute
     end
+    object ActMameOptions: TAction
+      Category = 'Mame'
+      Caption = 'Set Options for MAME and MESS'
+      OnExecute = ActMameOptionsExecute
+    end
     object actQPHomepage: TAction
       Category = 'Help'
       Caption = 'QuickPlay Homepage'
@@ -1496,6 +1501,13 @@ object MainFrm: TMainFrm
       object ScanforZiNcROMs1: TMenuItem
         Action = ActZiNcScan
       end
+      object N28: TMenuItem
+        Caption = '-'
+      end
+      object MAMEOptions1: TMenuItem
+        Action = ActMameOptions
+        Caption = 'MAME Options'
+      end
     end
     object Tools1: TMenuItem
       Caption = '&Utilities'
@@ -1526,7 +1538,6 @@ object MainFrm: TMainFrm
     end
     object Help1: TMenuItem
       Caption = '&Help'
-      OnClick = Help1Click
       object HelpContents1: TMenuItem
         Action = ActHelpContents
       end

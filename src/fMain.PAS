@@ -307,6 +307,7 @@ type
     MnuEmuSideBar: TMenuItem;
     MnuToolSidebar: TMenuItem;
     ActZiNcScan: TAction;
+    ActMameOptions: TAction;
     N23: TMenuItem;
     ScanforZiNcROMs1: TMenuItem;
     actQPHomepage: TAction;
@@ -353,10 +354,11 @@ type
     JoyCntrl: TJvJoystick;
     Edit1: TEdit;
     SlideBarDir: TTrackBar;
+    N28: TMenuItem;
+    MAMEOptions1: TMenuItem;
     procedure Label1Click(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
-    procedure Help1Click(Sender: TObject);
     procedure JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
       But2Pressed, But3Pressed, But4Pressed: Boolean);
     procedure JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
@@ -568,7 +570,7 @@ type
     procedure MnuEmuSideBarClick(Sender: TObject);
     procedure MnuToolSidebarClick(Sender: TObject);
     procedure ActZiNcScanExecute(Sender: TObject);
-
+    procedure ActMameOptionsExecute(Sender: TObject);
 
   private
     _ROMPoint : TPoint;
@@ -1270,11 +1272,6 @@ begin
     MessageDlg('No new versions available.', mtInformation, [mbOK], poMainFormCenter);
 
   _ShowUpdateCheckErrors := False;
-end;
-
-procedure TMainFrm.Help1Click(Sender: TObject);
-begin
-
 end;
 
 {-----------------------------------------------------------------------------}
@@ -2838,6 +2835,13 @@ begin
    finally
      FreeAndNil(MergeFrm);
    end;
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.ActMameOptionsExecute(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar('http://quickplay.sourceforge.net/wiki/index.php/MESS'), '', '', sw_Show);
 end;
 
 {-----------------------------------------------------------------------------}

@@ -34,15 +34,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Height = 17
         Caption = '(These two options can cause QuickPlay to start very slowly.)'
       end
-      object MameExtrasLabel: TLabel
-        Left = 407
-        Top = 429
-        Width = 126
-        Height = 51
-        Caption = 'Mame Extras Dir (for system Icons, MameTool etc)'
-        WordWrap = True
-        OnClick = MameExtrasLabelClick
-      end
       object ChkSidebarTabs: TCheckBox
         Left = 408
         Top = 314
@@ -874,23 +865,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           'First Level Only'
           'None')
         TabOrder = 1
-      end
-      object TxtMameExtrasDirPath: TEdit
-        Left = 560
-        Top = 429
-        Width = 234
-        Height = 25
-        TabOrder = 6
-        OnChange = TxtMameExtrasDirPathChange
-      end
-      object BtnMameExtrasDirFind: TButton
-        Left = 802
-        Top = 429
-        Width = 32
-        Height = 27
-        Caption = '...'
-        TabOrder = 7
-        OnClick = BtnMameExtrasDirFindClick
       end
     end
     object TabTreeConfig: TTabSheet

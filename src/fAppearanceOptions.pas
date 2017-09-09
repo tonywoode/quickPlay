@@ -59,12 +59,7 @@ type
     GrpColView: TGroupBox;
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
-    TxtMameExtrasDirPath: TEdit;
-    BtnMameExtrasDirFind: TButton;
-    MameExtrasLabel: TLabel;
     RadGrpDirExpand: TRadioGroup;
-    procedure TxtMameExtrasDirPathChange(Sender: TObject);
-    procedure MameExtrasLabelClick(Sender: TObject);
 
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
@@ -73,7 +68,6 @@ type
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: WideString);
     procedure BtnColourDefaultsClick(Sender: TObject);
     procedure BtnImageFindClick(Sender: TObject);
-    procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure BtnFontChangeClick(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
     procedure VTShowColsGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
@@ -199,11 +193,6 @@ begin
     // end of ROM list setup code
 end;
 
-procedure TFrmAppearanceOptions.MameExtrasLabelClick(Sender: TObject);
-begin
-
-end;
-
 {-----------------------------------------------------------------------------}
 
 Procedure TFrmAppearanceOptions.SaveVTConfig(Index : Integer);
@@ -252,11 +241,6 @@ begin
 
   if pos('Strikethrough', lblFontStyle.Caption) <> 0 then
     Cfg.VTFont.Style := Cfg.VTFont.Style + [fsstrikeout];
-
-end;
-
-procedure TFrmAppearanceOptions.TxtMameExtrasDirPathChange(Sender: TObject);
-begin
 
 end;
 
@@ -316,7 +300,6 @@ begin
     ChkSidebarTabs.Checked := Settings.ShowTabsInSideBar;
     ChkEmuRealIcons.Checked := Settings.UseRealEmuIcons;
     ChkToolRealIcons.Checked := Settings.UseRealToolIcons;
-    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
 
 
     // UI settings
@@ -386,7 +369,6 @@ begin
 
     Settings.UseRealEmuIcons := ChkEmuRealIcons.Checked;
     Settings.UseRealToolIcons := ChkToolRealIcons.Checked;
-    Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
 
     //Save the default columns, put them in an array and save them
     SetLength(Cols, VTRoms.Header.Columns.Count);
@@ -449,32 +431,6 @@ begin
 
   finally
     FreeAndNil(PicDlg);
-  end;
-end;
-
-{-----------------------------------------------------------------------------}
-
-procedure TFrmAppearanceOptions.BtnMameExtrasDirFindClick(Sender: TObject);
-var
-  jvBrowse: TJvBrowseForFolderDialog;
-begin
-
-  jvBrowse := TJvBrowseForFolderDialog.Create(self);
-
-  try
-
-   if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
-      jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
-
-      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
-        begin
-        //put it in the text box
-        TxtMameExtrasDirPath.Text := jvBrowse.Directory;
-        //add the directory to the ini in the right section
-        //ListDirs.Items.Add(jvBrowse.Directory);
-        end;
-  finally
-    FreeAndNil(jvBrowse);
   end;
 end;
 

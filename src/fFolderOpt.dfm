@@ -251,10 +251,6 @@ object FrmFolder: TFrmFolder
     object TabMerged: TTabSheet
       Caption = 'GoodMerge Support'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblMergeTitle: TLabel
         Left = 63
         Top = 31
@@ -359,7 +355,7 @@ object FrmFolder: TFrmFolder
         Width = 221
         Height = 25
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 17
         TabOrder = 1
       end
       object CmbGMpref2: TComboBox
@@ -368,7 +364,7 @@ object FrmFolder: TFrmFolder
         Width = 221
         Height = 25
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 17
         TabOrder = 2
       end
       object CmbGMpref3: TComboBox
@@ -377,7 +373,7 @@ object FrmFolder: TFrmFolder
         Width = 221
         Height = 25
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 17
         TabOrder = 3
       end
     end

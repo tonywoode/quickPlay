@@ -230,7 +230,7 @@ begin
     Image := TIcon.Create;
 	  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
     qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
-    messIconDirPath := Ini.ReadString('IconThread', 'MameExtrasPath', '') + '\icons\';
+    messIconDirPath := Ini.ReadString('MAME', 'MameExtrasPath', '') + '\icons\';
 
     Find.Directory := qpIconDirPath;
     find.Filter := '*.ico';

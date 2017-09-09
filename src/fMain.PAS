@@ -1629,7 +1629,7 @@ begin
 
     Ini2 := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
     qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'  ;
-    messIconDirPath := Ini2.ReadString('IconThread', 'MameExtrasPath', '') + '\icons\';
+    messIconDirPath := Ini2.ReadString('MAME', 'MameExtrasPath', '') + '\icons\';
     try
       //all these IFS just check that a icon is specified and it exists
       if Ini.ReadBool('Icon', 'ChkIcon', false) then

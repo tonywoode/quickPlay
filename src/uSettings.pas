@@ -628,8 +628,9 @@ begin
 
       _bUseRealEmuIcons := Ini.ReadBool('IconThread', 'Emus', True);
       _bUseRealToolIcons := Ini.ReadBool('IconThread', 'Tools' , True);
-      _sMessIconDir := Ini.ReadString('IconThread', 'MessIconPath', '');
-      _sMameExtrasDir := Ini.ReadString('IconThread', 'MameExtrasPath', '');
+
+      //MAME Settings
+      _sMameExtrasDir := Ini.ReadString('MAME', 'MameExtrasPath', '');
 
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));
@@ -1035,7 +1036,9 @@ begin
 
     Ini.WriteBool('IconThread', 'Emus', _bUseRealEmuIcons);
     Ini.WriteBool('IconThread', 'Tools', self._bUseRealToolIcons);
-    Ini.WriteString('IconThread', 'MameExtrasPath', self._sMameExtrasDir);
+
+    //MAME Options
+    Ini.WriteString('MAME', 'MameExtrasPath', self._sMameExtrasDir);
 
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);

@@ -46,6 +46,7 @@ object FrmMameOptions: TFrmMameOptions
     Style = csDropDownList
     ItemHeight = 16
     TabOrder = 3
+    OnChange = CmbMameChange
   end
   object BtnOK: TButton
     Left = 432

@@ -25,6 +25,7 @@ type
     _DisableScreenSaver,        //Disable the screensaver while running games
     _DisableWinKey : Boolean;   //Disable the windows key while running games
     Function GetIsMAME() : Boolean;
+    Function GetIsMAMEArcade() : Boolean;
     Function GetIsZinc() : Boolean;
   public
 
@@ -37,8 +38,9 @@ type
     
     // IsMAME simply does a check on the emulator filename and sees if it includes the word 'MAME'.. cheap..
     Property IsMAME : Boolean Read GetIsMAME;
+    Property IsMAMEArcade : Boolean Read GetIsMAMEArcade;
     Property IsZinc : Boolean read GetIsZinc;
-    
+
     constructor Create;
     destructor Destroy;override;
     procedure Assign(Source : TQPEmu);
@@ -112,7 +114,19 @@ begin
   Result := (JCLStrings.StrCompare('zinc.exe', ExtractFileName(Self._path))=0);
 end;
 
+Function TQPEmu.GetIsMAMEArcade() : Boolean;
+begin
+  //a simple check to see if this emulator can be considered to 'be' MAME.
+  //later a more complex check to narrow down on possible arcade emus
+  //an alternative to modifcation is extension with a GetISMAMEArcade boolean...
+  Result := (
+    (JCLStrings.StrIPos('mame', ExtractFileName(Self._path)) <> 0)
+    or (JCLStrings.StrIPos('retroarch', ExtractFileName(Self._path)) <> 0)
+  ) and (Self._system = 'Arcade')
+end;
+
 {-----------------------------------------------------------------------------}
+
 
 procedure TQPEmu.ImportEmuFindObj(EFindObj : TQPEmuFindObj; EmuPath : TFileName);
 var

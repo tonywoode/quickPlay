@@ -38,7 +38,7 @@ type
   TQPLanguageMode = (lmEnglish, lmNone, lmGuess);
 
   TQPEmuAssignResult = (qparError, qparOK, qparOKReload);
-  TQPEmuToStrings = (cfAllEmus, cfMame, cfEmuBySys, cfZinc);
+  TQPEmuToStrings = (cfAllEmus, cfMame, cfMameArcade, cfEmuBySys, cfZinc);
 
   TQPEditType = (qpeEdit,         //creates a standard text edit.
                  qpeCombo,        //creates a combo, and calls DoCustomPrepare to get items

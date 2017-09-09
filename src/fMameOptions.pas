@@ -22,6 +22,7 @@ type
     MameExtrasLabel: TLabel;
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
+    procedure CmbMameChange(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
@@ -47,7 +48,7 @@ var
   Dirs : TStringList;
   I : Integer;
 begin
-    MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMame);
+    MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
 
   Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
   TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
@@ -139,6 +140,11 @@ begin
 
   //close the form with the modal result OK
   ModalResult := MrOK;
+end;
+
+procedure TFrmMameOptions.CmbMameChange(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}

@@ -327,6 +327,13 @@ begin
                       sList.add(self[i].name);
                 end;
 
+   cfMameArcade:     begin
+                //Add all Mame-mode emulators to a combo box.
+                for I:= 0 to self.Count-1 do
+                    If (self[i].IsMAMEArcade) and (Self[i].CmdLine or Self[i].ShellEx) then
+                      sList.add(self[i].name);
+                end;
+
     cfEmuBySys: Begin
                 //Add emulators which belong to a specific system
                 for I := 0 to self.Count-1 do

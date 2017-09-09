@@ -63,6 +63,7 @@ type
     BtnMameExtrasDirFind: TButton;
     MameExtrasLabel: TLabel;
     RadGrpDirExpand: TRadioGroup;
+    procedure TxtMameExtrasDirPathChange(Sender: TObject);
     procedure MameExtrasLabelClick(Sender: TObject);
 
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
@@ -251,6 +252,11 @@ begin
 
   if pos('Strikethrough', lblFontStyle.Caption) <> 0 then
     Cfg.VTFont.Style := Cfg.VTFont.Style + [fsstrikeout];
+
+end;
+
+procedure TFrmAppearanceOptions.TxtMameExtrasDirPathChange(Sender: TObject);
+begin
 
 end;
 

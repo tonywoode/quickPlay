@@ -881,6 +881,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         Width = 234
         Height = 25
         TabOrder = 6
+        OnChange = TxtMameExtrasDirPathChange
       end
       object BtnMameExtrasDirFind: TButton
         Left = 802

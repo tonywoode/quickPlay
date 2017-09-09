@@ -13,7 +13,6 @@ object FrmMameOptions: TFrmMameOptions
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
-  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 120
   TextHeight = 16
@@ -30,6 +29,14 @@ object FrmMameOptions: TFrmMameOptions
     Width = 100
     Height = 16
     Caption = 'Folders To Scan'
+  end
+  object MameExtrasLabel: TLabel
+    Left = 34
+    Top = 196
+    Width = 123
+    Height = 48
+    Caption = 'Mame Extras Dir (for system Icons, MameTool etc)'
+    WordWrap = True
   end
   object CmbMame: TComboBox
     Left = 133
@@ -96,6 +103,22 @@ object FrmMameOptions: TFrmMameOptions
     HotTrackFont.Style = []
     Images = MainFrm.ImageList1
     ImageIndex = 3
+  end
+  object TxtMameExtrasDirPath: TEdit
+    Left = 163
+    Top = 203
+    Width = 234
+    Height = 25
+    TabOrder = 6
+  end
+  object BtnMameExtrasDirFind: TButton
+    Left = 416
+    Top = 202
+    Width = 32
+    Height = 27
+    Caption = '...'
+    TabOrder = 7
+    OnClick = BtnMameExtrasDirFindClick
   end
   object jvBrowse: TJvBrowseForFolderDialog
     Position = fpFormCenter

@@ -181,6 +181,9 @@ QP_FOLOPTFRM_FILE_EXT_1 = 'Add New Filter, in format "*.xxx"';
 //MAMEmerge form
 QP_MAMEM_BAD_DATA =  'Either no valid directory was given, or no emulator was selected';
 
+//MameOptions Form
+QP_MAMEOPT_BAD_DIR =  'The selected directory is not the MAME Extras folder (no icons subdir...)';
+
 //Migrate Form
 QP_MIGRATE_MIRROR = 'Mirror Paths';
 QP_MIGRATE_MEDIA = 'Media Panel Paths';

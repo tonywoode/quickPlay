@@ -19,18 +19,18 @@ type
     ListDirs: TListBox;
     BtnAdd: TJvImgBtn;
     BtnDel: TJvImgBtn;
+    MameExtrasLabel: TLabel;
+    TxtMameExtrasDirPath: TEdit;
+    BtnMameExtrasDirFind: TButton;
+    procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
     procedure BtnAddClick(Sender: TObject);
     procedure BtnDelClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
-    _ZincMode : Boolean;
-    procedure SetupZincMode(value : Boolean);
   public
     { Public declarations }
-    Property EnableZincMode : boolean read _ZincMode write SetupZincMode;
   end;
 
 implementation
@@ -40,16 +40,6 @@ uses fMain, uJUtilities, StrUtils, JCLstrings, IniFiles, uRom, uEmuList, uQPCons
 
 {$R *.dfm}
 
-procedure TFrmMameOptions.SetupZincMode(value : Boolean);
-begin
-  Self.Caption := 'Scan ZiNc ROMs';
-  _ZincMode := True;
-end;
-
-procedure TFrmMameOptions.FormCreate(Sender: TObject);
-begin
-  _ZincMode := False;
-end;
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);
 var
@@ -57,12 +47,10 @@ var
   Dirs : TStringList;
   I : Integer;
 begin
-  if _ZincMode then
-    MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfZiNc)
-  else
     MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMame);
 
   Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
+  TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
   Try
 
     //Load in the Directories.
@@ -85,6 +73,30 @@ end;
 
 {-----------------------------------------------------------------------------}
 
+procedure TFrmMameOptions.BtnMameExtrasDirFindClick(Sender: TObject);
+var
+  jvBrowse: TJvBrowseForFolderDialog;
+begin
+  jvBrowse := TJvBrowseForFolderDialog.Create(self);
+
+  try
+
+   if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
+      jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
+      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
+        begin
+         if DirectoryExists(jvBrowse.Directory + '/icons/') then
+             TxtMameExtrasDirPath.Text := jvBrowse.Directory
+           else
+             MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
+         end;
+  finally
+    FreeAndNil(jvBrowse);
+  end;
+end;
+
+{-----------------------------------------------------------------------------}
+
 procedure TFrmMameOptions.BtnOKClick(Sender: TObject);
 var
   DirOutput : String;
@@ -93,36 +105,37 @@ var
   Emu : TQPEmu;
   Clear : boolean;
 begin
+        MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+        MainFrm.Settings.SaveAllSettings();
+ // If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then
+ // begin
+ //   MessageDlg(QP_MAMEM_BAD_DATA, mtError, [mbOK], 0);
+ //   exit;
+ // end;
 
-  If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then
-  begin
-    MessageDlg(QP_MAMEM_BAD_DATA, mtError, [mbOK], 0);
-    exit;
-  end;
-
-  Emu := MainFrm.EmuList[MainFrm.EmuList.IndexOfName(CmbMAME.Text)];
+ // Emu := MainFrm.EmuList[MainFrm.EmuList.IndexOfName(CmbMAME.Text)];
 
   //now we need to reload the ROMs list.
-    MainFrm.ClearROMIcons();
-    MainFrm.ROMlist.LoadFromFile(MainFrm.GetSelectedTxt);
+ //   MainFrm.ClearROMIcons();
+ //   MainFrm.ROMlist.LoadFromFile(MainFrm.GetSelectedTxt);
 
   //now save the users input data.
-  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
-  Try
+ // Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
+//  Try
 
-    For i := 0 to ListDirs.Count-1 do
-      If DirectoryExists(ListDirs.Items.Strings[i]) then
-        DirOutput := DirOutput + ListDirs.Items.Strings[i] + ';';
+ //   For i := 0 to ListDirs.Count-1 do
+  //    If DirectoryExists(ListDirs.Items.Strings[i]) then
+  //      DirOutput := DirOutput + ListDirs.Items.Strings[i] + ';';
 
-    Ini.WriteString('MAMEScan', 'Dirs', DirOutput);
-    Ini.WriteString('MAMEScan', 'MAME', CmbMAME.Text);
+ //   Ini.WriteString('MAMEScan', 'Dirs', DirOutput);
+ //   Ini.WriteString('MAMEScan', 'MAME', CmbMAME.Text);
 
-    if MainFrm.Settings.AllowWrite then
-      Ini.UpdateFile;
+//    if MainFrm.Settings.AllowWrite then
+ //     Ini.UpdateFile;
 
-  Finally
-    FreeAndNil(Ini);
-  end;
+ // Finally
+ // FreeAndNil(Ini);
+ // end;
 
   //close the form with the modal result OK
   ModalResult := MrOK;
@@ -143,4 +156,6 @@ begin
   ListDirs.DeleteSelected;
 end;
 
+
 end.
+

@@ -49,13 +49,15 @@ var
   Dirs : TStringList;
   I : Integer;
 begin
-    MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+  MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+  CmbMame.ItemIndex := CmbMame.Items.IndexOf(MainFrm.Settings.MametoolMameExePath);
 
   Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
   TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
   //Path to Mame XML - why don't we query the mame executatble for the xml? because
   // retroarch MAME doesn't have this ability....
   TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
+
 
   Try
 
@@ -68,8 +70,6 @@ begin
     Finally
       FreeAndNil(Dirs);
     end;
-
-    CmbMAME.ItemIndex := -1;
 
   Finally
     FreeAndNil(Ini);
@@ -111,6 +111,10 @@ var
   Emu : TQPEmu;
   Clear : boolean;
 begin
+
+   if CmbMame.ItemIndex <>-1 then
+     MainFrm.Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
+
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
         MainFrm.Settings.SaveAllSettings();

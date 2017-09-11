@@ -3,20 +3,20 @@ object PrefForm: TPrefForm
   Top = 375
   BorderStyle = bsDialog
   Caption = 'General Options'
-  ClientHeight = 399
-  ClientWidth = 555
+  ClientHeight = 491
+  ClientWidth = 683
   Color = clBtnFace
   ParentFont = True
   OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 16
   object BtnOk: TButton
-    Left = 392
-    Top = 368
-    Width = 75
-    Height = 25
+    Left = 482
+    Top = 453
+    Width = 93
+    Height = 31
     Caption = '&OK'
     Default = True
     ModalResult = 1
@@ -24,36 +24,36 @@ object PrefForm: TPrefForm
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 472
-    Top = 368
-    Width = 75
-    Height = 25
+    Left = 581
+    Top = 453
+    Width = 92
+    Height = 31
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 2
   end
   object PgeOptions: TPageControl
     Left = 0
-    Top = 52
-    Width = 555
-    Height = 313
+    Top = 64
+    Width = 683
+    Height = 385
     ActivePage = TabGeneral
     Align = alTop
     TabOrder = 0
     object TabGeneral: TTabSheet
       Caption = 'General Options'
       object GrpGeneral: TGroupBox
-        Left = 8
-        Top = 19
-        Width = 537
-        Height = 182
+        Left = 10
+        Top = 23
+        Width = 661
+        Height = 224
         Caption = 'General Program Options'
         TabOrder = 0
         object ChkRunDlg: TCheckBox
-          Left = 13
-          Top = 66
-          Width = 198
-          Height = 17
+          Left = 16
+          Top = 81
+          Width = 244
+          Height = 21
           Hint = 
             'With this option enabled, anytime you want to run a ROM, the '#13#10#39 +
             'Run ROM'#39' dialog is used.'
@@ -63,10 +63,10 @@ object PrefForm: TPrefForm
           TabOrder = 1
         end
         object ChkMinimise: TCheckBox
-          Left = 272
-          Top = 66
-          Width = 249
-          Height = 17
+          Left = 335
+          Top = 81
+          Width = 306
+          Height = 21
           Hint = 
             'When Quickplay loads a ROM, Quickplay should minimise.  '#13#10'If you' +
             ' have problems with Quickplay not coming back after '#13#10'loading a ' +
@@ -77,10 +77,10 @@ object PrefForm: TPrefForm
           TabOrder = 5
         end
         object ChkAutoDel: TCheckBox
-          Left = 13
-          Top = 151
-          Width = 452
-          Height = 17
+          Left = 16
+          Top = 186
+          Width = 556
+          Height = 21
           Hint = 
             'When this option is enabled if you delete an emulator, any ROM l' +
             'inked'#13#10'to that emulator is also deleted.  If the option is disab' +
@@ -91,10 +91,10 @@ object PrefForm: TPrefForm
           TabOrder = 3
         end
         object ChkClearFilter: TCheckBox
-          Left = 13
-          Top = 24
-          Width = 246
-          Height = 17
+          Left = 16
+          Top = 30
+          Width = 303
+          Height = 20
           Hint = 
             'When enabled when you change directories in Quickplay, the '#13#10'fil' +
             'ter string will be cleared and you will see all availabled ROMS.' +
@@ -106,10 +106,10 @@ object PrefForm: TPrefForm
           TabOrder = 0
         end
         object ChkRememberROM: TCheckBox
-          Left = 272
-          Top = 24
-          Width = 249
-          Height = 17
+          Left = 335
+          Top = 30
+          Width = 306
+          Height = 20
           Hint = 
             'When enabled QuickPlay will save the last selected ROM when you ' +
             'close the program.  This ROM will be displayed next time you loa' +
@@ -120,10 +120,10 @@ object PrefForm: TPrefForm
           TabOrder = 4
         end
         object ChkOldMini: TCheckBox
-          Left = 287
-          Top = 89
-          Width = 210
-          Height = 17
+          Left = 353
+          Top = 110
+          Width = 259
+          Height = 20
           Hint = 
             'This allows you to use the QP3.4.3 minimise style, some people h' +
             'ave reported problems with the new minimising style'
@@ -131,19 +131,19 @@ object PrefForm: TPrefForm
           TabOrder = 6
         end
         object chkUpdatesOnStart: TCheckBox
-          Left = 13
-          Top = 108
-          Width = 233
-          Height = 17
+          Left = 16
+          Top = 133
+          Width = 287
+          Height = 21
           Caption = 'Check for Updates on Start'
           TabOrder = 2
           OnClick = chkUpdatesOnStartClick
         end
         object ChkJoy: TCheckBox
-          Left = 272
-          Top = 112
-          Width = 249
-          Height = 17
+          Left = 335
+          Top = 138
+          Width = 306
+          Height = 21
           Hint = 'When selected QuickPlay will allow joystick input for controls'
           Caption = 'Joystick Support'
           ParentShowHint = False
@@ -152,50 +152,50 @@ object PrefForm: TPrefForm
         end
       end
       object GrpDefaultIni: TPanel
-        Left = 8
-        Top = 220
-        Width = 265
-        Height = 41
+        Left = 10
+        Top = 271
+        Width = 326
+        Height = 50
         BevelInner = bvRaised
         BevelOuter = bvLowered
         TabOrder = 1
         object TLabel
-          Left = 8
-          Top = 12
-          Width = 118
-          Height = 13
+          Left = 10
+          Top = 15
+          Width = 138
+          Height = 16
           Caption = 'Restore Default Settings'
         end
         object BtnDelReg: TButton
-          Left = 160
-          Top = 8
-          Width = 99
-          Height = 25
+          Left = 197
+          Top = 10
+          Width = 122
+          Height = 31
           Caption = 'Default Settings'
           TabOrder = 0
           OnClick = BtnDelRegClick
         end
       end
       object GrpReset: TPanel
-        Left = 280
-        Top = 220
-        Width = 265
-        Height = 41
+        Left = 345
+        Top = 271
+        Width = 326
+        Height = 50
         BevelInner = bvRaised
         BevelOuter = bvLowered
         TabOrder = 2
         object LblResetTots: TLabel
-          Left = 8
-          Top = 8
-          Width = 114
-          Height = 26
+          Left = 10
+          Top = 10
+          Width = 139
+          Height = 32
           Caption = 'Reset Number of Times '#13#10'played for all games.'
         end
         object BtnReset: TButton
-          Left = 168
-          Top = 8
-          Width = 89
-          Height = 25
+          Left = 207
+          Top = 10
+          Width = 109
+          Height = 31
           Caption = 'Reset Totals'
           TabOrder = 0
           OnClick = BtnResetClick
@@ -205,22 +205,18 @@ object PrefForm: TPrefForm
     object TabEmuOpt: TTabSheet
       Caption = 'Emulator Options'
       ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblUncompress: TLabel
-        Left = 104
-        Top = 153
-        Width = 102
-        Height = 13
+        Left = 128
+        Top = 188
+        Width = 122
+        Height = 16
         Caption = 'Uncompress ROMs to'
       end
       object lblGlobalDesc: TLabel
-        Left = 60
-        Top = 20
-        Width = 437
-        Height = 69
+        Left = 74
+        Top = 25
+        Width = 538
+        Height = 85
         AutoSize = False
         Caption = 
           'These global emulator options are by default applied to every em' +
@@ -231,28 +227,28 @@ object PrefForm: TPrefForm
         WordWrap = True
       end
       object lblPowerScheme: TLabel
-        Left = 104
-        Top = 108
-        Width = 102
-        Height = 13
+        Left = 128
+        Top = 133
+        Width = 125
+        Height = 16
         Caption = 'Global Power Scheme'
       end
       object CmbPwrSchemes: TComboBox
-        Left = 248
-        Top = 105
-        Width = 169
-        Height = 21
+        Left = 305
+        Top = 129
+        Width = 208
+        Height = 24
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 16
         TabOrder = 0
       end
       object CmbExtractDest: TComboBox
-        Left = 248
-        Top = 150
-        Width = 169
-        Height = 21
+        Left = 305
+        Top = 185
+        Width = 208
+        Height = 24
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 16
         TabOrder = 1
         Items.Strings = (
           'ROM Directory'
@@ -268,59 +264,59 @@ object PrefForm: TPrefForm
       ExplicitWidth = 0
       ExplicitHeight = 0
       object lbllowtohigh: TLabel
-        Left = 226
-        Top = 72
-        Width = 4
-        Height = 13
+        Left = 278
+        Top = 89
+        Width = 5
+        Height = 16
         Caption = '-'
       end
       object lblCustomInstructions: TLabel
-        Left = 113
-        Top = 256
-        Width = 172
-        Height = 13
+        Left = 139
+        Top = 315
+        Width = 205
+        Height = 16
         Caption = 'Enter each rating on a seperate line'
       end
       object radRatingsRange: TRadioButton
-        Left = 16
-        Top = 71
-        Width = 132
-        Height = 17
+        Left = 20
+        Top = 87
+        Width = 162
+        Height = 21
         Caption = 'Numeric Range'
         TabOrder = 2
         OnClick = GenericChangeForRatings
       end
       object radRatingsStars: TRadioButton
-        Left = 16
-        Top = 40
-        Width = 198
-        Height = 17
+        Left = 20
+        Top = 49
+        Width = 243
+        Height = 21
         Caption = 'Stars: 1-5'
         TabOrder = 1
         OnClick = GenericChangeForRatings
       end
       object radRatingsDefault: TRadioButton
-        Left = 16
-        Top = 8
-        Width = 313
-        Height = 17
+        Left = 20
+        Top = 10
+        Width = 385
+        Height = 21
         Caption = 'Default: 1-5 with Text Descriptions'
         TabOrder = 0
         OnClick = GenericChangeForRatings
       end
       object RadRatingsCustom: TRadioButton
-        Left = 16
-        Top = 108
-        Width = 84
-        Height = 17
+        Left = 20
+        Top = 133
+        Width = 103
+        Height = 21
         Caption = 'Custom'
         TabOrder = 5
         OnClick = GenericChangeForRatings
       end
       object TxtRangeLow: TSpinEdit
-        Left = 154
-        Top = 72
-        Width = 65
+        Left = 190
+        Top = 89
+        Width = 80
         Height = 22
         Enabled = False
         MaxValue = 0
@@ -329,9 +325,9 @@ object PrefForm: TPrefForm
         Value = 0
       end
       object TxtRangeHigh: TSpinEdit
-        Left = 238
-        Top = 72
-        Width = 65
+        Left = 293
+        Top = 89
+        Width = 80
         Height = 22
         Enabled = False
         MaxValue = 0
@@ -340,10 +336,10 @@ object PrefForm: TPrefForm
         Value = 100
       end
       object MemoRatingsCustom: TMemo
-        Left = 106
-        Top = 106
-        Width = 247
-        Height = 144
+        Left = 130
+        Top = 130
+        Width = 304
+        Height = 178
         Enabled = False
         ScrollBars = ssBoth
         TabOrder = 6
@@ -357,63 +353,63 @@ object PrefForm: TPrefForm
       ExplicitWidth = 0
       ExplicitHeight = 0
       object TLabel
-        Left = 40
-        Top = 5
-        Width = 326
-        Height = 13
+        Left = 49
+        Top = 6
+        Width = 388
+        Height = 16
         Caption = 
           'If the editted file '#39'breaks'#39', delete it and a default file will ' +
           'be created.'
       end
       object BtnSystem: TButton
         Left = 0
-        Top = 25
-        Width = 113
-        Height = 25
+        Top = 31
+        Width = 139
+        Height = 31
         Caption = 'Edit Systems'
         TabOrder = 0
         OnClick = BtnSystemClick
       end
       object BtnEditGoodMerge: TButton
         Left = 0
-        Top = 129
-        Width = 113
-        Height = 25
+        Top = 159
+        Width = 139
+        Height = 31
         Caption = 'Edit GoodMerge'
         TabOrder = 3
         OnClick = BtnEditGoodMergeClick
       end
       object BtnEditLang: TButton
         Left = 0
-        Top = 94
-        Width = 113
-        Height = 25
+        Top = 116
+        Width = 139
+        Height = 30
         Caption = 'Edit Languages'
         TabOrder = 2
         OnClick = BtnEditLangClick
       end
       object BtnEditTypes: TButton
         Left = 0
-        Top = 59
-        Width = 113
-        Height = 25
+        Top = 73
+        Width = 139
+        Height = 30
         Caption = 'Edit Game Types'
         TabOrder = 1
         OnClick = BtnEditTypesClick
       end
       object memoFile: TMemo
-        Left = 119
-        Top = 24
-        Width = 426
-        Height = 229
+        Left = 146
+        Top = 30
+        Width = 525
+        Height = 281
         ScrollBars = ssBoth
         TabOrder = 4
       end
       object BtnTextSave: TButton
-        Left = 465
-        Top = 256
-        Width = 75
-        Height = 25
+        Left = 572
+        Top = 315
+        Width = 93
+        Height = 31
         Caption = '&Save'
         TabOrder = 5
         OnClick = BtnTextSaveClick
@@ -427,50 +423,50 @@ object PrefForm: TPrefForm
       ExplicitWidth = 0
       ExplicitHeight = 0
       object lblSysFileEditor: TLabel
-        Left = 16
-        Top = 8
-        Width = 243
-        Height = 13
+        Left = 20
+        Top = 10
+        Width = 289
+        Height = 16
         Caption = 'Create and Edit custom file filters for each system.'
       end
       object LstSysFileExt: TListBox
-        Left = 8
-        Top = 40
-        Width = 153
-        Height = 233
+        Left = 10
+        Top = 49
+        Width = 188
+        Height = 287
         ItemHeight = 13
         PopupMenu = PopupSysFileExt
         TabOrder = 0
         OnClick = LstSysFileExtClick
       end
       object GrpSysFileExt: TGroupBox
-        Left = 168
-        Top = 35
-        Width = 369
-        Height = 238
+        Left = 207
+        Top = 43
+        Width = 454
+        Height = 293
         Caption = 'Options'
         TabOrder = 1
         object MemoFileExts: TMemo
-          Left = 16
-          Top = 41
-          Width = 340
-          Height = 152
+          Left = 20
+          Top = 50
+          Width = 418
+          Height = 188
           ScrollBars = ssVertical
           TabOrder = 1
         end
         object ChkFileExtCompression: TCheckBox
-          Left = 16
-          Top = 17
-          Width = 329
-          Height = 17
+          Left = 20
+          Top = 21
+          Width = 405
+          Height = 21
           Caption = 'Add Compressed Files Extensions'
           TabOrder = 0
         end
         object BtnSysFileExtSave: TButton
-          Left = 240
-          Top = 201
-          Width = 115
-          Height = 25
+          Left = 295
+          Top = 247
+          Width = 142
+          Height = 31
           Caption = 'Save Changes'
           TabOrder = 2
           OnClick = BtnSysFileExtSaveClick
@@ -481,26 +477,26 @@ object PrefForm: TPrefForm
   object PanHeader: TPanel
     Left = 0
     Top = 0
-    Width = 555
-    Height = 52
+    Width = 683
+    Height = 64
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 3
     object lblHeader: TLabel
-      Left = 64
-      Top = 16
-      Width = 154
-      Height = 23
+      Left = 79
+      Top = 20
+      Width = 188
+      Height = 28
       Caption = 'General Options'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -19
+      Font.Height = -23
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object Image1: TImage
-      Left = 8
+      Left = 10
       Top = 2
       Width = 44
       Height = 48

@@ -18,10 +18,10 @@ object FrmMameOptions: TFrmMameOptions
   TextHeight = 16
   object lblMAME: TLabel
     Left = 34
-    Top = 133
-    Width = 60
+    Top = 125
+    Width = 132
     Height = 16
-    Caption = 'Emulators'
+    Caption = 'Mame Emulator to call'
   end
   object lblDir: TLabel
     Left = 5
@@ -49,9 +49,9 @@ object FrmMameOptions: TFrmMameOptions
     WordWrap = True
   end
   object CmbMame: TComboBox
-    Left = 133
-    Top = 129
-    Width = 178
+    Left = 172
+    Top = 125
+    Width = 315
     Height = 24
     Style = csDropDownList
     ItemHeight = 16
@@ -116,14 +116,14 @@ object FrmMameOptions: TFrmMameOptions
     ImageIndex = 3
   end
   object TxtMameExtrasDirPath: TEdit
-    Left = 163
+    Left = 172
     Top = 203
-    Width = 234
+    Width = 269
     Height = 24
     TabOrder = 6
   end
   object BtnMameExtrasDirFind: TButton
-    Left = 416
+    Left = 455
     Top = 202
     Width = 32
     Height = 27
@@ -132,7 +132,7 @@ object FrmMameOptions: TFrmMameOptions
     OnClick = BtnMameExtrasDirFindClick
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 163
+    Left = 172
     Top = 298
     Width = 398
     Height = 24

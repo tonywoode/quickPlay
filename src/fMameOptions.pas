@@ -23,6 +23,8 @@ type
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
     TxtMAMEXMLFilePath: TJvFilenameEdit;
+    TxtMameFileManagerFilePath: TJvFilenameEdit;
+    MameFileManagerLabel: TLabel;
     procedure CmbMameChange(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -57,6 +59,7 @@ begin
   //Path to Mame XML - why don't we query the mame executatble for the xml? because
   // retroarch MAME doesn't have this ability....
   TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
+  TxtMameFileManagerFilePath.Text := MainFrm.Settings.MameFileManagerFilePath;
 
 
   Try
@@ -112,6 +115,9 @@ var
   Clear : boolean;
   Executable : String;
   RomdataFolder: String;
+  MameExtrasDir: String;
+  MameXMLPath: String;
+  MameFileManagerFilePath: String;
   Flags : String;
 
 begin
@@ -121,12 +127,16 @@ begin
 
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
+        MainFrm.Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
         MainFrm.Settings.SaveAllSettings();
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
    //now lets compose our mametool flags. we need to know what romdata directory the user is sitting in
    RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
-   Flags := RomdataFolder;
+   MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
+   MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
+   MameFileManagerFilePath   := '"' + MainFrm.Settings.MameFileManagerFilePath + '"';
+   Flags := RomdataFolder + ' ' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
    RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
 
 

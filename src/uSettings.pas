@@ -65,7 +65,8 @@ Type
       _bUseRealToolIcons : Boolean;
       _sMameExtrasDir: string;   //root directory for mame assets like icons and ini files
       _sMameXMLPath: String;     //location of the full mame xml file (--listxml output of mame proper)
-      _sMametoolMameExePath: String ; //the Mame executable last selected in mame options
+      _sMametoolMameExePath: String; //the Mame executable last selected in mame options
+      _sMameFileManagerFilePath: String; //Path to an output of the program MameFileManger, essentially a mame filter file of rommames
       _sMessIconDir : string;    //icons dir for system/romlist icons in sidebar roms panel.
       _bSaveCols : boolean;     //save column widths and positions.
       _bRomImages : boolean;    //allow ICONS in the ROMs listing.
@@ -154,6 +155,7 @@ Type
       Property MameExtrasDir : string read _sMameExtrasDir write _sMameExtrasDir;
       Property MameXMLPath : string read _sMameXMLPath write _sMameXMLPath;
       Property MametoolMameExePath : string read _sMametoolMameExePath write _sMametoolMameExePath;
+      Property MameFileManagerFilePath : string read _sMameFileManagerFilePath write _sMameFileManagerFilePath;
       Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
       Property NoDats : Boolean Read _NoDats Write _NoDats;
       Property DatsCurrent : Boolean Read _DatsUpToDate write _DatsUpToDate;
@@ -637,6 +639,7 @@ begin
       _sMameExtrasDir := Ini.ReadString('MAME', 'MameExtrasPath', '');
       _sMameXMLPath := Ini.ReadString('MAME', 'MameXMLPath', '');
       _sMametoolMameExePath := Ini.ReadString('MAME', 'MametoolMameExePath', '');
+      _sMameFileManagerFilePath := Ini.ReadString('MAME', 'MameFileManagerFilePath', '');
 
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));
@@ -1047,6 +1050,7 @@ begin
     Ini.WriteString('MAME', 'MameExtrasPath', self._sMameExtrasDir);
     Ini.WriteString('MAME', 'MameXMLPath', self._sMameXMLPath);
     Ini.WriteString('MAME', 'MametoolMameExePath', self._sMametoolMameExePath);
+    Ini.WriteString('MAME', 'MameFileManagerFilePath', self._sMameFileManagerFilePath);
 
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);

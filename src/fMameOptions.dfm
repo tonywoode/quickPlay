@@ -48,6 +48,14 @@ object FrmMameOptions: TFrmMameOptions
       '/releases/)'
     WordWrap = True
   end
+  object MameFileManagerLabel: TLabel
+    Left = 34
+    Top = 337
+    Width = 280
+    Height = 16
+    Caption = 'Optional location of Mame File Manager text file'
+    WordWrap = True
+  end
   object CmbMame: TComboBox
     Left = 172
     Top = 125
@@ -132,14 +140,24 @@ object FrmMameOptions: TFrmMameOptions
     OnClick = BtnMameExtrasDirFindClick
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 172
-    Top = 298
+    Left = 133
+    Top = 282
     Width = 398
     Height = 24
     ClipboardCommands = []
     Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
     ButtonWidth = 27
     TabOrder = 8
+  end
+  object TxtMameFileManagerFilePath: TJvFilenameEdit
+    Left = 133
+    Top = 359
+    Width = 398
+    Height = 24
+    ClipboardCommands = []
+    Filter = 'TXT files (*.txt)|*.txt|All files (*.*)|*.*'
+    ButtonWidth = 27
+    TabOrder = 9
   end
   object jvBrowse: TJvBrowseForFolderDialog
     Position = fpFormCenter

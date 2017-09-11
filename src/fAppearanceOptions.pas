@@ -60,6 +60,7 @@ type
     VTShowCols: TVirtualStringTree;
     ChkToolRealIcons: TCheckBox;
     RadGrpDirExpand: TRadioGroup;
+    procedure TxtBGImagePathChange(Sender: TObject);
 
     procedure VTTreesFocusChanging(Sender: TBaseVirtualTree; OldNode,
       NewNode: PVirtualNode; OldColumn, NewColumn: TColumnIndex;
@@ -241,6 +242,11 @@ begin
 
   if pos('Strikethrough', lblFontStyle.Caption) <> 0 then
     Cfg.VTFont.Style := Cfg.VTFont.Style + [fsstrikeout];
+
+end;
+
+procedure TFrmAppearanceOptions.TxtBGImagePathChange(Sender: TObject);
+begin
 
 end;
 

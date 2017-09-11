@@ -38,6 +38,16 @@ object FrmMameOptions: TFrmMameOptions
     Caption = 'Mame Extras Dir (for system Icons, MameTool etc)'
     WordWrap = True
   end
+  object MameXMLLabel: TLabel
+    Left = 34
+    Top = 260
+    Width = 507
+    Height = 16
+    Caption = 
+      'Mame XML Location (download from https://github.com/mamedev/mame' +
+      '/releases/)'
+    WordWrap = True
+  end
   object CmbMame: TComboBox
     Left = 133
     Top = 129
@@ -109,7 +119,7 @@ object FrmMameOptions: TFrmMameOptions
     Left = 163
     Top = 203
     Width = 234
-    Height = 25
+    Height = 24
     TabOrder = 6
   end
   object BtnMameExtrasDirFind: TButton
@@ -120,6 +130,16 @@ object FrmMameOptions: TFrmMameOptions
     Caption = '...'
     TabOrder = 7
     OnClick = BtnMameExtrasDirFindClick
+  end
+  object TxtMAMEXMLFilePath: TJvFilenameEdit
+    Left = 163
+    Top = 298
+    Width = 398
+    Height = 24
+    ClipboardCommands = []
+    Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
+    ButtonWidth = 27
+    TabOrder = 8
   end
   object jvBrowse: TJvBrowseForFolderDialog
     Position = fpFormCenter

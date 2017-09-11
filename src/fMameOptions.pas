@@ -6,7 +6,7 @@ uses
   Windows, SysUtils, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, JvBaseDlg, JvSelectDirectory, JvBrowseFolder, Buttons,
   uRomList, JvComponent, JvExStdCtrls, JvButton, JvCtrls, ExtCtrls,
-  JvComponentBase, fJWinFontForm;
+  JvComponentBase, fJWinFontForm, Mask, JvExMask, JvToolEdit;
 
 type
   TFrmMameOptions = class(TJWinFontForm)
@@ -22,6 +22,7 @@ type
     MameExtrasLabel: TLabel;
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
+    TxtMAMEXMLFilePath: TJvFilenameEdit;
     procedure CmbMameChange(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -52,6 +53,10 @@ begin
 
   Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
   TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
+  //Path to Mame XML - why don't we query the mame executatble for the xml? because
+  // retroarch MAME doesn't have this ability....
+  TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
+
   Try
 
     //Load in the Directories.
@@ -107,6 +112,7 @@ var
   Clear : boolean;
 begin
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+        MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
         MainFrm.Settings.SaveAllSettings();
  // If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then
  // begin

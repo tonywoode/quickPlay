@@ -1017,6 +1017,7 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
           Width = 234
           Height = 25
           TabOrder = 4
+          OnChange = TxtBGImagePathChange
         end
         object chkBGImage: TCheckBox
           Left = 21

@@ -38,7 +38,7 @@ type
 implementation
 
 uses fMain, uJUtilities, StrUtils, JCLstrings, IniFiles, uRom, uEmuList, uQPConst,
-  uEmu, uQPMiscTypes;
+  uEmu, uQPMiscTypes, ujProcesses;
 
 {$R *.dfm}
 
@@ -110,14 +110,26 @@ var
   Ini : TMemIniFile;
   Emu : TQPEmu;
   Clear : boolean;
+  Executable : String;
+  RomdataFolder: String;
+  Flags : String;
+
 begin
 
    if CmbMame.ItemIndex <>-1 then
-     MainFrm.Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
+        MainFrm.Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
 
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
         MainFrm.Settings.SaveAllSettings();
+
+   Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
+   //now lets compose our mametool flags. we need to know what romdata directory the user is sitting in
+   RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
+   Flags := RomdataFolder;
+   RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
+
+
  // If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then
  // begin
  //   MessageDlg(QP_MAMEM_BAD_DATA, mtError, [mbOK], 0);

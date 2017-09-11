@@ -115,6 +115,7 @@ var
   Clear : boolean;
   Executable : String;
   RomdataFolder: String;
+  MameExecutablePath: String;
   MameExtrasDir: String;
   MameXMLPath: String;
   MameFileManagerFilePath: String;
@@ -131,12 +132,17 @@ begin
         MainFrm.Settings.SaveAllSettings();
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
+
    //now lets compose our mametool flags. we need to know what romdata directory the user is sitting in
    RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
+   MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
    MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
    MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
-   MameFileManagerFilePath   := '"' + MainFrm.Settings.MameFileManagerFilePath + '"';
-   Flags := RomdataFolder + ' ' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
+   MameFileManagerFilePath := '"' + MainFrm.Settings.MameFileManagerFilePath + '"';
+
+
+   Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
+
    RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
 
 

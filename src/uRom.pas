@@ -590,18 +590,15 @@ begin
 
     Start :=  ScanMameDatFileForMameName(inList,fileType,GameName);
     if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName);
-    if (Start <> -1) and (datType = 'mameinfo') then Start := Start+2; //if its an info file we need to filter out the identifier that says $mame...
-
     Output.BeginUpdate;
     if Start <> -1 then
     begin //find bio from that point.
       for j := Start to inList.Count-1 do
       begin
-        if JCLStrings.StrCompare(inList[j], '$bio') = 0 then
-        begin
-          start := j+1; //this is the line that has $bio on it.
+          if (fileType = 'mame')  then start := j+2; //every mame dat file has a denominator like $bio on the line after $info, then a blank line
+          if (fileType = 'other') then start := j+3; //we made a mistake with the goodmerge dats and there's a url on the line below $info
          Break//we are done.
-       end;
+       //end;
      end;
 
       for i := Start to inList.Count-1 do

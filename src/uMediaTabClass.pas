@@ -294,7 +294,7 @@ begin
       try
 
         if FileExists(pth + fileName) then
-          ROMObj.GetMAMEInfoFromFile(tmpStrings, pth + fileName)
+          ROMObj.GetMAMEDatEntryFromFile(DatType, tmpStrings, pth + fileName)
         else
         begin
           tmpStrings.Add( DatType + ' File not found.  You can download it from:');

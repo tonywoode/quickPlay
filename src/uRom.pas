@@ -111,8 +111,6 @@ type
     procedure DeleteIPS(Index : Integer);
     procedure FromString(strRom : String);
     Procedure GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
-    Procedure GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
-    Procedure GetMAMEInfoFromFile(var Output : TStrings; MAMEInfoFile : TFileName);
     procedure GuessGoodMerge( Pref1, Pref2, Pref3 : String);
     procedure LegacyFromString(strRom : String);
     Function MatchesQuery(Query : TObjectList; MatchAll : Boolean) : Boolean;
@@ -592,7 +590,7 @@ begin
 
     Start :=  ScanMameDatFileForMameName(inList,fileType,GameName);
     if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName);
-    if (Start <> -1) and (datType = 'info') then Start := Start+2; //if its an info file we need to filter out the identifier that says $mame...
+    if (Start <> -1) and (datType = 'mameinfo') then Start := Start+2; //if its an info file we need to filter out the identifier that says $mame...
 
     Output.BeginUpdate;
     if Start <> -1 then
@@ -618,29 +616,6 @@ begin
   finally
     FreeAndNil(inList);
   end;
-end;
-
- {-----------------------------------------------------------------------------}
-
-Procedure TQPRom.GetMAMEHistoryFromFile(var Output : TStrings; HistoryFile : TFileName);
-var
-  datType: String;
-
-begin
-datType := 'history';
-GetMAMEDatEntryFromFile(datType,Output, HistoryFile );
-
-end;
-
-{-----------------------------------------------------------------------------}
-
-Procedure TQPRom.GetMAMEInfoFromFile(var Output : TStrings; MAMEInfoFile : TFileName);
-var
-  datType: String;
-
-begin
-datType := 'info';
-GetMAMEDatEntryFromFile(datType,Output, MAMEInfoFile );
 end;
 
 {-----------------------------------------------------------------------------}

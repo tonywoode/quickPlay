@@ -110,7 +110,7 @@ type
     Function CreateIPSROM(ROMPath, IPSPath : TFileName; ExtrDir : String; CustomName : String = '') : TFileName;
     procedure DeleteIPS(Index : Integer);
     procedure FromString(strRom : String);
-    Procedure GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
+    Procedure GetMAMEDatEntryFromFile(var Output : TStrings; MAMEDatFile : TFileName);
     procedure GuessGoodMerge( Pref1, Pref2, Pref3 : String);
     procedure LegacyFromString(strRom : String);
     Function MatchesQuery(Query : TObjectList; MatchAll : Boolean) : Boolean;
@@ -133,7 +133,7 @@ implementation
 
 {$I Compilers.inc}
 
-uses Windows, Controls, JCLShell, JCLStrings, uIPSpatch, uJUtilities,
+uses fMain, Windows, Controls, JCLShell, JCLStrings, uIPSpatch, uJUtilities,
       uJFile, uEmu, FindFile, uEmuList, uQuery, uJCompression,
       fCompressFilePicker, uQPCompObj, ujMiscResourceStrs, ujCompressResourceStrs;
 
@@ -558,15 +558,12 @@ Start := -1;//defult to -1 for not found
         FreeAndNil(matches);
 end;
  {-----------------------------------------------------------------------------}
- //The immediately following mame history and dat search procedures defer to this shared module, which uses the above dat scan function to search
- //  mameHistory.dat and mameInfo.dat files for a child or parent romname. If we don't find the child, we lookup the parent
- //  the differences between the formats are minor, the code changing delimiters and dealing with $bio are for history.dat only
- //  whereas the info dat needs to be offset a couple of lines at the start to deal with a tag "$mame"
-Procedure TQPRom.GetMAMEDatEntryFromFile(var datType : string; var Output : TStrings; MAMEDatFile : TFileName);
+ //uses the above dat scan function to search mame dat files for a child or parent romname. If we don't find the child, we lookup the parent
+Procedure TQPRom.GetMAMEDatEntryFromFile(var Output : TStrings; MAMEDatFile : TFileName);
 var
   inList : TStringList;
   Start, i , j: Integer;
-  fileType, GameName: String;
+  fileType, GameName, DatName, IsItExtrasDir, ExtrasDir: String;
 begin
   inList := TStringList.Create;
   Start := -1;//default to -1 for not found
@@ -576,18 +573,16 @@ begin
       GameName := _MameName
     else
       GameName := ExtractFileName(ChangeFileExt(_Path, ''));
-     // Delete( GameName, pos('(',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
-      //Delete( GameName, pos('[',GameName)-1, Length(GameName) );
+      DatName  := ExtractFileName(MAMEDatFile);  //e.g.: 'history.dat'
+      IsItExtrasDir   := ExtractFilePath(MAMEDatFile);  //e.g.: 'F:\MAME\EXTRAs\dats'
+      StrReplace(IsItExtrasDir, '\dats\', '', [rfIgnoreCase]);
+      ExtrasDir := MainFrm.Settings.MameExtrasDir;    //Extras dir in settings also has no trailing slash
+     // Delete( GameName, pos('(',GameName)-1, Length(GameName) ); //Delete( GameName, pos('[',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
     inList.LoadFromFile(MAMEDatFile);
-
-
-    fileType :=   inList[0];
-    fileType :=   AnsiLowerCase(fileType); //fixes bug in mameHistory0153 - commas otherwise won't deliniate
-    if ( JCLStrings.StrSearch('## history.dat', fileType ) > 0 ) or ( JCLStrings.StrSearch('# mameinfo.dat', fileType ) > 0  ) then
+    if (IsItExtrasDir = ExtrasDir) then
          fileType := 'mame'
     else
          fileType := 'other';  //we could always look for more detail i.e ##  Good2600
-
     Start :=  ScanMameDatFileForMameName(inList,fileType,GameName);
     if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName);
     Output.BeginUpdate;
@@ -595,10 +590,9 @@ begin
     begin //find bio from that point.
       for j := Start to inList.Count-1 do
       begin
-          if (fileType = 'mame')  then start := j+2; //every mame dat file has a denominator like $bio on the line after $info, then a blank line
+          if (fileType = 'mame')  then start := j+2; //every mame dat file has a denominator like $bio on the line after $info, then >=1 blank line
           if (fileType = 'other') then start := j+3; //we made a mistake with the goodmerge dats and there's a url on the line below $info
          Break//we are done.
-       //end;
      end;
 
       for i := Start to inList.Count-1 do

@@ -275,12 +275,10 @@ begin
         pth :=   ExtractFilePath(_Paths[i]);
        end
 
-       // see notepad++ for reading zips    "thumb browser " see shit one
-
+       // see notepad++ for reading zips "thumb browser"
        // here is how its done, satisfy these vars.
        //       zContents.Clear;
        //       uQPCompObj.Compression.ListContentsOfFile(zContents, _Paths[i]);
-
        //else if (JCLStrings.Strcompare('.zip', ExtractFileExt(_Paths[i] )) =0 ) then
        //begin
        // fileName := ExtractFileName(_Paths[i]) ;
@@ -294,7 +292,7 @@ begin
       try
 
         if FileExists(pth + fileName) then
-          ROMObj.GetMAMEDatEntryFromFile(DatType, tmpStrings, pth + fileName)
+          ROMObj.GetMAMEDatEntryFromFile(tmpStrings, pth + fileName)
         else
         begin
           tmpStrings.Add( DatType + ' File not found.  You can download it from:');

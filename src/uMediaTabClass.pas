@@ -27,8 +27,10 @@ type
   public
     Constructor Create();
     Destructor Destroy();override;
-	procedure PopulateTabSimple(useTab : TTabSheet);
+	  procedure PopulateTabSimple(useTab : TTabSheet);
+
     procedure PopulateTab(useTab : TTabSheet; ROMObj : TQPROM; SettingsPath : String);
+    procedure MameDatLookup(DatType : String; useTab : TTabSheet; ROMObj : TQPROM; SettingsPath : String);
     Procedure SearchForFiles(withROM : TQPROM);
 
 
@@ -47,6 +49,7 @@ type
     Property ImageOpt : TJTabImagesOpt read _ImagesOpt write _ImagesOpt;
     Property ThumbOpt : TJTabThumbNailOpt read _ThumbOpt write _ThumbOpt;
     Property TextOpt : TFont read _TextOpt write _TextOpt;
+
   end;
 
 implementation
@@ -254,6 +257,56 @@ begin
 	TTabImageViewer(useTab.Controls[0]).LoadImages(found, imagesOpt);
 end;
 
+procedure TJMediaTab.MameDatLookup(DatType : String; useTab : TTabSheet; ROMObj : TQPROM; SettingsPath : String);
+var
+   TmpStrings : TStrings;
+  pth,fileName : string;
+  i : Integer;
+begin
+ begin
+      tmpStrings := TStringList.Create;
+      pth := SettingsPath ;   //defult
+      fileName := DatType + '.dat';//default
+      if _Paths.Count > 0 then
+      begin
+       if (JCLStrings.Strcompare('.dat', ExtractFileExt(_Paths[i] )) =0 ) then
+       begin
+        fileName := ExtractFileName(_Paths[i]) ;//default   //laod the specified dat file.
+        pth :=   ExtractFilePath(_Paths[i]);
+       end
+
+       // see notepad++ for reading zips    "thumb browser " see shit one
+
+       // here is how its done, satisfy these vars.
+       //       zContents.Clear;
+       //       uQPCompObj.Compression.ListContentsOfFile(zContents, _Paths[i]);
+
+       //else if (JCLStrings.Strcompare('.zip', ExtractFileExt(_Paths[i] )) =0 ) then
+       //begin
+       // fileName := ExtractFileName(_Paths[i]) ;
+       // pth :=   ExtractFilePath(_Paths[i]);
+       //end
+
+       else
+        pth := _Paths[0] + '\';    //user pref
+      end;
+
+      try
+
+        if FileExists(pth + fileName) then
+          ROMObj.GetMAMEInfoFromFile(tmpStrings, pth + fileName)
+        else
+        begin
+          tmpStrings.Add( DatType + ' File not found.  You can download it from:');
+          tmpStrings.Add('http://www.mameworld.info/mameinfo/');
+          tmpStrings.Add('and then copy the file to the DATS directory');
+        end;
+        tTabTextOnly(useTab.Controls[0]).LoadText(tmpStrings, _TextOpt);
+      finally
+        FreeAndNil(tmpStrings);
+      end;
+    end;
+end;
 
 procedure TJMediaTab.PopulateTab(useTab : TTabSheet; ROMObj : TQPROM; SettingsPath : String);
 var
@@ -276,82 +329,12 @@ begin
 
     jtabMameInfo :
     begin
-      tmpStrings := TStringList.Create;
-    
-     pth := SettingsPath ;   //defult
-      fileName := 'mameinfo.dat';//default
-      if _Paths.Count > 0 then
-      begin
-       if (JCLStrings.Strcompare('.dat', ExtractFileExt(_Paths[i] )) =0 ) then
-       begin
-        fileName := ExtractFileName(_Paths[i]) ;//default   //laod the specified dat file.
-        pth :=   ExtractFilePath(_Paths[i]);
-       end
-
-       // see notepad++ for reading zips    "thumb browser " see shit one
-
-       // here is how its done, satisfy these vars.
-       //       zContents.Clear;
-       //       uQPCompObj.Compression.ListContentsOfFile(zContents, _Paths[i]);
-
-       //else if (JCLStrings.Strcompare('.zip', ExtractFileExt(_Paths[i] )) =0 ) then
-       //begin
-       // fileName := ExtractFileName(_Paths[i]) ;
-       // pth :=   ExtractFilePath(_Paths[i]);
-       //end
-
-       else
-        pth := _Paths[0] + '/';    //user pref
-      end;
-
-      try
-
-        if FileExists(pth + fileName) then
-          ROMObj.GetMAMEInfoFromFile(tmpStrings, pth + fileName)
-        else
-        begin
-          tmpStrings.Add('MAMEInfo File not found.  You can download it from:');
-          tmpStrings.Add('http://www.mameworld.info/mameinfo/');
-          tmpStrings.Add('and then copy the file to the DATS directory');
-        end;
-        tTabTextOnly(useTab.Controls[0]).LoadText(tmpStrings, _TextOpt);
-      finally
-        FreeAndNil(tmpStrings);
-      end;
+        MameDatLookup('mameinfo', useTab, ROMObj, SettingsPath);
     end;
 
     jtabMameHistory :
     begin
-      tmpStrings := TStringList.Create;
-
-      pth := SettingsPath ;   //defult
-      fileName := 'history.dat';//default
-      if _Paths.Count > 0 then
-      begin
-       if (JCLStrings.Strcompare('.dat', ExtractFileExt(_Paths[i] )) =0 ) then
-       begin
-        fileName := ExtractFileName(_Paths[i]) ; //load the specified dat file.
-        pth :=   ExtractFilePath(_Paths[i]);
-
-       end
-       else
-        pth := _Paths[0] + '/';    //user pref
-      end;
-
-      try
-        if FileExists(pth + fileName) then
-          ROMObj.GetMAMEHistoryFromFile(tmpStrings, pth + fileName)
-        else
-        begin
-          tmpStrings.Add('Game History File not found.  You can download it from:');
-          tmpStrings.Add('http://www.arcade-history.com/');
-          tmpStrings.Add('and then copy the file to the DATS directory');
-        end;
-        pth := tmpStrings.text;
-        tTabTextOnly(useTab.Controls[0]).LoadText(tmpStrings, _TextOpt);
-      finally
-        FreeAndNil(tmpStrings);
-      end;
+        MameDatLookup('history', useTab, ROMObj, SettingsPath);
     end;
 
     jtabThumbnail :

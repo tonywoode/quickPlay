@@ -521,7 +521,7 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
-Function ScanMameDatFileForMameName(var inList: TStringList; var fileType: string; var GameName: string): Integer;
+Function ScanMameDatFileForMameName(var inList: TStringList; var fileType: string; var GameName: string; var SearchTerm : string): Integer;
 var
   matches : TStringList;
   k,l, listIndex, Start: Integer;
@@ -533,10 +533,11 @@ Start := -1;//defult to -1 for not found
  //we need to look at all games in the $info= not just one, so bust by commas
 	    for k := 1 to inList.Count-1 do
         begin
-         if JCLStrings.StrSearch('$info=', inList[k] ) > 0 then
+
+         if (JCLStrings.StrSearch(SearchTerm, inList[k] ) > 0) then
          begin
           line := inList[k];
-          JCLStrings.StrReplace( line, '$info=', '');
+          JCLStrings.StrReplace( line, SearchTerm, '');
           if fileType='other' then //we will use a different default separator for this scope if its not a mame history file, that way gamenames can include commas
             JCLStrings.StrTokenToStrings(line,'?',matches )
           else
@@ -563,7 +564,7 @@ Procedure TQPRom.GetMAMEDatEntryFromFile(var Output : TStrings; MAMEDatFile : TF
 var
   inList : TStringList;
   Start, i , j: Integer;
-  fileType, GameName, DatName, IsItExtrasDir, ExtrasDir: String;
+  fileType, GameName, DatName, IsItExtrasDir, ExtrasDir, SoftlistName, SearchTerm: String;
 begin
   inList := TStringList.Create;
   Start := -1;//default to -1 for not found
@@ -573,23 +574,51 @@ begin
       GameName := _MameName
     else
       GameName := ExtractFileName(ChangeFileExt(_Path, ''));
-      DatName  := ExtractFileName(MAMEDatFile);  //e.g.: 'history.dat'
-      IsItExtrasDir   := ExtractFilePath(MAMEDatFile);  //e.g.: 'F:\MAME\EXTRAs\dats'
-      StrReplace(IsItExtrasDir, '\dats\', '', [rfIgnoreCase]);
-      ExtrasDir := MainFrm.Settings.MameExtrasDir;    //Extras dir in settings also has no trailing slash
-     // Delete( GameName, pos('(',GameName)-1, Length(GameName) ); //Delete( GameName, pos('[',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
+
+    DatName  := ExtractFileName(MAMEDatFile);  //e.g.: 'history.dat'
+    IsItExtrasDir   := ExtractFilePath(MAMEDatFile);  //e.g.: 'F:\MAME\EXTRAs\dats'
+    StrReplace(IsItExtrasDir, '\dats\', '', [rfIgnoreCase]);
+    ExtrasDir := MainFrm.Settings.MameExtrasDir;    //Extras dir in settings also has no trailing slash
+    // Delete( GameName, pos('(',GameName)-1, Length(GameName) ); //Delete( GameName, pos('[',GameName)-1, Length(GameName) );   //these made when attempting to ignore parens in non-mame system inis
     inList.LoadFromFile(MAMEDatFile);
     if (IsItExtrasDir = ExtrasDir) then
          fileType := 'mame'
     else
          fileType := 'other';  //we could always look for more detail i.e ##  Good2600
-    Start :=  ScanMameDatFileForMameName(inList,fileType,GameName);
-    if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName);
+
+    //first, in case we have a mess game, try and lookup its game info
+    //  this is somewhat brittle as it relies on messtool naming the foldername of a mess romset after the
+    //  mess softlist name. softlist entries only live in mamehistory currently and they differentiate themselves
+    //  from mame entires by having $softlistName (e.g.: $nes) underneath $info=.* ie. where mame roms have $bio.
+    //get the mess foldername. If we strip the actual filename and last delim, delphi will return ultimate folder as filename
+    SoftlistName := ExtractFileName(StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]));
+    //I think, unless performance seems an issue, we'll retain the functionality to look for $softlistName in all files
+
+       //It seems like in mamehistory the entry for a console name which has the same mamename as an arcade game (and there ARE many)
+         // will ALWAYS come after the console entry, so we can trust that arcade will come first
+         // problem here is ther we NEED a flag that says "this is not an arcade game" and I don't know how to get one
+         // one very inefficient way around this is to first look for the softlist name in all entries, THEN look for the arcade game
+         // (because we are looking for a more specific case with the sfotlist name)
+
+         //another way of doing this could be to split out the parent softlist folder name in quickplay, and have a condition: if folder is mame softlist...
+    SearchTerm := '$'+SoftlistName+'=' ;
+    Start :=  ScanMameDatFileForMameName(inList,fileType,GameName, SearchTerm);
+    if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName, SearchTerm);
+
+    SearchTerm := '$info=';
+    if (Start = -1) then Start :=  ScanMameDatFileForMameName(inList,fileType,GameName, SearchTerm);
+    if (Start = -1) and (_ParentName <> '' ) then Start := ScanMameDatFileForMameName(inList,fileType,_ParentName, SearchTerm);
+
     Output.BeginUpdate;
     if Start <> -1 then
     begin //find bio from that point.
       for j := Start to inList.Count-1 do
       begin
+
+         if JCLStrings.StrCompare(inList[j], SoftlistName) = 0 then
+           begin
+
+           end;
           if (fileType = 'mame')  then start := j+2; //every mame dat file has a denominator like $bio on the line after $info, then >=1 blank line
           if (fileType = 'other') then start := j+3; //we made a mistake with the goodmerge dats and there's a url on the line below $info
          Break//we are done.

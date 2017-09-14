@@ -3,12 +3,12 @@ object FindForm: TFindForm
   Top = 172
   BorderStyle = bsDialog
   Caption = 'Find a Rom'
-  ClientHeight = 447
-  ClientWidth = 519
+  ClientHeight = 585
+  ClientWidth = 679
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   Icon.Data = {
@@ -27,85 +27,85 @@ object FindForm: TFindForm
   OnClose = FormClose
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object StatusBar: TStatusBar
     Left = 0
-    Top = 428
-    Width = 519
+    Top = 566
+    Width = 679
     Height = 19
     Panels = <>
     SimplePanel = True
   end
   object PanControls: TPanel
     Left = 0
-    Top = 384
-    Width = 521
-    Height = 42
+    Top = 502
+    Width = 681
+    Height = 55
     BevelOuter = bvNone
     TabOrder = 2
     object BtnRun: TButton
-      Left = 6
-      Top = 11
-      Width = 81
-      Height = 25
+      Left = 8
+      Top = 14
+      Width = 106
+      Height = 33
       Action = ActRun
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
     end
     object BtnFavs: TButton
-      Left = 92
-      Top = 11
-      Width = 88
-      Height = 25
+      Left = 120
+      Top = 14
+      Width = 115
+      Height = 33
       Action = ActAddFav
       TabOrder = 1
     end
     object BtnJump: TButton
-      Left = 183
-      Top = 11
-      Width = 91
-      Height = 25
+      Left = 239
+      Top = 14
+      Width = 119
+      Height = 33
       Action = ActJump
       ParentShowHint = False
       ShowHint = True
       TabOrder = 2
     end
     object BtnClose: TButton
-      Left = 440
-      Top = 11
-      Width = 75
-      Height = 25
+      Left = 575
+      Top = 14
+      Width = 98
+      Height = 33
       Caption = '&Close'
       ModalResult = 1
       TabOrder = 4
     end
     object BtnVirtual: TButton
-      Left = 280
-      Top = 11
-      Width = 138
-      Height = 25
+      Left = 366
+      Top = 14
+      Width = 181
+      Height = 33
       Caption = 'Save as Virtual Folder'
       Enabled = False
       TabOrder = 3
       OnClick = BtnVirtualClick
     end
     object BtnEditOK: TButton
-      Left = 344
-      Top = 16
-      Width = 75
-      Height = 25
+      Left = 450
+      Top = 21
+      Width = 98
+      Height = 33
       Caption = 'OK'
       ModalResult = 1
       TabOrder = 5
       Visible = False
     end
     object BtnEditCancel: TButton
-      Left = 432
-      Top = 16
-      Width = 75
-      Height = 25
+      Left = 565
+      Top = 21
+      Width = 98
+      Height = 33
       Caption = 'Cancel'
       ModalResult = 2
       TabOrder = 6
@@ -114,9 +114,9 @@ object FindForm: TFindForm
   end
   object VTfind: TVirtualStringTree
     Left = 0
-    Top = 184
-    Width = 519
-    Height = 202
+    Top = 241
+    Width = 679
+    Height = 264
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
     Header.Font.Charset = DEFAULT_CHARSET
@@ -142,7 +142,7 @@ object FindForm: TFindForm
     Columns = <
       item
         Position = 0
-        Width = 215
+        Width = 375
         WideText = 'Name'
       end
       item
@@ -159,33 +159,33 @@ object FindForm: TFindForm
   object PanFilter: TPanel
     Left = 1
     Top = 0
-    Width = 517
-    Height = 185
+    Width = 676
+    Height = 242
     BevelOuter = bvNone
     TabOrder = 0
     object RadMatchAll: TRadioButton
-      Left = 5
-      Top = 122
-      Width = 157
-      Height = 17
+      Left = 7
+      Top = 160
+      Width = 205
+      Height = 22
       Caption = 'Match All Criteria'
       Checked = True
       TabOrder = 1
       TabStop = True
     end
     object RadMatchAny: TRadioButton
-      Left = 167
-      Top = 122
-      Width = 185
-      Height = 17
+      Left = 218
+      Top = 160
+      Width = 242
+      Height = 22
       Caption = 'Match Any Criteria'
       TabOrder = 2
     end
     object VTQuery: TVirtualStringTree
-      Left = 8
-      Top = 16
-      Width = 505
-      Height = 100
+      Left = 10
+      Top = 21
+      Width = 661
+      Height = 131
       Header.AutoSizeIndex = 2
       Header.DefaultHeight = 17
       Header.Font.Charset = DEFAULT_CHARSET
@@ -219,34 +219,34 @@ object FindForm: TFindForm
         end
         item
           Position = 2
-          Width = 226
+          Width = 382
           WideText = 'Query'
         end>
     end
     object BtnAdd: TButton
-      Left = 358
-      Top = 120
-      Width = 75
-      Height = 25
+      Left = 468
+      Top = 157
+      Width = 98
+      Height = 33
       Caption = 'Add'
       TabOrder = 3
       OnClick = BtnAddClick
     end
     object BtnDel: TButton
-      Left = 438
-      Top = 120
-      Width = 75
-      Height = 25
+      Left = 573
+      Top = 157
+      Width = 98
+      Height = 33
       Caption = 'Remove'
       Enabled = False
       TabOrder = 4
       OnClick = BtnDelClick
     end
     object BtnSearch: TButton
-      Left = 222
-      Top = 153
-      Width = 75
-      Height = 25
+      Left = 290
+      Top = 200
+      Width = 98
+      Height = 33
       Caption = '&Search'
       Default = True
       TabOrder = 5

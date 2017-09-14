@@ -174,7 +174,7 @@ end;
 
 Procedure TFrmFolder.Init();
 Var
-  I : Integer;
+  I,J : Integer;
   newIndex : Integer;
   temp1, TempLbl : String;
   Image : TIcon;
@@ -182,7 +182,7 @@ Var
   filehandle : String;
   Ini : TMemIniFile;
   List : TMemoryStream;
-  tmpStrings : TStringList;
+  iconPaths, tmpStrings : TStringList;
   qpIconDirPath : String;
   messIconDirPath : String;
   oldSize : Integer;
@@ -226,25 +226,37 @@ begin
 
   Image := nil;
   Find := ThhFindFile.Create(Self);
+
   try
     Image := TIcon.Create;
 	  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
     qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
     messIconDirPath := Ini.ReadString('MAME', 'MameExtrasPath', '') + '\icons\';
 
-    Find.Directory := qpIconDirPath;
     find.Filter := '*.ico';
     Find.Recurse := False;
-    Find.Execute;
 
+    //find quickplay's own icons and add to a list
+    Find.Directory := qpIconDirPath;
+    Find.Execute;
+    iconPaths := TStringList.Create;
     tmpStrings := TStringList.Create;
+    For i := 0 to Find.TotalFile-1 do
+      iconPaths.Add(Find.Files[i]);
+
+    //find the mame icons and append to the same list
+    Find.Directory := messIconDirPath;
+    Find.Execute;
+    For j := 0 to Find.TotalFile-1 do
+      iconPaths.Add(Find.Files[j]);
+
     try
-      For i := 0 to Find.TotalFile-1 do
+      For i := 0 to iconPaths.Count-1 do
       begin
 
         try
           //if this fails then the specified file is not really an icon.
-          fileHandle := Find.Files[i];
+          fileHandle := iconPaths[i];
           Image.LoadFromFile(fileHandle);
           //if it didnt fail then we can add it to the icon list and combo
           IconList.AddIcon(Image);
@@ -255,23 +267,6 @@ begin
         end;
       end;
 
-      Find.Directory := messIconDirPath;
-      Find.Execute;
-      oldSize := i;//grab the size of the first path
-      //do the same loop again, this time its gonna take MUCH longer
-      //TODO: why don't we need an 'if messIconDirPath'?
-      For i := 0 to Find.TotalFile-1 do
-      begin
-        try
-          newIndex := i+oldSize;
-          fileHandle := Find.Files[i];
-          Image.LoadFromFile(fileHandle);
-          IconList.AddIcon(Image);
-          CmbIcon.ItemsEx.AddItem(ExtractFileName(fileHandle),newIndex,newIndex,newIndex,0,nil)
-        except
-          tmpStrings.Add(ExtractFileName(Find.Files[newIndex]));
-        end;
-      end;
       If tmpStrings.Count > 0 then
         MessageDlg(QP_FOLOPTFRM_BAD_ICONS + tmpStrings.GetText, mtError, [mbOK], 0);
 

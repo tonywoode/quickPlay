@@ -236,7 +236,7 @@ object FrmFolder: TFrmFolder
         end
         object CmbIcon: TComboBoxEx
           Left = 73
-          Top = 67
+          Top = 60
           Width = 263
           Height = 26
           ItemsEx = <>
@@ -521,6 +521,9 @@ object FrmFolder: TFrmFolder
     end
   end
   object IconList: TImageList
+    AllocBy = 256
+    DrawingStyle = dsFocus
+    Masked = False
     Left = 472
     Top = 8
   end

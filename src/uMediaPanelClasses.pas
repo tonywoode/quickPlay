@@ -350,6 +350,13 @@ begin
                 AddPanel(tTabSysEmu, TABSYS, 'System');
                 tTabSysEmu(_pgc.Pages[_PGC.PageCount-1].Controls[0]).Configure(Sys.SystemImage, Sys.ShowInfo, Sys.AdditionalInfo, '');
               end;
+              jtabMameCommand : AddPanel(tTabTextOnly, i, Sys.Tabs[i].Caption);
+              jtabMameGameInit : AddPanel(tTabTextOnly, i, Sys.Tabs[i].Caption);
+              jtabMameMessInfo : AddPanel(tTabTextOnly, i, Sys.Tabs[i].Caption);
+              jtabMameStory : AddPanel(tTabTextOnly, i, Sys.Tabs[i].Caption);
+              jtabMameSysinfo : AddPanel(tTabTextOnly, i, Sys.Tabs[i].Caption);
+
+
             end;//end of CASE statment
 
           end;
@@ -418,7 +425,7 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
-
+//don't miss in the function above this one where the types are added to the panel!
 procedure TJMediaSearch.CreateDefaultTabFile(aFile : TFileName);
 var
   tmpStr : TStringList;
@@ -426,7 +433,7 @@ begin
 
   tmpStr := TStringList.Create;
   try
-    tmpStr.Capacity := 8;
+    tmpStr.Capacity := 12;
     tmpStr.Add('System Info=4');
     tmpStr.Add('General=3');
     tmpStr.Add('Box=0');
@@ -434,6 +441,11 @@ begin
     tmpStr.Add('Flyers=0');
     tmpStr.Add('Game History=2');
     tmpStr.Add('Game Info=1');
+    tmpStr.Add('MameCommand=6');
+    tmpStr.Add('MameGameInit=7');
+    tmpStr.Add('MameMessInfo=8');
+    tmpStr.Add('MameStory=9');
+    tmpStr.Add('MameSysinfo=10');
     tmpStr.Add('Marquees=0');
     tmpStr.Add('Samples=0');
     tmpStr.Add('ScreenShots=0');

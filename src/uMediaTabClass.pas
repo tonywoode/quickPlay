@@ -257,6 +257,8 @@ begin
 	TTabImageViewer(useTab.Controls[0]).LoadImages(found, imagesOpt);
 end;
 
+{-----------------------------------------------------------------------------}
+
 procedure TJMediaTab.MameDatLookup(DatType : String; useTab : TTabSheet; ROMObj : TQPROM; SettingsPath : String);
 var
    TmpStrings : TStrings;
@@ -324,16 +326,14 @@ begin
 
        TTabImageViewer(useTab.Controls[0]).LoadImages(_Found, _ImagesOpt);
     end;
-
-    jtabMameInfo :
-    begin
-        MameDatLookup('mameinfo', useTab, ROMObj, SettingsPath);
-    end;
-
-    jtabMameHistory :
-    begin
-        MameDatLookup('history', useTab, ROMObj, SettingsPath);
-    end;
+    //these also need adding to the panel un uMediaPanelClasses
+    jtabMameInfo :  MameDatLookup('mameinfo', useTab, ROMObj, SettingsPath);
+    jtabMameHistory : MameDatLookup('history', useTab, ROMObj, SettingsPath);
+    jtabMameCommand : MameDatLookup('command', useTab, ROMObj, SettingsPath);
+    jtabMameGameInit : MameDatLookup('gameinit', useTab, ROMObj, SettingsPath);
+    jtabMameMessInfo : MameDatLookup('messinfo', useTab, ROMObj, SettingsPath);
+    jtabMameStory : MameDatLookup('story', useTab, ROMObj, SettingsPath);
+    jtabMameSysinfo : MameDatLookup('sysinfo', useTab, ROMObj, SettingsPath);
 
     jtabThumbnail :
     begin

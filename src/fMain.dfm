@@ -264,10 +264,6 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -293,7 +289,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 586
+            Height = 624
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -332,7 +328,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -340,15 +336,11 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 590
+            Height = 628
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -400,10 +392,6 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -433,7 +421,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 586
+            Height = 624
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0
@@ -741,7 +729,7 @@ object MainFrm: TMainFrm
           Width = 89
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 1
           Text = 'By Name'
@@ -761,7 +749,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'

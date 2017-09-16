@@ -67,11 +67,11 @@ object FrmMameOptions: TFrmMameOptions
     OnChange = CmbMameChange
   end
   object BtnOK: TButton
-    Left = 432
+    Left = 434
     Top = 389
     Width = 92
     Height = 31
-    Caption = '&OK'
+    Caption = '&Go'
     TabOrder = 4
     OnClick = BtnOKClick
   end

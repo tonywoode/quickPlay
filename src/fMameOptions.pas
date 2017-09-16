@@ -134,6 +134,9 @@ begin
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
 
    //now lets compose our mametool flags. we need to know what romdata directory the user is sitting in
+   if (MainFrm.RomList.Count > 0) then
+     if (MessageDlg(QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR, mtInformation, [mbYes, mbNo], 0) = mrYes) then
+   begin
    RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
    MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
    MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
@@ -144,7 +147,7 @@ begin
    Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
 
    RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
-
+    end;
 
  // If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then
  // begin

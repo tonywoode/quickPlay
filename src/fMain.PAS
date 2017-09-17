@@ -356,6 +356,15 @@ type
     SlideBarDir: TTrackBar;
     N28: TMenuItem;
     MAMEOptions1: TMenuItem;
+    N30: TMenuItem;
+    PrintMAMERomsetinCurrentFolder1: TMenuItem;
+    N31: TMenuItem;
+    PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem;
+    ActMamePrintSet: TAction;
+    ActMamePrintFromMFMSet: TAction;
+    procedure ActMamePrintFromMFMSetExecute(Sender: TObject);
+    procedure ActMamePrintSetExecute(Sender: TObject);
+    procedure PrintMAMERomsetinCurrentFolder1Click(Sender: TObject);
     procedure Tools1Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
@@ -709,7 +718,7 @@ uses StrUtils, FindFile, ShellAPI, IniFiles,
      fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
      fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive,
-     fMameMerge, fMameOptions, fWelcome, fMigrate, fBackup,
+     fMameMerge, fMameOptions, fMamePrintSet, fMamePrintFromMFMSet, fWelcome, fMigrate, fBackup,
      uRomUtils, uEmuUtils, fCustomRomData, uQPVTEditor, uQuery,
      uQPConst, uExe, fTools, uTools, fMediaPanelOptions, fAppearanceOptions,
      fTxtEditor, uMediaMiscTypes, uQPCompObj, ujMiscResourceStrs;
@@ -1430,6 +1439,11 @@ begin
           IPSmenu.Add(NewItem);
       end;
   end;
+
+end;
+
+procedure TMainFrm.PrintMAMERomsetinCurrentFolder1Click(Sender: TObject);
+begin
 
 end;
 
@@ -2853,6 +2867,39 @@ begin
      FreeAndNil(MameOptionsFrm);
    end;
 end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.ActMamePrintSetExecute(Sender: TObject);
+Var
+   MamePrintSetFrm : TFrmMamePrintSet;
+begin
+   MamePrintSetFrm := TFrmMamePrintSet.Create(self);
+   try
+     If MamePrintSetFrm.ShowModal = MrOK then
+       FillRoms(GetSelectedTxt);
+
+   finally
+     FreeAndNil(MamePrintSetfrm);
+   end;
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.ActMamePrintFromMFMSetExecute(Sender: TObject);
+Var
+   MamePrintMFMSetFrm : TFrmMamePrintMFMSet;
+begin
+   MamePrintMFMSetFrm := TFrmMamePrintMFMSet.Create(self);
+   try
+     If MamePrintMFMSetFrm.ShowModal = MrOK then
+       FillRoms(GetSelectedTxt);
+
+   finally
+     FreeAndNil(MamePrintMFMSetfrm);
+   end;
+end;
+
 
 {-----------------------------------------------------------------------------}
 {                               ROM Actions                                   }

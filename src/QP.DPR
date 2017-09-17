@@ -66,7 +66,9 @@ uses
   uQPMiscTypes in 'uQPMiscTypes.pas',
   fParamVars in 'fParamVars.pas' {FrmParamVars},
   uQPCompObj in 'uQPCompObj.pas',
-  uVersionCheckThread in 'uVersionCheckThread.pas';
+  uVersionCheckThread in 'uVersionCheckThread.pas',
+  fMamePrintSet in 'fMamePrintSet.pas' {Form1},
+  fMAMEPrintFromMFMSet in 'fMAMEPrintFromMFMSet.pas' {Form2};
 
 {$R *.RES}
 {$R WindowsXP.RES}

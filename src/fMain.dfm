@@ -1507,14 +1507,14 @@ object MainFrm: TMainFrm
       end
       object PrintMAMERomsetinCurrentFolder1: TMenuItem
         Action = ActMamePrinter
-        Caption = 'Print a MAME Romdata in Current Folder'
+        Caption = 'Print MAME Romdata in Current Folder'
       end
       object N31: TMenuItem
         Caption = '-'
       end
       object PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem
         Action = ActMameMFMPrinter
-        Caption = 'Print a Mame File Manager Text File in Current Folder'
+        Caption = 'Print MAME File Manager Text File in Current Folder'
       end
     end
     object Tools1: TMenuItem

@@ -18,6 +18,12 @@ type
     TxtMAMEXMLFilePath: TJvFilenameEdit;
     TxtMameFileManagerFilePath: TJvFilenameEdit;
     MameFileManagerLabel: TLabel;
+    MFMDescLabel: TLabel;
+    MFMLabel: TLabel;
+    MameXMLLinkLabel: TLabel;
+    Label2: TLabel;
+    procedure MameXMLLinkLabelClick(Sender: TObject);
+    procedure MFMLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
@@ -30,7 +36,7 @@ type
 
 implementation
 
-uses fMain, uQPConst, uQPMiscTypes, ujProcesses;
+uses fMain, uQPConst, ShellAPI, Clipbrd, uQPMiscTypes, ujProcesses;
 
 {$R *.dfm}
 
@@ -45,6 +51,20 @@ begin
   TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
   TxtMameFileManagerFilePath.Text := MainFrm.Settings.MameFileManagerFilePath;
 
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TFrmMameMFMPrinter.MameXMLLinkLabelClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar(MameXMLLinkLabel.Caption), '', '', sw_Show);
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TFrmMameMFMPrinter.MFMLabelClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar(MFMLabel.Caption), '', '', sw_Show);
 end;
 
 {-----------------------------------------------------------------------------}

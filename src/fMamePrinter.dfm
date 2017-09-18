@@ -2,7 +2,7 @@ object FrmMamePrinter: TFrmMamePrinter
   Left = 269
   Top = 223
   BorderStyle = bsDialog
-  Caption = 'MAME Print Set'
+  Caption = 'Print MAME Romdata'
   ClientHeight = 436
   ClientWidth = 642
   Color = clBtnFace

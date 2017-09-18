@@ -196,8 +196,6 @@ type
     FindROM1: TMenuItem;
     RemoveOrphanedFiles1: TMenuItem;
     ZipUtilities1: TMenuItem;
-    ProcessCurrentDirwithcatveriniMAMEOnly1: TMenuItem;
-    ProcessCurrentDirwithLangIniMAMEOnly1: TMenuItem;
     RenameMameROMS1: TMenuItem;
     Tools1: TMenuItem;
     Preferences1: TMenuItem;
@@ -252,15 +250,9 @@ type
     ActCustomData: TAction;
     N19: TMenuItem;
     ActNPlayers: TAction;
-    ProcessNPlayersiniMAMEonly1: TMenuItem;
     ActOpenCatver: TAction;
     ActOpenLangIni: TAction;
     ActOpenNPlayers: TAction;
-    GotoCatverhomepage1: TMenuItem;
-    GotoLangIniHomepage1: TMenuItem;
-    GotoNPlayersHomepage1: TMenuItem;
-    N20: TMenuItem;
-    N21: TMenuItem;
     ImportExportCustomROMData2: TMenuItem;
     N22: TMenuItem;
     pgSideBar: TPageControl;

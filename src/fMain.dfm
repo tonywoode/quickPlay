@@ -1471,33 +1471,6 @@ object MainFrm: TMainFrm
     end
     object Mame1: TMenuItem
       Caption = '&Arcade ROMs'
-      object ProcessCurrentDirwithcatveriniMAMEOnly1: TMenuItem
-        Action = ActCatVer
-      end
-      object GotoCatverhomepage1: TMenuItem
-        Action = ActOpenCatver
-      end
-      object N20: TMenuItem
-        Caption = '-'
-      end
-      object ProcessCurrentDirwithLangIniMAMEOnly1: TMenuItem
-        Action = ActLangIni
-      end
-      object GotoLangInihomepage1: TMenuItem
-        Action = ActOpenLangIni
-      end
-      object N29: TMenuItem
-        Caption = '-'
-      end
-      object ProcessNPlayersiniMAMEonly1: TMenuItem
-        Action = ActNPlayers
-      end
-      object GotoNPlayersHomepage1: TMenuItem
-        Action = ActOpenNPlayers
-      end
-      object N21: TMenuItem
-        Caption = '-'
-      end
       object RenameMameROMS1: TMenuItem
         Action = ActMameRen
       end

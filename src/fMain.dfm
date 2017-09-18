@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - Phoenix'
-  ClientHeight = 725
+  ClientHeight = 750
   ClientWidth = 964
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 706
+    Top = 731
     Width = 964
     Height = 19
     Panels = <
@@ -113,19 +113,21 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 706
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 964
-    Height = 706
+    Height = 731
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 706
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 706
+      Height = 731
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitHeight = 696
@@ -133,7 +135,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 789
       Top = 0
-      Height = 706
+      Height = 731
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -144,26 +146,29 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 706
+      Height = 731
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 706
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 706
+        Height = 731
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 706
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitHeight = 678
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 649
+            Height = 674
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -202,6 +207,7 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
+            ExplicitHeight = 649
             Columns = <
               item
                 Position = 0
@@ -264,6 +270,10 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -328,7 +338,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end
@@ -336,6 +346,10 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
@@ -392,6 +406,10 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -457,10 +475,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 577
-      Height = 706
+      Height = 731
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 706
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -550,7 +569,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 53
         Width = 577
-        Height = 653
+        Height = 678
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -602,6 +621,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 653
         Columns = <
           item
             Position = 0
@@ -775,11 +795,12 @@ object MainFrm: TMainFrm
       Left = 792
       Top = 0
       Width = 172
-      Height = 706
+      Height = 731
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 706
     end
     object Edit1: TEdit
       Left = 640
@@ -1251,17 +1272,17 @@ object MainFrm: TMainFrm
       Caption = 'Check for Updates'
       OnExecute = actCheckForUpdatesExecute
     end
-    object ActMamePrintSet: TAction
+    object ActMamePrinter: TAction
       Category = 'Mame'
       Caption = 'Set Inputs and Print a MAME Romset in Current Folder'
-      OnExecute = ActMamePrintSetExecute
+      OnExecute = ActMamePrinterExecute
     end
-    object ActMamePrintFromMFMSet: TAction
+    object ActMameMFMPrinter: TAction
       Category = 'Mame'
       Caption = 
         'Set Inputs and Print a Mame Mame File Manager List in Current Fo' +
         'lder'
-      OnExecute = ActMamePrintFromMFMSetExecute
+      OnExecute = ActMameMFMPrinterExecute
     end
   end
   object MainMenu: TMainMenu
@@ -1485,13 +1506,15 @@ object MainFrm: TMainFrm
         Caption = '-'
       end
       object PrintMAMERomsetinCurrentFolder1: TMenuItem
-        Action = ActMamePrintSet
+        Action = ActMamePrinter
+        Caption = 'Print a MAME Romdata in Current Folder'
       end
       object N31: TMenuItem
         Caption = '-'
       end
       object PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem
-        Action = ActMamePrintFromMFMSet
+        Action = ActMameMFMPrinter
+        Caption = 'Print a Mame File Manager Text File in Current Folder'
       end
     end
     object Tools1: TMenuItem

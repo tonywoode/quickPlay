@@ -352,10 +352,10 @@ type
     PrintMAMERomsetinCurrentFolder1: TMenuItem;
     N31: TMenuItem;
     PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem;
-    ActMamePrintSet: TAction;
-    ActMamePrintFromMFMSet: TAction;
-    procedure ActMamePrintFromMFMSetExecute(Sender: TObject);
-    procedure ActMamePrintSetExecute(Sender: TObject);
+    ActMamePrinter: TAction;
+    ActMameMFMPrinter: TAction;
+    procedure ActMameMFMPrinterExecute(Sender: TObject);
+    procedure ActMamePrinterExecute(Sender: TObject);
     procedure PrintMAMERomsetinCurrentFolder1Click(Sender: TObject);
     procedure Tools1Click(Sender: TObject);
     procedure Label1Click(Sender: TObject);
@@ -2862,7 +2862,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.ActMamePrintSetExecute(Sender: TObject);
+procedure TMainFrm.ActMamePrinterExecute(Sender: TObject);
 Var
    MamePrinterFrm : TFrmMamePrinter;
 begin
@@ -2877,7 +2877,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.ActMamePrintFromMFMSetExecute(Sender: TObject);
+procedure TMainFrm.ActMameMFMPrinterExecute(Sender: TObject);
 Var
    MameMFMPrinterFrm : TFrmMameMFMPrinter;
 begin

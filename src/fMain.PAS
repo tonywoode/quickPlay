@@ -1938,7 +1938,7 @@ begin
       else
       begin
        // bug fix : 7/6/05 - qp3.8
-       //  following lines commented out to fix refresh doesnt go back to ur
+       //  following lines commented out to fix refresh doesnt go back to our
        // selected node when in "dont show root node" mode.
        // if VTDir.GetNodeLevel(VTDir.GetNext(DNode)) <> 0 then
           DNode := VTDir.GetNext(DNode)
@@ -2861,7 +2861,7 @@ begin
    MameOptionsFrm := TFrmMameOptions.Create(self);
    try
      If MameOptionsFrm.ShowModal = MrOK then
-       FillRoms(GetSelectedTxt);
+       //FillRoms(GetSelectedTxt);
 
    finally
      FreeAndNil(MameOptionsFrm);
@@ -2877,8 +2877,7 @@ begin
    MamePrintSetFrm := TFrmMamePrintSet.Create(self);
    try
      If MamePrintSetFrm.ShowModal = MrOK then
-       FillRoms(GetSelectedTxt);
-
+       //FillRoms(GetSelectedTxt);
    finally
      FreeAndNil(MamePrintSetfrm);
    end;
@@ -2893,7 +2892,7 @@ begin
    MamePrintMFMSetFrm := TFrmMamePrintMFMSet.Create(self);
    try
      If MamePrintMFMSetFrm.ShowModal = MrOK then
-       FillRoms(GetSelectedTxt);
+       //FillRoms(GetSelectedTxt);
 
    finally
      FreeAndNil(MamePrintMFMSetfrm);

@@ -147,6 +147,12 @@ begin
    Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
 
    RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
+
+   //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
+   //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
+   //the below causes index out of bounds but so does Refresh() from main form generally
+   MainFrm.ActRefreshExecute(Sender);
+
     end;
 
  // If (CmbMame.ItemIndex = -1) or (ListDirs.Count = 0) then

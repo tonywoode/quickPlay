@@ -67,8 +67,8 @@ uses
   fParamVars in 'fParamVars.pas' {FrmParamVars},
   uQPCompObj in 'uQPCompObj.pas',
   uVersionCheckThread in 'uVersionCheckThread.pas',
-  fMamePrintSet in 'fMamePrintSet.pas' {Form1},
-  fMAMEPrintFromMFMSet in 'fMAMEPrintFromMFMSet.pas' {Form2};
+  fMamePrinter in 'fMamePrinter.pas' {FFrmMamePrinter},
+  fMameMFMPrinter in 'fMameMFMPrinter.pas' {FrmMameMFMPrinter};
 
 {$R *.RES}
 {$R WindowsXP.RES}

@@ -1,4 +1,4 @@
-object FrmMamePrintSet: TFrmMamePrintSet
+object FrmMamePrinter: TFrmMamePrinter
   Left = 269
   Top = 223
   BorderStyle = bsDialog
@@ -22,13 +22,6 @@ object FrmMamePrintSet: TFrmMamePrintSet
     Width = 132
     Height = 16
     Caption = 'Mame Emulator to call'
-  end
-  object lblDir: TLabel
-    Left = 5
-    Top = 14
-    Width = 100
-    Height = 16
-    Caption = 'Folders To Scan'
   end
   object MameExtrasLabel: TLabel
     Left = 34
@@ -63,8 +56,7 @@ object FrmMamePrintSet: TFrmMamePrintSet
     Height = 24
     Style = csDropDownList
     ItemHeight = 16
-    TabOrder = 3
-    OnChange = CmbMameChange
+    TabOrder = 0
   end
   object BtnOK: TButton
     Left = 434
@@ -72,7 +64,7 @@ object FrmMamePrintSet: TFrmMamePrintSet
     Width = 92
     Height = 31
     Caption = '&Go'
-    TabOrder = 4
+    TabOrder = 1
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
@@ -83,52 +75,14 @@ object FrmMamePrintSet: TFrmMamePrintSet
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
-    TabOrder = 5
-  end
-  object ListDirs: TListBox
-    Left = 133
-    Top = 10
-    Width = 459
-    Height = 109
-    ItemHeight = 16
-    TabOrder = 0
-  end
-  object BtnAdd: TJvImgBtn
-    Left = 599
-    Top = 10
-    Width = 34
-    Height = 31
-    TabOrder = 1
-    OnClick = BtnAddClick
-    HotTrackFont.Charset = DEFAULT_CHARSET
-    HotTrackFont.Color = clWindowText
-    HotTrackFont.Height = -14
-    HotTrackFont.Name = 'MS Sans Serif'
-    HotTrackFont.Style = []
-    Images = MainFrm.ImageList1
-    ImageIndex = 0
-  end
-  object BtnDel: TJvImgBtn
-    Left = 599
-    Top = 49
-    Width = 34
-    Height = 31
     TabOrder = 2
-    OnClick = BtnDelClick
-    HotTrackFont.Charset = DEFAULT_CHARSET
-    HotTrackFont.Color = clWindowText
-    HotTrackFont.Height = -14
-    HotTrackFont.Name = 'MS Sans Serif'
-    HotTrackFont.Style = []
-    Images = MainFrm.ImageList1
-    ImageIndex = 3
   end
   object TxtMameExtrasDirPath: TEdit
     Left = 172
     Top = 203
     Width = 269
     Height = 24
-    TabOrder = 6
+    TabOrder = 3
   end
   object BtnMameExtrasDirFind: TButton
     Left = 455
@@ -136,7 +90,7 @@ object FrmMamePrintSet: TFrmMamePrintSet
     Width = 32
     Height = 27
     Caption = '...'
-    TabOrder = 7
+    TabOrder = 4
     OnClick = BtnMameExtrasDirFindClick
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
@@ -147,7 +101,7 @@ object FrmMamePrintSet: TFrmMamePrintSet
     ClipboardCommands = []
     Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
     ButtonWidth = 27
-    TabOrder = 8
+    TabOrder = 5
   end
   object TxtMameFileManagerFilePath: TJvFilenameEdit
     Left = 133
@@ -157,12 +111,6 @@ object FrmMamePrintSet: TFrmMamePrintSet
     ClipboardCommands = []
     Filter = 'TXT files (*.txt)|*.txt|All files (*.*)|*.*'
     ButtonWidth = 27
-    TabOrder = 9
-  end
-  object jvBrowse: TJvBrowseForFolderDialog
-    Position = fpFormCenter
-    RootDirectory = fdRootFolder
-    Left = 448
-    Top = 56
+    TabOrder = 6
   end
 end

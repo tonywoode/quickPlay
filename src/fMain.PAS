@@ -710,7 +710,7 @@ uses StrUtils, FindFile, ShellAPI, IniFiles,
      fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
      fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive,
-     fMameMerge, fMameOptions, fMamePrintSet, fMamePrintFromMFMSet, fWelcome, fMigrate, fBackup,
+     fMameMerge, fMameOptions, fMamePrinter, fMameMFMPrinter, fWelcome, fMigrate, fBackup,
      uRomUtils, uEmuUtils, fCustomRomData, uQPVTEditor, uQuery,
      uQPConst, uExe, fTools, uTools, fMediaPanelOptions, fAppearanceOptions,
      fTxtEditor, uMediaMiscTypes, uQPCompObj, ujMiscResourceStrs;
@@ -2864,14 +2864,14 @@ end;
 
 procedure TMainFrm.ActMamePrintSetExecute(Sender: TObject);
 Var
-   MamePrintSetFrm : TFrmMamePrintSet;
+   MamePrinterFrm : TFrmMamePrinter;
 begin
-   MamePrintSetFrm := TFrmMamePrintSet.Create(self);
+   MamePrinterFrm := TFrmMamePrinter.Create(self);
    try
-     If MamePrintSetFrm.ShowModal = MrOK then
+     If MamePrinterFrm.ShowModal = MrOK then
        //FillRoms(GetSelectedTxt);
    finally
-     FreeAndNil(MamePrintSetfrm);
+     FreeAndNil(MamePrinterfrm);
    end;
 end;
 
@@ -2879,15 +2879,15 @@ end;
 
 procedure TMainFrm.ActMamePrintFromMFMSetExecute(Sender: TObject);
 Var
-   MamePrintMFMSetFrm : TFrmMamePrintMFMSet;
+   MameMFMPrinterFrm : TFrmMameMFMPrinter;
 begin
-   MamePrintMFMSetFrm := TFrmMamePrintMFMSet.Create(self);
+   MameMFMPrinterFrm := TFrmMameMFMPrinter.Create(self);
    try
-     If MamePrintMFMSetFrm.ShowModal = MrOK then
+     If MameMFMPrinterFrm.ShowModal = MrOK then
        //FillRoms(GetSelectedTxt);
 
    finally
-     FreeAndNil(MamePrintMFMSetfrm);
+     FreeAndNil(MameMFMPrinterfrm);
    end;
 end;
 

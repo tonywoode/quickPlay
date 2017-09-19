@@ -196,7 +196,6 @@ type
     FindROM1: TMenuItem;
     RemoveOrphanedFiles1: TMenuItem;
     ZipUtilities1: TMenuItem;
-    RenameMameROMS1: TMenuItem;
     Tools1: TMenuItem;
     Preferences1: TMenuItem;
     HelpContents1: TMenuItem;
@@ -227,7 +226,6 @@ type
     N15: TMenuItem;
     ExporttoHTML1: TMenuItem;
     ActMergedScan: TAction;
-    ScanMergedROMs1: TMenuItem;
     RumRandomROM1: TMenuItem;
     ActRandomFolder: TAction;
     ActRandomAll: TAction;
@@ -346,7 +344,6 @@ type
     JoyCntrl: TJvJoystick;
     Edit1: TEdit;
     SlideBarDir: TTrackBar;
-    N28: TMenuItem;
     MAMEOptions1: TMenuItem;
     N30: TMenuItem;
     PrintMAMERomsetinCurrentFolder1: TMenuItem;
@@ -2720,7 +2717,7 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
-{                               MAME Actions                                  }
+{       MAME Actions -- TODO: everything before zinc scan is now obsolete     }
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.ActCatVerExecute(Sender: TObject);
@@ -2763,11 +2760,10 @@ end;
 procedure TMainFrm.ActMameRenExecute(Sender: TObject);
 var
   //The Mame functionality doesn't work. We need to make it work
-  //For now, a holding page....
-  Mame : TMameHolding; //Mame : TDatReader;
+  Mame : TDatReader;
 
 begin
-    Mame := TMameHolding.create(self);  //Mame := TDatReader.create(self);
+  Mame := TDatReader.create(self);
     try
       if Mame.ShowModal = mrOk then
         FillRoms(GetSelectedTxt);

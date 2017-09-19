@@ -73,6 +73,10 @@ begin
   MainFrm.Settings.SaveAllSettings();
   //close the form with the modal result OK
   ModalResult := MrOK;
+
+  //we want to refresh: sidebar icons, mame icons, info files will all now show up...
+  //why not do it in the caller in the main form? just to be consistent with the other mame dialog boxes
+   MainFrm.ActRefreshExecute(Sender);
 end;
 
 

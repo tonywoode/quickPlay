@@ -36,7 +36,7 @@ type
 
 implementation
 
-uses fMain, uQPConst, ShellAPI, Clipbrd, uQPMiscTypes, ujProcesses;
+uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
 
 {$R *.dfm}
 

@@ -259,10 +259,6 @@ object PrefForm: TPrefForm
     object TabRatings: TTabSheet
       Caption = 'Ratings'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lbllowtohigh: TLabel
         Left = 278
         Top = 89
@@ -317,7 +313,7 @@ object PrefForm: TPrefForm
         Left = 190
         Top = 89
         Width = 80
-        Height = 22
+        Height = 26
         Enabled = False
         MaxValue = 0
         MinValue = 0
@@ -328,7 +324,7 @@ object PrefForm: TPrefForm
         Left = 293
         Top = 89
         Width = 80
-        Height = 22
+        Height = 26
         Enabled = False
         MaxValue = 0
         MinValue = 0
@@ -348,10 +344,6 @@ object PrefForm: TPrefForm
     object TabSheet1: TTabSheet
       Caption = 'Core File Editor'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object TLabel
         Left = 49
         Top = 6
@@ -418,10 +410,6 @@ object PrefForm: TPrefForm
     object TabSysFileExt: TTabSheet
       Caption = 'System File Extensions'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblSysFileEditor: TLabel
         Left = 20
         Top = 10
@@ -434,7 +422,7 @@ object PrefForm: TPrefForm
         Top = 49
         Width = 188
         Height = 287
-        ItemHeight = 13
+        ItemHeight = 16
         PopupMenu = PopupSysFileExt
         TabOrder = 0
         OnClick = LstSysFileExtClick

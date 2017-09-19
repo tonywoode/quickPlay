@@ -32,9 +32,9 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   object MameExtrasLabel: TLabel
     Left = 36
     Top = 207
-    Width = 159
-    Height = 16
-    Caption = 'Mame Extras Dir (for Icons)'
+    Width = 309
+    Height = 18
+    Caption = 'Mame Extras Dir (required for dats, info and icons)'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = 14

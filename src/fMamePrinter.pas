@@ -16,8 +16,31 @@ type
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
     TxtMAMEXMLFilePath: TJvFilenameEdit;
-    TxtMameFileManagerFilePath: TJvFilenameEdit;
-    MameFileManagerLabel: TLabel;
+    Label2: TLabel;
+    MameXMLLinkLabel: TLabel;
+    ChkMature: TCheckBox;
+    ChkClones: TCheckBox;
+    Bios: TCheckBox;
+    Mess: TCheckBox;
+    Mechanical: TCheckBox;
+    GrpSubfolder: TGroupBox;
+    ChkGenreSplit: TCheckBox;
+    Casino: TCheckBox;
+    PrintClub: TCheckBox;
+    Simulator: TCheckBox;
+    ChkTableTop: TCheckBox;
+    ChkQuiz: TCheckBox;
+    ChkUtilities: TCheckBox;
+    ChkPreliminary: TCheckBox;
+    ChkNPlayersSplit: TCheckBox;
+    ChkVersionSplit: TCheckBox;
+    ChkSeriesSplit: TCheckBox;
+    ChkRatingSplit: TCheckBox;
+    ChkYearSplit: TCheckBox;
+    ChkCompanySplit: TCheckBox;
+    GrpFilter: TGroupBox;
+    MamePrintDescLabel: TLabel;
+    procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
@@ -30,7 +53,7 @@ type
 
 implementation
 
-uses fMain, uQPConst, uQPMiscTypes, ujProcesses;
+uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
 
 {$R *.dfm}
 
@@ -43,8 +66,12 @@ begin
   //Path to Mame XML - why don't we query the mame executatble for the xml? because
   // retroarch MAME doesn't have this ability....
   TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
-  TxtMameFileManagerFilePath.Text := MainFrm.Settings.MameFileManagerFilePath;
 
+end;
+
+procedure TFrmMamePrinter.MameXMLLinkLabelClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar(MameXMLLinkLabel.Caption), '', '', sw_Show);
 end;
 
 {-----------------------------------------------------------------------------}
@@ -80,7 +107,6 @@ var
   MameExecutablePath: String;
   MameExtrasDir: String;
   MameXMLPath: String;
-  MameFileManagerFilePath: String;
   Flags : String;
 
 begin
@@ -90,7 +116,6 @@ begin
 
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
-        MainFrm.Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
         MainFrm.Settings.SaveAllSettings();
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
@@ -103,10 +128,9 @@ begin
    MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
    MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
    MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
-   MameFileManagerFilePath := '"' + MainFrm.Settings.MameFileManagerFilePath + '"';
 
 
-   Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath + ' ' + MameFileManagerFilePath;
+   Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath;
 
    RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
 

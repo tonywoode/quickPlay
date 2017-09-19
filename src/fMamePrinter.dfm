@@ -80,7 +80,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 
       'Filter the MAME XML List to make a romdata in this folder, and c' +
       'ollection romdatas in subfolders. Too many collections slows Qui' +
-      'ckplay down. Please choose an empty source folder.'
+      'ckPlay down. Please choose an empty source folder.'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -14
@@ -160,7 +160,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Clones'
     TabOrder = 7
   end
-  object Bios: TCheckBox
+  object ChkBios: TCheckBox
     Left = 72
     Top = 92
     Width = 105
@@ -178,7 +178,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mature'
     TabOrder = 6
   end
-  object Mess: TCheckBox
+  object ChkMess: TCheckBox
     Left = 216
     Top = 128
     Width = 97
@@ -187,7 +187,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mess'
     TabOrder = 9
   end
-  object Mechanical: TCheckBox
+  object ChkMechanical: TCheckBox
     Left = 72
     Top = 208
     Width = 105
@@ -267,7 +267,7 @@ object FrmMamePrinter: TFrmMamePrinter
       TabOrder = 6
     end
   end
-  object Casino: TCheckBox
+  object ChkCasino: TCheckBox
     Left = 72
     Top = 128
     Width = 97
@@ -276,7 +276,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Casino'
     TabOrder = 12
   end
-  object PrintClub: TCheckBox
+  object ChkPrintClub: TCheckBox
     Left = 216
     Top = 208
     Width = 97
@@ -285,7 +285,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'PrintClub'
     TabOrder = 13
   end
-  object Simulator: TCheckBox
+  object ChkSimulator: TCheckBox
     Left = 368
     Top = 128
     Width = 97

@@ -17,29 +17,29 @@ type
     BtnMameExtrasDirFind: TButton;
     TxtMAMEXMLFilePath: TJvFilenameEdit;
     Label2: TLabel;
+    MamePrintDescLabel: TLabel;
     MameXMLLinkLabel: TLabel;
-    ChkMature: TCheckBox;
-    ChkClones: TCheckBox;
-    Bios: TCheckBox;
-    Mess: TCheckBox;
-    Mechanical: TCheckBox;
     GrpSubfolder: TGroupBox;
-    ChkGenreSplit: TCheckBox;
-    Casino: TCheckBox;
-    PrintClub: TCheckBox;
-    Simulator: TCheckBox;
+    GrpFilter: TGroupBox;
+    ChkBios: TCheckBox;
+    ChkCasino: TCheckBox;
+    ChkClones: TCheckBox;
+    ChkMature: TCheckBox;
+    ChkMechanical: TCheckBox;
+    ChkMess: TCheckBox;
+    ChkPreliminary: TCheckBox;
+    ChkPrintClub: TCheckBox;
+    ChkSimulator: TCheckBox;
     ChkTableTop: TCheckBox;
     ChkQuiz: TCheckBox;
     ChkUtilities: TCheckBox;
-    ChkPreliminary: TCheckBox;
-    ChkNPlayersSplit: TCheckBox;
-    ChkVersionSplit: TCheckBox;
-    ChkSeriesSplit: TCheckBox;
-    ChkRatingSplit: TCheckBox;
-    ChkYearSplit: TCheckBox;
     ChkCompanySplit: TCheckBox;
-    GrpFilter: TGroupBox;
-    MamePrintDescLabel: TLabel;
+    ChkGenreSplit: TCheckBox;
+    ChkNPlayersSplit: TCheckBox;
+    ChkRatingSplit: TCheckBox;
+    ChkSeriesSplit: TCheckBox;
+    ChkVersionSplit: TCheckBox;
+    ChkYearSplit: TCheckBox;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -53,7 +53,7 @@ type
 
 implementation
 
-uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
+uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
 
 {$R *.dfm}
 
@@ -67,6 +67,30 @@ begin
   // retroarch MAME doesn't have this ability....
   TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
 
+  //and here's all the checkboxes
+  With MainFrm do
+  begin
+  ChkBios.Checked := Settings.MameOptBios;
+  ChkCasino.Checked        := Settings.MameOptCasino;
+  ChkClones.Checked        := Settings.MameOptClones;
+  ChkMature.Checked        := Settings.MameOptMature;
+  ChkMechanical.Checked    := Settings.MameOptMechanical;
+  ChkMess.Checked          := Settings.MameOptMess;
+  ChkPreliminary.Checked   := Settings.MameOptPreliminary;
+  ChkPrintClub.Checked     := Settings.MameOptPrintClub;
+  ChkSimulator.Checked     := Settings.MameOptSimulator;
+  ChkTableTop.Checked      := Settings.MameOptTableTop;
+  ChkQuiz.Checked          := Settings.MameOptQuiz;
+  ChkUtilities.Checked     := Settings.MameOptUtilities;
+  ChkCompanySplit.Checked  := Settings.MameOptCompany;
+  ChkGenreSplit.Checked    := Settings.MameOptGenre;
+  ChkNPlayersSplit.Checked := Settings.MameOptNPlayers;
+  ChkRatingSplit.Checked   := Settings.MameOptRating;
+  ChkSeriesSplit.Checked   := Settings.MameOptSeries;
+  ChkVersionSplit.Checked  := Settings.MameOptVersion;
+  ChkYearSplit.Checked     := Settings.MameOptYear;
+
+  end;
 end;
 
 procedure TFrmMamePrinter.MameXMLLinkLabelClick(Sender: TObject);
@@ -116,7 +140,34 @@ begin
 
         MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
+
+        //and here's all the checkbox settings
+        With MainFrm do
+        begin
+        Settings.MameOptBios        := ChkBios.Checked;
+        Settings.MameOptCasino      := ChkCasino.Checked;
+        Settings.MameOptClones      := ChkClones.Checked;
+        Settings.MameOptMature      := ChkMature.Checked;
+        Settings.MameOptMechanical  := ChkMechanical.Checked;
+        Settings.MameOptMess        := ChkMess.Checked;
+        Settings.MameOptPreliminary := ChkPreliminary.Checked;
+        Settings.MameOptPrintClub   := ChkPrintClub.Checked;
+        Settings.MameOptSimulator   := ChkSimulator.Checked;
+        Settings.MameOptTableTop    := ChkTableTop.Checked;
+        Settings.MameOptQuiz        := ChkQuiz.Checked;
+        Settings.MameOptUtilities   := ChkUtilities.Checked;
+        Settings.MameOptCompany     := ChkCompanySplit.Checked;
+        Settings.MameOptGenre       := ChkGenreSplit.Checked;
+        Settings.MameOptNPlayers    := ChkNPlayersSplit.Checked;
+        Settings.MameOptRating      := ChkRatingSplit.Checked;
+        Settings.MameOptSeries      := ChkSeriesSplit.Checked;
+        Settings.MameOptVersion     := ChkVersionSplit.Checked;
+        Settings.MameOptYear        := ChkYearSplit.Checked;
+
+        end;
+
         MainFrm.Settings.SaveAllSettings();
+
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
 

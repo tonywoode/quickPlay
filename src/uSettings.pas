@@ -68,6 +68,29 @@ Type
       _sMametoolMameExePath: String; //the Mame executable last selected in mame options
       _sMameFileManagerFilePath: String; //Path to an output of the program MameFileManger, essentially a mame filter file of rommames
       _sMessIconDir : string;    //icons dir for system/romlist icons in sidebar roms panel.
+
+      //and here's all the checkboxes in the mame printer
+      _bMameOptBios : boolean;
+      _bMameOptCasino: boolean;
+      _bMameOptClones: boolean;
+      _bMameOptMature: boolean;
+      _bMameOptMechanical: boolean;
+      _bMameOptMess: boolean;
+      _bMameOptPreliminary: boolean;
+      _bMameOptPrintClub: boolean;
+      _bMameOptSimulator: boolean;
+      _bMameOptTableTop: boolean;
+      _bMameOptQuiz: boolean;
+      _bMameOptUtilities: boolean;
+      _bMameOptCompany: boolean;
+      _bMameOptGenre: boolean;
+      _bMameOptNPlayers: boolean;
+      _bMameOptRating: boolean;
+      _bMameOptSeries: boolean;
+      _bMameOptVersion: boolean;
+      _bMameOptYear:  boolean;
+
+
       _bSaveCols : boolean;     //save column widths and positions.
       _bRomImages : boolean;    //allow ICONS in the ROMs listing.
       _bIncVersion : boolean;   //include an emulator version string in the rom listing.
@@ -157,6 +180,30 @@ Type
       Property MametoolMameExePath : string read _sMametoolMameExePath write _sMametoolMameExePath;
       Property MameFileManagerFilePath : string read _sMameFileManagerFilePath write _sMameFileManagerFilePath;
       Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
+
+      //and here's all the check boxes in the mame printer
+      property MameOptBios : Boolean read _bMameOptBios write _bMameOptBios;
+      property MameOptCasino : Boolean read _bMameOptCasino write _bMameOptCasino;
+      property MameOptClones : Boolean read _bMameOptClones write _bMameOptClones;
+      property MameOptMature : Boolean read _bMameOptMature write _bMameOptMature;
+      property MameOptMechanical : Boolean read _bMameOptMechanical write _bMameOptMechanical;
+      property MameOptMess : Boolean read _bMameOptMess write _bMameOptMess;
+      property MameOptPreliminary : Boolean read _bMameOptPreliminary write _bMameOptPreliminary;
+      property MameOptPrintClub : Boolean read _bMameOptPrintClub write _bMameOptPrintClub;
+      property MameOptSimulator : Boolean read _bMameOptSimulator write _bMameOptSimulator;
+      property MameOptTableTop : Boolean read _bMameOptTableTop write _bMameOptTableTop;
+      property MameOptQuiz : Boolean read _bMameOptQuiz write _bMameOptQuiz;
+      property MameOptUtilities : Boolean read _bMameOptUtilities write _bMameOptUtilities;
+      property MameOptCompany : Boolean read _bMameOptCompany write _bMameOptCompany;
+      property MameOptGenre  : Boolean read _bMameOptGenre write _bMameOptGenre;
+      property MameOptNPlayers : Boolean read _bMameOptNPlayers write _bMameOptNPlayers;
+      property MameOptRating : Boolean read _bMameOptRating write _bMameOptRating;
+      property MameOptSeries : Boolean read _bMameOptSeries write _bMameOptSeries;
+      property MameOptVersion : Boolean read _bMameOptVersion write _bMameOptVersion;
+      property MameOptYear : Boolean read _bMameOptYear write _bMameOptYear;
+
+
+
       Property NoDats : Boolean Read _NoDats Write _NoDats;
       Property DatsCurrent : Boolean Read _DatsUpToDate write _DatsUpToDate;
       //Ratings properties.
@@ -641,6 +688,27 @@ begin
       _sMametoolMameExePath := Ini.ReadString('MAME', 'MametoolMameExePath', '');
       _sMameFileManagerFilePath := Ini.ReadString('MAME', 'MameFileManagerFilePath', '');
 
+      //and here's all the checkobxes from the mame printer
+      _bMameOptBios := Ini.ReadBool('MAME', 'MameOptBios', True);
+      _bMameOptCasino := Ini.ReadBool('MAME', 'MameOptCasino', True);
+      _bMameOptClones := Ini.ReadBool('MAME', 'MameOptClones', True);
+      _bMameOptMature := Ini.ReadBool('MAME', 'MameOptMature', True);
+      _bMameOptMechanical := Ini.ReadBool('MAME', 'MameOptMechanical', True);
+      _bMameOptMess := Ini.ReadBool('MAME', 'MameOptMess', True);
+      _bMameOptPreliminary := Ini.ReadBool('MAME', 'MameOptPreliminary', True);
+      _bMameOptPrintClub := Ini.ReadBool('MAME', 'MameOptPrintClub', True);
+      _bMameOptSimulator := Ini.ReadBool('MAME', 'MameOptSimulator', True);
+      _bMameOptTableTop := Ini.ReadBool('MAME', 'MameOptTableTop', True);
+      _bMameOptQuiz := Ini.ReadBool('MAME', 'MameOptQuiz', True);
+      _bMameOptUtilities := Ini.ReadBool('MAME', 'MameOptUtilities', True);
+      _bMameOptCompany := Ini.ReadBool('MAME', 'MameOptCompany', True);
+      _bMameOptGenre := Ini.ReadBool('MAME', 'MameOptGenre', True);
+      _bMameOptNPlayers := Ini.ReadBool('MAME', 'MameOptNPlayers', True);
+      _bMameOptRating := Ini.ReadBool('MAME', 'MameOptRating', True);
+      _bMameOptSeries := Ini.ReadBool('MAME', 'MameOptSeries', True);
+      _bMameOptVersion := Ini.ReadBool('MAME', 'MameOptVersion', True);
+      _bMameOptYear := Ini.ReadBool('MAME', 'MameOptYear', True);
+
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));
       Self._RatingsRangeLow := Ini.ReadInteger('Ratings', 'low', 1);
@@ -1051,6 +1119,27 @@ begin
     Ini.WriteString('MAME', 'MameXMLPath', self._sMameXMLPath);
     Ini.WriteString('MAME', 'MametoolMameExePath', self._sMametoolMameExePath);
     Ini.WriteString('MAME', 'MameFileManagerFilePath', self._sMameFileManagerFilePath);
+
+    //and here's all the checboxes from the mame printer
+    Ini.WriteBool('MAME', 'MameOptBios', Self._bMameOptBios);
+    Ini.WriteBool('MAME', 'MameOptCasino', Self._bMameOptCasino);
+    Ini.WriteBool('MAME', 'MameOptClones', Self._bMameOptClones);
+    Ini.WriteBool('MAME', 'MameOptMature', Self._bMameOptMature);
+    Ini.WriteBool('MAME', 'MameOptMechanical', Self._bMameOptMechanical);
+    Ini.WriteBool('MAME', 'MameOptMess', Self._bMameOptMess);
+    Ini.WriteBool('MAME', 'MameOptPreliminary', Self._bMameOptPreliminary);
+    Ini.WriteBool('MAME', 'MameOptPrintClub', Self._bMameOptPrintClub);
+    Ini.WriteBool('MAME', 'MameOptSimulator', Self._bMameOptSimulator);
+    Ini.WriteBool('MAME', 'MameOptTableTop', Self._bMameOptTableTop);
+    Ini.WriteBool('MAME', 'MameOptQuiz', Self._bMameOptQuiz);
+    Ini.WriteBool('MAME', 'MameOptUtilities', Self._bMameOptUtilities);
+    Ini.WriteBool('MAME', 'MameOptCompany', Self._bMameOptCompany);
+    Ini.WriteBool('MAME', 'MameOptGenre', Self._bMameOptGenre);
+    Ini.WriteBool('MAME', 'MameOptNPlayers', Self._bMameOptNPlayers);
+    Ini.WriteBool('MAME', 'MameOptRating', Self._bMameOptRating);
+    Ini.WriteBool('MAME', 'MameOptSeries', Self._bMameOptSeries);
+    Ini.WriteBool('MAME', 'MameOptVersion', Self._bMameOptVersion);
+    Ini.WriteBool('MAME', 'MameOptYear', Self._bMameOptYear);
 
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);

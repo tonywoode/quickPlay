@@ -39,7 +39,7 @@ end;
 
 procedure TFrmMameMessPrinter.BtnOKClick(Sender: TObject);
 var
- currentFolder, binDir, softlistRootDirPath : String;
+ RomdataFolder, binDir, softlistRootDirPath : String;
  Process : Boolean;
 
 begin
@@ -54,15 +54,18 @@ begin
      if (Process = True) then
       begin
       //the romdata folde the user is in
-      currentFolder := StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]);
+      RomdataFolder := MainFrm.GetSelectedFolder;
       //the bin directory (source)
       binDir := MainFrm.Settings.Paths.BinDir;
       //the softlist dirs are crudely sitting in the root of the bindir
       softlistRootDirPath := binDir + MameType;
       //we need to warn the user if the directory isn't empty (slightly less important this time)
-      DirCopy( softlistRootDirPath, currentFolder, True);
+      DirCopy( softlistRootDirPath, RomdataFolder, True);
       MainFrm.ActRefreshExecute(Sender);
     end;
+
+    //close the form with the modal result OK
+    ModalResult := MrOK;
 end;
 
 //TODO: I found this usable dircopy fn at http://www.delphigroups.info/2/7a/117984.html

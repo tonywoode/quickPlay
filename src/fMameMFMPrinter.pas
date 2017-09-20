@@ -100,14 +100,14 @@ end;
 
 procedure TFrmMameMFMPrinter.BtnOKClick(Sender: TObject);
 var
-  Executable : String;
+  Executable: String;
   RomdataFolder: String;
   MameExecutablePath: String;
   MameExtrasDir: String;
   MameXMLPath: String;
   MameFileManagerFilePath: String;
-  Flags : String;
-  Process : Boolean;
+  Flags: String;
+  Process: Boolean;
 
 begin
    Process := True;
@@ -131,7 +131,9 @@ begin
 
    if (Process = True) then
      begin
-     RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
+     RomdataFolder := MainFrm.GetSelectedFolder;
+
+
      MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
      MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
      MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';

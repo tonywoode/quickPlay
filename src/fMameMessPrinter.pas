@@ -28,7 +28,6 @@ uses fMain, uJFile, uQPConst;
 
 {$R *.dfm}
 
-
 procedure TFrmMameMessPrinter.BtnOKClick(Sender: TObject);
 var
  RomdataFolder, binDir, softlistRootDirPath : String;

@@ -36,6 +36,7 @@ Type
     ToolsFile : TFileName;
     EmulatorsFile : TFileName;
     MediaPanelCfgFile : TFileName;
+    QPNodeFile : TFileName;
 
   end;
 
@@ -918,6 +919,8 @@ begin
   Paths.ToolsFile := Paths.CfgDir + 'Tools.ini';
   Paths.EmulatorsFile := Paths.CfgDir + 'Emulators.ini';
   Paths.MediaPanelCfgFile := Paths.CfgDir + 'MediaPanelCfg.ini';
+  Paths.QPNodeFile:= Paths.BinDir + 'QPNode.exe';
+
   If (DirectoryExists(Paths.ROMSDir) = false) and
      (DirectoryExists(Paths.CfgDir) = false) then
     _NoDats := True

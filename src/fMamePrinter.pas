@@ -168,8 +168,7 @@ begin
           Settings.SaveAllSettings();
         end;
 
-   Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
-
+   Executable := MainFrm.Settings.Paths.QPNodeFile;
    //we need to know what romdata directory the user is sitting in, and if its not empty that may
    // indicate they don't know it'll get overwritten
    if (MainFrm.RomList.Count > 0) then
@@ -177,12 +176,10 @@ begin
 
    if (Process = True) then
    begin
-     RomdataFolder := MainFrm.GetSelectedFolder;;
-     MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
-     MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
-     MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
-     Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath;
-     RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
+     RomdataFolder := '"' + MainFrm.GetSelectedFolder + '"';
+     //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, checkboxes
+     Flags := RomdataFolder;
+     RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '', SW_SHOWMINIMIZED);
      //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
      //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
      //the below causes index out of bounds but so does Refresh() from main form generally

@@ -25,6 +25,7 @@ Type
     SearchDir : String;
     QPTempDir : String;
     EFindDir : String;
+    BinDir   : String;
     FavsFile : TFileName;
     SettingsFile : TFileName;
     GoodMergeFile : TFileName;
@@ -896,8 +897,10 @@ begin
     //we need to move the efind files so they are writeable
     if not DirectoryExists(Paths.AppDir + 'efind\') then
       DirCopy(extractfilepath(paramstr(0))+'efind\', Paths.AppDir + 'efind\', True);
+      DirCopy(extractfilepath(paramstr(0))+'bin\', Paths.AppDir + 'bin\', True); //why would these need moving from install dir? maybe this has been list in time
   end;
 
+  Paths.BinDir := Paths.AppDir + 'bin\';
   Paths.EFindDir := Paths.AppDir + 'efind\';
   //set up the temp directory.
   Paths.QPTempDir := Paths.AppDir + 'temp\';

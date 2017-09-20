@@ -22,6 +22,7 @@ type
     MFMLabel: TLabel;
     MameXMLLinkLabel: TLabel;
     Label2: TLabel;
+    MamePrintDescLabel2: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure MFMLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -42,14 +43,18 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
 
 procedure TFrmMameMFMPrinter.FormShow(Sender: TObject);
 begin
-  MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-  CmbMame.ItemIndex := CmbMame.Items.IndexOf(MainFrm.Settings.MametoolMameExePath);
 
-  TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
-  //Path to Mame XML - why don't we query the mame executatble for the xml? because
-  // retroarch MAME doesn't have this ability....
-  TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
-  TxtMameFileManagerFilePath.Text := MainFrm.Settings.MameFileManagerFilePath;
+  With MainFrm do
+  begin
+    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+
+    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
+    //Path to Mame XML - why don't we query the mame executatble for the xml? because
+    // retroarch MAME doesn't have this ability....
+    TxtMAMEXMLFilePath.Text := Settings.MameXMLPath;
+    TxtMameFileManagerFilePath.Text := Settings.MameFileManagerFilePath;
+  end;
 
 end;
 
@@ -105,13 +110,16 @@ var
 
 begin
 
-   if CmbMame.ItemIndex <>-1 then
-        MainFrm.Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
+   With MainFrm do
+   begin
+     if CmbMame.ItemIndex <>-1 then
+        Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
 
-        MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-        MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
-        MainFrm.Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
-        MainFrm.Settings.SaveAllSettings();
+        Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+        Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
+        Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
+        Settings.SaveAllSettings();
+   end;
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
 

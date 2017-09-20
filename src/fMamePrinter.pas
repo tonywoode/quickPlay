@@ -17,7 +17,7 @@ type
     BtnMameExtrasDirFind: TButton;
     TxtMAMEXMLFilePath: TJvFilenameEdit;
     Label2: TLabel;
-    MamePrintDescLabel: TLabel;
+    MamePrintDescLabel1: TLabel;
     MameXMLLinkLabel: TLabel;
     GrpSubfolder: TGroupBox;
     GrpFilter: TGroupBox;
@@ -40,6 +40,8 @@ type
     ChkSeriesSplit: TCheckBox;
     ChkVersionSplit: TCheckBox;
     ChkYearSplit: TCheckBox;
+    MamePrintDescLabel2: TLabel;
+    MamePrintDescLabel3: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -59,38 +61,39 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
 
 procedure TFrmMamePrinter.FormShow(Sender: TObject);
 begin
-  MainFrm.EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-  CmbMame.ItemIndex := CmbMame.Items.IndexOf(MainFrm.Settings.MametoolMameExePath);
 
-  TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
-  //Path to Mame XML - why don't we query the mame executatble for the xml? because
-  // retroarch MAME doesn't have this ability....
-  TxtMAMEXMLFilePath.Text := MainFrm.Settings.MameXMLPath;
 
-  //and here's all the checkboxes
+
   With MainFrm do
   begin
-  ChkBios.Checked := Settings.MameOptBios;
-  ChkCasino.Checked        := Settings.MameOptCasino;
-  ChkClones.Checked        := Settings.MameOptClones;
-  ChkMature.Checked        := Settings.MameOptMature;
-  ChkMechanical.Checked    := Settings.MameOptMechanical;
-  ChkMess.Checked          := Settings.MameOptMess;
-  ChkPreliminary.Checked   := Settings.MameOptPreliminary;
-  ChkPrintClub.Checked     := Settings.MameOptPrintClub;
-  ChkSimulator.Checked     := Settings.MameOptSimulator;
-  ChkTableTop.Checked      := Settings.MameOptTableTop;
-  ChkQuiz.Checked          := Settings.MameOptQuiz;
-  ChkUtilities.Checked     := Settings.MameOptUtilities;
-  ChkCompanySplit.Checked  := Settings.MameOptCompany;
-  ChkGenreSplit.Checked    := Settings.MameOptGenre;
-  ChkNPlayersSplit.Checked := Settings.MameOptNPlayers;
-  ChkRatingSplit.Checked   := Settings.MameOptRating;
-  ChkSeriesSplit.Checked   := Settings.MameOptSeries;
-  ChkVersionSplit.Checked  := Settings.MameOptVersion;
-  ChkYearSplit.Checked     := Settings.MameOptYear;
-
+    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
+    //Path to Mame XML - why don't we query the mame executatble for the xml? because
+    // retroarch MAME doesn't have this ability....
+    TxtMAMEXMLFilePath.Text := Settings.MameXMLPath;
+    //and here's all the checkboxes
+    ChkBios.Checked          := Settings.MameOptBios;
+    ChkCasino.Checked        := Settings.MameOptCasino;
+    ChkClones.Checked        := Settings.MameOptClones;
+    ChkMature.Checked        := Settings.MameOptMature;
+    ChkMechanical.Checked    := Settings.MameOptMechanical;
+    ChkMess.Checked          := Settings.MameOptMess;
+    ChkPreliminary.Checked   := Settings.MameOptPreliminary;
+    ChkPrintClub.Checked     := Settings.MameOptPrintClub;
+    ChkSimulator.Checked     := Settings.MameOptSimulator;
+    ChkTableTop.Checked      := Settings.MameOptTableTop;
+    ChkQuiz.Checked          := Settings.MameOptQuiz;
+    ChkUtilities.Checked     := Settings.MameOptUtilities;
+    ChkCompanySplit.Checked  := Settings.MameOptCompany;
+    ChkGenreSplit.Checked    := Settings.MameOptGenre;
+    ChkNPlayersSplit.Checked := Settings.MameOptNPlayers;
+    ChkRatingSplit.Checked   := Settings.MameOptRating;
+    ChkSeriesSplit.Checked   := Settings.MameOptSeries;
+    ChkVersionSplit.Checked  := Settings.MameOptVersion;
+    ChkYearSplit.Checked     := Settings.MameOptYear;
   end;
+
 end;
 
 procedure TFrmMamePrinter.MameXMLLinkLabelClick(Sender: TObject);
@@ -136,38 +139,34 @@ var
 begin
 
    if CmbMame.ItemIndex <>-1 then
-        MainFrm.Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
 
-        MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-        MainFrm.Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
-
-        //and here's all the checkbox settings
         With MainFrm do
         begin
-        Settings.MameOptBios        := ChkBios.Checked;
-        Settings.MameOptCasino      := ChkCasino.Checked;
-        Settings.MameOptClones      := ChkClones.Checked;
-        Settings.MameOptMature      := ChkMature.Checked;
-        Settings.MameOptMechanical  := ChkMechanical.Checked;
-        Settings.MameOptMess        := ChkMess.Checked;
-        Settings.MameOptPreliminary := ChkPreliminary.Checked;
-        Settings.MameOptPrintClub   := ChkPrintClub.Checked;
-        Settings.MameOptSimulator   := ChkSimulator.Checked;
-        Settings.MameOptTableTop    := ChkTableTop.Checked;
-        Settings.MameOptQuiz        := ChkQuiz.Checked;
-        Settings.MameOptUtilities   := ChkUtilities.Checked;
-        Settings.MameOptCompany     := ChkCompanySplit.Checked;
-        Settings.MameOptGenre       := ChkGenreSplit.Checked;
-        Settings.MameOptNPlayers    := ChkNPlayersSplit.Checked;
-        Settings.MameOptRating      := ChkRatingSplit.Checked;
-        Settings.MameOptSeries      := ChkSeriesSplit.Checked;
-        Settings.MameOptVersion     := ChkVersionSplit.Checked;
-        Settings.MameOptYear        := ChkYearSplit.Checked;
-
+          Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
+          Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+          Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
+          //and here's all the checkbox settings
+          Settings.MameOptBios        := ChkBios.Checked;
+          Settings.MameOptCasino      := ChkCasino.Checked;
+          Settings.MameOptClones      := ChkClones.Checked;
+          Settings.MameOptMature      := ChkMature.Checked;
+          Settings.MameOptMechanical  := ChkMechanical.Checked;
+          Settings.MameOptMess        := ChkMess.Checked;
+          Settings.MameOptPreliminary := ChkPreliminary.Checked;
+          Settings.MameOptPrintClub   := ChkPrintClub.Checked;
+          Settings.MameOptSimulator   := ChkSimulator.Checked;
+          Settings.MameOptTableTop    := ChkTableTop.Checked;
+          Settings.MameOptQuiz        := ChkQuiz.Checked;
+          Settings.MameOptUtilities   := ChkUtilities.Checked;
+          Settings.MameOptCompany     := ChkCompanySplit.Checked;
+          Settings.MameOptGenre       := ChkGenreSplit.Checked;
+          Settings.MameOptNPlayers    := ChkNPlayersSplit.Checked;
+          Settings.MameOptRating      := ChkRatingSplit.Checked;
+          Settings.MameOptSeries      := ChkSeriesSplit.Checked;
+          Settings.MameOptVersion     := ChkVersionSplit.Checked;
+          Settings.MameOptYear        := ChkYearSplit.Checked;
+          Settings.SaveAllSettings();
         end;
-
-        MainFrm.Settings.SaveAllSettings();
-
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
 

@@ -3,8 +3,8 @@ object FrmMamePrinter: TFrmMamePrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print MAME Romdata'
-  ClientHeight = 570
-  ClientWidth = 866
+  ClientHeight = 598
+  ClientWidth = 830
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,30 +18,30 @@ object FrmMamePrinter: TFrmMamePrinter
   TextHeight = 16
   object lblMAME: TLabel
     Left = 48
-    Top = 293
+    Top = 349
     Width = 132
     Height = 16
     Caption = 'Mame Emulator to call'
   end
   object MameExtrasLabel: TLabel
     Left = 48
-    Top = 352
-    Width = 313
-    Height = 18
+    Top = 408
+    Width = 294
+    Height = 16
     Caption = 'Mame Extras Dir (required for dats, info and icons)'
     WordWrap = True
   end
   object MameXMLLabel: TLabel
     Left = 48
-    Top = 423
-    Width = 129
-    Height = 15
+    Top = 463
+    Width = 121
+    Height = 16
     Caption = 'Mame XML Location'
     WordWrap = True
   end
   object Label2: TLabel
-    Left = 216
-    Top = 423
+    Left = 215
+    Top = 463
     Width = 96
     Height = 16
     Caption = 'Download from: '
@@ -54,8 +54,8 @@ object FrmMamePrinter: TFrmMamePrinter
     WordWrap = True
   end
   object MameXMLLinkLabel: TLabel
-    Left = 336
-    Top = 421
+    Left = 331
+    Top = 461
     Width = 358
     Height = 18
     Cursor = crHandPoint
@@ -72,15 +72,45 @@ object FrmMamePrinter: TFrmMamePrinter
     ShowHint = True
     OnClick = MameXMLLinkLabelClick
   end
-  object MamePrintDescLabel: TLabel
-    Left = 48
-    Top = 8
-    Width = 433
+  object MamePrintDescLabel1: TLabel
+    Left = 24
+    Top = 16
+    Width = 747
+    Height = 32
+    Caption = 
+      'Filter the MAME XML List to make a romdata in this folder, and o' +
+      'ptional collections of romdatas in subfolders'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object MamePrintDescLabel2: TLabel
+    Left = 24
+    Top = 47
+    Width = 466
+    Height = 19
+    Caption = 'Please make/choose an empty source folder to print into'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object MamePrintDescLabel3: TLabel
+    Left = 24
+    Top = 79
+    Width = 457
     Height = 48
     Caption = 
-      'Filter the MAME XML List to make a romdata in this folder, and c' +
-      'ollection romdatas in subfolders. Too many collections slows Qui' +
-      'ckPlay down. Please choose an empty source folder.'
+      'You can run this a number of times in different source folders o' +
+      'r subfolders, But don'#39't run this too many times or the number of' +
+      ' collections will slow QuickPlay down'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -14
@@ -90,8 +120,8 @@ object FrmMamePrinter: TFrmMamePrinter
     WordWrap = True
   end
   object GrpFilter: TGroupBox
-    Left = 48
-    Top = 72
+    Left = 46
+    Top = 144
     Width = 435
     Height = 185
     Caption = 'Filters'
@@ -99,7 +129,7 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object CmbMame: TComboBox
     Left = 216
-    Top = 290
+    Top = 346
     Width = 345
     Height = 24
     Style = csDropDownList
@@ -108,7 +138,7 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object BtnOK: TButton
     Left = 597
-    Top = 517
+    Top = 549
     Width = 92
     Height = 31
     Caption = '&Go'
@@ -116,8 +146,8 @@ object FrmMamePrinter: TFrmMamePrinter
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 749
-    Top = 517
+    Left = 720
+    Top = 549
     Width = 92
     Height = 31
     Cancel = True
@@ -127,14 +157,14 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object TxtMameExtrasDirPath: TEdit
     Left = 385
-    Top = 349
+    Top = 405
     Width = 321
     Height = 24
     TabOrder = 3
   end
   object BtnMameExtrasDirFind: TButton
     Left = 729
-    Top = 348
+    Top = 404
     Width = 32
     Height = 27
     Caption = '...'
@@ -142,8 +172,8 @@ object FrmMamePrinter: TFrmMamePrinter
     OnClick = BtnMameExtrasDirFindClick
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 201
-    Top = 458
+    Left = 256
+    Top = 503
     Width = 505
     Height = 24
     ClipboardCommands = []
@@ -152,8 +182,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 5
   end
   object ChkClones: TCheckBox
-    Left = 72
-    Top = 168
+    Left = 70
+    Top = 240
     Width = 97
     Height = 17
     Hint = 'clones'
@@ -161,8 +191,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 7
   end
   object ChkBios: TCheckBox
-    Left = 72
-    Top = 92
+    Left = 70
+    Top = 164
     Width = 105
     Height = 17
     Hint = 'bios'
@@ -170,8 +200,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 8
   end
   object ChkMature: TCheckBox
-    Left = 216
-    Top = 92
+    Left = 214
+    Top = 164
     Width = 97
     Height = 17
     Hint = 'mature'
@@ -179,8 +209,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 6
   end
   object ChkMess: TCheckBox
-    Left = 216
-    Top = 128
+    Left = 214
+    Top = 200
     Width = 97
     Height = 17
     Hint = 'mess'
@@ -188,8 +218,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 9
   end
   object ChkMechanical: TCheckBox
-    Left = 72
-    Top = 208
+    Left = 70
+    Top = 280
     Width = 105
     Height = 17
     Hint = 'mechanical'
@@ -198,8 +228,8 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object GrpSubfolder: TGroupBox
     Left = 496
-    Top = 32
-    Width = 345
+    Top = 72
+    Width = 313
     Height = 193
     Caption = 'Subfolder Collections'
     TabOrder = 11
@@ -268,8 +298,8 @@ object FrmMamePrinter: TFrmMamePrinter
     end
   end
   object ChkCasino: TCheckBox
-    Left = 72
-    Top = 128
+    Left = 70
+    Top = 200
     Width = 97
     Height = 17
     Hint = 'casino'
@@ -277,8 +307,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 12
   end
   object ChkPrintClub: TCheckBox
-    Left = 216
-    Top = 208
+    Left = 214
+    Top = 280
     Width = 97
     Height = 17
     Hint = 'printclub'
@@ -286,8 +316,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 13
   end
   object ChkSimulator: TCheckBox
-    Left = 368
-    Top = 128
+    Left = 366
+    Top = 200
     Width = 97
     Height = 17
     Hint = 'simulator'
@@ -295,8 +325,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 14
   end
   object ChkTableTop: TCheckBox
-    Left = 368
-    Top = 168
+    Left = 366
+    Top = 240
     Width = 97
     Height = 17
     Hint = 'tabletop'
@@ -304,8 +334,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 15
   end
   object ChkQuiz: TCheckBox
-    Left = 368
-    Top = 92
+    Left = 366
+    Top = 164
     Width = 97
     Height = 17
     Hint = 'quiz'
@@ -313,8 +343,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 16
   end
   object ChkUtilities: TCheckBox
-    Left = 368
-    Top = 208
+    Left = 366
+    Top = 280
     Width = 97
     Height = 17
     Hint = 'utilities'
@@ -322,8 +352,8 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 17
   end
   object ChkPreliminary: TCheckBox
-    Left = 216
-    Top = 168
+    Left = 214
+    Top = 240
     Width = 97
     Height = 17
     Hint = 'prelininary'

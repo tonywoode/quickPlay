@@ -3,7 +3,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print Mame File Manager Romdata'
-  ClientHeight = 439
+  ClientHeight = 449
   ClientWidth = 561
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,7 +18,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   TextHeight = 16
   object lblMAME: TLabel
     Left = 36
-    Top = 136
+    Top = 168
     Width = 132
     Height = 16
     Caption = 'Mame Emulator to call'
@@ -31,9 +31,9 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object MameExtrasLabel: TLabel
     Left = 36
-    Top = 207
-    Width = 309
-    Height = 18
+    Top = 239
+    Width = 294
+    Height = 16
     Caption = 'Mame Extras Dir (required for dats, info and icons)'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -45,7 +45,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object MameXMLLabel: TLabel
     Left = 36
-    Top = 283
+    Top = 315
     Width = 121
     Height = 16
     Caption = 'Mame XML Location'
@@ -59,7 +59,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object MameFileManagerLabel: TLabel
     Left = 36
-    Top = 67
+    Top = 99
     Width = 213
     Height = 16
     Caption = 'Mame File Manager text file location'
@@ -79,7 +79,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Caption = 'Import a Mame File Manager TXT file into this folder'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = 16
+    Font.Height = -14
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
@@ -106,7 +106,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object MameXMLLinkLabel: TLabel
     Left = 180
-    Top = 310
+    Top = 342
     Width = 358
     Height = 18
     Cursor = crHandPoint
@@ -125,7 +125,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object Label2: TLabel
     Left = 61
-    Top = 312
+    Top = 344
     Width = 96
     Height = 16
     Caption = 'Download from: '
@@ -137,9 +137,23 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     ParentFont = False
     WordWrap = True
   end
+  object MamePrintDescLabel2: TLabel
+    Left = 15
+    Top = 69
+    Width = 392
+    Height = 16
+    Caption = 'Please make/choose an empty source folder to print into'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
   object CmbMame: TComboBox
     Left = 149
-    Top = 165
+    Top = 197
     Width = 389
     Height = 24
     Style = csDropDownList
@@ -148,7 +162,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object BtnOK: TButton
     Left = 325
-    Top = 400
+    Top = 408
     Width = 92
     Height = 31
     Caption = '&Go'
@@ -157,7 +171,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object BtnCancel: TButton
     Left = 446
-    Top = 400
+    Top = 408
     Width = 92
     Height = 31
     Cancel = True
@@ -167,14 +181,14 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object TxtMameExtrasDirPath: TEdit
     Left = 149
-    Top = 239
+    Top = 271
     Width = 332
     Height = 24
     TabOrder = 3
   end
   object BtnMameExtrasDirFind: TButton
     Left = 506
-    Top = 238
+    Top = 270
     Width = 32
     Height = 27
     Caption = '...'
@@ -183,7 +197,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
     Left = 149
-    Top = 343
+    Top = 375
     Width = 389
     Height = 24
     ClipboardCommands = []
@@ -193,7 +207,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object TxtMameFileManagerFilePath: TJvFilenameEdit
     Left = 149
-    Top = 103
+    Top = 135
     Width = 389
     Height = 24
     ClipboardCommands = []

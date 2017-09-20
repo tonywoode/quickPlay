@@ -30,13 +30,21 @@ implementation
 {$R *.dfm}
 
 procedure TFrmMameMessPrinter.RadSoftlistMameChoiceClick(Sender: TObject);
+var
+  MameType : String;
+
 begin
-  //:= RadMAMEIconsFile.Checked;
-  //:= RadMAMEIconsDir.Checked;
+  if (RadSoftlistMameChoice.Checked) then MameType := 'mame';
+  if (RadSoftlistRetroarchChoice.Checked) then MameType := 'retroarch';
+
+  //we'll be needing the currently selected romdata folder
+
 end;
 
 
-//TODO: this function shouldn't sit in the frontend, it shuld be doing something else useful
+//TODO: I found this usable dircopy fn at http://www.delphigroups.info/2/7a/117984.html
+// obv it needs ShellAPI to be in uses above. but then i found that john has a dir copy method in his own package
+// (see it in action in uSettings
 function CopyFolder(const SrcFolder
                     , DestFolder: String
                     ; iFileOp: Integer

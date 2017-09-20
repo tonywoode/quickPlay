@@ -15,32 +15,55 @@ type
     MameMessPrinterDescLabel1: TLabel;
     MameSoftlistChoiceLabel: TLabel;
     MameMessPrinterDescLabel2: TLabel;
+    procedure BtnOKClick(Sender: TObject);
     procedure RadSoftlistMameChoiceClick(Sender: TObject);
   private
-    { Private declarations }
+    MameType : String;
   public
     { Public declarations }
   end;
 
-var
-  FrmMameMessPrinter: TFrmMameMessPrinter;
-
 implementation
+
+uses fMain, uJFile, uQPConst;
 
 {$R *.dfm}
 
+
 procedure TFrmMameMessPrinter.RadSoftlistMameChoiceClick(Sender: TObject);
-var
-  MameType : String;
-
 begin
-  if (RadSoftlistMameChoice.Checked) then MameType := 'mame';
-  if (RadSoftlistRetroarchChoice.Checked) then MameType := 'retroarch';
-
-  //we'll be needing the currently selected romdata folder
-
+  //if (RadSoftlistMameChoice.Checked) then MameType := 'Mame Softlists';
+  //if (RadSoftlistRetroarchChoice.Checked) then MameType := 'RetroArch Softlists';
 end;
 
+
+procedure TFrmMameMessPrinter.BtnOKClick(Sender: TObject);
+var
+ currentFolder, binDir, softlistRootDirPath : String;
+ Process : Boolean;
+
+begin
+  Process := True;
+  if (RadSoftlistMameChoice.Checked) then MameType := 'Mame Softlists';
+  if (RadSoftlistRetroarchChoice.Checked) then MameType := 'RetroArch Softlists';
+ //we need to know what romdata directory the user is sitting in, and if its not empty that may
+   // indicate they don't know it'll get overwritten
+   if (MainFrm.RomList.Count > 0) then
+     if (MessageDlg(QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR, mtInformation, [mbYes, mbNo], 0) = mrNo) then Process := False;
+
+     if (Process = True) then
+      begin
+      //the romdata folde the user is in
+      currentFolder := StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]);
+      //the bin directory (source)
+      binDir := MainFrm.Settings.Paths.BinDir;
+      //the softlist dirs are crudely sitting in the root of the bindir
+      softlistRootDirPath := binDir + MameType;
+      //we need to warn the user if the directory isn't empty (slightly less important this time)
+      DirCopy( softlistRootDirPath, currentFolder, True);
+      MainFrm.ActRefreshExecute(Sender);
+    end;
+end;
 
 //TODO: I found this usable dircopy fn at http://www.delphigroups.info/2/7a/117984.html
 // obv it needs ShellAPI to be in uses above. but then i found that john has a dir copy method in his own package

@@ -59,7 +59,9 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     Width = 65
     Height = 17
     Caption = 'MAME'
+    Checked = True
     TabOrder = 0
+    TabStop = True
     OnClick = RadSoftlistMameChoiceClick
   end
   object RadSoftlistRetroarchChoice: TRadioButton
@@ -78,6 +80,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     Height = 31
     Caption = '&Go'
     TabOrder = 2
+    OnClick = BtnOKClick
   end
   object BtnCancel: TButton
     Left = 343

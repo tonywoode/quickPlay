@@ -62,8 +62,6 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
 procedure TFrmMamePrinter.FormShow(Sender: TObject);
 begin
 
-
-
   With MainFrm do
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
@@ -135,8 +133,10 @@ var
   MameExtrasDir: String;
   MameXMLPath: String;
   Flags : String;
+  Process : Boolean;
 
 begin
+   Process := True;
 
    if CmbMame.ItemIndex <>-1 then
 
@@ -170,25 +170,24 @@ begin
 
    Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
 
-   //now lets compose our mametool flags. we need to know what romdata directory the user is sitting in
+   //we need to know what romdata directory the user is sitting in, and if its not empty that may
+   // indicate they don't know it'll get overwritten
    if (MainFrm.RomList.Count > 0) then
-     if (MessageDlg(QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR, mtInformation, [mbYes, mbNo], 0) = mrYes) then
+     if (MessageDlg(QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR, mtInformation, [mbYes, mbNo], 0) = mrNo) then Process := False;
+
+   if (Process = True) then
    begin
-   RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
-   MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
-   MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
-   MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
-
-
-   Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath;
-
-   RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
-
-   //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
-   //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
-   //the below causes index out of bounds but so does Refresh() from main form generally
-   MainFrm.ActRefreshExecute(Sender);
-    end;
+     RomdataFolder := '"' + StringReplace(MainFrm.RomList.FileName, '\ROMData.dat','', [rfIgnoreCase]) + '"';
+     MameExecutablePath := '"' + MainFrm.Settings.MametoolMameExePath + '"';
+     MameExtrasDir := '"' + MainFrm.Settings.MameExtrasDir + '"';
+     MameXMLPath := '"' + MainFrm.Settings.MameXMLPath + '"';
+     Flags := RomdataFolder + ' ' + MameExecutablePath + '' + MameExtrasDir + ' ' + MameXMLPath;
+     RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '',SW_SHOWMINIMIZED);
+     //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
+     //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
+     //the below causes index out of bounds but so does Refresh() from main form generally
+     MainFrm.ActRefreshExecute(Sender);
+   end;
 
   //close the form with the modal result OK
   ModalResult := MrOK;

@@ -270,10 +270,6 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -299,7 +295,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 649
+            Height = 699
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -338,7 +334,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -346,15 +342,11 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 653
+            Height = 703
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -406,10 +398,6 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -439,7 +427,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 649
+            Height = 699
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0
@@ -1284,6 +1272,11 @@ object MainFrm: TMainFrm
         'lder'
       OnExecute = ActMameMFMPrinterExecute
     end
+    object ActMameMessPrinter: TAction
+      Category = 'Mame'
+      Caption = 'ActMameMessPrinter'
+      OnExecute = ActMameMessPrinterExecute
+    end
   end
   object MainMenu: TMainMenu
     AutoHotkeys = maManual
@@ -1492,16 +1485,23 @@ object MainFrm: TMainFrm
       end
       object PrintMAMERomsetinCurrentFolder1: TMenuItem
         Action = ActMamePrinter
-        Caption = 'Print MAME / RetroArch MAME Romdata in Current Folder'
+        Caption = 'Print MAME / RetroArch MAME Romdata in Current Dir'
       end
       object N31: TMenuItem
         Caption = '-'
       end
       object PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem
         Action = ActMameMFMPrinter
-        Caption = 'Print MAME File Manager Text File in Current Folder'
+        Caption = 'Print MAME File Manager Text File in Current Dir'
       end
       object N23: TMenuItem
+        Caption = '-'
+      end
+      object PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem
+        Action = ActMameMessPrinter
+        Caption = 'Print MAME / Retroarch MESS Softlist Romdatas in Current Dir'
+      end
+      object N20: TMenuItem
         Caption = '-'
       end
       object ScanforZiNcROMs1: TMenuItem

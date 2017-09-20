@@ -68,7 +68,8 @@ uses
   uQPCompObj in 'uQPCompObj.pas',
   uVersionCheckThread in 'uVersionCheckThread.pas',
   fMamePrinter in 'fMamePrinter.pas' {FFrmMamePrinter},
-  fMameMFMPrinter in 'fMameMFMPrinter.pas' {FrmMameMFMPrinter};
+  fMameMFMPrinter in 'fMameMFMPrinter.pas' {FrmMameMFMPrinter},
+  fMameMessPrinter in 'fMameMessPrinter.pas' {FrmMameMessPrinter};
 
 {$R *.RES}
 {$R WindowsXP.RES}

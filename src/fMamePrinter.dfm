@@ -75,8 +75,8 @@ object FrmMamePrinter: TFrmMamePrinter
   object MamePrintDescLabel1: TLabel
     Left = 24
     Top = 16
-    Width = 747
-    Height = 32
+    Width = 743
+    Height = 16
     Caption = 
       'Filter the MAME XML List to make a romdata in this folder, and o' +
       'ptional collections of romdatas in subfolders'
@@ -91,8 +91,8 @@ object FrmMamePrinter: TFrmMamePrinter
   object MamePrintDescLabel2: TLabel
     Left = 24
     Top = 47
-    Width = 466
-    Height = 19
+    Width = 392
+    Height = 16
     Caption = 'Please make/choose an empty source folder to print into'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -105,7 +105,7 @@ object FrmMamePrinter: TFrmMamePrinter
   object MamePrintDescLabel3: TLabel
     Left = 24
     Top = 79
-    Width = 457
+    Width = 437
     Height = 48
     Caption = 
       'You can run this a number of times in different source folders o' +

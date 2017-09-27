@@ -115,7 +115,6 @@ begin
    begin
      if CmbMame.ItemIndex <>-1 then
         Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
-
         Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
         Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
         Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
@@ -130,11 +129,12 @@ begin
 
    if (Process = True) then
      begin
-     RomdataFolder := '"' + MainFrm.GetSelectedFolder + '"';
+     //RomdataFolder := '"' + MainFrm.GetSelectedFolder + '"';
+     RomdataFolder := MainFrm.GetSelectedFolder;
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
-     Flags := RomdataFolder;
-     RunProcess('cmd.exe /c ' + Executable + ' ' + Flags, True, '', SW_SHOWMINIMIZED);
-
+     Flags := '--mfm --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
+     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     //RunProcess('cmd.exe /K ' + Executable, True, '', SW_SHOWMINIMIZED);
      //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
      //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
      //the below causes index out of bounds but so does Refresh() from main form generally

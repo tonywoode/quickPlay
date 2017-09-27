@@ -3,8 +3,8 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print Mame File Manager Romdata'
-  ClientHeight = 449
-  ClientWidth = 561
+  ClientHeight = 467
+  ClientWidth = 583
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -86,14 +86,14 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     WordWrap = True
   end
   object MFMLabel: TLabel
-    Left = 211
-    Top = 36
-    Width = 327
+    Left = 217
+    Top = 37
+    Width = 336
     Height = 18
     Cursor = crHandPoint
     Hint = 'right-click to copy to clipboard'
     Align = alCustom
-    Caption = 'https://github.com/phweda/MFM/releases'
+    Caption = 'https://github.com/phweda/MFM/releases/'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlue
     Font.Height = -15
@@ -105,7 +105,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     OnClick = MFMLabelClick
   end
   object MameXMLLinkLabel: TLabel
-    Left = 180
+    Left = 195
     Top = 342
     Width = 358
     Height = 18
@@ -124,7 +124,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     OnClick = MameXMLLinkLabelClick
   end
   object Label2: TLabel
-    Left = 61
+    Left = 85
     Top = 344
     Width = 96
     Height = 16
@@ -152,17 +152,17 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     WordWrap = True
   end
   object CmbMame: TComboBox
-    Left = 149
-    Top = 197
-    Width = 389
+    Left = 85
+    Top = 200
+    Width = 348
     Height = 24
     Style = csDropDownList
     ItemHeight = 16
     TabOrder = 0
   end
   object BtnOK: TButton
-    Left = 325
-    Top = 408
+    Left = 357
+    Top = 419
     Width = 92
     Height = 31
     Caption = '&Go'
@@ -170,8 +170,8 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 446
-    Top = 408
+    Left = 461
+    Top = 419
     Width = 92
     Height = 31
     Cancel = True
@@ -180,14 +180,14 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     TabOrder = 2
   end
   object TxtMameExtrasDirPath: TEdit
-    Left = 149
+    Left = 85
     Top = 271
-    Width = 332
+    Width = 420
     Height = 24
     TabOrder = 3
   end
   object BtnMameExtrasDirFind: TButton
-    Left = 506
+    Left = 521
     Top = 270
     Width = 32
     Height = 27
@@ -196,21 +196,23 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     OnClick = BtnMameExtrasDirFindClick
   end
   object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 149
-    Top = 375
-    Width = 389
+    Left = 85
+    Top = 378
+    Width = 468
     Height = 24
     ClipboardCommands = []
+    AddQuotes = False
     Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
     ButtonWidth = 27
     TabOrder = 5
   end
   object TxtMameFileManagerFilePath: TJvFilenameEdit
-    Left = 149
-    Top = 135
-    Width = 389
+    Left = 85
+    Top = 121
+    Width = 468
     Height = 24
     ClipboardCommands = []
+    AddQuotes = False
     Filter = 'TXT files (*.txt)|*.txt|All files (*.*)|*.*'
     ButtonWidth = 27
     TabOrder = 6

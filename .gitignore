@@ -55,5 +55,6 @@ qp/EFind/Gamebase.ini
 #Starting editing from a mac
 *.DS_Store
 
-#starting some node
+#nodejs specific
 node_modules/
+QPNode.exe_test

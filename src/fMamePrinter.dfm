@@ -123,7 +123,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Left = 46
     Top = 144
     Width = 435
-    Height = 185
+    Height = 169
     Caption = 'Filters'
     TabOrder = 19
   end
@@ -188,6 +188,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'clones'
     Caption = 'Clones'
+    Checked = True
+    State = cbChecked
     TabOrder = 7
   end
   object ChkBios: TCheckBox
@@ -197,6 +199,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'bios'
     Caption = 'Bios'
+    Checked = True
+    State = cbChecked
     TabOrder = 8
   end
   object ChkMature: TCheckBox
@@ -206,6 +210,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'mature'
     Caption = 'Mature'
+    Checked = True
+    State = cbChecked
     TabOrder = 6
   end
   object ChkMess: TCheckBox
@@ -215,6 +221,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'mess'
     Caption = 'Mess'
+    Checked = True
+    State = cbChecked
     TabOrder = 9
   end
   object ChkMechanical: TCheckBox
@@ -224,6 +232,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'mechanical'
     Caption = 'Mechanical'
+    Checked = True
+    State = cbChecked
     TabOrder = 10
   end
   object GrpSubfolder: TGroupBox
@@ -304,6 +314,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'casino'
     Caption = 'Casino'
+    Checked = True
+    State = cbChecked
     TabOrder = 12
   end
   object ChkPrintClub: TCheckBox
@@ -313,6 +325,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'printclub'
     Caption = 'PrintClub'
+    Checked = True
+    State = cbChecked
     TabOrder = 13
   end
   object ChkSimulator: TCheckBox
@@ -322,6 +336,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'simulator'
     Caption = 'Simulator'
+    Checked = True
+    State = cbChecked
     TabOrder = 14
   end
   object ChkTableTop: TCheckBox
@@ -331,6 +347,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'tabletop'
     Caption = 'TableTop'
+    Checked = True
+    State = cbChecked
     TabOrder = 15
   end
   object ChkQuiz: TCheckBox
@@ -340,6 +358,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'quiz'
     Caption = 'Quiz'
+    Checked = True
+    State = cbChecked
     TabOrder = 16
   end
   object ChkUtilities: TCheckBox
@@ -349,6 +369,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'utilities'
     Caption = 'Utilities'
+    Checked = True
+    State = cbChecked
     TabOrder = 17
   end
   object ChkPreliminary: TCheckBox
@@ -358,6 +380,8 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 17
     Hint = 'prelininary'
     Caption = 'Preliminary'
+    Checked = True
+    State = cbChecked
     TabOrder = 18
   end
 end

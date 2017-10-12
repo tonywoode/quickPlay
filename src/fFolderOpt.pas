@@ -189,6 +189,8 @@ Var
 
 begin
 
+
+
   {-----------------------------------------------}
   {Set up the Folder Name at forms caption}
 
@@ -238,15 +240,7 @@ begin
     messIni         := TMemIniFile.Create(messIniPath);
     messIni.readSectionValues('ROOT_FOLDER', messIcons);
 
-     iconPaths := TStringList.Create;
-
-//    for I := 0 to MessIcons.count - 1 do
-//    begin
-//      thisMessGame := messIcons[I];
-//      thisMessGame := messIconDirPath + thisMessGame + '.ico';
-      //if fileexists(thisMessGame) then
-//      iconPaths.Add(thisMessGame);
-//    end;
+    iconPaths := TStringList.Create;
 
     find.Filter := '*.ico';
     Find.Recurse := False;
@@ -254,18 +248,18 @@ begin
     //find quickplay's own icons and add to a list
     Find.Directory := qpIconDirPath;
     Find.Execute;
-
     tmpStrings := TStringList.Create;
-    For i := 0 to Find.TotalFile-1 do
-      iconPaths.Add(Find.Files[i]);
+    For i := 0 to Find.TotalFile-1 do iconPaths.Add(Find.Files[i]);
 
-    //find the mame icons and append to the same list
+    //find mame's mess icons and append them to the same list
+    // why not all the mame icons? it takes a very long time.....
     Find.Directory := messIconDirPath;
     Find.Execute;
     For j := 0 to Find.TotalFile-1 do
     begin
+    //get FindFile to tell you a mess system, ask if it was in mame's mess ini
     messIconFile := ExtractFileName(Find.Files[j]);
-    SetLength(messIconFile, Length(messIconFile) - 4);
+    SetLength(messIconFile, Length(messIconFile) - 4);   //remove '.ico'
     if (messIcons.IndexOf(messIconFile) >=0) then iconPaths.Add(Find.Files[j])
     end;
 
@@ -286,11 +280,15 @@ begin
         end;
       end;
 
+
+
       If tmpStrings.Count > 0 then
         MessageDlg(QP_FOLOPTFRM_BAD_ICONS + tmpStrings.GetText, mtError, [mbOK], 0);
 
     Finally
       FreeAndNil(tmpStrings);
+      CmbIcon.ItemsEx.CaseSensitive := false;
+      CmbIcon.ItemsEx.Sort;
     end;
 
   finally

@@ -180,12 +180,13 @@ Var
   Image : TIcon;
   Find : ThhFindFile;
   filehandle : String;
-  Ini : TMemIniFile;
+  Ini, messIni : TMemIniFile;
   List : TMemoryStream;
-  iconPaths, tmpStrings : TStringList;
+  iconPaths, tmpStrings, messIcons : TStringList;
   qpIconDirPath : String;
-  messIconDirPath : String;
+  messIconDirPath, messIniPath, thisMessGame, messIconFile : String;
   oldSize : Integer;
+
 begin
 
   {-----------------------------------------------}
@@ -226,12 +227,26 @@ begin
 
   Image := nil;
   Find := ThhFindFile.Create(Self);
+  messIcons := TStringList.Create;
 
   try
     Image := TIcon.Create;
 	  Ini := TMemIniFile.Create(MainFrm.Settings.Paths.SettingsFile);
     qpIconDirPath := MainFrm.Settings.Paths.AppDir + 'icons\'   ;
     messIconDirPath := Ini.ReadString('MAME', 'MameExtrasPath', '') + '\icons\';
+    messIniPath     := Ini.ReadString('MAME', 'MameExtrasPath', '') + '\folders\mess.ini';
+    messIni         := TMemIniFile.Create(messIniPath);
+    messIni.readSectionValues('ROOT_FOLDER', messIcons);
+
+     iconPaths := TStringList.Create;
+
+//    for I := 0 to MessIcons.count - 1 do
+//    begin
+//      thisMessGame := messIcons[I];
+//      thisMessGame := messIconDirPath + thisMessGame + '.ico';
+      //if fileexists(thisMessGame) then
+//      iconPaths.Add(thisMessGame);
+//    end;
 
     find.Filter := '*.ico';
     Find.Recurse := False;
@@ -239,7 +254,7 @@ begin
     //find quickplay's own icons and add to a list
     Find.Directory := qpIconDirPath;
     Find.Execute;
-    iconPaths := TStringList.Create;
+
     tmpStrings := TStringList.Create;
     For i := 0 to Find.TotalFile-1 do
       iconPaths.Add(Find.Files[i]);
@@ -248,7 +263,11 @@ begin
     Find.Directory := messIconDirPath;
     Find.Execute;
     For j := 0 to Find.TotalFile-1 do
-      iconPaths.Add(Find.Files[j]);
+    begin
+    messIconFile := ExtractFileName(Find.Files[j]);
+    SetLength(messIconFile, Length(messIconFile) - 4);
+    if (messIcons.IndexOf(messIconFile) >=0) then iconPaths.Add(Find.Files[j])
+    end;
 
     try
       For i := 0 to iconPaths.Count-1 do

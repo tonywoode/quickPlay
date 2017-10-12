@@ -113,7 +113,6 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitTop = 756
   end
   object PanContent: TPanel
     Left = 0
@@ -123,7 +122,6 @@ object MainFrm: TMainFrm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 756
     object SplitMain: TSplitter
       Left = 209
       Top = 0
@@ -150,7 +148,6 @@ object MainFrm: TMainFrm
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 756
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
@@ -160,10 +157,8 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitHeight = 756
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitHeight = 728
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -207,7 +202,6 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
-            ExplicitHeight = 699
             Columns = <
               item
                 Position = 0
@@ -479,7 +473,6 @@ object MainFrm: TMainFrm
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 756
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -621,7 +614,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitHeight = 703
         Columns = <
           item
             Position = 0
@@ -800,7 +792,6 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitHeight = 756
     end
     object Edit1: TEdit
       Left = 640

@@ -961,6 +961,7 @@ End;
 procedure TQPRom.SetMameMultiplayer(Ini : TMemIniFile);
 var
   Temp : String;  // Variable for holding search criteria.
+
 Begin
 
   //This function determines a games multiplayer mode. For MAME only!!

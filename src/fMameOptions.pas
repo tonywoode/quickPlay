@@ -108,7 +108,7 @@ begin
   end;
 
   if selectedFile <> '' then
-     Flags := '';
+     Flags := '--scan';
      //root the call in the appdir else node gets confused...
      Executable := MainFrm.Settings.Paths.QPNodeFile;
      RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);

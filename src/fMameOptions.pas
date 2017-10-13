@@ -8,12 +8,10 @@ uses
 
 type
   TFrmMameOptions = class(TJWinFontForm)
-    ExtrasBtnSet: TButton;
+    MameOptsOk: TButton;
     BtnCancel: TButton;
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
-    TxtMAMEXMLFilePath: TJvFilenameEdit;
-    XMLBtnScan: TButton;
     ExtrasGroupBox: TGroupBox;
     ExtrasTxtLbl1: TLabel;
     XMLGroupBox: TGroupBox;
@@ -22,18 +20,22 @@ type
     XMLTxtLbl2: TLabel;
     XMLEdit: TEdit;
     ExtrasTxtLbl2: TLabel;
-    BtnOk: TButton;
     XMLTxtLbl13: TLabel;
-    ExtrasEdit: TEdit;
+    BtnXMLScan: TButton;
+    procedure BtnXMLScanClick(Sender: TObject);
     procedure MameExtrasLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure ExtrasBtnSetClick(Sender: TObject);
+    procedure BtnMameOptsOkClick(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
   end;
+
+const
+  StatusNoExtras = 'select Mame Extras dir first';
+  StatusNotLoaded = 'not loaded';
 
 implementation
 
@@ -43,9 +45,16 @@ uses fMain, uJUtilities, StrUtils, JCLstrings, uQPConst;
 
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);
+
 begin
   TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
-
+  BtnXMLScan.Enabled := False;
+  XMLEdit.Text := StatusNoExtras;
+  if (TXTMameExtrasDirPath.GetTextLen > 0) then
+  begin
+   BtnXMLScan.Enabled := True;
+   XMLEdit.Text := StatusNotLoaded
+  end;
 end;
 
 procedure TFrmMameOptions.MameExtrasLabelClick(Sender: TObject);
@@ -67,10 +76,15 @@ begin
       jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
       if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
         begin
-         if DirectoryExists(jvBrowse.Directory + '/icons/') then
+         if DirectoryExists(jvBrowse.Directory + '/folders/') and
+            DirectoryExists(jvBrowse.Directory + '/dats/')    and
+            DirectoryExists(jvBrowse.Directory + '/icons/')   then
              TxtMameExtrasDirPath.Text := jvBrowse.Directory
-           else
+
+         else
              MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
+             BtnXMLScan.Enabled := True;
+             if (XMLEdit.Text = StatusNoExtras) then XMLEdit.Text := StatusNotLoaded;
          end;
   finally
     FreeAndNil(jvBrowse);
@@ -79,7 +93,14 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMameOptions.ExtrasBtnSetClick(Sender: TObject);
+procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
+begin
+
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
   MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
   MainFrm.Settings.SaveAllSettings();
@@ -90,6 +111,8 @@ begin
   //why not do it in the caller in the main form? just to be consistent with the other mame dialog boxes
    MainFrm.ActRefreshExecute(Sender);
 end;
+
+
 
 
 end.

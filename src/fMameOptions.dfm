@@ -3,7 +3,7 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 619
+  ClientHeight = 588
   ClientWidth = 610
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,11 +18,11 @@ object FrmMameOptions: TFrmMameOptions
   TextHeight = 16
   object XMLGroupBox: TGroupBox
     Left = 24
-    Top = 280
+    Top = 256
     Width = 561
     Height = 260
     Caption = 'Set Mame XML Location'
-    TabOrder = 7
+    TabOrder = 5
     object XMLTxtLbl1: TLabel
       Left = 10
       Top = 32
@@ -36,10 +36,9 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl4: TLabel
       Left = 17
       Top = 158
-      Width = 128
-      Height = 19
+      Width = 108
+      Height = 16
       Caption = 'Mame XML status:'
-      WordWrap = True
     end
     object XMLTxtLbl2: TLabel
       Left = 92
@@ -69,16 +68,16 @@ object FrmMameOptions: TFrmMameOptions
         'en unzip it)'
     end
     object XMLEdit: TEdit
-      Left = 172
-      Top = 150
-      Width = 365
-      Height = 44
+      Left = 164
+      Top = 155
+      Width = 354
+      Height = 27
       AutoSelect = False
       BevelInner = bvNone
       BorderStyle = bsNone
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMaroon
-      Font.Height = -30
+      Font.Height = 25
       Font.Name = 'MS Sans Serif'
       Font.Style = [fsBold]
       ParentColor = True
@@ -87,14 +86,23 @@ object FrmMameOptions: TFrmMameOptions
       TabOrder = 0
       Text = 'not loaded'
     end
+    object BtnXMLScan: TButton
+      Left = 164
+      Top = 200
+      Width = 189
+      Height = 41
+      Caption = 'Choose XML File and Scan'
+      TabOrder = 1
+      OnClick = BtnXMLScanClick
+    end
   end
   object ExtrasGroupBox: TGroupBox
     Left = 24
-    Top = 17
+    Top = 8
     Width = 561
-    Height = 257
+    Height = 225
     Caption = 'Set Mame Extras Dir'
-    TabOrder = 6
+    TabOrder = 4
     object ExtrasTxtLbl1: TLabel
       Left = 10
       Top = 42
@@ -109,43 +117,24 @@ object FrmMameOptions: TFrmMameOptions
     object ExtrasTxtLbl2: TLabel
       Left = 17
       Top = 110
-      Width = 184
-      Height = 19
-      Caption = 'Mame Extras Directory status:'
+      Width = 138
+      Height = 16
+      Caption = 'Mame Extras Directory:'
       WordWrap = True
     end
-    object ExtrasEdit: TEdit
-      Left = 227
-      Top = 99
-      Width = 212
-      Height = 44
-      AutoSelect = False
-      BevelInner = bvNone
-      BorderStyle = bsNone
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clMaroon
-      Font.Height = -30
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
-      ParentColor = True
-      ParentFont = False
-      ReadOnly = True
-      TabOrder = 0
-      Text = 'not loaded'
-    end
   end
-  object ExtrasBtnSet: TButton
-    Left = 471
-    Top = 226
+  object MameOptsOk: TButton
+    Left = 382
+    Top = 533
     Width = 92
     Height = 31
-    Caption = '&Set'
+    Caption = '&Ok'
     TabOrder = 0
-    OnClick = ExtrasBtnSetClick
+    OnClick = BtnMameOptsOkClick
   end
   object BtnCancel: TButton
     Left = 493
-    Top = 565
+    Top = 533
     Width = 92
     Height = 31
     Cancel = True
@@ -155,47 +144,18 @@ object FrmMameOptions: TFrmMameOptions
   end
   object TxtMameExtrasDirPath: TEdit
     Left = 41
-    Top = 181
+    Top = 157
     Width = 422
     Height = 24
     TabOrder = 2
   end
   object BtnMameExtrasDirFind: TButton
-    Left = 493
-    Top = 180
-    Width = 32
+    Left = 485
+    Top = 156
+    Width = 57
     Height = 27
-    Caption = '...'
+    Caption = 'Select'
     TabOrder = 3
     OnClick = BtnMameExtrasDirFindClick
-  end
-  object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 34
-    Top = 492
-    Width = 415
-    Height = 24
-    ClipboardCommands = []
-    Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
-    ButtonWidth = 27
-    TabOrder = 4
-  end
-  object XMLBtnScan: TButton
-    Left = 471
-    Top = 489
-    Width = 92
-    Height = 31
-    Caption = '&Scan'
-    TabOrder = 5
-    OnClick = ExtrasBtnSetClick
-  end
-  object BtnOk: TButton
-    Left = 376
-    Top = 565
-    Width = 98
-    Height = 33
-    Caption = '&OK'
-    Default = True
-    TabOrder = 8
-    OnClick = ExtrasBtnSetClick
   end
 end

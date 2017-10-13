@@ -3,20 +3,32 @@ unit fMameOptions;
 interface
 
 uses
-  Windows, SysUtils, StdCtrls, Controls, Classes, fJWinFontForm, JvSelectDirectory, JvBrowseFolder, Dialogs;
+  Windows, SysUtils, StdCtrls, Controls, Classes, fJWinFontForm, JvSelectDirectory, JvBrowseFolder, Dialogs,
+  Mask, JvExMask, JvToolEdit;
 
 type
   TFrmMameOptions = class(TJWinFontForm)
-    BtnOK: TButton;
+    ExtrasBtnSet: TButton;
     BtnCancel: TButton;
-    MameExtrasLabel: TLabel;
     TxtMameExtrasDirPath: TEdit;
     BtnMameExtrasDirFind: TButton;
-    MameExtrasDescLabel: TLabel;
+    TxtMAMEXMLFilePath: TJvFilenameEdit;
+    XMLBtnScan: TButton;
+    ExtrasGroupBox: TGroupBox;
+    ExtrasTxtLbl1: TLabel;
+    XMLGroupBox: TGroupBox;
+    XMLTxtLbl1: TLabel;
+    XMLTxtLbl4: TLabel;
+    XMLTxtLbl2: TLabel;
+    XMLEdit: TEdit;
+    ExtrasTxtLbl2: TLabel;
+    BtnOk: TButton;
+    XMLTxtLbl13: TLabel;
+    ExtrasEdit: TEdit;
     procedure MameExtrasLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure BtnOKClick(Sender: TObject);
+    procedure ExtrasBtnSetClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,7 +79,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMameOptions.BtnOKClick(Sender: TObject);
+procedure TFrmMameOptions.ExtrasBtnSetClick(Sender: TObject);
 begin
   MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
   MainFrm.Settings.SaveAllSettings();

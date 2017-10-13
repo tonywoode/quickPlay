@@ -40,7 +40,7 @@ object FrmMameOptions: TFrmMameOptions
       Height = 16
       Caption = 'Mame XML status:'
     end
-    object XMLTxtLbl2: TLabel
+    object MameXMLLinkLabel: TLabel
       Left = 92
       Top = 78
       Width = 358
@@ -57,6 +57,7 @@ object FrmMameOptions: TFrmMameOptions
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
+      OnClick = MameXMLLinkLabelClick
     end
     object XMLTxtLbl13: TLabel
       Left = 34

@@ -66,7 +66,8 @@ Type
       _bUseRealEmuIcons : Boolean;
       _bUseRealToolIcons : Boolean;
       _sMameExtrasDir: string;   //root directory for mame assets like icons and ini files
-      _sMameXMLPath: String;     //location of the full mame xml file (--listxml output of mame proper)
+      _sMameXMLPath: String;     //location of the last scanned full mame xml file path (--listxml output of mame proper)
+      _sMameXMLVersion: String;  //qpNode writes this here, the version string in the xml
       _sMametoolMameExePath: String; //the Mame executable last selected in mame options
       _sMameFileManagerFilePath: String; //Path to an output of the program MameFileManger, essentially a mame filter file of rommames
       _sMessIconDir : string;    //icons dir for system/romlist icons in sidebar roms panel.
@@ -179,6 +180,7 @@ Type
       Property UseRealToolIcons : Boolean read _bUseRealToolIcons write _bUseRealToolIcons;
       Property MameExtrasDir : string read _sMameExtrasDir write _sMameExtrasDir;
       Property MameXMLPath : string read _sMameXMLPath write _sMameXMLPath;
+      Property MameXMLVersion : string read _sMameXMLVersion write _sMameXMLVersion;
       Property MametoolMameExePath : string read _sMametoolMameExePath write _sMametoolMameExePath;
       Property MameFileManagerFilePath : string read _sMameFileManagerFilePath write _sMameFileManagerFilePath;
       Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
@@ -687,6 +689,7 @@ begin
       //MAME Settings
       _sMameExtrasDir := Ini.ReadString('MAME', 'MameExtrasPath', '');
       _sMameXMLPath := Ini.ReadString('MAME', 'MameXMLPath', '');
+      _sMameXMLVersion := Ini.ReadString('MAME', 'MameXMLVersion', '');
       _sMametoolMameExePath := Ini.ReadString('MAME', 'MametoolMameExePath', '');
       _sMameFileManagerFilePath := Ini.ReadString('MAME', 'MameFileManagerFilePath', '');
 
@@ -1123,6 +1126,7 @@ begin
     //MAME Options
     Ini.WriteString('MAME', 'MameExtrasPath', self._sMameExtrasDir);
     Ini.WriteString('MAME', 'MameXMLPath', self._sMameXMLPath);
+    Ini.WriteString('MAME', 'MameXMLVersion', self._sMameXMLVersion);
     Ini.WriteString('MAME', 'MametoolMameExePath', self._sMametoolMameExePath);
     Ini.WriteString('MAME', 'MameFileManagerFilePath', self._sMameFileManagerFilePath);
 

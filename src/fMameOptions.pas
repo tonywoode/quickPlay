@@ -17,13 +17,13 @@ type
     XMLGroupBox: TGroupBox;
     XMLTxtLbl1: TLabel;
     XMLTxtLbl4: TLabel;
-    XMLTxtLbl2: TLabel;
+    MameXMLLinkLabel: TLabel;
     XMLEdit: TEdit;
     ExtrasTxtLbl2: TLabel;
     XMLTxtLbl13: TLabel;
     BtnXMLScan: TButton;
+    procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
-    procedure MameExtrasLabelClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
@@ -39,7 +39,7 @@ const
 
 implementation
 
-uses fMain, uJUtilities, StrUtils, JCLstrings, uQPConst;
+uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPConst, ujProcesses;
 
 {$R *.dfm}
 
@@ -55,12 +55,10 @@ begin
    BtnXMLScan.Enabled := True;
    XMLEdit.Text := StatusNotLoaded
   end;
+  if (MainFrm.Settings.MameXMLVersion <> '') and FileExists(MainFrm.Settings.MameXMLPath) then
+    XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
 end;
 
-procedure TFrmMameOptions.MameExtrasLabelClick(Sender: TObject);
-begin
-
-end;
 
 {-----------------------------------------------------------------------------}
 
@@ -94,8 +92,28 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
+var
+  selectedFile, Executable, Flags: string;
+  dlg: TOpenDialog;
 begin
+  selectedFile := '';
+  dlg := TOpenDialog.Create(nil);
+  try
+    dlg.InitialDir := MainFrm.Settings.MameXMLPath;
+    dlg.Filter := 'XML files (*.xml)|*.XML';
+    if dlg.Execute(Handle) then
+      selectedFile := dlg.FileName;
+  finally
+     dlg.Free;
+  end;
 
+  if selectedFile <> '' then
+     Flags := '';
+     //root the call in the appdir else node gets confused...
+     Executable := MainFrm.Settings.Paths.QPNodeFile;
+     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     MainFrm.Settings.MameXMLPath := selectedFile;
+     XMLEdit.Text := MainFrm.Settings.MameXMLVersion;
 end;
 
 {-----------------------------------------------------------------------------}
@@ -112,7 +130,11 @@ begin
    MainFrm.ActRefreshExecute(Sender);
 end;
 
-
+{-----------------------------------------------------------------------------}
+  procedure TFrmMameOptions.MameXMLLinkLabelClick(Sender: TObject);
+begin
+  ShellExecute(Handle, 'open', PChar(MameXMLLinkLabel.Caption), '', '', sw_Show);
+end;
 
 
 end.

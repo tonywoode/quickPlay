@@ -53,12 +53,13 @@ begin
   if (TXTMameExtrasDirPath.GetTextLen > 0) then
   begin
    BtnXMLScan.Enabled := True;
-   XMLEdit.Text := StatusNotLoaded
+   XMLEdit.Text := StatusNotLoaded;
+  if (MainFrm.Settings.MameXMLVersion <> '') and
+    FileExists(MainFrm.Settings.MameXMLPath) then
+      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
   end;
-  if (MainFrm.Settings.MameXMLVersion <> '') and FileExists(MainFrm.Settings.MameXMLPath) then
-    XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
-end;
 
+end;
 
 {-----------------------------------------------------------------------------}
 
@@ -108,14 +109,15 @@ begin
   end;
 
   if selectedFile <> '' then
+  begin
      Flags := '--scan';
      //root the call in the appdir else node gets confused...
      Executable := MainFrm.Settings.Paths.QPNodeFile;
      RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
      MainFrm.Settings.MameXMLPath := selectedFile;
      XMLEdit.Text := MainFrm.Settings.MameXMLVersion;
+  end;
 end;
-
 {-----------------------------------------------------------------------------}
 
 procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);

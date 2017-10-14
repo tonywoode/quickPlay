@@ -706,13 +706,13 @@ begin
       _bMameOptTableTop := Ini.ReadBool('MAME', 'MameOptTableTop', True);
       _bMameOptQuiz := Ini.ReadBool('MAME', 'MameOptQuiz', True);
       _bMameOptUtilities := Ini.ReadBool('MAME', 'MameOptUtilities', True);
-      _bMameOptCompany := Ini.ReadBool('MAME', 'MameOptCompany', True);
-      _bMameOptGenre := Ini.ReadBool('MAME', 'MameOptGenre', True);
-      _bMameOptNPlayers := Ini.ReadBool('MAME', 'MameOptNPlayers', True);
-      _bMameOptRating := Ini.ReadBool('MAME', 'MameOptRating', True);
-      _bMameOptSeries := Ini.ReadBool('MAME', 'MameOptSeries', True);
-      _bMameOptVersion := Ini.ReadBool('MAME', 'MameOptVersion', True);
-      _bMameOptYear := Ini.ReadBool('MAME', 'MameOptYear', True);
+      _bMameOptCompany := Ini.ReadBool('MAME', 'MameOptCompany', False);
+      _bMameOptGenre := Ini.ReadBool('MAME', 'MameOptGenre', False);
+      _bMameOptNPlayers := Ini.ReadBool('MAME', 'MameOptNPlayers', False);
+      _bMameOptRating := Ini.ReadBool('MAME', 'MameOptRating', False);
+      _bMameOptSeries := Ini.ReadBool('MAME', 'MameOptSeries', False);
+      _bMameOptVersion := Ini.ReadBool('MAME', 'MameOptVersion', False);
+      _bMameOptYear := Ini.ReadBool('MAME', 'MameOptYear', False);
 
       //Ratings settings
       _qprRatingsMode := TQPRatingsMode(Ini.ReadInteger('Ratings', 'Mode', 1));

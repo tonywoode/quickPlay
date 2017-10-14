@@ -39,39 +39,6 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mame XML Location'
     WordWrap = True
   end
-  object Label2: TLabel
-    Left = 215
-    Top = 463
-    Width = 96
-    Height = 16
-    Caption = 'Download from: '
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 14
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ParentFont = False
-    WordWrap = True
-  end
-  object MameXMLLinkLabel: TLabel
-    Left = 331
-    Top = 461
-    Width = 358
-    Height = 18
-    Cursor = crHandPoint
-    Hint = 'right-click to copy to clipboard'
-    Align = alCustom
-    Caption = 'https://github.com/mamedev/mame/releases/'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlue
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = True
-    OnClick = MameXMLLinkLabelClick
-  end
   object MamePrintDescLabel1: TLabel
     Left = 24
     Top = 16
@@ -125,7 +92,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Width = 435
     Height = 169
     Caption = 'Filters'
-    TabOrder = 19
+    TabOrder = 16
   end
   object CmbMame: TComboBox
     Left = 216
@@ -155,32 +122,6 @@ object FrmMamePrinter: TFrmMamePrinter
     ModalResult = 2
     TabOrder = 2
   end
-  object TxtMameExtrasDirPath: TEdit
-    Left = 385
-    Top = 405
-    Width = 321
-    Height = 24
-    TabOrder = 3
-  end
-  object BtnMameExtrasDirFind: TButton
-    Left = 729
-    Top = 404
-    Width = 32
-    Height = 27
-    Caption = '...'
-    TabOrder = 4
-    OnClick = BtnMameExtrasDirFindClick
-  end
-  object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 256
-    Top = 503
-    Width = 505
-    Height = 24
-    ClipboardCommands = []
-    Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
-    ButtonWidth = 27
-    TabOrder = 5
-  end
   object ChkClones: TCheckBox
     Left = 70
     Top = 240
@@ -190,7 +131,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Clones'
     Checked = True
     State = cbChecked
-    TabOrder = 7
+    TabOrder = 4
   end
   object ChkBios: TCheckBox
     Left = 70
@@ -201,7 +142,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Bios'
     Checked = True
     State = cbChecked
-    TabOrder = 8
+    TabOrder = 5
   end
   object ChkMature: TCheckBox
     Left = 214
@@ -212,7 +153,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mature'
     Checked = True
     State = cbChecked
-    TabOrder = 6
+    TabOrder = 3
   end
   object ChkMess: TCheckBox
     Left = 214
@@ -223,7 +164,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mess'
     Checked = True
     State = cbChecked
-    TabOrder = 9
+    TabOrder = 6
   end
   object ChkMechanical: TCheckBox
     Left = 70
@@ -234,7 +175,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Mechanical'
     Checked = True
     State = cbChecked
-    TabOrder = 10
+    TabOrder = 7
   end
   object GrpSubfolder: TGroupBox
     Left = 496
@@ -242,7 +183,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Width = 313
     Height = 193
     Caption = 'Subfolder Collections'
-    TabOrder = 11
+    TabOrder = 8
     object ChkGenreSplit: TCheckBox
       Left = 32
       Top = 72
@@ -316,7 +257,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Casino'
     Checked = True
     State = cbChecked
-    TabOrder = 12
+    TabOrder = 9
   end
   object ChkPrintClub: TCheckBox
     Left = 214
@@ -327,7 +268,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'PrintClub'
     Checked = True
     State = cbChecked
-    TabOrder = 13
+    TabOrder = 10
   end
   object ChkSimulator: TCheckBox
     Left = 366
@@ -338,7 +279,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Simulator'
     Checked = True
     State = cbChecked
-    TabOrder = 14
+    TabOrder = 11
   end
   object ChkTableTop: TCheckBox
     Left = 366
@@ -349,7 +290,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'TableTop'
     Checked = True
     State = cbChecked
-    TabOrder = 15
+    TabOrder = 12
   end
   object ChkQuiz: TCheckBox
     Left = 366
@@ -360,7 +301,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Quiz'
     Checked = True
     State = cbChecked
-    TabOrder = 16
+    TabOrder = 13
   end
   object ChkUtilities: TCheckBox
     Left = 366
@@ -371,7 +312,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Utilities'
     Checked = True
     State = cbChecked
-    TabOrder = 17
+    TabOrder = 14
   end
   object ChkPreliminary: TCheckBox
     Left = 214
@@ -382,6 +323,44 @@ object FrmMamePrinter: TFrmMamePrinter
     Caption = 'Preliminary'
     Checked = True
     State = cbChecked
+    TabOrder = 15
+  end
+  object ExtrasEdit: TEdit
+    Left = 366
+    Top = 398
+    Width = 354
+    Height = 27
+    AutoSelect = False
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 17
+    Text = 'not set'
+  end
+  object XMLEdit: TEdit
+    Left = 216
+    Top = 463
+    Width = 354
+    Height = 27
+    AutoSelect = False
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
     TabOrder = 18
+    Text = 'not loaded'
   end
 end

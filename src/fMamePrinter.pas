@@ -13,12 +13,7 @@ type
     BtnOK: TButton;
     BtnCancel: TButton;
     MameExtrasLabel: TLabel;
-    TxtMameExtrasDirPath: TEdit;
-    BtnMameExtrasDirFind: TButton;
-    TxtMAMEXMLFilePath: TJvFilenameEdit;
-    Label2: TLabel;
     MamePrintDescLabel1: TLabel;
-    MameXMLLinkLabel: TLabel;
     GrpSubfolder: TGroupBox;
     GrpFilter: TGroupBox;
     ChkBios: TCheckBox;
@@ -42,8 +37,8 @@ type
     ChkYearSplit: TCheckBox;
     MamePrintDescLabel2: TLabel;
     MamePrintDescLabel3: TLabel;
-    procedure MameXMLLinkLabelClick(Sender: TObject);
-    procedure BtnMameExtrasDirFindClick(Sender: TObject);
+    ExtrasEdit: TEdit;
+    XMLEdit: TEdit;
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
 
@@ -66,10 +61,16 @@ begin
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
-    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
+    ExtrasEdit.Text :=  Settings.MameExtrasDir;
     //Path to Mame XML - why don't we query the mame executatble for the xml? because
     // retroarch MAME doesn't have this ability....
-    TxtMAMEXMLFilePath.Text := Settings.MameXMLPath;
+      if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
+    XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+    else
+    begin
+      XMLEdit.text := 'Use Mame Options to load Mame XML First';
+      BtnOK.Enabled := false
+    end;
     //and here's all the checkboxes
     ChkBios.Checked          := Settings.MameOptBios;
     ChkCasino.Checked        := Settings.MameOptCasino;
@@ -94,35 +95,6 @@ begin
 
 end;
 
-procedure TFrmMamePrinter.MameXMLLinkLabelClick(Sender: TObject);
-begin
-  ShellExecute(Handle, 'open', PChar(MameXMLLinkLabel.Caption), '', '', sw_Show);
-end;
-
-{-----------------------------------------------------------------------------}
-
-procedure TFrmMamePrinter.BtnMameExtrasDirFindClick(Sender: TObject);
-var
-  jvBrowse: TJvBrowseForFolderDialog;
-begin
-  jvBrowse := TJvBrowseForFolderDialog.Create(self);
-
-  try
-
-   if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
-      jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
-      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
-        begin
-         if DirectoryExists(jvBrowse.Directory + '/icons/') then
-             TxtMameExtrasDirPath.Text := jvBrowse.Directory
-           else
-             MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
-         end;
-  finally
-    FreeAndNil(jvBrowse);
-  end;
-end;
-
 {-----------------------------------------------------------------------------}
 
 procedure TFrmMamePrinter.BtnOKClick(Sender: TObject);
@@ -143,8 +115,6 @@ begin
         With MainFrm do
         begin
           Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
-          Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-          Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
           //and here's all the checkbox settings
           Settings.MameOptBios        := ChkBios.Checked;
           Settings.MameOptCasino      := ChkCasino.Checked;

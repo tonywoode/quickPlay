@@ -60,7 +60,7 @@ begin
   With MainFrm do
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    if CmbMame.Items.Count =0 then
+    if CmbMame.Items.Count = 0 then
     begin
       CmbMame.Items.Add(EmuEmptyMessage );
       CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
@@ -80,6 +80,7 @@ begin
       XMLEdit.text := 'Use Mame Options to load Mame XML First';
       BtnOK.Enabled := false
     end;
+
     //and here's all the checkboxes
     ChkBios.Checked          := Settings.MameOptBios;
     ChkCasino.Checked        := Settings.MameOptCasino;

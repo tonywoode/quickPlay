@@ -12,20 +12,14 @@ type
     lblMAME: TLabel;
     BtnOK: TButton;
     BtnCancel: TButton;
-    MameExtrasLabel: TLabel;
-    TxtMameExtrasDirPath: TEdit;
-    BtnMameExtrasDirFind: TButton;
-    TxtMAMEXMLFilePath: TJvFilenameEdit;
     TxtMameFileManagerFilePath: TJvFilenameEdit;
     MameFileManagerLabel: TLabel;
     MFMDescLabel: TLabel;
     MFMLabel: TLabel;
-    MameXMLLinkLabel: TLabel;
-    Label2: TLabel;
     MamePrintDescLabel2: TLabel;
-    procedure MameXMLLinkLabelClick(Sender: TObject);
+    XMLEdit: TEdit;
+    MameXMLLabel: TLabel;
     procedure MFMLabelClick(Sender: TObject);
-    procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
 
@@ -35,7 +29,10 @@ type
     { Public declarations }
   end;
 
-implementation
+const
+  EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+
+  implementation
 
 uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
 
@@ -47,12 +44,27 @@ begin
   With MainFrm do
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+    if CmbMame.Items.Count = 0 then
+    begin
+      CmbMame.Items.Add(EmuEmptyMessage );
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Color := clInactiveBorder;
+      CmbMame.Font.Color := clMaroon;
+      CmbMame.Font.Style := [fsBold];
+      CmbMame.Font.Size := 10;
+      BtnOK.Enabled := false
+    end
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
 
-    TxtMameExtrasDirPath.Text :=  Settings.MameExtrasDir;
-    //Path to Mame XML - why don't we query the mame executatble for the xml? because
-    // retroarch MAME doesn't have this ability....
-    TxtMAMEXMLFilePath.Text := Settings.MameXMLPath;
+    //Do we have a loaded Mame Json?
+    if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
+    XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+    else
+    begin
+      XMLEdit.text := 'Use Mame Options to load Mame XML First';
+      BtnOK.Enabled := false
+    end;
+
     TxtMameFileManagerFilePath.Text := Settings.MameFileManagerFilePath;
   end;
 
@@ -60,40 +72,9 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMameMFMPrinter.MameXMLLinkLabelClick(Sender: TObject);
-begin
-  ShellExecute(Handle, 'open', PChar(MameXMLLinkLabel.Caption), '', '', sw_Show);
-end;
-
-{-----------------------------------------------------------------------------}
-
 procedure TFrmMameMFMPrinter.MFMLabelClick(Sender: TObject);
 begin
   ShellExecute(Handle, 'open', PChar(MFMLabel.Caption), '', '', sw_Show);
-end;
-
-{-----------------------------------------------------------------------------}
-
-procedure TFrmMameMFMPrinter.BtnMameExtrasDirFindClick(Sender: TObject);
-var
-  jvBrowse: TJvBrowseForFolderDialog;
-begin
-  jvBrowse := TJvBrowseForFolderDialog.Create(self);
-
-  try
-
-   if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
-      jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
-      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
-        begin
-         if DirectoryExists(jvBrowse.Directory + '/icons/') then
-             TxtMameExtrasDirPath.Text := jvBrowse.Directory
-           else
-             MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
-         end;
-  finally
-    FreeAndNil(jvBrowse);
-  end;
 end;
 
 {-----------------------------------------------------------------------------}
@@ -115,8 +96,6 @@ begin
    begin
      if CmbMame.ItemIndex <>-1 then
         Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
-        Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-        Settings.MameXMLPath := TxtMAMEXMLFilePath.Text;
         Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
         Settings.SaveAllSettings();
    end;

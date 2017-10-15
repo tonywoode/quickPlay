@@ -3,7 +3,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print Mame File Manager Romdata'
-  ClientHeight = 467
+  ClientHeight = 331
   ClientWidth = 583
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -28,34 +28,6 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-  end
-  object MameExtrasLabel: TLabel
-    Left = 36
-    Top = 239
-    Width = 294
-    Height = 16
-    Caption = 'Mame Extras Dir (required for dats, info and icons)'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 14
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ParentFont = False
-    WordWrap = True
-  end
-  object MameXMLLabel: TLabel
-    Left = 36
-    Top = 315
-    Width = 121
-    Height = 16
-    Caption = 'Mame XML Location'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 14
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ParentFont = False
-    WordWrap = True
   end
   object MameFileManagerLabel: TLabel
     Left = 36
@@ -104,39 +76,6 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     ShowHint = True
     OnClick = MFMLabelClick
   end
-  object MameXMLLinkLabel: TLabel
-    Left = 195
-    Top = 342
-    Width = 358
-    Height = 18
-    Cursor = crHandPoint
-    Hint = 'right-click to copy to clipboard'
-    Align = alCustom
-    Caption = 'https://github.com/mamedev/mame/releases/'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlue
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-    ParentShowHint = False
-    ShowHint = True
-    OnClick = MameXMLLinkLabelClick
-  end
-  object Label2: TLabel
-    Left = 85
-    Top = 344
-    Width = 96
-    Height = 16
-    Caption = 'Download from: '
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 14
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ParentFont = False
-    WordWrap = True
-  end
   object MamePrintDescLabel2: TLabel
     Left = 15
     Top = 69
@@ -151,6 +90,13 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     ParentFont = False
     WordWrap = True
   end
+  object MameXMLLabel: TLabel
+    Left = 33
+    Top = 255
+    Width = 107
+    Height = 16
+    Caption = 'Mame XML Status'
+  end
   object CmbMame: TComboBox
     Left = 85
     Top = 200
@@ -162,7 +108,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object BtnOK: TButton
     Left = 357
-    Top = 419
+    Top = 278
     Width = 92
     Height = 31
     Caption = '&Go'
@@ -171,40 +117,13 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   end
   object BtnCancel: TButton
     Left = 461
-    Top = 419
+    Top = 278
     Width = 92
     Height = 31
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 2
-  end
-  object TxtMameExtrasDirPath: TEdit
-    Left = 85
-    Top = 271
-    Width = 420
-    Height = 24
-    TabOrder = 3
-  end
-  object BtnMameExtrasDirFind: TButton
-    Left = 521
-    Top = 270
-    Width = 32
-    Height = 27
-    Caption = '...'
-    TabOrder = 4
-    OnClick = BtnMameExtrasDirFindClick
-  end
-  object TxtMAMEXMLFilePath: TJvFilenameEdit
-    Left = 85
-    Top = 378
-    Width = 468
-    Height = 24
-    ClipboardCommands = []
-    AddQuotes = False
-    Filter = 'XML files (*.xml)|*.xml|All files (*.*)|*.*'
-    ButtonWidth = 27
-    TabOrder = 5
   end
   object TxtMameFileManagerFilePath: TJvFilenameEdit
     Left = 85
@@ -215,6 +134,25 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     AddQuotes = False
     Filter = 'TXT files (*.txt)|*.txt|All files (*.*)|*.*'
     ButtonWidth = 27
-    TabOrder = 6
+    TabOrder = 3
+  end
+  object XMLEdit: TEdit
+    Left = 199
+    Top = 245
+    Width = 354
+    Height = 27
+    AutoSelect = False
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+    Text = 'not loaded'
   end
 end

@@ -12,7 +12,6 @@ type
     lblMAME: TLabel;
     BtnOK: TButton;
     BtnCancel: TButton;
-    MameExtrasLabel: TLabel;
     MamePrintDescLabel1: TLabel;
     GrpSubfolder: TGroupBox;
     GrpFilter: TGroupBox;
@@ -37,7 +36,6 @@ type
     ChkYearSplit: TCheckBox;
     MamePrintDescLabel2: TLabel;
     MamePrintDescLabel3: TLabel;
-    ExtrasEdit: TEdit;
     XMLEdit: TEdit;
     procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
@@ -48,6 +46,9 @@ type
     { Public declarations }
   end;
 
+const
+  EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+
 implementation
 
 uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
@@ -56,14 +57,22 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
 
 procedure TFrmMamePrinter.FormShow(Sender: TObject);
 begin
-
   With MainFrm do
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
-    ExtrasEdit.Text :=  Settings.MameExtrasDir;
-    //Path to Mame XML - why don't we query the mame executatble for the xml? because
-    // retroarch MAME doesn't have this ability....
+    if CmbMame.Items.Count =0 then
+    begin
+      CmbMame.Items.Add(EmuEmptyMessage );
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Color := clInactiveBorder;
+      CmbMame.Font.Color := clMaroon;
+      CmbMame.Font.Style := [fsBold];
+      CmbMame.Font.Size := 10;
+      BtnOK.Enabled := false
+    end
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+
+    //Do we have a loaded Mame Json?
       if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
     XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else

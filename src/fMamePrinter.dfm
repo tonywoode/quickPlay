@@ -3,7 +3,7 @@ object FrmMamePrinter: TFrmMamePrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print MAME Romdata'
-  ClientHeight = 598
+  ClientHeight = 474
   ClientWidth = 830
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -23,21 +23,12 @@ object FrmMamePrinter: TFrmMamePrinter
     Height = 16
     Caption = 'Mame Emulator to call'
   end
-  object MameExtrasLabel: TLabel
-    Left = 48
-    Top = 408
-    Width = 294
-    Height = 16
-    Caption = 'Mame Extras Dir (required for dats, info and icons)'
-    WordWrap = True
-  end
   object MameXMLLabel: TLabel
     Left = 48
-    Top = 463
-    Width = 121
+    Top = 399
+    Width = 107
     Height = 16
-    Caption = 'Mame XML Location'
-    WordWrap = True
+    Caption = 'Mame XML Status'
   end
   object MamePrintDescLabel1: TLabel
     Left = 24
@@ -91,7 +82,7 @@ object FrmMamePrinter: TFrmMamePrinter
     Top = 144
     Width = 435
     Height = 169
-    Caption = 'Filters'
+    Caption = 'Exclude Filters'
     TabOrder = 16
   end
   object CmbMame: TComboBox
@@ -100,12 +91,19 @@ object FrmMamePrinter: TFrmMamePrinter
     Width = 345
     Height = 24
     Style = csDropDownList
+    Color = clMenu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
     ItemHeight = 16
+    ParentFont = False
     TabOrder = 0
   end
   object BtnOK: TButton
-    Left = 597
-    Top = 549
+    Left = 584
+    Top = 421
     Width = 92
     Height = 31
     Caption = '&Go'
@@ -113,8 +111,8 @@ object FrmMamePrinter: TFrmMamePrinter
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 720
-    Top = 549
+    Left = 704
+    Top = 421
     Width = 92
     Height = 31
     Cancel = True
@@ -325,9 +323,9 @@ object FrmMamePrinter: TFrmMamePrinter
     State = cbChecked
     TabOrder = 15
   end
-  object ExtrasEdit: TEdit
-    Left = 366
-    Top = 398
+  object XMLEdit: TEdit
+    Left = 214
+    Top = 389
     Width = 354
     Height = 27
     AutoSelect = False
@@ -342,25 +340,6 @@ object FrmMamePrinter: TFrmMamePrinter
     ParentFont = False
     ReadOnly = True
     TabOrder = 17
-    Text = 'not set'
-  end
-  object XMLEdit: TEdit
-    Left = 216
-    Top = 463
-    Width = 354
-    Height = 27
-    AutoSelect = False
-    BevelInner = bvNone
-    BorderStyle = bsNone
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clMaroon
-    Font.Height = 25
-    Font.Name = 'MS Sans Serif'
-    Font.Style = [fsBold]
-    ParentColor = True
-    ParentFont = False
-    ReadOnly = True
-    TabOrder = 18
     Text = 'not loaded'
   end
 end

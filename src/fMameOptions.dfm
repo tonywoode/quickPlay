@@ -36,9 +36,9 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl4: TLabel
       Left = 17
       Top = 158
-      Width = 108
+      Width = 105
       Height = 16
-      Caption = 'Mame XML status:'
+      Caption = 'Mame XML status'
     end
     object MameXMLLinkLabel: TLabel
       Left = 92
@@ -118,9 +118,9 @@ object FrmMameOptions: TFrmMameOptions
     object ExtrasTxtLbl2: TLabel
       Left = 17
       Top = 110
-      Width = 138
+      Width = 135
       Height = 16
-      Caption = 'Mame Extras Directory:'
+      Caption = 'Mame Extras Directory'
       WordWrap = True
     end
   end

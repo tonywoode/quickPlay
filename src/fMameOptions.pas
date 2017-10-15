@@ -73,13 +73,15 @@ begin
 
    if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
       jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
-      if (jvBrowse.execute) and (DirectoryExists(jvBrowse.Directory)) then
+      if (jvBrowse.execute) then
         begin
          if DirectoryExists(jvBrowse.Directory + '/folders/') and
             DirectoryExists(jvBrowse.Directory + '/dats/')    and
             DirectoryExists(jvBrowse.Directory + '/icons/')   then
-             TxtMameExtrasDirPath.Text := jvBrowse.Directory
-
+            begin
+             TxtMameExtrasDirPath.Text := jvBrowse.Directory;
+              MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text
+            end
          else
              MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
              BtnXMLScan.Enabled := True;
@@ -110,12 +112,15 @@ begin
 
   if selectedFile <> '' then
   begin
+     MainFrm.Settings.MameXMLPath := selectedFile;
+     MainFrm.Settings.SaveAllSettings(); //else how else will node read what you just did
      Flags := '--scan';
      //root the call in the appdir else node gets confused...
      Executable := MainFrm.Settings.Paths.QPNodeFile;
-     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
-     MainFrm.Settings.MameXMLPath := selectedFile;
-     XMLEdit.Text := MainFrm.Settings.MameXMLVersion;
+     RunProcess('cmd.exe /K ' +  Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     //node should write the mamexml version into the settings now,  so we need to reload the settings from disk
+     mainFrm.Settings.LoadIni();
+     if (MainFrm.Settings.MameXMLVersion <> '') then XMLEdit.Text := MainFrm.Settings.MameXMLVersion;
   end;
 end;
 {-----------------------------------------------------------------------------}

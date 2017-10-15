@@ -56,7 +56,10 @@ begin
    XMLEdit.Text := StatusNotLoaded;
   if (MainFrm.Settings.MameXMLVersion <> '') and
     FileExists(MainFrm.Settings.MameXMLPath) then
-      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+    begin
+      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion;
+      BtnXMLScan.Caption := 'Choose XML File and Re-Scan'
+    end;
   end;
 
 end;

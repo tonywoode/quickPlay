@@ -32,7 +32,7 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object MamePrintDescLabel1: TLabel
     Left = 24
-    Top = 16
+    Top = 25
     Width = 743
     Height = 16
     Caption = 
@@ -62,7 +62,7 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object MamePrintDescLabel3: TLabel
     Left = 24
-    Top = 79
+    Top = 73
     Width = 437
     Height = 48
     Caption = 

@@ -3,7 +3,7 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 588
+  ClientHeight = 561
   ClientWidth = 610
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,7 +18,7 @@ object FrmMameOptions: TFrmMameOptions
   TextHeight = 16
   object XMLGroupBox: TGroupBox
     Left = 24
-    Top = 256
+    Top = 232
     Width = 561
     Height = 260
     Caption = 'Set Mame XML Location'
@@ -60,13 +60,13 @@ object FrmMameOptions: TFrmMameOptions
       OnClick = MameXMLLinkLabelClick
     end
     object XMLTxtLbl13: TLabel
-      Left = 34
+      Left = 10
       Top = 114
-      Width = 454
+      Width = 504
       Height = 16
       Caption = 
-        '(download the zip file named "mame{version number}lx.zip" and th' +
-        'en unzip it)'
+        'download the zip file named "mame{version number}lx.zip", unzip ' +
+        'it, and scan it below'
     end
     object XMLEdit: TEdit
       Left = 164
@@ -90,7 +90,7 @@ object FrmMameOptions: TFrmMameOptions
     object BtnXMLScan: TButton
       Left = 164
       Top = 200
-      Width = 189
+      Width = 205
       Height = 41
       Caption = 'Choose XML File and Scan'
       TabOrder = 1
@@ -99,25 +99,25 @@ object FrmMameOptions: TFrmMameOptions
   end
   object ExtrasGroupBox: TGroupBox
     Left = 24
-    Top = 8
+    Top = 24
     Width = 561
-    Height = 225
+    Height = 185
     Caption = 'Set Mame Extras Dir'
     TabOrder = 4
     object ExtrasTxtLbl1: TLabel
-      Left = 10
-      Top = 42
+      Left = 3
+      Top = 34
       Width = 478
       Height = 32
       Caption = 
         'Setting the location of the MAME extras directory will allow you' +
-        ' to use MAME dats and icons in QuickPlay, and is required by the' +
-        ' MAME Printing menu items'
+        ' to use MAME dats and icons in QuickPlay, and is needed by the M' +
+        'ame XML Scanner'
       WordWrap = True
     end
     object ExtrasTxtLbl2: TLabel
-      Left = 17
-      Top = 110
+      Left = 10
+      Top = 86
       Width = 135
       Height = 16
       Caption = 'Mame Extras Directory'
@@ -126,7 +126,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object MameOptsOk: TButton
     Left = 382
-    Top = 533
+    Top = 509
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -135,7 +135,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object BtnCancel: TButton
     Left = 493
-    Top = 533
+    Top = 509
     Width = 92
     Height = 31
     Cancel = True

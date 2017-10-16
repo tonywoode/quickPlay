@@ -55,7 +55,6 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    WordWrap = True
   end
   object MFMLabel: TLabel
     Left = 217
@@ -88,7 +87,6 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    WordWrap = True
   end
   object MameXMLLabel: TLabel
     Left = 33

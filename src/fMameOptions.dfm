@@ -34,7 +34,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object XMLTxtLbl4: TLabel
-      Left = 17
+      Left = 10
       Top = 158
       Width = 105
       Height = 16
@@ -62,11 +62,12 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl13: TLabel
       Left = 10
       Top = 114
-      Width = 504
-      Height = 16
+      Width = 470
+      Height = 32
       Caption = 
-        'download the zip file named "mame{version number}lx.zip", unzip ' +
+        'Download the zip file named "mame{version number}lx.zip", unzip ' +
         'it, and scan it below'
+      WordWrap = True
     end
     object XMLEdit: TEdit
       Left = 164
@@ -105,7 +106,7 @@ object FrmMameOptions: TFrmMameOptions
     Caption = 'Set Mame Extras Dir'
     TabOrder = 4
     object ExtrasTxtLbl1: TLabel
-      Left = 3
+      Left = 10
       Top = 34
       Width = 478
       Height = 32
@@ -117,11 +118,10 @@ object FrmMameOptions: TFrmMameOptions
     end
     object ExtrasTxtLbl2: TLabel
       Left = 10
-      Top = 86
+      Top = 94
       Width = 135
       Height = 16
       Caption = 'Mame Extras Directory'
-      WordWrap = True
     end
   end
   object MameOptsOk: TButton

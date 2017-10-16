@@ -77,7 +77,7 @@ begin
     XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else
     begin
-      XMLEdit.text := 'Use Mame Options to load Mame XML First';
+      XMLEdit.text := 'Load an XML in Mame Options First';
       BtnOK.Enabled := false
     end;
 

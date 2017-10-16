@@ -58,12 +58,16 @@ begin
 
     //Do we have a loaded Mame Json?
     if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
-    XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else
     begin
-      XMLEdit.text := 'Use Mame Options to load Mame XML First';
+      XMLEdit.text := 'Load an XML in Mame Options First';
       BtnOK.Enabled := false
     end;
+
+    if (Settings.MameXMLVersion <> '') or (CmbMame.Items.Count = 0)  then
+      TxtMameFileManagerFilePath.Enabled := False;
+
 
     TxtMameFileManagerFilePath.Text := Settings.MameFileManagerFilePath;
   end;

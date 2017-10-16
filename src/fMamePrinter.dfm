@@ -33,18 +33,17 @@ object FrmMamePrinter: TFrmMamePrinter
   object MamePrintDescLabel1: TLabel
     Left = 24
     Top = 25
-    Width = 743
+    Width = 700
     Height = 16
     Caption = 
-      'Filter the MAME XML List to make a romdata in this folder, and o' +
-      'ptional collections of romdatas in subfolders'
+      'Filter the MAME XML List to make a romdata in this folder and/or' +
+      ' collections of romdatas in subfolders'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -14
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    WordWrap = True
   end
   object MamePrintDescLabel2: TLabel
     Left = 24
@@ -58,7 +57,6 @@ object FrmMamePrinter: TFrmMamePrinter
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    WordWrap = True
   end
   object MamePrintDescLabel3: TLabel
     Left = 24

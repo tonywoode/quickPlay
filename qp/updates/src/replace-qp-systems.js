@@ -35,7 +35,7 @@ const changesToMake = [
 /*
  * Replace systems in these ini files - you'll find them in emulators.ini twice – once in the title so anything between [], and once in the system= 
  *   it would be BAD to change it in the path to the emulator or paths in media panel
- *   some of these file match onee rule, emulators.ini matches them all
+ *   some of these file match one rule, emulators.ini matches them all
  */
 const iniFiles = ({oldName, newName}) => {
 
@@ -52,7 +52,7 @@ const iniFiles = ({oldName, newName}) => {
       //(helps us out: otherwise we'd need a truly ugly regex to capture a romdata.dat's emulator column, and not the file paths too)
       new RegExp(String.raw`(\[.*)${oldName}`, `g`), //using es6 tagged templates in these  to avoid double-escaping 
       new RegExp(String.raw`(\[RetroArch )${oldName}`, `g`), //sometimes we have a double like "RetroArch GameBoy/GameBoy Color"
-      new RegExp(String.raw`(System=.*)${oldName}`, `g`) //remember these replace sequentially in the 'to', but we don't acutally need it here
+      new RegExp(String.raw`(System=.*)${oldName}`, `g`) //remember these replace sequentially in the 'to', but we don't actually need it here
     ],
 
     to: `$1${newName}`

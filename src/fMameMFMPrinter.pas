@@ -65,7 +65,7 @@ begin
       BtnOK.Enabled := false
     end;
 
-    if (Settings.MameXMLVersion <> '') or (CmbMame.Items.Count = 0)  then
+    if (Settings.MameXMLVersion = '') or (CmbMame.Items.Count = 0)  then
       TxtMameFileManagerFilePath.Enabled := False;
 
 

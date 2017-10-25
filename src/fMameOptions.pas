@@ -3,7 +3,7 @@ unit fMameOptions;
 interface
 
 uses
-  Windows, SysUtils, StdCtrls, Controls, Classes, fJWinFontForm, JvSelectDirectory, JvBrowseFolder, Dialogs,
+  Windows, Graphics, SysUtils, StdCtrls, Controls, Classes, fJWinFontForm, JvSelectDirectory, JvBrowseFolder, Dialogs,
   Mask, JvExMask, JvToolEdit;
 
 type
@@ -22,6 +22,8 @@ type
     ExtrasTxtLbl2: TLabel;
     XMLTxtLbl13: TLabel;
     BtnXMLScan: TButton;
+    CmbMame: TComboBox;
+    lblMAME: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -36,10 +38,11 @@ type
 const
   StatusNoExtras = 'select Mame Extras dir first';
   StatusNotLoaded = 'not loaded';
+  EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
 
 implementation
 
-uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPConst, ujProcesses;
+uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPMiscTypes, uQPConst, ujProcesses, uEmu;
 
 {$R *.dfm}
 
@@ -62,6 +65,21 @@ begin
     end;
   end;
 
+  With MainFrm do
+  begin
+    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+    if CmbMame.Items.Count = 0 then
+    begin
+      CmbMame.Items.Add(EmuEmptyMessage );
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Color := clInactiveBorder;
+      CmbMame.Font.Color := clMaroon;
+      CmbMame.Font.Style := [fsBold];
+      CmbMame.Font.Size := 10;
+      MameOptsOK.Enabled := false
+    end
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+   end;
 end;
 
 {-----------------------------------------------------------------------------}
@@ -99,7 +117,11 @@ end;
 
 procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
 var
-  selectedFile, Executable, Flags: string;
+  selectedFile, Executable, Flags, MameExeName: string;
+  MameExeIndex: Integer;
+  MameEmu : TQPEmu;
+  MameExeFilename : string;
+
   dlg: TOpenDialog;
 begin
   selectedFile := '';
@@ -113,8 +135,15 @@ begin
      dlg.Free;
   end;
 
-  if selectedFile <> '' then
+  if (selectedFile <> '') and (CmbMame.ItemIndex <>-1) then
   begin
+     //we need to get the executable name of the emulator selected in the dropdown, and then save it
+     MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+     MainFrm.Settings.MametoolMameExePath := MameExeName;
+     MameExeIndex := MainFrm.EmuList.IndexOfName(MameExeName);
+     MameEmu := MainFrm.EmuList.GetItemByIndex(MameExeIndex);
+     MameExeFilename := ExtractFileName(MameEmu.ExePath);
+
      MainFrm.Settings.MameXMLPath := selectedFile;
      MainFrm.Settings.SaveAllSettings(); //else how else will node read what you just did
      Flags := '--scan';

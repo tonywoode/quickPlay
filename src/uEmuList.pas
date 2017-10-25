@@ -13,8 +13,9 @@ type
     Function Add(New : TQPEmu) : Integer;
     function GetItem(Index: Integer): TQPEmu;
     procedure SetItem(Index: Integer; AObject: TQPEmu);
-    Function GetItemByIndex(Index : Integer) : TQPEmu;
+
   public
+    Function GetItemByIndex(Index : Integer) : TQPEmu;
     procedure Assign(Source : TQPEmuList);
     Function CopyFrom(new : TQPEmuList; AutoDel : boolean) : TQPEmuAssignResult;
     Procedure DeleteAll(CfgDir : String);

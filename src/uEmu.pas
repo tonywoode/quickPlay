@@ -28,7 +28,7 @@ type
     Function GetIsMAMEArcade() : Boolean;
     Function GetIsZinc() : Boolean;
   public
-
+    property ExePath : TFileName Read _path; //added so the mame scanner can get the user selected mame exe's filename
     Property EmulatorID : Integer read _EmulatorID write _EmulatorID;
     Property System : String Read _system Write _system;
     Property ExtractDest : TQPExtractDest read _ExtractDest Write _ExtractDest;

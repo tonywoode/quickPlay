@@ -3,7 +3,7 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 561
+  ClientHeight = 732
   ClientWidth = 610
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -18,9 +18,9 @@ object FrmMameOptions: TFrmMameOptions
   TextHeight = 16
   object XMLGroupBox: TGroupBox
     Left = 24
-    Top = 232
+    Top = 230
     Width = 561
-    Height = 260
+    Height = 337
     Caption = 'Set Mame XML Location'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
@@ -35,7 +35,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl4: TLabel
       Left = 10
-      Top = 158
+      Top = 214
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
@@ -61,7 +61,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl13: TLabel
       Left = 10
-      Top = 114
+      Top = 162
       Width = 470
       Height = 32
       Caption = 
@@ -69,9 +69,16 @@ object FrmMameOptions: TFrmMameOptions
         'it, and scan it below'
       WordWrap = True
     end
+    object lblMAME: TLabel
+      Left = 10
+      Top = 120
+      Width = 132
+      Height = 16
+      Caption = 'Mame Emulator to call'
+    end
     object XMLEdit: TEdit
       Left = 164
-      Top = 155
+      Top = 211
       Width = 354
       Height = 27
       AutoSelect = False
@@ -90,12 +97,28 @@ object FrmMameOptions: TFrmMameOptions
     end
     object BtnXMLScan: TButton
       Left = 164
-      Top = 200
+      Top = 256
       Width = 205
       Height = 41
       Caption = 'Choose XML File and Scan'
       TabOrder = 1
       OnClick = BtnXMLScanClick
+    end
+    object CmbMame: TComboBox
+      Left = 173
+      Top = 116
+      Width = 345
+      Height = 24
+      Style = csDropDownList
+      Color = clMenu
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -14
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ItemHeight = 16
+      ParentFont = False
+      TabOrder = 2
     end
   end
   object ExtrasGroupBox: TGroupBox
@@ -126,7 +149,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object MameOptsOk: TButton
     Left = 382
-    Top = 509
+    Top = 589
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -135,7 +158,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object BtnCancel: TButton
     Left = 493
-    Top = 509
+    Top = 589
     Width = 92
     Height = 31
     Cancel = True

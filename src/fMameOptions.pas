@@ -78,7 +78,7 @@ begin
       CmbMame.Font.Size := 10;
       MameOptsOK.Enabled := false
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
    end;
 end;
 
@@ -139,10 +139,11 @@ begin
   begin
      //we need to get the executable name of the emulator selected in the dropdown, and then save it
      MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-     MainFrm.Settings.MametoolMameExePath := MameExeName;
+     MainFrm.Settings.MametoolMameExeName := MameExeName;
      MameExeIndex := MainFrm.EmuList.IndexOfName(MameExeName);
      MameEmu := MainFrm.EmuList.GetItemByIndex(MameExeIndex);
      MameExeFilename := ExtractFileName(MameEmu.ExePath);
+
 
      MainFrm.Settings.MameXMLPath := selectedFile;
      MainFrm.Settings.SaveAllSettings(); //else how else will node read what you just did

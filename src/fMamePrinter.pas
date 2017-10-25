@@ -70,7 +70,7 @@ begin
       CmbMame.Font.Size := 10;
       BtnOK.Enabled := false
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExePath);
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
 
     //Do we have a loaded Mame Json?
       if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
@@ -124,7 +124,7 @@ begin
 
         With MainFrm do
         begin
-          Settings.MametoolMameExePath := CmbMame.Items.Strings[CmbMame.ItemIndex];
+          Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
           //and here's all the checkbox settings
           Settings.MameOptBios        := ChkBios.Checked;
           Settings.MameOptCasino      := ChkCasino.Checked;

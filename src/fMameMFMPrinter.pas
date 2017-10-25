@@ -85,7 +85,8 @@ end;
 
 procedure TFrmMameMFMPrinter.BtnOKClick(Sender: TObject);
 var
-  Executable: String;
+  Executable, MameExeName, MameExeFileName : String;
+  MameExeIndex: Integer;
   RomdataFolder: String;
   MameExecutablePath: String;
   MameExtrasDir: String;
@@ -100,6 +101,14 @@ begin
    begin
      if CmbMame.ItemIndex <>-1 then
         Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+        //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
+        // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
+        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+        Settings.MametoolMameExeName := MameExeName;
+        MameExeIndex := EmuList.IndexOfName(MameExeName);
+        MameExeFileName := ExtractFileName(EmuList.GetItemByIndex(MameExeIndex).ExePath);
+        Settings.MameToolMameExeFileName := MameExeFileName;
+
         Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
         Settings.SaveAllSettings();
    end;

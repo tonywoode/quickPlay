@@ -3,8 +3,8 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 732
-  ClientWidth = 610
+  ClientHeight = 694
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,14 +19,14 @@ object FrmMameOptions: TFrmMameOptions
   object XMLGroupBox: TGroupBox
     Left = 24
     Top = 230
-    Width = 561
-    Height = 337
-    Caption = 'Set Mame XML Location'
+    Width = 577
+    Height = 395
+    Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
-      Left = 10
-      Top = 32
-      Width = 508
+      Left = 17
+      Top = 160
+      Width = 544
       Height = 32
       Caption = 
         'Scanning a MAME XML is requried to use the MAME Printing menu op' +
@@ -34,15 +34,15 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object XMLTxtLbl4: TLabel
-      Left = 10
-      Top = 214
+      Left = 19
+      Top = 302
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
     end
     object MameXMLLinkLabel: TLabel
-      Left = 92
-      Top = 78
+      Left = 160
+      Top = 214
       Width = 358
       Height = 18
       Cursor = crHandPoint
@@ -60,25 +60,36 @@ object FrmMameOptions: TFrmMameOptions
       OnClick = MameXMLLinkLabelClick
     end
     object XMLTxtLbl13: TLabel
-      Left = 10
-      Top = 162
-      Width = 470
-      Height = 32
+      Left = 17
+      Top = 250
+      Width = 536
+      Height = 23
       Caption = 
         'Download the zip file named "mame{version number}lx.zip", unzip ' +
         'it, and scan it below'
       WordWrap = True
     end
     object lblMAME: TLabel
-      Left = 10
-      Top = 120
+      Left = 20
+      Top = 109
       Width = 132
       Height = 16
       Caption = 'Mame Emulator to call'
     end
+    object MameScanLabel1: TLabel
+      Left = 19
+      Top = 40
+      Width = 534
+      Height = 49
+      Caption = 
+        'To use QuickPlay'#39's MAME features, make sure you already have a M' +
+        'AME/RetroArch arcade emulator in your emulators list, Select it ' +
+        'below to scan and find new emiulators based on it'
+      WordWrap = True
+    end
     object XMLEdit: TEdit
-      Left = 164
-      Top = 211
+      Left = 160
+      Top = 299
       Width = 354
       Height = 27
       AutoSelect = False
@@ -96,17 +107,17 @@ object FrmMameOptions: TFrmMameOptions
       Text = 'not loaded'
     end
     object BtnXMLScan: TButton
-      Left = 164
-      Top = 256
-      Width = 205
+      Left = 178
+      Top = 344
+      Width = 223
       Height = 41
-      Caption = 'Choose XML File and Scan'
+      Caption = 'Choose XML File and Start Scan'
       TabOrder = 1
       OnClick = BtnXMLScanClick
     end
     object CmbMame: TComboBox
       Left = 173
-      Top = 116
+      Top = 106
       Width = 345
       Height = 24
       Style = csDropDownList
@@ -124,14 +135,14 @@ object FrmMameOptions: TFrmMameOptions
   object ExtrasGroupBox: TGroupBox
     Left = 24
     Top = 24
-    Width = 561
+    Width = 577
     Height = 185
     Caption = 'Set Mame Extras Dir'
     TabOrder = 4
     object ExtrasTxtLbl1: TLabel
-      Left = 10
+      Left = 17
       Top = 34
-      Width = 478
+      Width = 543
       Height = 32
       Caption = 
         'Setting the location of the MAME extras directory will allow you' +
@@ -140,7 +151,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object ExtrasTxtLbl2: TLabel
-      Left = 10
+      Left = 17
       Top = 94
       Width = 135
       Height = 16
@@ -148,8 +159,8 @@ object FrmMameOptions: TFrmMameOptions
     end
   end
   object MameOptsOk: TButton
-    Left = 382
-    Top = 589
+    Left = 390
+    Top = 645
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -157,8 +168,8 @@ object FrmMameOptions: TFrmMameOptions
     OnClick = BtnMameOptsOkClick
   end
   object BtnCancel: TButton
-    Left = 493
-    Top = 589
+    Left = 509
+    Top = 645
     Width = 92
     Height = 31
     Cancel = True

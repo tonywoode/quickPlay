@@ -24,6 +24,7 @@ type
     BtnXMLScan: TButton;
     CmbMame: TComboBox;
     lblMAME: TLabel;
+    MameScanLabel1: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -117,10 +118,8 @@ end;
 
 procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
 var
-  selectedFile, Executable, Flags, MameExeName: string;
+  selectedFile, Executable, Flags, MameExeName, MameExeFileName: string;
   MameExeIndex: Integer;
-  MameEmu : TQPEmu;
-  MameExeFilename : string;
 
   dlg: TOpenDialog;
 begin
@@ -137,23 +136,30 @@ begin
 
   if (selectedFile <> '') and (CmbMame.ItemIndex <>-1) then
   begin
-     //we need to get the executable name of the emulator selected in the dropdown, and then save it
-     MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-     MainFrm.Settings.MametoolMameExeName := MameExeName;
-     MameExeIndex := MainFrm.EmuList.IndexOfName(MameExeName);
-     MameEmu := MainFrm.EmuList.GetItemByIndex(MameExeIndex);
-     MameExeFilename := ExtractFileName(MameEmu.ExePath);
+     With MainFrm do
+     begin
+       //we need to get the executable name of the emulator selected in the dropdown, and then save it
+       MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+       Settings.MametoolMameExeName := MameExeName;
+       MameExeIndex := EmuList.IndexOfName(MameExeName);
+       MameExeFileName := ExtractFileName(EmuList.GetItemByIndex(MameExeIndex).ExePath);
+       Settings.MameToolMameExeFileName := MameExeFileName;
 
+       Settings.MameXMLPath := selectedFile;
+       Settings.SaveAllSettings(); //else how else will node read what you just did
 
-     MainFrm.Settings.MameXMLPath := selectedFile;
-     MainFrm.Settings.SaveAllSettings(); //else how else will node read what you just did
-     Flags := '--scan';
-     //root the call in the appdir else node gets confused...
-     Executable := MainFrm.Settings.Paths.QPNodeFile;
-     RunProcess('cmd.exe /K ' +  Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
-     //node should write the mamexml version into the settings now,  so we need to reload the settings from disk
-     mainFrm.Settings.LoadIni();
-     if (MainFrm.Settings.MameXMLVersion <> '') then XMLEdit.Text := MainFrm.Settings.MameXMLVersion;
+       Flags := '--scan';
+       //root the call in the appdir else node gets confused...
+       Executable := Settings.Paths.QPNodeFile;
+       RunProcess('cmd.exe /K ' +  Executable + ' ' + Flags, True, Settings.Paths.AppDir, SW_SHOWNORMAL);
+       //node should write the mamexml version into the settings now,  so we need to reload the settings from disk
+       Settings.LoadIni();
+       if (Settings.MameXMLVersion <> '') then
+       begin
+         XMLEdit.Text := Settings.MameXMLVersion;
+         MessageDlg('After a successful MAME XML scan, you should run a new EFind to pick up new MAME/RetroArch-Mame Home-Computer and Console Emulators', mtInformation, [mbOK], 0);
+       end;
+     end;
   end;
 end;
 {-----------------------------------------------------------------------------}

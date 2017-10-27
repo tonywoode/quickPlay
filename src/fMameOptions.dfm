@@ -26,7 +26,7 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl1: TLabel
       Left = 17
       Top = 160
-      Width = 544
+      Width = 529
       Height = 32
       Caption = 
         'Scanning a MAME XML is requried to use the MAME Printing menu op' +
@@ -62,8 +62,8 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl13: TLabel
       Left = 17
       Top = 250
-      Width = 536
-      Height = 23
+      Width = 506
+      Height = 16
       Caption = 
         'Download the zip file named "mame{version number}lx.zip", unzip ' +
         'it, and scan it below'
@@ -79,8 +79,8 @@ object FrmMameOptions: TFrmMameOptions
     object MameScanLabel1: TLabel
       Left = 19
       Top = 40
-      Width = 534
-      Height = 49
+      Width = 509
+      Height = 48
       Caption = 
         'To use QuickPlay'#39's MAME features, make sure you already have a M' +
         'AME/RetroArch arcade emulator in your emulators list, Select it ' +
@@ -142,7 +142,7 @@ object FrmMameOptions: TFrmMameOptions
     object ExtrasTxtLbl1: TLabel
       Left = 17
       Top = 34
-      Width = 543
+      Width = 539
       Height = 32
       Caption = 
         'Setting the location of the MAME extras directory will allow you' +

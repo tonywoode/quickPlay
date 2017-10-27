@@ -71,8 +71,8 @@ begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
     if CmbMame.Items.Count = 0 then
     begin
-      CmbMame.Items.Add(EmuEmptyMessage );
-      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Items.Add(EmuEmptyMessage);
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage);
       CmbMame.Color := clInactiveBorder;
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
@@ -118,7 +118,7 @@ end;
 
 procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
 var
-  selectedFile, Executable, Flags, MameExeName, MameExeFileName: string;
+  selectedFile, Executable, Flags, MameExeName, MameExePath: string;
   MameExeIndex: Integer;
 
   dlg: TOpenDialog;
@@ -142,8 +142,8 @@ begin
        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
        Settings.MametoolMameExeName := MameExeName;
        MameExeIndex := EmuList.IndexOfName(MameExeName);
-       MameExeFileName := ExtractFileName(EmuList.GetItemByIndex(MameExeIndex).ExePath);
-       Settings.MameToolMameExeFileName := MameExeFileName;
+       MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
+       Settings.MameToolMameExePath := MameExePath;
 
        Settings.MameXMLPath := selectedFile;
        Settings.SaveAllSettings(); //else how else will node read what you just did

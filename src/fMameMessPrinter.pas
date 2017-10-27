@@ -8,13 +8,16 @@ uses
 
 type
   TFrmMameMessPrinter = class(TForm)
-    RadSoftlistMameChoice: TRadioButton;
-    RadSoftlistRetroarchChoice: TRadioButton;
     BtnOK: TButton;
     BtnCancel: TButton;
     MameMessPrinterDescLabel1: TLabel;
-    MameSoftlistChoiceLabel: TLabel;
     MameMessPrinterDescLabel2: TLabel;
+    lblMAME: TLabel;
+    CmbMame: TComboBox;
+    MameMessPrinterDescLabel3: TLabel;
+    XMLTxtLbl: TLabel;
+    XMLEdit: TEdit;
+    procedure FormShow(Sender: TObject);
     procedure BtnOKClick(Sender: TObject);
   private
     MameType : String;
@@ -22,22 +25,56 @@ type
     { Public declarations }
   end;
 
+  const
+  EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+
 implementation
 
-uses fMain, uJFile, uQPConst;
+uses fMain, uJFile, uQPConst, uQPMiscTypes,ujProcesses;
 
 {$R *.dfm}
 
+
+
+procedure TFrmMameMessPrinter.FormShow(Sender: TObject);
+begin
+
+  With MainFrm do
+  begin
+    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+    if CmbMame.Items.Count = 0 then
+    begin
+      CmbMame.Items.Add(EmuEmptyMessage );
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Color := clInactiveBorder;
+      CmbMame.Font.Color := clMaroon;
+      CmbMame.Font.Style := [fsBold];
+      CmbMame.Font.Size := 10;
+      BtnOK.Enabled := false
+    end
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+
+    //Do we have a loaded Mame Json?
+    if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
+      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+    else
+    begin
+      XMLEdit.text := 'Load an XML in Mame Options First';
+      BtnOK.Enabled := false
+    end;
+  end;
+end;
+
+{-----------------------------------------------------------------------------}
+
 procedure TFrmMameMessPrinter.BtnOKClick(Sender: TObject);
 var
- RomdataFolder, binDir, softlistRootDirPath : String;
+ RomdataFolder, binDir, softlistRootDirPath, MameExeName, MameExePath, Flags, Executable : String;
+ MameExeIndex : Integer;
  Process: Boolean;
 
 begin
   Process := True;
-  if (RadSoftlistMameChoice.Checked) then MameType := 'Mame Softlists';
-  if (RadSoftlistRetroarchChoice.Checked) then MameType := 'RetroArch Softlists';
-
 
   //for the other Mame Printers, we check whether the folder the user chose was empty
   // but the root of the romdatas is a folder not a romdata.dat, so it won't overwrite anything but an existing set
@@ -51,23 +88,45 @@ begin
 
   //if the folder exists, check that's the intention
   //take a bit of care here as the logic that follows expects these names to be folder names of SUBFOLDERS in the src, so
-  //bot src and dest folders must be the same name
-  if (DirectoryExists(RomdataFolder + MameType)) and
-      (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
+ //both src and dest folders must be the same name
+ //nah since we lost mame type this no longer works
+  //if (DirectoryExists(RomdataFolder + MameType)) and
+    //  (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
 
   //check that Dir is actually equal to something!
   if RomdataFolder = '' then Process := False;
 
   if (Process = True) then
-  begin
-      //the bin directory (source)
-      binDir := MainFrm.Settings.Paths.BinDir;
-      //the softlist dirs are crudely sitting in the root of the bindir
-      softlistRootDirPath := binDir + MameType;
-      //we need to warn the user if the directory isn't empty (slightly less important this time)
-      DirCopy( softlistRootDirPath, RomdataFolder, True);
-      MainFrm.ActRefreshExecute(Sender);
-    end;
+   begin
+     Executable := MainFrm.Settings.Paths.QPNodeFile;
+     RomdataFolder := MainFrm.GetSelectedFolder;
+     //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
+     Flags := '--softlists --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
+     //root the call in the appdir else node gets confused...
+     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     //hoping we got a good return code, we need to refresh at the very least the roms view, and folders sidebar
+     //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
+     //the below causes index out of bounds but so does Refresh() from main form generally
+     MainFrm.ActRefreshExecute(Sender);
+     end;
+
+
+     With MainFrm do
+   begin
+     if CmbMame.ItemIndex <>-1 then
+        Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+        //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
+        // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
+        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+        Settings.MametoolMameExeName := MameExeName;
+        MameExeIndex := EmuList.IndexOfName(MameExeName);
+        MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
+        Settings.MameToolMameExePath := MameExePath;
+
+        Settings.SaveAllSettings();
+   end;
+
+
     //close the form with the modal result OK
     ModalResult := MrOK;
 end;

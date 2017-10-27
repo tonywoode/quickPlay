@@ -62,8 +62,8 @@ begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
     if CmbMame.Items.Count = 0 then
     begin
-      CmbMame.Items.Add(EmuEmptyMessage );
-      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Items.Add(EmuEmptyMessage);
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage);
       CmbMame.Color := clInactiveBorder;
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
@@ -73,7 +73,7 @@ begin
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
 
     //Do we have a loaded Mame Json?
-      if (Settings.MameXMLVersion <> '') and FileExists(Settings.Paths.CfgDir + 'mame.json') then
+      if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
     XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else
     begin
@@ -109,7 +109,7 @@ end;
 
 procedure TFrmMamePrinter.BtnOKClick(Sender: TObject);
 var
-  Executable, MameExeName, MameExeFileName : String;
+  Executable, MameExeName, MameExePath : String;
   MameExeIndex: Integer;
   RomdataFolder: String;
   MameExecutablePath: String;
@@ -131,8 +131,8 @@ begin
            MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
            Settings.MametoolMameExeName := MameExeName;
            MameExeIndex := EmuList.IndexOfName(MameExeName);
-           MameExeFileName := ExtractFileName(EmuList.GetItemByIndex(MameExeIndex).ExePath);
-           Settings.MameToolMameExeFileName := MameExeFileName;
+           MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
+           Settings.MameToolMameExePath := MameExePath;
 
           //and here's all the checkbox settings
           Settings.MameOptBios        := ChkBios.Checked;

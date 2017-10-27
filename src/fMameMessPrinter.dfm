@@ -2,8 +2,8 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   Left = 0
   Top = 0
   Caption = 'Mame Mess Softlist Romdata Printer'
-  ClientHeight = 260
-  ClientWidth = 468
+  ClientHeight = 357
+  ClientWidth = 557
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,6 +12,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnShow = FormShow
   PixelsPerInch = 120
   TextHeight = 16
   object MameMessPrinterDescLabel1: TLabel
@@ -30,18 +31,11 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     ParentFont = False
     WordWrap = True
   end
-  object MameSoftlistChoiceLabel: TLabel
-    Left = 160
-    Top = 120
-    Width = 140
-    Height = 16
-    Caption = 'Make a set of folders for'
-  end
   object MameMessPrinterDescLabel2: TLabel
     Left = 24
-    Top = 62
-    Width = 397
-    Height = 36
+    Top = 186
+    Width = 379
+    Height = 32
     Caption = 
       'Make sure you'#39've sucessfully done an efind scan first and have s' +
       'oftlist emualtors in your Emu list'
@@ -53,41 +47,88 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     ParentFont = False
     WordWrap = True
   end
-  object RadSoftlistMameChoice: TRadioButton
-    Left = 88
-    Top = 160
-    Width = 65
-    Height = 17
-    Caption = 'MAME'
-    Checked = True
-    TabOrder = 0
-    TabStop = True
+  object lblMAME: TLabel
+    Left = 24
+    Top = 254
+    Width = 128
+    Height = 16
+    Caption = 'Mame Emulator to call'
   end
-  object RadSoftlistRetroarchChoice: TRadioButton
-    Left = 240
-    Top = 160
-    Width = 113
-    Height = 17
-    Caption = 'RetroArch MAME'
-    TabOrder = 1
+  object MameMessPrinterDescLabel3: TLabel
+    Left = 24
+    Top = 79
+    Width = 443
+    Height = 32
+    Caption = 
+      'it'#39's non destructive to run this in a folder that already has ro' +
+      'mdata and folders (e.g.: your existing MAME folder)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object XMLTxtLbl: TLabel
+    Left = 24
+    Top = 134
+    Width = 101
+    Height = 16
+    Caption = 'Mame XML status'
   end
   object BtnOK: TButton
-    Left = 216
-    Top = 200
+    Left = 329
+    Top = 305
     Width = 92
     Height = 31
     Caption = '&Go'
-    TabOrder = 2
+    TabOrder = 0
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 343
-    Top = 200
+    Left = 438
+    Top = 305
     Width = 92
     Height = 31
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
+    TabOrder = 1
+  end
+  object CmbMame: TComboBox
+    Left = 185
+    Top = 251
+    Width = 345
+    Height = 24
+    Style = csDropDownList
+    Color = clMenu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ItemHeight = 16
+    ParentFont = False
+    TabOrder = 2
+  end
+  object XMLEdit: TEdit
+    Left = 165
+    Top = 131
+    Width = 354
+    Height = 27
+    AutoSelect = False
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
     TabOrder = 3
+    Text = 'not loaded'
   end
 end

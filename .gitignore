@@ -48,6 +48,10 @@ src/*.rsm
 src/*.tds
 src/*.dcu
 
+#Mess inis - the user needs to select their own mame executable and do a mame scan, we can't know in advance what that might be
+qp/EFind/Mess_Mame.ini
+qp/EFind/Mess_Retroarch.ini
+
 #Personal Efind inis - not for sharing as the user must setup their own or they will get confused
 qp/EFind/Custom.ini
 qp/EFind/Gamebase.ini

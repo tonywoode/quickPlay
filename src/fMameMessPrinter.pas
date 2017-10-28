@@ -8,7 +8,7 @@ uses
 
 type
   TFrmMameMessPrinter = class(TForm)
-    BtnOK: TButton;
+    BtnGo: TButton;
     BtnCancel: TButton;
     MameMessPrinterDescLabel1: TLabel;
     MameMessPrinterDescLabel2: TLabel;
@@ -18,7 +18,7 @@ type
     XMLTxtLbl: TLabel;
     XMLEdit: TEdit;
     procedure FormShow(Sender: TObject);
-    procedure BtnOKClick(Sender: TObject);
+    procedure BtnGoClick(Sender: TObject);
   private
     MameType : String;
   public
@@ -50,7 +50,7 @@ begin
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
       CmbMame.Font.Size := 10;
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
 
@@ -60,14 +60,14 @@ begin
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end;
   end;
 end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMameMessPrinter.BtnOKClick(Sender: TObject);
+procedure TFrmMameMessPrinter.BtnGoClick(Sender: TObject);
 var
  RomdataFolder, binDir, softlistRootDirPath, MameExeName, MameExePath, Flags, Executable : String;
  MameExeIndex : Integer;

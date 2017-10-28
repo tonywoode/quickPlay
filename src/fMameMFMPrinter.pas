@@ -10,7 +10,7 @@ type
   TFrmMameMFMPrinter = class(TJWinFontForm)
     CmbMame: TComboBox;
     lblMAME: TLabel;
-    BtnOK: TButton;
+    BtnGo: TButton;
     BtnCancel: TButton;
     TxtMameFileManagerFilePath: TJvFilenameEdit;
     MameFileManagerLabel: TLabel;
@@ -21,7 +21,7 @@ type
     MameXMLLabel: TLabel;
     procedure MFMLabelClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure BtnOKClick(Sender: TObject);
+    procedure BtnGoClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -52,7 +52,7 @@ begin
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
       CmbMame.Font.Size := 10;
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
 
@@ -62,7 +62,7 @@ begin
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end;
 
     if (Settings.MameXMLVersion = '') or (CmbMame.Items.Count = 0)  then
@@ -83,7 +83,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMameMFMPrinter.BtnOKClick(Sender: TObject);
+procedure TFrmMameMFMPrinter.BtnGoClick(Sender: TObject);
 var
   Executable, MameExeName, MameExePath : String;
   MameExeIndex: Integer;
@@ -102,7 +102,8 @@ begin
      if CmbMame.ItemIndex <>-1 then
         Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
         //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-        // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
+        //  we don't save it, the settings will end up inconsistent,
+        //  and we need to save it in the mame options form because mametool needs to read it
         MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
         Settings.MametoolMameExeName := MameExeName;
         MameExeIndex := EmuList.IndexOfName(MameExeName);

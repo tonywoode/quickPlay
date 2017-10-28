@@ -2,8 +2,8 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   Left = 0
   Top = 0
   Caption = 'Mame Mess Softlist Romdata Printer'
-  ClientHeight = 357
-  ClientWidth = 557
+  ClientHeight = 326
+  ClientWidth = 565
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -33,7 +33,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   end
   object MameMessPrinterDescLabel2: TLabel
     Left = 24
-    Top = 186
+    Top = 163
     Width = 379
     Height = 32
     Caption = 
@@ -48,15 +48,15 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     WordWrap = True
   end
   object lblMAME: TLabel
-    Left = 24
-    Top = 254
+    Left = 51
+    Top = 222
     Width = 128
     Height = 16
     Caption = 'Mame Emulator to call'
   end
   object MameMessPrinterDescLabel3: TLabel
     Left = 24
-    Top = 79
+    Top = 70
     Width = 443
     Height = 32
     Caption = 
@@ -71,24 +71,24 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     WordWrap = True
   end
   object XMLTxtLbl: TLabel
-    Left = 24
-    Top = 134
+    Left = 51
+    Top = 126
     Width = 101
     Height = 16
     Caption = 'Mame XML status'
   end
-  object BtnOK: TButton
-    Left = 329
-    Top = 305
+  object BtnGo: TButton
+    Left = 345
+    Top = 273
     Width = 92
     Height = 31
     Caption = '&Go'
     TabOrder = 0
-    OnClick = BtnOKClick
+    OnClick = BtnGoClick
   end
   object BtnCancel: TButton
-    Left = 438
-    Top = 305
+    Left = 454
+    Top = 273
     Width = 92
     Height = 31
     Cancel = True
@@ -97,8 +97,8 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     TabOrder = 1
   end
   object CmbMame: TComboBox
-    Left = 185
-    Top = 251
+    Left = 201
+    Top = 219
     Width = 345
     Height = 24
     Style = csDropDownList
@@ -113,8 +113,8 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     TabOrder = 2
   end
   object XMLEdit: TEdit
-    Left = 165
-    Top = 131
+    Left = 192
+    Top = 123
     Width = 354
     Height = 27
     AutoSelect = False

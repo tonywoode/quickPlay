@@ -10,7 +10,7 @@ type
   TFrmMamePrinter = class(TJWinFontForm)
     CmbMame: TComboBox;
     lblMAME: TLabel;
-    BtnOK: TButton;
+    BtnGo: TButton;
     BtnCancel: TButton;
     MamePrintDescLabel1: TLabel;
     GrpSubfolder: TGroupBox;
@@ -38,7 +38,7 @@ type
     MamePrintDescLabel3: TLabel;
     XMLEdit: TEdit;
     procedure FormShow(Sender: TObject);
-    procedure BtnOKClick(Sender: TObject);
+    procedure BtnGoClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -68,7 +68,7 @@ begin
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
       CmbMame.Font.Size := 10;
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
 
@@ -78,7 +78,7 @@ begin
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
-      BtnOK.Enabled := false
+      BtnGo.Enabled := false
     end;
 
     //and here's all the checkboxes
@@ -107,7 +107,7 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TFrmMamePrinter.BtnOKClick(Sender: TObject);
+procedure TFrmMamePrinter.BtnGoClick(Sender: TObject);
 var
   Executable, MameExeName, MameExePath : String;
   MameExeIndex: Integer;
@@ -127,7 +127,8 @@ begin
         begin
           Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
           //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-          // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
+          //  we don't save it, the settings will end up inconsistent,
+          //  and we need to save it in the mame options form because mametool needs to read it
            MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
            Settings.MametoolMameExeName := MameExeName;
            MameExeIndex := EmuList.IndexOfName(MameExeName);

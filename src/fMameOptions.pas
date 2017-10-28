@@ -51,9 +51,10 @@ uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPMiscTypes, uQPConst,
 procedure TFrmMameOptions.FormShow(Sender: TObject);
 
 begin
-  TxtMameExtrasDirPath.Text :=  MainFrm.Settings.MameExtrasDir;
   BtnXMLScan.Enabled := False;
   XMLEdit.Text := StatusNoExtras;
+
+  TxtMameExtrasDirPath.Text := MainFrm.Settings.MameExtrasDir;
   if (TXTMameExtrasDirPath.GetTextLen > 0) then
   begin
    BtnXMLScan.Enabled := True;
@@ -96,17 +97,20 @@ begin
    if DirectoryExists(MainFrm.Settings.MameExtrasDir) then
       jvBrowse.Directory := MainFrm.Settings.MameExtrasDir;
       if (jvBrowse.execute) then
+      //we use all three of these folders heavily in what follows, so we really need them all
         begin
          if DirectoryExists(jvBrowse.Directory + '/folders/') and
             DirectoryExists(jvBrowse.Directory + '/dats/')    and
             DirectoryExists(jvBrowse.Directory + '/icons/')   then
             begin
              TxtMameExtrasDirPath.Text := jvBrowse.Directory;
-              MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text
+              MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+              BtnXMLScan.Enabled := True;
+              //we don't need to save this to file, because a mame scan isn't possible without a valid saved path
             end
          else
              MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
-             BtnXMLScan.Enabled := True;
+
              if (XMLEdit.Text = StatusNoExtras) then XMLEdit.Text := StatusNotLoaded;
          end;
   finally
@@ -120,8 +124,8 @@ procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
 var
   selectedFile, Executable, Flags, MameExeName, MameExePath: string;
   MameExeIndex: Integer;
-
   dlg: TOpenDialog;
+
 begin
   selectedFile := '';
   dlg := TOpenDialog.Create(nil);
@@ -146,13 +150,14 @@ begin
        Settings.MameToolMameExePath := MameExePath;
 
        Settings.MameXMLPath := selectedFile;
-       Settings.SaveAllSettings(); //else how else will node read what you just did
+       Settings.SaveAllSettings(); //else how else will node read what you just did,
+       //this will also save the mame extras dir for node to read, in case its newly-chosen
 
        Flags := '--scan';
-       //root the call in the appdir else node gets confused...
        Executable := Settings.Paths.QPNodeFile;
+       //root the call in the appdir else node gets confused...
        RunProcess('cmd.exe /K ' +  Executable + ' ' + Flags, True, Settings.Paths.AppDir, SW_SHOWNORMAL);
-       //node should write the mamexml version into the settings now,  so we need to reload the settings from disk
+       //node should write the mamexml version into the settings now, so we need to reload the settings from disk
        Settings.LoadIni();
        if (Settings.MameXMLVersion <> '') then
        begin
@@ -167,7 +172,7 @@ end;
 procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
   MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-  MainFrm.Settings.SaveAllSettings();
+  MainFrm.Settings.SaveAllSettings(); //in case you changed the mame extras dir but didn't do a scan
   //close the form with the modal result OK
   ModalResult := MrOK;
 

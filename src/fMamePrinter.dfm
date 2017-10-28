@@ -47,7 +47,7 @@ object FrmMamePrinter: TFrmMamePrinter
   end
   object MamePrintDescLabel2: TLabel
     Left = 24
-    Top = 47
+    Top = 50
     Width = 392
     Height = 16
     Caption = 'Please make/choose an empty source folder to print into'
@@ -99,14 +99,14 @@ object FrmMamePrinter: TFrmMamePrinter
     ParentFont = False
     TabOrder = 0
   end
-  object BtnOK: TButton
+  object BtnGo: TButton
     Left = 584
     Top = 421
     Width = 92
     Height = 31
     Caption = '&Go'
     TabOrder = 1
-    OnClick = BtnOKClick
+    OnClick = BtnGoClick
   end
   object BtnCancel: TButton
     Left = 704

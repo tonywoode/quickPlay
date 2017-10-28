@@ -3,7 +3,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   Top = 223
   BorderStyle = bsDialog
   Caption = 'Print Mame File Manager Romdata'
-  ClientHeight = 331
+  ClientHeight = 340
   ClientWidth = 583
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -104,18 +104,18 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     ItemHeight = 16
     TabOrder = 0
   end
-  object BtnOK: TButton
-    Left = 357
-    Top = 278
+  object BtnGo: TButton
+    Left = 349
+    Top = 290
     Width = 92
     Height = 31
     Caption = '&Go'
     TabOrder = 1
-    OnClick = BtnOKClick
+    OnClick = BtnGoClick
   end
   object BtnCancel: TButton
     Left = 461
-    Top = 278
+    Top = 290
     Width = 92
     Height = 31
     Cancel = True

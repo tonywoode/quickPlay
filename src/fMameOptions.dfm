@@ -34,8 +34,8 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object XMLTxtLbl4: TLabel
-      Left = 19
-      Top = 302
+      Left = 36
+      Top = 295
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
@@ -70,7 +70,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object lblMAME: TLabel
-      Left = 20
+      Left = 36
       Top = 109
       Width = 132
       Height = 16
@@ -84,12 +84,12 @@ object FrmMameOptions: TFrmMameOptions
       Caption = 
         'To use QuickPlay'#39's MAME features, make sure you already have a M' +
         'AME/RetroArch arcade emulator in your emulators list, Select it ' +
-        'below to scan and find new emiulators based on it'
+        'below and the XML scan will  find new emiulators based on it'
       WordWrap = True
     end
     object XMLEdit: TEdit
-      Left = 160
-      Top = 299
+      Left = 184
+      Top = 290
       Width = 354
       Height = 27
       AutoSelect = False
@@ -107,8 +107,8 @@ object FrmMameOptions: TFrmMameOptions
       Text = 'not loaded'
     end
     object BtnXMLScan: TButton
-      Left = 178
-      Top = 344
+      Left = 173
+      Top = 335
       Width = 223
       Height = 41
       Caption = 'Choose XML File and Start Scan'
@@ -116,7 +116,7 @@ object FrmMameOptions: TFrmMameOptions
       OnClick = BtnXMLScanClick
     end
     object CmbMame: TComboBox
-      Left = 173
+      Left = 201
       Top = 106
       Width = 345
       Height = 24
@@ -151,7 +151,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object ExtrasTxtLbl2: TLabel
-      Left = 17
+      Left = 36
       Top = 94
       Width = 135
       Height = 16
@@ -178,14 +178,14 @@ object FrmMameOptions: TFrmMameOptions
     TabOrder = 1
   end
   object TxtMameExtrasDirPath: TEdit
-    Left = 41
+    Left = 84
     Top = 157
     Width = 422
     Height = 24
     TabOrder = 2
   end
   object BtnMameExtrasDirFind: TButton
-    Left = 485
+    Left = 523
     Top = 156
     Width = 57
     Height = 27

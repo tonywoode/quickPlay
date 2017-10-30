@@ -340,7 +340,7 @@ type
     Fromanyfolder1: TMenuItem;
     actCheckForUpdates: TAction;
     SlideBar : TTrackBar;
-    Label1: TLabel;
+    lblRowHeight: TLabel;
     JoyCntrl: TJvJoystick;
     Edit1: TEdit;
     SlideBarDir: TTrackBar;
@@ -360,7 +360,7 @@ type
     procedure ActMameMFMPrinterExecute(Sender: TObject);
     procedure ActMamePrinterExecute(Sender: TObject);
     procedure Tools1Click(Sender: TObject);
-    procedure Label1Click(Sender: TObject);
+    procedure lblRowHeightClick(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
     procedure JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
@@ -5302,7 +5302,7 @@ begin
   
 end;
 
-procedure TMainFrm.Label1Click(Sender: TObject);
+procedure TMainFrm.lblRowHeightClick(Sender: TObject);
 begin
 
 end;

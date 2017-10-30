@@ -548,9 +548,9 @@ object MainFrm: TMainFrm
       end
       object VTRoms: TVirtualStringTree
         Left = 0
-        Top = 53
+        Top = 59
         Width = 577
-        Height = 753
+        Height = 747
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -688,32 +688,30 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 29
         Width = 577
-        Height = 24
+        Height = 30
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
         object lblFilter: TLabel
           Left = 0
-          Top = 0
-          Width = 31
-          Height = 24
-          Align = alLeft
+          Top = -3
+          Width = 27
+          Height = 13
           Alignment = taCenter
-          Caption = ' Filter:'
+          Caption = ' Filter'
           Layout = tlCenter
-          ExplicitHeight = 13
         end
-        object Label1: TLabel
-          Left = 600
-          Top = 5
+        object lblRowHeight: TLabel
+          Left = 604
+          Top = -4
           Width = 55
           Height = 13
           Caption = 'Row Height'
-          OnClick = Label1Click
+          OnClick = lblRowHeightClick
         end
         object TxtFilter: TEdit
-          Left = 46
-          Top = -3
+          Left = 50
+          Top = 0
           Width = 199
           Height = 21
           AutoSize = False
@@ -724,13 +722,19 @@ object MainFrm: TMainFrm
           OnKeyUp = TxtFilterKeyUp
         end
         object CmbFilterOn: TComboBox
-          Left = 251
-          Top = 0
+          Left = 255
+          Top = -2
           Width = 89
-          Height = 21
+          Height = 24
           Style = csDropDownList
-          ItemHeight = 13
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = 16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ItemHeight = 16
           ItemIndex = 0
+          ParentFont = False
           TabOrder = 1
           Text = 'By Name'
           Items.Strings = (
@@ -744,8 +748,8 @@ object MainFrm: TMainFrm
             'By Rating')
         end
         object CmbFilterFolder: TComboBox
-          Left = 348
-          Top = 0
+          Left = 352
+          Top = -2
           Width = 81
           Height = 21
           Style = csDropDownList

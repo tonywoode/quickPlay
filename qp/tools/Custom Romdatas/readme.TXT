@@ -4,7 +4,7 @@
 QuickPlay can be setup for a lot of pre-made romdata files
 For example: 
 Gamebase Databases (24 of them)
-MAME
+WinUAE Loader
 Lots of Arcade Emus:
 CPS3
 Sega M2

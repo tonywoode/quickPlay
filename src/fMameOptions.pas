@@ -179,6 +179,10 @@ begin
   //we want to refresh: sidebar icons, mame icons, info files will all now show up...
   //why not do it in the caller in the main form? just to be consistent with the other mame dialog boxes
    MainFrm.ActRefreshExecute(Sender);
+  //bugfix: there's something specific about the xml scan, ini lookup and dat/efind posting that causes qp to lose current directory
+  //  it was causing the first call to a mame game after a scan to fail as the game wasn't found (I suspect "./qp.exe") -  TODO: this
+  //  should get called after the scan incase user presses cancel...
+   setCurrentDir(MainFrm.Settings.Paths.AppDir);
 end;
 
 {-----------------------------------------------------------------------------}

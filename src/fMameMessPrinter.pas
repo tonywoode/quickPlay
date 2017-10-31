@@ -30,7 +30,7 @@ type
 
 implementation
 
-uses fMain, uJFile, uQPConst, uQPMiscTypes,ujProcesses;
+uses fMain, uJFile, uQPConst, uQPMiscTypes,ujProcesses, strUtils;
 
 {$R *.dfm}
 
@@ -69,7 +69,8 @@ end;
 
 procedure TFrmMameMessPrinter.BtnGoClick(Sender: TObject);
 var
- RomdataFolder, binDir, softlistRootDirPath, MameExeName, MameExePath, Flags, Executable : String;
+ RomdataFolder, binDir, softlistRootDirPath, MameExeName : String;
+ MameExePath, Flags, Executable, softlistFolderName : String;
  MameExeIndex : Integer;
  Process: Boolean;
 
@@ -90,8 +91,10 @@ begin
   //take a bit of care here as the logic that follows expects these names to be folder names of SUBFOLDERS in the src, so
  //both src and dest folders must be the same name
  //nah since we lost mame type this no longer works
-  //if (DirectoryExists(RomdataFolder + MameType)) and
-    //  (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
+ if AnsiContainsText(MainFrm.Settings.MametoolMameExeName, 'RetroArch')
+   then softlistFolderName := 'RetroArch Softlists' else softlistFolderName := 'MAME Softlists';
+   if (DirectoryExists(RomdataFolder + '\' + softlistFolderName)) and
+     (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
 
   //check that Dir is actually equal to something!
   if RomdataFolder = '' then Process := False;

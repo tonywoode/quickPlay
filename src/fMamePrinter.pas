@@ -115,7 +115,7 @@ var
   MameExecutablePath: String;
   MameExtrasDir: String;
   MameXMLPath: String;
-  Flags : String;
+  Flags: String;
   Process : Boolean;
 
 begin
@@ -164,9 +164,16 @@ begin
    if (MainFrm.RomList.Count > 0) then
      if (MessageDlg(QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR, mtInformation, [mbYes, mbNo], 0) = mrNo) then Process := False;
 
+   RomdataFolder := MainFrm.GetSelectedFolder;
+   //having only the dats root available causes no folder to be passed
+   if RomdataFolder = '' then
+   begin
+   MessageDlg(QP_MAME_NO_ROMDATA_IN_ROOT, mtError, [mbOK], 0);
+   process := False;
+   end;
+
    if (Process = True) then
    begin
-     RomdataFolder := MainFrm.GetSelectedFolder;
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, checkboxes
      Flags := '--arcade --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
      //root the call in the appdir else node gets confused...

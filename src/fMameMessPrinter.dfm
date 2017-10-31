@@ -18,7 +18,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   object MameMessPrinterDescLabel1: TLabel
     Left = 24
     Top = 24
-    Width = 397
+    Width = 332
     Height = 32
     Caption = 
       'Print a set of MAME or Retroarch Softlist Romdata Folders in the' +
@@ -57,7 +57,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   object MameMessPrinterDescLabel3: TLabel
     Left = 24
     Top = 70
-    Width = 443
+    Width = 408
     Height = 32
     Caption = 
       'it'#39's non destructive to run this in a folder that already has ro' +
@@ -66,7 +66,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
+    Font.Style = []
     ParentFont = False
     WordWrap = True
   end

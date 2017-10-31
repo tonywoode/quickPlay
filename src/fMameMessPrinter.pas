@@ -99,7 +99,6 @@ begin
   if (Process = True) then
    begin
      Executable := MainFrm.Settings.Paths.QPNodeFile;
-     RomdataFolder := MainFrm.GetSelectedFolder;
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
      Flags := '--softlists --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
      //root the call in the appdir else node gets confused...

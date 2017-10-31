@@ -54,6 +54,8 @@ type
     BtnCancel: TButton;
     BtnNext: TButton;
     BtnPrevious: TButton;
+    lblEmuFind2: TLabel;
+    LblEfind3: TLabel;
     procedure BtnPreviousClick(Sender: TObject);
     procedure BtnNextClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -68,8 +70,7 @@ type
       var CellText: WideString);
     procedure VTEFindCompareNodes(Sender: TBaseVirtualTree; Node1,
       Node2: PVirtualNode; Column: TColumnIndex; var Result: Integer);
-    procedure VTEFindHeaderClick(Sender: TVTHeader; Column: TColumnIndex;
-      Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure VTEFindHeaderClick(Sender: TVTHeader; HitInfo: TVTHeaderHitInfo);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure VTdatsInitNode(Sender: TBaseVirtualTree; ParentNode,
       Node: PVirtualNode; var InitialStates: TVirtualNodeInitStates);
@@ -540,20 +541,18 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TEmuFinder.VTEFindHeaderClick(Sender: TVTHeader;
-  Column: TColumnIndex; Button: TMouseButton; Shift: TShiftState; X,
-  Y: Integer);
+procedure TEmuFinder.VTEFindHeaderClick(Sender: TVTHeader;HitInfo: TVTHeaderHitInfo);
 begin
-if Button = mbLeft then
+if HitInfo.Button = mbLeft then
   begin
     with Sender, Treeview do
     begin
       if SortColumn > NoColumn then
         Columns[SortColumn].Options := Columns[SortColumn].Options + [coParentColor];
 
-        if (SortColumn = NoColumn) or (SortColumn <> Column) then
+        if (SortColumn = NoColumn) or (SortColumn <> HitInfo.Column) then
         begin
-          SortColumn := Column;
+          SortColumn := HitInfo.Column;
           SortDirection := sdAscending;
         end
         else

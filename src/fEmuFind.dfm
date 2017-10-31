@@ -24,12 +24,10 @@ object EmuFinder: TEmuFinder
     Top = 0
     Width = 925
     Height = 787
-    ActivePage = TabResults
+    ActivePage = TabIntroAndFolder
     Align = alClient
     Style = tsButtons
     TabOrder = 0
-    ExplicitWidth = 451
-    ExplicitHeight = 560
     object TabIntroAndFolder: TTabSheet
       Caption = 'IntroAndFolder'
       Font.Charset = DEFAULT_CHARSET
@@ -53,23 +51,57 @@ object EmuFinder: TEmuFinder
         ParentFont = False
       end
       object TLabel
-        Left = 179
-        Top = 57
-        Width = 533
+        Left = 133
+        Top = 49
+        Width = 624
         Height = 36
         Alignment = taCenter
         BiDiMode = bdLeftToRight
         Caption = 
-          'Emu-Finder uses QuickPlays data-files to search your hard-drive ' +
-          'for all compatible '#13#10' emulators. which means theres no need to a' +
-          'dd each emulator manually.'
+          'Emu-Finder uses QuickPlay'#39's data-files to search your hard-drive' +
+          ' for all compatible '#13#10' emulators. which means theres no need to ' +
+          'add each emulator manually.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
         ParentBiDiMode = False
+        ParentFont = False
+      end
+      object lblEmuFind2: TLabel
+        Left = 27
+        Top = 113
+        Width = 846
+        Height = 36
+        Alignment = taCenter
+        BiDiMode = bdLeftToRight
+        Caption = 
+          'One way to use the EFinder is, if you have a single location for' +
+          ' all of your emulators, you can choose to '#39'add all'#39' each time, o' +
+          'verrwriting/refreshing your old emulators list'
+        ParentBiDiMode = False
+        WordWrap = True
+      end
+      object LblEfind3: TLabel
+        Left = 29
+        Top = 179
+        Width = 844
+        Height = 51
+        Alignment = taCenter
+        BiDiMode = bdLeftToRight
+        Caption = 
+          'QuickPlay will automatically setup 2 emulators for you: CMD and ' +
+          'Start - this is so you can open Winows games and other folder ba' +
+          'sed applications'
+        ParentBiDiMode = False
+        WordWrap = True
       end
       object GrpDir: TGroupBox
-        Left = 56
-        Top = 135
-        Width = 761
-        Height = 450
+        Left = 27
+        Top = 251
+        Width = 865
+        Height = 385
         Caption = 'Directory Selection'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -80,7 +112,7 @@ object EmuFinder: TEmuFinder
         TabOrder = 0
         object RadSetDir: TRadioButton
           Left = 43
-          Top = 76
+          Top = 68
           Width = 346
           Height = 23
           Caption = 'Scan Selected Directory'
@@ -137,8 +169,6 @@ object EmuFinder: TEmuFinder
     object TabDatAndGo: TTabSheet
       Caption = 'DatAndGo'
       ImageIndex = 3
-      ExplicitLeft = 36
-      ExplicitTop = 62
       object GrpStart: TGroupBox
         Left = 56
         Top = 501
@@ -249,8 +279,6 @@ object EmuFinder: TEmuFinder
     object TabResults: TTabSheet
       Caption = 'TabResults'
       ImageIndex = 4
-      ExplicitWidth = 443
-      ExplicitHeight = 526
       object TLabel
         Left = 11
         Top = 3
@@ -335,7 +363,7 @@ object EmuFinder: TEmuFinder
         Header.Font.Height = -11
         Header.Font.Name = 'MS Sans Serif'
         Header.Font.Style = []
-        Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
+        Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
         Header.SortColumn = 0
         TabOrder = 0
         TreeOptions.AutoOptions = [toAutoDropExpand, toAutoScrollOnExpand, toAutoSort, toAutoTristateTracking, toAutoDeleteMovedNodes]

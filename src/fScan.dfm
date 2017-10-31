@@ -3,89 +3,81 @@ object ScanForm: TScanForm
   Top = 163
   BorderStyle = bsDialog
   Caption = 'ROM Scanning'
-  ClientHeight = 453
-  ClientWidth = 452
+  ClientHeight = 554
+  ClientWidth = 923
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object GrpOptions: TGroupBox
     Left = 8
-    Top = 152
-    Width = 433
-    Height = 265
+    Top = 199
+    Width = 905
+    Height = 274
     Caption = 'Scan Options'
     TabOrder = 0
     object lblEmu: TLabel
-      Left = 8
-      Top = 68
-      Width = 42
-      Height = 13
+      Left = 13
+      Top = 87
+      Width = 55
+      Height = 17
       Caption = 'Emulator'
     end
     object lblSystem: TLabel
-      Left = 10
-      Top = 36
-      Width = 35
-      Height = 13
+      Left = 13
+      Top = 47
+      Width = 46
+      Height = 17
       Caption = 'System'
     end
     object CmbEmu: TComboBox
-      Left = 65
-      Top = 64
-      Width = 163
-      Height = 21
+      Left = 85
+      Top = 84
+      Width = 580
+      Height = 25
       Style = csDropDownList
-      ItemHeight = 13
+      ItemHeight = 17
       Sorted = True
       TabOrder = 0
       OnChange = CmbEmuChange
     end
     object CmbSystem: TComboBox
-      Left = 65
-      Top = 32
-      Width = 163
-      Height = 21
+      Left = 85
+      Top = 44
+      Width = 580
+      Height = 25
       Style = csDropDownList
-      ItemHeight = 13
+      ItemHeight = 17
       TabOrder = 1
       OnChange = CmbSystemChange
     end
-    object ChkCatver: TCheckBox
-      Left = 16
-      Top = 113
-      Width = 219
-      Height = 17
-      Caption = 'Use Catver.ini (Mame only)'
-      TabOrder = 3
-    end
     object ChkDup: TCheckBox
-      Left = 16
-      Top = 91
-      Width = 219
-      Height = 17
+      Left = 511
+      Top = 141
+      Width = 286
+      Height = 22
       Caption = 'Check for Duplicates'
       TabOrder = 2
     end
     object FilterGroup: TGroupBox
-      Left = 241
-      Top = 14
-      Width = 185
-      Height = 113
+      Left = 243
+      Top = 131
+      Width = 242
+      Height = 134
       Caption = 'Filter'
-      TabOrder = 6
+      TabOrder = 5
       object BtnAddFilter: TSpeedButton
-        Left = 150
-        Top = 19
-        Width = 23
-        Height = 22
+        Left = 196
+        Top = 25
+        Width = 30
+        Height = 29
         Flat = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
@@ -117,10 +109,10 @@ object ScanForm: TScanForm
         OnClick = BtnAddFilterClick
       end
       object BtnFilterMinus: TSpeedButton
-        Left = 150
-        Top = 43
-        Width = 23
-        Height = 22
+        Left = 196
+        Top = 56
+        Width = 30
+        Height = 29
         Flat = True
         Glyph.Data = {
           36030000424D3603000000000000360000002800000010000000100000000100
@@ -152,28 +144,28 @@ object ScanForm: TScanForm
         OnClick = BtnFilterMinusClick
       end
       object FilterList: TListBox
-        Left = 16
-        Top = 16
-        Width = 129
-        Height = 81
-        ItemHeight = 13
+        Left = 21
+        Top = 21
+        Width = 169
+        Height = 100
+        ItemHeight = 17
         Items.Strings = (
           '*.zip')
         TabOrder = 0
       end
     end
     object GrpRatings: TGroupBox
-      Left = 241
-      Top = 159
-      Width = 185
-      Height = 94
+      Left = 671
+      Top = 20
+      Width = 214
+      Height = 123
       Caption = 'Ratings'
-      TabOrder = 7
+      TabOrder = 6
       object RadNoRating: TRadioButton
-        Left = 16
-        Top = 16
-        Width = 145
-        Height = 17
+        Left = 21
+        Top = 21
+        Width = 190
+        Height = 22
         Caption = 'No Rating'
         Checked = True
         TabOrder = 0
@@ -181,59 +173,59 @@ object ScanForm: TScanForm
         OnClick = RadNoRatingClick
       end
       object RadSetRating: TRadioButton
-        Left = 16
-        Top = 40
-        Width = 153
-        Height = 17
+        Left = 21
+        Top = 52
+        Width = 200
+        Height = 23
         Caption = 'Set Ratings to:'
         TabOrder = 1
         OnClick = RadSetRatingClick
       end
       object CmbRating: TComboBox
-        Left = 40
-        Top = 60
-        Width = 129
-        Height = 21
+        Left = 36
+        Top = 81
+        Width = 169
+        Height = 25
         Style = csDropDownList
         Enabled = False
-        ItemHeight = 13
+        ItemHeight = 17
         TabOrder = 2
       end
     end
     object ChkInsideZips: TCheckBox
-      Left = 16
-      Top = 136
-      Width = 219
-      Height = 17
+      Left = 511
+      Top = 183
+      Width = 156
+      Height = 22
       Caption = 'Scan Inside Zip Files'
-      TabOrder = 4
+      TabOrder = 3
     end
     object RadGrpLanguage: TRadioGroup
-      Left = 16
-      Top = 159
-      Width = 210
-      Height = 95
+      Left = 13
+      Top = 128
+      Width = 211
+      Height = 137
       Caption = 'Language'
       ItemIndex = 0
       Items.Strings = (
         'Auto-Detect Language'
         'Set all ROMS to English'
         'Don'#39't set Language')
-      TabOrder = 5
+      TabOrder = 4
     end
   end
   object GrpFolder: TGroupBox
     Left = 8
-    Top = 8
-    Width = 433
-    Height = 137
+    Top = 13
+    Width = 905
+    Height = 180
     Caption = 'Folders to Scan'
     TabOrder = 1
     object BtnMinus: TSpeedButton
-      Left = 397
-      Top = 41
-      Width = 23
-      Height = 22
+      Left = 855
+      Top = 59
+      Width = 30
+      Height = 28
       Flat = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -265,10 +257,10 @@ object ScanForm: TScanForm
       OnClick = BtnMinusClick
     end
     object BtnAdd: TSpeedButton
-      Left = 397
-      Top = 17
-      Width = 23
-      Height = 22
+      Left = 855
+      Top = 24
+      Width = 30
+      Height = 29
       Flat = True
       Glyph.Data = {
         36030000424D3603000000000000360000002800000010000000100000000100
@@ -300,27 +292,27 @@ object ScanForm: TScanForm
       OnClick = BtnAddClick
     end
     object ChkSubDir: TCheckBox
-      Left = 16
-      Top = 112
-      Width = 305
-      Height = 17
+      Left = 21
+      Top = 146
+      Width = 399
+      Height = 23
       Caption = 'Scan Sub-Directories'
       TabOrder = 0
     end
     object ListDirs: TListBox
-      Left = 16
-      Top = 16
-      Width = 377
-      Height = 89
-      ItemHeight = 13
+      Left = 3
+      Top = 24
+      Width = 838
+      Height = 116
+      ItemHeight = 17
       TabOrder = 1
     end
   end
   object BtnScan: TButton
-    Left = 152
-    Top = 424
-    Width = 75
-    Height = 25
+    Left = 700
+    Top = 479
+    Width = 98
+    Height = 33
     Caption = '&Scan'
     Default = True
     ModalResult = 1
@@ -328,10 +320,10 @@ object ScanForm: TScanForm
     OnClick = BtnScanClick
   end
   object BtnCancel: TButton
-    Left = 232
-    Top = 424
-    Width = 75
-    Height = 25
+    Left = 815
+    Top = 479
+    Width = 98
+    Height = 33
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 3

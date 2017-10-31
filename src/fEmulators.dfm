@@ -3,12 +3,12 @@ object FrmEmuDlg: TFrmEmuDlg
   Top = 213
   BorderStyle = bsDialog
   Caption = 'Emulator Management'
-  ClientHeight = 478
-  ClientWidth = 742
+  ClientHeight = 625
+  ClientWidth = 970
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
@@ -16,18 +16,19 @@ object FrmEmuDlg: TFrmEmuDlg
   OnClose = FormClose
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object Splitter1: TSplitter
-    Left = 191
+    Left = 250
     Top = 0
-    Height = 447
+    Width = 4
+    Height = 585
   end
   object VTEmus: TVirtualStringTree
     Left = 0
     Top = 0
-    Width = 191
-    Height = 447
+    Width = 250
+    Height = 585
     Align = alLeft
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
@@ -57,55 +58,55 @@ object FrmEmuDlg: TFrmEmuDlg
   end
   object PanCtrls: TPanel
     Left = 0
-    Top = 447
-    Width = 742
-    Height = 31
+    Top = 585
+    Width = 970
+    Height = 40
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 1
     object BtnAdd: TButton
-      Left = 16
-      Top = 3
-      Width = 75
-      Height = 25
+      Left = 21
+      Top = 4
+      Width = 98
+      Height = 33
       Caption = '&Add'
       TabOrder = 0
       OnClick = BtnAddClick
     end
     object BtnDelete: TButton
-      Left = 96
-      Top = 3
-      Width = 75
-      Height = 25
+      Left = 126
+      Top = 4
+      Width = 98
+      Height = 33
       Caption = '&Delete'
       TabOrder = 1
       OnClick = BtnDeleteClick
     end
     object BtnOK: TButton
-      Left = 584
-      Top = 3
-      Width = 75
-      Height = 25
+      Left = 764
+      Top = 4
+      Width = 98
+      Height = 33
       Caption = '&OK'
       ModalResult = 1
       TabOrder = 2
       OnClick = BtnOKClick
     end
     object BtnCancel: TButton
-      Left = 664
-      Top = 3
-      Width = 73
-      Height = 25
+      Left = 868
+      Top = 4
+      Width = 96
+      Height = 33
       Caption = '&Cancel'
       ModalResult = 2
       TabOrder = 3
     end
   end
   object pgEmuOpt: TPageControl
-    Left = 194
+    Left = 254
     Top = 0
-    Width = 548
-    Height = 447
+    Width = 716
+    Height = 585
     ActivePage = TabConfiguration
     Align = alClient
     TabOrder = 2
@@ -114,8 +115,8 @@ object FrmEmuDlg: TFrmEmuDlg
       object VTEmuOpt: TVirtualStringTree
         Left = 0
         Top = 0
-        Width = 540
-        Height = 419
+        Width = 708
+        Height = 553
         Align = alClient
         DefaultNodeHeight = 25
         Header.AutoSizeIndex = 1
@@ -155,7 +156,7 @@ object FrmEmuDlg: TFrmEmuDlg
           end
           item
             Position = 1
-            Width = 286
+            Width = 454
             WideText = 'Value'
           end>
       end
@@ -165,45 +166,46 @@ object FrmEmuDlg: TFrmEmuDlg
       ImageIndex = 1
       OnExit = TabMediaConfigExit
       object lblSysImage: TLabel
-        Left = 8
-        Top = 56
-        Width = 75
-        Height = 13
+        Left = 10
+        Top = 73
+        Width = 97
+        Height = 17
         Caption = 'Emulator Image'
       end
       object MemoEmuInfo: TMemo
-        Left = 24
-        Top = 128
-        Width = 393
-        Height = 217
+        Left = 31
+        Top = 167
+        Width = 514
+        Height = 284
         ScrollBars = ssBoth
         TabOrder = 0
       end
       object ChkShowAddInfo: TCheckBox
-        Left = 8
-        Top = 96
-        Width = 273
-        Height = 17
+        Left = 10
+        Top = 126
+        Width = 357
+        Height = 22
         Caption = 'Show Additional Information'
         TabOrder = 1
       end
       object TxtEmuImage: TJvFilenameEdit
-        Left = 104
-        Top = 54
-        Width = 313
-        Height = 21
+        Left = 136
+        Top = 71
+        Width = 409
+        Height = 25
         OnBeforeDialog = TxtEmuImageBeforeDialog
         OnAfterDialog = TxtEmuImageAfterDialog
         AddQuotes = False
         DialogKind = dkOpenPicture
         DialogOptions = [ofHideReadOnly, ofPathMustExist, ofFileMustExist]
+        ButtonWidth = 27
         TabOrder = 2
       end
       object ChkAddEmuTab: TCheckBox
-        Left = 8
-        Top = 16
-        Width = 265
-        Height = 17
+        Left = 10
+        Top = 21
+        Width = 347
+        Height = 22
         Caption = 'Add Emulator Media Tab'
         TabOrder = 3
       end

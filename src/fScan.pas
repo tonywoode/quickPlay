@@ -23,7 +23,6 @@ type
     lblEmu: TLabel;
     lblSystem: TLabel;
     CmbSystem: TComboBox;
-    ChkCatver: TCheckBox;
     ChkDup: TCheckBox;
     FilterGroup: TGroupBox;
     BtnAddFilter: TSpeedButton;
@@ -168,10 +167,6 @@ begin
         MainFrm.RomList.AddFromDirs(ListDirs.Items, Filter, ChkSubDir.Checked,
         ChkInsideZips.Checked, CmbEmu.Text, Rating, Lang, ChkDup.Checked);
 
-        If chkCatver.Checked = true then
-          MainFrm.RomList.SetMameCategories(MainFrm.Settings.Paths.CfgDir);
-          //IMO we would do another check box for "fill in mame field", and work just like the above.
-
     end
     Else
     begin
@@ -193,11 +188,6 @@ begin
       case ChkDup.checked of
         false : Ini.WriteInteger('Scan','DupChk', 0);
         true : Ini.WriteInteger('Scan','DupChk', 1);
-      end;
-
-      case ChkCatVer.checked of
-        false : Ini.WriteInteger('Scan','ChkCatVer', 0);
-        true : Ini.WriteInteger('Scan','ChkCatVer', 1);
       end;
 
       Ini.WriteString('Scan','LastEmu', CmbEmu.text);
@@ -255,13 +245,6 @@ begin
       case (Ini.readInteger('Scan','DupChk',0)) of
         0: chkdup.checked := false;
         1: chkdup.checked := true;
-      end;
-
-    //Check whether use Catver.ini is turned on
-    if Ini.ValueExists('Scan','ChkCatver') then
-      Case (Ini.ReadInteger('Scan','ChkCatver',0)) of
-        0: chkCatVer.checked := false;
-        1: ChkCatVer.Checked := true;
       end;
 
     //Load in the last selected emulator

@@ -37,6 +37,10 @@ object EmuFinder: TEmuFinder
       Font.Style = []
       ImageIndex = 2
       ParentFont = False
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblHeader: TLabel
         Left = 343
         Top = 0
@@ -72,7 +76,7 @@ object EmuFinder: TEmuFinder
       object lblEmuFind2: TLabel
         Left = 27
         Top = 113
-        Width = 846
+        Width = 808
         Height = 36
         Alignment = taCenter
         BiDiMode = bdLeftToRight
@@ -86,8 +90,8 @@ object EmuFinder: TEmuFinder
       object LblEfind3: TLabel
         Left = 29
         Top = 179
-        Width = 844
-        Height = 51
+        Width = 834
+        Height = 36
         Alignment = taCenter
         BiDiMode = bdLeftToRight
         Caption = 
@@ -169,6 +173,10 @@ object EmuFinder: TEmuFinder
     object TabDatAndGo: TTabSheet
       Caption = 'DatAndGo'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GrpStart: TGroupBox
         Left = 56
         Top = 501
@@ -279,6 +287,10 @@ object EmuFinder: TEmuFinder
     object TabResults: TTabSheet
       Caption = 'TabResults'
       ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object TLabel
         Left = 11
         Top = 3

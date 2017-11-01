@@ -542,17 +542,21 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TEmuFinder.VTEFindHeaderClick(Sender: TVTHeader;HitInfo: TVTHeaderHitInfo);
+var temp : TColumnIndex;
 begin
 if HitInfo.Button = mbLeft then
   begin
     with Sender, Treeview do
     begin
+    temp := SortColumn;
       if SortColumn > NoColumn then
         Columns[SortColumn].Options := Columns[SortColumn].Options + [coParentColor];
 
         if (SortColumn = NoColumn) or (SortColumn <> HitInfo.Column) then
         begin
-          SortColumn := HitInfo.Column;
+          //bug in VTreeView here: HitInfo.Column sometimes goes invisibly out of bounds,
+          // (not when debugging, only live). also the fix has no ill effect tho it should
+          if (HitInfo.Column > -1) then SortColumn := HitInfo.Column;
           SortDirection := sdAscending;
         end
         else

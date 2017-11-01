@@ -25,6 +25,7 @@ type
     CmbMame: TComboBox;
     lblMAME: TLabel;
     MameScanLabel1: TLabel;
+    XMLTxtLbl14: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -156,7 +157,8 @@ begin
        Flags := '--scan';
        Executable := Settings.Paths.QPNodeFile;
        //root the call in the appdir else node gets confused...
-       RunProcess('cmd.exe /K ' +  Executable + ' ' + Flags, True, Settings.Paths.AppDir, SW_SHOWNORMAL);
+       //change the flag of the cmd call to /C for live and /K for dev (halting)
+       RunProcess('cmd.exe /C ' +  Executable + ' ' + Flags, True, Settings.Paths.AppDir, SW_SHOWNORMAL);
        //node should write the mamexml version into the settings now, so we need to reload the settings from disk
        Settings.LoadIni();
        if (Settings.MameXMLVersion <> '') then

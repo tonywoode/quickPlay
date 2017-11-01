@@ -3,7 +3,7 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 694
+  ClientHeight = 720
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,16 +20,16 @@ object FrmMameOptions: TFrmMameOptions
     Left = 24
     Top = 230
     Width = 577
-    Height = 395
+    Height = 441
     Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
       Left = 17
       Top = 160
-      Width = 529
+      Width = 508
       Height = 32
       Caption = 
-        'Scanning a MAME XML is requried to use the MAME Printing menu op' +
+        'Scanning a MAME XML is required to use the MAME Printing menu op' +
         'tions. Download the MAME XML for your version of Mame from here'
       WordWrap = True
     end
@@ -84,7 +84,18 @@ object FrmMameOptions: TFrmMameOptions
       Caption = 
         'To use QuickPlay'#39's MAME features, make sure you already have a M' +
         'AME/RetroArch arcade emulator in your emulators list, Select it ' +
-        'below and the XML scan will  find new emiulators based on it'
+        'below and the XML scan will  find new emulators based on it'
+      WordWrap = True
+    end
+    object XMLTxtLbl14: TLabel
+      Left = 17
+      Top = 390
+      Width = 529
+      Height = 48
+      Caption = 
+        'A successful XML Scan will also put new systems in QuickPlay'#39's l' +
+        'ist of systems, and make a new EFind file, for Mame'#39's console an' +
+        'd home-computer emulation'
       WordWrap = True
     end
     object XMLEdit: TEdit
@@ -160,7 +171,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object MameOptsOk: TButton
     Left = 390
-    Top = 645
+    Top = 677
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -169,7 +180,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object BtnCancel: TButton
     Left = 509
-    Top = 645
+    Top = 677
     Width = 92
     Height = 31
     Cancel = True

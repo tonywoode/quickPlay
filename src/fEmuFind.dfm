@@ -1,11 +1,10 @@
 object EmuFinder: TEmuFinder
   Left = 279
   Top = 164
-  AutoSize = True
   BorderStyle = bsDialog
   Caption = 'Emu Finder'
-  ClientHeight = 787
-  ClientWidth = 925
+  ClientHeight = 771
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -22,12 +21,13 @@ object EmuFinder: TEmuFinder
   object PCWizard: TPageControl
     Left = 0
     Top = 0
-    Width = 925
-    Height = 787
-    ActivePage = TabIntroAndFolder
+    Width = 1018
+    Height = 771
+    ActivePage = TabResults
     Align = alClient
     Style = tsButtons
     TabOrder = 0
+    OnChange = PCWizardChange
     object TabIntroAndFolder: TTabSheet
       Caption = 'IntroAndFolder'
       Font.Charset = DEFAULT_CHARSET
@@ -37,10 +37,6 @@ object EmuFinder: TEmuFinder
       Font.Style = []
       ImageIndex = 2
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lblHeader: TLabel
         Left = 343
         Top = 0
@@ -55,7 +51,7 @@ object EmuFinder: TEmuFinder
         ParentFont = False
       end
       object TLabel
-        Left = 133
+        Left = 29
         Top = 49
         Width = 624
         Height = 36
@@ -76,21 +72,23 @@ object EmuFinder: TEmuFinder
       object lblEmuFind2: TLabel
         Left = 27
         Top = 113
-        Width = 808
-        Height = 36
+        Width = 884
+        Height = 54
         Alignment = taCenter
         BiDiMode = bdLeftToRight
         Caption = 
           'One way to use the EFinder is, if you have a single location for' +
           ' all of your emulators, you can choose to '#39'add all'#39' each time, o' +
-          'verrwriting/refreshing your old emulators list'
+          'verrwriting/refreshing your old emulators list. Another way is t' +
+          'o add newly-found Emulators to your Emulators list and manage th' +
+          'em in QuickPlay'#39's Emulators menu'
         ParentBiDiMode = False
         WordWrap = True
       end
       object LblEfind3: TLabel
         Left = 29
         Top = 179
-        Width = 834
+        Width = 878
         Height = 36
         Alignment = taCenter
         BiDiMode = bdLeftToRight
@@ -102,9 +100,9 @@ object EmuFinder: TEmuFinder
         WordWrap = True
       end
       object GrpDir: TGroupBox
-        Left = 27
+        Left = 115
         Top = 251
-        Width = 865
+        Width = 766
         Height = 385
         Caption = 'Directory Selection'
         Font.Charset = DEFAULT_CHARSET
@@ -127,7 +125,7 @@ object EmuFinder: TEmuFinder
         end
         object RadAllDrive: TRadioButton
           Left = 43
-          Top = 259
+          Top = 219
           Width = 368
           Height = 22
           Caption = 'Scan Entire Drive (Can take a while)'
@@ -173,12 +171,8 @@ object EmuFinder: TEmuFinder
     object TabDatAndGo: TTabSheet
       Caption = 'DatAndGo'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpStart: TGroupBox
-        Left = 56
+        Left = 104
         Top = 501
         Width = 801
         Height = 146
@@ -214,7 +208,7 @@ object EmuFinder: TEmuFinder
         end
       end
       object GrpDats: TGroupBox
-        Left = 56
+        Left = 104
         Top = 19
         Width = 801
         Height = 454
@@ -287,10 +281,6 @@ object EmuFinder: TEmuFinder
     object TabResults: TTabSheet
       Caption = 'TabResults'
       ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object TLabel
         Left = 11
         Top = 3
@@ -364,7 +354,7 @@ object EmuFinder: TEmuFinder
       object VTEFind: TVirtualStringTree
         Left = 17
         Top = 53
-        Width = 872
+        Width = 980
         Height = 630
         CheckImageKind = ckDarkTick
         DefaultNodeHeight = 20
@@ -406,7 +396,7 @@ object EmuFinder: TEmuFinder
           item
             Options = [coAllowClick, coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible]
             Position = 2
-            Width = 100
+            Width = 350
             WideText = 'System'
           end>
       end

@@ -56,6 +56,7 @@ type
     BtnPrevious: TButton;
     lblEmuFind2: TLabel;
     LblEfind3: TLabel;
+    procedure PCWizardChange(Sender: TObject);
     procedure BtnPreviousClick(Sender: TObject);
     procedure BtnNextClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -390,6 +391,11 @@ begin
   //we have now finished with the DATS array and treelist so clear it
   VTdats.Clear;
   FreeAndNil(DatFileList);
+
+end;
+
+procedure TEmuFinder.PCWizardChange(Sender: TObject);
+begin
 
 end;
 

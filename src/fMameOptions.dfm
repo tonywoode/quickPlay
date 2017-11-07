@@ -3,7 +3,7 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 720
+  ClientHeight = 743
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -20,7 +20,7 @@ object FrmMameOptions: TFrmMameOptions
     Left = 24
     Top = 230
     Width = 577
-    Height = 441
+    Height = 465
     Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
@@ -89,13 +89,13 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl14: TLabel
       Left = 17
-      Top = 390
-      Width = 529
-      Height = 48
+      Top = 398
+      Width = 528
+      Height = 32
       Caption = 
         'A successful XML Scan will also put new systems in QuickPlay'#39's l' +
         'ist of systems, and make a new EFind file, for Mame'#39's console an' +
-        'd home-computer emulation'
+        'd home-computer emulators'
       WordWrap = True
     end
     object XMLEdit: TEdit
@@ -170,8 +170,8 @@ object FrmMameOptions: TFrmMameOptions
     end
   end
   object MameOptsOk: TButton
-    Left = 390
-    Top = 677
+    Left = 411
+    Top = 701
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -180,7 +180,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object BtnCancel: TButton
     Left = 509
-    Top = 677
+    Top = 701
     Width = 92
     Height = 31
     Cancel = True

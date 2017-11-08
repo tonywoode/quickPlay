@@ -296,10 +296,6 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
     TabOrder = 1
     object TabGeneral: TTabSheet
       Caption = 'Media Options'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object ChkEmuTab: TCheckBox
         Left = 492
         Top = 167
@@ -636,10 +632,6 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
             object TabImages: TTabSheet
               Caption = 'Images'
               ImageIndex = 1
-              ExplicitLeft = 0
-              ExplicitTop = 0
-              ExplicitWidth = 0
-              ExplicitHeight = 0
               object lblTimeOut: TLabel
                 Left = 10
                 Top = 48
@@ -688,10 +680,6 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
             object TabTextConfig: TTabSheet
               Caption = 'Text'
               ImageIndex = 2
-              ExplicitLeft = 0
-              ExplicitTop = 0
-              ExplicitWidth = 0
-              ExplicitHeight = 0
               object ShpFontColour: TShape
                 Left = 63
                 Top = 61
@@ -871,7 +859,11 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               'Thumbnails'
               'System'
               'Rom Info'
-              'Mame Command Dat file')
+              'Mame Command dat file'
+              'Mame Game init file'
+              'Mame Mess info file'
+              'Mame Story file'
+              'Mame Mess sysInfo file')
           end
           object CmbSearchMatch: TComboBox
             Left = 127

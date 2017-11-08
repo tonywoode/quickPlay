@@ -53,7 +53,11 @@ object FrmAddDefaultTab: TFrmAddDefaultTab
       'Thumbnails'
       'System'
       'Rom Info'
-      'Mame Command dat file')
+      'Mame Command dat file'
+      'Mame Game init file'
+      'Mame Mess info file'
+      'Mame Story file'
+      'Mame Mess sysInfo file')
   end
   object BtnOK: TButton
     Left = 115

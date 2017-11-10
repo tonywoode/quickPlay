@@ -109,16 +109,16 @@ call :CHECK_EXCEPTIONS
 if (%NOMOUNT%)==(1) (%EMU% %OPTIONS% %_ROMNAME% & goto unmount)
 :: Mount daemon tools, load emu and passes full rom path to it
 call :CHECK_DT
-%_DT% -mount SCSI, 0, %_ROMNAME%
+%_DT% -mount_to %_DAEMON_DRIVE%, %_ROMNAME%
 %EMU% %OPTIONS%
 :UNMOUNT
-%_DT% -unmount SCSI, 0
+%_DT% -unmount %_DAEMON_DRIVE%
 goto finish
 
 :: mount zips
 :ZIPMOUNT
 call :CHECK_DT
-%_DT% -mount SCSI, 0, %_ROMNAME%
+%_DT% -mount_to %_DAEMON_DRIVE%, %_ROMNAME%
 set _ZIPMOUNTING=YES
 ::we need a string with brackets, so don't enclose the assignment in brackets
 if NOT [%OVERRIDE%]==[] set typeListWithWildcards=(*.%OVERRIDE%)

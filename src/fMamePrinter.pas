@@ -155,6 +155,7 @@ begin
           Settings.MameOptSeries      := ChkSeriesSplit.Checked;
           Settings.MameOptVersion     := ChkVersionSplit.Checked;
           Settings.MameOptYear        := ChkYearSplit.Checked;
+
           Settings.SaveAllSettings();
         end;
 

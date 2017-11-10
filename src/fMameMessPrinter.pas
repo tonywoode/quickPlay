@@ -94,7 +94,7 @@ begin
   //take a bit of care here as the logic that follows expects these names to be folder names of SUBFOLDERS in the src, so
  //both src and dest folders must be the same name
  //nah since we lost mame type this no longer works
- if AnsiContainsText(MainFrm.Settings.MametoolMameExeName, 'RetroArch')
+ if AnsiContainsText(CmbMame.Items.Strings[CmbMame.ItemIndex], 'RetroArch')
    then softlistFolderName := 'RetroArch Softlists' else softlistFolderName := 'MAME Softlists';
    if (DirectoryExists(RomdataFolder + '\' + softlistFolderName)) and
      (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
@@ -104,6 +104,22 @@ begin
 
   if (Process = True) then
    begin
+
+     With MainFrm do
+     begin
+       if CmbMame.ItemIndex <>-1 then
+          Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+          //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
+          // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
+          MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+          Settings.MametoolMameExeName := MameExeName;
+          MameExeIndex := EmuList.IndexOfName(MameExeName);
+          MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
+          Settings.MameToolMameExePath := MameExePath;
+
+          Settings.SaveAllSettings();
+     end;
+
      Executable := MainFrm.Settings.Paths.QPNodeFile;
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
      Flags := '--softlists --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
@@ -117,20 +133,7 @@ begin
      end;
 
 
-     With MainFrm do
-   begin
-     if CmbMame.ItemIndex <>-1 then
-        Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-        //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-        // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
-        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-        Settings.MametoolMameExeName := MameExeName;
-        MameExeIndex := EmuList.IndexOfName(MameExeName);
-        MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-        Settings.MameToolMameExePath := MameExePath;
 
-        Settings.SaveAllSettings();
-   end;
 
 
     //close the form with the modal result OK

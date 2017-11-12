@@ -2645,14 +2645,12 @@ begin
 
   //the rom listing is in Show ROMS only mode, ask the user if they want to make a
   //root node.. as the root node is no longer visible.
-  if (VTDir.GetNodeLevel(VTDir.FocusedNode) = 0)then
-  begin
-    //only ask if you want to create a root node if the root isn't empty
-    if (MainFrm.GetSelectedFolder = '') or (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
+   if (VTDir.GetNodeLevel(VTDir.FocusedNode) = 0) and
+     (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], poMainFormCenter) = mrYes) then
     Dir := Settings.Paths.ROMsDir
   else
     Dir := GetSelectedFolder;
-  end;
+
 
   //check that Dir is actually equal to something!
   if Dir = '' then

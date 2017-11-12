@@ -70,10 +70,14 @@ DEL "%RELEASEDIR%\qp\EFIND\Gamebase.ini"
 ECHO.Cleaning up the old exe
 DEL "%RELEASEDIR%\qp\qp384.exe"
 
+ECHO.Cleaning up other detrius
+DEL "%RELEASEDIR%\qp\._.DS_Store"
+DEL "%RELEASEDIR%\qp\.DS_Store"
+
 ECHO.Cleaned Up Files, time to make the release notes
 PAUSE
 :CHANGELOG
-ECHO. Generating a nix line-ending changelog
+ECHO.Generating a nix line-ending changelog
 git log --oneline --no-decorate --no-merges --pretty=tformat:"* %%s"  %LASTVERSION%..HEAD > %RELEASEDIR%\changelogLF
 
 ECHO.Change that changelog at this point please - its in %RELEASEDIR% called changelogLF

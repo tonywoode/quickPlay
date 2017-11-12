@@ -1,3 +1,12 @@
+Quickplay v4.2.2 
+ 
+* updated daemon tools command line for dt 10.6...we still are going to pre-mount a K:/ SCSI drive (though DT now has many other mounting possibilities), but its a LOT faster now...
+* fix github lost spaces in markdown
+* multithreading long-since defunct mame options
+* ordered the arcade efind
+* make picture on readme reappear on github
+* consistent naming of atari-8bit
+ 
 Quickplay v4.2.1 
  
 * updated defaults system list and default extensions for systems

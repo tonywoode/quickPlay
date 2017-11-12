@@ -80,14 +80,11 @@ begin
   //for the other Mame Printers, we check whether the folder the user chose was empty
   // but the root of the romdatas is a folder not a romdata.dat, so it won't overwrite anything but an existing set
   //instead, if the selected dir is one in from the root, check the user wants this in root (which is likely)
-  if (MainFrm.VTDir.GetNodeLevel(MainFrm.VTDir.FocusedNode) = 0)  then
-  begin
-    //only ask if you want to create a root node if the root isn't empty
-    if (MainFrm.GetSelectedFolder = '') or (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+  if (MainFrm.VTDir.GetNodeLevel(MainFrm.VTDir.FocusedNode) = 0) and
+    (MessageDlg(QP_MAINFRM_NEWFOL, mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
     RomdataFolder := MainFrm.Settings.Paths.ROMsDir
   else
     RomdataFolder := MainFrm.GetSelectedFolder;
-  end;
   //todo: if user cancels out of that dialog at this point, they're going to get the copy into the selected roms folder
 
   //if the folder exists, check that's the intention

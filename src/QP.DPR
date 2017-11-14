@@ -76,7 +76,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.Title := 'Quick Play - Phoenix';
+  Application.Title := 'Quick Play - MAME Edition';
   Application.CreateForm(TMainFrm, MainFrm);
   Application.Run;
 end.

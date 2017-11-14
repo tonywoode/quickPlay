@@ -162,7 +162,7 @@
 			<VersionInfoKeys Name="LegalCopyright">John Scott</VersionInfoKeys>
 			<VersionInfoKeys Name="LegalTrademarks">John Scott</VersionInfoKeys>
 			<VersionInfoKeys Name="OriginalFilename">qp.exe</VersionInfoKeys>
-			<VersionInfoKeys Name="ProductName">QuickPlay - Phoenix</VersionInfoKeys>
+			<VersionInfoKeys Name="ProductName">QuickPlay - MAME Edition</VersionInfoKeys>
 			<VersionInfoKeys Name="ProductVersion">4.0</VersionInfoKeys>
 		</VersionInfoKeys>
 		<Language>

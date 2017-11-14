@@ -1,7 +1,7 @@
 object MainFrm: TMainFrm
   Left = 323
   Top = 450
-  Caption = 'Quickplay - Phoenix'
+  Caption = 'Quickplay - MAME Edition'
   ClientHeight = 825
   ClientWidth = 964
   Color = clBtnFace

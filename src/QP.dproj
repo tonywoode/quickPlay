@@ -54,7 +54,7 @@
         <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
         <DCC_DcuOutput>..\dcu</DCC_DcuOutput>
         <DCC_ExeOutput>..\qp</DCC_ExeOutput>
-        <VerInfo_Keys>CompanyName=John Scott;FileDescription=Quickplay the multi-emulator frontend;FileVersion=4.0.0.0;InternalName=qp.exe;LegalCopyright=John Scott;LegalTrademarks=John Scott;OriginalFilename=qp.exe;ProductName=QuickPlay - Phoenix;ProductVersion=4.0</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=John Scott;FileDescription=Quickplay the multi-emulator frontend;FileVersion=4.0.0.0;InternalName=qp.exe;LegalCopyright=John Scott;LegalTrademarks=John Scott;OriginalFilename=qp.exe;ProductName=QuickPlay - MAME Edition;ProductVersion=4.0</VerInfo_Keys>
         <DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
         <SanitizedProjectName>QP</SanitizedProjectName>
         <DCC_UnitSearchPath>$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\FindFile;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\GraphicEx;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\HIDKomponente;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JohnLib;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Common;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa\branches\2.3\Win32API;$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\jwa;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>

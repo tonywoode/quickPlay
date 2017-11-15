@@ -2180,7 +2180,7 @@ end;
 procedure TMainFrm.SetDIRHeight( Size : Integer);
 
 begin
- VTDir.DefaultNodeHeight := 8;
+ VTDir.DefaultNodeHeight := size;
   //VTDir.StateImages.Width := 8;
   //VTDir.StateImages.Height := 8;
 
@@ -4106,8 +4106,9 @@ begin
   if ( EmuList <> nil  ) then
 
   begin
-    ActRefreshExecute(Sender);
-    Settings.IconSize := SlideBar.Position;
+  //bugfix: i changed the slider to act 'on exit' not 'on change' because we were refreshing multiple times
+  Settings.IconSize := SlideBar.Position;
+  ActRefreshExecute(Sender);
   end;
 end;
 
@@ -4117,7 +4118,8 @@ begin
   if ( Settings <> nil  ) then
   begin
     Settings.IconSizeDir := SlideBarDir.Position;
-    SetDIRHeight(Settings.IconSizeDir  );
+    SetDIRHeight(Settings.IconSizeDir);
+    ActRefreshExecute(Sender);
   end;
 end;
 

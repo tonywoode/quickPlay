@@ -807,7 +807,7 @@ begin
       _bIncVersion := Ini.ReadBool('RomOptions', 'ChkIncVersion', false);
 
       _iIconSize := Ini.ReadInteger('VTRoms', 'IconSize', 20);
-      _iIconSize := Ini.ReadInteger('VTDir', 'IconSizeDir', 24);
+      _iIconSizeDir := Ini.ReadInteger('VTDir', 'IconSizeDir', 24);
 
       //Load the Images in listview option
       _bRomImages := Ini.ReadBool('RomOptions','ChkListImages', True);
@@ -1158,7 +1158,7 @@ begin
     //ROM list options
     Ini.WriteBool('RomOptions', 'chkIncVersion', _bIncVersion);
     Ini.WriteInteger('VTRoms', 'IconSize', _iIconSize);
-    Ini.WriteInteger('VTDir', 'IconSizeDir', _iIconSize);
+    Ini.WriteInteger('VTDir', 'IconSizeDir', _iIconSizeDir);
 
     Ini.WriteBool('RomOptions', 'ChkCol', _bSaveCols);
     Ini.WriteBool('RomOptions', 'ChkListImages', _bRomImages);

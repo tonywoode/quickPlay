@@ -140,6 +140,8 @@ begin
      //  why not do this in the return in main? Remember there's a subsequent cancel options if roms are empty, we'd have to capture it
      //the below causes index out of bounds but so does Refresh() from main form generally
      MainFrm.ActRefreshExecute(Sender);
+     //I managed to get the first call to an MFM rom not work, so this in an attempt to ensure dir is correct after processing
+     setCurrentDir(MainFrm.Settings.Paths.AppDir);
      end;
 
   //close the form with the modal result OK

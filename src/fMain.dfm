@@ -264,7 +264,6 @@ object MainFrm: TMainFrm
               Position = 24
               TabOrder = 0
               TickStyle = tsNone
-              OnExit = SlideBarDirChange
             end
             object VTDirRowHeightLabel: TLabel
               Left = 177
@@ -785,7 +784,7 @@ object MainFrm: TMainFrm
             'All Folders')
         end
         object SlideBar: TTrackBar
-          Left = 449
+          Left = 448
           Top = -5
           Width = 150
           Height = 45
@@ -793,7 +792,6 @@ object MainFrm: TMainFrm
           Max = 40
           Frequency = 5
           TabOrder = 3
-          OnExit = SlideBarChange
         end
       end
     end

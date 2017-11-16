@@ -372,8 +372,6 @@ type
 
     procedure SlideBarMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure SlideBarDirMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure SlideBarChange(Sender: TObject);
-    procedure SlideBarDirChange(Sender: TObject);
     procedure VTRomsHeaderClick(Sender: TVTHeader; HitInfo: TVTHeaderHitInfo );
     procedure actCheckForUpdatesExecute(Sender: TObject);
     procedure actRandomAllNeverPlayedExecute(Sender: TObject);
@@ -4093,39 +4091,30 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.SlideBarChange(Sender: TObject);
+procedure TMainFrm.SlideBarMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
-//start
+    //start
   if ( Settings <> nil  ) then
   if ( EmuList <> nil  ) then
-
+  if ( Settings.IconSize <> SlideBar.Position) then
   begin
   //bugfix: i changed the slider to act 'on exit' not 'on change' because we were refreshing multiple times
   Settings.IconSize := SlideBar.Position;
   ActRefreshExecute(Sender);
+  Settings.SaveAllSettings();
   end;
-end;
-
-procedure TMainFrm.SlideBarDirChange(Sender: TObject);
-begin
-//start
-  if ( Settings <> nil  ) then
-  begin
-    Settings.IconSizeDir := SlideBarDir.Position;
-    ActRefreshExecute(Sender);
-  end;
-end;
-
-procedure TMainFrm.SlideBarMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-    if ( Settings <> nil  ) then
-    Settings.SaveAllSettings();
 end;
 
 procedure TMainFrm.SlideBarDirMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
-    if ( Settings <> nil  ) then
+//start
+  if ( Settings <> nil  ) then
+  if ( Settings.IconSizeDir <> SlideBarDir.Position) then
+  begin
+    Settings.IconSizeDir := SlideBarDir.Position;
+    ActRefreshExecute(Sender);
     Settings.SaveAllSettings();
+  end;
 end;
 
 procedure TMainFrm.FormClose(Sender: TObject; var Action: TCloseAction);

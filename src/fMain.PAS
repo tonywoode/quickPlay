@@ -354,6 +354,7 @@ type
     ActMameMessPrinter: TAction;
     N20: TMenuItem;
     PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem;
+    VTDirRowHeightLabel: TLabel;
     procedure ActMameOptionsExecute(Sender: TObject);
     procedure ActMameMessPrinterExecute(
       Sender: TObject);
@@ -683,7 +684,6 @@ type
     Procedure RunROM(var aRom : TQPRom; aEmu : TQPEmu);
     Procedure SetVTWallpapers();
     procedure SetROMHeight(Minimum : Integer);
-    procedure SetDIRHeight( Size : Integer);
 
   protected
      property OnMouseUp;
@@ -707,7 +707,7 @@ implementation
 
 uses StrUtils, FindFile, ShellAPI, IniFiles,
      JCLstrings, JCLFileUtils,
-     uJVirtualTree, uJFile, uJUtilities, ujWindowsMisc,
+     uJVirtualTree, uJFile, uJUtilities, ujWindowsMisc, Math,
 
      fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
@@ -1157,7 +1157,8 @@ var
   childfol : TQPDir;
   SR: TSearchRec;
   ChildNode: PVirtualNode;
-  NewIcon : Integer;
+  NewIcon, VTDirRowHeight : Integer;
+
 begin
   //this code is for directory listing part of the tree
   //do a search for files, including directories (its directories we want!)
@@ -1183,13 +1184,15 @@ begin
               ChildFol.CustomIcon := True;
               ChildFol.NormalIcon := NewIcon;
               ChildFol.SelIcon := NewIcon;
-              If FDirHeight < 24 then
+              //trying to get vtdir slidebar working: which is the larger of FDirHeight and IconSizeDir
+              VTDirRowHeight := Max(FDirHeight, Settings.IconSizeDir);
+              If (VTDirRowHeight < 24) then
                 VTDir.NodeHeight[ChildNode] := 24
               else
-                VTDir.NodeHeight[ChildNode] := FDirHeight;
+                VTDir.NodeHeight[ChildNode] := VTDirRowHeight;
             end
             else
-              VTDir.NodeHeight[ChildNode] := FDirHeight;
+              VTDir.NodeHeight[ChildNode] := VTDirRowHeight;
 
             VTDir.ValidateNode(Node, False);
           end;
@@ -2177,15 +2180,6 @@ begin
   end;
 end;
 
-procedure TMainFrm.SetDIRHeight( Size : Integer);
-
-begin
- VTDir.DefaultNodeHeight := size;
-  //VTDir.StateImages.Width := 8;
-  //VTDir.StateImages.Height := 8;
-
-
-end;
 {-----------------------------------------------------------------------------}
 {                              Action List Routines                           }
 {                              Sorted by category                             }
@@ -3777,7 +3771,7 @@ begin
     else
     begin
       VTRoms.Images := ImageList1;
-      SetROMHeight(Settings.IconSize  );   //if we made this a var we coudl change the view size ( also note the above two )
+      SetROMHeight(Settings.IconSize  );   //if we made this a var we could change the view size ( also note the above two )
     end;
 
     fillroms(NewFol.FullPath+DefaultFileName);
@@ -4118,7 +4112,6 @@ begin
   if ( Settings <> nil  ) then
   begin
     Settings.IconSizeDir := SlideBarDir.Position;
-    SetDIRHeight(Settings.IconSizeDir);
     ActRefreshExecute(Sender);
   end;
 end;
@@ -4867,7 +4860,7 @@ procedure TMainFrm.VTdirInitNode(Sender: TBaseVirtualTree; ParentNode,
   Node: PVirtualNode; var InitialStates: TVirtualNodeInitStates);
 var
   CurFol : TQPDir;
-  NewIcon : Integer;
+  NewIcon, VTDirRowHeight : Integer;
 begin
   //this code initialises the VTdir Treeview nodes
 
@@ -4894,18 +4887,20 @@ begin
     Include(InitialStates, ivsHasChildren);
 
   NewIcon := TreeImages(CurFol.FullPath+'folders.ini');
+  //trying to get vtdir slidebar working: which is the larger of FDirHeight and IconSizeDir
+  VTDirRowHeight := Max(FDirHeight, Settings.IconSizeDir);
   If NewIcon <> -1 then
   begin
     CurFol.CustomIcon := True;
     CurFol.NormalIcon := NewIcon;
     CurFol.SelIcon := NewIcon;
-    If FDirHeight < 24 then
+    If VTDirRowHeight < 24 then
       Sender.NodeHeight[Node] := 24
     else
-      Sender.NodeHeight[Node] := FDirHeight;
+      Sender.NodeHeight[Node] := VTDirRowHeight;
   end
   else
-    Sender.NodeHeight[Node] := FDirHeight;
+    Sender.NodeHeight[Node] := VTDirRowHeight;
 
 end;
 

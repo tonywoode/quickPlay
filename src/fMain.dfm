@@ -3,7 +3,7 @@ object MainFrm: TMainFrm
   Top = 450
   Caption = 'Quickplay - MAME Edition'
   ClientHeight = 825
-  ClientWidth = 964
+  ClientWidth = 1054
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -104,7 +104,7 @@ object MainFrm: TMainFrm
   object StatusBar: TStatusBar
     Left = 0
     Top = 806
-    Width = 964
+    Width = 1054
     Height = 19
     Panels = <
       item
@@ -113,25 +113,28 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitWidth = 964
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
-    Width = 964
+    Width = 1054
     Height = 806
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 964
     object SplitMain: TSplitter
       Left = 209
       Top = 0
       Height = 806
       Beveled = True
       ResizeStyle = rsUpdate
-      ExplicitHeight = 696
+      ExplicitLeft = 270
+      ExplicitTop = 8
     end
     object SplitImage: TSplitter
-      Left = 789
+      Left = 879
       Top = 0
       Height = 806
       Align = alRight
@@ -157,6 +160,8 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitLeft = -3
+        ExplicitTop = 24
         object TabROMS: TTabSheet
           Caption = 'ROMs'
           object VTdir: TVirtualStringTree
@@ -214,7 +219,6 @@ object MainFrm: TMainFrm
             Top = 0
             Width = 201
             Height = 29
-            ButtonHeight = 30
             ButtonWidth = 25
             Caption = 'TBDir'
             Images = ImageList1
@@ -248,16 +252,29 @@ object MainFrm: TMainFrm
               Style = tbsSeparator
             end
             object SlideBarDir: TTrackBar
+              Tag = 1
               Left = 108
               Top = 0
-              Width = 90
-              Height = 30
-              LineSize = 5
-              Min = 1
+              Width = 69
+              Height = 22
+              LineSize = 3
+              Max = 36
+              Min = 24
               Frequency = 5
-              Position = 1
+              Position = 24
               TabOrder = 0
+              TickStyle = tsNone
               OnExit = SlideBarDirChange
+            end
+            object VTDirRowHeightLabel: TLabel
+              Left = 177
+              Top = 0
+              Width = 61
+              Height = 22
+              Alignment = taCenter
+              Caption = '  Row Height'
+              Layout = tlCenter
+              OnClick = lblRowHeightClick
             end
           end
         end
@@ -456,19 +473,21 @@ object MainFrm: TMainFrm
     object RomPanel: TPanel
       Left = 212
       Top = 0
-      Width = 577
+      Width = 667
       Height = 806
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitWidth = 577
       object PanRomTop: TPanel
         Left = 0
         Top = 0
-        Width = 577
+        Width = 667
         Height = 29
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitWidth = 577
         object TBRoms: TToolBar
           Left = 0
           Top = 0
@@ -549,7 +568,7 @@ object MainFrm: TMainFrm
       object VTRoms: TVirtualStringTree
         Left = 0
         Top = 61
-        Width = 577
+        Width = 667
         Height = 745
         Align = alClient
         BevelInner = bvNone
@@ -602,6 +621,8 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitLeft = 58
+        ExplicitTop = 75
         Columns = <
           item
             Position = 0
@@ -687,14 +708,15 @@ object MainFrm: TMainFrm
       object PanFilter: TPanel
         Left = 0
         Top = 29
-        Width = 577
+        Width = 667
         Height = 32
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitWidth = 577
         object lblFilter: TLabel
-          Left = 0
-          Top = -3
+          Left = -36
+          Top = 5
           Width = 27
           Height = 13
           Alignment = taCenter
@@ -703,7 +725,7 @@ object MainFrm: TMainFrm
         end
         object lblRowHeight: TLabel
           Left = 604
-          Top = -4
+          Top = 0
           Width = 55
           Height = 13
           Caption = 'Row Height'
@@ -776,7 +798,7 @@ object MainFrm: TMainFrm
       end
     end
     object pgMediaPanel: TPageControl
-      Left = 792
+      Left = 882
       Top = 0
       Width = 172
       Height = 806
@@ -784,6 +806,7 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitLeft = 792
     end
     object Edit1: TEdit
       Left = 640

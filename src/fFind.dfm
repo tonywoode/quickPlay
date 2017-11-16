@@ -3,8 +3,8 @@ object FindForm: TFindForm
   Top = 172
   BorderStyle = bsDialog
   Caption = 'Find a Rom'
-  ClientHeight = 585
-  ClientWidth = 679
+  ClientHeight = 730
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -31,16 +31,18 @@ object FindForm: TFindForm
   TextHeight = 17
   object StatusBar: TStatusBar
     Left = 0
-    Top = 566
-    Width = 679
+    Top = 711
+    Width = 1018
     Height = 19
     Panels = <>
     SimplePanel = True
+    ExplicitTop = 566
+    ExplicitWidth = 679
   end
   object PanControls: TPanel
     Left = 0
-    Top = 502
-    Width = 681
+    Top = 650
+    Width = 1018
     Height = 55
     BevelOuter = bvNone
     TabOrder = 2
@@ -55,7 +57,7 @@ object FindForm: TFindForm
       TabOrder = 0
     end
     object BtnFavs: TButton
-      Left = 120
+      Left = 170
       Top = 14
       Width = 115
       Height = 33
@@ -63,7 +65,7 @@ object FindForm: TFindForm
       TabOrder = 1
     end
     object BtnJump: TButton
-      Left = 239
+      Left = 343
       Top = 14
       Width = 119
       Height = 33
@@ -73,8 +75,8 @@ object FindForm: TFindForm
       TabOrder = 2
     end
     object BtnClose: TButton
-      Left = 575
-      Top = 14
+      Left = 903
+      Top = 22
       Width = 98
       Height = 33
       Caption = '&Close'
@@ -82,7 +84,7 @@ object FindForm: TFindForm
       TabOrder = 4
     end
     object BtnVirtual: TButton
-      Left = 366
+      Left = 542
       Top = 14
       Width = 181
       Height = 33
@@ -114,9 +116,9 @@ object FindForm: TFindForm
   end
   object VTfind: TVirtualStringTree
     Left = 0
-    Top = 241
-    Width = 679
-    Height = 264
+    Top = 235
+    Width = 1018
+    Height = 423
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
     Header.Font.Charset = DEFAULT_CHARSET
@@ -124,7 +126,7 @@ object FindForm: TFindForm
     Header.Font.Height = -11
     Header.Font.Name = 'Tahoma'
     Header.Font.Style = []
-    Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoVisible]
+    Header.Options = [hoColumnResize, hoDrag, hoVisible]
     HintAnimation = hatNone
     HintMode = hmHint
     IncrementalSearch = isAll
@@ -142,30 +144,30 @@ object FindForm: TFindForm
     Columns = <
       item
         Position = 0
-        Width = 375
+        Width = 380
         WideText = 'Name'
       end
       item
         Position = 1
-        Width = 100
+        Width = 480
         WideText = 'Emulator'
       end
       item
         Position = 2
-        Width = 200
+        Width = 154
         WideText = 'Path'
       end>
   end
   object PanFilter: TPanel
-    Left = 1
-    Top = 0
-    Width = 676
+    Left = 0
+    Top = -8
+    Width = 1017
     Height = 242
     BevelOuter = bvNone
     TabOrder = 0
     object RadMatchAll: TRadioButton
-      Left = 7
-      Top = 160
+      Left = 79
+      Top = 179
       Width = 205
       Height = 22
       Caption = 'Match All Criteria'
@@ -174,8 +176,8 @@ object FindForm: TFindForm
       TabStop = True
     end
     object RadMatchAny: TRadioButton
-      Left = 218
-      Top = 160
+      Left = 290
+      Top = 179
       Width = 242
       Height = 22
       Caption = 'Match Any Criteria'
@@ -184,7 +186,7 @@ object FindForm: TFindForm
     object VTQuery: TVirtualStringTree
       Left = 10
       Top = 21
-      Width = 661
+      Width = 991
       Height = 131
       Header.AutoSizeIndex = 2
       Header.DefaultHeight = 17
@@ -209,23 +211,23 @@ object FindForm: TFindForm
       Columns = <
         item
           Position = 0
-          Width = 175
+          Width = 275
           WideText = 'Property'
         end
         item
           Position = 1
-          Width = 100
+          Width = 200
           WideText = 'Contains'
         end
         item
           Position = 2
-          Width = 382
+          Width = 512
           WideText = 'Query'
         end>
     end
     object BtnAdd: TButton
-      Left = 468
-      Top = 157
+      Left = 610
+      Top = 173
       Width = 98
       Height = 33
       Caption = 'Add'
@@ -233,8 +235,8 @@ object FindForm: TFindForm
       OnClick = BtnAddClick
     end
     object BtnDel: TButton
-      Left = 573
-      Top = 157
+      Left = 715
+      Top = 173
       Width = 98
       Height = 33
       Caption = 'Remove'
@@ -243,8 +245,8 @@ object FindForm: TFindForm
       OnClick = BtnDelClick
     end
     object BtnSearch: TButton
-      Left = 290
-      Top = 200
+      Left = 903
+      Top = 173
       Width = 98
       Height = 33
       Caption = '&Search'

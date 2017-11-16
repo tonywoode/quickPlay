@@ -113,7 +113,6 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitWidth = 964
   end
   object PanContent: TPanel
     Left = 0
@@ -123,7 +122,6 @@ object MainFrm: TMainFrm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 964
     object SplitMain: TSplitter
       Left = 209
       Top = 0
@@ -160,8 +158,6 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitLeft = -3
-        ExplicitTop = 24
         object TabROMS: TTabSheet
           Caption = 'ROMs'
           object VTdir: TVirtualStringTree
@@ -280,6 +276,10 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -344,7 +344,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end
@@ -352,6 +352,10 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
@@ -408,6 +412,10 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -477,7 +485,6 @@ object MainFrm: TMainFrm
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 577
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -486,7 +493,6 @@ object MainFrm: TMainFrm
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitWidth = 577
         object TBRoms: TToolBar
           Left = 0
           Top = 0
@@ -620,8 +626,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitLeft = 58
-        ExplicitTop = 75
         Columns = <
           item
             Position = 0
@@ -712,7 +716,6 @@ object MainFrm: TMainFrm
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitWidth = 577
         object lblFilter: TLabel
           Left = -36
           Top = 5
@@ -804,7 +807,6 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitLeft = 792
     end
     object Edit1: TEdit
       Left = 640

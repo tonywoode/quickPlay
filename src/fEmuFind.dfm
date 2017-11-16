@@ -172,10 +172,6 @@ object EmuFinder: TEmuFinder
     object TabDatAndGo: TTabSheet
       Caption = 'DatAndGo'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GrpStart: TGroupBox
         Left = 104
         Top = 501

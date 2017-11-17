@@ -717,7 +717,7 @@ object MainFrm: TMainFrm
         BevelOuter = bvNone
         TabOrder = 1
         object lblFilter: TLabel
-          Left = -36
+          Left = 0
           Top = 5
           Width = 27
           Height = 13

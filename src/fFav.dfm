@@ -1,10 +1,11 @@
 object FavForm: TFavForm
   Left = 282
   Top = 240
+  Anchors = []
   BorderStyle = bsDialog
   Caption = 'Organise Favourites'
-  ClientHeight = 730
-  ClientWidth = 1018
+  ClientHeight = 717
+  ClientWidth = 1010
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,10 +18,10 @@ object FavForm: TFavForm
   PixelsPerInch = 120
   TextHeight = 17
   object VTFav: TVirtualStringTree
-    Left = 0
-    Top = 10
-    Width = 895
-    Height = 673
+    Left = 8
+    Top = 8
+    Width = 993
+    Height = 665
     DragMode = dmAutomatic
     DragOperations = [doMove]
     DragType = dtVCL
@@ -32,6 +33,7 @@ object FavForm: TFavForm
     Header.Font.Name = 'MS Sans Serif'
     Header.Font.Style = []
     Header.Options = [hoColumnResize, hoDrag, hoVisible]
+    LineMode = lmBands
     NodeDataSize = 0
     TabOrder = 0
     TreeOptions.AutoOptions = [toAutoScrollOnExpand, toAutoTristateTracking]
@@ -53,7 +55,7 @@ object FavForm: TFavForm
       item
         Options = [coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible]
         Position = 0
-        Width = 250
+        Width = 280
         WideText = 'Name'
       end
       item
@@ -65,15 +67,15 @@ object FavForm: TFavForm
       item
         Options = [coEnabled, coParentBidiMode, coParentColor, coResizable, coShowDropMark, coVisible]
         Position = 2
-        Width = 180
+        Width = 400
         WideText = 'Emulator'
       end>
   end
   object BtnMoveUp: TButton
-    Left = 901
-    Top = 10
-    Width = 109
-    Height = 200
+    Left = 8
+    Top = 679
+    Width = 89
+    Height = 33
     Hint = 'Move the selected Favourite up'
     Caption = 'Move Up'
     ParentShowHint = False
@@ -82,10 +84,10 @@ object FavForm: TFavForm
     OnClick = BtnMoveUpClick
   end
   object BtnMoveDown: TButton
-    Left = 901
-    Top = 234
-    Width = 109
-    Height = 200
+    Left = 121
+    Top = 679
+    Width = 89
+    Height = 33
     Hint = 'Move the selected Favourite down'
     Caption = 'Move Down'
     ParentShowHint = False
@@ -94,17 +96,17 @@ object FavForm: TFavForm
     OnClick = BtnMoveDownClick
   end
   object BtnDel: TButton
-    Left = 903
-    Top = 457
-    Width = 107
-    Height = 200
+    Left = 233
+    Top = 679
+    Width = 89
+    Height = 33
     Caption = '&Delete Fav'
     TabOrder = 3
     OnClick = BtnDelClick
   end
   object BtnOK: TButton
     Left = 807
-    Top = 689
+    Top = 679
     Width = 98
     Height = 33
     Caption = '&OK'
@@ -114,7 +116,7 @@ object FavForm: TFavForm
   end
   object BtnCancel: TButton
     Left = 912
-    Top = 689
+    Top = 679
     Width = 98
     Height = 33
     Caption = 'Cancel'

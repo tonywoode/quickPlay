@@ -36,8 +36,6 @@ object FindForm: TFindForm
     Height = 19
     Panels = <>
     SimplePanel = True
-    ExplicitTop = 566
-    ExplicitWidth = 679
   end
   object PanControls: TPanel
     Left = 0
@@ -76,7 +74,7 @@ object FindForm: TFindForm
     end
     object BtnClose: TButton
       Left = 903
-      Top = 22
+      Top = 14
       Width = 98
       Height = 33
       Caption = '&Close'
@@ -115,9 +113,9 @@ object FindForm: TFindForm
     end
   end
   object VTfind: TVirtualStringTree
-    Left = 0
+    Left = 8
     Top = 235
-    Width = 1018
+    Width = 991
     Height = 423
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
@@ -130,6 +128,7 @@ object FindForm: TFindForm
     HintAnimation = hatNone
     HintMode = hmHint
     IncrementalSearch = isAll
+    Indent = 0
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
@@ -154,7 +153,7 @@ object FindForm: TFindForm
       end
       item
         Position = 2
-        Width = 154
+        Width = 380
         WideText = 'Path'
       end>
   end

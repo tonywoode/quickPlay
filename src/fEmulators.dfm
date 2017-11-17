@@ -3,8 +3,8 @@ object FrmEmuDlg: TFrmEmuDlg
   Top = 213
   BorderStyle = bsDialog
   Caption = 'Emulator Management'
-  ClientHeight = 625
-  ClientWidth = 970
+  ClientHeight = 730
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,16 +19,18 @@ object FrmEmuDlg: TFrmEmuDlg
   PixelsPerInch = 120
   TextHeight = 17
   object Splitter1: TSplitter
-    Left = 250
+    Left = 370
     Top = 0
     Width = 4
-    Height = 585
+    Height = 690
+    ExplicitLeft = 250
+    ExplicitHeight = 585
   end
   object VTEmus: TVirtualStringTree
     Left = 0
     Top = 0
-    Width = 250
-    Height = 585
+    Width = 370
+    Height = 690
     Align = alLeft
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
@@ -58,8 +60,8 @@ object FrmEmuDlg: TFrmEmuDlg
   end
   object PanCtrls: TPanel
     Left = 0
-    Top = 585
-    Width = 970
+    Top = 690
+    Width = 1018
     Height = 40
     Align = alBottom
     BevelOuter = bvNone
@@ -103,20 +105,23 @@ object FrmEmuDlg: TFrmEmuDlg
     end
   end
   object pgEmuOpt: TPageControl
-    Left = 254
+    Left = 374
     Top = 0
-    Width = 716
-    Height = 585
+    Width = 644
+    Height = 690
     ActivePage = TabConfiguration
     Align = alClient
     TabOrder = 2
+    ExplicitLeft = 354
+    ExplicitWidth = 664
     object TabConfiguration: TTabSheet
       Caption = 'Emulator Configuration'
+      ExplicitWidth = 656
       object VTEmuOpt: TVirtualStringTree
         Left = 0
         Top = 0
-        Width = 708
-        Height = 553
+        Width = 636
+        Height = 658
         Align = alClient
         DefaultNodeHeight = 25
         Header.AutoSizeIndex = 1
@@ -148,6 +153,7 @@ object FrmEmuDlg: TFrmEmuDlg
         OnInitChildren = VTEmuOptInitChildren
         OnInitNode = VTEmuOptInitNode
         OnNewText = VTEmuOptNewText
+        ExplicitWidth = 656
         Columns = <
           item
             Position = 0
@@ -156,7 +162,7 @@ object FrmEmuDlg: TFrmEmuDlg
           end
           item
             Position = 1
-            Width = 454
+            Width = 382
             WideText = 'Value'
           end>
       end
@@ -165,6 +171,7 @@ object FrmEmuDlg: TFrmEmuDlg
       Caption = 'Media Configuration'
       ImageIndex = 1
       OnExit = TabMediaConfigExit
+      ExplicitWidth = 656
       object lblSysImage: TLabel
         Left = 10
         Top = 73

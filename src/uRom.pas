@@ -381,12 +381,15 @@ var
   i : Integer;
 begin
   Result := -1;
-  for i := 0 to _IPS.Count-1 do
-    if IPS[i].IsDefault then
-    begin
-      Result := i;
-      Break;
-    end;
+  if _IPS <> nil  then //bugfix - this guard line won't get ip roms working in favourites runrom, but will run other roms...
+  begin
+    for i := 0 to _IPS.Count-1 do
+      if IPS[i].IsDefault then
+      begin
+        Result := i;
+        Break;
+      end;
+  end;
 end;
 
 {-----------------------------------------------------------------------------}

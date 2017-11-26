@@ -1177,13 +1177,13 @@ begin
             //now work out if they require a special icon.
             ChildFol := TQPDir(GetObject(VTDir, ChildNode));
             NewIcon := TreeImages(ChildFol.FullPath+'folders.ini');
+            //trying to get vtdir slidebar working: which is the larger of FDirHeight and IconSizeDir
+            VTDirRowHeight := Max(FDirHeight, Settings.IconSizeDir);
             If NewIcon <> -1 then
             begin
               ChildFol.CustomIcon := True;
               ChildFol.NormalIcon := NewIcon;
               ChildFol.SelIcon := NewIcon;
-              //trying to get vtdir slidebar working: which is the larger of FDirHeight and IconSizeDir
-              VTDirRowHeight := Max(FDirHeight, Settings.IconSizeDir);
               If (VTDirRowHeight < 24) then
                 VTDir.NodeHeight[ChildNode] := 24
               else

@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'Quickplay - MAME Edition'
-  ClientHeight = 825
+  ClientHeight = 850
   ClientWidth = 1054
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 806
+    Top = 831
     Width = 1054
     Height = 19
     Panels = <
@@ -113,28 +113,31 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 806
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 1054
-    Height = 806
+    Height = 831
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 806
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 806
+      Height = 831
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitLeft = 270
       ExplicitTop = 8
+      ExplicitHeight = 806
     end
     object SplitImage: TSplitter
       Left = 879
       Top = 0
-      Height = 806
+      Height = 831
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -145,26 +148,29 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 806
+      Height = 831
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 806
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 806
+        Height = 831
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 806
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitHeight = 778
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 749
+            Height = 774
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -203,6 +209,7 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
+            ExplicitHeight = 749
             Columns = <
               item
                 Position = 0
@@ -481,10 +488,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 667
-      Height = 806
+      Height = 831
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 806
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -574,7 +582,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 61
         Width = 667
-        Height = 745
+        Height = 770
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -626,6 +634,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 745
         Columns = <
           item
             Position = 0
@@ -802,11 +811,12 @@ object MainFrm: TMainFrm
       Left = 882
       Top = 0
       Width = 172
-      Height = 806
+      Height = 831
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 806
     end
     object Edit1: TEdit
       Left = 640
@@ -1497,6 +1507,12 @@ object MainFrm: TMainFrm
       object MAMEOptions1: TMenuItem
         Action = ActMameOptions
         Caption = 'MAME / RetroArch MAME Options'
+        ImageIndex = 9
+      end
+      object PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem
+        Action = ActMameMessPrinter
+        Caption = 'Print MAME / Retroarch MAME Softlist Romdatas in Current Dir'
+        ImageIndex = 10
       end
       object N30: TMenuItem
         Caption = '-'
@@ -1504,22 +1520,14 @@ object MainFrm: TMainFrm
       object PrintMAMERomsetinCurrentFolder1: TMenuItem
         Action = ActMamePrinter
         Caption = 'Print MAME / RetroArch MAME Romdata in Current Dir'
-      end
-      object N31: TMenuItem
-        Caption = '-'
+        ImageIndex = 20
       end
       object PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem
         Action = ActMameMFMPrinter
         Caption = 'Print MAME File Manager Text File in Current Dir'
+        ImageIndex = 20
       end
       object N23: TMenuItem
-        Caption = '-'
-      end
-      object PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem
-        Action = ActMameMessPrinter
-        Caption = 'Print MAME / Retroarch MESS Softlist Romdatas in Current Dir'
-      end
-      object N20: TMenuItem
         Caption = '-'
       end
       object ScanforZiNcROMs1: TMenuItem

@@ -347,12 +347,10 @@ type
     MAMEOptions1: TMenuItem;
     N30: TMenuItem;
     PrintMAMERomsetinCurrentFolder1: TMenuItem;
-    N31: TMenuItem;
     PrintMAMEFileManagerSetinCurrentFolder1: TMenuItem;
     ActMamePrinter: TAction;
     ActMameMFMPrinter: TAction;
     ActMameMessPrinter: TAction;
-    N20: TMenuItem;
     PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem;
     VTDirRowHeightLabel: TLabel;
     procedure ActMameOptionsExecute(Sender: TObject);

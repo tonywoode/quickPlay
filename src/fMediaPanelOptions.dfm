@@ -4,7 +4,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
   BorderStyle = bsDialog
   Caption = 'Media Panel Options'
   ClientHeight = 787
-  ClientWidth = 930
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,8 +18,8 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
   PixelsPerInch = 120
   TextHeight = 17
   object BtnOK: TButton
-    Left = 718
-    Top = 748
+    Left = 807
+    Top = 750
     Width = 98
     Height = 33
     Caption = '&OK'
@@ -28,8 +28,8 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
     OnClick = BtnOKClick
   end
   object BtnCancel: TButton
-    Left = 823
-    Top = 748
+    Left = 912
+    Top = 750
     Width = 98
     Height = 33
     Caption = '&Cancel'
@@ -39,11 +39,12 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
   object PanHeader: TPanel
     Left = 0
     Top = 0
-    Width = 930
+    Width = 1018
     Height = 68
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 930
     object lblHeader: TLabel
       Left = 84
       Top = 21
@@ -289,15 +290,16 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
   object pgMediaOptions: TPageControl
     Left = 0
     Top = 68
-    Width = 930
+    Width = 1018
     Height = 676
-    ActivePage = TabPaths
+    ActivePage = TabGeneral
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 930
     object TabGeneral: TTabSheet
       Caption = 'Media Options'
       object ChkEmuTab: TCheckBox
-        Left = 492
+        Left = 565
         Top = 167
         Width = 388
         Height = 23
@@ -307,7 +309,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         TabOrder = 0
       end
       object GrpFolderImg: TRadioGroup
-        Left = 492
+        Left = 565
         Top = 21
         Width = 336
         Height = 137
@@ -364,6 +366,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
     object TabPaths: TTabSheet
       Caption = 'Path Configuration'
       ImageIndex = 1
+      ExplicitWidth = 922
       object lblSystems: TLabel
         Left = 0
         Top = 21
@@ -378,7 +381,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         ParentFont = False
       end
       object lblTabs: TLabel
-        Left = 194
+        Left = 290
         Top = 21
         Width = 35
         Height = 18
@@ -393,7 +396,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
       object VTSystems: TVirtualStringTree
         Left = 0
         Top = 42
-        Width = 190
+        Width = 281
         Height = 587
         DefaultNodeHeight = 20
         Header.AutoSizeIndex = 0
@@ -417,9 +420,9 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         Columns = <>
       end
       object VTTabs: TVirtualStringTree
-        Left = 191
+        Left = 287
         Top = 42
-        Width = 169
+        Width = 187
         Height = 587
         DefaultNodeHeight = 24
         DragMode = dmAutomatic
@@ -448,15 +451,16 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         Columns = <>
       end
       object pgConfig: TPageControl
-        Left = 370
+        Left = 480
         Top = 42
-        Width = 545
+        Width = 527
         Height = 584
         ActivePage = TabTabConfig
         TabOrder = 4
         object TabSystemConfig: TTabSheet
           Caption = 'TabSystemConfig'
           OnExit = TabSystemConfigExit
+          ExplicitWidth = 537
           object lblSysImage: TLabel
             Left = 10
             Top = 52
@@ -509,6 +513,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
           Caption = 'TabTabConfig'
           ImageIndex = 1
           OnExit = TabTabConfigExit
+          ExplicitWidth = 537
           object TLabel
             Left = 44
             Top = 21
@@ -524,38 +529,38 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
             Caption = 'Search Criteria'
           end
           object pgTabOptions: TPageControl
-            Left = 21
-            Top = 330
+            Left = 7
+            Top = 355
             Width = 503
             Height = 194
-            ActivePage = TabThumbnails
+            ActivePage = TabTextConfig
             TabOrder = 4
             object TabThumbnails: TTabSheet
               Caption = 'Thumbnail'
               object lblThumbHeight: TLabel
                 Left = 51
-                Top = 10
+                Top = 18
                 Width = 39
                 Height = 17
                 Caption = 'Height'
               end
               object lblThumbWidth: TLabel
                 Left = 55
-                Top = 44
+                Top = 52
                 Width = 37
                 Height = 17
                 Caption = 'Width'
               end
               object lblThbHorzGap: TLabel
                 Left = 0
-                Top = 85
+                Top = 93
                 Width = 88
                 Height = 17
                 Caption = 'Horizontal Gap'
               end
               object lblThbVertGap: TLabel
                 Left = 17
-                Top = 120
+                Top = 128
                 Width = 71
                 Height = 17
                 Caption = 'Vertical Gap'
@@ -590,7 +595,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               end
               object TxtThumbVertGap: TSpinEdit
                 Left = 115
-                Top = 114
+                Top = 122
                 Width = 75
                 Height = 27
                 MaxValue = 0
@@ -600,7 +605,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               end
               object TxtThumbHorzGap: TSpinEdit
                 Left = 115
-                Top = 78
+                Top = 86
                 Width = 75
                 Height = 27
                 MaxValue = 0
@@ -610,7 +615,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               end
               object TxtThumbWidth: TSpinEdit
                 Left = 115
-                Top = 38
+                Top = 46
                 Width = 75
                 Height = 27
                 MaxValue = 0
@@ -620,7 +625,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               end
               object TxtThumbHeight: TSpinEdit
                 Left = 115
-                Top = 4
+                Top = 12
                 Width = 75
                 Height = 27
                 MaxValue = 0
@@ -736,7 +741,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
                 Height = 17
               end
               object BtnFontChange: TButton
-                Left = 314
+                Left = 370
                 Top = 115
                 Width = 116
                 Height = 33
@@ -747,17 +752,17 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
             end
           end
           object GrpPaths: TGroupBox
-            Left = 21
+            Left = 11
             Top = 120
-            Width = 493
-            Height = 204
+            Width = 502
+            Height = 229
             Caption = 'Media Paths'
             TabOrder = 3
             object LstPaths: TListBox
-              Left = 10
+              Left = 8
               Top = 27
-              Width = 431
-              Height = 142
+              Width = 486
+              Height = 155
               TabStop = False
               Font.Charset = DEFAULT_CHARSET
               Font.Color = clWindowText
@@ -769,8 +774,8 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               TabOrder = 0
             end
             object BtnAddDir: TJvImgBtn
-              Left = 450
-              Top = 26
+              Left = 376
+              Top = 188
               Width = 35
               Height = 33
               TabOrder = 1
@@ -784,8 +789,8 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               ImageIndex = 0
             end
             object BtnAddCompress: TJvImgBtn
-              Left = 449
-              Top = 63
+              Left = 417
+              Top = 188
               Width = 35
               Height = 32
               TabOrder = 2
@@ -799,8 +804,8 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               ImageIndex = 28
             end
             object BtnDelMedia: TJvImgBtn
-              Left = 450
-              Top = 103
+              Left = 458
+              Top = 188
               Width = 35
               Height = 33
               TabOrder = 3
@@ -814,9 +819,9 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
               ImageIndex = 3
             end
             object ChkSearchROMdir: TCheckBox
-              Left = 4
-              Top = 177
-              Width = 416
+              Left = 8
+              Top = 196
+              Width = 309
               Height = 22
               Hint = 
                 'If enabled the directory which contains the ROM will be searched' +
@@ -884,7 +889,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         end
       end
       object btnDeleteDefaultTab: TJvImgBtn
-        Left = 272
+        Left = 368
         Top = 9
         Width = 33
         Height = 33
@@ -899,7 +904,7 @@ object FrmMediaPanelOptions: TFrmMediaPanelOptions
         ImageIndex = 3
       end
       object btnAddDefaultTab: TJvImgBtn
-        Left = 238
+        Left = 334
         Top = 9
         Width = 33
         Height = 33

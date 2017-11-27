@@ -3,12 +3,12 @@ object FrmRunRom: TFrmRunRom
   Top = 121
   BorderStyle = bsDialog
   Caption = 'ROM Launching...'
-  ClientHeight = 564
-  ClientWidth = 409
+  ClientHeight = 637
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
@@ -16,70 +16,70 @@ object FrmRunRom: TFrmRunRom
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object TLabel
     Left = 8
-    Top = 434
-    Width = 154
-    Height = 13
+    Top = 479
+    Width = 201
+    Height = 17
     Caption = 'Command Line That Will Be Run:'
   end
   object BtnRun: TButton
-    Left = 248
-    Top = 533
-    Width = 75
-    Height = 25
+    Left = 804
+    Top = 592
+    Width = 98
+    Height = 33
     Caption = '&Run'
     Default = True
     TabOrder = 2
     OnClick = BtnRunClick
   end
   object BtnCancel: TButton
-    Left = 328
-    Top = 533
-    Width = 75
-    Height = 25
+    Left = 909
+    Top = 592
+    Width = 98
+    Height = 33
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 3
   end
   object GrpMisc: TGroupBox
     Left = 8
-    Top = 305
-    Width = 392
-    Height = 120
+    Top = 367
+    Width = 1000
+    Height = 98
     Caption = 'Misc Options'
     TabOrder = 1
     object ChkWinKey: TCheckBox
-      Left = 13
-      Top = 48
-      Width = 219
-      Height = 17
+      Left = 532
+      Top = 23
+      Width = 286
+      Height = 22
       Caption = 'Disable Win Key'
       TabOrder = 2
     end
     object chkScrSvr: TCheckBox
-      Left = 13
+      Left = 153
       Top = 25
-      Width = 214
-      Height = 17
+      Width = 264
+      Height = 22
       Caption = 'Disable Screensaver'
       TabOrder = 1
     end
     object ChkMini: TCheckBox
-      Left = 13
-      Top = 94
-      Width = 222
-      Height = 17
+      Left = 532
+      Top = 51
+      Width = 290
+      Height = 22
       Caption = 'Hide QuickPlay on Run'
       TabOrder = 0
     end
     object ChkAutoClose: TCheckBox
-      Left = 13
-      Top = 71
-      Width = 217
-      Height = 17
+      Left = 153
+      Top = 53
+      Width = 284
+      Height = 22
       Caption = 'Close this dialog automatically'
       Checked = True
       State = cbChecked
@@ -87,138 +87,138 @@ object FrmRunRom: TFrmRunRom
     end
   end
   object GrpEmu: TGroupBox
-    Left = 8
-    Top = 175
-    Width = 392
-    Height = 124
+    Left = 10
+    Top = 221
+    Width = 1000
+    Height = 132
     Caption = 'Emulator Options'
     TabOrder = 0
     object lblParam: TLabel
-      Left = 11
-      Top = 77
-      Width = 55
-      Height = 13
+      Left = 22
+      Top = 69
+      Width = 69
+      Height = 17
       Caption = 'Parameters'
     end
     object TLabel
-      Left = 72
-      Top = 101
-      Width = 227
-      Height = 13
+      Left = 102
+      Top = 100
+      Width = 294
+      Height = 18
       Caption = '*Any changes made here are not stored'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
+      Font.Height = -15
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
     end
     object ChkShortEXE: TCheckBox
-      Left = 17
-      Top = 49
-      Width = 360
-      Height = 17
+      Left = 530
+      Top = 24
+      Width = 471
+      Height = 22
       Caption = 'Emulator Path in Short Format (8:3)'
       TabOrder = 1
     end
     object ChkCompress: TCheckBox
-      Left = 17
+      Left = 151
       Top = 26
-      Width = 360
-      Height = 17
+      Width = 267
+      Height = 22
       Caption = 'Emulator Supports Compressed Files'
       TabOrder = 0
     end
     object TxtParam: TEdit
-      Left = 72
-      Top = 74
-      Width = 308
-      Height = 21
+      Left = 97
+      Top = 69
+      Width = 880
+      Height = 25
       TabOrder = 2
       OnEnter = TxtParamEnter
       OnExit = TxtParamExit
     end
   end
   object GrpROMInfo: TGroupBox
-    Left = 8
-    Top = 8
-    Width = 392
-    Height = 161
+    Left = 10
+    Top = 10
+    Width = 1000
+    Height = 199
     Caption = 'ROM Information'
     TabOrder = 4
     object TLabel
-      Left = 16
-      Top = 23
-      Width = 53
-      Height = 13
+      Left = 21
+      Top = 30
+      Width = 68
+      Height = 17
       Caption = 'ROM Name'
     end
     object TLabel
-      Left = 21
-      Top = 45
-      Width = 48
-      Height = 13
+      Left = 27
+      Top = 59
+      Width = 61
+      Height = 17
       Caption = 'ROM Path'
     end
     object lblName: TLabel
-      Left = 96
-      Top = 23
-      Width = 3
-      Height = 13
+      Left = 126
+      Top = 30
+      Width = 4
+      Height = 17
     end
     object TLabel
-      Left = 27
-      Top = 68
-      Width = 42
-      Height = 13
+      Left = 35
+      Top = 89
+      Width = 55
+      Height = 17
       Caption = 'Emulator'
     end
     object lblEmu: TLabel
-      Left = 96
-      Top = 68
-      Width = 3
-      Height = 13
+      Left = 126
+      Top = 89
+      Width = 4
+      Height = 17
     end
     object TLabel
-      Left = 8
-      Top = 91
-      Width = 61
-      Height = 13
+      Left = 10
+      Top = 119
+      Width = 76
+      Height = 17
       Caption = 'Archive Valid'
     end
     object lblArchive: TLabel
-      Left = 96
-      Top = 91
-      Width = 3
-      Height = 13
+      Left = 126
+      Top = 119
+      Width = 4
+      Height = 17
     end
     object lblZipStatus: TLabel
-      Left = 9
-      Top = 114
-      Width = 60
-      Height = 13
+      Left = 12
+      Top = 149
+      Width = 77
+      Height = 17
       Caption = 'Extracted to'
     end
     object lblPath: TEdit
-      Left = 81
-      Top = 42
-      Width = 308
-      Height = 21
+      Left = 106
+      Top = 55
+      Width = 871
+      Height = 25
       TabOrder = 0
     end
     object lblArchiveOutput: TEdit
-      Left = 81
-      Top = 110
-      Width = 308
-      Height = 21
+      Left = 106
+      Top = 144
+      Width = 871
+      Height = 25
       TabOrder = 1
     end
   end
   object lblCommand: TRichEdit
     Left = 8
-    Top = 453
-    Width = 393
-    Height = 74
+    Top = 503
+    Width = 1000
+    Height = 73
     Hint = 'Right Click to Copy'
     ParentShowHint = False
     ReadOnly = True

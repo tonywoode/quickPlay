@@ -334,7 +334,7 @@ object EmuFinder: TEmuFinder
         TabStop = True
       end
       object BtnOK: TButton
-        Left = 700
+        Left = 796
         Top = 696
         Width = 95
         Height = 32
@@ -344,7 +344,7 @@ object EmuFinder: TEmuFinder
         OnClick = BtnOKClick
       end
       object BtnNoSave: TButton
-        Left = 804
+        Left = 900
         Top = 696
         Width = 96
         Height = 32

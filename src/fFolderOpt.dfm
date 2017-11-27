@@ -4,7 +4,7 @@ object FrmFolder: TFrmFolder
   BorderStyle = bsDialog
   Caption = 'Folder Options: '
   ClientHeight = 547
-  ClientWidth = 808
+  ClientWidth = 1018
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,17 +19,20 @@ object FrmFolder: TFrmFolder
   object PageFol: TPageControl
     Left = 0
     Top = 0
-    Width = 808
+    Width = 1018
     Height = 507
     ActivePage = TabGeneral
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 808
     object TabGeneral: TTabSheet
       Caption = 'General Options'
+      ExplicitLeft = 5
+      ExplicitTop = 30
       object GrpMirror: TGroupBox
         Left = 10
         Top = 37
-        Width = 389
+        Width = 440
         Height = 429
         Caption = 'Folder Mirroring'
         TabOrder = 0
@@ -69,7 +72,7 @@ object FrmFolder: TFrmFolder
         object LstFilter: TListBox
           Left = 84
           Top = 335
-          Width = 168
+          Width = 309
           Height = 80
           Enabled = False
           ItemHeight = 17
@@ -78,7 +81,7 @@ object FrmFolder: TFrmFolder
         object cmbEmu: TComboBox
           Left = 84
           Top = 289
-          Width = 263
+          Width = 341
           Height = 25
           Enabled = False
           ItemHeight = 17
@@ -98,7 +101,7 @@ object FrmFolder: TFrmFolder
         object LstDirMir: TListBox
           Left = 84
           Top = 115
-          Width = 263
+          Width = 309
           Height = 149
           Hint = 'Add Multiple directories by using the Add Button'
           Font.Charset = DEFAULT_CHARSET
@@ -111,8 +114,8 @@ object FrmFolder: TFrmFolder
           TabOrder = 3
         end
         object BtnAddMirror: TJvImgBtn
-          Left = 347
-          Top = 115
+          Left = 399
+          Top = 113
           Width = 35
           Height = 33
           TabOrder = 4
@@ -126,8 +129,8 @@ object FrmFolder: TFrmFolder
           ImageIndex = 0
         end
         object BtnDelMirror: TJvImgBtn
-          Left = 347
-          Top = 153
+          Left = 399
+          Top = 151
           Width = 35
           Height = 33
           TabOrder = 5
@@ -141,7 +144,7 @@ object FrmFolder: TFrmFolder
           ImageIndex = 3
         end
         object BtnAddFilter: TJvImgBtn
-          Left = 255
+          Left = 399
           Top = 335
           Width = 35
           Height = 32
@@ -156,7 +159,7 @@ object FrmFolder: TFrmFolder
           ImageIndex = 22
         end
         object BtnDelFilter: TJvImgBtn
-          Left = 255
+          Left = 399
           Top = 371
           Width = 35
           Height = 33
@@ -172,9 +175,9 @@ object FrmFolder: TFrmFolder
         end
       end
       object GrpBackground: TGroupBox
-        Left = 408
+        Left = 456
         Top = 173
-        Width = 388
+        Width = 551
         Height = 126
         Caption = 'Background Image'
         TabOrder = 1
@@ -198,7 +201,7 @@ object FrmFolder: TFrmFolder
         object TxtBKPath: TJvFilenameEdit
           Left = 73
           Top = 68
-          Width = 298
+          Width = 464
           Height = 25
           ClipboardCommands = []
           AddQuotes = False
@@ -211,9 +214,9 @@ object FrmFolder: TFrmFolder
         end
       end
       object GrpIcon: TGroupBox
-        Left = 408
+        Left = 456
         Top = 37
-        Width = 388
+        Width = 551
         Height = 126
         Caption = 'Folder Listing Icon'
         TabOrder = 2
@@ -237,7 +240,7 @@ object FrmFolder: TFrmFolder
         object CmbIcon: TComboBoxEx
           Left = 73
           Top = 60
-          Width = 263
+          Width = 464
           Height = 26
           ItemsEx = <>
           Style = csExDropDownList
@@ -280,7 +283,7 @@ object FrmFolder: TFrmFolder
         OnClick = lblGoodMergeLinkClick
       end
       object lblGoodMergeDesc: TLabel
-        Left = 63
+        Left = 111
         Top = 73
         Width = 448
         Height = 136
@@ -352,7 +355,7 @@ object FrmFolder: TFrmFolder
       object CmbGMpref1: TComboBox
         Left = 230
         Top = 284
-        Width = 221
+        Width = 547
         Height = 25
         Style = csDropDownList
         ItemHeight = 17
@@ -361,7 +364,7 @@ object FrmFolder: TFrmFolder
       object CmbGMpref2: TComboBox
         Left = 230
         Top = 315
-        Width = 221
+        Width = 547
         Height = 25
         Style = csDropDownList
         ItemHeight = 17
@@ -370,7 +373,7 @@ object FrmFolder: TFrmFolder
       object CmbGMpref3: TComboBox
         Left = 230
         Top = 347
-        Width = 221
+        Width = 547
         Height = 25
         Style = csDropDownList
         ItemHeight = 17
@@ -394,16 +397,16 @@ object FrmFolder: TFrmFolder
         ParentFont = False
       end
       object lblMAMElink: TLabel
-        Left = 63
+        Left = 94
         Top = 199
-        Width = 672
+        Width = 440
         Height = 18
         Cursor = crHandPoint
         Caption = 
-          'Download MAME icons from MAMu_'#39's sets - try here http://www.prog' +
-          'ettosnaps.net/mamu_icons.html '
+          'The folder you pick will probably be your MAME/Extras/Icons Fold' +
+          'er'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clBlack
         Font.Height = -15
         Font.Name = 'Tahoma'
         Font.Style = []
@@ -411,7 +414,7 @@ object FrmFolder: TFrmFolder
         OnClick = lblMAMElinkClick
       end
       object TLabel
-        Left = 63
+        Left = 94
         Top = 73
         Width = 552
         Height = 102
@@ -419,9 +422,9 @@ object FrmFolder: TFrmFolder
           'By downloading the MAME Icon set QuickPlay can then display each' +
           ' games '#39'proper'#39' Icon.  '#13#10'To activate this, check the box below a' +
           'nd enter in the path to your icons.  If the icons are '#13#10'uncompre' +
-          'ssed into a directory, enter the path to the directory. '#13#10#13#10'Also' +
-          ' now Quickplay can use a ZIP file to load the icons from.  This ' +
-          'feature does not work '#13#10'with any other compression types.'
+          'ssed into a directory, enter the path to the directory. '#13#10#13#10'Quic' +
+          'kplay can also use a ZIP file to load the icons from.  This feat' +
+          'ure does not work '#13#10'with any other compression types.'
       end
       object Label2: TLabel
         Left = 94
@@ -451,7 +454,7 @@ object FrmFolder: TFrmFolder
       object TxtMAMEIconDir: TJvDirectoryEdit
         Left = 178
         Top = 345
-        Width = 482
+        Width = 807
         Height = 25
         ClipboardCommands = []
         DialogKind = dkWin32
@@ -460,9 +463,9 @@ object FrmFolder: TFrmFolder
         TabOrder = 2
       end
       object TxtMAMEIconFile: TJvFilenameEdit
-        Left = 115
-        Top = 418
-        Width = 483
+        Left = 178
+        Top = 426
+        Width = 807
         Height = 25
         ClipboardCommands = []
         Filter = 'ZIP files (*.zip)|*.zip|All files (*.*)|*.*'
@@ -495,13 +498,14 @@ object FrmFolder: TFrmFolder
   object PanCtrls: TPanel
     Left = 0
     Top = 507
-    Width = 808
+    Width = 1018
     Height = 40
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 1
+    ExplicitWidth = 808
     object BtnOK: TButton
-      Left = 604
+      Left = 812
       Top = 4
       Width = 98
       Height = 33
@@ -511,7 +515,7 @@ object FrmFolder: TFrmFolder
       OnClick = BtnOKClick
     end
     object BtnCancel: TButton
-      Left = 709
+      Left = 917
       Top = 4
       Width = 98
       Height = 33

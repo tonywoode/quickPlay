@@ -37,7 +37,7 @@ object PrefForm: TPrefForm
     Top = 64
     Width = 683
     Height = 385
-    ActivePage = TabGeneral
+    ActivePage = TabSheet1
     Align = alTop
     TabOrder = 0
     object TabGeneral: TTabSheet
@@ -344,15 +344,6 @@ object PrefForm: TPrefForm
     object TabSheet1: TTabSheet
       Caption = 'Core File Editor'
       ImageIndex = 2
-      object TLabel
-        Left = 49
-        Top = 6
-        Width = 388
-        Height = 16
-        Caption = 
-          'If the editted file '#39'breaks'#39', delete it and a default file will ' +
-          'be created.'
-      end
       object BtnSystem: TButton
         Left = 0
         Top = 31

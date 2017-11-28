@@ -27,13 +27,6 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
     object TabLayout: TTabSheet
       Caption = 'Layout'
       ImageIndex = 2
-      object lblRealEmuIcons: TLabel
-        Left = 408
-        Top = 344
-        Width = 375
-        Height = 17
-        Caption = '(These two options can cause QuickPlay to start very slowly.)'
-      end
       object ChkSidebarTabs: TCheckBox
         Left = 408
         Top = 314
@@ -769,11 +762,13 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
         end
       end
       object ChkEmuRealIcons: TCheckBox
-        Left = 407
-        Top = 369
+        Left = 408
+        Top = 342
         Width = 363
         Height = 22
         Caption = 'Use Real Emulator Icons'
+        Checked = True
+        State = cbChecked
         TabOrder = 4
       end
       object GrpROMOptions: TGroupBox
@@ -810,8 +805,10 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
             'Use images on ROM listing to illustrate whether or not the ROM '#13 +
             #10'actually exists on disk.'
           Caption = 'Enable Images (Required for real icons)'
+          Checked = True
           ParentShowHint = False
           ShowHint = True
+          State = cbChecked
           TabOrder = 0
         end
         object GrpColView: TGroupBox
@@ -848,10 +845,12 @@ object FrmAppearanceOptions: TFrmAppearanceOptions
       end
       object ChkToolRealIcons: TCheckBox
         Left = 408
-        Top = 399
+        Top = 370
         Width = 348
         Height = 22
         Caption = 'Use Real Tools Icons'
+        Checked = True
+        State = cbChecked
         TabOrder = 5
       end
       object RadGrpDirExpand: TRadioGroup

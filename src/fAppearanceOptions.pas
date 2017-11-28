@@ -51,7 +51,6 @@ type
     VTTrees: TVirtualStringTree;
     TxtSelectionCurve: TSpinEdit;
     ChkEmuRealIcons: TCheckBox;
-    lblRealEmuIcons: TLabel;
     GrpROMOptions: TGroupBox;
     ChkCol: TCheckBox;
     ChkIncVersion: TCheckBox;

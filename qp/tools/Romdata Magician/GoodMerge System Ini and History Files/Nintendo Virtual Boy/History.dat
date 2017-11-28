@@ -2,8 +2,8 @@
 ## (c) 2011 Matt McLemore, some rights reserved.
 ## All names used are trademarked by their respective trademark holders.
 ##
-## Revision: 1.00 - 10-11-2011
-## File size: 53087 bytes / Lines: 1558
+## Revision: 1.00 - 10-05-2011
+## File size: 53486 bytes / Lines: 1094
 ##
 ## Created by:
 ##   Matt McLemore - AKA Tempest
@@ -33,49 +33,29 @@ $bio
  
 3D Tetris (c) March 1996 Nintendo of America, Inc. 
  
-Alexey Pajitnov's classic puzzle game of falling 
-blocks has a completely new perspective with 3D 
-Tetris on Virtual Boy. The playing field is now in 
-3D, defined by wireframe graphics in the middle of 
-the screen. Your goal is to manipulate a series of 
-3D blocks into a cube-shaped well to form solid 
-layers. Clear ten layers to advance to the next 
-level. Three play options include 3D Tetris, 
-Center-Fill, and Puzzle. The latter involves 
-creating specific shapes or patterns with the 
-blocks to follow a picture displayed within the 
-well. Battery-backed memory lets you save high 
-scores for each game type. 
+Alexey Pajitnov's classic puzzle game of falling blocks has a completely new perspective with 3D 
+Tetris on Virtual Boy. The playing field is now in 3D, defined by wireframe graphics in the middle of 
+the screen. Your goal is to manipulate a series of 3D blocks into a cube-shaped well to form solid 
+layers. Clear ten layers to advance to the next level. Three play options include 3D Tetris, 
+Center-Fill, and Puzzle. The latter involves creating specific shapes or patterns with the blocks to 
+follow a picture displayed within the well. Battery-backed memory lets you save high scores for each 
+game type. 
  
 Review by Brett Alan Weiss 
  
-When GCE decided to include an Asteroids clone as 
-a pack-in with their Vectrex system, it was a work 
-of genius. The game not only exploits perfectly 
-the system's vector graphics, it is a blast to 
-play. As a matter of fact, some consider Mine 
-Storm for the Vectrex to be even better than the 
-arcade version of Asteroids. Quite a compliment, 
-considering the fact that Asteroids is widely 
-regarded as one of the best video games of all 
-time. Myself, I've got a soft spot for Asteroids, 
-but Mine Storm is an exciting and fun game in its 
-own right.The enemy mines in this game are 
-cleverly designed. Some of the bulkier mines are 
-easy to destroy, but they crowd the screen. Many 
-of the smaller mines hurl a fireball at you the 
-second you shoot them. It's like they are sentient 
-creatures, vowing revenge just as they meet their 
-death.You should never be too close to a Fireball 
-Mine when you shoot one, because the fireballs are 
-difficult to avoid at close range. Luckily, if you 
-get trapped by several mines, and you know you 
-will surely meet death if you try to blast your 
-way out, you can punch hyperspace, which will send 
-you to another (randomly chosen) area of the 
-screen.The controls for Mine Storm work 
-wonderfully well. The mine-destroying blaster 
-handles with precision and grace 
+When GCE decided to include an Asteroids clone as a pack-in with their Vectrex system, it was a work 
+of genius. The game not only exploits perfectly the system's vector graphics, it is a blast to play. 
+As a matter of fact, some consider Mine Storm for the Vectrex to be even better than the arcade 
+version of Asteroids. Quite a compliment, considering the fact that Asteroids is widely regarded as 
+one of the best video games of all time. Myself, I've got a soft spot for Asteroids, but Mine Storm 
+is an exciting and fun game in its own right.The enemy mines in this game are cleverly designed. Some 
+of the bulkier mines are easy to destroy, but they crowd the screen. Many of the smaller mines hurl a 
+fireball at you the second you shoot them. It's like they are sentient creatures, vowing revenge just 
+as they meet their death.You should never be too close to a Fireball Mine when you shoot one, because 
+the fireballs are difficult to avoid at close range. Luckily, if you get trapped by several mines, 
+and you know you will surely meet death if you try to blast your way out, you can punch hyperspace, 
+which will send you to another (randomly chosen) area of the screen.The controls for Mine Storm work 
+wonderfully well. The mine-destroying blaster handles with precision and grace 
  
  
 - TECHNICAL - 
@@ -83,7 +63,7 @@ handles with precision and grace
 Genre : Puzzle / Action Puzzle 
 Score : 4 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8103&tab=overview 
  
  
 $end
@@ -94,93 +74,60 @@ $<a href="http://www.allgame.com/game.php?id=8106&tab=overview"</a>
 $bio
  
  
-Galactic Pinball (c) August 1995 Intelligent 
-Systems / Nintendo of America, Inc. 
+Galactic Pinball (c) August 1995 Intelligent Systems / Nintendo of America, Inc. 
  
-The world needs your pinball skills in the battle 
-to save the galaxy from an alien threat. The 
-following four themed pinball tables await you, 
-each rendered in 3D atop a space backdrop: Cosmic, 
-Colony, UFO, and Alien. Points are not your only 
-goal in this game. Aim your ball down certain 
-ramps or hit specific bumpers and you'll confront 
-asteroids, aliens, space pirates, and even an evil 
-skeleton. If you're good enough, you'll be able to 
-access bonus stages that will rocket your score to 
-new heights. Your best performances on each table 
-are automatically saved to battery. Can you unlock 
+The world needs your pinball skills in the battle to save the galaxy from an alien threat. The 
+following four themed pinball tables await you, each rendered in 3D atop a space backdrop: Cosmic, 
+Colony, UFO, and Alien. Points are not your only goal in this game. Aim your ball down certain ramps 
+or hit specific bumpers and you'll confront asteroids, aliens, space pirates, and even an evil 
+skeleton. If you're good enough, you'll be able to access bonus stages that will rocket your score to 
+new heights. Your best performances on each table are automatically saved to battery. Can you unlock 
 the secrets of the galaxy and save the world? 
  
 Features: 
 Features four themed pinball tables 
-Confront aliens, space pirates, asteroids, and 
-more 
+Confront aliens, space pirates, asteroids, and more 
 Save your high scores to battery-backed memory 
  
 Review by Scott Alan Marriott 
  
-Even if you love pinball, you'll hate this game. 
-Galactic Pinball is literally devoid of anything a 
-pinball fan expects from a video game rendition. 
-You want fast action? There's none to be found. 
-You want a lot of targets to hit? The four pinball 
-"tables" are nearly empty, aside from one main 
-target, a few bumpers, and one or two ramps. You 
-want realistic physics? How about substituting the 
-ball with a hockey puck! Every time you use the 
-flippers, the puck slowly moves up the surface as 
-if it were struggling against a strong wind. The 
-effect is like playing on an air hockey table -- 
-but with a much heavier puck.It's a shame too: the 
-game offers a great perspective of the tables with 
-a convincing 3D effect. Each table is shown at a 
-slight angle instead of the top-down view found in 
-many console pinball games. The tables aren't 
-traditional, either, since they float in the 
-middle of space with tiny stars and small planets 
-in the background. Adding to the galactic theme is 
-one or two hovering objects (depending on the 
-table), such as meteors that serve as a moving 
-bumpers -- hit them and your puck will ricochet 
-across the screen. Of course, the object of the 
-game is like any other pinball title: score as 
-many points as you can using your five pucks. The 
-best feature of the game is that these scores will 
-be saved to battery, which is something that 
-should be found in all console pinball titles. Yet 
-despite giving you some incentive to beat your 
-last score, it still doesn't make the game more 
-fun to play. The game needs more targets, more 
-bonus rounds, more speech samples and more play 
-modes. Galactic Pinball is a perfect example that 
-having multiple tables isn't necessarily a great 
-thing in a pinball game, especially if they're as 
-empty as space. 
+Even if you love pinball, you'll hate this game. Galactic Pinball is literally devoid of anything a 
+pinball fan expects from a video game rendition. You want fast action? There's none to be found. You 
+want a lot of targets to hit? The four pinball "tables" are nearly empty, aside from one main target, 
+a few bumpers, and one or two ramps. You want realistic physics? How about substituting the ball with 
+a hockey puck! Every time you use the flippers, the puck slowly moves up the surface as if it were 
+struggling against a strong wind. The effect is like playing on an air hockey table -- but with a 
+much heavier puck.It's a shame too: the game offers a great perspective of the tables with a 
+convincing 3D effect. Each table is shown at a slight angle instead of the top-down view found in 
+many console pinball games. The tables aren't traditional, either, since they float in the middle of 
+space with tiny stars and small planets in the background. Adding to the galactic theme is one or two 
+hovering objects (depending on the table), such as meteors that serve as a moving bumpers -- hit them 
+and your puck will ricochet across the screen. Of course, the object of the game is like any other 
+pinball title: score as many points as you can using your five pucks. The best feature of the game is 
+that these scores will be saved to battery, which is something that should be found in all console 
+pinball titles. Yet despite giving you some incentive to beat your last score, it still doesn't make 
+the game more fun to play. The game needs more targets, more bonus rounds, more speech samples and 
+more play modes. Galactic Pinball is a perfect example that having multiple tables isn't necessarily 
+a great thing in a pinball game, especially if they're as empty as space. 
  
 Graphics (7) 
-The graphics look very nice, especially the 3D 
-appearance of the tables. Unfortunately, they 
-aren't filled with enough things to shoot at. 
+The graphics look very nice, especially the 3D appearance of the tables. Unfortunately, they aren't 
+filled with enough things to shoot at. 
  
 Sound (6) 
-There is some voice, but not as much as I would 
-have liked. The sound effects are pretty good, 
-which is unusual for a Virtual Boy game. 
+There is some voice, but not as much as I would have liked. The sound effects are pretty good, which 
+is unusual for a Virtual Boy game. 
  
 Enjoyment (2) 
-The game has four tables that are too empty to be 
-considered worthy enough for a pinball game. The 
-slow movement of the puck only adds to the 
-boredom. 
+The game has four tables that are too empty to be considered worthy enough for a pinball game. The 
+slow movement of the puck only adds to the boredom. 
  
 Replay Value (2) 
-The game saves your high scores, but you won't 
-want to best them after playing on these 
-unexciting tables. 
+The game saves your high scores, but you won't want to best them after playing on these unexciting 
+tables. 
  
 Documentation (7) 
-The instructions tell the story behind this 
-galactic game and breaks down each table. 
+The instructions tell the story behind this galactic game and breaks down each table. 
  
  
 - TECHNICAL - 
@@ -189,7 +136,7 @@ Genre : Traditional / 2D Pinball
 Controls : Joystick/Gamepad 
 Score : 2 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8106&tab=overview 
  
  
 $end
@@ -200,40 +147,26 @@ $<a href="http://www.allgame.com/game.php?id=8107&tab=overview"</a>
 $bio
  
  
-Golf (c) November 1995 T&E Soft, Inc. / Nintendo 
-of America, Inc. 
+Golf (c) November 1995 T&E Soft, Inc. / Nintendo of America, Inc. 
  
-The Virtual Boy's first and only golf game 
-features an 18-hole course at the fictitious 
-Papillion Country Club. Choose either stroke or 
-tournament play, with the latter pitting you 
-against 47 computer players as you compete for the 
-best total score. Before you hit the links, 
-register your golfer's name so your stats can be 
-saved to one of seven slots. The game will 
-automatically save your best shots and track stats 
-in the following eight categories:  longest drive, 
-nearest to pin, average score, longest putt, 
-number of victories, pars or better, longest chip, 
-and fairways driven. Shots are initiated by 
-navigating through a series of icons and reading 
-the swing meter. Choose your club, adjust your 
-stance, determine the power, and set the ball 
-impact point, all while taking into account the 
-direction and strength of the wind. 
+The Virtual Boy's first and only golf game features an 18-hole course at the fictitious Papillion 
+Country Club. Choose either stroke or tournament play, with the latter pitting you against 47 
+computer players as you compete for the best total score. Before you hit the links, register your 
+golfer's name so your stats can be saved to one of seven slots. The game will automatically save your 
+best shots and track stats in the following eight categories:  longest drive, nearest to pin, average 
+score, longest putt, number of victories, pars or better, longest chip, and fairways driven. Shots 
+are initiated by navigating through a series of icons and reading the swing meter. Choose your club, 
+adjust your stance, determine the power, and set the ball impact point, all while taking into account 
+the direction and strength of the wind. 
  
 Features: 
-Choose one of two play options: stroke play or 
-tournament 
+Choose one of two play options: stroke play or tournament 
 Compete against 47 computer-controlled golfers 
-Avoid water hazards, bunkers, and trees while 
-making your shots 
+Avoid water hazards, bunkers, and trees while making your shots 
  
 Review by Scott Alan Marriott 
  
-Is it me or does the Virtual Boy have a lot of 
-sports titles? That's a good thing for any new 
-system 
+Is it me or does the Virtual Boy have a lot of sports titles? That's a good thing for any new system 
  
  
 - TECHNICAL - 
@@ -242,7 +175,7 @@ Genre : Sports / Golf
 Controls : Joystick/Gamepad 
 Score : 6 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8107&tab=overview 
  
  
 $end
@@ -259,7 +192,7 @@ Insmouse No Yakata (c) 1996 I'Max / I'Max
 - TECHNICAL - 
  
 Genre : Shooter / First-Person Shooter 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=16497&tab=overview 
  
  
 $end
@@ -270,23 +203,15 @@ $<a href="http://www.allgame.com/game.php?id=2710&tab=overview"</a>
 $bio
  
  
-Jack Bros. (c) October 1995 Atlus Co., Ltd. / 
-Atlus U.S.A., Inc. 
+Jack Bros. (c) October 1995 Atlus Co., Ltd. / Atlus U.S.A., Inc. 
  
-Halloween is a special time for the Jack Brothers. 
-It is the one day of the year when they can leave 
-their fairy land and cross over to the realm of 
-the humans. This time, however, they've stayed far 
-too long. It's now a race against time to return 
-home or they're lost forever! Choose from Jack O' 
-Lantern, Jack Frost or Jack Skelton and journey 
-through six multi-floored stages before the clock 
-runs out. Each floor is a maze filled with 
-creatures and keys, where taking damage means 
-losing precious time. Luckily, each brother has a 
-weapon and special attack to battle both the 
-enemies and boss characters. A pixie will also 
-help explain each level in detail! 
+Halloween is a special time for the Jack Brothers. It is the one day of the year when they can leave 
+their fairy land and cross over to the realm of the humans. This time, however, they've stayed far 
+too long. It's now a race against time to return home or they're lost forever! Choose from Jack O' 
+Lantern, Jack Frost or Jack Skelton and journey through six multi-floored stages before the clock 
+runs out. Each floor is a maze filled with creatures and keys, where taking damage means losing 
+precious time. Luckily, each brother has a weapon and special attack to battle both the enemies and 
+boss characters. A pixie will also help explain each level in detail! 
  
  
 - TECHNICAL - 
@@ -295,7 +220,7 @@ Genre : Action / Overhead View Action
 Controls : Joystick/Gamepad 
 Score : 6 
 Esrb : e|Animated Violence 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2710&tab=overview 
  
  
 $end
@@ -306,58 +231,34 @@ $<a href="http://www.allgame.com/game.php?id=8108&tab=overview"</a>
 $bio
  
  
-Mario Clash (c) October 1995 Nintendo R&D3 / 
-Nintendo of America, Inc. 
+Mario Clash (c) October 1995 Nintendo R&D3 / Nintendo of America, Inc. 
  
-Take the gameplay of the classic Mario Bros., 
-imagine a 3D twist and you'll probably end up with 
-Nintendo's Mario Clash for the Virtual Boy. The 
-Clash House tower is filled with little critters 
-walking through pipes and along narrow ledges, so 
-it's up to Mario to knock them off using Koopa (or 
-turtle) shells.The twist is that the critters are 
-moving in both the foreground and background, 
-giving each level a 3D appearance. Defeat all of 
-the enemies on a level and you'll move to the 
-next, eventually making your way through 40 floors 
-to the top of the tower. Of course, gameplay will 
-become faster and you'll encounter more 
-challenging enemies the higher you climb. No one 
-said being a plumber was easy! 
+Take the gameplay of the classic Mario Bros., imagine a 3D twist and you'll probably end up with 
+Nintendo's Mario Clash for the Virtual Boy. The Clash House tower is filled with little critters 
+walking through pipes and along narrow ledges, so it's up to Mario to knock them off using Koopa (or 
+turtle) shells.The twist is that the critters are moving in both the foreground and background, 
+giving each level a 3D appearance. Defeat all of the enemies on a level and you'll move to the next, 
+eventually making your way through 40 floors to the top of the tower. Of course, gameplay will become 
+faster and you'll encounter more challenging enemies the higher you climb. No one said being a 
+plumber was easy! 
  
 Review by Scott Alan Marriott 
  
-Imagine Mario Bros. with a 3D perspective and 
-you'll end up with Mario Clash for the Virtual 
-Boy. As in the arcade classic, gameplay involves 
-bouncing on small turtles (Koopas) and picking up 
-their shells to throw at various enemies within a 
-fixed, non-scrolling level. Two turtles will crawl 
-out of pipes on either side of the screen along 
-with enemies, the number of which depends on the 
-level or floor of the tower. As you stomp and 
-throw a turtle shell, another Koopa will emerge to 
-replace the one lost. One set of pipes will take 
-you up or down and another will take you deep into 
-the background, adding a depth of play the 
-original Mario Bros. never had. Mario Clash uses 
-the new perspective to another advantage: you can 
-throw turtle shells into or out of the background 
-to knock enemies off ledges! Think of it as a 
-shooting gallery only with shells as the ammo. In 
-fact, most enemies can only be defeated in this 
-manner.Mario Clash is a game that relies on 
-split-second timing and jumping with precision. 
-The problem with this is that the control is a 
-little slippery: Mario isn't as heavy as he should 
-be and jumping isn't as precise as it could be. 
-When swirling fireballs and ghosts start flying 
-around the screen, Mario's floating jumps can get 
-frustrating.Another issue is that you can select 
-from any of the game's forty levels right off the 
-bat. This is both good and bad. Bad because people 
-may skip to level forty, win the game and feel 
-cheated 
+Imagine Mario Bros. with a 3D perspective and you'll end up with Mario Clash for the Virtual Boy. As 
+in the arcade classic, gameplay involves bouncing on small turtles (Koopas) and picking up their 
+shells to throw at various enemies within a fixed, non-scrolling level. Two turtles will crawl out of 
+pipes on either side of the screen along with enemies, the number of which depends on the level or 
+floor of the tower. As you stomp and throw a turtle shell, another Koopa will emerge to replace the 
+one lost. One set of pipes will take you up or down and another will take you deep into the 
+background, adding a depth of play the original Mario Bros. never had. Mario Clash uses the new 
+perspective to another advantage: you can throw turtle shells into or out of the background to knock 
+enemies off ledges! Think of it as a shooting gallery only with shells as the ammo. In fact, most 
+enemies can only be defeated in this manner.Mario Clash is a game that relies on split-second timing 
+and jumping with precision. The problem with this is that the control is a little slippery: Mario 
+isn't as heavy as he should be and jumping isn't as precise as it could be. When swirling fireballs 
+and ghosts start flying around the screen, Mario's floating jumps can get frustrating.Another issue 
+is that you can select from any of the game's forty levels right off the bat. This is both good and 
+bad. Bad because people may skip to level forty, win the game and feel cheated 
  
  
 - TECHNICAL - 
@@ -366,7 +267,7 @@ Genre : Action / Side-Scrolling Platform
 Controls : Joystick/Gamepad 
 Score : 5 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8108&tab=overview 
  
  
 $end
@@ -377,49 +278,30 @@ $<a href="http://www.allgame.com/game.php?id=2711&tab=overview"</a>
 $bio
  
  
-Mario's Tennis (c) August 1995 Nintendo R&D3 / 
-Nintendo of America, Inc. 
+Mario's Tennis (c) August 1995 Nintendo R&D3 / Nintendo of America, Inc. 
  
-Mario's Tennis places you on a three-dimensional 
-tennis court against one of seven characters from 
-Mario's past games: Mario, Luigi, Princess 
-Toadstool, Yoshi, Toad, Koopa or Donkey Kong Jr. 
-All have individual ratings in speed, power and 
-racquet contact area, so find a character that 
-best suits your playing style and select a game of 
-singles or doubles play. Don't worry, you won't 
-have to control both characters 
+Mario's Tennis places you on a three-dimensional tennis court against one of seven characters from 
+Mario's past games: Mario, Luigi, Princess Toadstool, Yoshi, Toad, Koopa or Donkey Kong Jr. All have 
+individual ratings in speed, power and racquet contact area, so find a character that best suits your 
+playing style and select a game of singles or doubles play. Don't worry, you won't have to control 
+both characters 
  
 Review by Scott Alan Marriott 
  
-Mario's Tennis is notable for being the first (and 
-only) pack-in game for the U.S. Virtual Boy, and 
-soon after powering up the gizmo, you'll see why. 
-It's incredibly fun! There is a convincing amount 
-of depth on the court which really immerses you 
-into the game, and the inclusion of Nintendo's 
-finest as your opponents helps keep things lively. 
-While it isn't the deepest tennis game you'll 
-play, I'd wager it's one of the most addictive, 
-with the right blend of action and strategy to 
-satisfy anyone looking for an arcade take on the 
-sport. Before hitting the court, you'll first 
-choose between playing a singles match, doubles 
-match or entering a Tournament. (Single-player 
-tournaments allow you to face three opponents, 
-while doubles only two). Select between easy, 
-normal and hard difficulty, the match length (one 
-or three sets) as well as your character, teammate 
-and opponent(s).Your character always appears in 
-the foreground with the camera fixed behind and 
-slightly above him, her, or in the case of Toad, 
-it. The net is kept low, with one row of "hearts" 
-separating your character from your opponent, 
-making it very easy to see into the distance. 
-Hitting the ball relies on the proper positioning 
-and timing of your swing. If you hit the button 
-while the ball is in the air, you'll perform an 
-overhead smash 
+Mario's Tennis is notable for being the first (and only) pack-in game for the U.S. Virtual Boy, and 
+soon after powering up the gizmo, you'll see why. It's incredibly fun! There is a convincing amount 
+of depth on the court which really immerses you into the game, and the inclusion of Nintendo's finest 
+as your opponents helps keep things lively. While it isn't the deepest tennis game you'll play, I'd 
+wager it's one of the most addictive, with the right blend of action and strategy to satisfy anyone 
+looking for an arcade take on the sport. Before hitting the court, you'll first choose between 
+playing a singles match, doubles match or entering a Tournament. (Single-player tournaments allow you 
+to face three opponents, while doubles only two). Select between easy, normal and hard difficulty, 
+the match length (one or three sets) as well as your character, teammate and opponent(s).Your 
+character always appears in the foreground with the camera fixed behind and slightly above him, her, 
+or in the case of Toad, it. The net is kept low, with one row of "hearts" separating your character 
+from your opponent, making it very easy to see into the distance. Hitting the ball relies on the 
+proper positioning and timing of your swing. If you hit the button while the ball is in the air, 
+you'll perform an overhead smash 
  
  
 - TECHNICAL - 
@@ -428,7 +310,7 @@ Genre : Sports / Tennis
 Controls : Joystick/Gamepad 
 Score : 7 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2711&tab=overview 
  
  
 $end
@@ -439,97 +321,58 @@ $<a href="http://www.allgame.com/game.php?id=8109&tab=overview"</a>
 $bio
  
  
-Nester's Funky Bowling (c) February 1996 Nintendo 
-R&D3 / Nintendo of America, Inc. 
+Nester's Funky Bowling (c) February 1996 Nintendo R&D3 / Nintendo of America, Inc. 
  
-Nester's Funky Bowling is not like your ordinary 
-bowling game -- it's in 3D. Choose either Nester 
-or his twin sister Hester and go for the perfect 
-game! First type in your name, choose your 
-bowler's handedness and then set the weight of the 
-ball. The three game modes include Regular 
-Bowling, Practice (where you can set up pins to 
-work on converting difficult spares) and 
-Challenge. Challenge mode lets you try your skill 
-at a number of computer-generated shots. Remember, 
-it's not just bowling...it's funky bowling. Nester 
-and Hester will offer several comical expressions 
-to entertain you. Light-hearted bowling fans take 
-note: this game could be right up your alley. 
+Nester's Funky Bowling is not like your ordinary bowling game -- it's in 3D. Choose either Nester or 
+his twin sister Hester and go for the perfect game! First type in your name, choose your bowler's 
+handedness and then set the weight of the ball. The three game modes include Regular Bowling, 
+Practice (where you can set up pins to work on converting difficult spares) and Challenge. Challenge 
+mode lets you try your skill at a number of computer-generated shots. Remember, it's not just 
+bowling...it's funky bowling. Nester and Hester will offer several comical expressions to entertain 
+you. Light-hearted bowling fans take note: this game could be right up your alley. 
  
 Review by Scott Alan Marriott 
  
-Nester's Funky Bowling may not be the funkiest 
-game of bowling out there, but as a Virtual Boy 
-title, it certainly offers a lot of fun. Bowling 
-fans shouldn't expect realistic physics or details 
-such as lane conditions, different balls or 
-individual skill ratings. It's a game designed to 
-appeal to gamers of all ages and is reminiscent of 
-those "bowling" games found at amusement parks. 
-Just aim the ball and try to knock the pins down 
--- nothing too complicated.The game begins by 
-choosing former Nintendo Power magazine star 
-Nester or his twin sister Hester to bowl a Single 
-Game, Practice or Challenge. Practice lets you set 
-up the pins yourself and Challenge has you trying 
-to make certain skill shots. After you choose the 
-game mode, you can enter a four-letter name, 
-choose your bowler's handedness and even the 
-weight of the ball (from 8 to 16 pounds).Bowling 
-involves positioning either Nester or Hester to 
-the left or right of the lane, selecting spin by 
-pressing a button while a horizontal meter moves 
-back and forth, and then determining the strength 
-of your shot by using a vertical power meter. 
-Despite the simple interface, it's not easy to 
-consistently strike, so you don't have to worry 
-about bowling a perfect game every time you play. 
-The pin physics are rather suspect at times, 
-however. The problem is that the pins are flat 
-instead of being in 3D, but you can pick tough 
-spares if you aim your shot correctly.Adding to 
-the action are funny little cinema screens 
-appearing after every shot. You'll see things like 
-a pin sticking out its tongue when you split or a 
-large turkey whenever you throw three strikes in a 
-row. Both Nester and Hester cheer if they get a 
-strike or become angry if they miss (complete with 
-steam coming out of their ears).While the 
-animation is a cute addition, the missing features 
-take away from some of the replay value. There 
-needs to be a battery to save your scores, a 
-tournament with multiple bowlers and a 
-create-bowler feature with different abilities. 
-Yet Nester's Funky Bowling offers a good time to 
-software-starved Virtual Boy owners and comes 
-highly recommended to anyone looking for a nice 
-change of pace. 
+Nester's Funky Bowling may not be the funkiest game of bowling out there, but as a Virtual Boy title, 
+it certainly offers a lot of fun. Bowling fans shouldn't expect realistic physics or details such as 
+lane conditions, different balls or individual skill ratings. It's a game designed to appeal to 
+gamers of all ages and is reminiscent of those "bowling" games found at amusement parks. Just aim the 
+ball and try to knock the pins down -- nothing too complicated.The game begins by choosing former 
+Nintendo Power magazine star Nester or his twin sister Hester to bowl a Single Game, Practice or 
+Challenge. Practice lets you set up the pins yourself and Challenge has you trying to make certain 
+skill shots. After you choose the game mode, you can enter a four-letter name, choose your bowler's 
+handedness and even the weight of the ball (from 8 to 16 pounds).Bowling involves positioning either 
+Nester or Hester to the left or right of the lane, selecting spin by pressing a button while a 
+horizontal meter moves back and forth, and then determining the strength of your shot by using a 
+vertical power meter. Despite the simple interface, it's not easy to consistently strike, so you 
+don't have to worry about bowling a perfect game every time you play. The pin physics are rather 
+suspect at times, however. The problem is that the pins are flat instead of being in 3D, but you can 
+pick tough spares if you aim your shot correctly.Adding to the action are funny little cinema screens 
+appearing after every shot. You'll see things like a pin sticking out its tongue when you split or a 
+large turkey whenever you throw three strikes in a row. Both Nester and Hester cheer if they get a 
+strike or become angry if they miss (complete with steam coming out of their ears).While the 
+animation is a cute addition, the missing features take away from some of the replay value. There 
+needs to be a battery to save your scores, a tournament with multiple bowlers and a create-bowler 
+feature with different abilities. Yet Nester's Funky Bowling offers a good time to software-starved 
+Virtual Boy owners and comes highly recommended to anyone looking for a nice change of pace. 
  
 Graphics (7) 
-The lane is shown with a good sense of depth and 
-the characters are very detailed. The cinema 
-screens get a little repetitive after awhile, 
-however. 
+The lane is shown with a good sense of depth and the characters are very detailed. The cinema screens 
+get a little repetitive after awhile, however. 
  
 Sound (6) 
-Speech in a Virtual Boy game! Yes! It's actually 
-nothing worth dancing in the streets over. Sound 
-effects get the job done and the three music 
-tracks are catchy. 
+Speech in a Virtual Boy game! Yes! It's actually nothing worth dancing in the streets over. Sound 
+effects get the job done and the three music tracks are catchy. 
  
 Enjoyment (6) 
-The game doesn't offer a lot of depth, but it does 
-deliver a fun time on the lanes. 
+The game doesn't offer a lot of depth, but it does deliver a fun time on the lanes. 
  
 Replay Value (6) 
-Nester's Funky Bowling really needs a battery to 
-save your high scores. A tournament would have 
-also been welcome. 
+Nester's Funky Bowling really needs a battery to save your high scores. A tournament would have also 
+been welcome. 
  
 Documentation (7) 
-The manual explains everything you need to know 
-and will even teach you a little something about 
+The manual explains everything you need to know and will even teach you a little something about 
 scoring. 
  
  
@@ -539,7 +382,7 @@ Genre : Sports / Bowling
 Controls : Joystick/Gamepad 
 Score : 6 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8109&tab=overview 
  
  
 $end
@@ -550,42 +393,26 @@ $<a href="http://www.allgame.com/game.php?id=2712&tab=overview"</a>
 $bio
  
  
-Panic Bomber (c) December 1995 Nintendo of 
-America, Inc. 
+Panic Bomber (c) December 1995 Nintendo of America, Inc. 
  
-Join Hudson Soft's famous hero as you search the 
-mysterious island of Ever-Mist for the lost Golden 
-Statue of Bomberman. According to legend, you must 
-first acquire three celestial medals of power in 
-order to unlock the gates securing the statue. 
-Needless to say, these medals are well guarded by 
-some strange characters! In Panic-Bomber, you must 
-defeat these villains who stand in the way of your 
-quest. To do this, you will have to beat them at 
-their own puzzle game -- one in which you must 
-line up falling blocks next to those with similar 
-patterns. Match any three together and they 
-disappear from the screen. A Bomberman game 
-wouldn't be complete without a variety of bombs to 
-wreak havoc with, so count on some explosive and 
-frantic action. Bombs away! 
+Join Hudson Soft's famous hero as you search the mysterious island of Ever-Mist for the lost Golden 
+Statue of Bomberman. According to legend, you must first acquire three celestial medals of power in 
+order to unlock the gates securing the statue. Needless to say, these medals are well guarded by some 
+strange characters! In Panic-Bomber, you must defeat these villains who stand in the way of your 
+quest. To do this, you will have to beat them at their own puzzle game -- one in which you must line 
+up falling blocks next to those with similar patterns. Match any three together and they disappear 
+from the screen. A Bomberman game wouldn't be complete without a variety of bombs to wreak havoc 
+with, so count on some explosive and frantic action. Bombs away! 
  
 Review by Scott Alan Marriott 
  
-While Panic Bomber doesn't use the Virtual Boy's 
-depth for any new play mechanics (like 3D Tetris), 
-the game is still very fun to play. Originally 
-designed for the Super Famicom, Panic Bomber 
-features similar type of action as found in Puyo 
-Puyo, Kirby's Avalanche, Columns or Dr. Robotnik's 
-Mean Bean Machine. You are trying to eliminate 
-similarly shaped objects from the playing field by 
-dropping blocks grouped in three. These objects 
-(there are five different sets to choose from) can 
-be rotated or moved from side to side as you 
-search for a match either horizontally, vertically 
-or diagonally.From time to time, a lit bomb will 
-also fall from the top of the screen 
+While Panic Bomber doesn't use the Virtual Boy's depth for any new play mechanics (like 3D Tetris), 
+the game is still very fun to play. Originally designed for the Super Famicom, Panic Bomber features 
+similar type of action as found in Puyo Puyo, Kirby's Avalanche, Columns or Dr. Robotnik's Mean Bean 
+Machine. You are trying to eliminate similarly shaped objects from the playing field by dropping 
+blocks grouped in three. These objects (there are five different sets to choose from) can be rotated 
+or moved from side to side as you search for a match either horizontally, vertically or 
+diagonally.From time to time, a lit bomb will also fall from the top of the screen 
  
  
 - TECHNICAL - 
@@ -594,7 +421,7 @@ Genre : Puzzle / Action Puzzle
 Controls : Joystick/Gamepad 
 Score : 7 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2712&tab=overview 
  
  
 $end
@@ -605,88 +432,56 @@ $<a href="http://www.allgame.com/game.php?id=2713&tab=overview"</a>
 $bio
  
  
-Red Alarm (c) August 1995 T&E Soft, Inc. / 
-Nintendo of America, Inc. 
+Red Alarm (c) August 1995 T&E Soft, Inc. / Nintendo of America, Inc. 
  
-You are mankind's last hope. An angry computer 
-system known as KAOS is bent on destroying all of 
-humanity and has released its robotic armies onto 
-our world. The only weapon left to fight KAOS is a 
-Tech-Wing Fighter, a small spacecraft with a 
-deadly arsenal at its disposal. Your mission is to 
-infiltrate KAOS from within -- destroying any and 
-all resistance in the process.Red Alarm is a 3D 
-shooter in every sense of the word. Travel freely 
-through space avoiding weapon systems and enemy 
-fighters while making your way toward the ultimate 
-showdown with KAOS. At the end of each stage, you 
+You are mankind's last hope. An angry computer system known as KAOS is bent on destroying all of 
+humanity and has released its robotic armies onto our world. The only weapon left to fight KAOS is a 
+Tech-Wing Fighter, a small spacecraft with a deadly arsenal at its disposal. Your mission is to 
+infiltrate KAOS from within -- destroying any and all resistance in the process.Red Alarm is a 3D 
+shooter in every sense of the word. Travel freely through space avoiding weapon systems and enemy 
+fighters while making your way toward the ultimate showdown with KAOS. At the end of each stage, you 
 will encounter a boss character 
  
 Review by Scott Alan Marriott 
  
-Red Alarm is an intense 3D shooter that almost 
-overwhelms you with so much going on at once. 
-While for most games in the genre this is 
-positive, for Red Alarm it becomes rather 
-disorienting. If you are looking for a Virtual Boy 
-game to make you bump into the furniture 
-immediately after playing, this is it. The problem 
-stems from the way the graphics are presented. All 
-objects are detailed wire-frames, meaning the game 
-is drawn using only straight lines, similar to the 
-arcade classic Battlezone. This makes structures 
-hard to see because there is empty space between 
-the lines defining them. Add multiple enemy 
-fighters and ground defenses into the mix, and it 
-can be very difficult to navigate your ship, 
-especially when you are trying to fight back! You 
-will have to concentrate very hard to take in all 
-the game throws at you if you plan on making it 
-through unscathed.Still, the game does deliver a 
-true sense of depth like you've never experienced 
-from a home console until now. You can fly into 
-the background by speeding up -- or stop on a dime 
-and fly in reverse -- with a simple button press. 
-There are also multiple camera angles that can 
-help you navigate, but the default view (behind 
-the ship) is the most effective.The cockpit mode 
-would have been perfect if not for one glaring 
-fault: you can't tell the outline of your ship, 
-making it easy to crash into obstacles you think 
-you've cleared. In addition, the game is filled 
-with surrounding walls that make it difficult to 
-negotiate in this mode -- if you were flying in 
-open space it would be much more practical.It's 
-really hard to fault the developers of this game, 
-as they have created a very detailed setting for 
-which to fight in. Walls have faces stretching out 
-of them like a scene from The Abyss, there are 
-several interesting bosses to combat, and you'll 
-even hear some speech. Deep down there is a fine 
-shooter that is simply hard to enjoy due to the 
-limitations of the hardware...and that is truly a 
+Red Alarm is an intense 3D shooter that almost overwhelms you with so much going on at once. While 
+for most games in the genre this is positive, for Red Alarm it becomes rather disorienting. If you 
+are looking for a Virtual Boy game to make you bump into the furniture immediately after playing, 
+this is it. The problem stems from the way the graphics are presented. All objects are detailed 
+wire-frames, meaning the game is drawn using only straight lines, similar to the arcade classic 
+Battlezone. This makes structures hard to see because there is empty space between the lines defining 
+them. Add multiple enemy fighters and ground defenses into the mix, and it can be very difficult to 
+navigate your ship, especially when you are trying to fight back! You will have to concentrate very 
+hard to take in all the game throws at you if you plan on making it through unscathed.Still, the game 
+does deliver a true sense of depth like you've never experienced from a home console until now. You 
+can fly into the background by speeding up -- or stop on a dime and fly in reverse -- with a simple 
+button press. There are also multiple camera angles that can help you navigate, but the default view 
+(behind the ship) is the most effective.The cockpit mode would have been perfect if not for one 
+glaring fault: you can't tell the outline of your ship, making it easy to crash into obstacles you 
+think you've cleared. In addition, the game is filled with surrounding walls that make it difficult 
+to negotiate in this mode -- if you were flying in open space it would be much more practical.It's 
+really hard to fault the developers of this game, as they have created a very detailed setting for 
+which to fight in. Walls have faces stretching out of them like a scene from The Abyss, there are 
+several interesting bosses to combat, and you'll even hear some speech. Deep down there is a fine 
+shooter that is simply hard to enjoy due to the limitations of the hardware...and that is truly a 
 shame. 
  
 Graphics (5) 
-Very detailed wire-frame graphics are interesting 
-to look at, but very difficult to distinguish from 
+Very detailed wire-frame graphics are interesting to look at, but very difficult to distinguish from 
 one another in this intense shooter. 
  
 Sound (6) 
 Some speech and good music add a lot to the game. 
  
 Enjoyment (4) 
-The enjoyment factor is directly related to how 
-well you can make out the various enemies and 
+The enjoyment factor is directly related to how well you can make out the various enemies and 
 structures while flying. 
  
 Replay Value (4) 
-Shooters don't typically have high replay values 
-and this one is no different. 
+Shooters don't typically have high replay values and this one is no different. 
  
 Documentation (8) 
-Nice full-color manual that explains nearly 
-everything you need to know. 
+Nice full-color manual that explains nearly everything you need to know. 
  
  
 - TECHNICAL - 
@@ -695,7 +490,7 @@ Genre : Simulation / Space Combat Sim
 Controls : Joystick/Gamepad 
 Score : 4 
 Esrb : e|Animated Violence 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2713&tab=overview 
  
  
 $end
@@ -706,14 +501,13 @@ $<a href="http://www.allgame.com/game.php?id=16498&tab=overview"</a>
 $bio
  
  
-SD Gundam Dimension War (c) 1995 Bandai Co., Ltd. 
-/ Bandai Co., Ltd. 
+SD Gundam Dimension War (c) 1995 Bandai Co., Ltd. / Bandai Co., Ltd. 
  
  
 - TECHNICAL - 
  
 Genre : Strategy / 2D Real-Time Strategy 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=16498&tab=overview 
  
  
 $end
@@ -724,14 +518,13 @@ $<a href="http://www.allgame.com/game.php?id=8105&tab=overview"</a>
 $bio
  
  
-Space Invaders Virtual Collection (c) 1996 Taito 
-Corporation / Taito Corporation 
+Space Invaders Virtual Collection (c) 1996 Taito Corporation / Taito Corporation 
  
  
 - TECHNICAL - 
  
 Genre : Shooter / Fixed Screen Shooter 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8105&tab=overview 
  
  
 $end
@@ -742,14 +535,13 @@ $<a href="http://www.allgame.com/game.php?id=16499&tab=overview"</a>
 $bio
  
  
-Space Squash (c) 1995 Coconuts Japan Entertainment 
-Co., Ltd. / Coconuts Japan Entertainment Co., Ltd. 
+Space Squash (c) 1995 Coconuts Japan Entertainment Co., Ltd. / Coconuts Japan Entertainment Co., Ltd. 
  
  
 - TECHNICAL - 
  
 Genre : Sports / Futuristic 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=16499&tab=overview 
  
  
 $end
@@ -760,74 +552,42 @@ $<a href="http://www.allgame.com/game.php?id=2714&tab=overview"</a>
 $bio
  
  
-Teleroboxer (c) August 1995 Nintendo R&D3 / 
-Nintendo of America, Inc. 
+Teleroboxer (c) August 1995 Nintendo R&D3 / Nintendo of America, Inc. 
  
-It is the 22nd century and boxing, as we know it, 
-no longer exists. Technology has advanced to the 
-point where remote controlled robots have replaced 
-human fighters in countries all over the world. 
-These Teleroboxers, as they are called, have 
-recently organized to compete in a tournament to 
-end all tournaments. Which fighter is skilled 
-enough to be called the world champion? Nintendo's 
-Teleroboxer lets you step into the ring 
-controlling your alter-ego Harry the Robot as you 
-vie for the championship. Use jabs, uppercuts, 
-body blows, or the special "machine-gun attack" to 
-knock out your foes. Defend yourself from punches 
-by guarding, dodging or ducking to avoid damage to 
-your strength meter. Each fight lasts up to five 
-rounds, and after each bout your progress is 
-automatically saved along with your overall 
-record. Should you defeat all eight opponents in 
-the tournament, you will become champion, but wait 
--- it's not over! You still have to face random 
-opponents who will try to take it all away from 
-you. If you lose, your champion will be 
-permanently retired and you'll start once again at 
-the bottom. 
+It is the 22nd century and boxing, as we know it, no longer exists. Technology has advanced to the 
+point where remote controlled robots have replaced human fighters in countries all over the world. 
+These Teleroboxers, as they are called, have recently organized to compete in a tournament to end all 
+tournaments. Which fighter is skilled enough to be called the world champion? Nintendo's Teleroboxer 
+lets you step into the ring controlling your alter-ego Harry the Robot as you vie for the 
+championship. Use jabs, uppercuts, body blows, or the special "machine-gun attack" to knock out your 
+foes. Defend yourself from punches by guarding, dodging or ducking to avoid damage to your strength 
+meter. Each fight lasts up to five rounds, and after each bout your progress is automatically saved 
+along with your overall record. Should you defeat all eight opponents in the tournament, you will 
+become champion, but wait -- it's not over! You still have to face random opponents who will try to 
+take it all away from you. If you lose, your champion will be permanently retired and you'll start 
+once again at the bottom. 
  
 Review by Scott Alan Marriott 
  
-Of the games that could benefit most from the 
-Virtual Boy's capabilities, boxing fans were 
-undoubtedly excited about the possibility of a 3D 
-Punch-Out. Imagine their surprise as one of the 
-announced launch titles was Teleroboxer, a 
-futuristic boxing game in the same vein as the 
-Nintendo classic. Okay, so it's with robots 
-instead of over-the-top human characters, fans 
-will be able to live with that. The mere notion of 
-a first-person boxing game with a true sense of 
-depth was a step in the right direction.The icing 
-on the cake was that the game would save your 
-won-loss records, and after you became champion, 
-you'd fight random opponents until you lost your 
-crown. Imagine watching your champ go 32-0 before 
-finally losing to some young robotic upstart -- 
-it's hard not to get excited about the 
-possibilities.Rarely has a title showing this much 
-promise been so disappointing. Teleroboxer is an 
-absolute chore to control, from small delays after 
-hitting button presses to extremely awkward moves 
-designed for the Virtual Boy's unique controller. 
-Since the action is coming at you so fast, it is 
-crucial that you can be at "one" with the controls 
-to react quickly. Even after staring at the list 
-of commands for a seeming eternity, players still 
-won't be able to get the robot to do what they 
-want. To make matters worse, the computer is as 
-fast as lightning -- making the sluggish controls 
-even more painfully apparent. As you may or may 
-not know, the Virtual Boy has two directional pads 
-on both sides of the controller as well as two 
-buttons on the back. To jab, uppercut or block, 
-you have to press each pad along with the buttons 
-to account for the left and right "hands" of the 
-boxer. Yes, it sounds good on paper, but it is 
-horribly implemented. Trying to string together a 
-combination is a lesson in futility 
+Of the games that could benefit most from the Virtual Boy's capabilities, boxing fans were 
+undoubtedly excited about the possibility of a 3D Punch-Out. Imagine their surprise as one of the 
+announced launch titles was Teleroboxer, a futuristic boxing game in the same vein as the Nintendo 
+classic. Okay, so it's with robots instead of over-the-top human characters, fans will be able to 
+live with that. The mere notion of a first-person boxing game with a true sense of depth was a step 
+in the right direction.The icing on the cake was that the game would save your won-loss records, and 
+after you became champion, you'd fight random opponents until you lost your crown. Imagine watching 
+your champ go 32-0 before finally losing to some young robotic upstart -- it's hard not to get 
+excited about the possibilities.Rarely has a title showing this much promise been so disappointing. 
+Teleroboxer is an absolute chore to control, from small delays after hitting button presses to 
+extremely awkward moves designed for the Virtual Boy's unique controller. Since the action is coming 
+at you so fast, it is crucial that you can be at "one" with the controls to react quickly. Even after 
+staring at the list of commands for a seeming eternity, players still won't be able to get the robot 
+to do what they want. To make matters worse, the computer is as fast as lightning -- making the 
+sluggish controls even more painfully apparent. As you may or may not know, the Virtual Boy has two 
+directional pads on both sides of the controller as well as two buttons on the back. To jab, uppercut 
+or block, you have to press each pad along with the buttons to account for the left and right "hands" 
+of the boxer. Yes, it sounds good on paper, but it is horribly implemented. Trying to string together 
+a combination is a lesson in futility 
  
  
 - TECHNICAL - 
@@ -836,7 +596,7 @@ Genre : Sports / Futuristic
 Controls : Joystick/Gamepad 
 Score : 2 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2714&tab=overview 
  
  
 $end
@@ -847,44 +607,29 @@ $<a href="http://www.allgame.com/game.php?id=8104&tab=overview"</a>
 $bio
  
  
-V-Tetris (c) 1995 Bullet-Proof Software / 
-  Bullet-Proof Software 
+V-Tetris (c) 1995 Bullet-Proof Software / Bullet-Proof Software 
  
-The classic game of Tetris has been translated to 
-the Virtual Boy with 3D visual effects and a 
-completely new play mode. Besides the original 
-game, where you manipulate seven types of falling 
-pieces to form horizontal lines, there is a new 
-variation called Loop Tetris. Loop Tetris has you 
-scrolling the playing field to the left or right 
-instead of staring at a single screen. Since the 
-entire well is like a cylinder, you'll need to 
-constantly revolve the playing field so that one 
-area doesn't get too high. V-Tetris also offers a 
-variation on the original game in which you have 
-to eliminate a certain number of rows before 
-continuing on to the next level.The Virtual Boy 
-shows both the well and pieces in the foreground 
-while various images are positioned in the 
-background, creating the illusion of depth. The 
-Loop Tetris game even offers moving backgrounds 
-such as falling snowflakes or leaves! The game 
-also lets you enter your initials for each of the 
-three game modes, but high scores are not saved 
-once you turn off the console. While V-Tetris was 
-released exclusively in Japan, all of the screen 
-commands are in English, so gamers can still play 
-without reading the instructions. Players can 
-choose between three types of music tracks in 
-addition to the starting level (from one to nine) 
-and round (one to five). 
+The classic game of Tetris has been translated to the Virtual Boy with 3D visual effects and a 
+completely new play mode. Besides the original game, where you manipulate seven types of falling 
+pieces to form horizontal lines, there is a new variation called Loop Tetris. Loop Tetris has you 
+scrolling the playing field to the left or right instead of staring at a single screen. Since the 
+entire well is like a cylinder, you'll need to constantly revolve the playing field so that one area 
+doesn't get too high. V-Tetris also offers a variation on the original game in which you have to 
+eliminate a certain number of rows before continuing on to the next level.The Virtual Boy shows both 
+the well and pieces in the foreground while various images are positioned in the background, creating 
+the illusion of depth. The Loop Tetris game even offers moving backgrounds such as falling snowflakes 
+or leaves! The game also lets you enter your initials for each of the three game modes, but high 
+scores are not saved once you turn off the console. While V-Tetris was released exclusively in Japan, 
+all of the screen commands are in English, so gamers can still play without reading the instructions. 
+Players can choose between three types of music tracks in addition to the starting level (from one to 
+nine) and round (one to five). 
  
  
 - TECHNICAL - 
  
 Genre : Puzzle / Action Puzzle 
 Score : 5 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8104&tab=overview 
  
  
 $end
@@ -895,25 +640,16 @@ $<a href="http://www.allgame.com/game.php?id=8110&tab=overview"</a>
 $bio
  
  
-Vertical Force (c) December 1995 Nintendo of 
-America, Inc. 
+Vertical Force (c) December 1995 Nintendo of America, Inc. 
  
-Pilot the star fighter Ragnarok in this top-down 
-shooter from the makers of the Star Soldier 
-series. The action takes place on a 
-vertical-scrolling backdrop, as you battle an 
-armada of flying ships controlled by a rogue 
-computer system. Instead of shooting enemies on 
-one plane, you can switch altitude at any point to 
-take on rivals above or below your ship. In your 
-mission to save the galaxy, you can also call on 
-the help of various AI drones. Flying over a drone 
-automatically activates its offensive support, and 
-up to three drones can be stored in a reserve 
-stockpile. Enhance your ship's laser, wide shot, 
-and shield capabilities by collecting three levels 
-of power-ups. Advance through a total of five 
-stages to save the planet and win the game. 
+Pilot the star fighter Ragnarok in this top-down shooter from the makers of the Star Soldier series. 
+The action takes place on a vertical-scrolling backdrop, as you battle an armada of flying ships 
+controlled by a rogue computer system. Instead of shooting enemies on one plane, you can switch 
+altitude at any point to take on rivals above or below your ship. In your mission to save the galaxy, 
+you can also call on the help of various AI drones. Flying over a drone automatically activates its 
+offensive support, and up to three drones can be stored in a reserve stockpile. Enhance your ship's 
+laser, wide shot, and shield capabilities by collecting three levels of power-ups. Advance through a 
+total of five stages to save the planet and win the game. 
  
  
 - TECHNICAL - 
@@ -921,7 +657,7 @@ stages to save the planet and win the game.
 Genre : Shooter / Vertical Scrolling Shooter 
 Score : 5 
 Esrb : e|Animated Violence 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8110&tab=overview 
  
  
 $end
@@ -932,56 +668,33 @@ $<a href="http://www.allgame.com/game.php?id=8112&tab=overview"</a>
 $bio
  
  
-Virtual Boy Wario Land (c) November 1995 Nintendo 
-R&D3 / Nintendo of America, Inc. 
+Virtual Boy Wario Land (c) November 1995 Nintendo R&D3 / Nintendo of America, Inc. 
  
-Someone has been hoarding treasure deep within the 
-caverns below the Aldegara waterfall, and Wario 
-wants in on the action! In this 3D side-scrolling 
-adventure, play as Wario gathering hearts, coins 
-and mysterious artifacts -- all while defeating 
-various baddies trying to stop you. In order to 
-progress to the next level, you must first locate 
-a key and then board an elevator moving you one 
-step closer to the finish. Travel in between the 
-foreground and background, underwater and through 
-woods to locate the one hidden treasure piece on 
-each stage. During the journey you'll face several 
-boss characters, so it's a good idea to practice 
-your moves. Along with the standard running and 
-jumping, Wario will be able to swim, body slam, 
-toss, stomp and barge into enemies. There are also 
-four power-ups somewhere in the caverns, 
-transforming you into Bull Wario, King Dragon 
-Wario, Sea Dragon Wario and Eagle Wario. If that 
-isn't enough, play several mini-games to get more 
-lives, time or coins as you make your way up from 
-the underground. Don't forget to save your 
-progress and treasure totals in between levels... 
-Happy hunting! 
+Someone has been hoarding treasure deep within the caverns below the Aldegara waterfall, and Wario 
+wants in on the action! In this 3D side-scrolling adventure, play as Wario gathering hearts, coins 
+and mysterious artifacts -- all while defeating various baddies trying to stop you. In order to 
+progress to the next level, you must first locate a key and then board an elevator moving you one 
+step closer to the finish. Travel in between the foreground and background, underwater and through 
+woods to locate the one hidden treasure piece on each stage. During the journey you'll face several 
+boss characters, so it's a good idea to practice your moves. Along with the standard running and 
+jumping, Wario will be able to swim, body slam, toss, stomp and barge into enemies. There are also 
+four power-ups somewhere in the caverns, transforming you into Bull Wario, King Dragon Wario, Sea 
+Dragon Wario and Eagle Wario. If that isn't enough, play several mini-games to get more lives, time 
+or coins as you make your way up from the underground. Don't forget to save your progress and 
+treasure totals in between levels... Happy hunting! 
  
 Review by Scott Alan Marriott 
  
-Virtual Boy Wario Land really shows off the 
-system's potential with its multi-layered graphics 
-and convincing sense of 3D. The game is much more 
-than a technical showcase, however. It is not only 
-the best action-platformer on the system (in fact, 
-it's the only one!), but it compares favorably 
-with best of the Mario series.Only one thing keeps 
-it from being an equal: the length of the game, 
-which isn't as long as you'd expect from a 
-Nintendo platformer. Still, this is a beautiful 
-title that's extremely fun to play, with diverse 
-moves, excellent control and challenging boss 
-characters. The goal of collecting every piece of 
-treasure will keep you glued to your red screen 
-until you achieve the best possible ending.Fans of 
-Wario Land for the Game Boy will recognize the 
-style of graphics and play mechanics instantly. 
-Wario is the antithesis of Mario, with a look that 
-would make the Italian plumber squirm. His 
-mustache is jagged and pointy 
+Virtual Boy Wario Land really shows off the system's potential with its multi-layered graphics and 
+convincing sense of 3D. The game is much more than a technical showcase, however. It is not only the 
+best action-platformer on the system (in fact, it's the only one!), but it compares favorably with 
+best of the Mario series.Only one thing keeps it from being an equal: the length of the game, which 
+isn't as long as you'd expect from a Nintendo platformer. Still, this is a beautiful title that's 
+extremely fun to play, with diverse moves, excellent control and challenging boss characters. The 
+goal of collecting every piece of treasure will keep you glued to your red screen until you achieve 
+the best possible ending.Fans of Wario Land for the Game Boy will recognize the style of graphics and 
+play mechanics instantly. Wario is the antithesis of Mario, with a look that would make the Italian 
+plumber squirm. His mustache is jagged and pointy 
  
  
 - TECHNICAL - 
@@ -990,7 +703,7 @@ Genre : Action / Side-Scrolling Platform
 Controls : Joystick/Gamepad 
 Score : 8 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8112&tab=overview 
  
  
 $end
@@ -1007,7 +720,7 @@ Virtual Fishing (c) 1996
 - TECHNICAL - 
  
 Genre : Sports / Fishing 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2715&tab=overview 
  
  
 $end
@@ -1024,7 +737,7 @@ Virtual Lab (c) 1995
 - TECHNICAL - 
  
 Genre : Puzzle / Action Puzzle 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=16550&tab=overview 
  
  
 $end
@@ -1035,96 +748,57 @@ $<a href="http://www.allgame.com/game.php?id=2716&tab=overview"</a>
 $bio
  
  
-Virtual League Baseball (c) September 1995 KEMCO / 
-KEMCO U.S.A., Inc. 
+Virtual League Baseball (c) September 1995 KEMCO / KEMCO U.S.A., Inc. 
  
-The first (and only) American baseball release for 
-the Virtual Boy brings together 18 teams from 
-around the world to compete in one 3D ballpark. 
-Kemco's Virtual League Baseball uses the Virtual 
-Boy's unique perspective to make it seem like 
-every pitch is coming at you. The game offers 
-three different modes of play, including a Single 
-Game, All-Star Game and Pennant Race.The pitching 
-and batting interface is strictly arcade-style, 
-meaning you steer each pitch and time your swing 
-as the ball approaches the plate. While 
-substitutions are allowed for both batters and 
-pitchers, the game does not save any lineup 
-changes or statistics. Virtual League Baseball is 
-also missing both Major League Baseball and MLBPA 
-licenses that would have allowed for real players 
-and team names. 
+The first (and only) American baseball release for the Virtual Boy brings together 18 teams from 
+around the world to compete in one 3D ballpark. Kemco's Virtual League Baseball uses the Virtual 
+Boy's unique perspective to make it seem like every pitch is coming at you. The game offers three 
+different modes of play, including a Single Game, All-Star Game and Pennant Race.The pitching and 
+batting interface is strictly arcade-style, meaning you steer each pitch and time your swing as the 
+ball approaches the plate. While substitutions are allowed for both batters and pitchers, the game 
+does not save any lineup changes or statistics. Virtual League Baseball is also missing both Major 
+League Baseball and MLBPA licenses that would have allowed for real players and team names. 
  
 Review by Scott Alan Marriott 
  
-Okay, here's the deal: a company (Kemco) is trying 
-to convince American baseball fans (the target 
-audience) that their game (Virtual League 
-Baseball) is something worth owning, so they 
-decide to advertise in various gaming magazines. 
-Nothing wrong with that, right? Nope. Yet Kemco 
-decided that tasteless humor was the best way to 
-win fans over, so they used a two-page ad 
-featuring the backsides of two portly men with 
-their pants hanging dangerously low.The slogan? 
-"Finally, baseball without the chili dog farts." 
-You know something, I was waiting for a game that 
-would finally capture the nuances of the sport 
-without including those bothersome chili dog 
-farts! The funny thing is, I'd rather sit directly 
-behind those two fellows through a double-header 
-than play this game past an inning. I guess 
-there's no truth in advertising: Virtual League 
-Baseball stinks.The differences between this game 
-and the Japanese Virtual Professional Baseball 95 
-are merely cosmetic. Instead of the short, 
-cartoon-like players and real Japanese teams, we 
-have taller, more human looking players and 
-fictional "international" teams. Yet despite the 
-difference in visuals, the game plays exactly the 
-same. This is not a good thing. Do you want a 
-season mode? How about multiple ballparks and 
-camera angles? Real players, trades and tracked 
-statistics? Sorry, none of these elements are 
-found in this game.Now perhaps the lack of 
-standard baseball features would be okay if the 
-title offered exciting gameplay, but Virtual 
-League Baseball is reminiscent of Major League 
-Baseball for the Nintendo Entertainment System. If 
-you're not familiar with the game, here's a recap: 
-plinky sound effects, only one stadium, all 
-fielders moving in unison with the control pad 
-(including the infield and outfield!), a batting 
-and pitching interface that relies on one button, 
-and base runners who move at the speed of light. 
-Are these features you want in a 1995 release? 
-Certainly not, especially on a system that's 
-supposed to deliver a "virtual" experience. Avoid 
-this game and pray that some other company 
-delivers a suitable alternative. 
+Okay, here's the deal: a company (Kemco) is trying to convince American baseball fans (the target 
+audience) that their game (Virtual League Baseball) is something worth owning, so they decide to 
+advertise in various gaming magazines. Nothing wrong with that, right? Nope. Yet Kemco decided that 
+tasteless humor was the best way to win fans over, so they used a two-page ad featuring the backsides 
+of two portly men with their pants hanging dangerously low.The slogan? "Finally, baseball without the 
+chili dog farts." You know something, I was waiting for a game that would finally capture the nuances 
+of the sport without including those bothersome chili dog farts! The funny thing is, I'd rather sit 
+directly behind those two fellows through a double-header than play this game past an inning. I guess 
+there's no truth in advertising: Virtual League Baseball stinks.The differences between this game and 
+the Japanese Virtual Professional Baseball 95 are merely cosmetic. Instead of the short, cartoon-like 
+players and real Japanese teams, we have taller, more human looking players and fictional 
+"international" teams. Yet despite the difference in visuals, the game plays exactly the same. This 
+is not a good thing. Do you want a season mode? How about multiple ballparks and camera angles? Real 
+players, trades and tracked statistics? Sorry, none of these elements are found in this game.Now 
+perhaps the lack of standard baseball features would be okay if the title offered exciting gameplay, 
+but Virtual League Baseball is reminiscent of Major League Baseball for the Nintendo Entertainment 
+System. If you're not familiar with the game, here's a recap: plinky sound effects, only one stadium, 
+all fielders moving in unison with the control pad (including the infield and outfield!), a batting 
+and pitching interface that relies on one button, and base runners who move at the speed of light. 
+Are these features you want in a 1995 release? Certainly not, especially on a system that's supposed 
+to deliver a "virtual" experience. Avoid this game and pray that some other company delivers a 
+suitable alternative. 
  
 Graphics (4) 
-The batters look much better than those found in 
-Virtual Professional Baseball '95, but the high 
-overhead fielding view means you'll have to squint 
-to see them after making contact. 
+The batters look much better than those found in Virtual Professional Baseball '95, but the high 
+overhead fielding view means you'll have to squint to see them after making contact. 
  
 Sound (2) 
 Plink, plink, plink. 
  
 Enjoyment (2) 
-This game would have been acceptable had it been 
-released ten years earlier. 
+This game would have been acceptable had it been released ten years earlier. 
  
 Replay Value (1) 
-Even if it's the only Virtual Boy title you own, 
-you'll have more fun looking at the box cover. 
+Even if it's the only Virtual Boy title you own, you'll have more fun looking at the box cover. 
  
 Documentation (6) 
-This is the one bright spot in an otherwise 
-lackluster release. Everything is explained 
-clearly. 
+This is the one bright spot in an otherwise lackluster release. Everything is explained clearly. 
  
  
 - TECHNICAL - 
@@ -1133,7 +807,7 @@ Genre : Sports / Baseball
 Controls : Joystick/Gamepad 
 Score : 1 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2716&tab=overview 
  
  
 $end
@@ -1146,98 +820,59 @@ $bio
  
 Virtual Professional Baseball 95 (c) 1995 
  
-Kemco's Virtual Professional Baseball 95 offers 
-eighteen professional Japanese baseball teams 
-along with actual player statistics based on the 
-1994 season. Other than the differences in teams 
-(there are no pro teams in the U.S. version), the 
-game is essentially the same game as Virtual 
-League Baseball with one other notable exception: 
-the players resemble chipmunks! While the game 
-features only one stadium, if you are looking to 
-play as the Yakult Swallows, Yokohama BayStars or 
-Seibu Lions, and don't mind non-human players, 
-this could be your field of dreams. 
+Kemco's Virtual Professional Baseball 95 offers eighteen professional Japanese baseball teams along 
+with actual player statistics based on the 1994 season. Other than the differences in teams (there 
+are no pro teams in the U.S. version), the game is essentially the same game as Virtual League 
+Baseball with one other notable exception: the players resemble chipmunks! While the game features 
+only one stadium, if you are looking to play as the Yakult Swallows, Yokohama BayStars or Seibu 
+Lions, and don't mind non-human players, this could be your field of dreams. 
  
 Review by Scott Alan Marriott 
  
-I don't understand this game, and it's not because 
-it's in Japanese. What boggles my mind is how any 
-developer could release such a simplistic game in 
-1995. Not only does this game completely ignore 
-what the Virtual Boy has to offer, but the 
-gameplay is almost exactly like the early baseball 
-titles for the NES. Let's step back ten years to 
-1985, where we have small little characters, 
-plinky sound effects, one generic stadium, a 
-single batting view, fielders all moving in unison 
-with the control pad (yes both infield and 
-outfield!), a batting and pitching interface 
-consisting of one button, and base runners 
-scurrying at the speed of light.Yes, Kemco has 
-included all of these "features" into their game. 
-In fact, the only noteworthy aspect is that you 
-determine the amount of speed on your pitch by 
-holding down the button. I hope you were sitting 
-down for that one... Baseball games have evolved 
-over the years, but it's hard to tell looking at 
-this title. I was shocked when I first played the 
-game.The most aggravating thing is that baseball 
-seems like a natural fit considering the Virtual 
-Boy's 3D abilities. Imagine the batter's box view 
-from a game like World Series Baseball, but with 
-the ball zooming toward you at high speeds. Better 
-yet, a fielder's view where you see the ball the 
-moment it leaves the bat.These are the obvious 
-uses of 3D, but what we are given is a view far 
-behind the batter and a distant view of the 
-stadium. Fielders are roughly the size of ants and 
-run faster to the infield than they throw. I was 
-surprised to see that you could make 
-substitutions, so I guess the game isn't 
-completely worthless. While the game features the 
-Japanese pro teams, don't expect a huge difference 
-in player abilities. The statistics are the only 
-way to tell if a player is "good," but the 
-simplistic arcade action means that everyone can 
-hit home runs or steal bases, and the only 
-difference between pitchers seems to be the 
-velocity.From start to finish, this is a 
-tremendous disappointment. Unless you feel that 
-baseball games peaked during the first years of 
-the NES, you should avoid this game at all costs. 
-The Virtual Boy is capable of much more. 
+I don't understand this game, and it's not because it's in Japanese. What boggles my mind is how any 
+developer could release such a simplistic game in 1995. Not only does this game completely ignore 
+what the Virtual Boy has to offer, but the gameplay is almost exactly like the early baseball titles 
+for the NES. Let's step back ten years to 1985, where we have small little characters, plinky sound 
+effects, one generic stadium, a single batting view, fielders all moving in unison with the control 
+pad (yes both infield and outfield!), a batting and pitching interface consisting of one button, and 
+base runners scurrying at the speed of light.Yes, Kemco has included all of these "features" into 
+their game. In fact, the only noteworthy aspect is that you determine the amount of speed on your 
+pitch by holding down the button. I hope you were sitting down for that one... Baseball games have 
+evolved over the years, but it's hard to tell looking at this title. I was shocked when I first 
+played the game.The most aggravating thing is that baseball seems like a natural fit considering the 
+Virtual Boy's 3D abilities. Imagine the batter's box view from a game like World Series Baseball, but 
+with the ball zooming toward you at high speeds. Better yet, a fielder's view where you see the ball 
+the moment it leaves the bat.These are the obvious uses of 3D, but what we are given is a view far 
+behind the batter and a distant view of the stadium. Fielders are roughly the size of ants and run 
+faster to the infield than they throw. I was surprised to see that you could make substitutions, so I 
+guess the game isn't completely worthless. While the game features the Japanese pro teams, don't 
+expect a huge difference in player abilities. The statistics are the only way to tell if a player is 
+"good," but the simplistic arcade action means that everyone can hit home runs or steal bases, and 
+the only difference between pitchers seems to be the velocity.From start to finish, this is a 
+tremendous disappointment. Unless you feel that baseball games peaked during the first years of the 
+NES, you should avoid this game at all costs. The Virtual Boy is capable of much more. 
  
 Graphics (2) 
-Little baseball players are supposed to be "cute." 
-The best thing about the players is that they're 
-not super-deformed with enormous heads. The 
-graphics are extremely basic with a distinctive 
-8-bit quality. 
+Little baseball players are supposed to be "cute." The best thing about the players is that they're 
+not super-deformed with enormous heads. The graphics are extremely basic with a distinctive 8-bit 
+quality. 
  
 Sound (1) 
-Again, the sound made me have flashbacks to 
-baseball games on the NES. 
+Again, the sound made me have flashbacks to baseball games on the NES. 
  
 Enjoyment (2) 
-The game may be fun for children who have never 
-experienced a baseball game in their lives. 
-Everyone else will quickly become bored. If you're 
-concerned about the Japanese text, don't be. Only 
-the players' names are in Japanese, along with the 
-"strike" or "out" graphics. Everything else is 
-easy to grasp. 
+The game may be fun for children who have never experienced a baseball game in their lives. Everyone 
+else will quickly become bored. If you're concerned about the Japanese text, don't be. Only the 
+players' names are in Japanese, along with the "strike" or "out" graphics. Everything else is easy to 
+grasp. 
  
 Replay Value (1) 
-This game is not fun. This is supposed to be a 
-32-bit system? There are better baseball games on 
-the Game Boy! 
+This game is not fun. This is supposed to be a 32-bit system? There are better baseball games on the 
+Game Boy! 
  
 Documentation (6) 
-The documentation is mostly in Japanese, but there 
-are colorful graphics throughout. You don't need 
-to understand the instructions in order to play 
-this game. 
+The documentation is mostly in Japanese, but there are colorful graphics throughout. You don't need 
+to understand the instructions in order to play this game. 
  
  
 - TECHNICAL - 
@@ -1245,7 +880,7 @@ this game.
 Genre : Sports / Baseball 
 Controls : Joystick/Gamepad 
 Score : 1 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8111&tab=overview 
  
  
 $end
@@ -1256,93 +891,56 @@ $<a href="http://www.allgame.com/game.php?id=8113&tab=overview"</a>
 $bio
  
  
-Waterworld (c) December 1995 Ocean Software Ltd. / 
-Ocean of America, Inc. 
+Waterworld (c) December 1995 Ocean Software Ltd. / Ocean of America, Inc. 
  
-In Waterworld, you play the Mariner, and are given 
-control of a large skiff armed to the teeth with 
-machine guns. It turns out that the vile character 
-played by Dennis Hopper in the movie has ravaged a 
-series of floating towns, and left their 
-inhabitants to drown. It's up to you to rescue 
-these poor souls, fend off the attacking 
-aqua-goons on jetskis, watch out for sharks, and 
-groove to a new-age soundtrack in the 3D 
-red-and-black environment that only Virtual Boy 
-can deliver. 
+In Waterworld, you play the Mariner, and are given control of a large skiff armed to the teeth with 
+machine guns. It turns out that the vile character played by Dennis Hopper in the movie has ravaged a 
+series of floating towns, and left their inhabitants to drown. It's up to you to rescue these poor 
+souls, fend off the attacking aqua-goons on jetskis, watch out for sharks, and groove to a new-age 
+soundtrack in the 3D red-and-black environment that only Virtual Boy can deliver. 
  
 Review by Scott Alan Marriott 
  
-Waterworld was a strange movie. Regardless of what 
-you actually thought of it, the press seemed to 
-label the film as a colossal failure even before 
-it was released. Plagued by well-publicized 
-shooting delays due to unpredictable weather and 
-several script changes, the 1995 movie debuted in 
-late August -- on the tail end of the summer 
-season. Not the perfect time to release an action 
-movie, eh?Yet despite all of these issues (and an 
-estimated $176 million price tag), the movie still 
-made a profit. Why mention all of this? While the 
-movie may not have been as dismal a failure as 
-many would believe (at least commercially), the 
-video game is. Waterworld for the Virtual Boy 
-should have been sealed in cement and tossed 
-overboard rather than being released in its 
-present state.The biggest problem? That's hard to 
-pin down, but the feeling that this game isn't 
-finished is probably the most irritating aspect. 
-Waterworld is structured like a bonus game -- 
-something that should provide a diversion in 
-between the main storyline.The view is set behind 
-the Mariner's ship as you try to save ten stranded 
-Atollers (and the little girl Enola) from the 
-clutches of the Smokers, who ride around on jet 
-skis, and Seekers, who travel by boat. To do this, 
-you'll need to shoot them down before they can 
-carry the Atollers away to sea. Sound interesting? 
-Good, because that's the entire game.The levels 
-repeat one after another until you eventually fail 
-to save all of the Atollers or become sick of the 
-repetitive nature of gameplay. Don't expect the 3D 
-visuals to draw you in, because you'll be 
-hard-pressed to tell you're playing something that 
-could only be done on the Virtual Boy. The skyline 
-is devoid of anything to make it seem like you're 
-in a new world and the water is completely 
-black.Levels all look the same with the exception 
-of a few additional dangers to make it more 
-difficult (a shark will appear after a few levels, 
-for example). There are no additional objectives 
-or missions to complete, zero power-ups or ship 
-upgrades, you can't fight boss characters, it 
-never feels like you're traveling over water, and 
-the 3D effect is non-existent. It is precisely 
-titles like this that make gamers shudder whenever 
-they hear the words "movie-licensed game." 
+Waterworld was a strange movie. Regardless of what you actually thought of it, the press seemed to 
+label the film as a colossal failure even before it was released. Plagued by well-publicized shooting 
+delays due to unpredictable weather and several script changes, the 1995 movie debuted in late August 
+-- on the tail end of the summer season. Not the perfect time to release an action movie, eh?Yet 
+despite all of these issues (and an estimated $176 million price tag), the movie still made a profit. 
+Why mention all of this? While the movie may not have been as dismal a failure as many would believe 
+(at least commercially), the video game is. Waterworld for the Virtual Boy should have been sealed in 
+cement and tossed overboard rather than being released in its present state.The biggest problem? 
+That's hard to pin down, but the feeling that this game isn't finished is probably the most 
+irritating aspect. Waterworld is structured like a bonus game -- something that should provide a 
+diversion in between the main storyline.The view is set behind the Mariner's ship as you try to save 
+ten stranded Atollers (and the little girl Enola) from the clutches of the Smokers, who ride around 
+on jet skis, and Seekers, who travel by boat. To do this, you'll need to shoot them down before they 
+can carry the Atollers away to sea. Sound interesting? Good, because that's the entire game.The 
+levels repeat one after another until you eventually fail to save all of the Atollers or become sick 
+of the repetitive nature of gameplay. Don't expect the 3D visuals to draw you in, because you'll be 
+hard-pressed to tell you're playing something that could only be done on the Virtual Boy. The skyline 
+is devoid of anything to make it seem like you're in a new world and the water is completely 
+black.Levels all look the same with the exception of a few additional dangers to make it more 
+difficult (a shark will appear after a few levels, for example). There are no additional objectives 
+or missions to complete, zero power-ups or ship upgrades, you can't fight boss characters, it never 
+feels like you're traveling over water, and the 3D effect is non-existent. It is precisely titles 
+like this that make gamers shudder whenever they hear the words "movie-licensed game." 
  
 Graphics (3) 
-The graphics show very little sense of depth and 
-the levels all look the same. 
+The graphics show very little sense of depth and the levels all look the same. 
  
 Sound (4) 
-The sound effects and music are not bad, but they 
-do get repetitive after awhile. 
+The sound effects and music are not bad, but they do get repetitive after awhile. 
  
 Enjoyment (1) 
-The "game" should have been a bonus round! There 
-should be more adventure! More excitement! More 
+The "game" should have been a bonus round! There should be more adventure! More excitement! More 
 features! 
  
 Replay Value (2) 
-The game doesn't end, so you can always return to 
-it to see how long you can last. Once you get a 
-taste of the first few levels, however, you'll 
-want to stop and move onto something different. 
+The game doesn't end, so you can always return to it to see how long you can last. Once you get a 
+taste of the first few levels, however, you'll want to stop and move onto something different. 
  
 Documentation (5) 
-The documentation explains the basic gameplay 
-perfectly. 
+The documentation explains the basic gameplay perfectly. 
  
  
 - TECHNICAL - 
@@ -1351,7 +949,7 @@ Genre : Shooter / Fixed Screen Shooter
 Controls : Joystick/Gamepad 
 Score : 1 
 Esrb : e|Mild Animated Violence 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8113&tab=overview 
  
  
 $end
@@ -1362,40 +960,26 @@ $<a href="http://www.allgame.com/game.php?id=8107&tab=overview"</a>
 $bio
  
  
-T&E Virtual Golf (c) November 1995 T&E Soft, Inc. 
-/ Nintendo of America, Inc. 
+T&E Virtual Golf (c) November 1995 T&E Soft, Inc. / Nintendo of America, Inc. 
  
-The Virtual Boy's first and only golf game 
-features an 18-hole course at the fictitious 
-Papillion Country Club. Choose either stroke or 
-tournament play, with the latter pitting you 
-against 47 computer players as you compete for the 
-best total score. Before you hit the links, 
-register your golfer's name so your stats can be 
-saved to one of seven slots. The game will 
-automatically save your best shots and track stats 
-in the following eight categories:  longest drive, 
-nearest to pin, average score, longest putt, 
-number of victories, pars or better, longest chip, 
-and fairways driven. Shots are initiated by 
-navigating through a series of icons and reading 
-the swing meter. Choose your club, adjust your 
-stance, determine the power, and set the ball 
-impact point, all while taking into account the 
-direction and strength of the wind. 
+The Virtual Boy's first and only golf game features an 18-hole course at the fictitious Papillion 
+Country Club. Choose either stroke or tournament play, with the latter pitting you against 47 
+computer players as you compete for the best total score. Before you hit the links, register your 
+golfer's name so your stats can be saved to one of seven slots. The game will automatically save your 
+best shots and track stats in the following eight categories:  longest drive, nearest to pin, average 
+score, longest putt, number of victories, pars or better, longest chip, and fairways driven. Shots 
+are initiated by navigating through a series of icons and reading the swing meter. Choose your club, 
+adjust your stance, determine the power, and set the ball impact point, all while taking into account 
+the direction and strength of the wind. 
  
 Features: 
-Choose one of two play options: stroke play or 
-tournament 
+Choose one of two play options: stroke play or tournament 
 Compete against 47 computer-controlled golfers 
-Avoid water hazards, bunkers, and trees while 
-making your shots 
+Avoid water hazards, bunkers, and trees while making your shots 
  
 Review by Scott Alan Marriott 
  
-Is it me or does the Virtual Boy have a lot of 
-sports titles? That's a good thing for any new 
-system 
+Is it me or does the Virtual Boy have a lot of sports titles? That's a good thing for any new system 
  
  
 - TECHNICAL - 
@@ -1404,7 +988,7 @@ Genre : Sports / Golf
 Controls : Joystick/Gamepad 
 Score : 6 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=8107&tab=overview 
  
  
 $end
@@ -1415,25 +999,16 @@ $<a href="http://www.allgame.com/game.php?id=2712&tab=overview"</a>
 $bio
  
  
-Tobidase! Panibomb (c) December 1995 Nintendo of 
-America, Inc. 
+Tobidase! Panibomb (c) December 1995 Nintendo of America, Inc. 
  
-Join Hudson Soft's famous hero as you search the 
-mysterious island of Ever-Mist for the lost Golden 
-Statue of Bomberman. According to legend, you must 
-first acquire three celestial medals of power in 
-order to unlock the gates securing the statue. 
-Needless to say, these medals are well guarded by 
-some strange characters! In Panic-Bomber, you must 
-defeat these villains who stand in the way of your 
-quest. To do this, you will have to beat them at 
-their own puzzle game -- one in which you must 
-line up falling blocks next to those with similar 
-patterns. Match any three together and they 
-disappear from the screen. A Bomberman game 
-wouldn't be complete without a variety of bombs to 
-wreak havoc with, so count on some explosive and 
-frantic action. Bombs away! 
+Join Hudson Soft's famous hero as you search the mysterious island of Ever-Mist for the lost Golden 
+Statue of Bomberman. According to legend, you must first acquire three celestial medals of power in 
+order to unlock the gates securing the statue. Needless to say, these medals are well guarded by some 
+strange characters! In Panic-Bomber, you must defeat these villains who stand in the way of your 
+quest. To do this, you will have to beat them at their own puzzle game -- one in which you must line 
+up falling blocks next to those with similar patterns. Match any three together and they disappear 
+from the screen. A Bomberman game wouldn't be complete without a variety of bombs to wreak havoc 
+with, so count on some explosive and frantic action. Bombs away! 
  
  
 - TECHNICAL - 
@@ -1442,7 +1017,7 @@ Genre : Puzzle / Action Puzzle
 Controls : Joystick/Gamepad 
 Score : 7 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2712&tab=overview 
  
  
 $end
@@ -1453,96 +1028,57 @@ $<a href="http://www.allgame.com/game.php?id=2716&tab=overview"</a>
 $bio
  
  
-Virtual Pro Yakyuu '95 (c) September 1995 KEMCO / 
-KEMCO U.S.A., Inc. 
+Virtual Pro Yakyuu '95 (c) September 1995 KEMCO / KEMCO U.S.A., Inc. 
  
-The first (and only) American baseball release for 
-the Virtual Boy brings together 18 teams from 
-around the world to compete in one 3D ballpark. 
-Kemco's Virtual League Baseball uses the Virtual 
-Boy's unique perspective to make it seem like 
-every pitch is coming at you. The game offers 
-three different modes of play, including a Single 
-Game, All-Star Game and Pennant Race.The pitching 
-and batting interface is strictly arcade-style, 
-meaning you steer each pitch and time your swing 
-as the ball approaches the plate. While 
-substitutions are allowed for both batters and 
-pitchers, the game does not save any lineup 
-changes or statistics. Virtual League Baseball is 
-also missing both Major League Baseball and MLBPA 
-licenses that would have allowed for real players 
-and team names. 
+The first (and only) American baseball release for the Virtual Boy brings together 18 teams from 
+around the world to compete in one 3D ballpark. Kemco's Virtual League Baseball uses the Virtual 
+Boy's unique perspective to make it seem like every pitch is coming at you. The game offers three 
+different modes of play, including a Single Game, All-Star Game and Pennant Race.The pitching and 
+batting interface is strictly arcade-style, meaning you steer each pitch and time your swing as the 
+ball approaches the plate. While substitutions are allowed for both batters and pitchers, the game 
+does not save any lineup changes or statistics. Virtual League Baseball is also missing both Major 
+League Baseball and MLBPA licenses that would have allowed for real players and team names. 
  
 Review by Scott Alan Marriott 
  
-Okay, here's the deal: a company (Kemco) is trying 
-to convince American baseball fans (the target 
-audience) that their game (Virtual League 
-Baseball) is something worth owning, so they 
-decide to advertise in various gaming magazines. 
-Nothing wrong with that, right? Nope. Yet Kemco 
-decided that tasteless humor was the best way to 
-win fans over, so they used a two-page ad 
-featuring the backsides of two portly men with 
-their pants hanging dangerously low.The slogan? 
-"Finally, baseball without the chili dog farts." 
-You know something, I was waiting for a game that 
-would finally capture the nuances of the sport 
-without including those bothersome chili dog 
-farts! The funny thing is, I'd rather sit directly 
-behind those two fellows through a double-header 
-than play this game past an inning. I guess 
-there's no truth in advertising: Virtual League 
-Baseball stinks.The differences between this game 
-and the Japanese Virtual Professional Baseball 95 
-are merely cosmetic. Instead of the short, 
-cartoon-like players and real Japanese teams, we 
-have taller, more human looking players and 
-fictional "international" teams. Yet despite the 
-difference in visuals, the game plays exactly the 
-same. This is not a good thing. Do you want a 
-season mode? How about multiple ballparks and 
-camera angles? Real players, trades and tracked 
-statistics? Sorry, none of these elements are 
-found in this game.Now perhaps the lack of 
-standard baseball features would be okay if the 
-title offered exciting gameplay, but Virtual 
-League Baseball is reminiscent of Major League 
-Baseball for the Nintendo Entertainment System. If 
-you're not familiar with the game, here's a recap: 
-plinky sound effects, only one stadium, all 
-fielders moving in unison with the control pad 
-(including the infield and outfield!), a batting 
-and pitching interface that relies on one button, 
-and base runners who move at the speed of light. 
-Are these features you want in a 1995 release? 
-Certainly not, especially on a system that's 
-supposed to deliver a "virtual" experience. Avoid 
-this game and pray that some other company 
-delivers a suitable alternative. 
+Okay, here's the deal: a company (Kemco) is trying to convince American baseball fans (the target 
+audience) that their game (Virtual League Baseball) is something worth owning, so they decide to 
+advertise in various gaming magazines. Nothing wrong with that, right? Nope. Yet Kemco decided that 
+tasteless humor was the best way to win fans over, so they used a two-page ad featuring the backsides 
+of two portly men with their pants hanging dangerously low.The slogan? "Finally, baseball without the 
+chili dog farts." You know something, I was waiting for a game that would finally capture the nuances 
+of the sport without including those bothersome chili dog farts! The funny thing is, I'd rather sit 
+directly behind those two fellows through a double-header than play this game past an inning. I guess 
+there's no truth in advertising: Virtual League Baseball stinks.The differences between this game and 
+the Japanese Virtual Professional Baseball 95 are merely cosmetic. Instead of the short, cartoon-like 
+players and real Japanese teams, we have taller, more human looking players and fictional 
+"international" teams. Yet despite the difference in visuals, the game plays exactly the same. This 
+is not a good thing. Do you want a season mode? How about multiple ballparks and camera angles? Real 
+players, trades and tracked statistics? Sorry, none of these elements are found in this game.Now 
+perhaps the lack of standard baseball features would be okay if the title offered exciting gameplay, 
+but Virtual League Baseball is reminiscent of Major League Baseball for the Nintendo Entertainment 
+System. If you're not familiar with the game, here's a recap: plinky sound effects, only one stadium, 
+all fielders moving in unison with the control pad (including the infield and outfield!), a batting 
+and pitching interface that relies on one button, and base runners who move at the speed of light. 
+Are these features you want in a 1995 release? Certainly not, especially on a system that's supposed 
+to deliver a "virtual" experience. Avoid this game and pray that some other company delivers a 
+suitable alternative. 
  
 Graphics (4) 
-The batters look much better than those found in 
-Virtual Professional Baseball '95, but the high 
-overhead fielding view means you'll have to squint 
-to see them after making contact. 
+The batters look much better than those found in Virtual Professional Baseball '95, but the high 
+overhead fielding view means you'll have to squint to see them after making contact. 
  
 Sound (2) 
 Plink, plink, plink. 
  
 Enjoyment (2) 
-This game would have been acceptable had it been 
-released ten years earlier. 
+This game would have been acceptable had it been released ten years earlier. 
  
 Replay Value (1) 
-Even if it's the only Virtual Boy title you own, 
-you'll have more fun looking at the box cover. 
+Even if it's the only Virtual Boy title you own, you'll have more fun looking at the box cover. 
  
 Documentation (6) 
-This is the one bright spot in an otherwise 
-lackluster release. Everything is explained 
-clearly. 
+This is the one bright spot in an otherwise lackluster release. Everything is explained clearly. 
  
  
 - TECHNICAL - 
@@ -1551,7 +1087,7 @@ Genre : Sports / Baseball
 Controls : Joystick/Gamepad 
 Score : 1 
 Esrb : e 
-SOURCE : 
+SOURCE : http://www.allgame.com/game.php?id=2716&tab=overview 
  
  
 $end

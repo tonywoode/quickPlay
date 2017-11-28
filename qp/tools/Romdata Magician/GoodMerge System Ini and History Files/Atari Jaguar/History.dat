@@ -2,8 +2,8 @@
 ## (c) 2011 Matt McLemore, some rights reserved.
 ## All names used are trademarked by their respective trademark holders.
 ##
-## Revision: 1.00 - 10-11-2011
-## File size: 87810 bytes / Lines: 3056
+## Revision: 1.00 - 10-05-2011
+## File size: 88124 bytes / Lines: 2336
 ##
 ## Created by:
 ##   Matt McLemore - AKA Tempest
@@ -31,33 +31,21 @@ $<a href="http://www.mobygames.com/game/jaguar/aircars"</a>
 $bio
  
  
-AirCars (c) 1997 MidNite Entertainment Group Inc. 
-/ ICD, Inc. 
+AirCars (c) 1997 MidNite Entertainment Group Inc. / ICD, Inc. 
  
-AirCars takes place in the future after a nuclear 
-holocaust. 
-The large organization E.B.N.E.R.S. is plotting to 
-take over the world and has developed advanced 
-forcefield and teleportation systems, and nuclear 
-powered AirCars. To stop the plot, your group 
-steals plans, builds its own AirCar, and sets out 
-to destroy all of the bases, 28 known and 
-countless unknown ones, stationed around the 
-globe. 
+AirCars takes place in the future after a nuclear holocaust. 
+The large organization E.B.N.E.R.S. is plotting to take over the world and has developed advanced 
+forcefield and teleportation systems, and nuclear powered AirCars. To stop the plot, your group 
+steals plans, builds its own AirCar, and sets out to destroy all of the bases, 28 known and countless 
+unknown ones, stationed around the globe. 
  
-You can choose to play a single player game, the 
-2-player game using a JagLink, or up to 8 players 
-using ICD's CatBoxes. On screen and on radar, each 
-player's AirCar is displayed in a different color 
-to help identify the good guys from the bad guys. 
-There are 3 difficulty settings. You will be using 
-the cockpit's instrument panel to fly the AirCar, 
-select weapons and view radar, as well as 
-combating the enemy in the air and shooting ground 
-targets. 
+You can choose to play a single player game, the 2-player game using a JagLink, or up to 8 players 
+using ICD's CatBoxes. On screen and on radar, each player's AirCar is displayed in a different color 
+to help identify the good guys from the bad guys. There are 3 difficulty settings. You will be using 
+the cockpit's instrument panel to fly the AirCar, select weapons and view radar, as well as combating 
+the enemy in the air and shooting ground targets. 
  
-Features include true 3D sound, a computer voice 
-(which can be turned off if desired), and music 
+Features include true 3D sound, a computer voice (which can be turned off if desired), and music 
 during the introduction and level intermissions. 
  
  
@@ -65,8 +53,7 @@ during the introduction and level intermissions.
  
 Players : 1-8 Players 
 Score : 1.6 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/aircars 
+SOURCE : http://www.mobygames.com/game/jaguar/aircars 
  
  
 $end
@@ -77,48 +64,31 @@ $<a href="http://www.mobygames.com/game/jaguar/alien-vs-predator"</a>
 $bio
  
  
-Alien vs Predator (1994) (c) 1994 Rebellion 
-Developments Ltd. / Atari Corporation 
+Alien vs Predator (1994) (c) 1994 Rebellion Developments Ltd. / Atari Corporation 
  
-The Jaguar version of Alien vs. Predator is 
-completely different from the Arcade and SNES 
-games of the same name. 
+The Jaguar version of Alien vs. Predator is completely different from the Arcade and SNES games of 
+the same name. 
  
-The Jaguar version takes place entirely on a 
-Colonial Marine Training base.  A ship infested 
-with Aliens is found floating near the outer-space 
-training facility.  Of course, once the Aliens get 
-inside the base, they kill off nearly everyone.  
-Meanwhile, the Predators dock their ship on the 
-training base as well.  They see this as an 
-opportunity to catch an Alien Queen, and bring 
-honor to their clan. 
+The Jaguar version takes place entirely on a Colonial Marine Training base.  A ship infested with 
+Aliens is found floating near the outer-space training facility.  Of course, once the Aliens get 
+inside the base, they kill off nearly everyone.  Meanwhile, the Predators dock their ship on the 
+training base as well.  They see this as an opportunity to catch an Alien Queen, and bring honor to 
+their clan. 
  
-So there are three scenarios in which to play:  
-First, you can play as a Marine. Your job is to 
-find a way to self-destruct the base, and make 
-your way to an escape pod before it blows.  The 
-second scenario allows you to play as an Alien.  
-Here, your job is to find and protect the Queen 
-from the Marines and the Predators.  Finally, you 
-can play as the Predator.  The Predator must 
-simply find and kill the Alien Queen. 
+So there are three scenarios in which to play:  First, you can play as a Marine. Your job is to find 
+a way to self-destruct the base, and make your way to an escape pod before it blows.  The second 
+scenario allows you to play as an Alien.  Here, your job is to find and protect the Queen from the 
+Marines and the Predators.  Finally, you can play as the Predator.  The Predator must simply find and 
+kill the Alien Queen. 
  
-The game plays like a first person shooter.  The 
-play field consists of the 5 levels of the 
-training base, plus areas for the Predator and 
-Alien ships.  All the areas of the ship are 
-inter-connected, giving the game a huge virtual 
-environment.  Depending on the scenario you 
-choose, you will have to choose different 
-strategies based on the capabilities of your 
-character.  For example, the Marine will have to 
-make use of his weapons and his ability to use the 
-ship's computer terminals.  The Aliens, on the 
-other hand, will have to make use of their great 
-numbers and ability to cocoon their enemies.  And 
-finally the Predator must fight with honor, and 
-not over-use his invisibility capability. 
+The game plays like a first person shooter.  The play field consists of the 5 levels of the training 
+base, plus areas for the Predator and Alien ships.  All the areas of the ship are inter-connected, 
+giving the game a huge virtual environment.  Depending on the scenario you choose, you will have to 
+choose different strategies based on the capabilities of your character.  For example, the Marine 
+will have to make use of his weapons and his ability to use the ship's computer terminals.  The 
+Aliens, on the other hand, will have to make use of their great numbers and ability to cocoon their 
+enemies.  And finally the Predator must fight with honor, and not over-use his invisibility 
+capability. 
  
  
 - TECHNICAL - 
@@ -127,7 +97,7 @@ Genre : Action
 Perspective : 1st-Person Perspective 
 Players : 1 Player 
 Score : 4.2 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/alien-vs-predator 
  
  
 $end
@@ -138,23 +108,16 @@ $<a href="http://www.mobygames.com/game/jaguar/atari-karts"</a>
 $bio
  
  
-Atari Karts (1995) (c) 1995 Miracle Designs / 
-Atari Corporation 
+Atari Karts (1995) (c) 1995 Miracle Designs / Atari Corporation 
  
-Atari Karts is a character-based go-kart racing 
-game. It plays very similarly to Super Mario Kart. 
-The emphasis in this game, like most kart games, 
-is on making use of pick-up items found around the 
+Atari Karts is a character-based go-kart racing game. It plays very similarly to Super Mario Kart. 
+The emphasis in this game, like most kart games, is on making use of pick-up items found around the 
 track to knock out your opponents. 
  
-There is only one game mode, a points based cup 
-series.  There are four difficulty levels, each 
-with 3 cups to race for. After completing all the 
-cups for a difficulty level, you get to challenge 
-a "boss" kart in a single race match.  If you beat 
-the boss, he becomes a playable character.  The 
-various cup races can be played in either single 
-player or two player split screen modes. 
+There is only one game mode, a points based cup series.  There are four difficulty levels, each with 
+3 cups to race for. After completing all the cups for a difficulty level, you get to challenge a 
+"boss" kart in a single race match.  If you beat the boss, he becomes a playable character.  The 
+various cup races can be played in either single player or two player split screen modes. 
  
  
 - TECHNICAL - 
@@ -164,8 +127,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-2 Players 
 Score : 3.4 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/atari-karts 
+SOURCE : http://www.mobygames.com/game/jaguar/atari-karts 
  
  
 $end
@@ -176,20 +138,13 @@ $<a href="http://www.mobygames.com/game/jaguar/baldies"</a>
 $bio
  
  
-Baldies (c) 1995 Creative Edge Software / Atari 
-Corporation 
+Baldies (c) 1995 Creative Edge Software / Atari Corporation 
  
-The premise of Baldies is similar to many 
-real-time strategy games. You start with a limited 
-number of Baldies with which you construct 
-buildings, increase your population, and create 
-the necessary instruments of war. There are four 
-classes of Baldies--builders, scientists, 
-soldiers, and workers/breeders. Structures include 
-small, medium, large, and huge houses as well as 
-science labs and barracks. Each building has 
-specific properties that assist in your 
-destruction of the enemy. 
+The premise of Baldies is similar to many real-time strategy games. You start with a limited number 
+of Baldies with which you construct buildings, increase your population, and create the necessary 
+instruments of war. There are four classes of Baldies--builders, scientists, soldiers, and 
+workers/breeders. Structures include small, medium, large, and huge houses as well as science labs 
+and barracks. Each building has specific properties that assist in your destruction of the enemy. 
  
  
 - TECHNICAL - 
@@ -199,10 +154,8 @@ Perspective : Top-Down
 Players : 1 Player 
 Score : 3.4 
 Esrb : Kids to Adults 
-Other Systems : Amiga,DOS,PlayStation,SEGA 
-Saturn,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/baldies 
+Other Systems : Amiga,DOS,PlayStation,SEGA Saturn,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/baldies 
  
  
 $end
@@ -213,26 +166,17 @@ $<a href="http://www.mobygames.com/game/jaguar/battlemorph"</a>
 $bio
  
  
-Battlemorph (c) 1995 Attention to Detail Limited / 
-Atari Corporation 
+Battlemorph (c) 1995 Attention to Detail Limited / Atari Corporation 
  
-Battlemorph is the Jaguar CD sequel to the first 
-Jaguar cartridge, Cybermorph.  This game takes 
-place 30 years after the original.  The Pernitian 
-empire, long thought to be extinct, is back with a 
-vengeance.  Your new War Griffon craft must travel 
-to 8 different star clusters so that your star 
-ship can find the plasma it needs to make it's way 
-to the Pernish cluster.  Once you take out the 
-Pernish home world, the galaxy may be safe from 
-the Pernitians once and for all. 
+Battlemorph is the Jaguar CD sequel to the first Jaguar cartridge, Cybermorph.  This game takes place 
+30 years after the original.  The Pernitian empire, long thought to be extinct, is back with a 
+vengeance.  Your new War Griffon craft must travel to 8 different star clusters so that your star 
+ship can find the plasma it needs to make it's way to the Pernish cluster.  Once you take out the 
+Pernish home world, the galaxy may be safe from the Pernitians once and for all. 
  
-Battlemorph plays similarly to Cybermorph, except 
-with some new gameplay features.  Now, some 
-missions require you to travel underground into 
-caves and tunnels.  It is also possible to dive 
-under the oceans on the planet's surface.  There 
-are also many new objects, weapons, and enemies to 
+Battlemorph plays similarly to Cybermorph, except with some new gameplay features.  Now, some 
+missions require you to travel underground into caves and tunnels.  It is also possible to dive under 
+the oceans on the planet's surface.  There are also many new objects, weapons, and enemies to 
 interact with. 
  
  
@@ -243,8 +187,7 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 4.5 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/battlemorph 
+SOURCE : http://www.mobygames.com/game/jaguar/battlemorph 
  
  
 $end
@@ -255,24 +198,16 @@ $<a href="http://www.mobygames.com/game/jaguar/battlesphere"</a>
 $bio
  
  
-BattleSphere (c) Feb 29, 2000 4Play,ScatoLogic / 
-4Play,ScatoLogic 
+BattleSphere (c) Feb 29, 2000 4Play,ScatoLogic / 4Play,ScatoLogic 
  
-A 3D space combat simulator, BattleSphere's story 
-was based upon an episode in the original Star 
-Trek television series and it plays similarly to 
-Star Raiders. 
+A 3D space combat simulator, BattleSphere's story was based upon an episode in the original Star Trek 
+television series and it plays similarly to Star Raiders. 
  
-Seven alien races vie against each other - the 
-victor will control the galaxy. They meet in an 
-arena in Sector 51, a spherical sector of space 
-formerly used by the Earth government to secretly 
-test new weapons and starships. Gameplay consists 
-of 5 different play modes with different scenarios 
-and goals. Choose from various starships (each 
-with unique weapons systems) and battle the 
-aliens, who have also chosen their best fighters 
-and have many space ships of their own. 
+Seven alien races vie against each other - the victor will control the galaxy. They meet in an arena 
+in Sector 51, a spherical sector of space formerly used by the Earth government to secretly test new 
+weapons and starships. Gameplay consists of 5 different play modes with different scenarios and 
+goals. Choose from various starships (each with unique weapons systems) and battle the aliens, who 
+have also chosen their best fighters and have many space ships of their own. 
  
  
 - TECHNICAL - 
@@ -280,8 +215,7 @@ and have many space ships of their own.
 Genre : Action|Simulation 
 Perspective : 1st-Person Perspective 
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/battlesphere 
+SOURCE : http://www.mobygames.com/game/jaguar/battlesphere 
  
  
 $end
@@ -292,23 +226,16 @@ $<a href="http://www.mobygames.com/game/jaguar/blue-lightning"</a>
 $bio
  
  
-Blue Lightning (c) 1995 Attention to Detail 
-Limited / Atari Corporation 
+Blue Lightning (c) 1995 Attention to Detail Limited / Atari Corporation 
  
-The insanely evil General Drako is spreading his 
-own special blend of spite and chaos around the 
-globe.  You are a top fighter pilot for the UN's 
-Blue Lightning squad.  You have to travel from 
-continent to continent, and end Drako's plans at 
-each stop using your awesome flight skills. 
+The insanely evil General Drako is spreading his own special blend of spite and chaos around the 
+globe.  You are a top fighter pilot for the UN's Blue Lightning squad.  You have to travel from 
+continent to continent, and end Drako's plans at each stop using your awesome flight skills. 
  
-Blue Lightning is a 3D flight game featuring 7 
-real-life fighter jets.  There are several types 
-of missions, including dogfights, ground targets, 
-and escorts. Your arsenal consists of various 
-cannons, missiles, and special bombs.  The game 
-can be played either from a behind-the-plane 
-perspective, or an in-cockpit perspective. 
+Blue Lightning is a 3D flight game featuring 7 real-life fighter jets.  There are several types of 
+missions, including dogfights, ground targets, and escorts. Your arsenal consists of various cannons, 
+missiles, and special bombs.  The game can be played either from a behind-the-plane perspective, or 
+an in-cockpit perspective. 
  
  
 - TECHNICAL - 
@@ -319,7 +246,7 @@ Players : 1 Player
 Score : 1.8 
 Esrb : Kids to Adults 
 Other Systems : Lynx 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/blue-lightning 
  
  
 $end
@@ -330,20 +257,14 @@ $<a href="http://www.mobygames.com/game/jaguar/brain-dead-13"</a>
 $bio
  
  
-Brain Dead 13 (c) 1996 ReadySoft Incorporated / 
-ReadySoft Incorporated 
+Brain Dead 13 (c) 1996 ReadySoft Incorporated / ReadySoft Incorporated 
  
-In Braindead 13, the player takes on the role of a 
-young computer expert who one day is called to fix 
-a computer at some scary castle and in no time 
-flat, finds himself in trouble. 
+In Braindead 13, the player takes on the role of a young computer expert who one day is called to fix 
+a computer at some scary castle and in no time flat, finds himself in trouble. 
  
-It is up to the player to use the complex moves of 
-an interactive movie to escape from the castle. 
-This animated adventure is basically based on the 
-player's judgment on which direction you think the 
-character might go, and if the player guesses 
-wrong, death. 
+It is up to the player to use the complex moves of an interactive movie to escape from the castle. 
+This animated adventure is basically based on the player's judgment on which direction you think the 
+character might go, and if the player guesses wrong, death. 
  
  
 - TECHNICAL - 
@@ -351,11 +272,8 @@ wrong, death.
 Players : 1 Player 
 Score : 3.6 
 Esrb : Kids to Adults 
-Other Systems : 
-3DO,CD-i,DOS,Macintosh,PlayStation,SEGA 
-Saturn,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/brain-dead-13 
+Other Systems : 3DO,CD-i,DOS,Macintosh,PlayStation,SEGA Saturn,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/brain-dead-13 
  
  
 $end
@@ -366,30 +284,19 @@ $<a href="http://www.mobygames.com/game/jaguar/breakout-2000"</a>
 $bio
  
  
-Breakout 2000 (c) Dec 10, 1996 MP Games / Atari 
-Corporation|Telegames, Inc. 
+Breakout 2000 (c) Dec 10, 1996 MP Games / Atari Corporation|Telegames, Inc. 
  
-Breakout 2000 is the Jaguar update to Atari's 
-classic arcade game, Breakout. The premise in 
-Breakout is to bounce a ball off a paddle into a 
-series of blocks that disappear when struck. While 
-the original Breakout, which is included with this 
-release, has simple rectangles that represent the 
-ball and paddle, Breakout 2000 has flashy 
-pre-rendered 3D graphics. 
+Breakout 2000 is the Jaguar update to Atari's classic arcade game, Breakout. The premise in Breakout 
+is to bounce a ball off a paddle into a series of blocks that disappear when struck. While the 
+original Breakout, which is included with this release, has simple rectangles that represent the ball 
+and paddle, Breakout 2000 has flashy pre-rendered 3D graphics. 
  
-There are also a couple of gameplay enhancements 
-over basic Breakout.  First, the game can be 
-played with two players.  The second player has 
-their own playfield at the top of the screen.  
-They also have their own set of blocks to 
-demolish, and can send their ball to the bottom 
-playfield for the other player to hit.  You can 
-set either player to be computer controlled, so 
-you can even watch the computer play against 
-itself if you want.  The other enhancement are the 
-various power-ups that allow you to shoot the 
-blocks out directly, catch the ball, and so on. 
+There are also a couple of gameplay enhancements over basic Breakout.  First, the game can be played 
+with two players.  The second player has their own playfield at the top of the screen.  They also 
+have their own set of blocks to demolish, and can send their ball to the bottom playfield for the 
+other player to hit.  You can set either player to be computer controlled, so you can even watch the 
+computer play against itself if you want.  The other enhancement are the various power-ups that allow 
+you to shoot the blocks out directly, catch the ball, and so on. 
  
  
 - TECHNICAL - 
@@ -398,8 +305,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 3.7 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/breakout-2000 
+SOURCE : http://www.mobygames.com/game/jaguar/breakout-2000 
  
  
 $end
@@ -410,29 +316,19 @@ $<a href="http://www.mobygames.com/game/jaguar/brutal-sports-football"</a>
 $bio
  
  
-Brutal Sports Football (1994) (Telegames) (c) 1994 
-Teque Software Development Ltd. / Telegames, Inc. 
+Brutal Sports Football (1994) (Telegames) (c) 1994 Teque Software Development Ltd. / Telegames, Inc. 
  
-Similar to Speedball 2 in many ways, this is an 
-ultra-violent sports game. Matches last 7 minutes, 
-and the aim is to get the ball into a goal at each 
-end, guarded by a net-minder. The ball can be 
-thrown or kicked, and is an oval, resulting in 
-frequent up-and-under type kicks. 
+Similar to Speedball 2 in many ways, this is an ultra-violent sports game. Matches last 7 minutes, 
+and the aim is to get the ball into a goal at each end, guarded by a net-minder. The ball can be 
+thrown or kicked, and is an oval, resulting in frequent up-and-under type kicks. 
  
-The gameplay is fast and flowing, and has one rule 
-- if you can't get the ball, get the man, and 
-decapitate him if possible. Bonus and non-bonus 
-items appear on the pitch, such as bombs to throw 
-at opponents, rabbits to speed up the current 
-player, or tortoises to slow him down. 
+The gameplay is fast and flowing, and has one rule - if you can't get the ball, get the man, and 
+decapitate him if possible. Bonus and non-bonus items appear on the pitch, such as bombs to throw at 
+opponents, rabbits to speed up the current player, or tortoises to slow him down. 
  
-Teams consist of humans and aliens, many of which 
-have their own unique skills. There's a lot of 
-blood and flailing limbs, giving things a 
-gruesomely humorous edge. There are four leagues 
-to progress through, plus a knockout cup and 
-single matches. 
+Teams consist of humans and aliens, many of which have their own unique skills. There's a lot of 
+blood and flailing limbs, giving things a gruesomely humorous edge. There are four leagues to 
+progress through, plus a knockout cup and single matches. 
  
  
 - TECHNICAL - 
@@ -440,7 +336,7 @@ single matches.
 Players : 1-2 Players 
 Score : 3.2 
 Other Systems : Amiga,Amiga CD32,DOS 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/brutal-sports-football 
  
  
 $end
@@ -451,21 +347,15 @@ $<a href="http://www.mobygames.com/game/jaguar/bubsy-in-fractured-furry-tales"</
 $bio
  
  
-Bubsy - Fractured Furry Tails (1994) (c) 1994 
-Imagitec Design Inc. / Atari Corporation 
+Bubsy - Fractured Furry Tails (1994) (c) 1994 Imagitec Design Inc. / Atari Corporation 
  
-Bubsy in Fractured Furry Tales is the only Bubsy 
-game to appear on the Atari Jaguar.  It's a side 
-scrolling platform game similar to the Genesis and 
-SNES Bubsy series. 
+Bubsy in Fractured Furry Tales is the only Bubsy game to appear on the Atari Jaguar.  It's a side 
+scrolling platform game similar to the Genesis and SNES Bubsy series. 
  
-Bubsy is a bobcat superhero who can defeat all 
-enemies by jumping on top of them.  In Fractured 
-Furry Tales, he finds himself in a series of 
-childrens stories.  These aren't the Disney-style 
-happy fairy tales, though.  These are the dark, 
-disturbing Grimm-style fairy tales.  So, Bubsy has 
-to travel through 15 levels and set things right. 
+Bubsy is a bobcat superhero who can defeat all enemies by jumping on top of them.  In Fractured Furry 
+Tales, he finds himself in a series of childrens stories.  These aren't the Disney-style happy fairy 
+tales, though.  These are the dark, disturbing Grimm-style fairy tales.  So, Bubsy has to travel 
+through 15 levels and set things right. 
  
  
 - TECHNICAL - 
@@ -475,7 +365,7 @@ Perspective : Platform
 Players : 1-2 Players 
 Score : 3.6 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/bubsy-in-fractured-furry-tales 
  
  
 $end
@@ -486,31 +376,20 @@ $<a href="http://www.mobygames.com/game/jaguar/cannon-fodder"</a>
 $bio
  
  
-Cannon Fodder (1995) (Computer West) (c) 1995 
-Sensible Software / Virgin Interactive 
-Entertainment, Inc. 
+Cannon Fodder (1995) (Computer West) (c) 1995 Sensible Software / Virgin Interactive Entertainment, 
+Inc. 
  
-Guide a team of up to four soldiers through 72 
-levels of combat in this innovative top-down 
-action/strategy hybrid, best thought of as 
-Lemmings crossed with Commando crossed with Dune 
-2. The characters are controlled indirectly using 
-the mouse, as you activate each soldier or group 
-of them by highlighting them, click the left 
-button to move them to a particular spot, and the 
-right button for them to fire guns at an enemy. 
-You can also pick up grenades, which can be used 
-to destroy groups of enemies or buildings (by 
-pressing both buttons at once). 
+Guide a team of up to four soldiers through 72 levels of combat in this innovative top-down 
+action/strategy hybrid, best thought of as Lemmings crossed with Commando crossed with Dune 2. The 
+characters are controlled indirectly using the mouse, as you activate each soldier or group of them 
+by highlighting them, click the left button to move them to a particular spot, and the right button 
+for them to fire guns at an enemy. You can also pick up grenades, which can be used to destroy groups 
+of enemies or buildings (by pressing both buttons at once). 
  
-Each mission has a specific objective, and some 
-feature vehicles such as tanks to make things 
-easier. Your troops can cross water but can't 
-shoot within it, so finding and controlling 
-bridges is often crucial. You can use the 
-arrangement of trees to find hiding places to 
-shoot from, and should watch out for CPU soldiers 
-also doing so. 
+Each mission has a specific objective, and some feature vehicles such as tanks to make things easier. 
+Your troops can cross water but can't shoot within it, so finding and controlling bridges is often 
+crucial. You can use the arrangement of trees to find hiding places to shoot from, and should watch 
+out for CPU soldiers also doing so. 
  
  
 - TECHNICAL - 
@@ -520,11 +399,8 @@ Perspective : Isometric
 Players : 1 Player 
 Score : 4.2 
 Esrb : Kids to Adults 
-Other Systems : 3DO,Amiga,Amiga CD32,Atari 
-ST,DOS,Game Boy 
-Color,Genesis,J2ME,SNES,Symbian,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/cannon-fodder 
+Other Systems : 3DO,Amiga,Amiga CD32,Atari ST,DOS,Game Boy Color,Genesis,J2ME,SNES,Symbian,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/cannon-fodder 
  
  
 $end
@@ -535,19 +411,13 @@ $<a href="http://www.mobygames.com/game/jaguar/checkered-flag"</a>
 $bio
  
  
-Checkered Flag (1994) (c) 1994 Rebellion 
-Developments Ltd. / Atari Corporation 
+Checkered Flag (1994) (c) 1994 Rebellion Developments Ltd. / Atari Corporation 
  
-Checkered Flag for the Jaguar is a 3D F1-style 
-racing game. The racing game staples are here: 
-single race, practice, and tournament. You can 
-choose to set up a variety of options for each 
-race, also.  You can choose various weather 
-conditions.  Or, you can set up your car to change 
-it's handling characteristics.  There are 10 
-different tracks on which to race, each with a 
-different theme.  Some take place on sunny 
-beaches, others take place in the arctic. 
+Checkered Flag for the Jaguar is a 3D F1-style racing game. The racing game staples are here: single 
+race, practice, and tournament. You can choose to set up a variety of options for each race, also.  
+You can choose various weather conditions.  Or, you can set up your car to change it's handling 
+characteristics.  There are 10 different tracks on which to race, each with a different theme.  Some 
+take place on sunny beaches, others take place in the arctic. 
  
  
 - TECHNICAL - 
@@ -558,7 +428,7 @@ Players : 1 Player
 Score : 2.0 
 Esrb : Kids to Adults 
 Other Systems : Lynx 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/checkered-flag 
  
  
 $end
@@ -569,24 +439,17 @@ $<a href="http://www.mobygames.com/game/jaguar/club-drive"</a>
 $bio
  
  
-Club Drive (1994) (c) 1994 Atari Corporation / 
-Atari Corporation 
+Club Drive (1994) (c) 1994 Atari Corporation / Atari Corporation 
  
-It is the future, and the most popular theme park 
-around is Club Drive.  Scientists have managed to 
-invent indestructible cars. Patrons to Club Drive 
-can drive these cars around imaginative 
+It is the future, and the most popular theme park around is Club Drive.  Scientists have managed to 
+invent indestructible cars. Patrons to Club Drive can drive these cars around imaginative 
 environments and play outrageous driving games. 
  
-Club Drive as a Jaguar game is a simple driving 
-simulator.  You are put in the drivers seat, and 
-can race through some large environments.  The 
-racing areas available are: an old west ghost 
-town, San Francisco, a giant house, and a simple 
-hot-wheels style track.  In addition to the racing 
-modes, there are object collection and 2-player 
-tag modes.  These modes are played out in smaller 
-versions of the areas described above. 
+Club Drive as a Jaguar game is a simple driving simulator.  You are put in the drivers seat, and can 
+race through some large environments.  The racing areas available are: an old west ghost town, San 
+Francisco, a giant house, and a simple hot-wheels style track.  In addition to the racing modes, 
+there are object collection and 2-player tag modes.  These modes are played out in smaller versions 
+of the areas described above. 
  
  
 - TECHNICAL - 
@@ -596,8 +459,7 @@ Perspective : 1st-Person Perspective
 Players : 1-2 Players 
 Score : 1.2 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/club-drive 
+SOURCE : http://www.mobygames.com/game/jaguar/club-drive 
  
  
 $end
@@ -608,29 +470,19 @@ $<a href="http://www.mobygames.com/game/jaguar/cybermorph"</a>
 $bio
  
  
-Cybermorph (1993) (c) 1993 Attention to Detail 
-Limited / Atari Corporation 
+Cybermorph (1993) (c) 1993 Attention to Detail Limited / Atari Corporation 
  
-Cybermorph was the first game released for Atari's 
-Jaguar console. It's a 3d sci-fi shoot-'em-up.  
-The story goes like this:  The evil Pernitia 
-Empire is swallowing up the galaxy's planets left 
-and right.  What's worse, the resistance forces 
-have had their secret weapons stolen from them and 
-put into pods spread out on many different 
-planets.  You must pilot the T-Griffon morphing 
-attack craft to each planet and recover the pods 
-to stop the Pernitians. 
+Cybermorph was the first game released for Atari's Jaguar console. It's a 3d sci-fi shoot-'em-up.  
+The story goes like this:  The evil Pernitia Empire is swallowing up the galaxy's planets left and 
+right.  What's worse, the resistance forces have had their secret weapons stolen from them and put 
+into pods spread out on many different planets.  You must pilot the T-Griffon morphing attack craft 
+to each planet and recover the pods to stop the Pernitians. 
  
-So, in each planet, or level, you must collect a 
-certain number of pods and make it to the exit 
-before the enemies shoot you down. Fortunately, 
-there are power-ups that can strategically enhance 
-the T-Griffon's offensive capabilities.  After 
-clearing 8 planets, you take on a boss 
-creature/ship before moving on to the next sector. 
- There are 4 levels like this to clear, each with 
-progressively increasing difficulty. 
+So, in each planet, or level, you must collect a certain number of pods and make it to the exit 
+before the enemies shoot you down. Fortunately, there are power-ups that can strategically enhance 
+the T-Griffon's offensive capabilities.  After clearing 8 planets, you take on a boss creature/ship 
+before moving on to the next sector.  There are 4 levels like this to clear, each with progressively 
+increasing difficulty. 
  
  
 - TECHNICAL - 
@@ -639,8 +491,7 @@ Genre : Action
 Perspective : 1st-Person Perspective 
 Players : 1 Player 
 Score : 2.9 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/cybermorph 
+SOURCE : http://www.mobygames.com/game/jaguar/cybermorph 
  
  
 $end
@@ -651,33 +502,20 @@ $<a href="http://www.mobygames.com/game/jaguar/defender-2000"</a>
 $bio
  
  
-Defender 2000 (1996) (c) Feb, 1996 Atari 
-Corporation / Atari Corporation 
+Defender 2000 (1996) (c) Feb, 1996 Atari Corporation / Atari Corporation 
  
-Defender 2000 is an update of the classic arcade 
-game by Eugene Jarvis.  This Jaguar game features 
-a port of the original game, and two updated 
-versions: Defender Plus and Defender 2000. 
+Defender 2000 is an update of the classic arcade game by Eugene Jarvis.  This Jaguar game features a 
+port of the original game, and two updated versions: Defender Plus and Defender 2000. 
  
-Defender combines a side scrolling shooter with a 
-search and rescue game. You control a ship that 
-travels left and right above the planets surface. 
-Alien lander craft warp into the play area, and 
-begin to descend to the surface. Along the 
-surface, there are humanoids ripe for the picking. 
- The alien landers grab the humanoids and begin to 
-carry them up the screen. You have to shoot the 
-landers before they reach the top of the screen, 
-and catch the humanoids before they fall to the 
-surface. 
+Defender combines a side scrolling shooter with a search and rescue game. You control a ship that 
+travels left and right above the planets surface. Alien lander craft warp into the play area, and 
+begin to descend to the surface. Along the surface, there are humanoids ripe for the picking.  The 
+alien landers grab the humanoids and begin to carry them up the screen. You have to shoot the landers 
+before they reach the top of the screen, and catch the humanoids before they fall to the surface. 
  
-The Defender Plus update features gameplay that is 
-very similar to the original, and graphics that 
-have a crazy, psychedelic look. The Defender 2000 
-update adds playfields that scroll in both 
-directions, weapon power-ups, bonus rounds, 
-improved graphics, and extremely high speed 
-gameplay. 
+The Defender Plus update features gameplay that is very similar to the original, and graphics that 
+have a crazy, psychedelic look. The Defender 2000 update adds playfields that scroll in both 
+directions, weapon power-ups, bonus rounds, improved graphics, and extremely high speed gameplay. 
  
  
 - TECHNICAL - 
@@ -687,8 +525,7 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 4.4 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/defender-2000 
+SOURCE : http://www.mobygames.com/game/jaguar/defender-2000 
  
  
 $end
@@ -699,114 +536,64 @@ $<a href="http://www.mobygames.com/game/jaguar/doom"</a>
 $bio
  
  
-Doom - Evil Unleashed (1994) (c) 1994 id Software, 
-Inc. / Atari Corporation 
+Doom - Evil Unleashed (1994) (c) 1994 id Software, Inc. / Atari Corporation 
  
-The Union Aerospace Corporation has been 
-experimenting with teleportation technology on 
-Mars' moons Phobos and Deimos. After early 
-successes, something goes wrong. It seems the 
-scientists have opened a gateway straight to Hell. 
-Phobos base is overrun with demonic creatures, and 
-the whole of Deimos simply vanishes. A squad of 
-marines is sent to Phobos, but all except one are 
-quickly slaughtered. It falls to the surviving 
-marine to grab some guns and strike back at the 
-demons. 
+The Union Aerospace Corporation has been experimenting with teleportation technology on Mars' moons 
+Phobos and Deimos. After early successes, something goes wrong. It seems the scientists have opened a 
+gateway straight to Hell. Phobos base is overrun with demonic creatures, and the whole of Deimos 
+simply vanishes. A squad of marines is sent to Phobos, but all except one are quickly slaughtered. It 
+falls to the surviving marine to grab some guns and strike back at the demons. 
  
-id Software's follow-up to their genre-defining 
-Wolfenstein 3D, DOOM is another first person 
-shooter: full-on action seen from the space 
-marine's perspective. Like Wolfenstein, the game 
-consists of distinct episodes, playable in any 
-order. The first episode, Knee-Deep in the Dead, 
-takes place in the Phobos base and is freely 
-available as shareware. The full game continues on 
-Deimos in The Shores of Hell and culminates in 
-Inferno, the final episode which takes place in 
-Hell itself. Each episode consists of nine levels, 
-one of which is a hidden level. 
+id Software's follow-up to their genre-defining Wolfenstein 3D, DOOM is another first person shooter: 
+full-on action seen from the space marine's perspective. Like Wolfenstein, the game consists of 
+distinct episodes, playable in any order. The first episode, Knee-Deep in the Dead, takes place in 
+the Phobos base and is freely available as shareware. The full game continues on Deimos in The Shores 
+of Hell and culminates in Inferno, the final episode which takes place in Hell itself. Each episode 
+consists of nine levels, one of which is a hidden level. 
  
-The basic objective in each level is simply to 
-reach the exit. Since dozens of enemies stand in 
-the way, the only way to get there is through 
-killing them. Switches and buttons must be 
-pressed to advance at certain points and often 
-color-coded locked doors will block the way - 
-matching keycards or skull keys must be found to 
-pass. 
+The basic objective in each level is simply to reach the exit. Since dozens of enemies stand in the 
+way, the only way to get there is through killing them. Switches and buttons must be 
+pressed to advance at certain points and often color-coded locked doors will block the way - matching 
+keycards or skull keys must be found to pass. 
  
-DOOM's engine technology is more advanced than 
-Wolfenstein's, and thus the levels are more varied 
-and complex. The engine simulates different 
-heights (stairs and lifts appear frequently) and 
-different lighting conditions (some rooms are 
-pitch black, others only barely illuminated). 
-There are outdoor areas, pools of radioactive 
-waste that hurt the player, ceilings that come 
-down and crush him, and unlike Wolfenstein's 
-orthogonally aligned corridors, the walls in DOOM 
-can be in any angle to each other. An automap 
-helps in navigating the levels. 
+DOOM's engine technology is more advanced than Wolfenstein's, and thus the levels are more varied and 
+complex. The engine simulates different heights (stairs and lifts appear frequently) and different 
+lighting conditions (some rooms are pitch black, others only barely illuminated). There are outdoor 
+areas, pools of radioactive waste that hurt the player, ceilings that come down and crush him, and 
+unlike Wolfenstein's orthogonally aligned corridors, the walls in DOOM can be in any angle to each 
+other. An automap helps in navigating the levels. 
  
-Stylistically, the levels begin with a futuristic 
-theme in the military base on Phobos and gradually 
-change to a hellish environment, complete with 
-satanic symbols (pentagrams, upside-down-crosses 
-and portraits of horned demons), hung-up mutilated 
-corpses and the distorted faces of the damned. 
+Stylistically, the levels begin with a futuristic theme in the military base on Phobos and gradually 
+change to a hellish environment, complete with satanic symbols (pentagrams, upside-down-crosses and 
+portraits of horned demons), hung-up mutilated corpses and the distorted faces of the damned. 
  
-DOOM features a large weapon arsenal, with most 
-weapons having both advantages and drawbacks. The 
-starting weapons are the fists and a simple 
-pistol. Also available are a shotgun (high damage, 
-slow reload, not good at distances), a chaingun 
-(high firing rate, but slightly inaccurate in 
-longer bursts) and a plasma rifle (combining a 
-high firing rate and large damage). The rocket 
-launcher also deals out lots of damage, but the 
-explosion causes blast damage and must be used 
-with care in confined areas or it might prove 
-deadly to the player as well as the enemies. Two 
-further (in)famous weapons in DOOM are the 
-chainsaw for close-quarter carnage, and the 
-BFG9000 energy gun, that, while taking some 
-practice to fire correctly, can destroy most 
-enemies in a single burst. The different weapons 
-use four different ammunition types (bullets, 
-shells, rockets and energy cells), so collecting 
-the right type for a certain gun is important. 
+DOOM features a large weapon arsenal, with most weapons having both advantages and drawbacks. The 
+starting weapons are the fists and a simple pistol. Also available are a shotgun (high damage, slow 
+reload, not good at distances), a chaingun (high firing rate, but slightly inaccurate in longer 
+bursts) and a plasma rifle (combining a high firing rate and large damage). The rocket launcher also 
+deals out lots of damage, but the explosion causes blast damage and must be used with care in 
+confined areas or it might prove deadly to the player as well as the enemies. Two further (in)famous 
+weapons in DOOM are the chainsaw for close-quarter carnage, and the BFG9000 energy gun, that, while 
+taking some practice to fire correctly, can destroy most enemies in a single burst. The different 
+weapons use four different ammunition types (bullets, shells, rockets and energy cells), so 
+collecting the right type for a certain gun is important. 
  
-DOOM drops some of Wolfenstein's arcade-inspired 
-aspects, so there are no extra lives or treasures 
-to be collected for points, but many other 
-powerups are still available. Medpacks heal damage 
-while armor protects from receiving it in the 
-first place. Backpacks allow more ammunition to be 
-carried, a computer map reveals the whole layout 
-of the level on the automap (including any secret 
-areas), light amplification visors illuminate dark 
-areas and radiation suits allow travel over waste 
-without taking damage. Also available are berserk 
-packs (which radically increase the damage 
-inflicted by the fists) as well as short-time 
-invisibility and invulnerability powerups. 
+DOOM drops some of Wolfenstein's arcade-inspired aspects, so there are no extra lives or treasures to 
+be collected for points, but many other powerups are still available. Medpacks heal damage while 
+armor protects from receiving it in the first place. Backpacks allow more ammunition to be carried, a 
+computer map reveals the whole layout of the level on the automap (including any secret areas), light 
+amplification visors illuminate dark areas and radiation suits allow travel over waste without taking 
+damage. Also available are berserk packs (which radically increase the damage inflicted by the fists) 
+as well as short-time invisibility and invulnerability powerups. 
  
-The enemies to be destroyed include former humans 
-corrupted during the invasion, plus demons in all 
-shapes and sizes: fireball-throwing imps, floating 
-skulls, pink-skinned demons with powerful bite 
-attacks and large one-eyed flying monstrosities 
-called Cacodemons. Each episode ends with a boss 
-battle against one or two especially powerful 
-creatures. 
+The enemies to be destroyed include former humans corrupted during the invasion, plus demons in all 
+shapes and sizes: fireball-throwing imps, floating skulls, pink-skinned demons with powerful bite 
+attacks and large one-eyed flying monstrosities called Cacodemons. Each episode ends with a boss 
+battle against one or two especially powerful creatures. 
  
-DOOM popularized multiplayer in the genre with two 
-different modes: Cooperative allows up to four 
-players to move through the single-player game 
-together, while Deathmatch is a competitive game 
-type where players blast at each other to collect 
-'frag' points for a kill and re-spawn in 
+DOOM popularized multiplayer in the genre with two different modes: Cooperative allows up to four 
+players to move through the single-player game together, while Deathmatch is a competitive game type 
+where players blast at each other to collect 'frag' points for a kill and re-spawn in 
 a random location after being killed. 
  
  
@@ -817,8 +604,7 @@ Perspective : 1st-Person Perspective
 Players : 1-2 Players 
 Score : 3.1 
 Esrb : Mature 
-Other Systems : 3DO,DOS,Game Boy 
-Advance,Linux,PC-98,SEGA 32X,SNES,Windows 
+Other Systems : 3DO,DOS,Game Boy Advance,Linux,PC-98,SEGA 32X,SNES,Windows 
 SOURCE : http://www.mobygames.com/game/jaguar/doom 
  
  
@@ -830,22 +616,15 @@ $<a href="http://www.mobygames.com/game/jaguar/double-dragon-v-the-shadow-falls"
 $bio
  
  
-Double Dragon V (1995) (Williams) (c) 1995 Leland 
-Interactive Media / Tradewest, Inc. 
+Double Dragon V (1995) (Williams) (c) 1995 Leland Interactive Media / Tradewest, Inc. 
  
-Double Dragon returns, this time as a VS. fighter, 
-in the same mold as Street Fighter. Based on the 
-Double Dragon animated series, which is loosely 
-based on the original arcade game, Jimmy and Billy 
-and a host of other characters fight it out in a 
-tournament fighter. 
+Double Dragon returns, this time as a VS. fighter, in the same mold as Street Fighter. Based on the 
+Double Dragon animated series, which is loosely based on the original arcade game, Jimmy and Billy 
+and a host of other characters fight it out in a tournament fighter. 
  
-The Shadow Master, who has created a deadly virus 
-which he plans to destroy the world with, is 
-waiting for you at the end of the path to victory. 
-You'll have to fight your way through many evil 
-characters before you face the Shadow Master. Beat 
-him, and the world is saved for another day. 
+The Shadow Master, who has created a deadly virus which he plans to destroy the world with, is 
+waiting for you at the end of the path to victory. You'll have to fight your way through many evil 
+characters before you face the Shadow Master. Beat him, and the world is saved for another day. 
  
  
 - TECHNICAL - 
@@ -855,7 +634,7 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 1.1 
 Other Systems : Genesis,SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/double-dragon-v-the-shadow-falls 
  
  
 $end
@@ -866,16 +645,11 @@ $<a href="http://www.mobygames.com/game/jaguar/dragons-lair"</a>
 $bio
  
  
-Dragon's Lair (c) 1995 ReadySoft Incorporated / 
-ReadySoft Incorporated 
+Dragon's Lair (c) 1995 ReadySoft Incorporated / ReadySoft Incorporated 
  
-A conversion of the 1983 Don Bluth coin op cartoon 
-game.  Players control Dirk the Daring as he 
-struggles his way through a dungeon to fight 
-Singe, the Dragon, and rescue the beautiful 
-Princess Daphne.  With limited movement allowed, 
-the game's main emphasis is on its heart-stopping 
-graphics. 
+A conversion of the 1983 Don Bluth coin op cartoon game.  Players control Dirk the Daring as he 
+struggles his way through a dungeon to fight Singe, the Dragon, and rescue the beautiful Princess 
+Daphne.  With limited movement allowed, the game's main emphasis is on its heart-stopping graphics. 
  
  
 - TECHNICAL - 
@@ -885,11 +659,8 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.9 
 Esrb : Kids to Adults 
-Other Systems : 
-3DO,CD-i,DOS,iPhone,Macintosh,Nintendo DSi,SEGA 
-CD,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/dragons-lair 
+Other Systems : 3DO,CD-i,DOS,iPhone,Macintosh,Nintendo DSi,SEGA CD,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/dragons-lair 
  
  
 $end
@@ -900,23 +671,18 @@ $<a href="http://www.mobygames.com/game/jaguar/dragon-the-bruce-lee-story"</a>
 $bio
  
  
-Dragon - The Bruce Lee Story (1994) (c) Nov 01, 
-1994 Virgin Interactive Entertainment (Europe) 
-Ltd. / Atari Corporation 
+Dragon - The Bruce Lee Story (1994) (c) Nov 01, 1994 Virgin Interactive Entertainment (Europe) Ltd. / 
+Atari Corporation 
  
-Dragon: The Bruce Lee Story  is a action/fighting 
-game in which you play Bruce Lee, the infamous 
+Dragon: The Bruce Lee Story  is a action/fighting game in which you play Bruce Lee, the infamous 
 martial arts master. 
  
-As you go through the different levels, the game 
-follows the format of the 1993 Universal movie of 
+As you go through the different levels, the game follows the format of the 1993 Universal movie of 
 the same name, but is not identical to it. 
  
-As Bruce Lee, you can perform a wide variety of 
-high-flying martial arts moves, roundhouse kicks, 
-flying kicks, flying chops and throws. Defeat a 
-multitude of new opponents and build up your Chi 
-in order to gain special abilities and weapons. 
+As Bruce Lee, you can perform a wide variety of high-flying martial arts moves, roundhouse kicks, 
+flying kicks, flying chops and throws. Defeat a multitude of new opponents and build up your Chi in 
+order to gain special abilities and weapons. 
  
  
 - TECHNICAL - 
@@ -927,7 +693,7 @@ Players : 1-2 Players
 Score : 3.3 
 Esrb : Teen 
 Other Systems : Genesis,SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/dragon-the-bruce-lee-story 
  
  
 $end
@@ -938,21 +704,15 @@ $<a href="http://www.mobygames.com/game/jaguar/fight-for-life"</a>
 $bio
  
  
-Fight For Your Life (1996) (c) 1996 Atari 
-Corporation / Atari Corporation 
+Fight For Your Life (1996) (c) 1996 Atari Corporation / Atari Corporation 
  
-Fight for Life is a 3D fighting game that takes 
-place in hell.  The player controls one of eight 
-deceased fighters competing to earn a chance to 
-escape and return to the world of the living. 
-After they defeat an opponent they not only move 
-on to the next round, but also learn two of the 
-opponent's moves. 
+Fight for Life is a 3D fighting game that takes place in hell.  The player controls one of eight 
+deceased fighters competing to earn a chance to escape and return to the world of the living. After 
+they defeat an opponent they not only move on to the next round, but also learn two of the opponent's 
+moves. 
  
-This is the only 3D fighting game released for the 
-Jaguar.  It features brightly-colored texture 
-mapped fighters and arenas. Gameplay is very 
-similar to Virtua Fighter, in that the moves 
+This is the only 3D fighting game released for the Jaguar.  It features brightly-colored texture 
+mapped fighters and arenas. Gameplay is very similar to Virtua Fighter, in that the moves 
 more-or-less look like real martial arts. 
  
  
@@ -963,7 +723,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-2 Players 
 Score : 3.4 
 Esrb : Teen 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/fight-for-life 
  
  
 $end
@@ -974,24 +734,16 @@ $<a href="http://www.mobygames.com/game/jaguar/flashback-the-quest-for-identity"
 $bio
  
  
-Flashback (1995) (U.S. Gold) (c) Jun, 1995 
-Delphine Software International / U.S. Gold Ltd. 
+Flashback (1995) (U.S. Gold) (c) Jun, 1995 Delphine Software International / U.S. Gold Ltd. 
  
-The year is 2142. You play as Conrad B. Hart, a 
-man who has lost his memory. After barely escaping 
-from hostile aliens, Conrad's bike crashes on an 
-unknown planet. Conrad finds himself in the 
-jungle, and from now on his quest for survival and 
-his lost identity begins. 
+The year is 2142. You play as Conrad B. Hart, a man who has lost his memory. After barely escaping 
+from hostile aliens, Conrad's bike crashes on an unknown planet. Conrad finds himself in the jungle, 
+and from now on his quest for survival and his lost identity begins. 
  
-"Flashback" is a platform action adventure. You 
-navigate Conrad over the platforms, performing 
-various moves. You can simply jump or do a longer 
-run-and-jump, run, climb, hang off ledges, and 
-pick up objects lying on the ground. To defend 
-yourself, you shoot enemies with your gun and also 
-use various objects (such as stones) to harm or to 
-distract them. 
+"Flashback" is a platform action adventure. You navigate Conrad over the platforms, performing 
+various moves. You can simply jump or do a longer run-and-jump, run, climb, hang off ledges, and pick 
+up objects lying on the ground. To defend yourself, you shoot enemies with your gun and also use 
+various objects (such as stones) to harm or to distract them. 
  
  
 - TECHNICAL - 
@@ -1001,10 +753,8 @@ Perspective : Platform
 Players : 1 Player 
 Score : 3.0 
 Esrb : Kids to Adults 
-Other Systems : 
-3DO,Amiga,CD-i,DOS,Genesis,iPhone,Macintosh,SEGA 
-CD,SNES 
-SOURCE : 
+Other Systems : 3DO,Amiga,CD-i,DOS,Genesis,iPhone,Macintosh,SEGA CD,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/flashback-the-quest-for-identity 
  
  
 $end
@@ -1015,23 +765,16 @@ $<a href="http://www.mobygames.com/game/jaguar/flipout"</a>
 $bio
  
  
-Flip Out (1995) (c) 1995 Gorilla Systems 
-Corporation / Atari Corporation 
+Flip Out (1995) (c) 1995 Gorilla Systems Corporation / Atari Corporation 
  
-FlipOut! is a puzzle game starring aliens from the 
-planet Phrohmaj. Your  objective in each puzzle is 
-simple: you must place all the colored tiles into 
-the correct spaces on the board. The tricky part 
-is that there is always one more tile than there 
-are spaces. That means you are always juggling at 
-least one tile in the air. The game becomes more 
-difficult as you have to juggle more tiles, and 
-the Phrohmajians try to interfere. 
+FlipOut! is a puzzle game starring aliens from the planet Phrohmaj. Your  objective in each puzzle is 
+simple: you must place all the colored tiles into the correct spaces on the board. The tricky part is 
+that there is always one more tile than there are spaces. That means you are always juggling at least 
+one tile in the air. The game becomes more difficult as you have to juggle more tiles, and the 
+Phrohmajians try to interfere. 
  
-This game features nine bizarre areas, each with 
-multiple puzzles.  The graphics feature a lot of 
-crazy animation of the Phrohmaj onlookers and lots 
-of bright and colorful tiles. 
+This game features nine bizarre areas, each with multiple puzzles.  The graphics feature a lot of 
+crazy animation of the Phrohmaj onlookers and lots of bright and colorful tiles. 
  
  
 - TECHNICAL - 
@@ -1042,8 +785,7 @@ Players : 1 Player
 Score : 3.1 
 Esrb : Kids to Adults 
 Other Systems : DOS,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/flipout 
+SOURCE : http://www.mobygames.com/game/jaguar/flipout 
  
  
 $end
@@ -1054,24 +796,16 @@ $<a href="http://www.mobygames.com/game/jaguar/frog-feast"</a>
 $bio
  
  
-Frog Feast (c) Aug 20, 2007 Rastersoft / 
-OlderGames 
+Frog Feast (c) Aug 20, 2007 Rastersoft / OlderGames 
  
-Frog Feast is a 16-bit version of the classic Frog 
-Bog game featuring improved graphics, sound, AI, 
-and more. The game made its launch at both the 
-Classic Gaming Expo 2005 and VGXPO, Dallas events 
-on the same day. 
+Frog Feast is a 16-bit version of the classic Frog Bog game featuring improved graphics, sound, AI, 
+and more. The game made its launch at both the Classic Gaming Expo 2005 and VGXPO, Dallas events on 
+the same day. 
  
-The gameplay itself is quite simple and easy to 
-figure out. In the single player version your goal 
-is to catch as many flies floating about the top 
-of the screen within the time allowed and to beat 
-the AI's frogs score. In the 2-player version, you 
-do the same but go head-2-head against another 
-player which makes snagging those flies at the 
-last minute, just before your competitor does, a 
-real treat. 
+The gameplay itself is quite simple and easy to figure out. In the single player version your goal is 
+to catch as many flies floating about the top of the screen within the time allowed and to beat the 
+AI's frogs score. In the 2-player version, you do the same but go head-2-head against another player 
+which makes snagging those flies at the last minute, just before your competitor does, a real treat. 
  
  
 - TECHNICAL - 
@@ -1080,10 +814,8 @@ Genre : Action|Strategy
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 2.2 
-Other Systems : CD-i,Genesis,Neo Geo CD,SEGA 
-CD,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/frog-feast 
+Other Systems : CD-i,Genesis,Neo Geo CD,SEGA CD,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/frog-feast 
  
  
 $end
@@ -1094,30 +826,20 @@ $<a href="http://www.mobygames.com/game/jaguar/head-on-soccer"</a>
 $bio
  
  
-Head-On Soccer (c) Dec 01, 1995 U.S. Gold Ltd. / 
-Atari Corporation 
+Head-On Soccer (c) Dec 01, 1995 U.S. Gold Ltd. / Atari Corporation 
  
-In this isometric football game, 50 national teams 
-are represented to play in two game modes: 
-Exhibition and Tournament (a series of seven games 
-on four continents, with a final against the World 
-All-Stars), with the ability to set time, 
-difficulty level, see cutscenes after goals and if 
-players are free to kick each other around without 
-(many) fouls. 
+In this isometric football game, 50 national teams are represented to play in two game modes: 
+Exhibition and Tournament (a series of seven games on four continents, with a final against the World 
+All-Stars), with the ability to set time, difficulty level, see cutscenes after goals and if players 
+are free to kick each other around without (many) fouls. 
  
-While the game seems short-featured for 1995 
-standards, the tournament mode includes a twist: 
-depending on how well the player defeats his 
-opponents, he can trade his "standard players", 
-who won't do anything spectacular (but at least 
-fill up the ranks) for star players, who not only 
-look different, are able to cross and backheel the 
-ball but also have a unique ability at the 
-disposal of the player: 
+While the game seems short-featured for 1995 standards, the tournament mode includes a twist: 
+depending on how well the player defeats his opponents, he can trade his "standard players", who 
+won't do anything spectacular (but at least fill up the ranks) for star players, who not only look 
+different, are able to cross and backheel the ball but also have a unique ability at the disposal of 
+the player: 
  
-1. The Marker: can latch on an opposing player, 
-   stopping him from running away with the ball 
+1. The Marker: can latch on an opposing player, stopping him from running away with the ball 
  
  
 - TECHNICAL - 
@@ -1128,7 +850,7 @@ Players : 1-2 Players
 Score : 3.5 
 Esrb : Kids to Adults 
 Other Systems : Genesis,SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/head-on-soccer 
  
  
 $end
@@ -1139,26 +861,18 @@ $<a href="http://www.mobygames.com/game/jaguar/highlander-the-last-of-the-macleo
 $bio
  
  
-Highlander: The Last of the MacLeods (c) 1995 Lore 
-Design Limited / Atari Corporation 
+Highlander: The Last of the MacLeods (c) 1995 Lore Design Limited / Atari Corporation 
  
-You are Quentin MacLeod, an immortal.  Of course, 
-you are unaware of this until your mother is 
-murdered and the people of your village are 
-captured by the evil immortal Kortan.  Now, you 
-must learn of your destiny, defeat Kortan, and 
-lead your people to freedom. 
+You are Quentin MacLeod, an immortal.  Of course, you are unaware of this until your mother is 
+murdered and the people of your village are captured by the evil immortal Kortan.  Now, you must 
+learn of your destiny, defeat Kortan, and lead your people to freedom. 
  
-Highlander is an action-adventure game that is 
-similar to Alone in the Dark.  The game consists 
-of pre-rendered 3D environments that are viewed 
-from many fixed camera angles.  You control 
-Quentin as he fights off guards, explores new 
-areas, and collects items. 
+Highlander is an action-adventure game that is similar to Alone in the Dark.  The game consists of 
+pre-rendered 3D environments that are viewed from many fixed camera angles.  You control Quentin as 
+he fights off guards, explores new areas, and collects items. 
  
-Highlander is based on an animated television 
-series, which in turn is based on a series of 
-motion pictures. 
+Highlander is based on an animated television series, which in turn is based on a series of motion 
+pictures. 
  
  
 - TECHNICAL - 
@@ -1168,7 +882,7 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.1 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/highlander-the-last-of-the-macleods 
  
  
 $end
@@ -1179,21 +893,15 @@ $<a href="http://www.mobygames.com/game/jaguar/hover-strike"</a>
 $bio
  
  
-Hover Strike (1995) (c) 1995 Atari Corporation / 
-Atari Corporation 
+Hover Strike (1995) (c) 1995 Atari Corporation / Atari Corporation 
  
-Terrakian Pirates have taken over a colonized 
-planet under Federation control.  They've set up 
-an atmospheric cannon, making invasion impossible. 
- Your job, as a hovercraft pilot, is to launch a 
+Terrakian Pirates have taken over a colonized planet under Federation control.  They've set up an 
+atmospheric cannon, making invasion impossible.  Your job, as a hovercraft pilot, is to launch a 
 pre-emptive strike on the planet's surface. 
  
-Hover Strike for the Jaguar is a mission-based 
-tank game.  In each mission, you will drop to the 
-surface of the planet, destroy some targets, and 
-then return to your ship in orbit.  The hovercraft 
-you pilot is heavily armored and includes various 
-weapons systems to take out enemies and targets. 
+Hover Strike for the Jaguar is a mission-based tank game.  In each mission, you will drop to the 
+surface of the planet, destroy some targets, and then return to your ship in orbit.  The hovercraft 
+you pilot is heavily armored and includes various weapons systems to take out enemies and targets. 
  
  
 - TECHNICAL - 
@@ -1203,8 +911,7 @@ Perspective : 1st-Person Perspective
 Players : 1-2 Players 
 Score : 3.1 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/hover-strike 
+SOURCE : http://www.mobygames.com/game/jaguar/hover-strike 
  
  
 $end
@@ -1215,13 +922,10 @@ $<a href="http://www.mobygames.com/game/jaguar/hover-strike-unconquered-lands"</
 $bio
  
  
-Hover Strike: Unconquered Lands (c) 1995 Atari 
-Corporation / Atari Corporation 
+Hover Strike: Unconquered Lands (c) 1995 Atari Corporation / Atari Corporation 
  
-Unconquered Lands is the CD-ROM update to the 
-Jaguar cartridge Hover Strike.  This game is 
-mostly similar to the cartridge, but with some new 
-features to take advantage of the CD-ROM format: 
+Unconquered Lands is the CD-ROM update to the Jaguar cartridge Hover Strike.  This game is mostly 
+similar to the cartridge, but with some new features to take advantage of the CD-ROM format: 
  
 1. Improved Graphics 
 2. FMV Sequences 
@@ -1236,7 +940,7 @@ Perspective : 1st-Person Perspective
 Players : 1-2 Players 
 Score : 3.6 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/hover-strike-unconquered-lands 
  
  
 $end
@@ -1247,25 +951,17 @@ $<a href="http://www.mobygames.com/game/jaguar/humans"</a>
 $bio
  
  
-The Humans (c) 1994 Imagitec Design Inc. / Atari 
-Corporation 
+The Humans (c) 1994 Imagitec Design Inc. / Atari Corporation 
  
-Your job in this action puzzler is to help 
-prehistoric man to evolve by helping them discover 
-tools, the wheel, weapons, or even fire. Each 
-level in the game will have a given task to help 
-in this, and you are allotted a number of 
-characters who must accomplish the task. The 
-player can switch from person to person while 
-moving the characters around each scrolling 
-puzzle, and teamwork is essential to success. 
+Your job in this action puzzler is to help prehistoric man to evolve by helping them discover tools, 
+the wheel, weapons, or even fire. Each level in the game will have a given task to help in this, and 
+you are allotted a number of characters who must accomplish the task. The player can switch from 
+person to person while moving the characters around each scrolling puzzle, and teamwork is essential 
+to success. 
  
-Tasks can include finding objects (like a spear) 
-on the screen, or trying to reach a specific 
-destination which may require the use of objects 
-you have discovered so far. Each level has a time 
-limit, when time runs out the level can be 
-restarted. 
+Tasks can include finding objects (like a spear) on the screen, or trying to reach a specific 
+destination which may require the use of objects you have discovered so far. Each level has a time 
+limit, when time runs out the level can be restarted. 
  
  
 - TECHNICAL - 
@@ -1274,10 +970,8 @@ Genre : Strategy
 Perspective : Platform 
 Players : 1 Player 
 Score : 3.2 
-Other Systems : Amiga,Atari ST,DOS,Game 
-Boy,Genesis,Lynx,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/humans 
+Other Systems : Amiga,Atari ST,DOS,Game Boy,Genesis,Lynx,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/humans 
  
  
 $end
@@ -1288,24 +982,17 @@ $<a href="http://www.mobygames.com/game/jaguar/hyperforce"</a>
 $bio
  
  
-HyperForce (c) 2000 Visual Impact / Songbird 
-Productions 
+HyperForce (c) 2000 Visual Impact / Songbird Productions 
  
-HyperForce is an action sci-fi platform game with 
-2D graphics. You play a warrior who has been sent 
-to destroy Trans Con, a deadly outfit that plans 
-to attack Terran. 
+HyperForce is an action sci-fi platform game with 2D graphics. You play a warrior who has been sent 
+to destroy Trans Con, a deadly outfit that plans to attack Terran. 
  
-There is plenty of fighting to do - shooting 
-soldiers, security drones and robots. You'll also 
-be avoiding traps, finding switches to open doors 
-and shooting down breakable walls to find hidden 
-areas with goodies and bonus points. In between 
-levels, spend the money you've found to upgrade 
-your weapon by visiting a shopkeeper. 
+There is plenty of fighting to do - shooting soldiers, security drones and robots. You'll also be 
+avoiding traps, finding switches to open doors and shooting down breakable walls to find hidden areas 
+with goodies and bonus points. In between levels, spend the money you've found to upgrade your weapon 
+by visiting a shopkeeper. 
  
-Exploration is a major part of the game, so the 
-levels can be larger than they first appear. 
+Exploration is a major part of the game, so the levels can be larger than they first appear. 
  
  
 - TECHNICAL - 
@@ -1314,8 +1001,7 @@ Genre : Action
 Perspective : Platform 
 Players : 1 Player 
 Score : 3.0 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/hyperforce 
+SOURCE : http://www.mobygames.com/game/jaguar/hyperforce 
  
  
 $end
@@ -1326,22 +1012,15 @@ $<a href="http://www.mobygames.com/game/jaguar/international-sensible-soccer"</a
 $bio
  
  
-International Sensible Soccer (1995) (c) 1995 
-Sensible Software / Telegames, Inc. 
+International Sensible Soccer (1995) (c) 1995 Sensible Software / Telegames, Inc. 
  
-Released alongside the 1994 World Cup, this was 
-the first version of Sensible Soccer to feature 
-teams from outside Europe. The World Cup 
-tournament is featured in full, and you can adjust 
-which 24 teams this features, a particularly 
-crucial feature for English and French fans, as 
-their nations failed to qualify. For the first 
-time in the series an on-screen referee is 
-featured. The club team data has been updated to 
-take into account transfers and kit changes since 
-the previous version. Gameplay is much the same as 
-previous editions, being viewed from above with 
-small sprites and loose ball control. 
+Released alongside the 1994 World Cup, this was the first version of Sensible Soccer to feature teams 
+from outside Europe. The World Cup tournament is featured in full, and you can adjust which 24 teams 
+this features, a particularly crucial feature for English and French fans, as their nations failed to 
+qualify. For the first time in the series an on-screen referee is featured. The club team data has 
+been updated to take into account transfers and kit changes since the previous version. Gameplay is 
+much the same as previous editions, being viewed from above with small sprites and loose ball 
+control. 
  
  
 - TECHNICAL - 
@@ -1350,7 +1029,7 @@ Genre : Action|Sports
 Perspective : Top-Down 
 Players : 1-2 Players 
 Other Systems : Amiga,Amiga CD32,DOS,Genesis,SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/international-sensible-soccer 
  
  
 $end
@@ -1361,26 +1040,17 @@ $<a href="http://www.mobygames.com/game/jaguar/iron-soldier"</a>
 $bio
  
  
-Iron Soldier (1994) (c) 1994 Eclipse Software 
-Design / Atari Corporation 
+Iron Soldier (1994) (c) 1994 Eclipse Software Design / Atari Corporation 
  
-It is the future, and the earth has been covered 
-with wastelands and cities.  The powerful, 
-faceless Iron First Corporation has replaced the 
-last forms of free government.  Now, they are 
-developing a new, 42-foot, armed robot known as 
-the Iron Soldier.  With the Iron Soldier, no one 
-will be able to stop the Iron First Corporation.  
-The only hope is the Resistance, a group that has 
-managed to capture one of the Iron Soldier 
-prototypes.  You are a pilot for the Resistance.  
-It's up to you to pilot the robot and bring down 
-the Iron Fist. 
+It is the future, and the earth has been covered with wastelands and cities.  The powerful, faceless 
+Iron First Corporation has replaced the last forms of free government.  Now, they are developing a 
+new, 42-foot, armed robot known as the Iron Soldier.  With the Iron Soldier, no one will be able to 
+stop the Iron First Corporation.  The only hope is the Resistance, a group that has managed to 
+capture one of the Iron Soldier prototypes.  You are a pilot for the Resistance.  It's up to you to 
+pilot the robot and bring down the Iron Fist. 
  
-Iron Soldier is mech sim played from an in-cockpit 
-view.  There are 16 single player missions.  
-Objectives involve taking out certain targets, 
-defending convoys, collecting items, and so on. 
+Iron Soldier is mech sim played from an in-cockpit view.  There are 16 single player missions.  
+Objectives involve taking out certain targets, defending convoys, collecting items, and so on. 
  
  
 - TECHNICAL - 
@@ -1390,8 +1060,7 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 3.8 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/iron-soldier 
+SOURCE : http://www.mobygames.com/game/jaguar/iron-soldier 
  
  
 $end
@@ -1402,27 +1071,19 @@ $<a href="http://www.mobygames.com/game/jaguar/iron-soldier-2"</a>
 $bio
  
  
-Iron Soldier 2 (c) Apr, 1997 Eclipse Software 
-Design / Atari Corporation|Telegames, Inc. 
+Iron Soldier 2 (c) Apr, 1997 Eclipse Software Design / Atari Corporation|Telegames, Inc. 
  
-Iron Soldier 2 puts you back in the pilot's seat 
-of a 42 foot tall humanoid war machine.  The old 
-Iron Fist corporation is gone, and a new 
-democratic republic has been set up. The peace is 
-short lived, though. Iron Fist's rival, PENTA 
-corporation, is now threatening the United 
-Republic's stability.  You are a pilot for the 
-United Republic, and must stop PENTA's advances. 
+Iron Soldier 2 puts you back in the pilot's seat of a 42 foot tall humanoid war machine.  The old 
+Iron Fist corporation is gone, and a new democratic republic has been set up. The peace is short 
+lived, though. Iron Fist's rival, PENTA corporation, is now threatening the United Republic's 
+stability.  You are a pilot for the United Republic, and must stop PENTA's advances. 
  
-Iron Soldier 2 plays similarly to the first game.  
-You have new weapons, new enemies, and 20 
+Iron Soldier 2 plays similarly to the first game.  You have new weapons, new enemies, and 20 
 super-challenging missions to contend with. 
  
-Originally released on CD, Telegames later 
-released a cartridge version, featuring the same 
-gameplay as the CD version, but lacking music as 
-well as having had the FMV sequences replaced with 
-still images due to space constraints. 
+Originally released on CD, Telegames later released a cartridge version, featuring the same gameplay 
+as the CD version, but lacking music as well as having had the FMV sequences replaced with still 
+images due to space constraints. 
  
  
 - TECHNICAL - 
@@ -1431,7 +1092,7 @@ Genre : Action|Simulation
 Perspective : 1st-Person Perspective 
 Players : 1 Player 
 Score : 3.3 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/iron-soldier-2 
  
  
 $end
@@ -1442,38 +1103,24 @@ $<a href="http://www.mobygames.com/game/jaguar/i-war"</a>
 $bio
  
  
-I-War (1995) (c) 1995 Imagitec Design Inc. / 
-  Atari Corporation 
+I-War (1995) (c) 1995 Imagitec Design Inc. / Atari Corporation 
  
-The giant supercomputer that controls the world's 
-information has been infected with viruses.  You 
-must enter the virtual world known as the I-Way, 
-and clear them out with your anti-virus tank. 
+The giant supercomputer that controls the world's information has been infected with viruses.  You 
+must enter the virtual world known as the I-Way, and clear them out with your anti-virus tank. 
  
-I-War is a 3D virtual reality tank game.  In 
-  each of the 21 levels, you must find all the 
-  data pods and make your way to the exit. Enemy 
-  tanks, turrets, and bombers stand in your way, 
-  as well as occasional traps or locked doors 
-  controlled by hidden switches. Levels are 
-  divided into simple, enclosed rooms, linearly 
-  connected by one-way teleporters. 
+I-War is a 3D virtual reality tank game.  In each of the 21 levels, you must find all the data pods 
+  and make your way to the exit. Enemy tanks, turrets, and bombers stand in your way, as well as 
+  occasional traps or locked doors controlled by hidden switches. Levels are divided into simple, 
+  enclosed rooms, linearly connected by one-way teleporters. 
  
-You can select a fast, medium, or heavy tank at 
-the beginning of the game, with its abilities 
-reflected in the strength of its guns or the 
-amount of punishment it can absorb. Throughout the 
-game, you will also find weapon power-ups and tank 
-upgrades (such as shields, radar, and 
-auto-targeting) to help you stay effective against 
-the increasing numbers of enemy defenders. You can 
-save your progress to the cart at the end of each 
-level. 
+You can select a fast, medium, or heavy tank at the beginning of the game, with its abilities 
+reflected in the strength of its guns or the amount of punishment it can absorb. Throughout the game, 
+you will also find weapon power-ups and tank upgrades (such as shields, radar, and auto-targeting) to 
+help you stay effective against the increasing numbers of enemy defenders. You can save your progress 
+to the cart at the end of each level. 
  
-Between levels are bonus rounds where you pilot 
-your tank through a corridor and try to collect a 
-set percentage of data pods. Meeting that 
-percentage earns you an extra life. 
+Between levels are bonus rounds where you pilot your tank through a corridor and try to collect a set 
+percentage of data pods. Meeting that percentage earns you an extra life. 
  
  
 - TECHNICAL - 
@@ -1483,8 +1130,7 @@ Perspective : 1st-Person Perspective
 Players : 1-2 Players 
 Score : 2.8 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/i-war 
+SOURCE : http://www.mobygames.com/game/jaguar/i-war 
  
  
 $end
@@ -1495,23 +1141,15 @@ $<a href="http://www.mobygames.com/game/jaguar/kasumi-ninja"</a>
 $bio
  
  
-Kasumi Ninja (1994) (c) 1994 Hand Made Software, 
-Ltd. / Atari Corporation 
+Kasumi Ninja (1994) (c) 1994 Hand Made Software, Ltd. / Atari Corporation 
  
-On the tiny island of Kasumi, there exists a 
-portal between this world and the Netherworld.  
-For many centuries, this portal has been kept 
-closed by the balance between good and evil 
-forces.  Now, the dark ninja lord Gyaku has 
-defeated the forces of good, and opened the portal 
-to the netherworld.  It is up to you, a Kasumi 
-ninja, to stop Gyaku and restore balance to the 
-world. 
+On the tiny island of Kasumi, there exists a portal between this world and the Netherworld.  For many 
+centuries, this portal has been kept closed by the balance between good and evil forces.  Now, the 
+dark ninja lord Gyaku has defeated the forces of good, and opened the portal to the netherworld.  It 
+is up to you, a Kasumi ninja, to stop Gyaku and restore balance to the world. 
  
-Kasumi Ninja is a one-on-one fighting game 
-featuring digitized character graphics.  There are 
-8 fighters for you to choose from, each with their 
-own fighting environments. 
+Kasumi Ninja is a one-on-one fighting game featuring digitized character graphics.  There are 8 
+fighters for you to choose from, each with their own fighting environments. 
  
  
 - TECHNICAL - 
@@ -1521,8 +1159,7 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 2.3 
 Esrb : Mature 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/kasumi-ninja 
+SOURCE : http://www.mobygames.com/game/jaguar/kasumi-ninja 
  
  
 $end
@@ -1533,33 +1170,20 @@ $<a href="http://www.mobygames.com/game/jaguar/missile-command-3d"</a>
 $bio
  
  
-Missile Command 3D (1995) (c) 1995 Virtuality 
-Entertainment Ltd. / Atari Corporation 
+Missile Command 3D (1995) (c) 1995 Virtuality Entertainment Ltd. / Atari Corporation 
  
-Missile Command 3D is an update to the classic 
-Atari arcade game. The goal in Missile Command is 
-to defend your cities against an onslaught of 
-missiles coming from the sky. Your arsenal 
-consists of three anti-missile flak cannons. You 
-have to position the anti-missile clouds in the 
-path of the incoming missiles to stop them from 
-impacting. 
+Missile Command 3D is an update to the classic Atari arcade game. The goal in Missile Command is to 
+defend your cities against an onslaught of missiles coming from the sky. Your arsenal consists of 
+three anti-missile flak cannons. You have to position the anti-missile clouds in the path of the 
+incoming missiles to stop them from impacting. 
  
-This Jaguar game has 3 modes. First, there is a 
-port of the original arcade game. There are neat 
-extras for this mode like graphic backdrops and 
-the ability to resize or scale the screen. The 
-second mode is Missile Command 3D. This mode 
-retains the gameplay of the original, but adds 3D 
-graphics to the mix. The final mode, Virtual 
-Missile Command, changes things up quite a lot. 
-Instead of anti-missile flak, your cannons shoot 
-lasers. This means you don't need to lead your 
-targets anymore. You play the game from a 
-first-person perspective, and must switch between 
-the three cannons via buttons on the keypad. There 
-are nine levels in this mode, each with a boss at 
-the end. 
+This Jaguar game has 3 modes. First, there is a port of the original arcade game. There are neat 
+extras for this mode like graphic backdrops and the ability to resize or scale the screen. The second 
+mode is Missile Command 3D. This mode retains the gameplay of the original, but adds 3D graphics to 
+the mix. The final mode, Virtual Missile Command, changes things up quite a lot. Instead of 
+anti-missile flak, your cannons shoot lasers. This means you don't need to lead your targets anymore. 
+You play the game from a first-person perspective, and must switch between the three cannons via 
+buttons on the keypad. There are nine levels in this mode, each with a boss at the end. 
  
  
 - TECHNICAL - 
@@ -1569,7 +1193,7 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 3.6 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/missile-command-3d 
  
  
 $end
@@ -1580,15 +1204,11 @@ $<a href="http://www.mobygames.com/game/jaguar/mutant-penguins"</a>
 $bio
  
  
-Attack of the Mutant Penguins (1996) (c) 1996 
-Sunrise Games Ltd. / Atari Corporation 
+Attack of the Mutant Penguins (1996) (c) 1996 Sunrise Games Ltd. / Atari Corporation 
  
-Your job is to guide Rodney or Bernard through a 
-series of levels in order to stop the attacking 
-mutants. The mutant penguins win the level if they 
-are able to get more soldiers to the scale and tip 
-it in their favor. You win if you are able to lead 
-the good penguins to the scale. 
+Your job is to guide Rodney or Bernard through a series of levels in order to stop the attacking 
+mutants. The mutant penguins win the level if they are able to get more soldiers to the scale and tip 
+it in their favor. You win if you are able to lead the good penguins to the scale. 
  
  
 - TECHNICAL - 
@@ -1599,7 +1219,7 @@ Players : 1 Player
 Score : 3.6 
 Esrb : Kids to Adults 
 Other Systems : DOS,Windows 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/mutant-penguins 
  
  
 $end
@@ -1610,39 +1230,26 @@ $<a href="http://www.mobygames.com/game/jaguar/myst"</a>
 $bio
  
  
-Myst (c) 1995 Cyan, Inc. / Atari 
-Corporation|SunSoft 
+Myst (c) 1995 Cyan, Inc. / Atari Corporation|SunSoft 
  
-You have just stumbled upon a most intriguing 
-book, a book titled Myst. You have no idea where 
-it came from, who wrote it, or how old it is. 
-Reading through its pages provides you with only a 
-superbly crafted description of an island world. 
-But it's just a book, isn't it? As you reach the 
-end of the book, you lay your hand on a page. 
-Suddenly your own world dissolves into blackness, 
-replaced with the island world the pages 
-described. Now you're here, wherever here is, with 
-no option but to explore. 
+You have just stumbled upon a most intriguing book, a book titled Myst. You have no idea where it 
+came from, who wrote it, or how old it is. Reading through its pages provides you with only a 
+superbly crafted description of an island world. But it's just a book, isn't it? As you reach the end 
+of the book, you lay your hand on a page. Suddenly your own world dissolves into blackness, replaced 
+with the island world the pages described. Now you're here, wherever here is, with no option but to 
+explore. 
  
-Myst is a first-person point-and-click adventure 
-where the player controls a character known as The 
-Stranger. Magically transported into the world 
-described in the book, he needs to explore Myst 
-Island and solve its mysteries. The game is 
-presented as a series of static scenes where the 
-player acts with the environment by clicking and 
-manipulating objects. There are no enemies and it 
-is not possible to die. Through Myst Island, the 
-game is further divided into mini-worlds set in 
-different ages accessed through different books. 
+Myst is a first-person point-and-click adventure where the player controls a character known as The 
+Stranger. Magically transported into the world described in the book, he needs to explore Myst Island 
+and solve its mysteries. The game is presented as a series of static scenes where the player acts 
+with the environment by clicking and manipulating objects. There are no enemies and it is not 
+possible to die. Through Myst Island, the game is further divided into mini-worlds set in different 
+ages accessed through different books. 
  
-The PSP version adds new adventure scenarios and 
-includes widescreen support. 
+The PSP version adds new adventure scenarios and includes widescreen support. 
  
-The DS version includes a completely new age, the 
-Rime Age, and, next to a code rewrite, includes 
-new and re-mastered sound effects and video clips. 
+The DS version includes a completely new age, the Rime Age, and, next to a code rewrite, includes new 
+and re-mastered sound effects and video clips. 
  
  
 - TECHNICAL - 
@@ -1652,10 +1259,8 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 3.4 
 Esrb : Kids to Adults 
-Other Systems : 
-3DO,Amiga,CD-i,iPhone,Macintosh,Nintendo 
-DS,PlayStation,PSP,SEGA Saturn,Windows,Windows 
-3.x,Windows Mobile 
+Other Systems : 3DO,Amiga,CD-i,iPhone,Macintosh,Nintendo DS,PlayStation,PSP,SEGA 
+Saturn,Windows,Windows 3.x,Windows Mobile 
 SOURCE : http://www.mobygames.com/game/jaguar/myst 
  
  
@@ -1667,28 +1272,18 @@ $<a href="http://www.mobygames.com/game/jaguar/nba-jam-tournament-edition"</a>
 $bio
  
  
-NBA Jam TE (1996) (c) 1995 Midway Games, Inc. / 
-Acclaim Entertainment, Inc.|Atari Corporation 
+NBA Jam TE (1996) (c) 1995 Midway Games, Inc. / Acclaim Entertainment, Inc.|Atari Corporation 
  
-This game lets you play two-on-two arcade 
-basketball with players from all the NBA teams. 
-Gameplay is fast and action-packed, with few 
-rules, no fouls, and deliberately unrealistic 
-jamming. Players are rated on eight ability 
-categories, from steals and blocks, to dunks and 
-3-pointers. 
+This game lets you play two-on-two arcade basketball with players from all the NBA teams. Gameplay is 
+fast and action-packed, with few rules, no fouls, and deliberately unrealistic jamming. Players are 
+rated on eight ability categories, from steals and blocks, to dunks and 3-pointers. 
  
-Up to four human players can take part, each 
-always controlling a single player for their team, 
-and AI for missing players. This allows for four 
-players to face each other in teams of two, or for 
-two players to team up against a third player with 
-a CPU team-mate. 
+Up to four human players can take part, each always controlling a single player for their team, and 
+AI for missing players. This allows for four players to face each other in teams of two, or for two 
+players to team up against a third player with a CPU team-mate. 
  
-The Tournament Edition ups each team's roster to 
-three players, and allows for substitutions 
-between quarters. Shoving players now results in 
-injuries, which lower a player's stats 
+The Tournament Edition ups each team's roster to three players, and allows for substitutions between 
+quarters. Shoving players now results in injuries, which lower a player's stats 
  
  
 - TECHNICAL - 
@@ -1698,9 +1293,8 @@ Perspective : 3rd-Person Perspective
 Players : 1-4 Players 
 Score : 4.1 
 Esrb : Kids to Adults 
-Other Systems : DOS,Game Boy,Game 
-Gear,Genesis,PlayStation,SEGA 32X,SEGA Saturn,SNES 
-SOURCE : 
+Other Systems : DOS,Game Boy,Game Gear,Genesis,PlayStation,SEGA 32X,SEGA Saturn,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/nba-jam-tournament-edition 
  
  
 $end
@@ -1711,22 +1305,15 @@ $<a href="http://www.mobygames.com/game/jaguar/pinball-fantasies"</a>
 $bio
  
  
-Pinball Fantasies (1995) (Computer West) (c) 1995 
-Digital Illusions CE AB / 21st Century 
+Pinball Fantasies (1995) (Computer West) (c) 1995 Digital Illusions CE AB / 21st Century 
 Entertainment Ltd. 
  
-After the success of Pinball Dreams on several 
-systems, a sequel featuring four new tables was 
-created. The gameplay is much the same as the 
-first game, with realistic physics, multi-player 
-options and a high score table to aim for. The 
-tables are Partyland, Speed Devils, Billion Dollar 
-Gameshow and Stones 'n' Bones, taking in a 
-funfair, racing cars, a tacky game-show, and a 
-graveyard. Each one has a range of ramps, combos, 
-light sequences and targets to shoot, as well as 
-general themes which are less influenced by real 
-tables than those in Pinball Dreams. 
+After the success of Pinball Dreams on several systems, a sequel featuring four new tables was 
+created. The gameplay is much the same as the first game, with realistic physics, multi-player 
+options and a high score table to aim for. The tables are Partyland, Speed Devils, Billion Dollar 
+Gameshow and Stones 'n' Bones, taking in a funfair, racing cars, a tacky game-show, and a graveyard. 
+Each one has a range of ramps, combos, light sequences and targets to shoot, as well as general 
+themes which are less influenced by real tables than those in Pinball Dreams. 
  
  
 - TECHNICAL - 
@@ -1736,9 +1323,8 @@ Perspective : Top-Down
 Players : 1-8 Players 
 Score : 2.0 
 Esrb : Kids to Adults 
-Other Systems : Amiga,Amiga CD32,DOS,Game 
-Boy,iPhone,PlayStation,PlayStation 3,PSP,SNES 
-SOURCE : 
+Other Systems : Amiga,Amiga CD32,DOS,Game Boy,iPhone,PlayStation,PlayStation 3,PSP,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/pinball-fantasies 
  
  
 $end
@@ -1749,18 +1335,12 @@ $<a href="http://www.mobygames.com/game/jaguar/pitfall-the-mayan-adventure"</a>
 $bio
  
  
-Pitfall - The Mayan Adventure (1995) (c) 1995 
-Activision, Inc. / Activision, Inc.|Atari 
-Corporation 
+Pitfall - The Mayan Adventure (1995) (c) 1995 Activision, Inc. / Activision, Inc.|Atari Corporation 
  
-Pitfall: The Mayan Adventure is a side-scrolling 
-action game in which you play adventurer Pitfall 
-Harry Jr in search of his father Pitfall Harry. 
-You battle your way through the Mayan jungles, 
-waterfalls, deserted mines and can bungee jump and 
-boomerang your way to safety. There are 13 levels 
-and the action is fast and gripping. You will need 
-to be attentive—and quick. Or prepare to die. 
+Pitfall: The Mayan Adventure is a side-scrolling action game in which you play adventurer Pitfall 
+Harry Jr in search of his father Pitfall Harry. You battle your way through the Mayan jungles, 
+waterfalls, deserted mines and can bungee jump and boomerang your way to safety. There are 13 levels 
+and the action is fast and gripping. You will need to be attentive—and quick. Or prepare to die. 
  
  
 - TECHNICAL - 
@@ -1770,9 +1350,8 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.5 
 Esrb : Teen 
-Other Systems : Game Boy Advance,Genesis,SEGA 
-32X,SEGA CD,SNES,Wii,Windows 
-SOURCE : 
+Other Systems : Game Boy Advance,Genesis,SEGA 32X,SEGA CD,SNES,Wii,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/pitfall-the-mayan-adventure 
  
  
 $end
@@ -1783,26 +1362,17 @@ $<a href="http://www.mobygames.com/game/jaguar/power-drive-rally"</a>
 $bio
  
  
-Power Drive Rally (1995) (TWI) (c) 1995 Rage 
-Software Ltd. / Time Warner Interactive, Inc. 
+Power Drive Rally (1995) (TWI) (c) 1995 Rage Software Ltd. / Time Warner Interactive, Inc. 
  
-Power Drive Rally is a view into the exciting 
-world of rally racing.  This game is an 
-overhead-view racer featuring real cars and tracks 
-based on locations around the world. 
+Power Drive Rally is a view into the exciting world of rally racing.  This game is an overhead-view 
+racer featuring real cars and tracks based on locations around the world. 
  
-The main game mode portrays a season of 
-championship racing.  There are several types of 
-races that you will encounter.  First, there is 
-the special stage, which is a timed qualifying 
-round.  Second, there is the rally cross stage, in 
-which you race against one other 
-computer-controlled racer.  Finally, there is the 
-skill stage, where you have to perform a series of 
-tricky driving maneuvers.  After each round, you 
-earn money for qualifying or winning.  You can 
-then use this money to repair your car, or save 
-the money to purchase a new, faster car. 
+The main game mode portrays a season of championship racing.  There are several types of races that 
+you will encounter.  First, there is the special stage, which is a timed qualifying round.  Second, 
+there is the rally cross stage, in which you race against one other computer-controlled racer.  
+Finally, there is the skill stage, where you have to perform a series of tricky driving maneuvers.  
+After each round, you earn money for qualifying or winning.  You can then use this money to repair 
+your car, or save the money to purchase a new, faster car. 
  
  
 - TECHNICAL - 
@@ -1812,7 +1382,7 @@ Perspective : Top-Down
 Players : 1-2 Players 
 Score : 3.8 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/power-drive-rally 
  
  
 $end
@@ -1823,21 +1393,14 @@ $<a href="http://www.mobygames.com/game/jaguar/primal-rage"</a>
 $bio
  
  
-Primal Rage (c) 1995 Atari Games Corporation / 
-Time Warner Interactive, Inc. 
+Primal Rage (c) 1995 Atari Games Corporation / Time Warner Interactive, Inc. 
  
-A meteor struck the Earth, and caused great chaos. 
-Seven gods from ancient times awoke, and are now 
-attempting to take control of the post-apocalyptic 
-world. 
+A meteor struck the Earth, and caused great chaos. Seven gods from ancient times awoke, and are now 
+attempting to take control of the post-apocalyptic world. 
  
-Primal Rage is a one-on-one fighting game 
-featuring dinosaurs and giant apes as the 
-fighters. The graphics are done with digitized 
-stop-motion animation. Gameplay is similar to 
-Mortal Kombat in that it is viewed from a side 
-perspective, and features deadly finishing moves 
-at the end of the match. 
+Primal Rage is a one-on-one fighting game featuring dinosaurs and giant apes as the fighters. The 
+graphics are done with digitized stop-motion animation. Gameplay is similar to Mortal Kombat in that 
+it is viewed from a side perspective, and features deadly finishing moves at the end of the match. 
  
  
 - TECHNICAL - 
@@ -1847,10 +1410,8 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 2.4 
 Esrb : Teen 
-Other Systems : 3DO,Amiga,DOS,Game Boy,Game 
-Gear,Genesis,PlayStation,SEGA 32X,SEGA Saturn,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/primal-rage 
+Other Systems : 3DO,Amiga,DOS,Game Boy,Game Gear,Genesis,PlayStation,SEGA 32X,SEGA Saturn,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/primal-rage 
  
  
 $end
@@ -1861,29 +1422,22 @@ $<a href="http://www.mobygames.com/game/jaguar/protector"</a>
 $bio
  
  
-Protector (c) Dec, 1999 Bethesda Softworks LLC / 
-Songbird Productions 
+Protector (c) Dec, 1999 Bethesda Softworks LLC / Songbird Productions 
  
-Haven-7 is a planetoid near Earth whose 
-inhabitants are in grave danger. Aliens will 
-arrive soon and plan to terraform Haven-7 which 
-will annihilate every living thing. You, with the 
-last remaining spaceship, are the only one left to 
-protect Haven-7 from the aliens. 
+Haven-7 is a planetoid near Earth whose inhabitants are in grave danger. Aliens will arrive soon and 
+plan to terraform Haven-7 which will annihilate every living thing. You, with the last remaining 
+spaceship, are the only one left to protect Haven-7 from the aliens. 
  
-Protector features 3 difficulty levels and 
-fast-paced shooting action as you blast swarms of 
-aliens all at once in fierce battle. Purchase ship 
-upgrades and find powerups to help you blast the 
-alien starships. 
+Protector features 3 difficulty levels and fast-paced shooting action as you blast swarms of aliens 
+all at once in fierce battle. Purchase ship upgrades and find powerups to help you blast the alien 
+starships. 
  
  
 - TECHNICAL - 
  
 Players : 1-2 Players 
 Score : 4.2 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/protector 
+SOURCE : http://www.mobygames.com/game/jaguar/protector 
  
  
 $end
@@ -1894,27 +1448,17 @@ $<a href="http://www.mobygames.com/game/jaguar/raiden"</a>
 $bio
  
  
-Raiden (1994) (c) 1994 Seibu Kaihatsu Inc. / Atari 
-Corporation 
+Raiden (1994) (c) 1994 Seibu Kaihatsu Inc. / Atari Corporation 
  
-In the year 2090, Earth is invaded by 
-extra-terrestrials. The World Alliance of Nations 
-has developed a supersonic attack fighter, Raiden, 
-to defend the Earth. A pilot must take control of 
-the experimental fighter to destroy the alien 
-warships that just happen to look like odd 
-variations of typical military tanks and planes 
-with gadgets attached to them. 
+In the year 2090, Earth is invaded by extra-terrestrials. The World Alliance of Nations has developed 
+a supersonic attack fighter, Raiden, to defend the Earth. A pilot must take control of the 
+experimental fighter to destroy the alien warships that just happen to look like odd variations of 
+typical military tanks and planes with gadgets attached to them. 
  
-Raiden (called Raiden Trad on the Genesis and 
-SNES) is an over-head vertical-scrolling shooter, 
-based on an arcade game of the same title. It 
-features two forms of weapon upgrades and two 
-types of missiles (normal or homing). You start 
-the game with several bombs which you can use to 
-destroy most enemies on the screen to get yourself 
-out of a jam. Each level ends with a large boss or 
-bosses. 
+Raiden (called Raiden Trad on the Genesis and SNES) is an over-head vertical-scrolling shooter, based 
+on an arcade game of the same title. It features two forms of weapon upgrades and two types of 
+missiles (normal or homing). You start the game with several bombs which you can use to destroy most 
+enemies on the screen to get yourself out of a jam. Each level ends with a large boss or bosses. 
  
  
 - TECHNICAL - 
@@ -1923,10 +1467,8 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1-2 Players 
 Score : 3.9 
-Other Systems : 
-DOS,Genesis,Lynx,SNES,TurboGrafx-16,TurboGrafx CD 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/raiden 
+Other Systems : DOS,Genesis,Lynx,SNES,TurboGrafx-16,TurboGrafx CD 
+SOURCE : http://www.mobygames.com/game/jaguar/raiden 
  
  
 $end
@@ -1937,33 +1479,21 @@ $<a href="http://www.mobygames.com/game/jaguar/rayman"</a>
 $bio
  
  
-Rayman (1995) (UBI Soft) (c) 1995 Ubi Soft 
-Entertainment Software / Ubi Soft Entertainment 
-Software 
+Rayman (1995) (UBI Soft) (c) 1995 Ubi Soft Entertainment Software / Ubi Soft Entertainment Software 
  
-When a villain known only as Mr. Dark appears, 
-trouble brews in Rayman's world.  Mr. Dark 
-captures the Toons - source of light and Rayman's 
-friends.  With no more light, evil creatures begin 
-to roam, making the world unsafe for everyone.  
-Its up to you, as Rayman, to free your friends and 
-put an end to Mr. Dark's dastardly schemes! 
+When a villain known only as Mr. Dark appears, trouble brews in Rayman's world.  Mr. Dark captures 
+the Toons - source of light and Rayman's friends.  With no more light, evil creatures begin to roam, 
+making the world unsafe for everyone.  Its up to you, as Rayman, to free your friends and put an end 
+to Mr. Dark's dastardly schemes! 
  
-Rayman is side-scrolling platformer starring the 
-titular Rayman, a big-nosed chap with no arms or 
-legs.  Rayman can jump and use his hair to hover 
-for a short period of time.  He can also attack by 
-throwing his fists, or winding up his fists for a 
-more powerful punch.  He can occasionally find 
-special power ups that grant him unlimited flying 
-power, giving him the ability to navigate through 
+Rayman is side-scrolling platformer starring the titular Rayman, a big-nosed chap with no arms or 
+legs.  Rayman can jump and use his hair to hover for a short period of time.  He can also attack by 
+throwing his fists, or winding up his fists for a more powerful punch.  He can occasionally find 
+special power ups that grant him unlimited flying power, giving him the ability to navigate through 
 tricky mazes. 
  
-Aside from the platforming action, the other 
-notable feature of Rayman is its large, detailed 
-and vibrant graphics, which have helped it to 
-stand out from most other similar games in the 
-genre. 
+Aside from the platforming action, the other notable feature of Rayman is its large, detailed and 
+vibrant graphics, which have helped it to stand out from most other similar games in the genre. 
  
  
 - TECHNICAL - 
@@ -1973,11 +1503,8 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 4.6 
 Esrb : Kids to Adults 
-Other Systems : DOS,Game Boy Advance,Nintendo 
-DSi,PlayStation,PlayStation 3,PSP,SEGA 
-Saturn,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/rayman 
+Other Systems : DOS,Game Boy Advance,Nintendo DSi,PlayStation,PlayStation 3,PSP,SEGA Saturn,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/rayman 
  
  
 $end
@@ -1988,23 +1515,16 @@ $<a href="http://www.mobygames.com/game/jaguar/ruiner-pinball"</a>
 $bio
  
  
-Ruiner Pinball (1995) (c) 1995 High Voltage 
-Software, Inc. / Atari Corporation 
+Ruiner Pinball (1995) (c) 1995 High Voltage Software, Inc. / Atari Corporation 
  
-Ruiner Pinball is a collection of two fantasy 
-pinball tables: Ruiner and Tower. 
+Ruiner Pinball is a collection of two fantasy pinball tables: Ruiner and Tower. 
  
-Ruiner is a two screen wide table that features 
-flashy scaling and rotation effects. There are 
-lots of ramps and animated moving targets to score 
-on.  Ruiner has a cold war nuclear holocaust 
-theme. 
+Ruiner is a two screen wide table that features flashy scaling and rotation effects. There are lots 
+of ramps and animated moving targets to score on.  Ruiner has a cold war nuclear holocaust theme. 
  
-Tower is an extra-tall table that features a 
-medieval horror motif. Like Ruiner, it contains 
-animated targets and scaling effects.  Both tables 
-contain missions, or series of targets to increase 
-the scoring opportunities available. 
+Tower is an extra-tall table that features a medieval horror motif. Like Ruiner, it contains animated 
+targets and scaling effects.  Both tables contain missions, or series of targets to increase the 
+scoring opportunities available. 
  
  
 - TECHNICAL - 
@@ -2014,7 +1534,7 @@ Perspective : Top-Down
 Players : 1-4 Players 
 Score : 3.0 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/ruiner-pinball 
  
  
 $end
@@ -2025,26 +1545,18 @@ $<a href="http://www.mobygames.com/game/jaguar/sensible-soccer-european-champion
 $bio
  
  
-Sensible Soccer: European Champions: 92/93 Edition 
-(c) 1995 Williams Entertainment Inc. / Telegames, 
+Sensible Soccer: European Champions: 92/93 Edition (c) 1995 Williams Entertainment Inc. / Telegames, 
 Inc. 
  
-With the original Sensible Soccer having sold 
-hugely, this updated version was released some 
-months later (and then used as the basis for the 
-later console versions). The teams are updated, 
-with the sides present in the 92-93 European 
-tournaments included, and the player names updated 
-to take transfers into account. 
+With the original Sensible Soccer having sold hugely, this updated version was released some months 
+later (and then used as the basis for the later console versions). The teams are updated, with the 
+sides present in the 92-93 European tournaments included, and the player names updated to take 
+transfers into account. 
  
-The game was tidied up and changed in a number of 
-areas. The most significant change is the addition 
-of red and yellow cards for discipline (2 yellow 
-card offenses or one ‘professional foul’ (denying 
-your opponent a clear goal-scoring opportunity) 
-results in that player being sent off). The 
-goalkeepers have been improved in skill, and the 
-1994 World Cup Qualifying tournament was added. 
+The game was tidied up and changed in a number of areas. The most significant change is the addition 
+of red and yellow cards for discipline (2 yellow card offenses or one ‘professional foul’ (denying 
+your opponent a clear goal-scoring opportunity) results in that player being sent off). The 
+goalkeepers have been improved in skill, and the 1994 World Cup Qualifying tournament was added. 
  
  
 - TECHNICAL - 
@@ -2052,9 +1564,8 @@ goalkeepers have been improved in skill, and the
 Genre : Action|Sports 
 Perspective : Top-Down 
 Players : 1-4 Players 
-Other Systems : Amiga,Amiga CD32,Atari ST,DOS,Game 
-Gear,Genesis,J2ME,SEGA CD,SEGA Master System 
-SOURCE : 
+Other Systems : Amiga,Amiga CD32,Atari ST,DOS,Game Gear,Genesis,J2ME,SEGA CD,SEGA Master System 
+SOURCE : http://www.mobygames.com/game/jaguar/sensible-soccer-european-champions-9293-edition 
  
  
 $end
@@ -2065,28 +1576,19 @@ $<a href="http://www.mobygames.com/game/jaguar/skyhammer"</a>
 $bio
  
  
-Skyhammer (c) May, 2000 Rebellion Developments 
-Ltd. / Songbird Productions 
+Skyhammer (c) May, 2000 Rebellion Developments Ltd. / Songbird Productions 
  
-In a futuristic city, you are a mercenary pilot 
-flying a helicopter-like craft in cyberspace. 
-Hired by the large corporation Cytox, you are to 
-defend its corporate holdings from those who seek 
-to destroy all it has accomplished. 
+In a futuristic city, you are a mercenary pilot flying a helicopter-like craft in cyberspace. Hired 
+by the large corporation Cytox, you are to defend its corporate holdings from those who seek to 
+destroy all it has accomplished. 
  
-The numerous missions involve flying to several 
-large cities and hunting down the renegades who 
-threaten them. You have a cockpit view of the city 
-as you hunt down your enemies and dock at the 
-Cyber Mart for repairs. As you destroy your 
-enemies and complete missions, you can earn 
-credits for buying more supplies, weapons and ship 
-upgrades at the Cyber Mart. 
+The numerous missions involve flying to several large cities and hunting down the renegades who 
+threaten them. You have a cockpit view of the city as you hunt down your enemies and dock at the 
+Cyber Mart for repairs. As you destroy your enemies and complete missions, you can earn credits for 
+buying more supplies, weapons and ship upgrades at the Cyber Mart. 
  
-Play in Mission Mode or Battle Mode. To win the 
-game, you must complete each mission successfully. 
-The enemies become more tough as you progress 
-through the "levels" of gameplay. 
+Play in Mission Mode or Battle Mode. To win the game, you must complete each mission successfully. 
+The enemies become more tough as you progress through the "levels" of gameplay. 
  
  
 - TECHNICAL - 
@@ -2095,8 +1597,7 @@ Genre : Action
 Perspective : 1st-Person Perspective 
 Players : 1 Player 
 Score : 4.0 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/skyhammer 
+SOURCE : http://www.mobygames.com/game/jaguar/skyhammer 
  
  
 $end
@@ -2107,28 +1608,19 @@ $<a href="http://www.mobygames.com/game/jaguar/soccer-kid"</a>
 $bio
  
  
-Soccer Kid (c) 1996 ReadySoft Incorporated / 
-ReadySoft Incorporated 
+Soccer Kid (c) 1996 ReadySoft Incorporated / ReadySoft Incorporated 
  
-Aliens attempting to steal the World Cup have 
-crashed as they tried to flee, and the Cup has 
-been broken, its pieces scattered around the 
-globe. As Soccer Kid, you must retrieve it. During 
-your journey you will visit Britain, Italy, 
-Russia, Japan, and finally the States. 
+Aliens attempting to steal the World Cup have crashed as they tried to flee, and the Cup has been 
+broken, its pieces scattered around the globe. As Soccer Kid, you must retrieve it. During your 
+journey you will visit Britain, Italy, Russia, Japan, and finally the States. 
  
-Soccer Kid is a platform game with some unique 
-elements.  As the name implies, you have to kill 
-your enemies with your ball. Football-style tricks 
-of keeping the ball in the air and under control 
-are especially useful - headers and overhead kicks 
-can be played with practice. You gain access to 
-the pieces by collecting 11 Player Cards across 
-each world. 
+Soccer Kid is a platform game with some unique elements.  As the name implies, you have to kill your 
+enemies with your ball. Football-style tricks of keeping the ball in the air and under control are 
+especially useful - headers and overhead kicks can be played with practice. You gain access to the 
+pieces by collecting 11 Player Cards across each world. 
  
-There is a saving feature that gives you the 
-ability to save between each country (but not 
-between individual levels). 
+There is a saving feature that gives you the ability to save between each country (but not between 
+individual levels). 
  
  
 - TECHNICAL - 
@@ -2138,10 +1630,8 @@ Perspective : Platform
 Players : 1 Player 
 Score : 3.0 
 Esrb : Kids to Adults 
-Other Systems : 3DO,Amiga,Amiga CD32,DOS,Game Boy 
-Advance,PlayStation,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/soccer-kid 
+Other Systems : 3DO,Amiga,Amiga CD32,DOS,Game Boy Advance,PlayStation,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/soccer-kid 
  
  
 $end
@@ -2152,25 +1642,18 @@ $<a href="http://www.mobygames.com/game/jaguar/space-ace"</a>
 $bio
  
  
-Space Ace (c) 1995 ReadySoft Incorporated / 
-ReadySoft Incorporated 
+Space Ace (c) 1995 ReadySoft Incorporated / ReadySoft Incorporated 
  
-Following the successful gameplay of Dragon's 
-Lair, Don Bluth released this second conversion of 
-his Laserdisc games series. 
+Following the successful gameplay of Dragon's Lair, Don Bluth released this second conversion of his 
+Laserdisc games series. 
  
-You're playing Dexter, a guy fighting the evil 
-madman Borf who has kidnapped your girlfriend 
-Kimberly and is now threatening the world with his 
-dreaded weapon, the "Infanto Ray" which turns 
-adults into small children. 
+You're playing Dexter, a guy fighting the evil madman Borf who has kidnapped your girlfriend Kimberly 
+and is now threatening the world with his dreaded weapon, the "Infanto Ray" which turns adults into 
+small children. 
  
-The game plays like a comic strip - visuals are 
-similar to many cartoon movies. In each scene you 
-only have to decide which direction of the 
-keyboard has to be hit in order to avoid one of 
-the countless death screens and to advance to the 
-next screen... 
+The game plays like a comic strip - visuals are similar to many cartoon movies. In each scene you 
+only have to decide which direction of the keyboard has to be hit in order to avoid one of the 
+countless death screens and to advance to the next screen... 
  
  
 - TECHNICAL - 
@@ -2180,10 +1663,8 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 4.1 
 Esrb : Kids to Adults 
-Other Systems : 3DO,Amiga,Apple IIgs,Atari 
-ST,CD-i,DOS,iPhone,Macintosh,SEGA CD,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/space-ace 
+Other Systems : 3DO,Amiga,Apple IIgs,Atari ST,CD-i,DOS,iPhone,Macintosh,SEGA CD,Windows 
+SOURCE : http://www.mobygames.com/game/jaguar/space-ace 
  
  
 $end
@@ -2194,19 +1675,13 @@ $<a href="http://www.mobygames.com/game/jaguar/super-burnout"</a>
 $bio
  
  
-Super Burnout (1995) (c) 1995 Shen Technologies 
-SARL / Atari Corporation|Virtual Xpérience 
+Super Burnout (1995) (c) 1995 Shen Technologies SARL / Atari Corporation|Virtual Xpérience 
  
-Super Burnout is an arcade-style superbike racing 
-game inspired by Super Hang-On. Players control an 
-ultra-fast motorcycle through races that take 
-place on famous tracks throughout the world. There 
-are six bikes to choose from with races on a total 
-of eight different tracks. The usual racing game 
-modes are present. There is a single race mode, a 
-practice mode, and a championship mode. Players 
-can also compete against a friend in a single-race 
-versus mode. 
+Super Burnout is an arcade-style superbike racing game inspired by Super Hang-On. Players control an 
+ultra-fast motorcycle through races that take place on famous tracks throughout the world. There are 
+six bikes to choose from with races on a total of eight different tracks. The usual racing game modes 
+are present. There is a single race mode, a practice mode, and a championship mode. Players can also 
+compete against a friend in a single-race versus mode. 
  
  
 - TECHNICAL - 
@@ -2216,8 +1691,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-2 Players 
 Score : 4.2 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/super-burnout 
+SOURCE : http://www.mobygames.com/game/jaguar/super-burnout 
  
  
 $end
@@ -2228,22 +1702,15 @@ $<a href="http://www.mobygames.com/game/jaguar/supercross-3d"</a>
 $bio
  
  
-Super Cross 3D (1995) (c) 1995 Tiertex Design 
-Studios / Atari Corporation 
+Super Cross 3D (1995) (c) 1995 Tiertex Design Studios / Atari Corporation 
  
-Supercross 3D brings the excitement of arena 
-supercross racing to the Jaguar.  Not only do you 
-get to race ahead of your competitors, you can 
-catch big air on the huge jumps and perform a few 
-tricks. 
+Supercross 3D brings the excitement of arena supercross racing to the Jaguar.  Not only do you get to 
+race ahead of your competitors, you can catch big air on the huge jumps and perform a few tricks. 
  
-There are three game modes: Practice, Single Race, 
-and Tournament. In practice mode, you can race 
-around any track for as long as you like.  In 
-single race mode, you compete in one race against 
-the computer.  Finally, in tournament mode, you 
-compete in a series of races to accumulate points 
-and become the Supercross champion. 
+There are three game modes: Practice, Single Race, and Tournament. In practice mode, you can race 
+around any track for as long as you like.  In single race mode, you compete in one race against the 
+computer.  Finally, in tournament mode, you compete in a series of races to accumulate points and 
+become the Supercross champion. 
  
  
 - TECHNICAL - 
@@ -2253,8 +1720,7 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.0 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/supercross-3d 
+SOURCE : http://www.mobygames.com/game/jaguar/supercross-3d 
  
  
 $end
@@ -2267,29 +1733,19 @@ $bio
  
 SuperFly (c) Apr 29, 2010 Reboot / Reboot 
  
-SuperFly is an extremely, extremely simple game. 
-Or at least its controls are. Your task is to fly 
-a vehicle at a steady pace through a scrolling 
-cave system, with your only method of input being 
-a single button. Press the button to give your 
-vessel lift, release it and gravity will do its 
-work. At all times, you must avoid crashing into 
-the top and bottom of the cave, and avoid the 
-obstacles which appear a screen apart. It is all 
-rather similar to Dragonwing. 
+SuperFly is an extremely, extremely simple game. Or at least its controls are. Your task is to fly a 
+vehicle at a steady pace through a scrolling cave system, with your only method of input being a 
+single button. Press the button to give your vessel lift, release it and gravity will do its work. At 
+all times, you must avoid crashing into the top and bottom of the cave, and avoid the obstacles which 
+appear a screen apart. It is all rather similar to Dragonwing. 
  
-To spice things up, SuperFly has everything a 
-modern game must have (save for complex controls 
-and 3D graphics). It has different game modes, 
-different vessels, a system of experience points 
-to lock up new areas and modes, a picture gallery, 
-a jukebox and even a gamma setting. 
+To spice things up, SuperFly has everything a modern game must have (save for complex controls and 3D 
+graphics). It has different game modes, different vessels, a system of experience points to lock up 
+new areas and modes, a picture gallery, a jukebox and even a gamma setting. 
  
-As you start out the game with zero experience, 
-you can only "fly" your submarine in the most 
-basic game mode, Freeflight. Here, you only fly on 
-for as long as you can handle, amassing points 
-until you luck up the next mode 
+As you start out the game with zero experience, you can only "fly" your submarine in the most basic 
+game mode, Freeflight. Here, you only fly on for as long as you can handle, amassing points until you 
+luck up the next mode 
  
  
 - TECHNICAL - 
@@ -2298,8 +1754,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Other Systems : Atari ST 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/superfly_ 
+SOURCE : http://www.mobygames.com/game/jaguar/superfly_ 
  
  
 $end
@@ -2310,34 +1765,22 @@ $<a href="http://www.mobygames.com/game/jaguar/syndicate"</a>
 $bio
  
  
-Syndicate (1995) (Ocean) (c) 1995 Bullfrog 
-Productions, Ltd. / Ocean Software Ltd. 
+Syndicate (1995) (Ocean) (c) 1995 Bullfrog Productions, Ltd. / Ocean Software Ltd. 
  
-In the future, the world is controlled by a 
-handful of global corporations (syndicates).  You 
-are the Marketing director (hit man) for one of 
-these companies.  It is your job to take control 
-away from the competitors.  The job is not one of 
-diplomacy, but one of brute force and physical 
-control.  Advance your way to the top of the 
-corporation by successfully completing your 
-missions and managing the money you make from your 
-territories. 
+In the future, the world is controlled by a handful of global corporations (syndicates).  You are the 
+Marketing director (hit man) for one of these companies.  It is your job to take control away from 
+the competitors.  The job is not one of diplomacy, but one of brute force and physical control.  
+Advance your way to the top of the corporation by successfully completing your missions and managing 
+the money you make from your territories. 
  
-The gameplay is visually reminiscent of X-Com, 
-with an angled top-down perspective, but it is 
-real time rather than turn based. You have 
-missions ranging from infiltrate and capture, to 
-seek and destroy. In each of these you direct a 
-team of four agents as they move through the world 
-shooting at anything that gets in their way. 
+The gameplay is visually reminiscent of X-Com, with an angled top-down perspective, but it is real 
+time rather than turn based. You have missions ranging from infiltrate and capture, to seek and 
+destroy. In each of these you direct a team of four agents as they move through the world shooting at 
+anything that gets in their way. 
  
-You can upgrade and modify your agents, as well as 
-equip them with tools you have researched or 
-liberated from opposing syndicates.  As you 
-complete missions, you gain more funds to use for 
-purchasing agents or researching upgrades and 
-equipment. 
+You can upgrade and modify your agents, as well as equip them with tools you have researched or 
+liberated from opposing syndicates.  As you complete missions, you gain more funds to use for 
+purchasing agents or researching upgrades and equipment. 
  
  
 - TECHNICAL - 
@@ -2347,10 +1790,8 @@ Perspective : Isometric
 Players : 1 Player 
 Score : 3.2 
 Esrb : Kids to Adults 
-Other Systems : 3DO,Amiga,Amiga 
-CD32,DOS,Genesis,Macintosh,SEGA CD,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/syndicate 
+Other Systems : 3DO,Amiga,Amiga CD32,DOS,Genesis,Macintosh,SEGA CD,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/syndicate 
  
  
 $end
@@ -2361,29 +1802,20 @@ $<a href="http://www.mobygames.com/game/jaguar/tempest-2000"</a>
 $bio
  
  
-Tempest 2000 (1994) (c) 1994 Llamasoft Ltd. / 
-Atari Corporation 
+Tempest 2000 (1994) (c) 1994 Llamasoft Ltd. / Atari Corporation 
  
-Tempest 2000 is a remake/upgrade of the popular 
-Atari vector graphics-based shooter. 
+Tempest 2000 is a remake/upgrade of the popular Atari vector graphics-based shooter. 
  
-Blast your way through over 100+ levels, shooting 
-the creatures that come out from the other side of 
-the web to drag you in. Collect power-ups (jump, 
-AI robots and more) to trippy graphics and 
-colorful explosions as a thumping techno-house 
-soundtrack blasts in the background. 
+Blast your way through over 100+ levels, shooting the creatures that come out from the other side of 
+the web to drag you in. Collect power-ups (jump, AI robots and more) to trippy graphics and colorful 
+explosions as a thumping techno-house soundtrack blasts in the background. 
  
-Collect enough bonuses, and be subjected to two 
-different types of bonus rounds as you navigate 
+Collect enough bonuses, and be subjected to two different types of bonus rounds as you navigate 
 through rings, or try to ride a spiral tube. 
  
-Also included in the gameplay is an intense 
-two-player mode to team up with or go head to head 
-against another player, or even play a version of 
-the original arcade game. There are four modes of 
-gameplay in all: Traditional Tempest, Tempest 
-Duel, Tempest Plus and Tempest 2000. 
+Also included in the gameplay is an intense two-player mode to team up with or go head to head 
+against another player, or even play a version of the original arcade game. There are four modes of 
+gameplay in all: Traditional Tempest, Tempest Duel, Tempest Plus and Tempest 2000. 
  
 Face the web.... 
  
@@ -2396,8 +1828,7 @@ Players : 1-2 Players
 Score : 4.2 
 Esrb : Kids to Adults 
 Other Systems : DOS,Macintosh,SEGA Saturn,Windows 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/tempest-2000 
+SOURCE : http://www.mobygames.com/game/jaguar/tempest-2000 
  
  
 $end
@@ -2408,38 +1839,25 @@ $<a href="http://www.mobygames.com/game/jaguar/theme-park"</a>
 $bio
  
  
-Theme Park (1995) (Ocean) (c) 1995 Bullfrog 
-Productions, Ltd. / Ocean Software Ltd. 
+Theme Park (1995) (Ocean) (c) 1995 Bullfrog Productions, Ltd. / Ocean Software Ltd. 
  
-Dominating the exciting world of Theme Park 
-ownership is your goal in this strategy game from 
-Bullfrog. The first task is to set up your rides 
-within the available land, structuring convenient 
-paths and queues and ideally leaving some space 
-for bigger rides once they become available, and 
-include some lakes and trees to increase the 
-park's allure. Rides range from Teacups and 
-Haunted Houses to the biggest most elaborate 
-roller-coaster you can design, and water rides 
-that loop around other rides. 
+Dominating the exciting world of Theme Park ownership is your goal in this strategy game from 
+Bullfrog. The first task is to set up your rides within the available land, structuring convenient 
+paths and queues and ideally leaving some space for bigger rides once they become available, and 
+include some lakes and trees to increase the park's allure. Rides range from Teacups and Haunted 
+Houses to the biggest most elaborate roller-coaster you can design, and water rides that loop around 
+other rides. 
  
-Shops must also be included, so that the visitors 
-can buy food, drinks and souvenirs - the cunning 
-player will combine salt, sugar and caffeine 
-settings to maximize consumer interest. Staff must 
-be hired to keep everything running smoothly, and 
-they will only work for what they consider a fair 
-rate of pay. 
+Shops must also be included, so that the visitors can buy food, drinks and souvenirs - the cunning 
+player will combine salt, sugar and caffeine settings to maximize consumer interest. Staff must be 
+hired to keep everything running smoothly, and they will only work for what they consider a fair rate 
+of pay. 
  
-You are competing against other Theme Parks, so 
-don't let them get an advantage over you - monitor 
-your success in attracting customers and financial 
-viability closely using the supplied statistics 
-pages. More important, ensure that research is 
-adequately funded to produce new rides. 
+You are competing against other Theme Parks, so don't let them get an advantage over you - monitor 
+your success in attracting customers and financial viability closely using the supplied statistics 
+pages. More important, ensure that research is adequately funded to produce new rides. 
  
-It can be played in three modes - Sandbox level 
-lets you concentrate on the park design elements, 
+It can be played in three modes - Sandbox level lets you concentrate on the park design elements, 
 while Sim and Full add more strategic features. 
  
  
@@ -2450,12 +1868,9 @@ Perspective : Top-Down
 Players : 1 Player 
 Score : 3.3 
 Esrb : Kids to Adults 
-Other Systems : 3DO,Amiga,Amiga 
-CD32,DOS,Genesis,Macintosh,Nintendo 
-DS,PC-98,PlayStation,PlayStation 3,PSP,SEGA 
-CD,SEGA Saturn,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/theme-park 
+Other Systems : 3DO,Amiga,Amiga CD32,DOS,Genesis,Macintosh,Nintendo DS,PC-98,PlayStation,PlayStation 
+3,PSP,SEGA CD,SEGA Saturn,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/theme-park 
  
  
 $end
@@ -2466,33 +1881,21 @@ $<a href="http://www.mobygames.com/game/jaguar/total-carnage"</a>
 $bio
  
  
-Total Carnage (c) Sep 22, 2005 Midway / Songbird 
-Productions 
+Total Carnage (c) Sep 22, 2005 Midway / Songbird Productions 
  
-The war of 1999 left the country of Kookistan in 
-shambles. Naturally, a dictator named General 
-Akhboob took control of the beleagured nation and 
-began creating an army of radioactive mutants. 
-With a virtually impenetrable stronghold, a bunch 
-of hostages, and a legion of mutants under his 
-command, the evil despot will stop at nothing but 
-world domination. Only two men have the courage 
-and idealistic naivete to take on Akhboob and his 
-forces: Captain Carnage and Major Mayhem, also 
-known as the Doomsday Squad. 
+The war of 1999 left the country of Kookistan in shambles. Naturally, a dictator named General 
+Akhboob took control of the beleagured nation and began creating an army of radioactive mutants. With 
+a virtually impenetrable stronghold, a bunch of hostages, and a legion of mutants under his command, 
+the evil despot will stop at nothing but world domination. Only two men have the courage and 
+idealistic naivete to take on Akhboob and his forces: Captain Carnage and Major Mayhem, also known as 
+the Doomsday Squad. 
  
-As Captain Carnage or Major Mayhem, it is up to 
-you or you and a friend (in simultaneous action) 
-to rescue the hostages while shooting hundreds of 
-mutants bent on your destruction. As you walk and 
-run forward, backward, left, right, and diagonally 
-through 20 battlezones of nonstop action, you'll 
-always have your machine gun by your side. 
-Additional weapons which you can find along the 
-way include grenade launchers, rocket launchers, 
-plasma machine guns, flame throwers, spray-fire 
-rifles, defensive blades, and an assortment of 
-bombs. 
+As Captain Carnage or Major Mayhem, it is up to you or you and a friend (in simultaneous action) to 
+rescue the hostages while shooting hundreds of mutants bent on your destruction. As you walk and run 
+forward, backward, left, right, and diagonally through 20 battlezones of nonstop action, you'll 
+always have your machine gun by your side. Additional weapons which you can find along the way 
+include grenade launchers, rocket launchers, plasma machine guns, flame throwers, spray-fire rifles, 
+defensive blades, and an assortment of bombs. 
  
  
 - TECHNICAL - 
@@ -2501,8 +1904,7 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1 Player 
 Other Systems : Amiga,Amiga CD32,DOS,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/total-carnage 
+SOURCE : http://www.mobygames.com/game/jaguar/total-carnage 
  
  
 $end
@@ -2513,31 +1915,20 @@ $<a href="http://www.mobygames.com/game/jaguar/towers-ii-plight-of-the-stargazer
 $bio
  
  
-Towers II: Plight of the Stargazer (c) Dec 01, 
-1996 JV Games, Inc. / Telegames, Inc. 
+Towers II: Plight of the Stargazer (c) Dec 01, 1996 JV Games, Inc. / Telegames, Inc. 
  
-Towers II, Plight of the Stargazer, a 
-single-player, single-character, first-person RPG, 
-is the sequel to Towers which was released for the 
-Falcon system. 
+Towers II, Plight of the Stargazer, a single-player, single-character, first-person RPG, is the 
+sequel to Towers which was released for the Falcon system. 
  
-This game begins where the first one left off - 
-you and your party are shipwrecked on the island 
-of Lamini. The crew has spent several months 
-making repairs to their ship, but before they are 
-able to leave the Sheriff of Lamini pleads for 
-help. It seems that one of the island's highest 
-ranking council members, the wizard Lord Daggan, 
-has completely lost his senses. All sorts of 
-strange and unusual things have been happening. He 
-has been ranting and raving, blowing things up, 
-and digging up the corpses of dead mystics. Daggan 
-has remained locked up inside his castle and no 
-one sent to confront him has been heard from 
-since. So naturally you accept the quest. 
+This game begins where the first one left off - you and your party are shipwrecked on the island of 
+Lamini. The crew has spent several months making repairs to their ship, but before they are able to 
+leave the Sheriff of Lamini pleads for help. It seems that one of the island's highest ranking 
+council members, the wizard Lord Daggan, has completely lost his senses. All sorts of strange and 
+unusual things have been happening. He has been ranting and raving, blowing things up, and digging up 
+the corpses of dead mystics. Daggan has remained locked up inside his castle and no one sent to 
+confront him has been heard from since. So naturally you accept the quest. 
  
-Begin by selecting a character from the four 
-available: Merton, the wizard 
+Begin by selecting a character from the four available: Merton, the wizard 
  
  
 - TECHNICAL - 
@@ -2546,7 +1937,7 @@ Genre : Role-Playing (RPG)
 Perspective : 1st-Person Perspective 
 Score : 3.9 
 Other Systems : Atari ST,Windows 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/towers-ii-plight-of-the-stargazer 
  
  
 $end
@@ -2557,20 +1948,14 @@ $<a href="http://www.mobygames.com/game/jaguar/trevor-mcfur-in-the-crescent-gala
 $bio
  
  
-Trevor McFur in the Crescent Galaxy (1993) (c) 
-1993 Atari Corporation / Atari Corporation 
+Trevor McFur in the Crescent Galaxy (1993) (c) 1993 Atari Corporation / Atari Corporation 
  
-The Crescent Galaxy has been attacked by an entity 
-known as Odd-it. This creatures goal is to make 
-everything odd, like it. You play Trevor McFur, a 
-corporal in the Crescent Galaxy's chapter of the 
-Interplanetary Defense squad and are sent in along 
-with your feline partner Cutter to defeat Odd-it. 
-The game is a side scrolling shooter featuring a 
-wide variety of worlds and enemies to conquer. 
-Throughout the game you can power your ship with 
-newer and better weapons by shooting certain 
-enemies and collecting the bonuses left behind. 
+The Crescent Galaxy has been attacked by an entity known as Odd-it. This creatures goal is to make 
+everything odd, like it. You play Trevor McFur, a corporal in the Crescent Galaxy's chapter of the 
+Interplanetary Defense squad and are sent in along with your feline partner Cutter to defeat Odd-it. 
+The game is a side scrolling shooter featuring a wide variety of worlds and enemies to conquer. 
+Throughout the game you can power your ship with newer and better weapons by shooting certain enemies 
+and collecting the bonuses left behind. 
  
  
 - TECHNICAL - 
@@ -2579,7 +1964,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 2.3 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/trevor-mcfur-in-the-crescent-galaxy 
  
  
 $end
@@ -2590,26 +1975,17 @@ $<a href="http://www.mobygames.com/game/jaguar/troy-aikman-nfl-football"</a>
 $bio
  
  
-Troy Aikman NFL Football (1995) (Williams) (c) Feb 
-15, 1995 
+Troy Aikman NFL Football (1995) (Williams) (c) Feb 15, 1995 
  
-You and a friend can become star NFL players or 
-choose to coach a team in this realistic rendition 
-of the game of American football, endorsed by 
-former Dallas Cowboys quarterback and Super Bowl 
-champ, Troy Aikman. Choose to play alone against 
-the system, or play against each other. 
+You and a friend can become star NFL players or choose to coach a team in this realistic rendition of 
+the game of American football, endorsed by former Dallas Cowboys quarterback and Super Bowl champ, 
+Troy Aikman. Choose to play alone against the system, or play against each other. 
  
-Pick from 3 play modes: Pre-season, Season, or 
-Custom Generated (editable) season. There are also 
-three skill levels: Rookie, Pro and Veteran.  You 
-can design your own plays, customize your team, 
-and save your team's stats. True-to-life playing 
-surfaces have an effect on how your team performs 
-and include grass, mud, dirt, snow, rain and turf. 
-Listen to the roar of the crowd and other 
-authentic stadium sounds as your plays are 
-followed through. 
+Pick from 3 play modes: Pre-season, Season, or Custom Generated (editable) season. There are also 
+three skill levels: Rookie, Pro and Veteran.  You can design your own plays, customize your team, and 
+save your team's stats. True-to-life playing surfaces have an effect on how your team performs and 
+include grass, mud, dirt, snow, rain and turf. Listen to the roar of the crowd and other authentic 
+stadium sounds as your plays are followed through. 
  
  
 - TECHNICAL - 
@@ -2618,7 +1994,7 @@ Players : 1-2 Players
 Score : 2.6 
 Esrb : Kids to Adults 
 Other Systems : Genesis,SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/troy-aikman-nfl-football 
  
  
 $end
@@ -2629,24 +2005,16 @@ $<a href="http://www.mobygames.com/game/jaguar/ultra-vortek"</a>
 $bio
  
  
-Ultra Vortek (1995) (c) 1995 Beyond Games / Atari 
-Corporation 
+Ultra Vortek (1995) (c) 1995 Beyond Games / Atari Corporation 
  
-Civilization has fallen into a deep decline.  
-Gangs and warlords are gaining power and influence 
-all over the world.  Then out of nowhere, a 
-powerful being known as the Gaurdian appears with 
-a challenge.  Unless a warrior meets his 
-challenge, he will destroy the Earth.  So, 7 
-warriors from around the world fight to re-open 
-the Ultra Vortek and restore the Earth. 
+Civilization has fallen into a deep decline.  Gangs and warlords are gaining power and influence all 
+over the world.  Then out of nowhere, a powerful being known as the Gaurdian appears with a 
+challenge.  Unless a warrior meets his challenge, he will destroy the Earth.  So, 7 warriors from 
+around the world fight to re-open the Ultra Vortek and restore the Earth. 
  
-Ultra Vortek is a one-on-one fighting game similar 
-to Mortal Kombat.  Some of the fighters are 
-digitzed actors, other are stop motion or computer 
-animated.  You have at your control an array of 
-punches and kicks, and a large number of special 
-moves.  The game also features several "finishing 
+Ultra Vortek is a one-on-one fighting game similar to Mortal Kombat.  Some of the fighters are 
+digitzed actors, other are stop motion or computer animated.  You have at your control an array of 
+punches and kicks, and a large number of special moves.  The game also features several "finishing 
 moves" for each of the 7 warriors. 
  
  
@@ -2657,8 +2025,7 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 3.8 
 Esrb : Mature 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/ultra-vortek 
+SOURCE : http://www.mobygames.com/game/jaguar/ultra-vortek 
  
  
 $end
@@ -2669,24 +2036,17 @@ $<a href="http://www.mobygames.com/game/jaguar/val-disre-skiing-and-snowboarding
 $bio
  
  
-Val D'Isere Skiing & Snowboarding (1994) (c) 1994 
-Virtual Studio / Atari Corporation 
+Val D'Isere Skiing & Snowboarding (1994) (c) 1994 Virtual Studio / Atari Corporation 
  
-This is and skiing a snowboarding game that takes 
-place entirely at the French Val d'Isère resort.  
-Both sports are represented equally.  There are 
-three events:  downhill, slalom, and giant slalom. 
- There are also three game modes, free ride, 
-training, and competition.  Competition mode 
-provides a series of timed events in which to 
-compete leading up to a final timed event.  The 
-other two modes are self-explanatory. 
+This is and skiing a snowboarding game that takes place entirely at the French Val d'Isère resort.  
+Both sports are represented equally.  There are three events:  downhill, slalom, and giant slalom.  
+There are also three game modes, free ride, training, and competition.  Competition mode provides a 
+series of timed events in which to compete leading up to a final timed event.  The other two modes 
+are self-explanatory. 
  
-Game play is presented with scaled 2D sprites that 
-present a 3D effect, similar to many early racing 
-games.  Everything wooshes by at extremely high 
-speed, and winning requires the player to have 
-great reflexes. 
+Game play is presented with scaled 2D sprites that present a 3D effect, similar to many early racing 
+games.  Everything wooshes by at extremely high speed, and winning requires the player to have great 
+reflexes. 
  
  
 - TECHNICAL - 
@@ -2696,7 +2056,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-2 Players 
 Score : 2.5 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/val-disre-skiing-and-snowboarding 
  
  
 $end
@@ -2707,17 +2067,13 @@ $<a href="http://www.mobygames.com/game/jaguar/vid-grid"</a>
 $bio
  
  
-Vid Grid (c) 1995 High Voltage Software, Inc. / 
-Atari Corporation 
+Vid Grid (c) 1995 High Voltage Software, Inc. / Atari Corporation 
  
-Vid Grid is a simple puzzle game that takes place 
-on music video backdrops.  Your goal is to 
-re-arrange the jumbled up tiles of the video so 
-that they are in the correct spots and the video 
-can be viewed clearly. 
+Vid Grid is a simple puzzle game that takes place on music video backdrops.  Your goal is to 
+re-arrange the jumbled up tiles of the video so that they are in the correct spots and the video can 
+be viewed clearly. 
  
-The videos in Vid Grid are mostly from mid 90's 
-hard rock bands. They are: 
+The videos in Vid Grid are mostly from mid 90's hard rock bands. They are: 
  
 1. Aerosmith, "Cryin'" 
 2. Peter Gabriel, "Sledgehammer" 
@@ -2735,8 +2091,7 @@ hard rock bands. They are:
 Players : 1 Player 
 Score : 3.5 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/vid-grid 
+SOURCE : http://www.mobygames.com/game/jaguar/vid-grid 
  
  
 $end
@@ -2747,37 +2102,24 @@ $<a href="http://www.mobygames.com/game/jaguar/white-men-cant-jump"</a>
 $bio
  
  
-White Men Can't Jump (1995) (c) 1995 High Voltage 
-Software, Inc.|Trimark Interactive / Atari 
+White Men Can't Jump (1995) (c) 1995 High Voltage Software, Inc.|Trimark Interactive / Atari 
 Corporation 
  
-This is the game of basketball the way many people 
-learn to play it - in the city streets - with 
-loose rules and in various suburban locales. 
-Inspired by the 1992 film about high stakes street 
-basketball gambling, in this game you can wager 
-how much you want on each game. 
+This is the game of basketball the way many people learn to play it - in the city streets - with 
+loose rules and in various suburban locales. Inspired by the 1992 film about high stakes street 
+basketball gambling, in this game you can wager how much you want on each game. 
  
-The action is seen from the half court line, with 
-a screen view that pans and zooms to follow the 
-action. Aside from a goal tending penalty and the 
-need to clear the ball, anything goes. For 
-instance, steals are effected by shoving an 
-opponent and making a grab for the ball. 
+The action is seen from the half court line, with a screen view that pans and zooms to follow the 
+action. Aside from a goal tending penalty and the need to clear the ball, anything goes. For 
+instance, steals are effected by shoving an opponent and making a grab for the ball. 
  
-Your goal is to get enough money to enter, and 
-win, the tournament. If you make $5000, you 
-instantly get entered into the tournament. You 
-have the ability to save your game in this mode so 
-that you can come back later if you run short on 
-time and don't want to lose all your money. 
+Your goal is to get enough money to enter, and win, the tournament. If you make $5000, you instantly 
+get entered into the tournament. You have the ability to save your game in this mode so that you can 
+come back later if you run short on time and don't want to lose all your money. 
  
-Opt for a single game or the Slam City tournament, 
-while game options determine time limits, scoring 
-system, and control schemes. There are fifteen 
-teams to choose from, and up to four players can 
-get in on the action (with the Jaguar Team Tap 
-adapter included with the game). 
+Opt for a single game or the Slam City tournament, while game options determine time limits, scoring 
+system, and control schemes. There are fifteen teams to choose from, and up to four players can get 
+in on the action (with the Jaguar Team Tap adapter included with the game). 
  
  
 - TECHNICAL - 
@@ -2787,7 +2129,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-4 Players 
 Score : 1.1 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/white-men-cant-jump 
  
  
 $end
@@ -2798,33 +2140,22 @@ $<a href="http://www.mobygames.com/game/jaguar/wolfenstein-3d_"</a>
 $bio
  
  
-Wolfenstein 3D (1994) (c) 1994 id Software, Inc. / 
-Atari Corporation 
+Wolfenstein 3D (1994) (c) 1994 id Software, Inc. / Atari Corporation 
  
-id software's adaptation of their classic 
-first-person shooter Wolfenstein 3D to consoles is 
-not a straight port, but a remix with substantial 
-changes as well as new additions. 
+id software's adaptation of their classic first-person shooter Wolfenstein 3D to consoles is not a 
+straight port, but a remix with substantial changes as well as new additions. 
  
-While the basic gameplay of exploring levels, 
-shooting enemies, collecting treasures, keys and 
-power-ups remain the same, only half of the 
-original game's 60 levels have been retained. Each 
-of those 30 levels (grouped into six missions, 
-with two levels being secret ones) is a simplified 
-version of an original level. The end bosses for 
-the missions are taken from both Wolf3D as well as 
+While the basic gameplay of exploring levels, shooting enemies, collecting treasures, keys and 
+power-ups remain the same, only half of the original game's 60 levels have been retained. Each of 
+those 30 levels (grouped into six missions, with two levels being secret ones) is a simplified 
+version of an original level. The end bosses for the missions are taken from both Wolf3D as well as 
 its sequel, Spear of Destiny. 
  
-Other changes from the original include new 
-power-ups: an ammo box (taken from Spear of 
-Destiny) and backpack that increases the maximum 
-amount of ammo that can be carried. 
+Other changes from the original include new power-ups: an ammo box (taken from Spear of Destiny) and 
+backpack that increases the maximum amount of ammo that can be carried. 
  
-The original's weapons (knife, pistol, machine 
-gun, chaingun) all return, but there are also two 
-completely new tools of destruction: a flame 
-thrower and a rocket launcher. 
+The original's weapons (knife, pistol, machine gun, chaingun) all return, but there are also two 
+completely new tools of destruction: a flame thrower and a rocket launcher. 
  
  
 - TECHNICAL - 
@@ -2834,7 +2165,7 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 3.8 
 Other Systems : SNES 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/wolfenstein-3d_ 
  
  
 $end
@@ -2845,25 +2176,17 @@ $<a href="http://www.mobygames.com/game/jaguar/world-tour-racing"</a>
 $bio
  
  
-World Tour Racing (c) Jun, 1997 Teque Software 
-Development Ltd. / Atari Corporation|Telegames, 
-Inc. 
+World Tour Racing (c) Jun, 1997 Teque Software Development Ltd. / Atari Corporation|Telegames, Inc. 
  
-World Tour Racing is an F1-style racing game for 
-the Jaguar CD system.  You guide a very fast car 
-on road courses based on countries around the 
-world. 
+World Tour Racing is an F1-style racing game for the Jaguar CD system.  You guide a very fast car on 
+road courses based on countries around the world. 
  
-The graphics in World Tour Racing feature fully 3D 
-environments constructed with texture-mapped 
+The graphics in World Tour Racing feature fully 3D environments constructed with texture-mapped 
 polygons. 
  
-The various game modes include a championship, 
-single race, and arcade mode.  Championship mode 
-consists of a 16 race season.  Single race is 
-self-explanatory, and arcade mode is similar to 
-championship mode, except that advancement to the 
-next race is based whether or not you finish high 
+The various game modes include a championship, single race, and arcade mode.  Championship mode 
+consists of a 16 race season.  Single race is self-explanatory, and arcade mode is similar to 
+championship mode, except that advancement to the next race is based whether or not you finish high 
 enough in each race.. 
  
  
@@ -2873,7 +2196,7 @@ Genre : Racing / Driving
 Perspective : 1st-Person Perspective 
 Players : 1-2 Players 
 Score : 2.9 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/jaguar/world-tour-racing 
  
  
 $end
@@ -2884,20 +2207,14 @@ $<a href="http://www.mobygames.com/game/jaguar/worms"</a>
 $bio
  
  
-Worms (c) 1998 Team17 Software Limited / 
-Telegames, Inc. 
+Worms (c) 1998 Team17 Software Limited / Telegames, Inc. 
  
-Worms is a turn-based strategy game. It features 
-up to 4 teams of 4 worms, aiming to destroy the 
-others on a generated terrain. Each worm has 100 
-hit points, and dies when his hit points fall to 
-0. Upon death, a worm explodes, causing damage to 
-everyone around. 
+Worms is a turn-based strategy game. It features up to 4 teams of 4 worms, aiming to destroy the 
+others on a generated terrain. Each worm has 100 hit points, and dies when his hit points fall to 0. 
+Upon death, a worm explodes, causing damage to everyone around. 
  
-Gameplay is turn-based. Each turn, the player can 
-control one specific worm from his team. The worm 
-can crawl left and right or jump. However, there 
-is a time limit to make a move 
+Gameplay is turn-based. Each turn, the player can control one specific worm from his team. The worm 
+can crawl left and right or jump. However, there is a time limit to make a move 
  
  
 - TECHNICAL - 
@@ -2906,10 +2223,8 @@ Genre : Action|Strategy
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 3.4 
-Other Systems : Amiga,Amiga CD32,DOS,Game 
-Boy,Genesis,Macintosh,PlayStation,SEGA Saturn,SNES 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/worms 
+Other Systems : Amiga,Amiga CD32,DOS,Game Boy,Genesis,Macintosh,PlayStation,SEGA Saturn,SNES 
+SOURCE : http://www.mobygames.com/game/jaguar/worms 
  
  
 $end
@@ -2920,38 +2235,27 @@ $<a href="http://www.mobygames.com/game/jaguar/zero-5"</a>
 $bio
  
  
-Zero 5 (c) 1997 Caspian Software Ltd. / Telegames, 
-Inc. 
+Zero 5 (c) 1997 Caspian Software Ltd. / Telegames, Inc. 
  
-Zero 5 was one of the last Telegames releases for 
-the Jaguar, right before Worms. It is a wild 
-space-shooter, placing you in control of a small 
-and manuverable fighter craft, or a powerful 
+Zero 5 was one of the last Telegames releases for the Jaguar, right before Worms. It is a wild 
+space-shooter, placing you in control of a small and manuverable fighter craft, or a powerful 
 warship, depending upon which level you play. 
  
-Taking on the role of a pilot, you must defend the 
-earth from alien attack with dozens of missions 
-needed to succeed. Your tour of duty includes 
-travelling through deep space to meet enemy 
-convoys head on and shooting across asteroid and 
-planet surfaces taking out installations. 
+Taking on the role of a pilot, you must defend the earth from alien attack with dozens of missions 
+needed to succeed. Your tour of duty includes travelling through deep space to meet enemy convoys 
+head on and shooting across asteroid and planet surfaces taking out installations. 
  
 There are 3 different play modes: 
  
-1. HIT-PAK Mode - Somewhat like a variation on 
-   the Missle Command 3D VR mode. You are in a 
-   turret with four guns to blast everything in 
-   sight, including asteroids in several levels. 
-   No powerups make it more difficult. 
+1. HIT-PAK Mode - Somewhat like a variation on the Missle Command 3D VR mode. You are in a turret 
+   with four guns to blast everything in sight, including asteroids in several levels. No powerups 
+   make it more difficult. 
  
-2. BAMBAM Mode - Consists of piloting around in 
-   the fighter, shooting every object that moves, 
-   in 360 degrees. Includes power-ups for weapons, 
-   shields, and score. 
+2. BAMBAM Mode - Consists of piloting around in the fighter, shooting every object that moves, in 
+   360 degrees. Includes power-ups for weapons, shields, and score. 
  
-3. TRENCH Mode - Star Wars style shooting in 
-   your BAMBAM fighter, you run along a trench. 
-   Also includes power-ups. 
+3. TRENCH Mode - Star Wars style shooting in your BAMBAM fighter, you run along a trench. Also 
+   includes power-ups. 
  
  
 - TECHNICAL - 
@@ -2961,8 +2265,7 @@ Perspective : 3rd-Person Perspective
 Players : 1-2 Players 
 Score : 3.4 
 Other Systems : Atari ST 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/zero-5 
+SOURCE : http://www.mobygames.com/game/jaguar/zero-5 
  
  
 $end
@@ -2973,32 +2276,20 @@ $<a href="http://www.mobygames.com/game/jaguar/zool-2"</a>
 $bio
  
  
-Zool 2 (1994) (c) 1994 Gremlin Graphics Software 
-Ltd. / Atari Corporation 
+Zool 2 (1994) (c) 1994 Gremlin Graphics Software Ltd. / Atari Corporation 
  
-The sequel to Zool sees him take on the bad guys 
-Mental Block and Krool across 15 levels. 
+The sequel to Zool sees him take on the bad guys Mental Block and Krool across 15 levels. 
  
-Zool 2 is a platform game where you control the 
-titular "Ninja of the Nth Dimension" (or his 
-girlfriend, Zooz, who can complete each level in a 
-slightly different way) as he rampages through a 
-variety of levels, collecting countless tasty 
-treats, shooting any enemies that he encounters 
-and finding bonuses (there's a variety of special 
-power-ups Zool can find - for example, a bomb that 
-follows him and can be blown up at any time to 
-remove on-screen enemies, or a temporary 
-invulnerability). New to the sequel is Zool's 
-ability to scale walls and his new spinning 
-attacks. 
+Zool 2 is a platform game where you control the titular "Ninja of the Nth Dimension" (or his 
+girlfriend, Zooz, who can complete each level in a slightly different way) as he rampages through a 
+variety of levels, collecting countless tasty treats, shooting any enemies that he encounters and 
+finding bonuses (there's a variety of special power-ups Zool can find - for example, a bomb that 
+follows him and can be blown up at any time to remove on-screen enemies, or a temporary 
+invulnerability). New to the sequel is Zool's ability to scale walls and his new spinning attacks. 
  
-On each level you have to collect a certain amount 
-of the featured fruit within an allocated time 
-limit, and then find the exit across the 
-multi-directionally-scrolling levels. There are 
-lots of hidden areas to see, including a bonus 
-Breakout game starring Zool's pet 2-headed dog. 
+On each level you have to collect a certain amount of the featured fruit within an allocated time 
+limit, and then find the exit across the multi-directionally-scrolling levels. There are lots of 
+hidden areas to see, including a bonus Breakout game starring Zool's pet 2-headed dog. 
  
  
 - TECHNICAL - 
@@ -3009,8 +2300,7 @@ Players : 1-2 Players
 Score : 2.6 
 Esrb : Kids to Adults 
 Other Systems : Amiga,Amiga CD32,DOS 
-SOURCE : 
-http://www.mobygames.com/game/jaguar/zool-2 
+SOURCE : http://www.mobygames.com/game/jaguar/zool-2 
  
  
 $end
@@ -3021,23 +2311,15 @@ $<a href="http://www.mobygames.com/game/jaguar/zoop"</a>
 $bio
  
  
-Zoop! (1996) (c) Jan, 1996 Hookstone Ltd. / Atari 
-Corporation 
+Zoop! (1996) (c) Jan, 1996 Hookstone Ltd. / Atari Corporation 
  
-Fast-paced action-puzzle game where the player 
-eliminates colored shapes that are approaching his 
-alter ego, another colored shape, before they 
-reach the top, ala Tetris. 
+Fast-paced action-puzzle game where the player eliminates colored shapes that are approaching his 
+alter ego, another colored shape, before they reach the top, ala Tetris. 
  
-In order to eliminate the other shapes, you must 
-point your piece at it and 'fire'. If the shape is 
-the same color as your piece, the shape is 
-eliminated, as well as all of the shapes of the 
-same color behind it, until your piece hits a 
-piece of a different color. If the shape is of a 
-different color, or it is hit when collecting a 
-line of similar shapes, your piece exchanges 
-colors with the shape. 
+In order to eliminate the other shapes, you must point your piece at it and 'fire'. If the shape is 
+the same color as your piece, the shape is eliminated, as well as all of the shapes of the same color 
+behind it, until your piece hits a piece of a different color. If the shape is of a different color, 
+or it is hit when collecting a line of similar shapes, your piece exchanges colors with the shape. 
  
  
 - TECHNICAL - 
@@ -3046,9 +2328,7 @@ Genre : Action|Strategy
 Perspective : Top-Down 
 Score : 3.4 
 Esrb : Kids to Adults 
-Other Systems : DOS,Game Boy,Game 
-Gear,Genesis,Macintosh,PlayStation,SEGA 
-Saturn,SNES 
+Other Systems : DOS,Game Boy,Game Gear,Genesis,Macintosh,PlayStation,SEGA Saturn,SNES 
 SOURCE : http://www.mobygames.com/game/jaguar/zoop 
  
  

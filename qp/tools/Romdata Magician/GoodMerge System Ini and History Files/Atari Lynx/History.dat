@@ -2,8 +2,8 @@
 ## (c) 2011 Matt McLemore, some rights reserved.
 ## All names used are trademarked by their respective trademark holders.
 ##
-## Revision: 1.00 - 10-11-2011
-## File size: 90931 bytes / Lines: 3169
+## Revision: 1.00 - 10-05-2011
+## File size: 90583 bytes / Lines: 2420
 ##
 ## Created by:
 ##   Matt McLemore - AKA Tempest
@@ -31,13 +31,10 @@ $<a href="http://www.mobygames.com/game/lynx/alpine-games"</a>
 $bio
  
  
-Alpine Games (c) Jan 25, 2004 Duranik / Telegames, 
-Inc. 
+Alpine Games (c) Jan 25, 2004 Duranik / Telegames, Inc. 
  
-This is a winter sports game for the Atari Lynx. 
-It consists of nine games. They can be played 
-individually or in a series as a competition. The 
-games are: 
+This is a winter sports game for the Atari Lynx. It consists of nine games. They can be played 
+individually or in a series as a competition. The games are: 
  
 1. Biathlon 
 2. Snowboard Rush 
@@ -56,8 +53,7 @@ Genre : Action|Sports
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.9 
-SOURCE : 
-http://www.mobygames.com/game/lynx/alpine-games 
+SOURCE : http://www.mobygames.com/game/lynx/alpine-games 
  
  
 $end
@@ -68,24 +64,16 @@ $<a href="http://www.mobygames.com/game/lynx/apb"</a>
 $bio
  
  
-APB - All Points Bulletin (1990) (c) 1991 Atari 
-Games Corporation / Atari Corporation|Tengen Inc. 
+APB - All Points Bulletin (1990) (c) 1991 Atari Games Corporation / Atari Corporation|Tengen Inc. 
  
-You are police officer Bob, whose aim is to 
-apprehend a certain quota of criminals 
-(litterbugs, speeders and the like) each day. This 
-is done by chasing them and sounding your siren at 
-them - in some cases they will need ramming off 
-the road.  There are also hardened criminals to 
-catch - if you can get one of these to confess, 
-your day's work is considered done. 
+You are police officer Bob, whose aim is to apprehend a certain quota of criminals (litterbugs, 
+speeders and the like) each day. This is done by chasing them and sounding your siren at them - in 
+some cases they will need ramming off the road.  There are also hardened criminals to catch - if you 
+can get one of these to confess, your day's work is considered done. 
  
-The game's action is presented with an overhead 
-view of your squad car. Car upgrades are 
-available, to be brought from your reward money. 
-You earn Demerits by crashing, wrongly arresting 
-innocents, or failing to meet your quota. Too many 
-demerits and it is game over. 
+The game's action is presented with an overhead view of your squad car. Car upgrades are available, 
+to be brought from your reward money. You earn Demerits by crashing, wrongly arresting innocents, or 
+failing to meet your quota. Too many demerits and it is game over. 
  
  
 - TECHNICAL - 
@@ -94,8 +82,7 @@ Genre : Action|Racing / Driving
 Perspective : Top-Down 
 Players : 1 Player 
 Score : 3.3 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,ZX Spectrum 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/apb 
  
  
@@ -107,23 +94,15 @@ $<a href="http://www.mobygames.com/game/lynx/awesome-golf"</a>
 $bio
  
  
-Awesome Golf (1991) (c) 1991 Hand Made Software, 
-Ltd. / Atari Corporation 
+Awesome Golf (1991) (c) 1991 Hand Made Software, Ltd. / Atari Corporation 
  
-Awesome Golf is as the name suggests, a golf 
-simulator. There are 3 courses to play one in the 
-U.K one in the U.S and the third one in Japan. The 
-gameplay involves you lining up your shot via an 
-overhead view which when set up switches to a 
-third person view. Whilst in this view you need to 
-swing the club and stop it at the desired power 
-and then stop it on the correct symbol to get the 
-perfect hit. If you don't get it right you will 
-either miss the ball or hit the earth. There are 
-14 clubs at your disposal, 8 irons, 3 woods 2 
-wedges and a putter which are selected by moving 
-the hand cursor over you Golf bag and selecting 
-the desired club. 
+Awesome Golf is as the name suggests, a golf simulator. There are 3 courses to play one in the U.K 
+one in the U.S and the third one in Japan. The gameplay involves you lining up your shot via an 
+overhead view which when set up switches to a third person view. Whilst in this view you need to 
+swing the club and stop it at the desired power and then stop it on the correct symbol to get the 
+perfect hit. If you don't get it right you will either miss the ball or hit the earth. There are 14 
+clubs at your disposal, 8 irons, 3 woods 2 wedges and a putter which are selected by moving the hand 
+cursor over you Golf bag and selecting the desired club. 
  
  
 - TECHNICAL - 
@@ -131,8 +110,7 @@ the desired club.
 Genre : Sports 
 Perspective : 3rd-Person Perspective 
 Players : 1-4 Players 
-SOURCE : 
-http://www.mobygames.com/game/lynx/awesome-golf 
+SOURCE : http://www.mobygames.com/game/lynx/awesome-golf 
  
  
 $end
@@ -143,19 +121,14 @@ $<a href="http://www.mobygames.com/game/lynx/basketbrawl"</a>
 $bio
  
  
-Basketbrawl (1992) (c) 1992 Atari Corporation / 
-Atari Corporation 
+Basketbrawl (1992) (c) 1992 Atari Corporation / Atari Corporation 
  
-In a desperate attempt to stop inner-city gang 
-wars, the city leaders organized a basketball 
-league.  The league is scheduled to play on three 
-courts: a street, a junkyard, and a rooftop.  The 
-mayor figured that a friendly game of hoops would 
-be a much more peaceful way to settle disputes. He 
-was wrong. 
+In a desperate attempt to stop inner-city gang wars, the city leaders organized a basketball league.  
+The league is scheduled to play on three courts: a street, a junkyard, and a rooftop.  The mayor 
+figured that a friendly game of hoops would be a much more peaceful way to settle disputes. He was 
+wrong. 
  
-You can choose 1-on-1 or 2-on-2 game modes. There 
-are six characters to choose from (ten in Atari 
+You can choose 1-on-1 or 2-on-2 game modes. There are six characters to choose from (ten in Atari 
 Lynx version) 
  
  
@@ -165,8 +138,7 @@ Genre : Sports
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Other Systems : Atari 7800 
-SOURCE : 
-http://www.mobygames.com/game/lynx/basketbrawl 
+SOURCE : http://www.mobygames.com/game/lynx/basketbrawl 
  
  
 $end
@@ -177,26 +149,18 @@ $<a href="http://www.mobygames.com/game/lynx/batman-returns__"</a>
 $bio
  
  
-Batman Returns (1992) (c) 1992 Atari Corporation / 
-Atari Corporation 
+Batman Returns (1992) (c) 1992 Atari Corporation / Atari Corporation 
  
-Atari themselves adapted the 1992 superhero sequel 
-Batman Returns for their Lynx handheld as a 
+Atari themselves adapted the 1992 superhero sequel Batman Returns for their Lynx handheld as a 
 side-scrolling beat'em'up. 
  
-Batman must move through four levels on his quest 
-to stop the Penguin and Catwoman. Enemies trying 
-to stop him include circus clowns on the streets, 
-policemen (whom Catwoman put on his trail) on the 
-roofs of Gotham City, and penguin commandos in the 
-sewers and the Penguin's lair. 
-Batman can beat them up with his fists or destroy 
-them using Batarangs and acid vials (which must be 
-collected first). Several of the levels end in 
-boss encounters with the two main villains, while 
-in the last level, Batman must also save 
-industrialist Max Shreck from the Penguin's wrath 
-before finishing him off. 
+Batman must move through four levels on his quest to stop the Penguin and Catwoman. Enemies trying to 
+stop him include circus clowns on the streets, policemen (whom Catwoman put on his trail) on the 
+roofs of Gotham City, and penguin commandos in the sewers and the Penguin's lair. 
+Batman can beat them up with his fists or destroy them using Batarangs and acid vials (which must be 
+collected first). Several of the levels end in boss encounters with the two main villains, while in 
+the last level, Batman must also save industrialist Max Shreck from the Penguin's wrath before 
+finishing him off. 
  
  
 - TECHNICAL - 
@@ -205,7 +169,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 2.7 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/batman-returns__ 
  
  
 $end
@@ -216,25 +180,16 @@ $<a href="http://www.mobygames.com/game/lynx/battlewheels"</a>
 $bio
  
  
-Battle Wheels (1993) (Beyond Games) (c) 1993 
-Beyond Games / Atari Corporation 
+Battle Wheels (1993) (Beyond Games) (c) 1993 Beyond Games / Atari Corporation 
  
-The year is 2019, and the world is bored with 
-conventional entertainment.  Enter the world of 
-BattleWheels, where contestants fight in 
-post-apocalyptic deserts and dead cities in the 
-most violent destruction derby ever.  At your 
-disposal are machine guns, flame throwers, 
-missiles, mines, and even paint (to obstruct 
-someone's view).  And if you survive your car 
-getting destroyed, you can hoof it and try to 
-wreak as much carnage as possible before becoming 
-roadkill.  You can buy a pre-made car, or 
-customize your own car with different levels of 
-engine power, suspension, and armor. 
+The year is 2019, and the world is bored with conventional entertainment.  Enter the world of 
+BattleWheels, where contestants fight in post-apocalyptic deserts and dead cities in the most violent 
+destruction derby ever.  At your disposal are machine guns, flame throwers, missiles, mines, and even 
+paint (to obstruct someone's view).  And if you survive your car getting destroyed, you can hoof it 
+and try to wreak as much carnage as possible before becoming roadkill.  You can buy a pre-made car, 
+or customize your own car with different levels of engine power, suspension, and armor. 
  
-BattleWheels can be comlynxed up to 6 simultaneous 
-players. 
+BattleWheels can be comlynxed up to 6 simultaneous players. 
  
  
 - TECHNICAL - 
@@ -243,8 +198,7 @@ Genre : Action|Racing / Driving
 Perspective : 1st-Person Perspective 
 Players : 1-6 Players 
 Score : 4.2 
-SOURCE : 
-http://www.mobygames.com/game/lynx/battlewheels 
+SOURCE : http://www.mobygames.com/game/lynx/battlewheels 
  
  
 $end
@@ -255,24 +209,15 @@ $<a href="http://www.mobygames.com/game/lynx/battlezone-2000"</a>
 $bio
  
  
-Battlezone 2000 (1996) (c) 1995 Hand Made 
-Software, Ltd. / Atari Corporation 
+Battlezone 2000 (1996) (c) 1995 Hand Made Software, Ltd. / Atari Corporation 
  
-In this game you play the role of a tank commander 
-who is fighting in a future war in the 21st 
-century. The game is an update on the classic 
-arcade game Battlezone and stays true to the 
-original in terms of gameplay. The gameplay 
-involves you driving round a landscape destroying 
-enemy tanks and U.F.O.s  whilst trying not to run 
-out of fuel and also not getting destroyed 
-yourself though luckily there are fuel pick-ups 
-and power-ups to collect. You can also use the 
-credits earned for completing missions to upgrade 
-your tank. There are also a few different tanks to 
-choose from including the Rhino which is heavily 
-armoured but runs out of fuel faster than the 
-other tanks. 
+In this game you play the role of a tank commander who is fighting in a future war in the 21st 
+century. The game is an update on the classic arcade game Battlezone and stays true to the original 
+in terms of gameplay. The gameplay involves you driving round a landscape destroying enemy tanks and 
+U.F.O.s  whilst trying not to run out of fuel and also not getting destroyed yourself though luckily 
+there are fuel pick-ups and power-ups to collect. You can also use the credits earned for completing 
+missions to upgrade your tank. There are also a few different tanks to choose from including the 
+Rhino which is heavily armoured but runs out of fuel faster than the other tanks. 
  
  
 - TECHNICAL - 
@@ -281,8 +226,7 @@ Genre : Action
 Perspective : 1st-Person Perspective 
 Players : 1-4 Players 
 Esrb : Kids to Adults 
-SOURCE : 
-http://www.mobygames.com/game/lynx/battlezone-2000 
+SOURCE : http://www.mobygames.com/game/lynx/battlezone-2000 
  
  
 $end
@@ -293,45 +237,28 @@ $<a href="http://www.mobygames.com/game/lynx/bill-teds-excellent-adventure_"</a>
 $bio
  
  
-Bill & Ted's Excellent Adventure (1991) (c) 1991 
-Atari Corporation / Atari Corporation 
+Bill & Ted's Excellent Adventure (1991) (c) 1991 Atari Corporation / Atari Corporation 
  
-The Lynx title based on the Keanu Reeves/Alex 
-Winter film franchise actually takes place after 
-the second film, Bill and Ted's Bogus Journey. Out 
-for revenge after being humiliated by the 
-high-school duo, Death kidnaps their "medieval 
-babe" girlfriends from the first film, and drags 
-them throughout history.  Luckily, the girls are 
-able to leave behind pages of the band's latest 
-song as a trail for Bill and Ted to follow. 
+The Lynx title based on the Keanu Reeves/Alex Winter film franchise actually takes place after the 
+second film, Bill and Ted's Bogus Journey. Out for revenge after being humiliated by the high-school 
+duo, Death kidnaps their "medieval babe" girlfriends from the first film, and drags them throughout 
+history.  Luckily, the girls are able to leave behind pages of the band's latest song as a trail for 
+Bill and Ted to follow. 
  
-Playing as either Bill or Ted (with a friend able 
-to take control of the other character over 
-ComLynx), the player must search historical 
-periods in an overhead perspective and collect 
-enough musical notes to open travel to a new area. 
-Along the way, they can encounter historical 
-figures who will offer assistance in return for a 
-favor.  Bad guys do populate the levels, but can 
-be pacified with a rippin' guitar solo.  If Bill 
-or Ted are defeated, they simply reappear back at 
-the last checkpoint. 
+Playing as either Bill or Ted (with a friend able to take control of the other character over 
+ComLynx), the player must search historical periods in an overhead perspective and collect enough 
+musical notes to open travel to a new area. Along the way, they can encounter historical figures who 
+will offer assistance in return for a favor.  Bad guys do populate the levels, but can be pacified 
+with a rippin' guitar solo.  If Bill or Ted are defeated, they simply reappear back at the last 
+checkpoint. 
  
-Other items can be found and collected in an 
-inventory. The Lynx title makes use of the series' 
-interesting take on the time continuum, allowing 
-the player to leave items for themselves in the 
-past to collect and use in the future.  Likewise, 
-if the player happens upon a sudden fortuitous 
-item that "they" left, they must remember to go 
-and leave the item in the past themselves to avoid 
-creating a time paradox. This quirky view of time 
-forms the basis of many of the game's puzzles. 
+Other items can be found and collected in an inventory. The Lynx title makes use of the series' 
+interesting take on the time continuum, allowing the player to leave items for themselves in the past 
+to collect and use in the future.  Likewise, if the player happens upon a sudden fortuitous item that 
+"they" left, they must remember to go and leave the item in the past themselves to avoid creating a 
+time paradox. This quirky view of time forms the basis of many of the game's puzzles. 
  
-A password system is constantly updated (viewable 
-at the pause screen) to save the player's 
-progress. 
+A password system is constantly updated (viewable at the pause screen) to save the player's progress. 
  
  
 - TECHNICAL - 
@@ -339,7 +266,7 @@ progress.
 Genre : Adventure 
 Perspective : Top-Down 
 Players : 1-2 Players 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/bill-teds-excellent-adventure_ 
  
  
 $end
@@ -350,25 +277,19 @@ $<a href="http://www.mobygames.com/game/lynx/blockout"</a>
 $bio
  
  
-Block Out (1990) (c) 1990 P.Z.Karen Co. 
-Development Group / Atari Corporation 
+Block Out (1990) (c) 1990 P.Z.Karen Co. Development Group / Atari Corporation 
  
-Blockout is a Tetris clone with an added twist: 
-it's in 3D. You can rotate the blocks in 3D in 
-order to fit them into the pit they are being 
-guided into. Advanced users can play this game 
-with odd three-dimensional pieces, or change the 
-size of the pit, for depth of between 6 and 18 
-piles, and width and length of between 3 and 7. 
+Blockout is a Tetris clone with an added twist: it's in 3D. You can rotate the blocks in 3D in order 
+to fit them into the pit they are being guided into. Advanced users can play this game with odd 
+three-dimensional pieces, or change the size of the pit, for depth of between 6 and 18 piles, and 
+width and length of between 3 and 7. 
  
  
 - TECHNICAL - 
  
 Players : 1-2 Players 
-Other Systems : Amiga,Apple IIgs,Atari 
-ST,Commodore 64,DOS,Genesis,Macintosh 
-SOURCE : 
-http://www.mobygames.com/game/lynx/blockout 
+Other Systems : Amiga,Apple IIgs,Atari ST,Commodore 64,DOS,Genesis,Macintosh 
+SOURCE : http://www.mobygames.com/game/lynx/blockout 
  
  
 $end
@@ -379,23 +300,16 @@ $<a href="http://www.mobygames.com/game/lynx/blue-lightning"</a>
 $bio
  
  
-Blue Lightning (1989) (c) 1989 Epyx, Inc. / Atari 
-Corporation 
+Blue Lightning (1989) (c) 1989 Epyx, Inc. / Atari Corporation 
  
-The insanely evil General Drako is spreading his 
-own special blend of spite and chaos around the 
-globe.  You are a top fighter pilot for the UN's 
-Blue Lightning squad.  You have to travel from 
-continent to continent, and end Drako's plans at 
-each stop using your awesome flight skills. 
+The insanely evil General Drako is spreading his own special blend of spite and chaos around the 
+globe.  You are a top fighter pilot for the UN's Blue Lightning squad.  You have to travel from 
+continent to continent, and end Drako's plans at each stop using your awesome flight skills. 
  
-Blue Lightning is a 3D flight game featuring 7 
-real-life fighter jets.  There are several types 
-of missions, including dogfights, ground targets, 
-and escorts. Your arsenal consists of various 
-cannons, missiles, and special bombs.  The game 
-can be played either from a behind-the-plane 
-perspective, or an in-cockpit perspective. 
+Blue Lightning is a 3D flight game featuring 7 real-life fighter jets.  There are several types of 
+missions, including dogfights, ground targets, and escorts. Your arsenal consists of various cannons, 
+missiles, and special bombs.  The game can be played either from a behind-the-plane perspective, or 
+an in-cockpit perspective. 
  
  
 - TECHNICAL - 
@@ -405,8 +319,7 @@ Perspective : 1st-Person Perspective
 Players : 1 Player 
 Score : 4.0 
 Other Systems : Jaguar 
-SOURCE : 
-http://www.mobygames.com/game/lynx/blue-lightning 
+SOURCE : http://www.mobygames.com/game/lynx/blue-lightning 
  
  
 $end
@@ -417,36 +330,22 @@ $<a href="http://www.mobygames.com/game/lynx/bubble-trouble"</a>
 $bio
  
  
-Bubble Trouble (1997) (Telegames) (c) 1993 Lore 
-Games Ltd. / Telegames, Inc. 
+Bubble Trouble (1997) (Telegames) (c) 1993 Lore Games Ltd. / Telegames, Inc. 
  
-You are Travis, a scientist doing experiments with 
-dense matter for the creation of artificial black 
-holes for interstellar travel. While testing a 
-piece of equipment, you are transported into a 
-bubble world. Fortunately, a friendly denizen 
-decides to help you. You must locate the correct 
-type of radioactive particles to move from world 
-to world and finally home, before the hostile 
-denizens of these worlds burst your bubble. 
+You are Travis, a scientist doing experiments with dense matter for the creation of artificial black 
+holes for interstellar travel. While testing a piece of equipment, you are transported into a bubble 
+world. Fortunately, a friendly denizen decides to help you. You must locate the correct type of 
+radioactive particles to move from world to world and finally home, before the hostile denizens of 
+these worlds burst your bubble. 
  
-You move your bubble by pushing in the desired 
-direction. Be advised that you do not stop easily 
-and can bounce out of control if you are not 
-careful. Pushing the A button fires a bubble shot 
-that will ricochet around. You can use this action 
-to bounce shots at enemies that are around a 
-corner. Pressing B drops a bubble bomb straight 
-down. Pressing Option 1 switches options on the 
-screen, including the suicidal "Burst!!!", that 
-are then activated by pressing Option 2. The one 
-you will use most is "Use scanner". This will 
-bring up the scanner that looks like a radar 
-screen and will show you the approximate location 
-of your needed particles. Once you locate and 
-gather all the particles needed in the level, you 
-move on to the next level. After you finish five 
-levels, you win the game. 
+You move your bubble by pushing in the desired direction. Be advised that you do not stop easily and 
+can bounce out of control if you are not careful. Pushing the A button fires a bubble shot that will 
+ricochet around. You can use this action to bounce shots at enemies that are around a corner. 
+Pressing B drops a bubble bomb straight down. Pressing Option 1 switches options on the screen, 
+including the suicidal "Burst!!!", that are then activated by pressing Option 2. The one you will use 
+most is "Use scanner". This will bring up the scanner that looks like a radar screen and will show 
+you the approximate location of your needed particles. Once you locate and gather all the particles 
+needed in the level, you move on to the next level. After you finish five levels, you win the game. 
  
  
 - TECHNICAL - 
@@ -454,8 +353,7 @@ levels, you win the game.
 Genre : Action 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/lynx/bubble-trouble 
+SOURCE : http://www.mobygames.com/game/lynx/bubble-trouble 
  
  
 $end
@@ -466,22 +364,15 @@ $<a href="http://www.mobygames.com/game/lynx/california-games"</a>
 $bio
  
  
-California Games (1991) (c) 1989 Epyx, Inc. / 
-Atari Corporation 
+California Games (1991) (c) 1989 Epyx, Inc. / Atari Corporation 
  
-California Games was the original "Extreme Games" 
-– what today's generation might call "X-Games in 
-the sun".  Players can select sponsors (absent in 
-some versions) and compete in events such as 
-skateboarding, footbag, surfing, roller skating, 
-flying disc (frisbee) and BMX.  The surfing event 
-is ranked by judges, which give a score to help 
-the players improve their routine. 
+California Games was the original "Extreme Games" – what today's generation might call "X-Games in 
+the sun".  Players can select sponsors (absent in some versions) and compete in events such as 
+skateboarding, footbag, surfing, roller skating, flying disc (frisbee) and BMX.  The surfing event is 
+ranked by judges, which give a score to help the players improve their routine. 
  
-The Atari versions (2600 and Lynx) of the game 
-omit the flying disc and roller skating events, 
-while the Genesis version omits only the flying 
-disc event. 
+The Atari versions (2600 and Lynx) of the game omit the flying disc and roller skating events, while 
+the Genesis version omits only the flying disc event. 
  
  
 - TECHNICAL - 
@@ -490,11 +381,9 @@ Genre : Sports
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 3.8 
-Other Systems : Amiga,Amstrad CPC,Apple II,Apple 
-IIgs,Atari 2600,Atari ST,Commodore 
-64,DOS,Genesis,J2ME,MSX,NES,SEGA Master 
-System,Wii,ZX Spectrum 
-SOURCE : 
+Other Systems : Amiga,Amstrad CPC,Apple II,Apple IIgs,Atari 2600,Atari ST,Commodore 
+64,DOS,Genesis,J2ME,MSX,NES,SEGA Master System,Wii,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/california-games 
  
  
 $end
@@ -505,19 +394,13 @@ $<a href="http://www.mobygames.com/game/lynx/checkered-flag"</a>
 $bio
  
  
-Checkered Flag (1991) (c) 1991 Atari Corporation / 
-Atari Corporation 
+Checkered Flag (1991) (c) 1991 Atari Corporation / Atari Corporation 
  
-Checkered Flag for the Jaguar is a 3D F1-style 
-racing game. The racing game staples are here: 
-single race, practice, and tournament. You can 
-choose to set up a variety of options for each 
-race, also.  You can choose various weather 
-conditions.  Or, you can set up your car to change 
-it's handling characteristics.  There are 10 
-different tracks on which to race, each with a 
-different theme.  Some take place on sunny 
-beaches, others take place in the arctic. 
+Checkered Flag for the Jaguar is a 3D F1-style racing game. The racing game staples are here: single 
+race, practice, and tournament. You can choose to set up a variety of options for each race, also.  
+You can choose various weather conditions.  Or, you can set up your car to change it's handling 
+characteristics.  There are 10 different tracks on which to race, each with a different theme.  Some 
+take place on sunny beaches, others take place in the arctic. 
  
  
 - TECHNICAL - 
@@ -527,8 +410,7 @@ Perspective : 1st-Person Perspective
 Players : 1-6 Players 
 Score : 5.0 
 Other Systems : Jaguar 
-SOURCE : 
-http://www.mobygames.com/game/lynx/checkered-flag 
+SOURCE : http://www.mobygames.com/game/lynx/checkered-flag 
  
  
 $end
@@ -539,22 +421,14 @@ $<a href="http://www.mobygames.com/game/lynx/chips-challenge"</a>
 $bio
  
  
-Chip's Challenge (1989) (c) 1989 Epyx, Inc. / 
-Atari Corporation 
+Chip's Challenge (1989) (c) 1989 Epyx, Inc. / Atari Corporation 
  
-Nerdy Chip desperately wants to join the "Bit 
-Busters" computer club, led by Melinda the Mental 
-Marvel.  However, before she'll let him in, he 
-must prove his intelligence by passing the 
-initiation test.  149 increasingly difficult 
-levels, including a few hidden ones, await Chip in 
-this tile-based puzzle game.  Use tools such as 
-keys, and special shoes to bypass obstacles.  
-Manipulate switches to and use dirt blocks to 
-build bridges across waterways.  Avoid enemy 
-creatures, grab all the computer chips in the 
-level, and hurry to the exit: On top of everything 
-else, there's a time limit! 
+Nerdy Chip desperately wants to join the "Bit Busters" computer club, led by Melinda the Mental 
+Marvel.  However, before she'll let him in, he must prove his intelligence by passing the initiation 
+test.  149 increasingly difficult levels, including a few hidden ones, await Chip in this tile-based 
+puzzle game.  Use tools such as keys, and special shoes to bypass obstacles.  Manipulate switches to 
+and use dirt blocks to build bridges across waterways.  Avoid enemy creatures, grab all the computer 
+chips in the level, and hurry to the exit: On top of everything else, there's a time limit! 
  
  
 - TECHNICAL - 
@@ -563,10 +437,8 @@ Genre : Strategy
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.6 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,Windows 3.x,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/chips-challenge 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,Windows 3.x,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/chips-challenge 
  
  
 $end
@@ -577,11 +449,9 @@ $<a href="http://www.mobygames.com/game/lynx/crystal-mines-ii"</a>
 $bio
  
  
-Crystal Mines II (1990) (c) 1991 Color Dreams, 
-Inc. / Atari Corporation 
+Crystal Mines II (1990) (c) 1991 Color Dreams, Inc. / Atari Corporation 
  
-Crystal Mines II is an update of the gameplay in 
-its predecessor 
+Crystal Mines II is an update of the gameplay in its predecessor 
  
  
 - TECHNICAL - 
@@ -590,7 +460,7 @@ Genre : Action|Strategy
 Perspective : Top-Down 
 Players : 1 Player 
 Score : 4.8 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/crystal-mines-ii 
  
  
 $end
@@ -601,15 +471,12 @@ $<a href="http://www.mobygames.com/game/lynx/crystal-mines-ii-buried-treasure"</
 $bio
  
  
-Crystal Mines II: Buried Treasure (c) 2003 Color 
-Dreams, Inc.|Songbird Productions / Songbird 
+Crystal Mines II: Buried Treasure (c) 2003 Color Dreams, Inc.|Songbird Productions / Songbird 
 Productions 
  
-This game contains the original one-hundred 
-eighty-one levels of the game Crystal Mines II 
-plus an additional one-hundred twenty-five new 
-levels that were created using the Crystal Mines 
-II: Buried Treasure Expansion Pack. 
+This game contains the original one-hundred eighty-one levels of the game Crystal Mines II plus an 
+additional one-hundred twenty-five new levels that were created using the Crystal Mines II: Buried 
+Treasure Expansion Pack. 
  
  
 - TECHNICAL - 
@@ -617,7 +484,7 @@ II: Buried Treasure Expansion Pack.
 Genre : Action|Strategy 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/crystal-mines-ii-buried-treasure 
  
  
 $end
@@ -628,40 +495,27 @@ $<a href="http://www.mobygames.com/game/lynx/cyberball"</a>
 $bio
  
  
-Tournament Cyberball 2072 (1991) (c) 1991 Atari 
-Games Corporation / Atari Corporation|Tengen Inc. 
+Tournament Cyberball 2072 (1991) (c) 1991 Atari Games Corporation / Atari Corporation|Tengen Inc. 
  
-After American Football players started cheating 
-by using bionic parts, the game was forced to 
-change its rules. By 2022, the game was played not 
-by humans, but two teams of seven robots. To spice 
-things up, the usual pig skin ball was replaced 
-with a 350 pound bomb. 
+After American Football players started cheating by using bionic parts, the game was forced to change 
+its rules. By 2022, the game was played not by humans, but two teams of seven robots. To spice things 
+up, the usual pig skin ball was replaced with a 350 pound bomb. 
  
-Cyberball brings this fast and furious action to 
-life. Gameplay is essentially the same as the real 
-sport, although the 'downs' are replaced by the 
-bomb's heat gradually increasing towards 
-'critical'. After this it will explode and 
-possession will be swapped. This is prevented when 
-you cross the 50-yard line, lose possession or 
-score a touchdown, in which cases it resets to 
-'cool'. Field goals and punts are not featured - 
-the only kick is the initial kick-off you receive. 
+Cyberball brings this fast and furious action to life. Gameplay is essentially the same as the real 
+sport, although the 'downs' are replaced by the bomb's heat gradually increasing towards 'critical'. 
+After this it will explode and possession will be swapped. This is prevented when you cross the 
+50-yard line, lose possession or score a touchdown, in which cases it resets to 'cool'. Field goals 
+and punts are not featured - the only kick is the initial kick-off you receive. 
  
-Control passes from the quarterback (thrower) to 
-the intended catcher as soon as a pass is 
-released. The two-player game is co-operative - on 
-offense one player passes and the other receives 
+Control passes from the quarterback (thrower) to the intended catcher as soon as a pass is released. 
+The two-player game is co-operative - on offense one player passes and the other receives 
  
  
 - TECHNICAL - 
  
 Players : 1-4 Players 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,Genesis,NES,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/cyberball 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,Genesis,NES,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/cyberball 
  
  
 $end
@@ -672,25 +526,17 @@ $<a href="http://www.mobygames.com/game/lynx/desert-strike-return-to-the-gulf"</
 $bio
  
  
-Desert Strike - Return to the Gulf (1993) 
-(Telegames) (c) 1993 Electronic Arts, Inc. / 
-Telegames, Inc. 
+Desert Strike - Return to the Gulf (1993) (Telegames) (c) 1993 Electronic Arts, Inc. / Telegames, 
+Inc. 
  
-The first game in the Strike series. A year after 
-the Gulf War, a self styled General named Kilbaba 
-(Muababa in the GBA version) takes over an Arab 
-Emirate and threatens to start WWIII against its 
-enemy in the West, the U.S. The whole world holds 
-their breath as the President chooses you to 
-destroy Kilbaba and his terrorist army before he 
-launches a nuclear attack on the world! 
+The first game in the Strike series. A year after the Gulf War, a self styled General named Kilbaba 
+(Muababa in the GBA version) takes over an Arab Emirate and threatens to start WWIII against its 
+enemy in the West, the U.S. The whole world holds their breath as the President chooses you to 
+destroy Kilbaba and his terrorist army before he launches a nuclear attack on the world! 
  
-You must fly an specially designed AH-64A Apache 
-on a series of missions from rescuing MIAs, 
-destroying power plants, to blowing apart SCUD 
-missles! Take out his defenses while trying to 
-find out Kilbaba's plans. Take on the Madman and 
-forever rid this threat....in the desert! 
+You must fly an specially designed AH-64A Apache on a series of missions from rescuing MIAs, 
+destroying power plants, to blowing apart SCUD missles! Take out his defenses while trying to find 
+out Kilbaba's plans. Take on the Madman and forever rid this threat....in the desert! 
  
  
 - TECHNICAL - 
@@ -699,9 +545,8 @@ Genre : Action
 Perspective : Isometric 
 Players : 1 Player 
 Score : 3.7 
-Other Systems : Amiga,DOS,Game Boy,Game Boy 
-Advance,Game Gear,Genesis,SEGA Master System,SNES 
-SOURCE : 
+Other Systems : Amiga,DOS,Game Boy,Game Boy Advance,Game Gear,Genesis,SEGA Master System,SNES 
+SOURCE : http://www.mobygames.com/game/lynx/desert-strike-return-to-the-gulf 
  
  
 $end
@@ -712,26 +557,17 @@ $<a href="http://www.mobygames.com/game/lynx/dirty-larry-renegade-cop"</a>
 $bio
  
  
-Dirty Larry - Renegade Cop (1992) (c) Dec, 1992 
-Knight Technologies / Atari Corporation 
+Dirty Larry - Renegade Cop (1992) (c) Dec, 1992 Knight Technologies / Atari Corporation 
  
-In this game you play the role of Dirty Larry, an 
-obvious pastiche of the no nonsense cop Dirty 
-Harry of the movie of the same name, played by 
-Clint Eastwood. The game starts of with the police 
-chief giving you a harsh talking. You are ordered 
-to bring in Mr Snuff, a high ranking goon in the 
-criminal gang run by the Kingpin. The gameplay 
-offers side-scrolling gameplay through the various 
-streets, beating up the numerous thugs that try to 
-attack you. Luckily Larry is armed with his trusty 
-.45, though ammo is limited so it is best to use 
-your fists when possible. There are pick-ups to 
-collect which will replenish some of you health or 
-give you ammo for your gun. Sometimes, weapons 
-such as hand grenades or a machine gun can be 
-found as well. You only have one life and once you 
-die you have to start from the beginning again. 
+In this game you play the role of Dirty Larry, an obvious pastiche of the no nonsense cop Dirty Harry 
+of the movie of the same name, played by Clint Eastwood. The game starts of with the police chief 
+giving you a harsh talking. You are ordered to bring in Mr Snuff, a high ranking goon in the criminal 
+gang run by the Kingpin. The gameplay offers side-scrolling gameplay through the various streets, 
+beating up the numerous thugs that try to attack you. Luckily Larry is armed with his trusty .45, 
+though ammo is limited so it is best to use your fists when possible. There are pick-ups to collect 
+which will replenish some of you health or give you ammo for your gun. Sometimes, weapons such as 
+hand grenades or a machine gun can be found as well. You only have one life and once you die you have 
+to start from the beginning again. 
  
  
 - TECHNICAL - 
@@ -740,7 +576,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 2.0 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/dirty-larry-renegade-cop 
  
  
 $end
@@ -751,29 +587,18 @@ $<a href="http://www.mobygames.com/game/lynx/double-dragon"</a>
 $bio
  
  
-Double Dragon (1993) (Telegames) (c) 1993 Technos 
-Japan Corp. / Telegames, Inc. 
+Double Dragon (1993) (Telegames) (c) 1993 Technos Japan Corp. / Telegames, Inc. 
  
-Set in a post-apocalyptic New York, Double Dragon 
-is the story of Billy and Jimmy Lee, twin brothers 
-trained in the fighting style of Sou-Setsu-Ken. 
-Together, they manage a small martial arts 
-training school, teaching their students in 
-self-defense. One day, Billy's girlfriend, Marian, 
-is kidnapped off the street by the "Black 
-Warriors", a savage street gang led by a man named 
-Willy. The Black Warriors demand the Lee brothers 
-disclose their martial arts secrets in exchange 
-for Marian's freedom. The Lee brothers set out on 
-a rescue mission to crush the Black Warriors and 
-save Marian. 
+Set in a post-apocalyptic New York, Double Dragon is the story of Billy and Jimmy Lee, twin brothers 
+trained in the fighting style of Sou-Setsu-Ken. Together, they manage a small martial arts training 
+school, teaching their students in self-defense. One day, Billy's girlfriend, Marian, is kidnapped 
+off the street by the "Black Warriors", a savage street gang led by a man named Willy. The Black 
+Warriors demand the Lee brothers disclose their martial arts secrets in exchange for Marian's 
+freedom. The Lee brothers set out on a rescue mission to crush the Black Warriors and save Marian. 
  
-Using whatever techniques they have at their 
-disposal, from the basic punches and kicks to the 
-invulnerable elbow strike, as well any weapon that 
-comes into their hands, the Lee brothers must 
-pursue the gang through the city slum, industrial 
-area and the forest before reaching their hideout 
+Using whatever techniques they have at their disposal, from the basic punches and kicks to the 
+invulnerable elbow strike, as well any weapon that comes into their hands, the Lee brothers must 
+pursue the gang through the city slum, industrial area and the forest before reaching their hideout 
 to confront the big boss, Willy. 
  
  
@@ -783,12 +608,9 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 3.3 
-Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 
-7800,Atari ST,Commodore 64,DOS,Game Boy,Game Boy 
-Advance,Genesis,MSX,NES,SEGA Master 
-System,Wii,Xbox 360,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/double-dragon 
+Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 7800,Atari ST,Commodore 64,DOS,Game Boy,Game Boy 
+Advance,Genesis,MSX,NES,SEGA Master System,Wii,Xbox 360,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/double-dragon 
  
  
 $end
@@ -799,26 +621,16 @@ $<a href="http://www.mobygames.com/game/lynx/dracula-the-undead"</a>
 $bio
  
  
-Dracula - The Undead (1991) (c) 1992 Hand Made 
-Software, Ltd. / Atari Corporation 
+Dracula - The Undead (1991) (c) 1992 Hand Made Software, Ltd. / Atari Corporation 
  
-In this game you play the role of Jonathan Harker, 
-an Estate Agent who has visited Dracula's castle 
-to conduct some business. The gameplay is a point 
-and click style adventure except it has been 
-tweaked to accommodate the Lynx controls. To 
-interact with an object you move Jonathan next to 
-the object with the D-Pad and then its name will 
-pop up in the interaction bar. You then need to 
-select an action such as Open, Close examine 
-e.t.c.. The main idea of the game is to explore 
-Dracula's castle while he is away and try to 
-gather information that will prove he is a very 
-serious threat to the mortal world. there are also 
-other character in the game to interact with and 
-Bram Stoker (the writer of Dracula which this game 
-is based on) is in the game in digital form to 
-narrate the story. 
+In this game you play the role of Jonathan Harker, an Estate Agent who has visited Dracula's castle 
+to conduct some business. The gameplay is a point and click style adventure except it has been 
+tweaked to accommodate the Lynx controls. To interact with an object you move Jonathan next to the 
+object with the D-Pad and then its name will pop up in the interaction bar. You then need to select 
+an action such as Open, Close examine e.t.c.. The main idea of the game is to explore Dracula's 
+castle while he is away and try to gather information that will prove he is a very serious threat to 
+the mortal world. there are also other character in the game to interact with and Bram Stoker (the 
+writer of Dracula which this game is based on) is in the game in digital form to narrate the story. 
  
  
 - TECHNICAL - 
@@ -826,7 +638,7 @@ narrate the story.
 Genre : Adventure 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/dracula-the-undead 
  
  
 $end
@@ -837,27 +649,17 @@ $<a href="http://www.mobygames.com/game/lynx/electrocop"</a>
 $bio
  
  
-Electrocop (1989) (c) 1989 Epyx, Inc. / Atari 
-Games Corporation 
+Electrocop (1989) (c) 1989 Epyx, Inc. / Atari Games Corporation 
  
-Today, if a daughter of the President goes 
-missing, I would look in the nearest bar. However, 
-in the near future, the explanation is that she's 
-been kidnapped by a Criminal Brain robot, and held 
-in a booby-trapped lair. As the advanced hybrid 
-Electrocop, your task is to rescue her within an 
-hour. 
+Today, if a daughter of the President goes missing, I would look in the nearest bar. However, in the 
+near future, the explanation is that she's been kidnapped by a Criminal Brain robot, and held in a 
+booby-trapped lair. As the advanced hybrid Electrocop, your task is to rescue her within an hour. 
  
-Gameplay involves working your way through the 
-complex warehouse maze, unlocking coded door along 
-the way. Extra weapons can be collected to help 
-dealing with the drones. There are also computer 
-terminals to buy new weapons - these also have 
-simple subgames built in. What makes the game 
-unique, and intended as a showpiece for the Lynx 
-hardware, is that full 3D is used, so that the 
-character walks in and out of the screen as well 
-as across it. 
+Gameplay involves working your way through the complex warehouse maze, unlocking coded door along the 
+way. Extra weapons can be collected to help dealing with the drones. There are also computer 
+terminals to buy new weapons - these also have simple subgames built in. What makes the game unique, 
+and intended as a showpiece for the Lynx hardware, is that full 3D is used, so that the character 
+walks in and out of the screen as well as across it. 
  
  
 - TECHNICAL - 
@@ -866,8 +668,7 @@ Genre : Action|Adventure
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 2.0 
-SOURCE : 
-http://www.mobygames.com/game/lynx/electrocop 
+SOURCE : http://www.mobygames.com/game/lynx/electrocop 
  
  
 $end
@@ -878,19 +679,13 @@ $<a href="http://www.mobygames.com/game/lynx/fidelity-ultimate-chess-challenge"<
 $bio
  
  
-Fidelity Ultimate Chess Challenge (1991) 
-(Telegames) (c) 1991 Telegames, Inc. / Telegames, 
-Inc. 
+Fidelity Ultimate Chess Challenge (1991) (Telegames) (c) 1991 Telegames, Inc. / Telegames, Inc. 
  
-This handheld chess game uses Chesmaster 2100"'s 
-basic game engine. This includes such items as en 
-passant attacks for pawn, castling, check and 
-checkmate, and draws for various reasons. Move 
-time limits are optional, and the CPU's thinking 
-time can be specified. If you need a hint, you can 
-press the B button and the computer may or may not 
-give you a hint. You can also play against another 
-human opponent, alternating. 
+This handheld chess game uses Chesmaster 2100"'s basic game engine. This includes such items as en 
+passant attacks for pawn, castling, check and checkmate, and draws for various reasons. Move time 
+limits are optional, and the CPU's thinking time can be specified. If you need a hint, you can press 
+the B button and the computer may or may not give you a hint. You can also play against another human 
+opponent, alternating. 
  
  
 - TECHNICAL - 
@@ -898,7 +693,7 @@ human opponent, alternating.
 Genre : Strategy 
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/fidelity-ultimate-chess-challenge 
  
  
 $end
@@ -909,25 +704,17 @@ $<a href="http://www.mobygames.com/game/lynx/gates-of-zendocon"</a>
 $bio
  
  
-Gates of Zendocon, The (1989) (c) 1989 Epyx, Inc. 
-/ Atari Corporation 
+Gates of Zendocon, The (1989) (c) 1989 Epyx, Inc. / Atari Corporation 
  
-The evil spider Zendocon has trapped you in its 
-web of universes.  Your mission is to defeat 
-Zendocon's droids and brave the 51 universes to 
-fight Zendocon itself to the death! 
+The evil spider Zendocon has trapped you in its web of universes.  Your mission is to defeat 
+Zendocon's droids and brave the 51 universes to fight Zendocon itself to the death! 
  
-Gates of Zendocon is a side-scrolling shooter very 
-similar to the original arcade shooter of this 
-type, Scramble.  Unlike Scramble, there are 51 
-game areas in total, but the player fights through 
-a subset of them through branches, choosing the 
-next area to visit. 
+Gates of Zendocon is a side-scrolling shooter very similar to the original arcade shooter of this 
+type, Scramble.  Unlike Scramble, there are 51 game areas in total, but the player fights through a 
+subset of them through branches, choosing the next area to visit. 
  
-Some aliens will join you when shot (power-ups).  
-Alien bases in each area allow you to repair your 
-weapons and shield, but landing at the wrong time 
-will cause your ship to explode and lose all 
+Some aliens will join you when shot (power-ups).  Alien bases in each area allow you to repair your 
+weapons and shield, but landing at the wrong time will cause your ship to explode and lose all 
 power-ups. 
  
  
@@ -937,7 +724,7 @@ Genre : Action
 Perspective : Side-Scrolling 
 Players : 1 Player 
 Score : 4.1 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/gates-of-zendocon 
  
  
 $end
@@ -948,24 +735,17 @@ $<a href="http://www.mobygames.com/game/lynx/gauntlet-the-third-encounter"</a>
 $bio
  
  
-Gauntlet - The Third Encounter (1990) (c) 1990 
-Epyx, Inc. / Atari Corporation 
+Gauntlet - The Third Encounter (1990) (c) 1990 Epyx, Inc. / Atari Corporation 
  
-Generations ago an enchanted Star Gen crashed to 
-Earth at the base of an ancient castle. Loathsome 
-creatures crept from the castle and carried the 
-Gem into the depths of the fortress. 
+Generations ago an enchanted Star Gen crashed to Earth at the base of an ancient castle. Loathsome 
+creatures crept from the castle and carried the Gem into the depths of the fortress. 
  
-All attempts to retrieve the Star Gem failed. The 
-adventurers were destroyed. 
+All attempts to retrieve the Star Gem failed. The adventurers were destroyed. 
  
-The creatures in the castle gain magical strength 
-from the Star Gem. Unless the Gem is taken from 
-them, the evil ones will soon have the strength to 
-venture forth and destroy mankind! 
+The creatures in the castle gain magical strength from the Star Gem. Unless the Gem is taken from 
+them, the evil ones will soon have the strength to venture forth and destroy mankind! 
  
-You and your friends must take up the quest to 
-rescue the Star Gem... and your world! 
+You and your friends must take up the quest to rescue the Star Gem... and your world! 
  
  
 - TECHNICAL - 
@@ -974,7 +754,7 @@ Genre : Action|Adventure|Strategy
 Perspective : Top-Down 
 Players : 1-4 Players 
 Score : 2.8 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/gauntlet-the-third-encounter 
  
  
 $end
@@ -985,24 +765,15 @@ $<a href="http://www.mobygames.com/game/lynx/gordo-106"</a>
 $bio
  
  
-Gordo 106 - The Mutated Lab Monkey (1993) (c) 1991 
-Tenth Planet / Atari Corporation 
+Gordo 106 - The Mutated Lab Monkey (1993) (c) 1991 Tenth Planet / Atari Corporation 
  
-You are a monkey named Gordo, resident of N. Human 
-Labs cage 106, a laboratory experimenting with 
-animals.  One day Gordo accidentally ingests a 
-nuclear spiked banana, causing his brain to become 
-larger and become more human and thought and 
-figures out what is going on.  He gets loose and 
-is now on a mission to free his animal friends and 
-escape the evil clutches of the N. Human 
-Laboratory. 
+You are a monkey named Gordo, resident of N. Human Labs cage 106, a laboratory experimenting with 
+animals.  One day Gordo accidentally ingests a nuclear spiked banana, causing his brain to become 
+larger and become more human and thought and figures out what is going on.  He gets loose and is now 
+on a mission to free his animal friends and escape the evil clutches of the N. Human Laboratory. 
  
-Banana's are your only health pick up and you use 
-apples to fight off enemies.  Gordo is very agile 
-and can swing from chains that hang from the 
-ceiling to avoid the many pits that litter the 
-floor. 
+Banana's are your only health pick up and you use apples to fight off enemies.  Gordo is very agile 
+and can swing from chains that hang from the ceiling to avoid the many pits that litter the floor. 
  
  
 - TECHNICAL - 
@@ -1011,8 +782,7 @@ Genre : Action|Adventure
 Perspective : Platform 
 Players : 1-4 Players 
 Score : 3.8 
-SOURCE : 
-http://www.mobygames.com/game/lynx/gordo-106 
+SOURCE : http://www.mobygames.com/game/lynx/gordo-106 
  
  
 $end
@@ -1023,36 +793,24 @@ $<a href="http://www.mobygames.com/game/lynx/hard-drivin"</a>
 $bio
  
  
-Hard Drivin' (1993) (c) 1991 Atari Games 
-Corporation / Atari Corporation 
+Hard Drivin' (1993) (c) 1991 Atari Games Corporation / Atari Corporation 
  
-Hard Drivin' is a 3D arcade hit from Atari Games. 
-You are in control of a high-performance sports 
-car. Your objective is to race around the course 
-as fast as possible and hit as many checkpoints as 
-possible. If you hit a checkpoint you gain extra 
-time to go farther. You will see traffic on the 
-road both in your direction and coming down the 
-opposite direction, so be careful when you pass... 
+Hard Drivin' is a 3D arcade hit from Atari Games. You are in control of a high-performance sports 
+car. Your objective is to race around the course as fast as possible and hit as many checkpoints as 
+possible. If you hit a checkpoint you gain extra time to go farther. You will see traffic on the road 
+both in your direction and coming down the opposite direction, so be careful when you pass... 
  
-The course has two sections: speed track, and 
-stunt track. Speed track is longer, but you can 
-usually achieve higher speeds. Stunt track 
-requires you to perform several stunts such as 
-jumping bridges, driving through a loop, and so 
-on. 
+The course has two sections: speed track, and stunt track. Speed track is longer, but you can usually 
+achieve higher speeds. Stunt track requires you to perform several stunts such as jumping bridges, 
+driving through a loop, and so on. 
  
-Crashing the car has no serious consequences and 
-indeed shows a replay of your crash from a 
-cinematic angle. Admire your crash head-on into 
-the cement truck, or clipping the minivan, or 
-flying off the bridge in the wrong angle... You 
-lose several seconds as your car is "reset" and 
-you get up to speed again. 
+Crashing the car has no serious consequences and indeed shows a replay of your crash from a cinematic 
+angle. Admire your crash head-on into the cement truck, or clipping the minivan, or flying off the 
+bridge in the wrong angle... You lose several seconds as your car is "reset" and you get up to speed 
+again. 
  
-The home conversions retain most of the 
-then-advanced 3D graphics but lack the 
-force-feedback that was in the arcade version. 
+The home conversions retain most of the then-advanced 3D graphics but lack the force-feedback that 
+was in the arcade version. 
  
  
 - TECHNICAL - 
@@ -1061,10 +819,8 @@ Genre : Racing / Driving|Simulation
 Perspective : 1st-Person Perspective 
 Players : 1-4 Players 
 Score : 2.6 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,Genesis,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/hard-drivin 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,Genesis,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/hard-drivin 
  
  
 $end
@@ -1075,21 +831,14 @@ $<a href="http://www.mobygames.com/game/lynx/hockey"</a>
 $bio
  
  
-Hockey (1992) (c) 1992 Alpine Studios, Inc. / 
-Atari Corporation 
+Hockey (1992) (c) 1992 Alpine Studios, Inc. / Atari Corporation 
  
-This game, as the name suggests, is a hockey 
-simulation which is very similar to Mario Lemieux 
-Hockey. There are 22 teams to choose from which 
-are based on the NHL 91 line up though they can be 
-changed if the player wishes. You control 1 player 
-at a time and the CPU controls the rest of your 
-team though you can switch to a different player 
-at any time if the need arises. There is also a 
-fight penalty system where you have to continually 
-punch the an opponent in order to proceed. The 
-game is viewed from an isometric perspective as if 
-you were sat in one of the crowd seats. 
+This game, as the name suggests, is a hockey simulation which is very similar to Mario Lemieux 
+Hockey. There are 22 teams to choose from which are based on the NHL 91 line up though they can be 
+changed if the player wishes. You control 1 player at a time and the CPU controls the rest of your 
+team though you can switch to a different player at any time if the need arises. There is also a 
+fight penalty system where you have to continually punch the an opponent in order to proceed. The 
+game is viewed from an isometric perspective as if you were sat in one of the crowd seats. 
  
  
 - TECHNICAL - 
@@ -1108,25 +857,17 @@ $<a href="http://www.mobygames.com/game/lynx/humans"</a>
 $bio
  
  
-The Humans (c) 1993 Imagitec Design Inc. / Midway 
-Games West, Inc. 
+The Humans (c) 1993 Imagitec Design Inc. / Midway Games West, Inc. 
  
-Your job in this action puzzler is to help 
-prehistoric man to evolve by helping them discover 
-tools, the wheel, weapons, or even fire. Each 
-level in the game will have a given task to help 
-in this, and you are allotted a number of 
-characters who must accomplish the task. The 
-player can switch from person to person while 
-moving the characters around each scrolling 
-puzzle, and teamwork is essential to success. 
+Your job in this action puzzler is to help prehistoric man to evolve by helping them discover tools, 
+the wheel, weapons, or even fire. Each level in the game will have a given task to help in this, and 
+you are allotted a number of characters who must accomplish the task. The player can switch from 
+person to person while moving the characters around each scrolling puzzle, and teamwork is essential 
+to success. 
  
-Tasks can include finding objects (like a spear) 
-on the screen, or trying to reach a specific 
-destination which may require the use of objects 
-you have discovered so far. Each level has a time 
-limit, when time runs out the level can be 
-restarted. 
+Tasks can include finding objects (like a spear) on the screen, or trying to reach a specific 
+destination which may require the use of objects you have discovered so far. Each level has a time 
+limit, when time runs out the level can be restarted. 
  
  
 - TECHNICAL - 
@@ -1135,8 +876,7 @@ Genre : Strategy
 Perspective : Platform 
 Players : 1 Player 
 Score : 2.6 
-Other Systems : Amiga,Atari ST,DOS,Game 
-Boy,Genesis,Jaguar,SNES 
+Other Systems : Amiga,Atari ST,DOS,Game Boy,Genesis,Jaguar,SNES 
 SOURCE : http://www.mobygames.com/game/lynx/humans 
  
  
@@ -1148,23 +888,15 @@ $<a href="http://www.mobygames.com/game/lynx/hydra"</a>
 $bio
  
  
-Hydra (1992) (c) 1992 Atari Games Corporation / 
-Atari Corporation 
+Hydra (1992) (c) 1992 Atari Games Corporation / Atari Corporation 
  
-If being the best speedboat racer in the world 
-were all there was to life, you'd live on easy 
-street.  But when the government of Hydra has 
-asked for your help in defeating Hydra's enemies 
-by couriering parts to a secret weapon, and those 
-enemies know you're coming... well then, life gets 
-interesting. 
+If being the best speedboat racer in the world were all there was to life, you'd live on easy street. 
+ But when the government of Hydra has asked for your help in defeating Hydra's enemies by couriering 
+parts to a secret weapon, and those enemies know you're coming... well then, life gets interesting. 
  
-Race down narrow swamp lanes to deliver parts of a 
-secret weapon to bases at the finish of each 
-section.  Enemies will be shooting at you, but you 
-can shoot back with Uzi Cannons and Nukes.  
-Collect crystals along the way to boost your speed 
-or shields. 
+Race down narrow swamp lanes to deliver parts of a secret weapon to bases at the finish of each 
+section.  Enemies will be shooting at you, but you can shoot back with Uzi Cannons and Nukes.  
+Collect crystals along the way to boost your speed or shields. 
  
  
 - TECHNICAL - 
@@ -1173,8 +905,7 @@ Genre : Action|Racing / Driving
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 2.9 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,ZX Spectrum 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/hydra 
  
  
@@ -1186,26 +917,18 @@ $<a href="http://www.mobygames.com/game/lynx/ishido-the-way-of-stones"</a>
 $bio
  
  
-Ishido - The Way of the Stones (1991) (c) 1991 
-Software Resources International / Publishing 
+Ishido - The Way of the Stones (1991) (c) 1991 Software Resources International / Publishing 
 International 
  
-Ishido is a solitaire board game played with tiles 
-(like Shanghai).  The objective is to place all of 
-the tiles onto the board and obtain the highest 
-possible score by following specific rules of 
-play.  It is a solitaire game.  There are ways to 
-play that can dramatically increase the score, 
-which makes the game very strategic in nature.  
-Additionally, when desired, the player can get an 
-oracle reading by asking a question...the question 
-is answered when the player makes a very elegant 
-play (4 way match). 
+Ishido is a solitaire board game played with tiles (like Shanghai).  The objective is to place all of 
+the tiles onto the board and obtain the highest possible score by following specific rules of play.  
+It is a solitaire game.  There are ways to play that can dramatically increase the score, which makes 
+the game very strategic in nature.  Additionally, when desired, the player can get an oracle reading 
+by asking a question...the question is answered when the player makes a very elegant play (4 way 
+match). 
  
-There is also a "construction set" where players 
-can create their own tiles and backgrounds.  But 
-the game comes with numerous tile sets and 
-backgrounds. 
+There is also a "construction set" where players can create their own tiles and backgrounds.  But the 
+game comes with numerous tile sets and backgrounds. 
  
  
 - TECHNICAL - 
@@ -1213,9 +936,8 @@ backgrounds.
 Genre : Strategy 
 Perspective : Top-Down 
 Players : 1 Player 
-Other Systems : Amiga,DOS,Game 
-Boy,Genesis,Macintosh 
-SOURCE : 
+Other Systems : Amiga,DOS,Game Boy,Genesis,Macintosh 
+SOURCE : http://www.mobygames.com/game/lynx/ishido-the-way-of-stones 
  
  
 $end
@@ -1226,29 +948,20 @@ $<a href="http://www.mobygames.com/game/lynx/ivan-iron-man-stewarts-super-off-ro
 $bio
  
  
-Super Off-Road (1996) (Telegames) (c) 1991 Leland 
-Corporation / Telegames, Inc. 
+Super Off-Road (1996) (Telegames) (c) 1991 Leland Corporation / Telegames, Inc. 
  
-Enter the world of off-road racing as 4 vehicles 
-will face each other, on a series of tracks which 
-are based around flipped and reversed versions of 
-a core selection. Fame, glory and bikini clad 
-women await your victories and the taste of dirt 
-awaits if you fail. Let a computer car beat you 
-and you lose one of your 3 credits. 
+Enter the world of off-road racing as 4 vehicles will face each other, on a series of tracks which 
+are based around flipped and reversed versions of a core selection. Fame, glory and bikini clad women 
+await your victories and the taste of dirt awaits if you fail. Let a computer car beat you and you 
+lose one of your 3 credits. 
  
-Successful races bring more money, which can be 
-used to soup up their machine. Boosts to top 
-speed, grip and acceleration can be purchased, and 
-your nitro boost must be kept topped up. If you 
-are desperate for upgrades, you can buy into your 
-spare credits 
+Successful races bring more money, which can be used to soup up their machine. Boosts to top speed, 
+grip and acceleration can be purchased, and your nitro boost must be kept topped up. If you are 
+desperate for upgrades, you can buy into your spare credits 
  
-Only your off-road driving abilities will be 
-enough to pull you to first place in these races. 
-Play alone or with up to 3 other players 
-(depending on the version)  in this conversion of 
-a classic arcade game. 
+Only your off-road driving abilities will be enough to pull you to first place in these races. Play 
+alone or with up to 3 other players (depending on the version)  in this conversion of a classic 
+arcade game. 
  
  
 - TECHNICAL - 
@@ -1256,11 +969,9 @@ a classic arcade game.
 Genre : Racing / Driving 
 Perspective : 3rd-Person Perspective 
 Players : 1-4 Players 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,Game Boy,Game 
-Gear,Genesis,NES,SEGA Master System,SNES,ZX 
-Spectrum 
-SOURCE : 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,Game Boy,Game Gear,Genesis,NES,SEGA 
+Master System,SNES,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/ivan-iron-man-stewarts-super-off-road 
  
  
 $end
@@ -1271,24 +982,17 @@ $<a href="http://www.mobygames.com/game/lynx/jimmy-connors-pro-tennis-tour"</a>
 $bio
  
  
-Jimmy Conners Tennis (1991) (c) 1993 Blue Byte 
-Software GmbH / Atari Corporation 
+Jimmy Conners Tennis (1991) (c) 1993 Blue Byte Software GmbH / Atari Corporation 
  
-Endorsed by famous tennis player, Jimmy Connors, 
-this game offers tournament and single play on 
+Endorsed by famous tennis player, Jimmy Connors, this game offers tournament and single play on 
 multiple court types. 
  
-Using crosshairs, aim your ball to the other side 
-of the court and hope you hit where you want.  If 
-you are lucky, you might even score an Ace.  If 
-not, you will need to be ready to return your 
-opponent's return.  Run back and forth as you try 
-to keep hitting the ball over the net until your 
-opponent misses, or you do.  When you hit the 
-ball, you will want to attempt changing the 
-direction and speed of the ball to throw your 
-opponent off balance.  This is the real challenge 
-of any tennis game. 
+Using crosshairs, aim your ball to the other side of the court and hope you hit where you want.  If 
+you are lucky, you might even score an Ace.  If not, you will need to be ready to return your 
+opponent's return.  Run back and forth as you try to keep hitting the ball over the net until your 
+opponent misses, or you do.  When you hit the ball, you will want to attempt changing the direction 
+and speed of the ball to throw your opponent off balance.  This is the real challenge of any tennis 
+game. 
  
  
 - TECHNICAL - 
@@ -1296,9 +1000,8 @@ of any tennis game.
 Genre : Action|Simulation|Sports 
 Perspective : 3rd-Person Perspective 
 Players : 1-4 Players 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,SNES,ZX Spectrum 
-SOURCE : 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,SNES,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/jimmy-connors-pro-tennis-tour 
  
  
 $end
@@ -1309,33 +1012,20 @@ $<a href="http://www.mobygames.com/game/lynx/joust"</a>
 $bio
  
  
-Joust (1993) (Williams) (c) 1992 Williams 
-Electronics Inc. / Shadowsoft 
+Joust (1993) (Williams) (c) 1992 Williams Electronics Inc. / Shadowsoft 
  
-In Joust, players take control of a knight with a 
-lance who rides their flying ostrich (or stork, 
-for Player 2) to do battle against 
-computer-controlled evil knights who ride atop 
-vultures. 
+In Joust, players take control of a knight with a lance who rides their flying ostrich (or stork, for 
+Player 2) to do battle against computer-controlled evil knights who ride atop vultures. 
  
-Players must flap their steed's wings to hit the 
-enemy from a higher jousting point to destroy the 
-vulture and its rider. Once the enemy has been 
-hit, an egg falls to one of the platforms below. 
-The heroic knights must destroy the eggs before 
-they hatch and release new and increasingly more 
-difficult knights. The three strengths of enemy 
-knights are Bounder (red knight), Hunter (white 
-knight), and Shadow Lord (blue knight). These 
-enemy knights are not the only challenge to be 
-found in the game. Players must also contend with 
-crumbling platforms, lava trolls who attempt to 
-pull knights into the fire, and the dreaded 
-"unbeatable"(?) pterodactyl. 
+Players must flap their steed's wings to hit the enemy from a higher jousting point to destroy the 
+vulture and its rider. Once the enemy has been hit, an egg falls to one of the platforms below. The 
+heroic knights must destroy the eggs before they hatch and release new and increasingly more 
+difficult knights. The three strengths of enemy knights are Bounder (red knight), Hunter (white 
+knight), and Shadow Lord (blue knight). These enemy knights are not the only challenge to be found in 
+the game. Players must also contend with crumbling platforms, lava trolls who attempt to pull knights 
+into the fire, and the dreaded "unbeatable"(?) pterodactyl. 
  
-The game was novel for its time for being one of 
-the few two-player simultaneous games in the 
-arcade. 
+The game was novel for its time for being one of the few two-player simultaneous games in the arcade. 
  
  
 - TECHNICAL - 
@@ -1344,9 +1034,8 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 4.4 
-Other Systems : Atari 2600,Atari 5200,Atari 
-7800,Atari 8-bit,Atari ST,Macintosh,NES,PC 
-Booter,Xbox 360 
+Other Systems : Atari 2600,Atari 5200,Atari 7800,Atari 8-bit,Atari ST,Macintosh,NES,PC Booter,Xbox 
+360 
 SOURCE : http://www.mobygames.com/game/lynx/joust 
  
  
@@ -1358,16 +1047,11 @@ $<a href="http://www.mobygames.com/game/lynx/klax"</a>
 $bio
  
  
-Klax (1990) (c) 1990 Atari Games Corporation / 
-Atari Corporation|Tengen Inc. 
+Klax (1990) (c) 1990 Atari Games Corporation / Atari Corporation|Tengen Inc. 
  
-An action/puzzle game, the object is to catch 
-assorted color falling tiles and create rows, 
-columns, or diagonals of a single color. Each 
-level requires a different pattern to be made, and 
-the tiles fall faster, more at a time, and in an 
-increasing number of colors as the game 
-progresses. 
+An action/puzzle game, the object is to catch assorted color falling tiles and create rows, columns, 
+or diagonals of a single color. Each level requires a different pattern to be made, and the tiles 
+fall faster, more at a time, and in an increasing number of colors as the game progresses. 
  
  
 - TECHNICAL - 
@@ -1376,10 +1060,8 @@ Genre : Action|Strategy
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 4.0 
-Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 
-5200,Atari 7800,Atari ST,BBC Micro,Commodore 
-64,DOS,Game Boy,Game Boy Color,Game 
-Gear,Genesis,MSX,NES,PC-88,PC-98,SEGA Master 
+Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 5200,Atari 7800,Atari ST,BBC Micro,Commodore 
+64,DOS,Game Boy,Game Boy Color,Game Gear,Genesis,MSX,NES,PC-88,PC-98,SEGA Master 
 System,TurboGrafx-16,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/klax 
  
@@ -1392,21 +1074,17 @@ $<a href="http://www.mobygames.com/game/lynx/krazy-ace-miniature-golf"</a>
 $bio
  
  
-Krazy Ace Minature Golf (1997) (Telegames) (c) 
-1993 Telegames, Inc. / Telegames, Inc. 
+Krazy Ace Minature Golf (1997) (Telegames) (c) 1993 Telegames, Inc. / Telegames, Inc. 
  
-Krazy Ace Miniature Golf is a miniature golf game 
-for one to four players. You must hit the golf 
-ball into the hole in the fewest shots while 
-avoiding obstacles and traps. Try to get a better 
-score than your opponent(s) or at least get within 
-the number of shots per hole (par). 
+Krazy Ace Miniature Golf is a miniature golf game for one to four players. You must hit the golf ball 
+into the hole in the fewest shots while avoiding obstacles and traps. Try to get a better score than 
+your opponent(s) or at least get within the number of shots per hole (par). 
  
  
 - TECHNICAL - 
  
 Players : 1-4 Players 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/krazy-ace-miniature-golf 
  
  
 $end
@@ -1417,20 +1095,16 @@ $<a href="http://www.mobygames.com/game/lynx/kung-food"</a>
 $bio
  
  
-Kung Food (1992) (c) 1992 Lore Games Ltd. / Atari 
-Corporation 
+Kung Food (1992) (c) 1992 Lore Games Ltd. / Atari Corporation 
  
-The ultimate food fight!  Mutant munchies from 
-your freezer invade your kitchen, your life and 
-your world.  Speed and your martial arts skills 
-are required to overcome the vicious veggies! 
+The ultimate food fight!  Mutant munchies from your freezer invade your kitchen, your life and your 
+world.  Speed and your martial arts skills are required to overcome the vicious veggies! 
  
  
 - TECHNICAL - 
  
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/lynx/kung-food 
+SOURCE : http://www.mobygames.com/game/lynx/kung-food 
  
  
 $end
@@ -1441,27 +1115,17 @@ $<a href="http://www.mobygames.com/game/lynx/lemmings"</a>
 $bio
  
  
-Lemmings (1993) (c) 1993 DMA Design Limited / 
-Psygnosis Limited 
+Lemmings (1993) (c) 1993 DMA Design Limited / Psygnosis Limited 
  
-Your task is to rescue the Lemmings across 120 
-levels of fast-paced puzzling. These creatures 
-simply walk blindly through the world in the hope 
-of reaching safety at the end of the level - 
-unfortunately these levels include steep drops, 
-gaps in the ground, barriers and rivers amongst 
-other hazards. 
+Your task is to rescue the Lemmings across 120 levels of fast-paced puzzling. These creatures simply 
+walk blindly through the world in the hope of reaching safety at the end of the level - unfortunately 
+these levels include steep drops, gaps in the ground, barriers and rivers amongst other hazards. 
  
-You are in control not of any individual Lemming, 
-but of a cross-hair, which can be moved over any 
-of the Lemmings. Along the bottom are a selection 
-of functions which can be assigned to a Lemming, 
-including climbing, floating and bashing. You must 
-click to select the appropriate function, then 
-click on the Lemming to activate it. Each level 
-has a different range of skills on offer, a 
-different amount of Lemmings, and a different 
-percentage target in order to progress. 
+You are in control not of any individual Lemming, but of a cross-hair, which can be moved over any of 
+the Lemmings. Along the bottom are a selection of functions which can be assigned to a Lemming, 
+including climbing, floating and bashing. You must click to select the appropriate function, then 
+click on the Lemming to activate it. Each level has a different range of skills on offer, a different 
+amount of Lemmings, and a different percentage target in order to progress. 
  
  
 - TECHNICAL - 
@@ -1470,13 +1134,9 @@ Genre : Strategy
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.5 
-Other Systems : 3DO,Amiga,Amiga CD32,Amstrad 
-CPC,Atari ST,CD-i,Commodore 64,DOS,Game Boy,Game 
-Boy Color,Game 
-Gear,Genesis,J2ME,Macintosh,NES,PC-98,SEGA Master 
-System,SNES,Windows 3.x,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/lemmings 
+Other Systems : 3DO,Amiga,Amiga CD32,Amstrad CPC,Atari ST,CD-i,Commodore 64,DOS,Game Boy,Game Boy 
+Color,Game Gear,Genesis,J2ME,Macintosh,NES,PC-98,SEGA Master System,SNES,Windows 3.x,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/lemmings 
  
  
 $end
@@ -1487,16 +1147,12 @@ $<a href="http://www.mobygames.com/game/lynx/lexis"</a>
 $bio
  
  
-Lexis (1999) (Songbird) (c) 1999 Shadowsoft / 
-Songbird Productions 
+Lexis (1999) (Songbird) (c) 1999 Shadowsoft / Songbird Productions 
  
-This is much like the game Tetris but instead of 
-falling blocks, you have to make words out of 
-falling letters. Some words will give you cheats 
-or unlock a bonus game. Keep going until the 
-letters reach the top of the screen, at which 
-point the game is over. Words can be formed 
-horizontally, vertically, forwards or backwards. 
+This is much like the game Tetris but instead of falling blocks, you have to make words out of 
+falling letters. Some words will give you cheats or unlock a bonus game. Keep going until the letters 
+reach the top of the screen, at which point the game is over. Words can be formed horizontally, 
+vertically, forwards or backwards. 
  
  
 - TECHNICAL - 
@@ -1513,50 +1169,33 @@ $<a href="http://www.mobygames.com/game/lynx/loopz"</a>
 $bio
  
  
-Loopz (1992) (Handmade Software) (c) Aug, 2004 
-Audiogenic Software Ltd. / Songbird Productions 
+Loopz (1992) (Handmade Software) (c) Aug, 2004 Audiogenic Software Ltd. / Songbird Productions 
  
-A puzzle game where the main goal is to make 
-loops! Random pieces are presented over a board, 
-including simple lines and corners as well as S 
-bends and other warped shapes, of varying sizes. 
-It is up to the player to link them up in a loop 
-form, then moving on to the next level. Pieces can 
-be placed on any empty space on the grid, and 
-rotated into one of the four main compass 
-directions. 
+A puzzle game where the main goal is to make loops! Random pieces are presented over a board, 
+including simple lines and corners as well as S bends and other warped shapes, of varying sizes. It 
+is up to the player to link them up in a loop form, then moving on to the next level. Pieces can be 
+placed on any empty space on the grid, and rotated into one of the four main compass directions. 
  
-Any pieces which are not part of the finished loop 
-when a level is completed are left on the screen, 
-so there is value in playing towards 2 distinct 
-loops, to ensure that you have options depending 
-on which pieces are drawn - unlike Pipe Dream 
-there are no clues as to which pieces are coming 
-next. 
+Any pieces which are not part of the finished loop when a level is completed are left on the screen, 
+so there is value in playing towards 2 distinct loops, to ensure that you have options depending on 
+which pieces are drawn - unlike Pipe Dream there are no clues as to which pieces are coming next. 
  
-Three play modes are available, two of which can 
-be played with two players. Game A is freestyle - 
-simply make loops, gaining extra points for size 
-and style. 
+Three play modes are available, two of which can be played with two players. Game A is freestyle - 
+simply make loops, gaining extra points for size and style. 
  
-Game B is about unlocking bonus boards of the game 
-by reaching a certain score. and uses a bonus 
+Game B is about unlocking bonus boards of the game by reaching a certain score. and uses a bonus 
 multiplier method depending on loop difficulty. 
  
-The third mode of play begins with an already made 
-loop and then removes random pieces of it, so the 
-player has to put them back in when they appear 
-again. It is essentially a memory test and logic 
-puzzle of fitting the pieces back as one remembers 
-- although placing a piece where it seems to fit 
+The third mode of play begins with an already made loop and then removes random pieces of it, so the 
+player has to put them back in when they appear again. It is essentially a memory test and logic 
+puzzle of fitting the pieces back as one remembers - although placing a piece where it seems to fit 
 is also often effective. 
  
  
 - TECHNICAL - 
  
 Players : 1-2 Players 
-Other Systems : Amiga,Amstrad CPC,Atari ST,BBC 
-Micro,Commodore 64,DOS,Game Boy,NES,ZX Spectrum 
+Other Systems : Amiga,Amstrad CPC,Atari ST,BBC Micro,Commodore 64,DOS,Game Boy,NES,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/loopz 
  
  
@@ -1568,16 +1207,12 @@ $<a href="http://www.mobygames.com/game/lynx/lynx-casino"</a>
 $bio
  
  
-Lynx Casino (1992) (c) 1992 Brian A. Rice, Inc. / 
-Atari Corporation 
+Lynx Casino (1992) (c) 1992 Brian A. Rice, Inc. / Atari Corporation 
  
-This game is a collection of casino games which 
-are accessed by moving the player around the 
-casino and selecting the preferred game table or 
-machine to play that game. You start off with 
-$1,000 to gamble with though you can get two loans 
-of $500 if needed from the dealers. Once all your 
-money has been gambled away it is game over. 
+This game is a collection of casino games which are accessed by moving the player around the casino 
+and selecting the preferred game table or machine to play that game. You start off with $1,000 to 
+gamble with though you can get two loans of $500 if needed from the dealers. Once all your money has 
+been gambled away it is game over. 
  
 The 5 games available are: 
  
@@ -1593,8 +1228,7 @@ The 5 games available are:
 Genre : Simulation 
 Perspective : Top-Down 
 Players : 1-2 Players 
-SOURCE : 
-http://www.mobygames.com/game/lynx/lynx-casino 
+SOURCE : http://www.mobygames.com/game/lynx/lynx-casino 
  
  
 $end
@@ -1607,13 +1241,10 @@ $bio
  
 Lynx Othello (c) 1999 
  
-This is the game of Othello ported to the Atari 
-Lynx. You can select from four aggression levels. 
-In addition to a one player game against the 
-computer, you can also play two players, 
-alternating with the same Lynx, two players with 
-two Lynx using the ComLynx cable and two player 
-Lynx Game Sharing System. 
+This is the game of Othello ported to the Atari Lynx. You can select from four aggression levels. In 
+addition to a one player game against the computer, you can also play two players, alternating with 
+the same Lynx, two players with two Lynx using the ComLynx cable and two player Lynx Game Sharing 
+System. 
  
  
 - TECHNICAL - 
@@ -1621,8 +1252,7 @@ Lynx Game Sharing System.
 Genre : Strategy 
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
-SOURCE : 
-http://www.mobygames.com/game/lynx/lynx-othello 
+SOURCE : http://www.mobygames.com/game/lynx/lynx-othello 
  
  
 $end
@@ -1633,39 +1263,24 @@ $<a href="http://www.mobygames.com/game/lynx/ms-pac-man"</a>
 $bio
  
  
-Ms. Pac-Man (1990) (c) 1990 General Computer 
-    Corporation|Midway / Atari Corporation 
+Ms. Pac-Man (1990) (c) 1990 General Computer Corporation|Midway / Atari Corporation 
  
-In 1982, a sequel to the  incredibly popular 
-Pac-Man was introduced in the form of his 
-girlfriend, Ms. Pac-Man.  This sequel continued on 
-the "eat the dots/avoid the ghosts" gameplay of 
-the original game, but added new features to keep 
-the title fresh. 
+In 1982, a sequel to the  incredibly popular Pac-Man was introduced in the form of his girlfriend, 
+Ms. Pac-Man.  This sequel continued on the "eat the dots/avoid the ghosts" gameplay of the original 
+game, but added new features to keep the title fresh. 
  
-Like her boyfriend, Ms. Pac-Man attempts to clear 
-four various and challenging mazes filled with 
-dots and ever-moving bouncing fruit  while 
-avoiding Inky, Blinky, Pinky and Sue, each with 
-their own personalities and tactics.  One touch 
-from any of these ghosts means a loss of life for 
-Ms. Pac-Man. 
+Like her boyfriend, Ms. Pac-Man attempts to clear four various and challenging mazes filled with dots 
+and ever-moving bouncing fruit  while avoiding Inky, Blinky, Pinky and Sue, each with their own 
+personalities and tactics.  One touch from any of these ghosts means a loss of life for Ms. Pac-Man. 
  
-Ms. Pac-Man can turn the tables on her 
-    pursuers by eating one of the four Energizers 
-    located within the maze. During this time, the 
-    ghosts turn blue, and Ms. Pac-Man can eat them 
-    for bonus points (ranging from 200, 400, 800 
-    and 1600, progressively). The Energizer power 
-    only lasts for a limited amount of time, as 
-    the ghost's eyes float back to their center 
-    box, and regenerate to chase after Ms. Pac-Man 
-    again. 
+Ms. Pac-Man can turn the tables on her pursuers by eating one of the four Energizers located 
+    within the maze. During this time, the ghosts turn blue, and Ms. Pac-Man can eat them for bonus 
+    points (ranging from 200, 400, 800 and 1600, progressively). The Energizer power only lasts for a 
+    limited amount of time, as the ghost's eyes float back to their center box, and regenerate to 
+    chase after Ms. Pac-Man again. 
  
-Survive a few rounds of gameplay, and the player 
-will be treated to humorous intermissions showing 
-the growing romantic relationship between Pac-Man 
-and Ms. Pac-Man, leading all the way up to the 
+Survive a few rounds of gameplay, and the player will be treated to humorous intermissions showing 
+the growing romantic relationship between Pac-Man and Ms. Pac-Man, leading all the way up to the 
 arrival of "Junior". 
  
  
@@ -1675,13 +1290,10 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1 Player 
 Score : 3.9 
-Other Systems : Apple II,Atari 2600,Atari 
-5200,Atari 7800,Atari 8-bit,BlackBerry,Commodore 
-64,Game Boy,Game Gear,Genesis,iPhone,iPod 
-Classic,NES,PC Booter,SEGA Master 
-System,SNES,TI-99/4A,VIC-20,Xbox 360,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/ms-pac-man 
+Other Systems : Apple II,Atari 2600,Atari 5200,Atari 7800,Atari 8-bit,BlackBerry,Commodore 64,Game 
+Boy,Game Gear,Genesis,iPhone,iPod Classic,NES,PC Booter,SEGA Master System,SNES,TI-99/4A,VIC-20,Xbox 
+360,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/ms-pac-man 
  
  
 $end
@@ -1694,17 +1306,12 @@ $bio
  
 NFL Football (1990) (c) 1992 
  
-NFL Football is an officially licensed NFL 
-Americal football game. The game is played by 
-holding the Lynx vertically and sports zooming and 
-scaling graphical features, with an overhead, 
-top-down view. Games last for four 15-minute 
-quarters and it contains circa 25 offensive plays. 
-Passing is done by holding down the B button and 
-then moving a cross-hair to an open receiver, and 
-then releasing the button to throw. Strategies can 
-be changed in real-time. Two players can compete 
-head-to-head with the ComLynx cable. 
+NFL Football is an officially licensed NFL Americal football game. The game is played by holding the 
+Lynx vertically and sports zooming and scaling graphical features, with an overhead, top-down view. 
+Games last for four 15-minute quarters and it contains circa 25 offensive plays. Passing is done by 
+holding down the B button and then moving a cross-hair to an open receiver, and then releasing the 
+button to throw. Strategies can be changed in real-time. Two players can compete head-to-head with 
+the ComLynx cable. 
  
  
 - TECHNICAL - 
@@ -1712,8 +1319,7 @@ head-to-head with the ComLynx cable.
 Genre : Sports 
 Perspective : Top-Down 
 Players : 1-2 Players 
-SOURCE : 
-http://www.mobygames.com/game/lynx/nfl-football__ 
+SOURCE : http://www.mobygames.com/game/lynx/nfl-football__ 
  
  
 $end
@@ -1724,11 +1330,9 @@ $<a href="http://www.mobygames.com/game/lynx/ninja-gaiden"</a>
 $bio
  
  
-Ninja Gaiden (1990) (c) Mar, 1989 Tecmo, Ltd. / 
-Tecmo, Ltd. 
+Ninja Gaiden (1990) (c) Mar, 1989 Tecmo, Ltd. / Tecmo, Ltd. 
  
-Ninja Gaiden begins with a cinematic animation in 
-which 2 ninjas duel to the death 
+Ninja Gaiden begins with a cinematic animation in which 2 ninjas duel to the death 
  
  
 - TECHNICAL - 
@@ -1736,8 +1340,7 @@ which 2 ninjas duel to the death
 Genre : Action 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/lynx/ninja-gaiden 
+SOURCE : http://www.mobygames.com/game/lynx/ninja-gaiden 
  
  
 $end
@@ -1748,43 +1351,27 @@ $<a href="http://www.mobygames.com/game/lynx/ninja-gaiden-iii-the-ancient-ship-o
 $bio
  
  
-Ninja Gaiden III - The Ancient Ship of Doom (1993) 
-(c) 1991 Tecmo, Ltd. / Atari Corporation 
+Ninja Gaiden III - The Ancient Ship of Doom (1993) (c) 1991 Tecmo, Ltd. / Atari Corporation 
  
-This is the third entry in the series of 
-fast-paced ninja action games, and is the last 
-game in the series to be released on the Nintendo 
-Entertainment System. 
+This is the third entry in the series of fast-paced ninja action games, and is the last game in the 
+series to be released on the Nintendo Entertainment System. 
  
-Some time has passed since the defeat of Ashtar 
-and the resurrected Jaquio, and Irene Lew has 
-received a new mission to complete. She is to 
-observe a strange factory that has been 
-constructed recently for an unknown purpose, and 
-investigate it. She proceeds to reconnoiter it, 
-but is intercepted and apparently assassinated by 
-her friend Ryu Hayabusa...except it isn't Ryu. It 
-is an imposter. The real Ryu, angered over her 
-death, and the subsequent false accusation that he 
-murdered her, continues her mission and proceeds 
-to investigate the factory. 
+Some time has passed since the defeat of Ashtar and the resurrected Jaquio, and Irene Lew has 
+received a new mission to complete. She is to observe a strange factory that has been constructed 
+recently for an unknown purpose, and investigate it. She proceeds to reconnoiter it, but is 
+intercepted and apparently assassinated by her friend Ryu Hayabusa...except it isn't Ryu. It is an 
+imposter. The real Ryu, angered over her death, and the subsequent false accusation that he murdered 
+her, continues her mission and proceeds to investigate the factory. 
  
-As stated, this was the last game in the regular 
-series produced for the NES. It had many features 
-the previous games in the series did not, such as 
-a power up to extend the length of your sword, a 
-new vertical "wave" attack and 
-vertically-scrolling levels. The US version of the 
-game is reputed to be the hardest in the series, 
-due to the extra damage incurred when hit, 
-slightly shorter regular sword length, limited 
-continues and more enemies. 
+As stated, this was the last game in the regular series produced for the NES. It had many features 
+the previous games in the series did not, such as a power up to extend the length of your sword, a 
+new vertical "wave" attack and vertically-scrolling levels. The US version of the game is reputed to 
+be the hardest in the series, due to the extra damage incurred when hit, slightly shorter regular 
+sword length, limited continues and more enemies. 
  
-The Lynx port is the second Ninja Gaiden game on 
-the platform, the first being a port from the 
-Arcade Version. This port is identical to the NES 
-game, but the in-game picture is compressed for 
-the smaller screen of the Lynx. 
+The Lynx port is the second Ninja Gaiden game on the platform, the first being a port from the Arcade 
+Version. This port is identical to the NES game, but the in-game picture is compressed for the 
+smaller screen of the Lynx. 
  
  
 - TECHNICAL - 
@@ -1794,7 +1381,7 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.4 
 Other Systems : NES,Wii 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/ninja-gaiden-iii-the-ancient-ship-of-doom 
  
  
 $end
@@ -1805,31 +1392,20 @@ $<a href="http://www.mobygames.com/game/lynx/pac-land"</a>
 $bio
  
  
-Pac-Land (1991) (c) 1991 Namco Limited / Atari 
-   Corporation 
+Pac-Land (1991) (c) 1991 Namco Limited / Atari Corporation 
  
-Pac-Land is a side-scrolling 1-2 player game 
-   with a cartoony feel to it. Now equipped with 
-   arms, face, and legs, Pac must guide a fairy 
-   back to her home in Fairy Land, but this task 
-   will not be easy because Inky, Blinky, Pinky, 
-   Clyde, and Sue will pursue Pac-Man as he 
-   travels through Pac-Land. When he finally 
-   transports the fairy back to her home, Pac is 
-   given some magic shoes, which will help him get 
-   to his own home, where he will be greeted by 
-   his family: Ms. Pac-Man, Baby Pac-Man, Chomp 
-   Chomp, and Sourpuss. 
+Pac-Land is a side-scrolling 1-2 player game with a cartoony feel to it. Now equipped with arms, 
+   face, and legs, Pac must guide a fairy back to her home in Fairy Land, but this task will not be 
+   easy because Inky, Blinky, Pinky, Clyde, and Sue will pursue Pac-Man as he travels through 
+   Pac-Land. When he finally transports the fairy back to her home, Pac is given some magic shoes, 
+   which will help him get to his own home, where he will be greeted by his family: Ms. Pac-Man, Baby 
+   Pac-Man, Chomp Chomp, and Sourpuss. 
  
-There are sixteen rounds to complete, with four 
-trips each. During each round, he can grab a power 
-pellet, which cause ghosts to turn blue, allowing 
-Pac-Man to eat them for points. Points are also 
-awarded by collecting fruit that appear, like 
-cherries and strawberries. In some rounds, Pac 
-must use a springboard to jump over a lake. He 
-must also make it to the end of each round before 
-time runs out, otherwise a ghost will chase him. 
+There are sixteen rounds to complete, with four trips each. During each round, he can grab a power 
+pellet, which cause ghosts to turn blue, allowing Pac-Man to eat them for points. Points are also 
+awarded by collecting fruit that appear, like cherries and strawberries. In some rounds, Pac must use 
+a springboard to jump over a lake. He must also make it to the end of each round before time runs 
+out, otherwise a ghost will chase him. 
  
  
 - TECHNICAL - 
@@ -1837,10 +1413,8 @@ time runs out, otherwise a ghost will chase him.
 Genre : Action 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,MSX,NES,TurboGrafx-16,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/pac-land 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,MSX,NES,TurboGrafx-16,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/pac-land 
  
  
 $end
@@ -1851,17 +1425,12 @@ $<a href="http://www.mobygames.com/game/lynx/paperboy"</a>
 $bio
  
  
-Paperboy (1990) (c) 1990 Atari, Inc. / Atari 
-Corporation|Tengen Inc. 
+Paperboy (1990) (c) 1990 Atari, Inc. / Atari Corporation|Tengen Inc. 
  
-Based on the arcade game, the object of Paperboy 
-is to deliver papers to your customers while 
-inflicting as much damage as possible to the 
-houses of your non-customers. To make things more 
-difficult, numerous obstacles get in your way 
-including construction workers, rogue tires, 
-skateboarders, dogs and cats, cars, and even the 
-occasional tornado. 
+Based on the arcade game, the object of Paperboy is to deliver papers to your customers while 
+inflicting as much damage as possible to the houses of your non-customers. To make things more 
+difficult, numerous obstacles get in your way including construction workers, rogue tires, 
+skateboarders, dogs and cats, cars, and even the occasional tornado. 
  
  
 - TECHNICAL - 
@@ -1870,13 +1439,10 @@ Genre : Action
 Perspective : Isometric 
 Players : 1 Player 
 Score : 3.8 
-Other Systems : Amiga,Amstrad CPC,Apple IIgs,Atari 
-ST,BBC Micro,BlackBerry,Commodore 
-64,DOS,Electron,Game Boy,Game Boy Color,Game 
-Gear,Genesis,J2ME,NES,SEGA Master System,Xbox 
-360,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/paperboy 
+Other Systems : Amiga,Amstrad CPC,Apple IIgs,Atari ST,BBC Micro,BlackBerry,Commodore 
+64,DOS,Electron,Game Boy,Game Boy Color,Game Gear,Genesis,J2ME,NES,SEGA Master System,Xbox 360,ZX 
+Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/paperboy 
  
  
 $end
@@ -1889,10 +1455,8 @@ $bio
  
 Pinball Jam (1992) (c) 1992 
  
-Pinball Jam is a Lynx conversion of two pinball 
-tables:  "Elvira and the Party Monsters" (Midway, 
-1989), and "Police Force" (Williams, 1989).  Both 
-feature authentic table layouts, targets, and 
+Pinball Jam is a Lynx conversion of two pinball tables:  "Elvira and the Party Monsters" (Midway, 
+1989), and "Police Force" (Williams, 1989).  Both feature authentic table layouts, targets, and 
 bonuses 
  
  
@@ -1902,8 +1466,7 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1 Player 
 Score : 4.5 
-SOURCE : 
-http://www.mobygames.com/game/lynx/pinball-jam 
+SOURCE : http://www.mobygames.com/game/lynx/pinball-jam 
  
  
 $end
@@ -1914,23 +1477,15 @@ $<a href="http://www.mobygames.com/game/lynx/pit-fighter"</a>
 $bio
  
  
-Pit Fighter - The Ultimate Competition (1992) (c) 
-1991 Atari Games Corporation / Atari 
+Pit Fighter - The Ultimate Competition (1992) (c) 1991 Atari Games Corporation / Atari 
 Corporation|Tengen Inc. 
  
-Pit-Fighter is a 3rd-person fight game that 
-   features digitized graphics of real fighters 
-   and zooming effects.  Players select one of 
-   three fighters (Buzz, Ty or Kato) to take on 
-   anyone who dares. At the conclusion of a match, 
-   players are individually awarded a Knockout 
-   Bonus, Brutality Bonus, and a Fight Purse. 
-   Every third match is a Grudge Match where 
-   players test the skills of each other. The last 
-   man standing is the winner of this 
-   three-knockdown match. Players fight their way 
-   to the Elimination Match to decide who wins the 
-   opportunity to dethrone the champion, the 
+Pit-Fighter is a 3rd-person fight game that features digitized graphics of real fighters and 
+   zooming effects.  Players select one of three fighters (Buzz, Ty or Kato) to take on anyone who 
+   dares. At the conclusion of a match, players are individually awarded a Knockout Bonus, Brutality 
+   Bonus, and a Fight Purse. Every third match is a Grudge Match where players test the skills of 
+   each other. The last man standing is the winner of this three-knockdown match. Players fight their 
+   way to the Elimination Match to decide who wins the opportunity to dethrone the champion, the 
    Masked Warrior. 
  
  
@@ -1940,11 +1495,9 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 1.1 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,Game Boy,Genesis,SEGA Master 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,Game Boy,Genesis,SEGA Master 
 System,SNES,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/pit-fighter 
+SOURCE : http://www.mobygames.com/game/lynx/pit-fighter 
  
  
 $end
@@ -1957,36 +1510,24 @@ $bio
  
 PokerMania (c) 2003 MW Software / MW Software 
  
-This is basically the Poker Solitaire portion of 
-the Atari 2600 game Casino or the game Poker 
-Squ?res ported to the Atari Lynx. 
+This is basically the Poker Solitaire portion of the Atari 2600 game Casino or the game Poker Squ?res 
+ported to the Atari Lynx. 
  
-The object is to place twenty-five cards out of 
-fifty-two on a grid five rows wide and five rows 
-deep to form the best poker hands you can, 
-horizontally, vertically and diagonally. The 
-better your poker hands, the more points you get. 
+The object is to place twenty-five cards out of fifty-two on a grid five rows wide and five rows deep 
+to form the best poker hands you can, horizontally, vertically and diagonally. The better your poker 
+hands, the more points you get. 
  
 Points are awarded in the following way: 
  
-1. For each row with one pair: two hundred 
-   points 
-2. For each row with two pairs: four hundred 
-   points 
-3. For each row with three of a kind: eight 
-   hundred points 
-4. For each row with a straight: one thousand 
-   points 
-5. For each row with a flush: one thousand four 
-   hundred points 
-6. For each row with a full house: one thousand 
-   eight hundred points 
-7. For each row with four of a kind: two 
-   thousand points 
-8. For each row with a straight flush: two 
-   thousand four hundred points 
-9. For each row with a royal straight flush: 
-   two thousand eight hundred points 
+1. For each row with one pair: two hundred points 
+2. For each row with two pairs: four hundred points 
+3. For each row with three of a kind: eight hundred points 
+4. For each row with a straight: one thousand points 
+5. For each row with a flush: one thousand four hundred points 
+6. For each row with a full house: one thousand eight hundred points 
+7. For each row with four of a kind: two thousand points 
+8. For each row with a straight flush: two thousand four hundred points 
+9. For each row with a royal straight flush: two thousand eight hundred points 
  
  
 - TECHNICAL - 
@@ -1994,8 +1535,7 @@ Points are awarded in the following way:
 Genre : Strategy 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/lynx/pokermania 
+SOURCE : http://www.mobygames.com/game/lynx/pokermania 
  
  
 $end
@@ -2006,22 +1546,15 @@ $<a href="http://www.mobygames.com/game/lynx/ponx"</a>
 $bio
  
  
-Ponx (c) Jun 18, 1999 Songbird Productions / 
-Songbird Productions 
+Ponx (c) Jun 18, 1999 Songbird Productions / Songbird Productions 
  
-This is the game Pong brought to the Atari Lynx, 
-but with added options. You can control the 
-difficulty, field color and number of balls in 
-play. You can play one player or two players using 
-one Lynx and Ponx cart, no Comlynx cable needed. 
-If you select two players, the control pad is used 
-to control the left paddle and the A and B buttons 
-control the right paddle. 
+This is the game Pong brought to the Atari Lynx, but with added options. You can control the 
+difficulty, field color and number of balls in play. You can play one player or two players using one 
+Lynx and Ponx cart, no Comlynx cable needed. If you select two players, the control pad is used to 
+control the left paddle and the A and B buttons control the right paddle. 
  
-The game play is the typical Pong game. Simply 
-prevent the ball (or balls) from getting past your 
-paddle while trying to get  the ball (or balls) 
-past the opposing player's paddle to reach the 
+The game play is the typical Pong game. Simply prevent the ball (or balls) from getting past your 
+paddle while trying to get  the ball (or balls) past the opposing player's paddle to reach the 
 winning score. 
  
  
@@ -2041,84 +1574,49 @@ $<a href="http://www.mobygames.com/game/lynx/power-factor"</a>
 $bio
  
  
-Power Factor (1992) (c) 1992 Hand Made Software, 
-Ltd. / Atari Corporation 
+Power Factor (1992) (c) 1992 Hand Made Software, Ltd. / Atari Corporation 
  
-Power Factor is an action-platformer starring the 
-single campily-named hero, Redd Ace, fighting 
-alien creatures known as the Ceegarians from the 
-Ceeg dimension.  Of course, aliens being played 
-out, the Ceegarians are actually referred to as 
-"transdimensional intruders," and the Ceegarian 
-creatures the player faces off against are 
-referred to as evil invading "Sinlendo Techmods." 
+Power Factor is an action-platformer starring the single campily-named hero, Redd Ace, fighting alien 
+creatures known as the Ceegarians from the Ceeg dimension.  Of course, aliens being played out, the 
+Ceegarians are actually referred to as "transdimensional intruders," and the Ceegarian creatures the 
+player faces off against are referred to as evil invading "Sinlendo Techmods." 
  
-The primary goal of the game is to work through 
-stages and bosses essentially to build a bomb to 
-destroy the Ceegarians. Pertaining to the bomb, 
-there are six components.  The entire game takes 
-place within, as the box refers to it, "our 
-dimension's reactor."  As such, the environments 
-of the game are aimed to look like the inside of a 
-machine.  To further convolute the storyline, the 
-instruction manual actually refers to the game 
-itself as a Virtual Reality simulation the player 
-is experiencing in the future, based on the 
-exploits of Redd Ace, and you’re meandering 
-through this simulator on the “famous Atarian 
-Leisure Moon.” 
+The primary goal of the game is to work through stages and bosses essentially to build a bomb to 
+destroy the Ceegarians. Pertaining to the bomb, there are six components.  The entire game takes 
+place within, as the box refers to it, "our dimension's reactor."  As such, the environments of the 
+game are aimed to look like the inside of a machine.  To further convolute the storyline, the 
+instruction manual actually refers to the game itself as a Virtual Reality simulation the player is 
+experiencing in the future, based on the exploits of Redd Ace, and you’re meandering through this 
+simulator on the “famous Atarian Leisure Moon.” 
  
-Stages are fairly small, but designed like a maze 
-à la Metroid.  However, unlike Metroid, completed 
-areas cannot be revisited.  Each stage ends with a 
-boss battle showcasing enemy characters that are 
+Stages are fairly small, but designed like a maze à la Metroid.  However, unlike Metroid, completed 
+areas cannot be revisited.  Each stage ends with a boss battle showcasing enemy characters that are 
 often two screens high. 
  
-Redd Ace is armed with a multi-use weapon known as 
-the "Tmat MOW."  Tmat MOW is intended to be short 
-for “TRANSMAT Multi-Ordinance Weapon.”  Four 
-different weapons may be acquired and used for 
-both the A and B buttons, with eight total weapons 
-in the game, and one gun as a standard.  Other 
-weapons include lasers, a flame thrower, missiles, 
-bombs, and the like.  Weapons must be picked up 
-through playing the stages and collecting various 
-weapon icons.  Once the ammunition is used, the 
-weapon is gone and must be recollected.  As such, 
-weapon pick-ups must be used sparingly, especially 
-since most contain very small numbers of 
-ammunition, often as low as two shots.  Choosing 
-weapons is awkwardly assigned to the 
-Directional-pad, which is also where character 
-movement is assigned.  Tapping the D-pad allows 
-the player to select different weapons, while 
-holding it down moves Redd. 
+Redd Ace is armed with a multi-use weapon known as the "Tmat MOW."  Tmat MOW is intended to be short 
+for “TRANSMAT Multi-Ordinance Weapon.”  Four different weapons may be acquired and used for both the 
+A and B buttons, with eight total weapons in the game, and one gun as a standard.  Other weapons 
+include lasers, a flame thrower, missiles, bombs, and the like.  Weapons must be picked up through 
+playing the stages and collecting various weapon icons.  Once the ammunition is used, the weapon is 
+gone and must be recollected.  As such, weapon pick-ups must be used sparingly, especially since most 
+contain very small numbers of ammunition, often as low as two shots.  Choosing weapons is awkwardly 
+assigned to the Directional-pad, which is also where character movement is assigned.  Tapping the 
+D-pad allows the player to select different weapons, while holding it down moves Redd. 
  
-Controlling Redd Ace is somewhat different from a 
-typical platformer of the era. There is no jump 
-button, as both the A and B buttons have weapons 
-assigned to them.  Instead, our hero is also armed 
-with a levitation pack on his back, which allows 
-flight.  Tapping "up" on the D-Pad allows Redd to 
-jump, while holding "up" activates the levitator 
-and allows Redd to fly.  Aside from a health bar, 
-there is also a fuel bar showing that flight isn't 
-a luxury to be wasted.  When crouching, Redd 
-automatically aims upwards at a 45-degree angle, 
-rather than straight ahead. 
+Controlling Redd Ace is somewhat different from a typical platformer of the era. There is no jump 
+button, as both the A and B buttons have weapons assigned to them.  Instead, our hero is also armed 
+with a levitation pack on his back, which allows flight.  Tapping "up" on the D-Pad allows Redd to 
+jump, while holding "up" activates the levitator and allows Redd to fly.  Aside from a health bar, 
+there is also a fuel bar showing that flight isn't a luxury to be wasted.  When crouching, Redd 
+automatically aims upwards at a 45-degree angle, rather than straight ahead. 
  
-Pressing the "Option 2" button allows the player 
-to see a menu with information about the bomb 
-pieces the player is collecting, as well as 
-details on the various weapons.  If the player is 
-standing in front of a computer monitor when 
-Option 2 is pressed, the menu shows a map of the 
-current area, and information on enemy characters. 
+Pressing the "Option 2" button allows the player to see a menu with information about the bomb pieces 
+the player is collecting, as well as details on the various weapons.  If the player is standing in 
+front of a computer monitor when Option 2 is pressed, the menu shows a map of the current area, and 
+information on enemy characters. 
  
-The player starts with three lives, and there are 
-no continues.  There are, however, three 
-difficulty modes--Easy, Normal, and Hard—which may 
-be selected prior to gameplay. 
+The player starts with three lives, and there are no continues.  There are, however, three difficulty 
+modes--Easy, Normal, and Hard—which may be selected prior to gameplay. 
  
  
 - TECHNICAL - 
@@ -2127,8 +1625,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 2.5 
-SOURCE : 
-http://www.mobygames.com/game/lynx/power-factor 
+SOURCE : http://www.mobygames.com/game/lynx/power-factor 
  
  
 $end
@@ -2139,24 +1636,17 @@ $<a href="http://www.mobygames.com/game/lynx/prophecy-1-the-viking-child"</a>
 $bio
  
  
-Viking Child (1991) (c) 1991 Imagitec Design 
-Ltd.|Wired / Atari Corporation 
+Viking Child (1991) (c) 1991 Imagitec Design Ltd.|Wired / Atari Corporation 
  
-Cartoony side-scroller where you take the role of, 
-as the title states, a viking child, in his quest 
-to free his friends and family, held by the evil 
-god Loki inside the Great Halls of Valhalla. 
+Cartoony side-scroller where you take the role of, as the title states, a viking child, in his quest 
+to free his friends and family, held by the evil god Loki inside the Great Halls of Valhalla. 
  
-Fight your way through 16 levels with diverse 
-scenarios, including medieval castles and 
-mountains. Spread throughout the levels are shops 
-in which you can buy potions and other magical 
-items to help you along the way. Before you 
-finally face the Dark Lord Loki, you must also 
-defeat the 8 Apprentices of Darkness. 
+Fight your way through 16 levels with diverse scenarios, including medieval castles and mountains. 
+Spread throughout the levels are shops in which you can buy potions and other magical items to help 
+you along the way. Before you finally face the Dark Lord Loki, you must also defeat the 8 Apprentices 
+of Darkness. 
  
-The game features colorful graphics and 22 
-different tunes to make the whole trip a bit more 
+The game features colorful graphics and 22 different tunes to make the whole trip a bit more 
 pleasant. 
  
  
@@ -2167,7 +1657,7 @@ Perspective : Side-Scrolling
 Players : 1-2 Players 
 Score : 3.5 
 Other Systems : Amiga,Atari ST,DOS 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/prophecy-1-the-viking-child 
  
  
 $end
@@ -2178,25 +1668,16 @@ $<a href="http://www.mobygames.com/game/lynx/qix"</a>
 $bio
  
  
-Qix (1991) (Telegames) (c) 1991 Taito America 
-Corporation / Telegames, Inc. 
+Qix (1991) (Telegames) (c) 1991 Taito America Corporation / Telegames, Inc. 
  
-In this game, you guide a marker which must draw 
-rectangles and other weird objects in order to 
-claim your territory, and you can either draw 
-these rectangles fast or slow. Drawing the 
-rectangles using the "slow" method awards you the 
-most points. Once a rectangle has been made, it 
-will be colored in to show that you have claimed 
-your territory. While drawing the rectangles, you 
-need to watch out for Qix (pronounced "kicks"), a 
-series of colored lines that crawl the screen. In 
-addition to Qix, you also need to avoid the Sparks 
-who travel around the border, as well as any lines 
-that you have made, as well as The Fuse, who 
-travels along the line that you are drawing. Once 
-you have claimed enough territory, you proceed to 
-the next level. 
+In this game, you guide a marker which must draw rectangles and other weird objects in order to claim 
+your territory, and you can either draw these rectangles fast or slow. Drawing the rectangles using 
+the "slow" method awards you the most points. Once a rectangle has been made, it will be colored in 
+to show that you have claimed your territory. While drawing the rectangles, you need to watch out for 
+Qix (pronounced "kicks"), a series of colored lines that crawl the screen. In addition to Qix, you 
+also need to avoid the Sparks who travel around the border, as well as any lines that you have made, 
+as well as The Fuse, who travels along the line that you are drawing. Once you have claimed enough 
+territory, you proceed to the next level. 
  
  
 - TECHNICAL - 
@@ -2205,9 +1686,8 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1-2 Players 
 Score : 3.2 
-Other Systems : Amiga,Apple II,Apple IIgs,Atari 
-5200,Atari 8-bit,Commodore 128,Commodore 
-64,DOS,Game Boy,J2ME,NES 
+Other Systems : Amiga,Apple II,Apple IIgs,Atari 5200,Atari 8-bit,Commodore 128,Commodore 64,DOS,Game 
+Boy,J2ME,NES 
 SOURCE : http://www.mobygames.com/game/lynx/qix 
  
  
@@ -2219,27 +1699,17 @@ $<a href="http://www.mobygames.com/game/lynx/raiden"</a>
 $bio
  
  
-Raiden (1997) (Telegames) (c) 1997 Seibu Kaihatsu 
-Inc. / Telegames, Inc. 
+Raiden (1997) (Telegames) (c) 1997 Seibu Kaihatsu Inc. / Telegames, Inc. 
  
-In the year 2090, Earth is invaded by 
-extra-terrestrials. The World Alliance of Nations 
-has developed a supersonic attack fighter, Raiden, 
-to defend the Earth. A pilot must take control of 
-the experimental fighter to destroy the alien 
-warships that just happen to look like odd 
-variations of typical military tanks and planes 
-with gadgets attached to them. 
+In the year 2090, Earth is invaded by extra-terrestrials. The World Alliance of Nations has developed 
+a supersonic attack fighter, Raiden, to defend the Earth. A pilot must take control of the 
+experimental fighter to destroy the alien warships that just happen to look like odd variations of 
+typical military tanks and planes with gadgets attached to them. 
  
-Raiden (called Raiden Trad on the Genesis and 
-SNES) is an over-head vertical-scrolling shooter, 
-based on an arcade game of the same title. It 
-features two forms of weapon upgrades and two 
-types of missiles (normal or homing). You start 
-the game with several bombs which you can use to 
-destroy most enemies on the screen to get yourself 
-out of a jam. Each level ends with a large boss or 
-bosses. 
+Raiden (called Raiden Trad on the Genesis and SNES) is an over-head vertical-scrolling shooter, based 
+on an arcade game of the same title. It features two forms of weapon upgrades and two types of 
+missiles (normal or homing). You start the game with several bombs which you can use to destroy most 
+enemies on the screen to get yourself out of a jam. Each level ends with a large boss or bosses. 
  
  
 - TECHNICAL - 
@@ -2248,9 +1718,7 @@ Genre : Action
 Perspective : Top-Down 
 Players : 1 Player 
 Score : 2.2 
-Other Systems : 
-DOS,Genesis,Jaguar,SNES,TurboGrafx-16,TurboGrafx 
-CD 
+Other Systems : DOS,Genesis,Jaguar,SNES,TurboGrafx-16,TurboGrafx CD 
 SOURCE : http://www.mobygames.com/game/lynx/raiden 
  
  
@@ -2262,22 +1730,15 @@ $<a href="http://www.mobygames.com/game/lynx/rampage"</a>
 $bio
  
  
-Rampage (1991) (c) 1990 Bally Midway Manufacturing 
-Co., Inc. / Atari Corporation 
+Rampage (1991) (c) 1990 Bally Midway Manufacturing Co., Inc. / Atari Corporation 
  
-George, Lizzy and Ralph were just ordinary 
-Americans, until an experiment went wrong, turning 
-them into a Gorilla, Lizard and Werewolf 
-respectively. Following this, the three of them 
-plan to go round destroying buildings, and up to 3 
-human players can join in. 
+George, Lizzy and Ralph were just ordinary Americans, until an experiment went wrong, turning them 
+into a Gorilla, Lizard and Werewolf respectively. Following this, the three of them plan to go round 
+destroying buildings, and up to 3 human players can join in. 
  
-Smashing at the edges of the buildings for long 
-enough will make them collapse. The police and 
-military are after you, and will shoot at you, so 
-try to destroy them (failing that, you can avoid 
-the bullets). You will need to eat regularly, with 
-things like plants on offer, to avoid shrinking 
+Smashing at the edges of the buildings for long enough will make them collapse. The police and 
+military are after you, and will shoot at you, so try to destroy them (failing that, you can avoid 
+the bullets). You will need to eat regularly, with things like plants on offer, to avoid shrinking 
 back to being human 
  
  
@@ -2287,12 +1748,9 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.4 
-Other Systems : Amiga,Amstrad CPC,Apple II,Atari 
-2600,Atari 7800,Atari 8-bit,Atari ST,Commodore 
-64,DOS,NES,SEGA Master System,TRS-80 CoCo,ZX 
-Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/rampage 
+Other Systems : Amiga,Amstrad CPC,Apple II,Atari 2600,Atari 7800,Atari 8-bit,Atari ST,Commodore 
+64,DOS,NES,SEGA Master System,TRS-80 CoCo,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/rampage 
  
  
 $end
@@ -2303,18 +1761,13 @@ $<a href="http://www.mobygames.com/game/lynx/rampart"</a>
 $bio
  
  
-Rampart (1991) (c) 1991 Atari Games Corporation / 
-Tengen Inc. 
+Rampart (1991) (c) 1991 Atari Games Corporation / Tengen Inc. 
  
-Tetris meets shoot-'em-up, Rampart was originally 
-a one or two-player arcade game combining strategy 
-and artillery action. Build your castle from 
-Tetris-style pieces, place your cannons, bombard 
-the enemy, try to repair, do it all over again. 
-Later arcade revisions incorporated 3-player,  and 
-the PC conversion does as well, making it a 
-faithful, entertaining classic for multiple 
-players on the same PC. 
+Tetris meets shoot-'em-up, Rampart was originally a one or two-player arcade game combining strategy 
+and artillery action. Build your castle from Tetris-style pieces, place your cannons, bombard the 
+enemy, try to repair, do it all over again. Later arcade revisions incorporated 3-player,  and the PC 
+conversion does as well, making it a faithful, entertaining classic for multiple players on the same 
+PC. 
  
  
 - TECHNICAL - 
@@ -2322,11 +1775,9 @@ players on the same PC.
 Genre : Action|Strategy 
 Perspective : Top-Down 
 Players : 1-2 Players 
-Other Systems : Amiga,Atari ST,Commodore 
-64,DOS,Game Boy,Game Boy Color,Genesis,NES,SEGA 
-Master System,SNES 
-SOURCE : 
-http://www.mobygames.com/game/lynx/rampart 
+Other Systems : Amiga,Atari ST,Commodore 64,DOS,Game Boy,Game Boy Color,Genesis,NES,SEGA Master 
+System,SNES 
+SOURCE : http://www.mobygames.com/game/lynx/rampart 
  
  
 $end
@@ -2337,28 +1788,18 @@ $<a href="http://www.mobygames.com/game/lynx/roadblasters"</a>
 $bio
  
  
-RoadBlasters (1990) (c) 1990 Atari Games 
-Corporation / Atari Corporation|Tengen Inc. 
+RoadBlasters (1990) (c) 1990 Atari Games Corporation / Atari Corporation|Tengen Inc. 
  
-RoadBlasters is a futuristic racing action game. 
-The goal is to reach the finish line in one piece 
-throughout each of 50 levels. Numerous enemies are 
-out on the road to try and stop you, including 
-armored cars, motorcycles, canons on the side of 
-the road, landmines, and more. 
+RoadBlasters is a futuristic racing action game. The goal is to reach the finish line in one piece 
+throughout each of 50 levels. Numerous enemies are out on the road to try and stop you, including 
+armored cars, motorcycles, canons on the side of the road, landmines, and more. 
  
-Your vehicle is equipped with a machine gun to 
-help you out, and occasionally a weapons plane 
-will fly in and drop additional power ups that can 
-be collected. Some of these are the U.Z. canon, 
-cruise missiles, and speed boost. Your car has a 
-very limited amount of fuel, however more can be 
-picked up along the way by crossing the halfway 
-point of a level, or by collecting the red and 
-green fuel spheres that appear in the road or 
-after destroying certain enemies.  On many levels 
-collecting fuel is critical otherwise you won't be 
-able to reach the finish line. 
+Your vehicle is equipped with a machine gun to help you out, and occasionally a weapons plane will 
+fly in and drop additional power ups that can be collected. Some of these are the U.Z. canon, cruise 
+missiles, and speed boost. Your car has a very limited amount of fuel, however more can be picked up 
+along the way by crossing the halfway point of a level, or by collecting the red and green fuel 
+spheres that appear in the road or after destroying certain enemies.  On many levels collecting fuel 
+is critical otherwise you won't be able to reach the finish line. 
  
  
 - TECHNICAL - 
@@ -2366,10 +1807,8 @@ able to reach the finish line.
 Genre : Action|Racing / Driving 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,Genesis,NES,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/roadblasters 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,Genesis,NES,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/roadblasters 
  
  
 $end
@@ -2380,22 +1819,15 @@ $<a href="http://www.mobygames.com/game/lynx/robotron-2084"</a>
 $bio
  
  
-Robotron 2084 (1991) (Williams) (c) 1991 Williams 
-Electronic Games, Inc. / Shadowsoft 
+Robotron 2084 (1991) (Williams) (c) 1991 Williams Electronic Games, Inc. / Shadowsoft 
  
-This is a port of the arcade game of the same 
-name. 
+This is a port of the arcade game of the same name. 
  
-You are a mutant human, who by some freak of 
-nature has the ability to shoot energy pulses from 
-his body in eight different directions! Your job 
-is simple: save humanity from their own creation 
--- the ROBOTRONS! The gameplay is pretty unique 
-for the time. You can move and fire in any of 
-eight directions. You get thrown in a room with 
-various evil baddies strewn about, you've got to 
-kill all the robots while at the same time finding 
-some way to grab humans and avoid death. 
+You are a mutant human, who by some freak of nature has the ability to shoot energy pulses from his 
+body in eight different directions! Your job is simple: save humanity from their own creation -- the 
+ROBOTRONS! The gameplay is pretty unique for the time. You can move and fire in any of eight 
+directions. You get thrown in a room with various evil baddies strewn about, you've got to kill all 
+the robots while at the same time finding some way to grab humans and avoid death. 
  
  
 - TECHNICAL - 
@@ -2404,11 +1836,9 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.5 
-Other Systems : Apple II,Atari 5200,Atari 
-7800,Atari 8-bit,Atari ST,BBC Micro,Commodore 
-64,PC Booter,TI-99/4A,VIC-20,Xbox 360,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/robotron-2084 
+Other Systems : Apple II,Atari 5200,Atari 7800,Atari 8-bit,Atari ST,BBC Micro,Commodore 64,PC 
+Booter,TI-99/4A,VIC-20,Xbox 360,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/robotron-2084 
  
  
 $end
@@ -2419,31 +1849,19 @@ $<a href="http://www.mobygames.com/game/lynx/rygar_"</a>
 $bio
  
  
-Rygar - Legendary Warrior (1990) (c) 1990 Tecmo, 
-Ltd. / Atari Corporation 
+Rygar - Legendary Warrior (1990) (c) 1990 Tecmo, Ltd. / Atari Corporation 
  
-An evil being known as Ligar is about to conquer 
-the land of Argool. Such is his power that no 
-living creature dares to cross paths with him. But 
-the legendary warrior Rygar rises from his grave 
-to restore peace and justice. Armed with his famed 
-weapon Diskarmor, Rygar begins to traverse the 
-vast lands that lead to the lair of the demon, as 
-his minions are trying in vain to stop him... 
+An evil being known as Ligar is about to conquer the land of Argool. Such is his power that no living 
+creature dares to cross paths with him. But the legendary warrior Rygar rises from his grave to 
+restore peace and justice. Armed with his famed weapon Diskarmor, Rygar begins to traverse the vast 
+lands that lead to the lair of the demon, as his minions are trying in vain to stop him... 
  
-Originally released on the arcades, Rygar is a 
-side-scrolling action game. The player controls 
-the titular hero, advancing through stages 
-populated by hostile creatures. Beside the 
-Diskarmor, a weapon that looks like a shield with 
-a chain attached to it, the hero can use a variety 
-of other weapons, including projectiles that can 
-be fired in four directions. Various "powers" are 
-scattered through the levels and can be collected. 
-The effects of these powers include increasing the 
-fire power of the equipped weapon, adding time to 
-the clock, temporary invisibility, extra points, 
-etc. 
+Originally released on the arcades, Rygar is a side-scrolling action game. The player controls the 
+titular hero, advancing through stages populated by hostile creatures. Beside the Diskarmor, a weapon 
+that looks like a shield with a chain attached to it, the hero can use a variety of other weapons, 
+including projectiles that can be fired in four directions. Various "powers" are scattered through 
+the levels and can be collected. The effects of these powers include increasing the fire power of the 
+equipped weapon, adding time to the clock, temporary invisibility, extra points, etc. 
  
  
 - TECHNICAL - 
@@ -2452,8 +1870,7 @@ Genre : Action
 Perspective : Side-Scrolling 
 Players : 1 Player 
 Score : 3.3 
-Other Systems : Amstrad CPC,Commodore 64,SEGA 
-Master System,Wii,ZX Spectrum 
+Other Systems : Amstrad CPC,Commodore 64,SEGA Master System,Wii,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/rygar_ 
  
  
@@ -2465,18 +1882,13 @@ $<a href="http://www.mobygames.com/game/lynx/scrapyard-dog"</a>
 $bio
  
  
-Scrapyard Dog (1991) (c) 1991 Creative Software 
-Designs, inc. / Atari Corporation 
+Scrapyard Dog (1991) (c) 1991 Creative Software Designs, inc. / Atari Corporation 
  
-In Scrapyard Dog you play the role of Louie, the 
-junkyard guy, who's companion Scraps has been 
-dognapped by the dastardly Mr. Big. Louie has 
-bombs and cans at his disposal to use against the 
-enemies, which include gangsters, rats, and mice. 
-He can also use shields to protect himself on 
-route to the sixteen checkpoints in the game. 
-Louie must reach each checkpoint in a certain 
-amount of time in order to save Scraps. 
+In Scrapyard Dog you play the role of Louie, the junkyard guy, who's companion Scraps has been 
+dognapped by the dastardly Mr. Big. Louie has bombs and cans at his disposal to use against the 
+enemies, which include gangsters, rats, and mice. He can also use shields to protect himself on route 
+to the sixteen checkpoints in the game. Louie must reach each checkpoint in a certain amount of time 
+in order to save Scraps. 
  
  
 - TECHNICAL - 
@@ -2486,8 +1898,7 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 2.8 
 Other Systems : Atari 7800 
-SOURCE : 
-http://www.mobygames.com/game/lynx/scrapyard-dog 
+SOURCE : http://www.mobygames.com/game/lynx/scrapyard-dog 
  
  
 $end
@@ -2498,51 +1909,30 @@ $<a href="http://www.mobygames.com/game/lynx/shadow-of-the-beast"</a>
 $bio
  
  
-Shadow of the Beast (1992) (c) 1992 Reflections 
-Interactive Limited / Atari Corporation|Psygnosis 
+Shadow of the Beast (1992) (c) 1992 Reflections Interactive Limited / Atari Corporation|Psygnosis 
 Limited 
  
-While very young, Aarbron was kidnapped and 
-enslaved by the Priests of the Beast Lord. He grew 
-up on drugs made to destroy his own will and turn 
-him into the Beast Messenger, a powerful creature 
-serving Maletoth, The Beast Lord himself. He did 
-his job, until one day he noticed a man about to 
-be sacrificed in a ritual, his face triggering 
-ancient memories... and as the sacrificial knife 
-descended into the man's body, Aarbron recognizes 
-the face. Of his father. 
-As his father dies in the altar, memories of his 
-childhood and tormented past at the hands of the 
-Beast Lord emerged, and as feelings of hate over 
-his captors took over him, he swore revenge and 
-fled the temple, knowing the road to avenge his 
-father and redemption would be hard. 
+While very young, Aarbron was kidnapped and enslaved by the Priests of the Beast Lord. He grew up on 
+drugs made to destroy his own will and turn him into the Beast Messenger, a powerful creature serving 
+Maletoth, The Beast Lord himself. He did his job, until one day he noticed a man about to be 
+sacrificed in a ritual, his face triggering ancient memories... and as the sacrificial knife 
+descended into the man's body, Aarbron recognizes the face. Of his father. 
+As his father dies in the altar, memories of his childhood and tormented past at the hands of the 
+Beast Lord emerged, and as feelings of hate over his captors took over him, he swore revenge and fled 
+the temple, knowing the road to avenge his father and redemption would be hard. 
  
-Shadow of the Beast, one of Psygnosis most popular 
-titles during the 16-bit computer era is a 
-side-scrolling platformer best known for the use 
-of parallax scrolling along lush graphics, a 
-musical score  by David Whittaker, a iconic cover 
-by Roger Dean and what many consider to be 
-unforgiving gameplay, balancing between the "very 
-challenging" and the "impossible". The player has 
-to navigate through several areas filled with 
-enemies and traps, collecting keys and activating 
-triggers than open new areas or give Aarbron the 
-means to overcome a sub-boss. The number of moves 
-the player has at disposal is limited: duck, jump 
-and only two attacks: punch and a flying kick. 
-While most enemies die with just one hit, the 
-player must time each attack accurately. However, 
-there are also traps of objects that cannot be 
-destroyed, and these require the player to jump, 
-duck or move according the sequence. The player 
-has only one life with 12 hit points that can be 
-replenished by collecting some objects hidden in 
-the level (like an off-route location or a under a 
-megalith), which also contributes to the 
-difficulty level. 
+Shadow of the Beast, one of Psygnosis most popular titles during the 16-bit computer era is a 
+side-scrolling platformer best known for the use of parallax scrolling along lush graphics, a musical 
+score  by David Whittaker, a iconic cover by Roger Dean and what many consider to be unforgiving 
+gameplay, balancing between the "very challenging" and the "impossible". The player has to navigate 
+through several areas filled with enemies and traps, collecting keys and activating triggers than 
+open new areas or give Aarbron the means to overcome a sub-boss. The number of moves the player has 
+at disposal is limited: duck, jump and only two attacks: punch and a flying kick. While most enemies 
+die with just one hit, the player must time each attack accurately. However, there are also traps of 
+objects that cannot be destroyed, and these require the player to jump, duck or move according the 
+sequence. The player has only one life with 12 hit points that can be replenished by collecting some 
+objects hidden in the level (like an off-route location or a under a megalith), which also 
+contributes to the difficulty level. 
  
  
 - TECHNICAL - 
@@ -2551,10 +1941,9 @@ Genre : Action
 Perspective : Platform 
 Players : 1 Player 
 Score : 1.6 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,Genesis,SEGA Master 
-System,TurboGrafx CD,ZX Spectrum 
-SOURCE : 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,Genesis,SEGA Master System,TurboGrafx CD,ZX 
+Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/shadow-of-the-beast 
  
  
 $end
@@ -2565,24 +1954,17 @@ $<a href="http://www.mobygames.com/game/lynx/shanghai"</a>
 $bio
  
  
-Shanghai (1990) (c) 1990 Activision Publishing, 
-Inc. / Atari Corporation 
+Shanghai (1990) (c) 1990 Activision Publishing, Inc. / Atari Corporation 
  
-Shanghai is a tile-based game based on the ancient 
-Chinese game of Mah-Jong - this was the first of 
+Shanghai is a tile-based game based on the ancient Chinese game of Mah-Jong - this was the first of 
 many computer versions. 
  
-The gameplay involves 144 tiles, each depicting 
-different images, which have to be removed by 
-matching them into pairs. The tiles are arranged 
-in a gridded pattern, which is higher near the 
-centre. A tile can only be removed if it has no 
-tile next to it on at least one side. 
+The gameplay involves 144 tiles, each depicting different images, which have to be removed by 
+matching them into pairs. The tiles are arranged in a gridded pattern, which is higher near the 
+centre. A tile can only be removed if it has no tile next to it on at least one side. 
  
-This computer implementation can generate a random 
-board layout to take on, as well as featuring 5 
-preset challenges, some of which have time limits 
-of 5 or 10 minutes, as well as a multiplayer mode. 
+This computer implementation can generate a random board layout to take on, as well as featuring 5 
+preset challenges, some of which have time limits of 5 or 10 minutes, as well as a multiplayer mode. 
  
  
 - TECHNICAL - 
@@ -2590,12 +1972,9 @@ of 5 or 10 minutes, as well as a multiplayer mode.
 Genre : Strategy 
 Perspective : Top-Down 
 Players : 1 Player 
-Other Systems : Amiga,Amstrad CPC,Apple II,Apple 
-IIgs,Atari 8-bit,Atari ST,Commodore 
-64,DOS,Macintosh,MSX,SEGA Master 
-System,TurboGrafx-16,TRS-80 CoCo 
-SOURCE : 
-http://www.mobygames.com/game/lynx/shanghai 
+Other Systems : Amiga,Amstrad CPC,Apple II,Apple IIgs,Atari 8-bit,Atari ST,Commodore 
+64,DOS,Macintosh,MSX,SEGA Master System,TurboGrafx-16,TRS-80 CoCo 
+SOURCE : http://www.mobygames.com/game/lynx/shanghai 
  
  
 $end
@@ -2608,55 +1987,36 @@ $bio
  
 S.I.M.I.S. (c) 1998 
  
-S.I.M.I.S. stands for the names of the games and 
-  items on the card. They are SnakeByte, Invaders, 
-  Mines, Isolation, and Specials, which are the 
-  demos. 
+S.I.M.I.S. stands for the names of the games and items on the card. They are SnakeByte, Invaders, 
+  Mines, Isolation, and Specials, which are the demos. 
  
 SnakeByte 
-This game is like one of many snake games. In 
-SnakeByte, you are a snake moving about the 
-screen, eating apples. You must not touch the 
-walls or your own body. Each time you eat an 
-apple, you grow longer, making maneuvering that 
-much harder. In later levels, you have objects in 
-the playing field to also avoid. 
+This game is like one of many snake games. In SnakeByte, you are a snake moving about the screen, 
+eating apples. You must not touch the walls or your own body. Each time you eat an apple, you grow 
+longer, making maneuvering that much harder. In later levels, you have objects in the playing field 
+to also avoid. 
  
 Invaders 
-This is the game Space Invaders that has been 
-ported to the Atari Lynx. Rows of invaders move 
-across the scree, firing down at you. When they 
-reach the edge of the screen, they drop down then 
-move towards the opposite side. You are a cannon 
-at the bottom that moves left and right. You must 
-shoot all the invaders before they get to the 
-bottom of the screen. You have three shields to 
-hide behind. Occasionally, a mother ship moves 
-across the screen that can be shot for points. 
+This is the game Space Invaders that has been ported to the Atari Lynx. Rows of invaders move across 
+the scree, firing down at you. When they reach the edge of the screen, they drop down then move 
+towards the opposite side. You are a cannon at the bottom that moves left and right. You must shoot 
+all the invaders before they get to the bottom of the screen. You have three shields to hide behind. 
+Occasionally, a mother ship moves across the screen that can be shot for points. 
  
 Mines 
-This game is very similar  to the game 
-Minesweeper. You must make your way across the 
-room, from the upper left to the lower right. 
-There are hidden mines in the room. You use your 
-mine detector to see how many mines are one step 
-away from you. Use your detonator to destroy all 
-mines one step away. You are timed and if you fail 
-to get to  the exit in time, all mines will go of, 
-losing you the game. If you use your detonator 
-next to the exit door, you also lose. 
+This game is very similar  to the game Minesweeper. You must make your way across the room, from the 
+upper left to the lower right. There are hidden mines in the room. You use your mine detector to see 
+how many mines are one step away from you. Use your detonator to destroy all mines one step away. You 
+are timed and if you fail to get to  the exit in time, all mines will go of, losing you the game. If 
+you use your detonator next to the exit door, you also lose. 
  
 Isolation 
-The playing area in an eight by six area of tiles. 
-You can move one step in any direction then once 
-you move, you must remove a tile from around you.  
-You and your opponent do this, alternatively, 
-until one of you has nowhere to move and is the 
-loser. 
+The playing area in an eight by six area of tiles. You can move one step in any direction then once 
+you move, you must remove a tile from around you.  You and your opponent do this, alternatively, 
+until one of you has nowhere to move and is the loser. 
  
 Specials 
-This is four playable game demos that the authors 
-are developing. 
+This is four playable game demos that the authors are developing. 
  
  
 - TECHNICAL - 
@@ -2677,10 +2037,8 @@ $bio
  
 SokoMania (c) 1999 MW Software / MW Software 
  
-This is the game Soko-Ban ported to the Atari 
-Lynx. You control Harry the warehouse worker, who 
-must push brown boxes onto blue fields on the 
-warehouse floor. 
+This is the game Soko-Ban ported to the Atari Lynx. You control Harry the warehouse worker, who must 
+push brown boxes onto blue fields on the warehouse floor. 
  
  
 - TECHNICAL - 
@@ -2688,8 +2046,7 @@ warehouse floor.
 Genre : Strategy 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-SOURCE : 
-http://www.mobygames.com/game/lynx/sokomania 
+SOURCE : http://www.mobygames.com/game/lynx/sokomania 
  
  
 $end
@@ -2700,26 +2057,18 @@ $<a href="http://www.mobygames.com/game/lynx/steel-talons"</a>
 $bio
  
  
-Steel Talons (1991) (c) 1992 Atari Games 
-Corporation / Tengen Inc. 
+Steel Talons (1991) (c) 1992 Atari Games Corporation / Tengen Inc. 
  
-Steel Talons brought realism-oriented helicopter 
-combat to the arcades, and later to home systems. 
-The action is viewed from behind your helicopter, 
-with the 3D polygon world rotating around you, 
+Steel Talons brought realism-oriented helicopter combat to the arcades, and later to home systems. 
+The action is viewed from behind your helicopter, with the 3D polygon world rotating around you, 
 taking in mountains, rivers and deserts. 
  
-There are 12 missions in total, each of which 
-requires you to destroy targets in a set time 
-limit. There are also training and head-to-head 
-(against a CPU-controlled drone) modes. 
+There are 12 missions in total, each of which requires you to destroy targets in a set time limit. 
+There are also training and head-to-head (against a CPU-controlled drone) modes. 
  
-You have a limited number of 
-automatically-targeting missiles as well as a 
-cannon. A tracking map tells you where you are on 
-the level, and where the enemies are.Contact with 
-the ground, mountains or other vehicles will 
-damage or destroy your helicopter. 
+You have a limited number of automatically-targeting missiles as well as a cannon. A tracking map 
+tells you where you are on the level, and where the enemies are.Contact with the ground, mountains or 
+other vehicles will damage or destroy your helicopter. 
  
  
 - TECHNICAL - 
@@ -2728,8 +2077,7 @@ Genre : Action|Simulation
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Other Systems : Atari ST,Genesis,SNES 
-SOURCE : 
-http://www.mobygames.com/game/lynx/steel-talons 
+SOURCE : http://www.mobygames.com/game/lynx/steel-talons 
  
  
 $end
@@ -2740,44 +2088,27 @@ $<a href="http://www.mobygames.com/game/lynx/stun-runner"</a>
 $bio
  
  
-S.T.U.N. Runner (1991) (c) 1991 Atari Games 
-  Corporation / Atari Corporation 
+S.T.U.N. Runner (1991) (c) 1991 Atari Games Corporation / Atari Corporation 
  
-Based on the 1989 Atari Games (not to be confused 
-with Atari Corporation, producers of the Lynx) 
-coin-op by Ed Rotberg.  It's 2492 and you must 
-pilot your Sub-Terranean Underground Network 
-(S.T.U.N.) craft at speeds over 900 miles per hour 
-through a series of courses to retain your title 
-as S.T.U.N. Runner, completing each course before 
-time runs out. 
+Based on the 1989 Atari Games (not to be confused with Atari Corporation, producers of the Lynx) 
+coin-op by Ed Rotberg.  It's 2492 and you must pilot your Sub-Terranean Underground Network 
+(S.T.U.N.) craft at speeds over 900 miles per hour through a series of courses to retain your title 
+as S.T.U.N. Runner, completing each course before time runs out. 
  
-There are also enemies on each course, such as 
-cycles, indestructible armored drones, and flying 
-bird-like craft.  Shoot or avoid them.  If you hit 
-them, you lose one of your shields (your craft has 
-six total) and are slowed down temporarily.  The 
-more shields you have at the finish line, the more 
-bonus points you get.  Getting hit with no shields 
-does not kill you, however.  There are no lives in 
-this game.  The only way to lose is to fail to 
-cross the finish line. 
+There are also enemies on each course, such as cycles, indestructible armored drones, and flying 
+bird-like craft.  Shoot or avoid them.  If you hit them, you lose one of your shields (your craft has 
+six total) and are slowed down temporarily.  The more shields you have at the finish line, the more 
+bonus points you get.  Getting hit with no shields does not kill you, however.  There are no lives in 
+this game.  The only way to lose is to fail to cross the finish line. 
  
-Along the way you'll encounter Boost Pads that 
-temporarily speed you up to incredible speeds and 
-make you indestructible.  By running over enough 
-green stars on each course, you can also earn 
-Shockwaves, which destroy all enemies in your 
-path. 
+Along the way you'll encounter Boost Pads that temporarily speed you up to incredible speeds and make 
+you indestructible.  By running over enough green stars on each course, you can also earn Shockwaves, 
+which destroy all enemies in your path. 
  
-Note that there is no accelerator in this game.  
-Your craft always goes full speed, unless you hit 
-something.  Then you will slow down, but quickly 
-accelerate back to full speed.  Other than that, 
-you cannot slow down and the only way to speed up 
-is to run over a Boost Pad.  Your only controls 
-are steering left and right and aiming the gun on 
-top of your craft up and down. 
+Note that there is no accelerator in this game.  Your craft always goes full speed, unless you hit 
+something.  Then you will slow down, but quickly accelerate back to full speed.  Other than that, you 
+cannot slow down and the only way to speed up is to run over a Boost Pad.  Your only controls are 
+steering left and right and aiming the gun on top of your craft up and down. 
  
  
 - TECHNICAL - 
@@ -2786,10 +2117,8 @@ Genre : Racing / Driving
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
 Score : 3.9 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,DOS,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/stun-runner 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,DOS,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/stun-runner 
  
  
 $end
@@ -2800,24 +2129,17 @@ $<a href="http://www.mobygames.com/game/lynx/super-asteroids-and-missile-command
 $bio
  
  
-Super Asteroids & Missile Command (1995) (c) 1995 
-Atari Corporation / Atari Corporation 
+Super Asteroids & Missile Command (1995) (c) 1995 Atari Corporation / Atari Corporation 
  
-Two classic Atari arcade games were updated for 
-this compilation. This Lynx version of Asteroids 
-and Missile Command contains some enhanced 
-features to justify the "super" in the title. 
+Two classic Atari arcade games were updated for this compilation. This Lynx version of Asteroids and 
+Missile Command contains some enhanced features to justify the "super" in the title. 
  
-Super Asteroids has all new graphics to replace 
-the vector outlines of the original. Your ship has 
-a shield that can absorb several collisions before 
-it blows up. There are also power ups to increase 
+Super Asteroids has all new graphics to replace the vector outlines of the original. Your ship has a 
+shield that can absorb several collisions before it blows up. There are also power ups to increase 
 your firepower. 
  
-Super Missile Command also has all new graphics.  
-Between rounds, you can trade credits earned 
-during gameplay to purchase special weapons that 
-will help you later in the game. 
+Super Missile Command also has all new graphics.  Between rounds, you can trade credits earned during 
+gameplay to purchase special weapons that will help you later in the game. 
  
  
 - TECHNICAL - 
@@ -2827,7 +2149,7 @@ Perspective : 3rd-Person Perspective
 Players : 1 Player 
 Score : 3.2 
 Esrb : Kids to Adults 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/super-asteroids-and-missile-command 
  
  
 $end
@@ -2838,26 +2160,18 @@ $<a href="http://www.mobygames.com/game/lynx/super-skweek"</a>
 $bio
  
  
-Super Skweek (1991) (c) 1991 Loriciel SA / Atari 
-Corporation 
+Super Skweek (1991) (c) 1991 Loriciel SA / Atari Corporation 
  
-Super Skweek is a game inspired by the wide 
-success of Chip's Challenge, and share some 
-elements of that puzzler while combining other 
-elements from games such as Pengo. 
+Super Skweek is a game inspired by the wide success of Chip's Challenge, and share some elements of 
+that puzzler while combining other elements from games such as Pengo. 
  
-In Super Skweek, you play the title character who 
-must walk around and either paint all the tiles of 
-the game board pink, complete a specific mission, 
-or both.  Some tiles react in various ways when 
-you walk on them, like exploding. 
+In Super Skweek, you play the title character who must walk around and either paint all the tiles of 
+the game board pink, complete a specific mission, or both.  Some tiles react in various ways when you 
+walk on them, like exploding. 
  
-Unlike Chip's Challenge, the game plays in 
-realtime and you can pick up and use weapons to 
-keep away certain monsters as you paint the tiles. 
- There is also a shop you can enter to purchase 
-items.  Finally, levels have a time limit for 
-completion. 
+Unlike Chip's Challenge, the game plays in realtime and you can pick up and use weapons to keep away 
+certain monsters as you paint the tiles.  There is also a shop you can enter to purchase items.  
+Finally, levels have a time limit for completion. 
  
  
 - TECHNICAL - 
@@ -2867,8 +2181,7 @@ Perspective : Top-Down
 Players : 1-2 Players 
 Score : 4.2 
 Other Systems : Amiga,Amstrad CPC,Atari ST 
-SOURCE : 
-http://www.mobygames.com/game/lynx/super-skweek 
+SOURCE : http://www.mobygames.com/game/lynx/super-skweek 
  
  
 $end
@@ -2879,18 +2192,13 @@ $<a href="http://www.mobygames.com/game/lynx/switchblade-ii"</a>
 $bio
  
  
-Switchblade II (1992) (c) 1992 Gremlin Graphics 
-Software Ltd. / Atari Corporation 
+Switchblade II (1992) (c) 1992 Gremlin Graphics Software Ltd. / Atari Corporation 
  
-As Hiro, you must once again defeat the ninja lord 
-Havok.  Using ninja throwing stars and other 
-weapons, you must defeat the minions of Havok to 
-reach him. 
+As Hiro, you must once again defeat the ninja lord Havok.  Using ninja throwing stars and other 
+weapons, you must defeat the minions of Havok to reach him. 
  
-Switchblade II is a side-scrolling platform action 
-game.  One key aspect of the game is obtaining 
-coins from defeated enemies, which can be traded 
-at shops for extra lives, energy, and weapons. 
+Switchblade II is a side-scrolling platform action game.  One key aspect of the game is obtaining 
+coins from defeated enemies, which can be traded at shops for extra lives, energy, and weapons. 
  
  
 - TECHNICAL - 
@@ -2900,8 +2208,7 @@ Perspective : Platform
 Players : 1 Player 
 Score : 3.0 
 Other Systems : Amiga,Atari ST 
-SOURCE : 
-http://www.mobygames.com/game/lynx/switchblade-ii 
+SOURCE : http://www.mobygames.com/game/lynx/switchblade-ii 
  
  
 $end
@@ -2912,25 +2219,17 @@ $<a href="http://www.mobygames.com/game/lynx/todds-adventures-in-slime-world"</a
 $bio
  
  
-Todd's Adventure in Slime World (1990) (c) Oct, 
-1990 Epyx, Inc. / Atari Corporation 
+Todd's Adventure in Slime World (1990) (c) Oct, 1990 Epyx, Inc. / Atari Corporation 
  
-While flying your spaceship, you crash land on a 
-planet covered entirely in slime.  You and a 
-friend explore the labyrinthine planet of slime, 
-armed with a water pistol and all manner of 
-gadgets you find along the way in an effort to 
-find your way back out.  The game world is a giant 
-maze with quirky hidden areas and plenty of 
-original layout ideas.  Depending on the game 
-mode, you are either cooperating or competing with 
-your "friend" to find and get to an exit first.  
-Due to the massive sizes of the slime worlds 
-(about 6 entries to choose from), games often take 
-several hours to complete. 
+While flying your spaceship, you crash land on a planet covered entirely in slime.  You and a friend 
+explore the labyrinthine planet of slime, armed with a water pistol and all manner of gadgets you 
+find along the way in an effort to find your way back out.  The game world is a giant maze with 
+quirky hidden areas and plenty of original layout ideas.  Depending on the game mode, you are either 
+cooperating or competing with your "friend" to find and get to an exit first.  Due to the massive 
+sizes of the slime worlds (about 6 entries to choose from), games often take several hours to 
+complete. 
  
-The basis of the game is exploration, with varying 
-game modes further focusing on competition, puzzle 
+The basis of the game is exploration, with varying game modes further focusing on competition, puzzle 
 solving, speed, exploration, or cooperation. 
  
  
@@ -2940,7 +2239,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-8 Players 
 Other Systems : Genesis,TurboGrafx CD 
-SOURCE : 
+SOURCE : http://www.mobygames.com/game/lynx/todds-adventures-in-slime-world 
  
  
 $end
@@ -2951,22 +2250,15 @@ $<a href="http://www.mobygames.com/game/lynx/toki"</a>
 $bio
  
  
-Toki (1990) (c) Dec 31, 1991 Tad Corporation / 
-Atari Corporation 
+Toki (1990) (c) Dec 31, 1991 Tad Corporation / Atari Corporation 
  
-The hero of the game is a young jungle-man named 
-Toki. One day the evil wizard Dr. Stark kidnaps 
-his girlfriend Wanda. When Toki tries to save her, 
-he is turned into a monkey! Now Toki has to find 
-Dr. Stark in his palace, to rescue Wanda, and to 
-become a human being again! 
+The hero of the game is a young jungle-man named Toki. One day the evil wizard Dr. Stark kidnaps his 
+girlfriend Wanda. When Toki tries to save her, he is turned into a monkey! Now Toki has to find Dr. 
+Stark in his palace, to rescue Wanda, and to become a human being again! 
  
-It is a platform game with a lot of various 
-levels: jungle, underwater, volcanic caves, on the 
-ice... Toki's only weapons are spitting on the 
-enemies or jumping on them and crashing them. 
-There are many possibilities to upgrade his 
-spitting "weapon" 
+It is a platform game with a lot of various levels: jungle, underwater, volcanic caves, on the ice... 
+Toki's only weapons are spitting on the enemies or jumping on them and crashing them. There are many 
+possibilities to upgrade his spitting "weapon" 
  
  
 - TECHNICAL - 
@@ -2974,8 +2266,7 @@ spitting "weapon"
 Genre : Action 
 Perspective : 3rd-Person Perspective 
 Players : 1 Player 
-Other Systems : Amiga,Atari ST,Commodore 
-64,Genesis,iPhone,NES 
+Other Systems : Amiga,Atari ST,Commodore 64,Genesis,iPhone,NES 
 SOURCE : http://www.mobygames.com/game/lynx/toki 
  
  
@@ -2989,14 +2280,10 @@ $bio
  
 T-Tris (1996) by Bastian Schick (c) 1995 
  
-This is the game Tetris designed to run on the 
-Atari Lynx. For those who have been living under a 
-rock for the last two decades, I will explain: 
-colored shapes fall from the top of the screen. 
-You must arrange these shapes so they form a 
-complete line across the playing field.  If the 
-stack reaches the top of the playing field, the 
-game is over. 
+This is the game Tetris designed to run on the Atari Lynx. For those who have been living under a 
+rock for the last two decades, I will explain: colored shapes fall from the top of the screen. You 
+must arrange these shapes so they form a complete line across the playing field.  If the stack 
+reaches the top of the playing field, the game is over. 
  
  
 - TECHNICAL - 
@@ -3015,20 +2302,15 @@ $<a href="http://www.mobygames.com/game/lynx/warbirds_"</a>
 $bio
  
  
-Warbirds (1990) (c) 1991 Atari Corporation / Atari 
-Corporation 
+Warbirds (1990) (c) 1991 Atari Corporation / Atari Corporation 
  
-A combat flight action/simulation with colorful 
-graphics and pretty straight-forward gameplay. 
+A combat flight action/simulation with colorful graphics and pretty straight-forward gameplay. 
  
-Step inside the cockpit of a World War I plane, 
-when there were no sophisticated weaponry, and try 
-to gun down the enemy. Simple as that. 
+Step inside the cockpit of a World War I plane, when there were no sophisticated weaponry, and try to 
+gun down the enemy. Simple as that. 
  
-The graphics were faux-3D, as the planes were 2D 
-sprites (natural, considering the release date), 
-but the sky seemed very vast and you could fly 
-around freely. 
+The graphics were faux-3D, as the planes were 2D sprites (natural, considering the release date), but 
+the sky seemed very vast and you could fly around freely. 
  
  
 - TECHNICAL - 
@@ -3037,8 +2319,7 @@ Genre : Action|Simulation
 Perspective : 1st-Person Perspective 
 Players : 1-4 Players 
 Score : 3.0 
-SOURCE : 
-http://www.mobygames.com/game/lynx/warbirds_ 
+SOURCE : http://www.mobygames.com/game/lynx/warbirds_ 
  
  
 $end
@@ -3049,30 +2330,20 @@ $<a href="http://www.mobygames.com/game/lynx/xenophobe"</a>
 $bio
  
  
-Xenophobe (1990) (c) 1990 Bally Midway 
-Manufacturing Co., Inc. / Atari Corporation 
+Xenophobe (1990) (c) 1990 Bally Midway Manufacturing Co., Inc. / Atari Corporation 
  
-Xenos.  The very name strikes fear into every 
-colonist's heart.  A distress call is received 
-from space stations orbiting your homeworld, then 
-silence.  A single ship escapes, piloted by a 
-battered man who tells the tale of pods that hatch 
-into acid-spitting Xenos. 
+Xenos.  The very name strikes fear into every colonist's heart.  A distress call is received from 
+space stations orbiting your homeworld, then silence.  A single ship escapes, piloted by a battered 
+man who tells the tale of pods that hatch into acid-spitting Xenos. 
  
-A small band of engineers has been dispatched to 
-combat the Xeno threat before it takes over all 
-the space stations and, eventually, your 
-homeworld.  Assemble your band of engineers and 
-fight the Xenos on each station, striving to 
-either clear it or abandon it.  You start out with 
-a standard issue laser, but can pick up additiona 
-weapons as you find them, including Phasers, 
-Lightning Rifles, Poofer guns, and bombs. 
+A small band of engineers has been dispatched to combat the Xeno threat before it takes over all the 
+space stations and, eventually, your homeworld.  Assemble your band of engineers and fight the Xenos 
+on each station, striving to either clear it or abandon it.  You start out with a standard issue 
+laser, but can pick up additiona weapons as you find them, including Phasers, Lightning Rifles, 
+Poofer guns, and bombs. 
  
-Xenophobe was originally an arcade coin-op by 
-Bally/Midway, released in 1987.  Gameplay premise 
-and setting is heavily inspired/influenced by the 
-movie Aliens. 
+Xenophobe was originally an arcade coin-op by Bally/Midway, released in 1987.  Gameplay premise and 
+setting is heavily inspired/influenced by the movie Aliens. 
  
  
 - TECHNICAL - 
@@ -3081,10 +2352,8 @@ Genre : Action
 Perspective : Side-Scrolling 
 Players : 1-4 Players 
 Score : 3.4 
-Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 
-7800,Atari ST,Commodore 64,NES,ZX Spectrum 
-SOURCE : 
-http://www.mobygames.com/game/lynx/xenophobe 
+Other Systems : Amiga,Amstrad CPC,Atari 2600,Atari 7800,Atari ST,Commodore 64,NES,ZX Spectrum 
+SOURCE : http://www.mobygames.com/game/lynx/xenophobe 
  
  
 $end
@@ -3095,27 +2364,17 @@ $<a href="http://www.mobygames.com/game/lynx/xybots"</a>
 $bio
  
  
-Xybots (1991) (c) 1991 Atari Games Corporation / 
-Atari Corporation 
+Xybots (1991) (c) 1991 Atari Games Corporation / Atari Corporation 
  
-Xybots is either an unusually simple computer game 
-or an unusually complex coin-op shoot 'em up, 
-depending on your point of view. With either one 
-or two players, you must move through a series of 
-Gauntlet-style underground mazes, killing the bad 
-guys and collecting health and other bonuses from 
-flying saucers (underground? SLIGHT logic gap 
-there, methinks).It's designed to be played 
-co-operatively, although bullets from one player 
-can harm the other. 
+Xybots is either an unusually simple computer game or an unusually complex coin-op shoot 'em up, 
+depending on your point of view. With either one or two players, you must move through a series of 
+Gauntlet-style underground mazes, killing the bad guys and collecting health and other bonuses from 
+flying saucers (underground? SLIGHT logic gap there, methinks).It's designed to be played 
+co-operatively, although bullets from one player can harm the other. 
  
-The Xybots are out to stop you, of course, and 
-many have advanced attack patterns as well as 
-bullets to fire at you. Being able to view round 
-corners is useful, allowing you to plan a strategy 
-- often it's good to send one player forward and 
-let the other play the waiting game, as in 
-Gauntlet. 
+The Xybots are out to stop you, of course, and many have advanced attack patterns as well as bullets 
+to fire at you. Being able to view round corners is useful, allowing you to plan a strategy - often 
+it's good to send one player forward and let the other play the waiting game, as in Gauntlet. 
  
  
 - TECHNICAL - 
@@ -3124,8 +2383,7 @@ Genre : Action
 Perspective : 3rd-Person Perspective 
 Players : 1-2 Players 
 Score : 3.4 
-Other Systems : Amiga,Amstrad CPC,Atari 
-ST,Commodore 64,MSX,ZX Spectrum 
+Other Systems : Amiga,Amstrad CPC,Atari ST,Commodore 64,MSX,ZX Spectrum 
 SOURCE : http://www.mobygames.com/game/lynx/xybots 
  
  
@@ -3137,23 +2395,16 @@ $<a href="http://www.mobygames.com/game/lynx/zaku"</a>
 $bio
  
  
-Zaku (c) Oct 24, 2009 PenguiNet / Super Fighter 
-Team 
+Zaku (c) Oct 24, 2009 PenguiNet / Super Fighter Team 
  
-Captain Bran threatens to flood the world markets 
-with his questionable quality software after 
-stealing Rarity 9, a powerful game development 
-tool. His vanity makes him forget about one 
-person: Zaku. It is up to the player to take to 
-the skies and travel through sixteen stages to 
-bring Captain Bran to a halt. 
+Captain Bran threatens to flood the world markets with his questionable quality software after 
+stealing Rarity 9, a powerful game development tool. His vanity makes him forget about one person: 
+Zaku. It is up to the player to take to the skies and travel through sixteen stages to bring Captain 
+Bran to a halt. 
  
-Zaku is a horizontal shooter that takes the player 
-through five different worlds, each swarming with 
-hordes of crazy cartoon-styled enemies and 
-fearsome boss monsters. The protagonist has four 
-different attacks at her disposal, which when used 
-creatively can spell disaster for her foes. 
+Zaku is a horizontal shooter that takes the player through five different worlds, each swarming with 
+hordes of crazy cartoon-styled enemies and fearsome boss monsters. The protagonist has four different 
+attacks at her disposal, which when used creatively can spell disaster for her foes. 
  
  
 - TECHNICAL - 

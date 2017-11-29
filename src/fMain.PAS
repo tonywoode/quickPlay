@@ -1862,11 +1862,15 @@ begin
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
-      end
-      else if LocMessage.xpos = 32511 then
+      end;
+      if LocMessage.xpos = 32511 then
         Begin
           VTROMs.SetFocus;
           wnd := VTROMs;
+      end;
+      if LocMessage.xpos = 65535 then
+        Begin
+          pgMediaPanel.SetFocus;
       end;
 
     if LocMessage.ypos = 65535 then
@@ -1967,9 +1971,9 @@ begin
       begin //run
         SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
       end
-    end
+    end;
 
-    else if VTdir.Focused then
+    if VTdir.Focused then
     begin
      if ((LocMessage.Buttons and joy_button2)=joy_button2) then
       begin //expand
@@ -1987,6 +1991,16 @@ begin
         SendMessage(VTdir.Handle,WM_KEYDOWN,VK_RETURN,0);
       end
     end
+
+    else if pgMediaPanel.Focused then
+    begin
+     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+      begin //expand
+        pgMediaPanel.SelectNextPage(True) ;
+        end;
+
+    end
+
 
   end
 end;

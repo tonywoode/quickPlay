@@ -1869,13 +1869,13 @@ begin
           wnd := VTROMs;
       end;
 
-    if LocMessage.ypos > 225 then
+    if LocMessage.ypos = 65535 then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
-    else if LocMessage.ypos < 75  then
+    else if LocMessage.ypos = 0  then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTROMs.GetFirstSelected();
@@ -1943,26 +1943,51 @@ end;
 
 procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
   var  Node: PVirtualNode;
+   var wnd : TVirtualStringTree;
   begin
 if GetForegroundWindow = self.Handle then
 begin
   if Settings.Joy then
   begin
-   if ((LocMessage.Buttons and joy_button2)=joy_button2) then
-    begin //expand
-      if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
-      begin
-        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+
+    if VTROMs.Focused  then
+    begin
+     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+      begin //expand
+        if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
+        begin
+          VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+        end
+        else
+        begin
+          VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
+        end;
       end
-      else
-      begin
-        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
-      end;
+      else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+      begin //run
+        SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
+      end
     end
-    else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-    begin //run
-      SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
+
+    else if VTdir.Focused then
+    begin
+     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+      begin //expand
+        if VTDir.Expanded [ VTdir.GetFirstSelected() ] then
+        begin
+          VTdir.Expanded [ VTdir.GetFirstSelected() ] := false;
+        end
+        else
+        begin
+          VTdir.Expanded [ VTdir.GetFirstSelected() ] := true;
+        end;
+      end
+      else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+      begin //run
+        SendMessage(VTdir.Handle,WM_KEYDOWN,VK_RETURN,0);
+      end
     end
+
   end
 end;
 end;

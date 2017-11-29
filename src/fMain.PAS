@@ -1858,16 +1858,17 @@ begin
     begin
       Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
+     if (LocMessage.xpos = 32511) or (pgMediaPanel.Focused) then
+        Begin
+          VTROMs.SetFocus;
+          wnd := VTROMs;
+      end;
       if LocMessage.xpos = 0 then//if its left
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
       end;
-      if LocMessage.xpos = 32511 then
-        Begin
-          VTROMs.SetFocus;
-          wnd := VTROMs;
-      end;
+
       if LocMessage.xpos = 65535 then
         Begin
           pgMediaPanel.SetFocus;
@@ -1994,7 +1995,7 @@ begin
 
     else if pgMediaPanel.Focused then
     begin
-     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+     if ((LocMessage.Buttons and joy_button1)=joy_button1) then
       begin //expand
         pgMediaPanel.SelectNextPage(True) ;
         end;

@@ -20,10 +20,6 @@ lib/
 src/_history/
 *.~*
 
-#Be aware that tools in qpFiles/tools are standalone and if run up may start making their own ini files. We want to prevent this:
-qp/tools/Romdata Magician/RomData Magician.ini
-
-
 #QuickPlay puts its binary and resources in the qps directory when run up. But we want to publish QP versions without these files in. Quick solution: commit then replace working dir with commit
 qp/QP.exe
 qp/QP384.exe

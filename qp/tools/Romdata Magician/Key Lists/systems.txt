@@ -42,8 +42,8 @@ Casio PV-1000
 Capcom CPS Changer
 CBR
 CBR Icons
-Channel F
-ColecoVision
+Channel F¬Fairchild Channel F
+ColecoVision¬Coleco ColecoVidion
 Colour Genie EG2000
 Commodore +4/C16
 Commodore 500/600/700
@@ -86,7 +86,7 @@ HD-DVD Video
 Hybrid Windows/Mac
 IBM PC 5150¬IBM PC Compaible
 IBM PC/AT 5170
-Intellivision
+Intellivision¬Mattel Intellivision
 Interton VC4000
 J2ME¬Mobile
 Jupiter Ace
@@ -120,15 +120,15 @@ Nascom
 NEC PC Series¬PC-88¬PC-98
 Neo Geo¬Neo Geo Advanced Entertainment System
 Neo Geo CD
-Neo Geo Pocket¬Neo Geo Pocket Color¬NeoGeo Pocket Color
+Neo Geo Pocket¬Neo Geo Pocket Color¬NeoGeo Pocket Color¬SNK Neo Geo Pocket
 Nimbus
 Nintendo 64
 Nintendo DS¬Nintendo 3DS¬Nintendo DSi
-Nintendo GameBoy¬Game Boy¬Game Boy Color
-Nintendo GameBoy Advance¬e-Reader¬Game Boy Advance
+Nintendo GameBoy¬Nintendo Game Boy¬Game Boy¬Game Boy Color
+Nintendo GameBoy Advance¬e-Reader¬Game Boy Advance¬Nintendo Game Boy Advance
 Nintendo GameCube¬GameCube
 Nintendo NES¬NES¬Nintendo Entertainment System
-Nintndo SNES¬Super Nintendo¬SNES¬Super Nintendo Entertainment System
+Nintendo SNES¬Super Nintendo¬SNES¬Super Nintendo Entertainment System
 Nintendo WII¬Wii
 Nintendo Virtual Boy¬Virtual Boy
 Nokia N-Gage¬N-Gage¬N-Gage (service)
@@ -138,7 +138,7 @@ P8000
 Palm OS
 PasoGo
 PC Booster
-NEC PC Engine\TurboGrafx-16¬PC Engine\TurboGrafx-16¬TurboGrafx CD¬TurboGrafx-16¬TurboGrafx-16 CD¬TurboDuo
+NEC PC Engine\TurboGrafx-16¬NEC PC Engine/TurboGrafx-16¬PC Engine\TurboGrafx-16¬TurboGrafx CD¬TurboGrafx-16¬TurboGrafx-16 CD¬TurboDuo
 PC Engine FX¬PC-FX
 PC Games¬Windows¬Windows 3.x
 PDF Reader
@@ -178,8 +178,7 @@ Super A'Can
 Super Cassette Vision
 Superboard II
 Symbian
-Tandy CoCo Colour Computer¬TRS-80 CoCo
-Tandy TRS-80¬TRS-80
+Tandy CoCo Colour Computer¬TRS-80 CoCo¬Tandy Radio Shack TRS-80 CoCo
 Tandy 2000
 Tatung Einstein TC-01
 Telegames Personal Arcade
@@ -192,7 +191,7 @@ Thompson TO7/TO9
 Thompson TO8
 Tiger Game.com¬game.com
 Vector
-Vectrex
+Vectrex¬GCE Vectrex
 Victor 9000 /Sirius S1
 Video Technology Creativision
 Video Technology Laser Mk1
@@ -201,7 +200,7 @@ Vii
 Visual 1050
 Watara Supervision¬Supervision
 WebTV Plus
-WonderSwan¬Wonderswan Color
+WonderSwan¬Wonderswan Color¬Bandai WonderSwan
 Xerox 16/8
 Xerox 820
 Zeebo

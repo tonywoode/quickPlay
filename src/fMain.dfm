@@ -277,10 +277,6 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -306,7 +302,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 749
+            Height = 774
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -345,7 +341,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -353,15 +349,11 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 753
+            Height = 778
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -413,10 +405,6 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -446,7 +434,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 749
+            Height = 774
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0
@@ -3044,11 +3032,5 @@ object MainFrm: TMainFrm
       Caption = 'Set as Default'
       OnClick = MnuGMSetDefaultClick
     end
-  end
-  object JoyCntrl: TJvJoystick
-    Joy1Threshold = 1238492700
-    Joy2Threshold = 1238492716
-    Left = 120
-    Top = 504
   end
 end

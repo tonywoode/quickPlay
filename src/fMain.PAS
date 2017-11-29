@@ -70,7 +70,16 @@ uses Windows, Classes, SysUtils, Graphics, Controls, Forms,
      JvTrayIcon, JvDragDrop, JvAppInst, ToolWin,
      uQPDir, uRomList, uEmuList, uRom, uEmu, uJCompression,
      uToolList, uMediaPanelClasses,uMediaTabClass, uQPMiscTypes, JvComponentBase,
-     fjWinFontForm, uVersionCheckThread, JvJoystick ;
+     fjWinFontForm, uVersionCheckThread, mmSystem, JvJoystick ;
+
+type
+  TMMJoyStick  = packed record
+    Msg:     Cardinal;  // The message ID
+    Buttons: Longint;   // The wParam
+    XPos:    word;      // The lParam
+    YPos:    word;
+    Result:  Longint;
+end;
 
 type
 
@@ -341,7 +350,7 @@ type
     actCheckForUpdates: TAction;
     SlideBar : TTrackBar;
     lblRowHeight: TLabel;
-    JoyCntrl: TJvJoystick;
+   // JoyCntrl: TJvJoystick;
     Edit1: TEdit;
     SlideBarDir: TTrackBar;
     MAMEOptions1: TMenuItem;
@@ -362,11 +371,11 @@ type
     procedure lblRowHeightClick(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
-    procedure JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
-      But2Pressed, But3Pressed, But4Pressed: Boolean);
-    procedure JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
-      ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
-      But4Pressed: Boolean);
+   // procedure JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
+   //   But2Pressed, But3Pressed, But4Pressed: Boolean);
+   // procedure JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
+    //  ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
+    //  But4Pressed: Boolean);
 
     procedure SlideBarMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure SlideBarDirMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
@@ -654,6 +663,11 @@ type
     RomList : TQPRomList;
     EmuList : TQPEmuList;
     ToolList : TQPToolList;
+
+    myjoy: tjoyinfo;
+    procedure MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick); message MM_JOY1BUTTONDOWN;
+    procedure MMJOY1MOVE       (var LocMessage: TMMJoyStick); message MM_JOY1MOVE;   // ButtonDown and Move are not shown, they just call ButtonUp
+
 
     Function GetROM(cNode : PVirtualNode) : TQPRom;
     Function GetNextROM() : TQPRom;
@@ -1824,8 +1838,17 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
-  But2Pressed, But3Pressed, But4Pressed: Boolean);
+//procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
+//begin
+//  trackbar1.position := LocMessage.ypos;
+//  trackbar2.position := LocMessage.xpos;
+//  laXCoord.caption:= IntToStr(LocMessage.ypos);  // so you can see
+//  laYCoord.caption:= IntToStr(LocMessage.xpos);  //   what is happening
+//end;
+
+
+
+procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
   var  Node: PVirtualNode;
   var wnd : TVirtualStringTree;
 begin
@@ -1833,9 +1856,9 @@ if GetForegroundWindow = self.Handle then
 begin
   if Settings.Joy then
     begin
-      Edit1.Text := IntToStr(x) + ' ' + IntToStr(y);
+      Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
-      if x < 75 then//if its left
+      if LocMessage.xpos < 75 then//if its left
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
@@ -1846,13 +1869,13 @@ begin
           wnd := VTROMs;
       end;
 
-    if y > 225 then
+    if LocMessage.ypos > 225 then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
-    else if y < 75  then
+    else if LocMessage.ypos < 75  then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTROMs.GetFirstSelected();
@@ -1863,16 +1886,69 @@ end;
 end;
 
 
-procedure TMainFrm.JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
-  ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
-  But4Pressed: Boolean);
+//procedure TMainFrm.JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
+//  But2Pressed, But3Pressed, But4Pressed: Boolean);
+//  var  Node: PVirtualNode;
+//  var wnd : TVirtualStringTree;
+//begin
+//if GetForegroundWindow = self.Handle then
+//begin
+//  if Settings.Joy then
+//    begin
+//      Edit1.Text := IntToStr(x) + ' ' + IntToStr(y);
+//
+//      if x < 75 then//if its left
+//      Begin
+//        VTdir.SetFocus;
+//        wnd := VTdir;
+//      end
+//      else     //stick Right is the normal
+//        Begin
+//          VTROMs.SetFocus;
+//          wnd := VTROMs;
+//      end;
+//
+//    if y > 225 then
+//    begin
+//      SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
+//      Node := VTROMs.GetFirstSelected();
+//      wnd.ScrollIntoView(Node, true);
+//    end
+//    else if y < 75  then
+//    begin
+//      SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
+//      Node := VTROMs.GetFirstSelected();
+//      wnd.ScrollIntoView(Node, true);
+//    end
+//  end
+//end;
+//end;
+
+//procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
+//begin
+//if ((LocMessage.Buttons and joy_button1)=joy_button1)
+//    then begin
+//    shape1.Brush.color:=clLime;
+//    shape1.shape:=stRectangle;
+//    shape1.show;
+//    end;
+//if ((LocMessage.Buttons and joy_button2)=joy_button2) then begin
+//    shape1.Brush.color:=clRed;
+//    shape1.shape:=stCircle;
+//    shape1.show;
+//    end;
+//end;
+
+
+
+procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
   var  Node: PVirtualNode;
   begin
 if GetForegroundWindow = self.Handle then
 begin
   if Settings.Joy then
   begin
-   if But2Pressed then
+   if ((LocMessage.Buttons and joy_button2)=joy_button2) then
     begin //expand
       if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
       begin
@@ -1883,13 +1959,45 @@ begin
         VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
       end;
     end
-    else if But1Pressed then
+    else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
     begin //run
       SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
     end
   end
 end;
 end;
+
+
+
+
+
+//procedure TMainFrm.JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
+//  ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
+//  But4Pressed: Boolean);
+//  var  Node: PVirtualNode;
+//  begin
+//if GetForegroundWindow = self.Handle then
+//begin
+//  if Settings.Joy then
+//  begin
+//   if But2Pressed then
+//    begin //expand
+//      if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
+//      begin
+//        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+//      end
+//      else
+//      begin
+//        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
+//      end;
+//    end
+//    else if But1Pressed then
+//    begin //run
+//      SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
+//    end
+//  end
+//end;
+//end;
 
 
 
@@ -3913,6 +4021,13 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TMainFrm.FormCreate(Sender: TObject);
+
+ var myJoyCaps: TJoyCaps;
+
+ const PollingFreq=50;
+(*PollingFreq of 100 (rec'd by original poster) sets Joystick interface to
+  transmit messages every 100ms.*)
+
 begin
   //MemCheckLogFileName := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0))) + 'memcheck.txt';
   //MemChk;
@@ -3920,18 +4035,24 @@ begin
   Edit1.Hide;
 
 
-  if JoyCntrl.HasJoystick1 then  //  Joy1
-  begin
-    JoyCntrl.CaptureJoystick1 := True;
-    JoyCntrl.Joy1Move := JoyCntrlJoyMove;
-    JoyCntrl.Joy1ButtonDown := JoyCntrlJoyButtonDown;
-  end;
-  if JoyCntrl.HasJoystick2 then //Joy2
-  begin
-    JoyCntrl.CaptureJoystick2 := True;
-    JoyCntrl.Joy2Move := JoyCntrlJoyMove;
-    JoyCntrl.Joy2ButtonDown := JoyCntrlJoyButtonDown;
-  end;
+
+ joyGetDevCaps(joystickid1,@myJoyCaps, sizeof(myJoyCaps)); // for test
+joySetCapture(self.Handle, joystickid1, PollingFreq, true);
+  (*See const decl for function of Polling Freq*)
+
+
+//  if JoyCntrl.HasJoystick1 then  //  Joy1
+//  begin
+//    JoyCntrl.CaptureJoystick1 := True;
+//    JoyCntrl.Joy1Move := JoyCntrlJoyMove;
+//    JoyCntrl.Joy1ButtonDown := JoyCntrlJoyButtonDown;
+//  end;
+//  if JoyCntrl.HasJoystick2 then //Joy2
+//  begin
+//    JoyCntrl.CaptureJoystick2 := True;
+//    JoyCntrl.Joy2Move := JoyCntrlJoyMove;
+//    JoyCntrl.Joy2ButtonDown := JoyCntrlJoyButtonDown;
+//  end;
 
   SlideBar.OnMouseUp := SlideBarMouseUp;
   SlideBarDir.OnMouseUp := SlideBarDirMouseUp;

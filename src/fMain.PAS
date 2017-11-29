@@ -1858,12 +1858,12 @@ begin
     begin
       Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
-      if LocMessage.xpos < 75 then//if its left
+      if LocMessage.xpos = 0 then//if its left
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
       end
-      else     //stick Right is the normal
+      else if LocMessage.xpos = 32511 then
         Begin
           VTROMs.SetFocus;
           wnd := VTROMs;

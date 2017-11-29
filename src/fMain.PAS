@@ -1838,16 +1838,6 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-//procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
-//begin
-//  trackbar1.position := LocMessage.ypos;
-//  trackbar2.position := LocMessage.xpos;
-//  laXCoord.caption:= IntToStr(LocMessage.ypos);  // so you can see
-//  laYCoord.caption:= IntToStr(LocMessage.xpos);  //   what is happening
-//end;
-
-
-
 procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
   var  Node: PVirtualNode;
   var wnd : TVirtualStringTree;
@@ -1862,8 +1852,8 @@ begin
         Begin
           VTROMs.SetFocus;
           wnd := VTROMs;
-      end;
-      if LocMessage.xpos = 0 then//if its left
+        end;
+     if LocMessage.xpos = 0 then//if its left
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
@@ -1885,111 +1875,51 @@ begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
+      end
     end
-  end
+  end;
 end;
-end;
-
-
-//procedure TMainFrm.JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
-//  But2Pressed, But3Pressed, But4Pressed: Boolean);
-//  var  Node: PVirtualNode;
-//  var wnd : TVirtualStringTree;
-//begin
-//if GetForegroundWindow = self.Handle then
-//begin
-//  if Settings.Joy then
-//    begin
-//      Edit1.Text := IntToStr(x) + ' ' + IntToStr(y);
-//
-//      if x < 75 then//if its left
-//      Begin
-//        VTdir.SetFocus;
-//        wnd := VTdir;
-//      end
-//      else     //stick Right is the normal
-//        Begin
-//          VTROMs.SetFocus;
-//          wnd := VTROMs;
-//      end;
-//
-//    if y > 225 then
-//    begin
-//      SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
-//      Node := VTROMs.GetFirstSelected();
-//      wnd.ScrollIntoView(Node, true);
-//    end
-//    else if y < 75  then
-//    begin
-//      SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
-//      Node := VTROMs.GetFirstSelected();
-//      wnd.ScrollIntoView(Node, true);
-//    end
-//  end
-//end;
-//end;
-
-//procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
-//begin
-//if ((LocMessage.Buttons and joy_button1)=joy_button1)
-//    then begin
-//    shape1.Brush.color:=clLime;
-//    shape1.shape:=stRectangle;
-//    shape1.show;
-//    end;
-//if ((LocMessage.Buttons and joy_button2)=joy_button2) then begin
-//    shape1.Brush.color:=clRed;
-//    shape1.shape:=stCircle;
-//    shape1.show;
-//    end;
-//end;
-
-
 
 procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
   var  Node: PVirtualNode;
-   var wnd : TVirtualStringTree;
-  begin
-if GetForegroundWindow = self.Handle then
-begin
-  if Settings.Joy then
-  begin
+  var wnd : TVirtualStringTree;
 
-    if VTROMs.Focused  then
+  begin
+    if GetForegroundWindow = self.Handle then
     begin
-     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
-      begin //expand
-        if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
+    if Settings.Joy then
+      begin
+        if VTROMs.Focused  then
         begin
-          VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+          if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+          begin //expand
+            if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
+            begin
+              VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+            end
+          else
+          begin
+            VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
+          end;
         end
-        else
-        begin
-          VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
-        end;
-      end
-      else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-      begin //run
-        SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
-      end
-    end;
+        else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+        begin //run
+          SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
+        end
+      end;
 
-    if VTdir.Focused then
-    begin
-     if ((LocMessage.Buttons and joy_button2)=joy_button2) then
-      begin //expand
-        if VTDir.Expanded [ VTdir.GetFirstSelected() ] then
-        begin
-          VTdir.Expanded [ VTdir.GetFirstSelected() ] := false;
-        end
+      if VTdir.Focused then
+      begin
+        if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+        begin //expand
+          if VTDir.Expanded [ VTdir.GetFirstSelected() ] then
+          begin
+            VTdir.Expanded [ VTdir.GetFirstSelected() ] := false;
+          end
         else
         begin
           VTdir.Expanded [ VTdir.GetFirstSelected() ] := true;
         end;
-      end
-      else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-      begin //run
-        SendMessage(VTdir.Handle,WM_KEYDOWN,VK_RETURN,0);
       end
     end
 
@@ -2000,47 +1930,12 @@ begin
         pgMediaPanel.SelectNextPage(True) ;
         end;
 
+      end
+
+
     end
-
-
-  end
+  end;
 end;
-end;
-
-
-
-
-
-//procedure TMainFrm.JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
-//  ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
-//  But4Pressed: Boolean);
-//  var  Node: PVirtualNode;
-//  begin
-//if GetForegroundWindow = self.Handle then
-//begin
-//  if Settings.Joy then
-//  begin
-//   if But2Pressed then
-//    begin //expand
-//      if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
-//      begin
-//        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
-//      end
-//      else
-//      begin
-//        VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
-//      end;
-//    end
-//    else if But1Pressed then
-//    begin //run
-//      SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
-//    end
-//  end
-//end;
-//end;
-
-
-
 
 Function TMainFrm.JumpToROM(Dir, ROM : String; SType : TQPRefresh) : Boolean;
 var

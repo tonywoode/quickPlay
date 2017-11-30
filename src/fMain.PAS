@@ -1848,42 +1848,42 @@ begin
     begin
       //Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
-     if (LocMessage.xpos = 32511) or (pgMediaPanel.Focused) then
+     if ((LocMessage.xpos > 30000) and (LocMessage.xpos < 40000) ) or (pgMediaPanel.Focused) then
         Begin
           VTROMs.SetFocus;
           wnd := VTROMs;
         end;
-     if LocMessage.xpos = 0 then//if its left
+     if LocMessage.xpos < 30000 then//if its left
       Begin
         VTdir.SetFocus;
         wnd := VTdir;
       end;
 
-      if LocMessage.xpos = 65535 then
+      if LocMessage.xpos > 40000 then
         Begin
           pgMediaPanel.SetFocus;
       end;
 
-    if (LocMessage.ypos = 65535) and (VTROMs.Focused) then
+    if (LocMessage.ypos > 40000) and (VTROMs.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
-    else if (LocMessage.ypos = 0)  and (VTROMS.Focused) then
+    else if (LocMessage.ypos < 30000)  and (VTROMS.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
 
-    else if (LocMessage.ypos = 65535) and (VTdir.Focused) then
+    else if (LocMessage.ypos > 40000) and (VTdir.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
       Node := VTdir.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
-    else if (LocMessage.ypos = 0)  and (VTdir.Focused) then
+    else if (LocMessage.ypos < 30000)  and (VTdir.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTdir.GetFirstSelected();

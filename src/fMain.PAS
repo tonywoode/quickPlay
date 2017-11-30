@@ -1846,7 +1846,7 @@ if GetForegroundWindow = self.Handle then
 begin
   if Settings.Joy then
     begin
-      Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
+      //Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
      if (LocMessage.xpos = 32511) or (pgMediaPanel.Focused) then
         Begin
@@ -1864,18 +1864,32 @@ begin
           pgMediaPanel.SetFocus;
       end;
 
-    if LocMessage.ypos = 65535 then
+    if (LocMessage.ypos = 65535) and (VTROMs.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
     end
-    else if LocMessage.ypos = 0  then
+    else if (LocMessage.ypos = 0)  and (VTROMS.Focused) then
     begin
       SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
       Node := VTROMs.GetFirstSelected();
       wnd.ScrollIntoView(Node, true);
-      end
+    end
+
+    else if (LocMessage.ypos = 65535) and (VTdir.Focused) then
+    begin
+      SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
+      Node := VTdir.GetFirstSelected();
+      wnd.ScrollIntoView(Node, true);
+    end
+    else if (LocMessage.ypos = 0)  and (VTdir.Focused) then
+    begin
+      SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
+      Node := VTdir.GetFirstSelected();
+      wnd.ScrollIntoView(Node, true);
+    end
+
     end
   end;
 end;

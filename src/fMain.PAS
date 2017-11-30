@@ -350,8 +350,6 @@ type
     actCheckForUpdates: TAction;
     SlideBar : TTrackBar;
     lblRowHeight: TLabel;
-   // JoyCntrl: TJvJoystick;
-    Edit1: TEdit;
     SlideBarDir: TTrackBar;
     MAMEOptions1: TMenuItem;
     N30: TMenuItem;
@@ -1846,49 +1844,75 @@ if GetForegroundWindow = self.Handle then
 begin
   if Settings.Joy then
     begin
-      //Edit1.Text := IntToStr(LocMessage.xpos) + ' ' + IntToStr(LocMessage.ypos);
 
-     if ((LocMessage.xpos > 30000) and (LocMessage.xpos < 40000) ) or (pgMediaPanel.Focused) then
-        Begin
-          VTROMs.SetFocus;
-          wnd := VTROMs;
-        end;
-     if LocMessage.xpos < 30000 then//if its left
-      Begin
+     //first we need to make sure we start in roms view, so if the mesage is 'all centred' and
+     //  we haven't navigaated anywhere else, that's where inout will act
+     if ((LocMessage.xpos > 30000)
+     and (LocMessage.xpos < 40000) ) //or (pgMediaPanel.Focused) then
+     and not pgMediaPanel.Focused
+     and not VTdir.Focused then
+     Begin
+       VTROMs.SetFocus;
+       wnd := VTROMs;
+     end
+
+     else if (LocMessage.xpos < 30000) //if its left
+     and VTRoms.Focused then
+     Begin
         VTdir.SetFocus;
         wnd := VTdir;
+     end
+
+     else if (LocMessage.xpos < 30000)
+     and pgMediaPanel.Focused then
+     Begin
+        VTROMs.SetFocus;
+        wnd := VTROMs;
+     end
+
+
+      else if (LocMessage.xpos > 40000)
+      and VTRoms.Focused then  //right
+      Begin
+        pgMediaPanel.SetFocus;
+      end
+
+      else if (LocMessage.xpos > 40000)
+      and VTDir.Focused then  //right
+      Begin
+        VTROMs.SetFocus;
+        wnd := VTROMs;
       end;
 
-      if LocMessage.xpos > 40000 then
-        Begin
-          pgMediaPanel.SetFocus;
-      end;
+      if (LocMessage.ypos > 40000) and (VTROMs.Focused) then
+      begin
+        SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
+        Node := VTROMs.GetFirstSelected();
+        wnd.ScrollIntoView(Node, true);
+      end
 
-    if (LocMessage.ypos > 40000) and (VTROMs.Focused) then
-    begin
-      SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
-      Node := VTROMs.GetFirstSelected();
-      wnd.ScrollIntoView(Node, true);
-    end
-    else if (LocMessage.ypos < 30000)  and (VTROMS.Focused) then
-    begin
-      SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
-      Node := VTROMs.GetFirstSelected();
-      wnd.ScrollIntoView(Node, true);
-    end
+      else if (LocMessage.ypos < 30000)  and (VTROMS.Focused) then
+      begin
+        SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
+        Node := VTROMs.GetFirstSelected();
+        wnd.ScrollIntoView(Node, true);
+      end
 
-    else if (LocMessage.ypos > 40000) and (VTdir.Focused) then
-    begin
-      SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
-      Node := VTdir.GetFirstSelected();
-      wnd.ScrollIntoView(Node, true);
-    end
-    else if (LocMessage.ypos < 30000)  and (VTdir.Focused) then
-    begin
-      SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
-      Node := VTdir.GetFirstSelected();
-      wnd.ScrollIntoView(Node, true);
-    end
+      else if (LocMessage.ypos > 40000) and (VTdir.Focused) then
+      begin
+        wnd := VTdir;
+        SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
+        Node := VTdir.GetFirstSelected();
+        wnd.ScrollIntoView(Node, true);
+      end
+
+      else if (LocMessage.ypos < 30000)  and (VTdir.Focused) then
+      begin
+        wnd := VTdir;
+        SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
+        Node := VTdir.GetFirstSelected();
+        wnd.ScrollIntoView(Node, true);
+      end
 
     end
   end;
@@ -3980,10 +4004,6 @@ procedure TMainFrm.FormCreate(Sender: TObject);
 begin
   //MemCheckLogFileName := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0))) + 'memcheck.txt';
   //MemChk;
-
-  Edit1.Hide;
-
-
 
  joyGetDevCaps(joystickid1,@myJoyCaps, sizeof(myJoyCaps)); // for test
 joySetCapture(self.Handle, joystickid1, PollingFreq, true);

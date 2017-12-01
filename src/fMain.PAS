@@ -1847,6 +1847,8 @@ begin
 
      //first we need to make sure we start in roms view, so if the mesage is 'all centred' and
      //  we haven't navigaated anywhere else, that's where inout will act
+     // Why these values for movement? analog pads need accounting for (so 0 and 65535 won't work)
+     //   but analog and digital were giving distinct values for centred. So this marging seemed appropriate
      if ((LocMessage.xpos > 30000)
      and (LocMessage.xpos < 40000) ) //or (pgMediaPanel.Focused) then
      and not pgMediaPanel.Focused
@@ -1964,9 +1966,18 @@ procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
     else if pgMediaPanel.Focused then
     begin
      if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-      begin //expand
-        pgMediaPanel.SelectNextPage(True) ;
-        end;
+     begin //expand
+       pgMediaPanel.SelectNextPage(True) ;
+     end;
+
+     //joy2 is going to go backwards through tabs, but there is no 'selectPreviousPage' type method
+     //  so deal with it manually including what happens when we go off the left side of array
+      if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+     begin //expand
+       if pgMediaPanel.ActivePageIndex > 0  then
+         pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.ActivePageIndex-1]
+       else pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.PageCount-1]
+     end;
 
       end
 

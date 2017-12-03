@@ -1,3 +1,78 @@
+Quickplay v4.5.0 
+ 
+* Joypad Support
+  - Re-implement joypad support (so that it works!) with Windows messaging implementation for a much more responsive joypad
+  - allow media panel navigation and buttons 1+ 2 cycle through media panel tabs
+  - stop having to keep left held for sidebar access
+  - allow for analog or digital pads
+  - fix mutiple problems with joypad logic
+  - button 1 expands/contracts in dir or folders view
+ 
+* General
+  - add RetroArch Efind ini for RetroArch 167
+  - fix system names in Romdata Magician for system ini lists
+  - replace Romdata Magician Ini File Dats with larger-width versions
+  - fix ini files not displaying entry source urls
+  - get runrom working in find/search form (for non-IPS)
+  - update default systems list
+  - remove the systems list in updates folder
+
+* UI Changes
+  - lose some warnings about slowdowns on older machinces
+  - resize forms for modern screen sizes: emu find, folder options, media panel, media panel config editor, run dialog, search form, efind forms, and generally expand forms for longer emulator names
+  - resize emulators and edit its pngs size
+  - fixed folder tree slidebar bug
+  - fix bug with roms panel dir size
+  - slight reskin inc version number
+  - fix bug in efind form that restricted window size
+  - explain dat and efind. change cmds to live flag
+  - fix bug with folder creation dialogs
+  - fix bug found in Virtual TreeView: hit column number
+  - fix filter bar appearance on high DPI
+  - fix icons on roms sidebar hanging over bottom
+  - fix overhanging text in filter textbox
+  - tweak and reorder favourites and search forms
+
+* MAME Frontend
+  - Reworked Arcade Roms menu completely: new forms, actions and menu options setup for MAME backend (you're now supposed to keep returning to the Arcade menu to update and print different Romdatas)
+  - Replaced Mess Icons Directory setting in Appearance Options with MAME Extras locator in MAME Options
+  - Set and remember various other MAME options
+  - completing MAME Options now causes Folder Options to include a properly-filtered set of MAME Console/PC System Icons for use, massively reducing the time the MAME icon list took to appear
+  - MameIcons in folder options: refactor to shave a few secs off as well
+  - warn and provide getout if user is about to wipe existing Romdatas
+  - 19 MAME printer checkboxes now saving as ini settings
+  - old MAME options removed from menu and old MAME script removed from tools
+  - pass MAME exe filename so that MAME Efinds can use it, save MAME Tool's MAME filename choice in MAME options
+
+* MAME General
+  - add Mame dat files to add new tab/default tab and media panel opts forms
+  - display the various MAME dat files in Media Panel config
+  - made those MAME info lookups work, in particular home computer and console lookups in the MAME history file are functional as well as arcade lookups
+  - Updated the MAME Efinds
+  - MAME now has its own section in settings ini
+
+* MAME Tool
+  - add MameTool nodejs command line 64-bit binary (first attempt to move the backend away from Delphi)
+  - a scanning function reads and filters the MAME XML (effectively the MAME game libarary) into usable JSON, tags by version, and requests the location of your MAME Extras folder
+  - reads all MAME 'ini' files to better-filter MAME games and add metadata like number of players
+  - allow creation of subfolder collections: e.g.: split a MAME set's Romdatas  by Genre folders 
+  - users can filter games by often-excluded properties e.g.: clones
+  - or, users can load a MAME File Manager file into QuickPlay and filter by that
+  - create customised MAME Romdata sets for MAME itself or for (full) RetroArch MAME
+
+* MAME Softlists and MAME MESS Emulators
+  - now user generatable, that project was incorporated into MAMEtool
+  - users generate their own Efind for either MAME or RetroArch MAME via a MAME scan
+  - a MAME scan will augment the users systems list with newly-found systems
+  - stop saving the old MESS Efinds in the QuickPlay file bundle
+  - reworked and fixed bug with Retroarch MAME embedded systems list, so that it now works
+  - update MAME Softlists and MAME MESS Emulators for MAME 187
+  - real icon directory now configured via MAME Options (prints out to Romdata.dat)
+  - prints its scan results together with MAMEtool's scan results
+  - now keeps track of the version of MAME used to generate Efind/Softlists (visible in MAME Options)
+  - removed the old 'tool' that moved the canned softlists to users data dir
+   
+ 
 Quickplay v4.2.2 
  
 * updated daemon tools command line for dt 10.6...we still are going to pre-mount a K:/ SCSI drive (though DT now has many other mounting possibilities), but its a LOT faster now...

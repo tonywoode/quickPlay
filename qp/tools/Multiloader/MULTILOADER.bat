@@ -98,9 +98,12 @@ rem Copy zip to scratch dir.
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case
 :CHECK_ARCHIVE_TYPE
 if /I (%ARCHIVE_TYPE%)==(proprietary) goto LOAD
-if /I (%ZIP_MOUNTABLE%)==(yes) (
-	if [%NOMOUNT%]==[1] goto ZIPMOUNT
-)
+:: TODO: great idea to not unzip using daemon tools, however as of dec 17 the zipmounting works but is painfully slow
+:: for instance try Road Rash on 4do - takes a minute to load intro, a minute to load into game and game pauses for seconds at
+:: each disk access. Let's just keep unzipping for now....(bear in mind with cache enabled your game may already be unzipped)
+::if /I (%ZIP_MOUNTABLE%)==(yes) (
+::	if [%NOMOUNT%]==[1] goto ZIPMOUNT
+::)
 if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 
 :: Mount the image or the zip
@@ -115,7 +118,7 @@ call :CHECK_DT
 %_DT% -unmount %_DAEMON_DRIVE%
 goto finish
 
-:: mount zips
+:: mount zips - not using atm
 :ZIPMOUNT
 call :CHECK_DT
 %_DT% -mount_to %_DAEMON_DRIVE%, %_ROMNAME%
@@ -139,6 +142,7 @@ goto MOUNT
 
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
+:: (TODO: if I put this in solely for 4do in retroarch, this is no longer a requirement)
 if NOT [%OVERRIDE%]==[] set typeList=(.%OVERRIDE%)
 for %%Y in %typeList% do (
 	for /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v

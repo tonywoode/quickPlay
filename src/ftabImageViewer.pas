@@ -138,6 +138,8 @@ end;
 procedure TtabImageViewer.FormCreate(Sender: TObject);
 begin
   ImageList := TStringList.Create;
+  ImgBack.Picture.LoadFromFile(MainFrm.Settings.Paths.AppDir + 'back.jpg');
+  ImgNext.Picture.LoadFromFile(MainFrm.Settings.Paths.AppDir + 'next.jpg');
 end;
 
 {-----------------------------------------------------------------------------}
@@ -171,6 +173,7 @@ procedure TtabImageViewer.ImgNextClick(Sender: TObject);
 begin
   if ImageList.Count > 1 then
   begin
+    TimerImgs.Enabled := False;
     //check whether moving to the next image will need to loop around in the list.
     if _CurrentIndex + 1 > ImageList.Count-1 then
       _CurrentIndex := 0
@@ -187,6 +190,7 @@ procedure TtabImageViewer.ImgBackClick(Sender: TObject);
 begin
     if ImageList.Count > 1 then
   begin
+    TimerImgs.Enabled := False;
     //check whether moving to the next image will need to loop around in the list.
     if _CurrentIndex - 1 < 0 then
       _CurrentIndex := ImageList.Count-1

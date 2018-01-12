@@ -42,7 +42,8 @@ var
   AGraphic : TGraphic;
   zipName, ImgName : String;
 begin
-
+  ImgViewer.Proportional := True;
+  ImgViewer.Stretch := True;
   //clear existing images.
   if FileList.Count = 0 then
   begin
@@ -56,6 +57,7 @@ begin
   if (FileList.Count = 1) and (ujimages.HasImageFileExt(FileList[0])) and (JCLStrings.Strcompare('.zip', ExtractFileExt(FileList.Names[i])) <> 0 ) then
   begin
     //theres only ONE image, display this.
+
     ImgViewer.OnDblClick := nil;  //disable the dblclick handler, no point in it.
     ImgViewer.Picture.LoadFromFile(FileList[0]);
     jvThumb.Hide;

@@ -2,40 +2,39 @@ object tabThumbBrowser: TtabThumbBrowser
   Left = 0
   Top = 0
   Caption = 'ThumbBrowser'
-  ClientHeight = 469
-  ClientWidth = 298
+  ClientHeight = 613
+  ClientWidth = 390
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object imgViewer: TImage
     Left = 0
     Top = 0
-    Width = 298
-    Height = 469
+    Width = 390
+    Height = 613
     Hint = 'Double-Click to return to Thumbnail mode'
     Align = alClient
     AutoSize = True
     Center = True
     Proportional = True
     OnDblClick = imgViewerDblClick
-    ExplicitHeight = 467
   end
   object jvThumb: TJvImagesViewer
     Left = 0
     Top = 0
-    Width = 298
-    Height = 469
-    HorzScrollBar.Range = 248
+    Width = 390
+    Height = 613
+    HorzScrollBar.Range = 372
     HorzScrollBar.Tracking = True
     HorzScrollBar.Visible = False
-    VertScrollBar.Range = 423
+    VertScrollBar.Range = 288
     VertScrollBar.Tracking = True
     FileMask = 
       '*.gif;*.pcx;*.ani;*.jpg;*.jpeg;*.jpg;*.jpeg;*.bmp;*.ico;*.emf;*.' +

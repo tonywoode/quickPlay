@@ -1,3 +1,36 @@
+Quickplay v4.6.0 
+ 
+* Mame softlists: other game names functionality: 
+    Mame made some mistakes:
+    1) mamenames for games are unique per-machine's device, not
+    unique per machine as they should be (`smb2` could be both a flop
+	for the Jap version and a cart for the US version, so what happens
+	when you call `mame famicom smb2`?)
+    2) mamename loading (without specifying device) does nice
+    things like multi-disc loading. If you do specify device, no
+    nice things
+	3) its hard to tell when you have a name conflice, which
+	device will be treated as the 'default'
+    So, to load the correct game, we look for exceptional game name
+    conflicts between the original softlists for a system. If
+    we find conflicts, only then do we override the mame call by
+    specifying device
+* fix some other issues found to get more games working in
+    mame, in particular:
+    * the custom calls needed for the nes_ and snes_ 'special
+    cartridge' softlists
+    * forcing up the rating of certain emulators for a system, to make
+    sure games load easier, in particular msx1_flop, where a late
+    Brazilian variant loads double-density disks, and msx2p, where
+    the previous default emus required you to know Japanese to load a
+    game
+* make image fit in thumbnail media panel view...
+* add back and next buttons for image viewer
+* update and tweak the RetroArch efind, many additions and fixes to take up to RetroArch 1.6.9
+* stop multiloader using deamon tools to mount zips (turns out it was VERY slow, often in-game, just always unzip)
+* refresh mednafen efinds (add mednafen saturn)
+
+ 
 Quickplay v4.5.0 
  
 * Joypad Support

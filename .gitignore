@@ -24,7 +24,7 @@ src/_history/
 qp/QP.exe
 qp/QP384.exe
 qp/data
-qp/data_REAL
+qp/data_PREV
 qp/dats
 qp/search
 qp/temp
@@ -53,7 +53,8 @@ qp/EFind/Custom.ini
 qp/EFind/Gamebase.ini
 
 #Starting editing from a mac
-*.DS_Store
+.DS_Store
+._DS_Store
 
 #nodejs specific
 node_modules/

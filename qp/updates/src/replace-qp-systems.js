@@ -5,7 +5,7 @@ const rootDir = '../'
 const changesToMake = [
  
   //need the below to be idempotent. js negative lookbehind is ugly and imprecise
-  { oldName : "^(?!Technossys).+Aamber Pegasus",     newName : "Technosys Aamber Pegasus"},
+  { oldName : "^(?!Technosys).+Aamber Pegasus",      newName : "Technosys Aamber Pegasus"},
   { oldName : "Applied Technologies Microbee",       newName : "Applied Technology Microbee"},
   { oldName : "^(?!Acorn).+BBC",                     newName : "Acorn BBC"},
   { oldName : "Bally Professinal Arcade",            newName : "Bally Professional Arcade"},

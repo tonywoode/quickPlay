@@ -4,7 +4,6 @@ Acorn Archimedes
 Acorn Atom
 Acorn BBC
 ACT Apricot PC
-Ampro Computers Little Board/186
 Ampro Little Z80 Board
 Amstrad CPC
 Amstrad NC100
@@ -35,6 +34,7 @@ Bit Corp Gamate
 Bondwell
 Camputers Lynx
 Camputers Lynx 48k
+Casio Loopy
 Casio PV
 CBR
 CCE MC-1000
@@ -59,11 +59,9 @@ DEC PDP-1
 DEC Rainbow 100-B
 DEC VT240
 Dick Smith Super-80
-Didact AB Esselte 100
 DOS
 Dragon 128
 Dragon 32
-Dragon Beta Prototype
 EACA Colour Genie
 Ei Nis Pecom
 Electronics Today International ETI-660
@@ -73,13 +71,11 @@ Elektronika MC7105
 Elektronika MS 0515
 Emerson Arcadia
 Ensoniq KT-76
-Enterprise Computers One Two Eight
-Enterprise Computers Sixty Four
+Enterprise 64
 Entex Adventure Vision
 Epoch Game Pocket Computer
 Epoch Super Cassette Vision
 Epson PX
-ExcelVision EXL100
 Exidy Sorcerer
 Fairchild Channel F
 Fidelity Electronics Chess Machines
@@ -88,21 +84,20 @@ Fidelity Electronics Elite Avant Garde
 Fidelity Electronics Elite Avant Garde 2100
 Fidelity Electronics Sensory Chess Challenger 12-B
 Fidelity Electronics Sensory Chess Challenger 9
-Force Computers GmbH SYS68K/CPU-1
 Forte II Games
 Frontends
 Fujitsu FM Towns
 Fujitsu FM-8
 Fujitsu Micro 7
+Funtech Super A'Can
 Galaksija
 Game and Watch
 Game Park Holdings GP32 GP2X
 GCE Vectrex
 Golden China China TV Game
 Hanimex Pencil II
+Hartung Game Master
 Hawthorne Technology TinyGiant
-Heath Inc Heathkit ET-3400
-Hewlett Packard HP
 Hewlett-Packard 9845B
 Hewlett-Packard 9845C
 Hewlett-Packard 9845T
@@ -116,10 +111,10 @@ Intel iSBC
 Intelligent Game
 Interact Family Computer
 Interton VC 4000
-Ithaca InterSystems DPS-1
 ITMC MPT-05
-Jupiter Ace
 Java J2ME
+Jupiter Ace
+Koei Pasogo
 Kontiki 100
 Kyosei Kyotronic
 Lenin Lviv
@@ -139,9 +134,9 @@ Microkey Primo
 Micronique Hector
 Microsoft Xbox
 Microsoft Xbox 360
+Microsoft Xbox One
 Mikro-80
 Mikroelektronika Pyldin
-Motorola MC68705P5 Programmer
 MSX
 MSX2
 Music
@@ -153,9 +148,10 @@ NEC PC Series
 NEC PC-8201A
 Netronics Elf II
 Nichibutsu My Vision
-Nintendo 64
 Nintendo 3DS
+Nintendo 64
 Nintendo DS
+Nintendo DSi
 Nintendo Famicom
 Nintendo Game Boy
 Nintendo Game Boy Advance
@@ -163,8 +159,10 @@ Nintendo GameCube
 Nintendo NES
 Nintendo Pokemon Mini
 Nintendo SNES
+Nintendo Switch
 Nintendo Virtual Boy
 Nintendo Wii
+Nintendo Wii U
 Non Linear Systems Kaypro
 NPO Microprocessor Elektronika
 NPO Microprocessor Elektronika MS 1502
@@ -174,13 +172,13 @@ Orion 128
 Ormatu 2001
 Osborne Vixen
 Otrona Attaché
-Otrona Attachý
 PC Games
 PC/AT 486
 PDF Reader
 PEL Varazdin Orao
 Philips CD-i
 Philips VG 5000
+Philips Videopac+
 Pinball
 PK8020 Korvet
 Psion Organiser II
@@ -195,11 +193,10 @@ Research Machines Nimbus
 Research Machines Z-series
 Retroarch Games
 Robotron KC Series
+Rockwell AIM 65
 Rowtron Television Computer System
 Salora Manager
 Samsung SPC
-Samsung SPC-1000
-Samsung SPC-1500
 San Bergmans & Izabella Malcolm SITCOM
 Sanyo MBC-200
 Sanyo PHC
@@ -221,7 +218,6 @@ Sinclair QL
 Sinclair ZX Spectrum
 Sinclair ZX-80
 Sinclair ZX-81
-SME Systems Aussie Byte II
 SMT Goupil
 SMT Goupil G1
 SMT Goupil G2
@@ -232,7 +228,9 @@ SOE OC Jeu Video TV Karvan
 Sony Playstation
 Sony Playstation 2
 Sony Playstation 3
+Sony Playstation 4
 Sony PocketStation
+Sony PS Vita
 Sony PSP
 Sord M5
 Specialist
@@ -240,7 +238,6 @@ Spectravideo SVI
 Tandy Radio Shack MC-10
 Tandy Radio Shack TRS-80 CoCo
 Tandy Video Information System
-Tandy/Memorex Video Information System MD-2500
 Tangerine Microtan 65
 Tangerine Oric 1
 Tatung Einstein
@@ -251,20 +248,14 @@ TeleVideo 990
 TeleVideo 995-65
 Tesla Ondra
 Tesla PMD-85.1
-Texas Instruments Compact Computer 40
-Texas Instruments Speak & Read
-Texas Instruments Speak & Spell
-Texas Instruments Speak & Spell Compact
 Texas Instruments TI Avigo
 Texas Instruments TI-85
 Texas Instruments TI-86
 Texas Instruments TI-95 PROCALC
 Texas Instruments TI-99
-Texas Instruments Touch & Tell
-Thomson MO5
-Thomson MO6
-Thomson TO7/TO9
-Thomson TO8
+Thomson MO5/MO6
+Thomson TO-series
+Tiger Game.com
 Tomy Tutor
 TRQ Video Computer H-21
 Unicard BBC Bridge Companion
@@ -277,8 +268,9 @@ Victor Business Products 9000
 Video
 Video Technology CreatiVision
 Video Technology Laser Mk1
+Video Technology V.Smile
+VideoBrain
 Vii
 Voja Antonic /  Galaksija
 Voltmace Database
-Wang Laboratories Professional Computer
 Watara Supervision

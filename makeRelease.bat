@@ -53,6 +53,7 @@ EXIT
 ECHO.OK let's delete this data
 ECHO.Cleaning Up QP Directory FOR Release
 RD /S /Q %RELEASEDIR%\qp\data
+RD /S /Q %RELEASEDIR%\qp\data_PREV
 RD /S /Q %RELEASEDIR%\qp\dats
 RD /S /Q %RELEASEDIR%\qp\search
 RD /S /Q %RELEASEDIR%\qp\temp

@@ -1,3 +1,22 @@
+Quickplay v4.6.1 
+ 
+* update file exts and systems dat for new users
+* Many urls corrected in efinds by 8-Cyo
+* added more of 8-cyo's major updates to efinds and system file extensions 
+* added major efind contribs from 8-Cyo
+* minor updates to RetroArch efind
+* when user runs MAMEtool, remove old and boring MAME system names that might be in the users systems.dat
+* make all nes and snes loader cart media calls work
+* added some hardcoded choices for softlist emulators for MAME after much manual testing
+* extend loader calls to deal with MAMEname conflicts between devices
+* add exception list to loader calls to cope with e.g.: Thomson systems requirements
+* extend loader insertions to clone systems
+* add loader-insertion calls to MAME systems i.e.: where a basic cart needs calling before a floppy game
+* change relationships of MAME systems: eg: Tomson series and fm8,fm7
+* remove more MAME non-game system types: e.g.: card games and calculators
+* refresh MAME system types e.g.: tests prove electron is more similar to bbc than atom
+
+ 
 Quickplay v4.6.0 
  
 * Mame softlists: other game names functionality: 

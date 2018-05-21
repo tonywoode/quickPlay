@@ -2,6 +2,7 @@
 ::don't use delayed expansion until necessary or your exclamation marks are toast
 SETLOCAL DISABLEDELAYEDEXPANSION
 
+
 :: Quickplay Multiloader by butter100fly - needs you to install 7zip and daemon tools
 ::
 :: We may get quoted or unquoted 8:3 as input, or fullnames: general principle: cast if possible, 
@@ -15,7 +16,7 @@ if exist %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
 if (%TEMPDIR%)==() (for /D %%I IN (%1) do set _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) do set _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
-if (%DAEMON_DRIVE%)==() (set _DAEMON_DRIVE=K) else (SET _DAEMON_DRIVE=%DAEMON_DRIVE%)
+if (%DAEMON_DRIVE%)==() (set _DAEMON_DRIVE="K") else (SET _DAEMON_DRIVE="%DAEMON_DRIVE%")
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
 
 :: Parameters you pass to me - don't put a space before the ampersands or the var string gets a space
@@ -111,11 +112,22 @@ if /I (%ARCHIVE_TYPE%)==(zip) goto UNZIP
 call :CHECK_EXCEPTIONS
 if (%NOMOUNT%)==(1) (%EMU% %OPTIONS% %_ROMNAME% & goto unmount)
 :: Mount daemon tools, load emu and passes full rom path to it
+
+:: ************* DEMON TOOLS LITE CONFIGURATION ****************
+:: SET THE NAME OF THE DTLITE EXECUTABLE HERE - IT CHANGES SUSPICIOUSLY OFTEN
+:: **** THIS CONFIGURATION IS FOR DTLITE V10.8 ****
+set _DTEXECUTABLE=DTCommandLine.exe
+set _DT_MOUNT_COMMAND=--mount_to --letter %_DAEMON_DRIVE% --path %_ROMNAME%
+set _DT_UNMOUNT_COMMAND=--unmount --letter %_DAEMON_DRIVE%
+::**************************************************************
+
 call :CHECK_DT
-%_DT% -mount_to %_DAEMON_DRIVE%, %_ROMNAME%
+
+%_DT% %_DT_MOUNT_COMMAND%
 %EMU% %OPTIONS%
+
 :UNMOUNT
-%_DT% -unmount %_DAEMON_DRIVE%
+%_DT% %_DT_UNMOUNT_COMMAND%
 goto finish
 
 :: mount zips - not using atm
@@ -220,9 +232,9 @@ if (%_7Z%)==() set ERROR_MESSAGE="Please ensure the 7Zip executable ""7z.exe"" i
 exit /b
 
 :CHECK_DT
-if exist "C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\DTAgent.exe"
-if exist "C:\Program Files\DAEMON Tools Lite\DTAgent.exe" set _DT="C:\Program Files\DAEMON Tools Lite\DTAgent.exe"
-if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""DTAgent.exe"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
+if exist "C:\Program Files (x86)\DAEMON Tools Lite\%_DTEXECUTABLE%" set _DT="C:\Program Files (x86)\DAEMON Tools Lite\%_DTEXECUTABLE%"
+if exist "C:\Program Files\DAEMON Tools Lite\%_DTEXECUTABLE%" set _DT="C:\Program Files\DAEMON Tools Lite\%_DTEXECUTABLE%"
+if (%_DT%)==() set ERROR_MESSAGE="Please ensure the Daemon Tools command line executer ""%_DTEXECUTABLE%"" is installed to its default location in Windows' Program Files Folder" && goto ERROR_POPUP
 exit /b
 
 :CHECK_EXCEPTIONS

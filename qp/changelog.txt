@@ -1,3 +1,8 @@
+Quickplay v4.6.2 
+ 
+* update multiloader for dt 10.8
+* mednafen config file name
+ 
 Quickplay v4.6.1 
  
 * update file exts and systems dat for new users

@@ -44,6 +44,9 @@ src/*.rsm
 src/*.tds
 src/*.dcu
 
+#mametool logging
+mametool_logfile.txt
+
 #Mess inis - the user needs to select their own mame executable and do a mame scan, we can't know in advance what that might be
 qp/EFind/Mess_Mame.ini
 qp/EFind/Mess_Retroarch.ini

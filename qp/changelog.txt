@@ -1,3 +1,12 @@
+Quickplay v4.6.4 
+ 
+* mame ini file finder
+* upgrade nodejs version of mametool
+* add mametool logging
+* add some icons
+* sundry retroarch efind alterations
+* add some new retroarch emus
+ 
 Quickplay v4.6.2 
  
 * update multiloader for dt 10.8

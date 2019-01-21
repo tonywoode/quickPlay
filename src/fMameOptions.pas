@@ -31,6 +31,7 @@ type
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
+    function checkExtrasDir(const directory:String):boolean;
   private
     { Private declarations }
   public
@@ -47,6 +48,16 @@ implementation
 uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPMiscTypes, uQPConst, ujProcesses, uEmu;
 
 {$R *.dfm}
+
+function TFrmMameOptions.checkExtrasDir(const directory:String):boolean;
+begin
+    if DirectoryExists(directory + '/folders/') and
+       DirectoryExists(directory + '/dats/')    and
+       DirectoryExists(directory + '/icons/')   then
+    Result:=true
+    else
+    Result:=false
+end;
 
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);
@@ -100,9 +111,7 @@ begin
       if (jvBrowse.execute) then
       //we use all three of these folders heavily in what follows, so we really need them all
         begin
-         if DirectoryExists(jvBrowse.Directory + '/folders/') and
-            DirectoryExists(jvBrowse.Directory + '/dats/')    and
-            DirectoryExists(jvBrowse.Directory + '/icons/')   then
+         if checkExtrasDir(jvBrowse.Directory) then
             begin
              TxtMameExtrasDirPath.Text := jvBrowse.Directory;
               MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;

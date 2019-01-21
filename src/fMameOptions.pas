@@ -61,7 +61,7 @@ begin
    BtnXMLScan.Enabled := True;
    XMLEdit.Text := StatusNotLoaded;
   if (MainFrm.Settings.MameXMLVersion <> '') and
-    FileExists(MainFrm.Settings.MameXMLPath) then
+    FileExists(MainFrm.Settings.Paths.CfgDir + 'mame.json') then
     begin
       XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion;
       BtnXMLScan.Caption := 'Choose XML File and Re-Scan'
@@ -161,9 +161,10 @@ begin
        RunProcess('cmd.exe /C ' +  Executable + ' ' + Flags, True, Settings.Paths.AppDir, SW_SHOWNORMAL);
        //node should write the mamexml version into the settings now, so we need to reload the settings from disk
        Settings.LoadIni();
-       if (Settings.MameXMLVersion <> '') then
+       if (Settings.MameXMLVersion <> '') and
+        FileExists(Settings.Paths.CfgDir + 'mame.json') then
        begin
-         XMLEdit.Text := Settings.MameXMLVersion;
+         XMLEdit.Text := 'Loaded: ' + Settings.MameXMLVersion;
          MessageDlg('After a successful MAME XML scan, you should run a new EFind to pick up new MAME/RetroArch-Mame Home-Computer and Console Emulators', mtInformation, [mbOK], 0);
        end;
      end;

@@ -182,7 +182,7 @@ QP_FOLOPTFRM_FILE_EXT_1 = 'Add New Filter, in format "*.xxx"';
 QP_MAMEM_BAD_DATA =  'Either no valid directory was given, or no emulator was selected';
 
 //MameOptions Form
-QP_MAMEOPT_BAD_DIR =  'The selected directory is not a valid MAME Extras folder (needs dats, folders, icons)';
+QP_MAMEOPT_BAD_DIR =  'The selected MAME Extras folder is not a valid MAME Extras folder (needs dats, folders, icons)';
 QP_MAMEOPT_ROMS_EXIST_IN_SRC_DIR = 'ROM folder not empty. Making a MAME set here erases the existing list and may replace subfolders. Its advised you make a new empty folder for a a MAME scan. Continue?';
 QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR = 'Selected folder already contains a root directory called after the softlist, overwrite?';
 QP_MAME_NO_ROMDATA_IN_ROOT = 'Please create a new folder to host Mame Romdatas';

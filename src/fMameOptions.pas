@@ -51,7 +51,8 @@ uses fMain, uJUtilities, ShellAPI, StrUtils, JCLstrings, uQPMiscTypes, uQPConst,
 
 function TFrmMameOptions.checkExtrasDir(const directory:String):boolean;
 begin
-    if DirectoryExists(directory + '/folders/') and
+    if 
+       DirectoryExists(directory + '/folders/') and
        DirectoryExists(directory + '/dats/')    and
        DirectoryExists(directory + '/icons/')   then
     Result:=true
@@ -135,8 +136,13 @@ var
   selectedFile, Executable, Flags, MameExeName, MameExePath: string;
   MameExeIndex: Integer;
   dlg: TOpenDialog;
+  extrasDir : string;
+  extrasDirOk : boolean;
 
 begin
+  extrasDir := MainFrm.Settings.MameExtrasDir;
+  extrasDirOk := checkExtrasDir(extrasDir);
+
   selectedFile := '';
   dlg := TOpenDialog.Create(nil);
   try
@@ -148,7 +154,11 @@ begin
      dlg.Free;
   end;
 
-  if (selectedFile <> '') and (CmbMame.ItemIndex <>-1) then
+  if (selectedFile <> '')
+  and (CmbMame.ItemIndex <>-1)
+  //we need to check the mame extras is STILL valid, we might have selected our mame extras dir long ago
+  and extrasDirOk
+  then
   begin
      With MainFrm do
      begin
@@ -177,7 +187,8 @@ begin
          MessageDlg('After a successful MAME XML scan, you should run a new EFind to pick up new MAME/RetroArch-Mame Home-Computer and Console Emulators', mtInformation, [mbOK], 0);
        end;
      end;
-  end;
+     end
+     else if Not extrasDirOk then MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
 end;
 {-----------------------------------------------------------------------------}
 

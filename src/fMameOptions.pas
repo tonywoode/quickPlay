@@ -138,6 +138,7 @@ var
   dlg: TOpenDialog;
   extrasDir : string;
   extrasDirOk : boolean;
+  previousMameXMLVersion : string;
 
 begin
   extrasDir := MainFrm.Settings.MameExtrasDir;
@@ -162,6 +163,12 @@ begin
   begin
      With MainFrm do
      begin
+       //invalidate the mame xml version in the settings, the node executable will set it for us
+       // doing this does mean that if something goes wrong, we'll not be able to continue with the previous xml,
+       // but not invalidating here means that we won't know if the node code failed
+       // so lets remember what the setting was before we wipe it
+       previousMameXMLVersion := Settings.MameXMLVersion;
+       Settings.MameXMLVersion := '';
        //we need to get the executable name of the emulator selected in the dropdown, and then save it
        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
        Settings.MametoolMameExeName := MameExeName;
@@ -185,7 +192,13 @@ begin
        begin
          XMLEdit.Text := 'Loaded: ' + Settings.MameXMLVersion;
          MessageDlg('After a successful MAME XML scan, you should run a new EFind to pick up new MAME/RetroArch-Mame Home-Computer and Console Emulators', mtInformation, [mbOK], 0);
-       end;
+       end
+       else
+            MessageDlg('The MAME XML was not read. Check source files, check mametool_logfile.txt in the root of the QuickPlay folder, try again, or call at the forums for help', mtInformation, [mbOK], 0);
+            //if we didn't work things out, but we previously had a mame xml version, and we still have an json file, just restore it, give 'em a chance!
+            if FileExists(Settings.Paths.CfgDir + 'mame.json') then Settings.MameXMLVersion := previousMameXMLVersion
+            //but if those things are messed up, update the status so we know things have messed up
+            else XMLEdit.Text :=  StatusNotLoaded;
      end;
      end
      else if Not extrasDirOk then MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);

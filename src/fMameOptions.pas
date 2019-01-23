@@ -60,7 +60,6 @@ begin
     Result:=false
 end;
 
-
 procedure TFrmMameOptions.FormShow(Sender: TObject);
 
 begin
@@ -194,12 +193,18 @@ begin
          MessageDlg('After a successful MAME XML scan, you should run a new EFind to pick up new MAME/RetroArch-Mame Home-Computer and Console Emulators', mtInformation, [mbOK], 0);
        end
        else
-            MessageDlg('The MAME XML was not read. Check source files, check mametool_logfile.txt in the root of the QuickPlay folder, try again, or call at the forums for help', mtInformation, [mbOK], 0);
-            //if we didn't work things out, but we previously had a mame xml version, and we still have an json file, just restore it, give 'em a chance!
-            if FileExists(Settings.Paths.CfgDir + 'mame.json') then Settings.MameXMLVersion := previousMameXMLVersion
-            //but if those things are messed up, update the status so we know things have messed up
-            else XMLEdit.Text :=  StatusNotLoaded;
-     end;
+       begin
+         MessageDlg('The MAME XML was not read. Check source files, check mametool_logfile.txt in the root of the QuickPlay folder, try again, or call at the forums for help', mtInformation, [mbOK], 0);
+         //if we didn't work things out, but we previously had a mame xml version, and we still have an json file, just restore it, give 'em a chance!
+         if FileExists(Settings.Paths.CfgDir + 'mame.json') then
+           begin
+             Settings.MameXMLVersion := previousMameXMLVersion;
+             XMLEdit.Text := 'Loaded: ' + Settings.MameXMLVersion;
+           end
+           //but if those things are messed up, update the status so we know things have messed up
+           else XMLEdit.Text :=  StatusNotLoaded;
+         end
+       end;
      end
      else if Not extrasDirOk then MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
 end;

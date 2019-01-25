@@ -1,3 +1,14 @@
+Quickplay v4.6.5 
+ 
+* ensure multiloader compatibility with Daemon Tools Lite 10.10
+* bugfix: fix mametool bug with ini kv files
+* bugfix: fix bug where mame version would revert on success
+* bugfix: get the logic right for users rescanning a new mame version
+* bugfix: recheck mame extras dir when mame scan triggered
+* bugfix: mametool uses its own mame.json as a gatekeeper check, not the users mame xml
+* add pcsx-pgxp to efinds
+
+ 
 Quickplay v4.6.4 
  
 * mame ini file finder

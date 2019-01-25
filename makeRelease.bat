@@ -71,9 +71,13 @@ DEL "%RELEASEDIR%\qp\EFIND\Gamebase.ini"
 ECHO.Cleaning up the old exe
 DEL "%RELEASEDIR%\qp\qp384.exe"
 
+ECHO.Cleaning up the Mametool logfile
+DEL "%RELEASEDIR%\qp\mametool_logfile.txt"
+
 ECHO.Cleaning up other detrius
 DEL "%RELEASEDIR%\qp\._.DS_Store"
 DEL "%RELEASEDIR%\qp\.DS_Store"
+
 
 ECHO.Cleaned Up Files, time to make the release notes
 PAUSE

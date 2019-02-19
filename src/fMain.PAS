@@ -699,7 +699,7 @@ type
   end;
 
 const
-  QPVer = '4.6.5';
+  QPVer = '4.6.6';
   DefaultFileName = 'ROMData.dat';
   LBreak = Chr(13) + Chr(10);
 

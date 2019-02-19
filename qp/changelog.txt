@@ -1,3 +1,8 @@
+Quickplay v4.6.6 
+ 
+* enable lzma2 support for 7zip files
+* remove mametool logging file from release
+ 
 Quickplay v4.6.5 
  
 * ensure multiloader compatibility with Daemon Tools Lite 10.10

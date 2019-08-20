@@ -58,42 +58,42 @@ if /I (%~x1)==(.7z)  set ARCHIVE_TYPE=zip
 :: Daemon tools can mount archives, but only zips right now
 if /I (%~x1)==(.zip) set ZIP_MOUNTABLE=yes
 
-:CACHE
+::CACHE
 ::  A problem we have is we often pass in 8:3 names just to shorten filename, as some game names
 ::   are notoriously long, so we get the long name for both robocopy and the list function of 7zip with dir /B
 ::  http://stackoverflow.com/a/34473971. Batch can't set variables to output like nix, says set /p can read from a file http://stackoverflow.com/a/19024533,
 ::     but that didn't work for me, instead we use the nix-style backtick of for /f
 ::   TODO: non 7zip/7z will never try to RE-copy from source, so delete corrupt one's manually
 
-for /f "usebackq delims=" %%i in (`dir /B %1`) do (
-	if exist "%_TEMPDIR%\%%i" (
-		set _ROMNAME="%_TEMPDIR%\%%i"
-		if [%ARCHIVE_TYPE%]==[zip] (
-			%_7z% l "%_TEMPDIR%\%%i") || (
-					echo *****Problem with zip in cache - retrying*****
-					goto MOVEIT
-			)
-		goto CHECK_ARCHIVE_TYPE
-		)
-	)
-)
+::for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+::	if exist "%_TEMPDIR%\%%i" (
+::		set _ROMNAME="%_TEMPDIR%\%%i"
+::		if [%ARCHIVE_TYPE%]==[zip] (
+::			%_7z% l "%_TEMPDIR%\%%i") || (
+::					echo *****Problem with zip in cache - retrying*****
+::					goto MOVEIT
+::			)
+::		goto CHECK_ARCHIVE_TYPE
+::		)
+::	)
+::)
 :: If its a symlink we'll assume the file is on slow storage somewhere far away, so we'll move the compressed file locally first to unzip it
 :: http://stackoverflow.com/questions/18883892/batch-file-windows-cmd-exe-test-if-a-directory-is-a-link-symlink
 :: todo: its claimed in that link that this might not work on non-english language windows!?!
-:MOVEIT
-dir %1 | find "<SYMLINK>" && (
+::MOVEIT
+::dir %1 | find "<SYMLINK>" && (
 rem Copy zip to scratch dir. 
-	for /f "usebackq delims=" %%i in (`dir /B %1`) do (
+::	for /f "usebackq delims=" %%i in (`dir /B %1`) do (
 	rem must check for existing file else we'll robocopy the whole dir
-		if exist %1 (
+::		if exist %1 (
 			rem todo - more care needed here - main danger is zipping up the whole of the cachedir or romdir
 			rem convert drive and path to shortname to standardise things as robocopy blows up on quoted shortnames
-			robocopy %ROMPATH% "%_TEMPDIR%" %FILENAME% /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
-		)
-	set _ROMNAME="%_TEMPDIR%\%%i"
-    )
-  goto CHECK_ARCHIVE_TYPE
-)
+::			robocopy %ROMPATH% "%_TEMPDIR%" %FILENAME% /Z /J /COPY:D /DCOPY:D /ETA /R:3 /W:2
+::		)
+::	set _ROMNAME="%_TEMPDIR%\%%i"
+::    )
+::  goto CHECK_ARCHIVE_TYPE
+::)
 
 
 :: daemon can mount zips, but it can't then mount the bin/cue/iso in that zip, so we have to pass it to emu in that case

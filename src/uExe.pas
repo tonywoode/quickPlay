@@ -287,7 +287,7 @@ begin
   //First relinquish control to node for sync tool
   Executable := MainFrm.Settings.Paths.QPNodeFile;
      //other settings needed will all come from qps settings ini:
-     Flags := '--synctool ' + '"' + RPath + '"';
+     Flags := 'synctool ' + '"' + RPath + '"';
      //root the call in the appdir else node gets confused...
      //change the flag of the cmd call to /C for live and /K for dev (halting)
      RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);

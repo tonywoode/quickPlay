@@ -14,7 +14,7 @@ if exist %_SCRIPTDIR%Multiloader.ini (set _INIFILE=%_SCRIPTDIR%Multiloader.ini)
 
 :: You must set these in the ini file: where to extract to, which drive letter for daemon tools ,and which for daemon's zip support
 for /f "tokens=2* delims==" %%H in ('find "TEMPDIR=" ^< %_INIFILE%') do (set TEMPDIR=%%H)
-if (%TEMPDIR%)==() (for /D %%I IN (%1) do set _TEMPDIR=%%~dpnsN\) else (for /D %%I IN (%1) do set _TEMPDIR=%TEMPDIR%)
+if (%TEMPDIR%)==() (for /D %%I IN (%1) do set _TEMPDIR=%~dp0..\..\temp) else (for /D %%I IN (%1) do set _TEMPDIR=%TEMPDIR%)
 for /f "tokens=2* delims==" %%J in ('find "DAEMON_DRIVE=" ^< %_INIFILE%') do (set DAEMON_DRIVE=%%J)
 if (%DAEMON_DRIVE%)==() (set _DAEMON_DRIVE="K") else (SET _DAEMON_DRIVE="%DAEMON_DRIVE%")
 for /f "tokens=2* delims==" %%N in ('find "CLEANTEMP=" ^< %_INIFILE%') do (set _CLEANTEMP=%%N)
@@ -212,10 +212,18 @@ exit /b
 
 :FINISH
 :: if you have specified a tempdir and you do want to police it, wipe it recursively
+:: great care needed eg: https://stackoverflow.com/questions/6836566/batch-file-delete-all-files-and-folders-in-a-directory
+::  Here's a choice quote: So, quick tip - if you try to run this on a network path, even with the "IF EXIST" statement, 
+::    it will fail to set the folder and a statement will be recorded in the cmd prompt "UNC paths not supporting, defaulting to windows directory" 
+::    then it will attempt to delete everything in your windows directory. So be careful
+:: the rm loops below will echo 'directory is invalid' at the end of recursion...
+:: cd back to quickplays directory at end, not sure if this is worthwhile since we started the script in the emulator's directory
 if [%_CLEANTEMP%]==[YES] (
 	if not ["%_TEMPDIR%"]==[""] (
 		if exist "%_TEMPDIR%" (
-			rd /s /q "%_TEMPDIR%"
+			cd /d "%_TEMPDIR%"
+			for /F "delims=" %%i in ('dir /b') do (rmdir "%%i" /s/q || del "%%i" /s/q)
+			cd ..
 		)
 	) 
 )	

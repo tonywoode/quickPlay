@@ -649,7 +649,7 @@ var
   i, Choice : Integer;
   FileExt : String;
          fl : String;
-  MameExePath, Flags, Executable, softlistFolderName : String;
+  MameExePath, softlistFolderName : String;
 begin
   //create a stringlist to hold the compressed listings.
   FileList := TStringList.Create;
@@ -659,18 +659,6 @@ begin
       FileList.AddStrings(Self.CompressedFiles)
     else
     begin
-
-    Executable := MainFrm.Settings.Paths.QPNodeFile;
-     //other settings needed will all come from qps settings ini:
-     Flags := 'synctool ' + '"' + Self.Path + '"';
-     //root the call in the appdir else node gets confused...
-     //change the flag of the cmd call to /C for live and /K for dev (halting)
-     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
-     //hoping we got a good return code
-     //an attempt to ensure dir is correct after processing, not 100% sure its needed (used in mametool)
-     setCurrentDir(MainFrm.Settings.Paths.AppDir);
-
-
       //get the contents of the compressed file.
       if FileExists(Self.Path) then
         uQPCompObj.Compression.ListContentsOfFile(TStrings(FileList), Self.Path)

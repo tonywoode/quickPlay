@@ -280,22 +280,12 @@ end;
 Function TQPExe.PreRunROMConfigure(var ZipList : TStringList; ROMObj : TQPROM; ExtrDir : String) : String;
 var
   RPath : String;
-  MameExePath, Flags, Executable, softlistFolderName : String;
+  MameExePath, softlistFolderName : String;
 begin
   Result := '';
   RPath := RomObj.Path;
-  //First relinquish control to node for sync tool
-  Executable := MainFrm.Settings.Paths.QPNodeFile;
-     //other settings needed will all come from qps settings ini:
-     Flags := 'synctool ' + '"' + RPath + '"';
-     //root the call in the appdir else node gets confused...
-     //change the flag of the cmd call to /C for live and /K for dev (halting)
-     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
-     //hoping we got a good return code
-     //an attempt to ensure dir is correct after processing, not 100% sure its needed (used in mametool)
-     setCurrentDir(MainFrm.Settings.Paths.AppDir);
 
-  //Back to normal operation: check that the emulator and rom arent blank AND they exist
+  //check that the emulator and rom arent blank AND they exist
   if (FileExists(RPath) or DirectoryExists(ExtractFilePath(RPath)) )
       and FileExists(_Path) then
   Begin

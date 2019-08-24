@@ -68,7 +68,7 @@ uses Windows, Classes, SysUtils, Graphics, Controls, Forms,
      activeX, ExtCtrls, StdCtrls,  Contnrs, GraphicEX,
      VirtualTrees, uSettings, JvComponent, Messages,
      JvTrayIcon, JvDragDrop, JvAppInst, ToolWin,
-     uQPDir, uRomList, uEmuList, uRom, uEmu, uJCompression,
+     uQPDir, uRomList, uEmuList, uRom, uEmu, uJCompression, ujprocesses,
      uToolList, uMediaPanelClasses,uMediaTabClass, uQPMiscTypes, JvComponentBase,
      fjWinFontForm, uVersionCheckThread, mmSystem, JvJoystick ;
 
@@ -947,9 +947,34 @@ End;
 
 procedure TMainFrm.GetROMToRun(var RomObj : TQPROM; TheNode : PVirtualNode);
 var
-  ParentROM : TQPROM;
+  ParentROM, RomForSynctool : TQPROM;
+  Path, Flags, Executable : String;
 begin
+
+    //the code following this insertion doesn't seem sensible, essentially we
+    // need the rom's path to run synctool, we should refactor, but atm just
+    // follow tradition below and call getObject ONE MORE TIME!
+
+    //First relinquish control to node for sync tool
+     RomForSynctool := TQPRom(GetObject(VTRoms, TheNode));
+     RomObj.Assign(RomForSynctool);
+     Path := RomForSynctool.path;
+
+      Executable := Settings.Paths.QPNodeFile;
+     //other settings needed will all come from qps settings ini:
+     Flags := 'synctool ' + '"' + Path + '"';
+     //root the call in the appdir else node gets confused...
+     //change the flag of the cmd call to /C for live and /K for dev (halting)
+     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     //hoping we got a good return code
+     //an attempt to ensure dir is correct after processing, not 100% sure its needed (used in mametool)
+     // nah, if its a problem try the getCurrentDir routine
+     //setCurrentDir(MainFrm.Settings.Paths.AppDir);
+
+
     //determine the selected ROM
+
+
     if VTROMs.GetNodeLevel(TheNode) =0 then
     begin
       //ok check if we are in goodmerge compatibility mode

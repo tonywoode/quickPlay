@@ -965,7 +965,7 @@ begin
      Flags := 'synctool ' + '"' + Path + '"';
      //root the call in the appdir else node gets confused...
      //change the flag of the cmd call to /C for live and /K for dev (halting)
-     RunProcess('cmd.exe /K ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     RunProcess('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
      //hoping we got a good return code
      //an attempt to ensure dir is correct after processing, not 100% sure its needed (used in mametool)
      // nah, if its a problem try the getCurrentDir routine

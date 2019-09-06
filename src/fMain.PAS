@@ -948,7 +948,7 @@ End;
 procedure TMainFrm.GetROMToRun(var RomObj : TQPROM; TheNode : PVirtualNode);
 var
   ParentROM, RomForSynctool : TQPROM;
-  Path, Flags, Executable : String;
+  Path, Flags, Executable, SyncToolEnabled, Output : String;
 begin
 
     //the code following this insertion doesn't seem sensible, essentially we
@@ -960,21 +960,25 @@ begin
      RomObj.Assign(RomForSynctool);
      Path := RomForSynctool.path;
 
-      Executable := Settings.Paths.QPNodeFile;
+     //Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
+     Executable := Settings.Paths.QPNodeFile;
      //other settings needed will all come from qps settings ini:
+
+     // IOC: ask QPNode if its enabled synctool or not, dont hold that info here!
+     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + '--synctoolEnable', MainFrm.Settings.Paths.AppDir);
+     //MessageDlg(SyncToolEnabled, mtError, [mbOK], 0);
      Flags := 'synctool ' + '"' + Path + '"';
+     if ContainsText(SyncToolEnabled, 'SyncTool is Enabled') then
      //root the call in the appdir else node gets confused...
      //change the flag of the cmd call to /C for live and /K for dev (halting)
-     RunProcess('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     begin
+      RunProcess('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     end;
      //hoping we got a good return code
      //an attempt to ensure dir is correct after processing, not 100% sure its needed (used in mametool)
      // nah, if its a problem try the getCurrentDir routine
      //setCurrentDir(MainFrm.Settings.Paths.AppDir);
-
-
     //determine the selected ROM
-
-
     if VTROMs.GetNodeLevel(TheNode) =0 then
     begin
       //ok check if we are in goodmerge compatibility mode

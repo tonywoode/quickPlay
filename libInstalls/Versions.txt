@@ -4,7 +4,7 @@ JWA		2.3
 FindFile	1.3.0
 GraphicsEX	9.9
 HIDKomponente	1.0.3.4
-JohnLib		0.5
+JohnLib		0.5.2
 ZipMaster	179
 VirtualTreeView	4.8.6
 

@@ -653,6 +653,7 @@ var
 begin
   //create a stringlist to hold the compressed listings.
   FileList := TStringList.Create;
+  Choice := -1;
   try
 
     if Self.CompressedFiles.Count > 0 then
@@ -663,11 +664,12 @@ begin
       if FileExists(Self.Path) then
         uQPCompObj.Compression.ListContentsOfFile(TStrings(FileList), Self.Path)
       else
-        raise EJException.Create(J_FILE_NOT_EXIST);
+        //raise EJException.Create(J_FILE_NOT_EXIST);  was causing 2 dialogs as exception downstream also says basically the same thing
+        exit;
     end;
 
     //now filelist is full of files, try to find the users preferred choice.
-    Choice := -1;
+
     Case FileList.Count of
       0 : raise EJException.Create(COMP_ARCHIVE_EMPTY);
       1 : Choice := 0; //only one file in archive, must be the ROM.. i hope..
@@ -743,7 +745,10 @@ begin
       raise EJException.Create(QP_GM_CHOICE_ERROR);
 
   finally
-       fl :=    FileList[Choice];
+  if Choice <> -1 then
+  begin
+    fl :=    FileList[Choice];
+  end;
     FreeAndNil(FileList);
   end;
 end;

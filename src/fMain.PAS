@@ -957,7 +957,15 @@ begin
     // follow tradition below and call getObject ONE MORE TIME!
 
     //First relinquish control to node for sync tool
+    //check if this is parent/normal rom or a click on a rom in a goodmerge archive (in which case get parent)
+    if VTROMs.GetNodeLevel(TheNode) =0 then
+    begin
      RomForSynctool := TQPRom(GetObject(VTRoms, TheNode));
+    end
+    else
+    begin
+     RomForSynctool := TQPRom(GetObject(VTRoms, VTROMs.NodeParent[TheNode]));
+    end;
      RomObj.Assign(RomForSynctool);
      Path := RomForSynctool.path;
 
@@ -982,7 +990,10 @@ begin
      // nah, if its a problem try the getCurrentDir routine
      //setCurrentDir(MainFrm.Settings.Paths.AppDir);
     //determine the selected ROM
-    MessageDlg(IfThen(SynctoolResult,'True','False'), mtError, [mbOK], 0);
+
+    // for if you can ever use error code for some logic
+    //MessageDlg(IfThen(SynctoolResult,'True','False'), mtError, [mbOK], 0);
+
     if VTROMs.GetNodeLevel(TheNode) =0 then
     begin
       //ok check if we are in goodmerge compatibility mode

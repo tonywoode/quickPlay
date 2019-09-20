@@ -2,7 +2,7 @@ unit uRom;
 
 interface
 
-uses SysUtils, IniFiles, Classes, Contnrs, uExeList, uQPConst, uQPMiscTypes, ujProcesses;
+uses SysUtils, IniFiles, Classes, Contnrs, uExeList, uQPConst, uQPMiscTypes, ujProcesses, ShellAPI;
 
 type
 
@@ -226,9 +226,21 @@ end;
 {-----------------------------------------------------------------------------}
 
 procedure TQPROM.BrowseToROM();
+var
+  select : PAnsiChar;
 begin
   if DirectoryExists(ExtractFilePath(_Path)) then
-    JCLShell.ShellExecEx(ExtractFilePath(_path))
+  begin
+  select := PAnsiChar('/select,' + _Path)   ;
+  //JCLShell.ShellExecEx(ExtractFilePath(_path))
+
+  ShellExecute(0, nil, 'explorer.exe', select, nil,
+  SW_SHOWNORMAL)
+  //this works fine if the referenced file doesn't exist to, it triggers an upstream
+  // file error
+  // however see https://stackoverflow.com/a/15301028/3536094 that is may not
+  // be the most stable way of achieveing this
+  end
   else
     raise EJException.create(J_DIRECTORY_NOT_EXIST);
 end;

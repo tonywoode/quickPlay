@@ -26,6 +26,14 @@ type
     lblMAME: TLabel;
     MameScanLabel1: TLabel;
     XMLTxtLbl14: TLabel;
+    GroupBox1: TGroupBox;
+    ChkBoxMameFilePaths: TCheckBox;
+    ComboMameFileType: TComboBox;
+    LblMameFileType: TLabel;
+    LblMameFiletypeExplain: TLabel;
+    LblMameRomsType: TLabel;
+    ComboMameRomsType: TComboBox;
+    LblMameRomsTypeExplain: TLabel;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);

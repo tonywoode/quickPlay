@@ -257,7 +257,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object ComboMameFileType: TComboBox
       Left = 272
-      Top = 95
+      Top = 93
       Width = 145
       Height = 24
       ItemHeight = 16

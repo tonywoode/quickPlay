@@ -71,7 +71,10 @@ Type
       _sMametoolMameExeName: String; //the emu name of the Mame executable last selected in mame options
       _sMametoolMameExePath: String; //the filename of the Mame executable last selected in mame options
       _sMameFileManagerFilePath: String; //Path to an output of the program MameFileManger, essentially a mame filter file of rommames
-      _sMessIconDir : string;    //icons dir for system/romlist icons in sidebar roms panel.
+      _sMessIconDir : String;    //icons dir for system/romlist icons in sidebar roms panel.
+      _bMameFilePaths : boolean; //print filepaths or not in MAME romdatas
+      _sMameFilePathsRomsType : String; //do we have 7z or zipped MAME roms
+      _sMameZipType : String; //do we have non-merged, split or merged MAME roms
 
       //and here's all the checkboxes in the mame printer
       _bMameOptBios : boolean;
@@ -186,6 +189,9 @@ Type
       Property MametoolMameExePath : string read _sMametoolMameExePath write _sMametoolMameExePath;
       Property MameFileManagerFilePath : string read _sMameFileManagerFilePath write _sMameFileManagerFilePath;
       Property MessIconDir : string read _sMessIconDir write _sMessIconDir;
+      Property MameFilePaths : Boolean read _bMameFilePaths write _bMameFilePaths;
+      Property MameFilePathsRomsType : string read _sMameFilePathsRomsType write _sMameFilePathsRomsType;
+      Property MameZipType : string read _sMameZipType write _sMameZipType ;
 
       //and here's all the check boxes in the mame printer
       property MameOptBios : Boolean read _bMameOptBios write _bMameOptBios;
@@ -695,6 +701,9 @@ begin
       _sMametoolMameExeName := Ini.ReadString('MAME', 'MametoolMameExeName', '');
       _sMametoolMameExePath := Ini.ReadString('MAME', 'MametoolMameExePath', '');
       _sMameFileManagerFilePath := Ini.ReadString('MAME', 'MameFileManagerFilePath', '');
+      _bMameFilePaths := Ini.ReadBool('MAME', 'MameFilePaths', False);
+      _sMameZipType := Ini.ReadString('MAME', 'MameZipType', '');
+      _sMameFilePathsRomsType := Ini.ReadString('MAME', 'MameFilePathsRomsType', '');
 
       //and here's all the checkobxes from the mame printer
       _bMameOptBios := Ini.ReadBool('MAME', 'MameOptBios', True);
@@ -1133,6 +1142,9 @@ begin
     Ini.WriteString('MAME', 'MametoolMameExeName', self._sMametoolMameExeName);
     Ini.WriteString('MAME', 'MametoolMameExePath', self._sMametoolMameExePath);
     Ini.WriteString('MAME', 'MameFileManagerFilePath', self._sMameFileManagerFilePath);
+    Ini.WriteBool('MAME', 'MameFilePaths', self._bMameFilePaths);
+    Ini.WriteString('MAME', 'MameZipType', self._sMameZipType);
+    Ini.WriteString('MAME',  'MameFilePathsRomsType', self._sMameFilePathsRomsType);
 
     //and here's all the checboxes from the mame printer
     Ini.WriteBool('MAME', 'MameOptBios', Self._bMameOptBios);

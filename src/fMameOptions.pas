@@ -26,14 +26,17 @@ type
     lblMAME: TLabel;
     MameScanLabel1: TLabel;
     XMLTxtLbl14: TLabel;
-    GroupBox1: TGroupBox;
+    GrpBoxArcadeSList: TGroupBox;
     ChkBoxMameFilePaths: TCheckBox;
-    ComboMameFileType: TComboBox;
-    LblMameFileType: TLabel;
     LblMameFiletypeExplain: TLabel;
-    LblMameRomsType: TLabel;
-    ComboMameRomsType: TComboBox;
     LblMameRomsTypeExplain: TLabel;
+    RadMameFileZip: TRadioButton;
+    RadMameFile7z: TRadioButton;
+    RadMameMergeMerged: TRadioButton;
+    RadMameMergeNonMerged: TRadioButton;
+    GBoxGroupFiletype: TGroupBox;
+    GBoxMergeType: TGroupBox;
+    procedure GBoxGroupFiletypeClick(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -87,6 +90,22 @@ begin
     end;
   end;
 
+  ChkBoxMameFilePaths.Checked := MainFrm.Settings.MameFilePaths;
+  if (MainFrm.Settings.MameFilePaths) then
+  begin
+    GBoxGroupFiletype.Enabled := False;
+     GBoxMergeType.Enabled := False;
+  end;
+
+  if (MainFrm.Settings.MameZipType = '7z')
+  then RadMameFile7z.Checked := True
+  else RadMameFileZip.Checked := True;
+
+  if (MainFrm.Settings.MameFilePathsRomsType = 'NonMerged')
+  then RadMameMergeNonMerged.Checked := True
+  else RadMameMergeMerged.Checked := True;
+
+
   With MainFrm do
   begin
     EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
@@ -102,6 +121,11 @@ begin
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
    end;
+end;
+
+procedure TFrmMameOptions.GBoxGroupFiletypeClick(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}
@@ -221,6 +245,15 @@ end;
 procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
   MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+  MainFrm.Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+  if RadMameFile7z.Checked
+  then MainFrm.Settings.MameZipType := '7z'
+  else MainFrm.Settings.MameZipType := 'Zip';
+
+  if RadMameMergeNonMerged.Checked
+  then MainFrm.Settings.MameFilePathsRomsType := 'NonMerged'
+  else MainFrm.Settings.MameFilePathsRomsType := 'Merged';
+
   MainFrm.Settings.SaveAllSettings(); //in case you changed the mame extras dir but didn't do a scan
   //close the form with the modal result OK
   ModalResult := MrOK;

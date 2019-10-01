@@ -20,7 +20,7 @@ object FrmMameOptions: TFrmMameOptions
     Left = 24
     Top = 151
     Width = 577
-    Height = 330
+    Height = 298
     Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
@@ -35,7 +35,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl4: TLabel
       Left = 18
-      Top = 199
+      Top = 197
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
@@ -60,13 +60,13 @@ object FrmMameOptions: TFrmMameOptions
       OnClick = MameXMLLinkLabelClick
     end
     object XMLTxtLbl13: TLabel
-      Left = 40
+      Left = 20
       Top = 167
-      Width = 506
+      Width = 486
       Height = 16
       Caption = 
-        'Download the zip file named "mame{version number}lx.zip", unzip ' +
-        'it, and scan it below'
+        'Download the zip named "mame{version number}lx.zip", unzip it, a' +
+        'nd scan it below'
       WordWrap = True
     end
     object lblMAME: TLabel
@@ -89,7 +89,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl14: TLabel
       Left = 18
-      Top = 287
+      Top = 255
       Width = 528
       Height = 32
       Caption = 
@@ -100,7 +100,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLEdit: TEdit
       Left = 152
-      Top = 199
+      Top = 189
       Width = 354
       Height = 27
       AutoSelect = False
@@ -119,9 +119,9 @@ object FrmMameOptions: TFrmMameOptions
     end
     object BtnXMLScan: TButton
       Left = 152
-      Top = 240
+      Top = 222
       Width = 223
-      Height = 41
+      Height = 27
       Caption = 'Choose XML File and Start Scan'
       TabOrder = 1
       OnClick = BtnXMLScanClick
@@ -204,42 +204,28 @@ object FrmMameOptions: TFrmMameOptions
     TabOrder = 3
     OnClick = BtnMameExtrasDirFindClick
   end
-  object GroupBox1: TGroupBox
+  object GrpBoxArcadeSList: TGroupBox
     Left = 24
-    Top = 487
+    Top = 455
     Width = 577
-    Height = 202
+    Height = 240
     Caption = 'Arcade and Softlist Printing Options'
     TabOrder = 6
-    object LblMameFileType: TLabel
-      Left = 96
-      Top = 101
-      Width = 128
-      Height = 16
-      Caption = 'Mame Roms Filetype'
-    end
     object LblMameFiletypeExplain: TLabel
-      Left = 17
-      Top = 55
-      Width = 507
-      Height = 48
+      Left = 13
+      Top = 54
+      Width = 551
+      Height = 32
       Caption = 
         'A print of MAME Arcade Games or Softlists will print ROMSET file' +
-        'names based on the MAME XML. MAME files are usually compressed t' +
-        'o zip, but can be compressed to 7zip'
+        'names from the MAME XML. MAME files are usually zip compressed, ' +
+        'but can be 7zip'
       WordWrap = True
-    end
-    object LblMameRomsType: TLabel
-      Left = 96
-      Top = 169
-      Width = 154
-      Height = 16
-      Caption = 'Mame Roms Merge Type'
     end
     object LblMameRomsTypeExplain: TLabel
       Left = 17
-      Top = 123
-      Width = 503
+      Top = 140
+      Width = 506
       Height = 32
       Caption = 
         'Mame Roms can be non-merged, split or merged (see MAME'#39's website' +
@@ -247,29 +233,62 @@ object FrmMameOptions: TFrmMameOptions
         'ded, and is the default here'
       WordWrap = True
     end
+    object GBoxMergeType: TGroupBox
+      Left = 287
+      Top = 178
+      Width = 261
+      Height = 47
+      Caption = 'Mame Roms Merge Type'
+      TabOrder = 2
+      object RadMameMergeMerged: TRadioButton
+        Left = 20
+        Top = 18
+        Width = 89
+        Height = 17
+        Caption = 'Merged'
+        TabOrder = 0
+      end
+      object RadMameMergeNonMerged: TRadioButton
+        Left = 115
+        Top = 18
+        Width = 153
+        Height = 17
+        Caption = 'Split/Non-Merged'
+        TabOrder = 1
+      end
+    end
+    object GBoxGroupFiletype: TGroupBox
+      Left = 287
+      Top = 92
+      Width = 261
+      Height = 42
+      Caption = 'Mame Roms Filetype'
+      TabOrder = 1
+      OnClick = GBoxGroupFiletypeClick
+      object RadMameFileZip: TRadioButton
+        Left = 23
+        Top = 22
+        Width = 113
+        Height = 17
+        Caption = 'Zip'
+        TabOrder = 0
+      end
+      object RadMameFile7z: TRadioButton
+        Left = 118
+        Top = 22
+        Width = 113
+        Height = 17
+        Caption = '7Zip'
+        TabOrder = 1
+      end
+    end
     object ChkBoxMameFilePaths: TCheckBox
-      Left = 17
-      Top = 32
+      Left = 13
+      Top = 26
       Width = 159
       Height = 17
       Caption = 'Print MAME File Paths'
       TabOrder = 0
-    end
-    object ComboMameFileType: TComboBox
-      Left = 272
-      Top = 93
-      Width = 145
-      Height = 24
-      ItemHeight = 16
-      TabOrder = 1
-    end
-    object ComboMameRomsType: TComboBox
-      Left = 272
-      Top = 168
-      Width = 145
-      Height = 24
-      ItemHeight = 16
-      TabOrder = 2
     end
   end
 end

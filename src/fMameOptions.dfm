@@ -3,8 +3,8 @@ object FrmMameOptions: TFrmMameOptions
   Top = 223
   BorderStyle = bsDialog
   Caption = 'MAME Options'
-  ClientHeight = 743
-  ClientWidth = 624
+  ClientHeight = 800
+  ClientWidth = 724
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,14 +19,14 @@ object FrmMameOptions: TFrmMameOptions
   object XMLGroupBox: TGroupBox
     Left = 24
     Top = 151
-    Width = 577
-    Height = 298
+    Width = 681
+    Height = 358
     Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
-      Left = 18
-      Top = 105
-      Width = 508
+      Left = 20
+      Top = 129
+      Width = 647
       Height = 32
       Caption = 
         'Scanning a MAME XML is required to use the MAME Printing menu op' +
@@ -34,15 +34,15 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object XMLTxtLbl4: TLabel
-      Left = 18
-      Top = 197
+      Left = 17
+      Top = 237
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
     end
     object MameXMLLinkLabel: TLabel
-      Left = 188
-      Top = 143
+      Left = 236
+      Top = 167
       Width = 358
       Height = 18
       Cursor = crHandPoint
@@ -61,8 +61,8 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl13: TLabel
       Left = 20
-      Top = 167
-      Width = 486
+      Top = 201
+      Width = 637
       Height = 16
       Caption = 
         'Download the zip named "mame{version number}lx.zip", unzip it, a' +
@@ -70,7 +70,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object lblMAME: TLabel
-      Left = 36
+      Left = 20
       Top = 78
       Width = 132
       Height = 16
@@ -79,7 +79,7 @@ object FrmMameOptions: TFrmMameOptions
     object MameScanLabel1: TLabel
       Left = 17
       Top = 24
-      Width = 509
+      Width = 648
       Height = 48
       Caption = 
         'To use QuickPlay'#39's MAME features, make sure you already have a M' +
@@ -88,9 +88,9 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object XMLTxtLbl14: TLabel
-      Left = 18
-      Top = 255
-      Width = 528
+      Left = 17
+      Top = 295
+      Width = 379
       Height = 32
       Caption = 
         'A successful XML Scan will also put new systems in QuickPlay'#39's l' +
@@ -100,7 +100,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLEdit: TEdit
       Left = 152
-      Top = 189
+      Top = 231
       Width = 354
       Height = 27
       AutoSelect = False
@@ -118,18 +118,18 @@ object FrmMameOptions: TFrmMameOptions
       Text = 'not loaded'
     end
     object BtnXMLScan: TButton
-      Left = 152
-      Top = 222
+      Left = 426
+      Top = 280
       Width = 223
-      Height = 27
+      Height = 65
       Caption = 'Choose XML File and Start Scan'
       TabOrder = 1
       OnClick = BtnXMLScanClick
     end
     object CmbMame: TComboBox
-      Left = 201
-      Top = 75
-      Width = 345
+      Left = 173
+      Top = 78
+      Width = 394
       Height = 24
       Style = csDropDownList
       Color = clMenu
@@ -145,15 +145,15 @@ object FrmMameOptions: TFrmMameOptions
   end
   object ExtrasGroupBox: TGroupBox
     Left = 24
-    Top = 24
-    Width = 577
+    Top = 14
+    Width = 681
     Height = 121
     Caption = 'Set Mame Extras Dir'
     TabOrder = 4
     object ExtrasTxtLbl1: TLabel
       Left = 17
       Top = 18
-      Width = 539
+      Width = 648
       Height = 32
       Caption = 
         'Setting the location of the MAME extras directory will allow you' +
@@ -170,8 +170,8 @@ object FrmMameOptions: TFrmMameOptions
     end
   end
   object MameOptsOk: TButton
-    Left = 411
-    Top = 701
+    Left = 499
+    Top = 761
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -179,8 +179,8 @@ object FrmMameOptions: TFrmMameOptions
     OnClick = BtnMameOptsOkClick
   end
   object BtnCancel: TButton
-    Left = 509
-    Top = 701
+    Left = 613
+    Top = 761
     Width = 92
     Height = 31
     Cancel = True
@@ -189,16 +189,16 @@ object FrmMameOptions: TFrmMameOptions
     TabOrder = 1
   end
   object TxtMameExtrasDirPath: TEdit
-    Left = 41
-    Top = 102
-    Width = 422
+    Left = 143
+    Top = 100
+    Width = 448
     Height = 24
     TabOrder = 2
   end
   object BtnMameExtrasDirFind: TButton
-    Left = 485
-    Top = 101
-    Width = 57
+    Left = 613
+    Top = 99
+    Width = 60
     Height = 27
     Caption = 'Select'
     TabOrder = 3
@@ -206,15 +206,15 @@ object FrmMameOptions: TFrmMameOptions
   end
   object GrpBoxArcadeSList: TGroupBox
     Left = 24
-    Top = 455
-    Width = 577
+    Top = 515
+    Width = 681
     Height = 240
     Caption = 'Arcade and Softlist Printing Options'
     TabOrder = 6
     object LblMameFiletypeExplain: TLabel
       Left = 13
       Top = 54
-      Width = 551
+      Width = 652
       Height = 32
       Caption = 
         'A print of MAME Arcade Games or Softlists will print ROMSET file' +
@@ -225,7 +225,7 @@ object FrmMameOptions: TFrmMameOptions
     object LblMameRomsTypeExplain: TLabel
       Left = 17
       Top = 140
-      Width = 506
+      Width = 640
       Height = 32
       Caption = 
         'Mame Roms can be non-merged, split or merged (see MAME'#39's website' +
@@ -234,7 +234,7 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object GBoxMergeType: TGroupBox
-      Left = 287
+      Left = 388
       Top = 178
       Width = 261
       Height = 47
@@ -258,8 +258,8 @@ object FrmMameOptions: TFrmMameOptions
       end
     end
     object GBoxGroupFiletype: TGroupBox
-      Left = 287
-      Top = 92
+      Left = 388
+      Top = 84
       Width = 261
       Height = 42
       Caption = 'Mame Roms Filetype'

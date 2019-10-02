@@ -36,7 +36,6 @@ type
     RadMameMergeNonMerged: TRadioButton;
     GBoxGroupFiletype: TGroupBox;
     GBoxMergeType: TGroupBox;
-    procedure GBoxGroupFiletypeClick(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
@@ -91,11 +90,6 @@ begin
   end;
 
   ChkBoxMameFilePaths.Checked := MainFrm.Settings.MameFilePaths;
-  if (MainFrm.Settings.MameFilePaths) then
-  begin
-    GBoxGroupFiletype.Enabled := False;
-     GBoxMergeType.Enabled := False;
-  end;
 
   if (MainFrm.Settings.MameZipType = '7z')
   then RadMameFile7z.Checked := True
@@ -121,11 +115,6 @@ begin
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
    end;
-end;
-
-procedure TFrmMameOptions.GBoxGroupFiletypeClick(Sender: TObject);
-begin
-
 end;
 
 {-----------------------------------------------------------------------------}
@@ -275,4 +264,6 @@ end;
 
 
 end.
+
+
 

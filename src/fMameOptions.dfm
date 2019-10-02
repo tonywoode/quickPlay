@@ -26,7 +26,7 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl1: TLabel
       Left = 20
       Top = 129
-      Width = 647
+      Width = 645
       Height = 32
       Caption = 
         'Scanning a MAME XML is required to use the MAME Printing menu op' +
@@ -62,7 +62,7 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl13: TLabel
       Left = 20
       Top = 201
-      Width = 637
+      Width = 486
       Height = 16
       Caption = 
         'Download the zip named "mame{version number}lx.zip", unzip it, a' +
@@ -79,8 +79,8 @@ object FrmMameOptions: TFrmMameOptions
     object MameScanLabel1: TLabel
       Left = 17
       Top = 24
-      Width = 648
-      Height = 48
+      Width = 623
+      Height = 32
       Caption = 
         'To use QuickPlay'#39's MAME features, make sure you already have a M' +
         'AME/RetroArch arcade emulator in your emulators list, Select it ' +
@@ -91,7 +91,7 @@ object FrmMameOptions: TFrmMameOptions
       Left = 17
       Top = 295
       Width = 379
-      Height = 32
+      Height = 48
       Caption = 
         'A successful XML Scan will also put new systems in QuickPlay'#39's l' +
         'ist of systems, and make a new EFind file, for Mame'#39's console an' +
@@ -153,7 +153,7 @@ object FrmMameOptions: TFrmMameOptions
     object ExtrasTxtLbl1: TLabel
       Left = 17
       Top = 18
-      Width = 648
+      Width = 645
       Height = 32
       Caption = 
         'Setting the location of the MAME extras directory will allow you' +
@@ -214,7 +214,7 @@ object FrmMameOptions: TFrmMameOptions
     object LblMameFiletypeExplain: TLabel
       Left = 13
       Top = 54
-      Width = 652
+      Width = 644
       Height = 32
       Caption = 
         'A print of MAME Arcade Games or Softlists will print ROMSET file' +
@@ -225,7 +225,7 @@ object FrmMameOptions: TFrmMameOptions
     object LblMameRomsTypeExplain: TLabel
       Left = 17
       Top = 140
-      Width = 640
+      Width = 630
       Height = 32
       Caption = 
         'Mame Roms can be non-merged, split or merged (see MAME'#39's website' +
@@ -264,7 +264,6 @@ object FrmMameOptions: TFrmMameOptions
       Height = 42
       Caption = 'Mame Roms Filetype'
       TabOrder = 1
-      OnClick = GBoxGroupFiletypeClick
       object RadMameFileZip: TRadioButton
         Left = 23
         Top = 22

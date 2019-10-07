@@ -1297,6 +1297,7 @@ object MainFrm: TMainFrm
     end
     object actSynctoolLocalFromRemote: TAction
       Caption = 'Make all Romdatas in this and subfolders Local from Remote'
+      OnExecute = actSynctoolLocalFromRemoteExecute
     end
   end
   object MainMenu: TMainMenu
@@ -1501,7 +1502,7 @@ object MainFrm: TMainFrm
         Action = actSynctoolOptions
       end
       object MakeallRomdatasfromhereLocalfromRemote1: TMenuItem
-        Caption = 'Make all Romdatas from here Local from Remote'
+        Action = actSynctoolLocalFromRemote
       end
     end
     object Mame1: TMenuItem

@@ -365,6 +365,7 @@ type
     Synctool1: TMenuItem;
     SynctoolOptions: TMenuItem;
     MakeallRomdatasfromhereLocalfromRemote1: TMenuItem;
+    procedure actSynctoolLocalFromRemoteExecute(Sender: TObject);
     procedure actSynctoolOptionsExecute(Sender: TObject);
     procedure ActMameOptionsExecute(Sender: TObject);
     procedure ActMameMessPrinterExecute(
@@ -3693,6 +3694,39 @@ begin
 end;
  
 {-----------------------------------------------------------------------------}
+
+procedure TMainFrm.actSynctoolLocalFromRemoteExecute(Sender: TObject);
+var
+  Flags, Executable, SyncToolEnabled, RomdataFolder : String;
+  SynctoolResult : Boolean;
+begin
+     //Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
+     Executable := Settings.Paths.QPNodeFile;
+     //other settings needed will all come from qps settings ini:
+
+     // IOC: ask QPNode if its enabled synctool or not, dont hold that info here!
+     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + '--synctoolEnable', MainFrm.Settings.Paths.AppDir);
+     //MessageDlg(SyncToolEnabled, mtError, [mbOK], 0);
+     if ContainsText(SyncToolEnabled, 'SyncTool is Enabled')
+     or ContainsText(SyncToolEnabled, 'Access is denied') //in testing env
+     then
+     //root the call in the appdir else node gets confused...
+     //change the flag of the cmd call to /C for live and /K for dev (halting)
+     begin
+     RomdataFolder := ExcludeTrailingPathDelimiter(MainFrm.GetSelectedFolder);
+     //ShowMessage(RomdataFolder);
+      Flags := '--synctoolFolderFlip ' + '"' + RomdataFolder + '"';
+      SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+     end
+     else
+     begin
+       ShowMessage('Synctool is Disabled, to use this option, enable and set paths');
+
+     end;
+    // for if you can ever use error code for some logic
+    //MessageDlg(IfThen(SynctoolResult,'True','False'), mtError, [mbOK], 0);
+
+end;
 
 procedure TMainFrm.actSynctoolOptionsExecute(Sender: TObject);
 begin

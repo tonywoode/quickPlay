@@ -360,6 +360,12 @@ type
     ActMameMessPrinter: TAction;
     PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem;
     VTDirRowHeightLabel: TLabel;
+    actSynctoolOptions: TAction;
+    actSynctoolLocalFromRemote: TAction;
+    Synctool1: TMenuItem;
+    SynctoolOptions: TMenuItem;
+    MakeallRomdatasfromhereLocalfromRemote1: TMenuItem;
+    procedure actSynctoolOptionsExecute(Sender: TObject);
     procedure ActMameOptionsExecute(Sender: TObject);
     procedure ActMameMessPrinterExecute(
       Sender: TObject);
@@ -3684,6 +3690,13 @@ procedure TMainFrm.ActSelAllExecute(Sender: TObject);
 begin
   //Select all the roms in the listview.
   VTRoms.SelectAll(True);
+end;
+ 
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.actSynctoolOptionsExecute(Sender: TObject);
+begin
+
 end;
 
 {-----------------------------------------------------------------------------}

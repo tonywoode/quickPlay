@@ -981,15 +981,16 @@ begin
      //other settings needed will all come from qps settings ini:
 
      // IOC: ask QPNode if its enabled synctool or not, dont hold that info here!
-     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + '--synctoolEnable', MainFrm.Settings.Paths.AppDir);
+     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + 'synctool --checkStatus', MainFrm.Settings.Paths.AppDir);
      //MessageDlg(SyncToolEnabled, mtError, [mbOK], 0);
-     Flags := 'synctool ' + '"' + Path + '"';
+
      if ContainsText(SyncToolEnabled, 'SyncTool is Enabled') or
         ContainsText(SyncToolEnabled, 'Access is denied') //in testing env
      then
      //root the call in the appdir else node gets confused...
      //change the flag of the cmd call to /C for live and /K for dev (halting)
      begin
+      Flags := 'synctool --sync ' + '"' + Path + '"';
       SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
      end;
      //hoping we got a good return code
@@ -1438,7 +1439,7 @@ begin
 
     TmpStr := TStringList.Create;
     try
-      TmpStr.NameValueSeparator := '¬';
+      TmpStr.NameValueSeparator := 'Â¬';
 
       for i := 0 to EmuList.Count-1 do
         if StrCompare(CurEmu.system, EmuList[i].system) = 0 then
@@ -3705,7 +3706,7 @@ begin
      //other settings needed will all come from qps settings ini:
 
      // IOC: ask QPNode if its enabled synctool or not, dont hold that info here!
-     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + '--synctoolEnable', MainFrm.Settings.Paths.AppDir);
+     SyncToolEnabled := GetDosOutput('cmd.exe /C' + Executable + ' ' + 'synctool --checkStatus', MainFrm.Settings.Paths.AppDir);
      //MessageDlg(SyncToolEnabled, mtError, [mbOK], 0);
      if ContainsText(SyncToolEnabled, 'SyncTool is Enabled')
      or ContainsText(SyncToolEnabled, 'Access is denied') //in testing env
@@ -3715,7 +3716,7 @@ begin
      begin
      RomdataFolder := ExcludeTrailingPathDelimiter(MainFrm.GetSelectedFolder);
      //ShowMessage(RomdataFolder);
-      Flags := '--synctoolFolderFlip ' + '"' + RomdataFolder + '"';
+      Flags := 'synctool --folderFlip ' + '"' + RomdataFolder + '"';
       SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
      end
      else

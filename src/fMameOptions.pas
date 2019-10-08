@@ -200,7 +200,7 @@ begin
        Settings.SaveAllSettings(); //else how else will node read what you just did,
        //this will also save the mame extras dir for node to read, in case its newly-chosen
 
-       Flags := '--scan';
+       Flags := 'mametool --scan';
        Executable := Settings.Paths.QPNodeFile;
        //root the call in the appdir else node gets confused...
        //change the flag of the cmd call to /C for live and /K for dev (halting)

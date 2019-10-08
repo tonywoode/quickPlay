@@ -132,7 +132,7 @@ begin
    if (Process = True) then
      begin
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
-     Flags := '--mfm --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
+     Flags := 'mametool --mfm --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
      //root the call in the appdir else node gets confused...
      //change the flag of the cmd call to /C for live and /K for dev (halting)
      RunProcess('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);

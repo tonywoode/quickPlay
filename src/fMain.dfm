@@ -1,7 +1,7 @@
 object MainFrm: TMainFrm
   Left = 323
   Top = 450
-  Caption = 'Quickplay - MAME Edition'
+  Caption = 'QuickPlay - Synctool Edition'
   ClientHeight = 875
   ClientWidth = 1054
   Color = clBtnFace
@@ -113,7 +113,6 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitTop = 831
   end
   object PanContent: TPanel
     Left = 0
@@ -123,7 +122,6 @@ object MainFrm: TMainFrm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 831
     object SplitMain: TSplitter
       Left = 209
       Top = 0
@@ -152,7 +150,6 @@ object MainFrm: TMainFrm
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 831
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
@@ -162,10 +159,8 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitHeight = 831
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitHeight = 803
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -209,7 +204,6 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
-            ExplicitHeight = 774
             Columns = <
               item
                 Position = 0
@@ -283,6 +277,9 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
           ExplicitHeight = 803
           object ToolBar1: TToolBar
             Left = 0
@@ -349,7 +346,7 @@ object MainFrm: TMainFrm
             Columns = <
               item
                 Position = 0
-                Width = 197
+                Width = 201
                 WideText = 'Caption'
               end>
           end
@@ -357,6 +354,9 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
           ExplicitHeight = 803
           object VTEmus: TVirtualStringTree
             Left = 0
@@ -415,6 +415,9 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
           ExplicitHeight = 803
           object ToolBarTools: TToolBar
             Left = 0
@@ -486,7 +489,6 @@ object MainFrm: TMainFrm
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 831
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -628,7 +630,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitHeight = 770
         Columns = <
           item
             Position = 0
@@ -810,7 +811,6 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitHeight = 831
     end
   end
   object IconList: TImageList

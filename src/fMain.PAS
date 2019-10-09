@@ -1,4 +1,4 @@
-//------------------------------------------------------------------------
+﻿//------------------------------------------------------------------------
 // Name:        QuickPlay
 // Version:     4.0
 // Author:      John Scott
@@ -361,11 +361,11 @@ type
     PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem;
     VTDirRowHeightLabel: TLabel;
     actSynctoolOptions: TAction;
-    actSynctoolLocalFromRemote: TAction;
+    actSynctoolRomdataFlip: TAction;
     Synctool1: TMenuItem;
     SynctoolOptions: TMenuItem;
     MakeallRomdatasfromhereLocalfromRemote1: TMenuItem;
-    procedure actSynctoolLocalFromRemoteExecute(Sender: TObject);
+    procedure actSynctoolRomdataFlipExecute(Sender: TObject);
     procedure actSynctoolOptionsExecute(Sender: TObject);
     procedure ActMameOptionsExecute(Sender: TObject);
     procedure ActMameMessPrinterExecute(
@@ -3696,10 +3696,9 @@ end;
  
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.actSynctoolLocalFromRemoteExecute(Sender: TObject);
+procedure TMainFrm.actSynctoolRomdataFlipExecute(Sender: TObject);
 var
-  Flags, Executable, SyncToolEnabled, RomdataFolder : String;
-  SynctoolResult : Boolean;
+  Flags, Executable, SyncToolEnabled, RomdataFolder, SynctoolResult : String;
 begin
      //Executable := 'P:\QUICKPLAY\QuickPlayFrontend\devTools\testTools\EchoWhatYouSay.exe';
      Executable := Settings.Paths.QPNodeFile;
@@ -3717,7 +3716,10 @@ begin
      RomdataFolder := ExcludeTrailingPathDelimiter(MainFrm.GetSelectedFolder);
      //ShowMessage(RomdataFolder);
       Flags := 'synctool --folderFlip ' + '"' + RomdataFolder + '"';
-      SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+      //SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+      SynctoolResult := GetDosOutput('cmd.exe /C' + Executable + ' ' + Flags, MainFrm.Settings.Paths.AppDir);
+      showMessage(SynctoolResult);
+      RefreshAll();
      end
      else
      begin

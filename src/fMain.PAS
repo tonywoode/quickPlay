@@ -3732,8 +3732,11 @@ begin
 end;
 
 procedure TMainFrm.actSynctoolOptionsExecute(Sender: TObject);
+var
+  Executable : String;
 begin
-
+  Executable := Settings.Paths.QPElectronFile;
+      RunProcess(Executable, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
 end;
 
 {-----------------------------------------------------------------------------}

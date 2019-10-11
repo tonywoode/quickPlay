@@ -37,6 +37,7 @@ Type
     EmulatorsFile : TFileName;
     MediaPanelCfgFile : TFileName;
     QPNodeFile : TFileName;
+    QPElectronFile : TFileName;
 
   end;
 
@@ -935,6 +936,7 @@ begin
   Paths.EmulatorsFile := Paths.CfgDir + 'Emulators.ini';
   Paths.MediaPanelCfgFile := Paths.CfgDir + 'MediaPanelCfg.ini';
   Paths.QPNodeFile:= Paths.BinDir + 'QPNode.exe';
+  Paths.QPElectronFile:= Paths.BinDir + 'QPElectron\' + 'QPElectron.exe';
 
   If (DirectoryExists(Paths.ROMSDir) = false) and
      (DirectoryExists(Paths.CfgDir) = false) then

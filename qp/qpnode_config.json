@@ -1,0 +1,11 @@
+{
+  "localRoot": "F:",
+  "remoteRoot": "Q:",
+  "timeout": 10000,
+  "timeTolerance": 1000,
+  "globalEnable": false,
+  "enableOnHostName": [
+    "POND"
+  ],
+  "useCopyOrCopyStream": "copy"
+}

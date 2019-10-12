@@ -76,7 +76,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.Title := 'Quick Play - Synctool Edition';
+  Application.Title := 'Quick Play - Home and Away Edition';
   Application.CreateForm(TMainFrm, MainFrm);
   Application.Run;
 end.

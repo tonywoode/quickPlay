@@ -1,7 +1,7 @@
 object MainFrm: TMainFrm
   Left = 323
   Top = 450
-  Caption = 'QuickPlay - Synctool Edition'
+  Caption = 'QuickPlay - Home and Away Edition'
   ClientHeight = 900
   ClientWidth = 1054
   Color = clBtnFace

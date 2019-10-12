@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------------------
+//------------------------------------------------------------------------
 // Name:        QuickPlay
 // Version:     4.0
 // Author:      John Scott
@@ -706,7 +706,7 @@ type
   end;
 
 const
-  QPVer = '4.6.6';
+  QPVer = '4.7.0';
   DefaultFileName = 'ROMData.dat';
   LBreak = Chr(13) + Chr(10);
 
@@ -1439,7 +1439,7 @@ begin
 
     TmpStr := TStringList.Create;
     try
-      TmpStr.NameValueSeparator := '¬';
+      TmpStr.NameValueSeparator := '�';
 
       for i := 0 to EmuList.Count-1 do
         if StrCompare(CurEmu.system, EmuList[i].system) = 0 then

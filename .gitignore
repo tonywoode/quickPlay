@@ -64,3 +64,4 @@ qp/EFind/Gamebase.ini
 #nodejs specific
 node_modules/
 QPNode.exe_test
+qp/qpnode_config.json

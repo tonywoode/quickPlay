@@ -1,3 +1,41 @@
+Quickplay v4.7.0 
+ 
+* Synctool
+  - you can setup a single Remote and local folder - anything under will sync: clicking on a rom will cause it to cache locally if necessary
+  - directories are mirrored as well as files cached, so folder structure form source is maintained (you know what roms are from what system)
+  - symlink support so that you can extend your storage/keep CD/DVD files in a different location  
+  - Synctool Options - Electron UI Element which manages and talks to the new qpnode settings file
+  - Romdata Flip - Users can change the Local path to the Remote one and vice versa in multiple Romdatas
+  - UI component to Romdata Flip shows you files changed, also prompts confirmation
+  - Remove syncing abilities of QuickPlay Multiloader, now vastly superceeded
+  - update Johnlib with various types of exe running code that have varying effects (like printing to console)
+  - QuickPlay calls to node to see if Synctool is Enabled before doing anything
+  - waits a while after running so you can see what happened, also writes to logfile in QuickPlay's root
+  - quit with ctrl+c implemented (you sometimes have to wait for the current chunk to finish)
+  - copies timestamps as well as files, uses timestamps to determine equality
+  - timestamp difference tolerance (configurable). I don't know why sometimes timestamps are off with copies of files not done through synctool, but they are
+  - timeout for finding roots (try not to hang loading a potential rom just because we can't check if its the same file as on the server)
+  - some investigation of a stream-based solution, left as an option but just too slow
+  
+* Mametool Paths
+  - Disabled by default, Mametool can work out paths of all files from mame.xml and print them in Romdatas
+  - Implemented for both Arcade and Mess Softlists (much more useful for the latter)
+  - We can only sync one file, but print helpful info to the log about other files which need to exist locally in order for games to run (eg: BIOS)
+  - Mame Options enlarged and added to
+  - you can select what kind of merged roms you have (it affects what the filenames would be)
+  - looks up your mame.ini (or mess.ini) for your MAME Rompaths, uses conventional names to distinguish (or you can have all roms in one ROMS folder)
+  - defaults to old behaviour in case of issues (printing a 'sentinel' filepath in a romdata entry so QuickPlay ignores the filepath element)
+  
+* Right-click explorer explores to file not just dir (thanks to user 'quickplayer')
+* Quotes in mednafen in case of no 8:3 (also thanks to 'quickplayer')
+* fixed bug with mame0.211 softlist printing (thanks to u-neeks for a fantastic bug report!)
+
+* Node/Electron
+  - First use of Nodejs Electron in QuickPlay to run synctool options (the hope is to extend this somewhat)
+  - build and binary process implemented, Delphi makes appropriate exe calls
+  - resolved some issues with old js packaging process, hopefully to be superceeded by the new process
+  - json options file implemented, creation process implemented (its a plan to avoid upgrading issues with overwriting settings)
+ 
 Quickplay v4.6.6 
  
 * enable lzma2 support for 7zip files

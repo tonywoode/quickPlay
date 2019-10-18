@@ -69,6 +69,8 @@ RD /S /Q  "%RELEASEDIR%\qp\updates\src\node_modules"
 ECHO.Cleaning up possible EFIND files
 DEL "%RELEASEDIR%\qp\EFIND\Custom.ini"
 DEL "%RELEASEDIR%\qp\EFIND\Gamebase.ini"
+DEL "%RELEASEDIR%\qp\EFIND\Mess_Mame.ini"
+DEL "%RELEASEDIR%\qp\EFIND\Mess_Retroarch.ini"
 
 ECHO.Cleaning up the old exe
 DEL "%RELEASEDIR%\qp\qp384.exe"

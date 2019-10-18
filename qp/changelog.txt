@@ -1,3 +1,11 @@
+Quickplay v4.7.1 
+ 
+* remove dev synctool config from prod
+* use dats dir for synctool conf
+* fix issue with synctool config enable on hostname
+* small fixes to a couple of efinds
+* omit mess emus from efinds (user should run mamemtool if they want all the MESS emus)
+ 
 Quickplay v4.7.0 
  
 * Synctool

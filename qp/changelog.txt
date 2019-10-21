@@ -1,3 +1,10 @@
+Quickplay v7.1.2 
+ 
+* Fix internationalisation issue
+* Update jap 7zip dll
+* Make extract to qpdir default
+* Add and update numerous efinds
+ 
 Quickplay v4.7.1 
  
 * remove dev synctool config from prod

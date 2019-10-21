@@ -687,7 +687,7 @@ begin
       _bRememberROM := Ini.ReadBool('Main', 'ChkRememberROM', True);
 
       // temporary directory extraction setting.
-      RunOptions.ExtractMode := TQPExtractDest(Ini.ReadInteger('Main', 'TempExtrDir', 0));
+      RunOptions.ExtractMode := TQPExtractDest(Ini.ReadInteger('Main', 'TempExtrDir', 1));
 
       //power scheme changing setting
       RunOptions.GeneralPowerScheme := Ini.ReadString('Main', 'PwrScheme', QP_DONT_CHANGE);

@@ -1,3 +1,6 @@
+Quickplay v4.7.3 
+* correct version no (thanks jaw970)
+ 
 Quickplay v7.1.2 
  
 * Fix internationalisation issue

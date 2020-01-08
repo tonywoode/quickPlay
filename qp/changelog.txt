@@ -1,3 +1,8 @@
+Quickplay v4.7.4 
+ 
+* Update retroarch efind to retroarch 1.81
+* new 3ds ico
+ 
 Quickplay v4.7.3 
 * correct version no (thanks jaw970)
  

@@ -1,3 +1,25 @@
+Quickplay v4.7.5 
+ 
+* misc fixes for about form
+* [mametool] fix bug when user only has one rompath in their mame.ini for all
+  romtypes (ie: when CHDs etc are subfolders of their ROMS
+  folder) - bug found by user sekelje
+* [mametool] allow rompaths in mame.ini to be relative (detect relative paths, and
+  append mame emulator path to all paths found if folder is relative) -
+  raiseed by sekelje
+* [mametool] fix issue discovered with Mame 220: devices do not need instances or
+  extensions according to MAME DTD, Mametool was assuming all devices
+  would have instances (useless without?). Remove devices without
+  instances and additionally defensively protect use of device
+  briefnames - bug found by sekelje
+* [mametool] take naming of 'Acorn Computers' (MAME 220) back to 'Acorn'
+  (QuickPlay company names try to be as simple/short as possible, if the
+  intention was to highight a difference between well-known Acorn and
+  another Acorn, should have renamed the other Acorn)
+* [romdata magician] Genesis can't coexist w Genesis/32X...
+* [Romdata Magician] GBA current system name needs bumping...
+* updated repo readme
+ 
 Quickplay v4.7.4 
  
 * Update retroarch efind to retroarch 1.81

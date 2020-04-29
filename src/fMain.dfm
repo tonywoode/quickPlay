@@ -757,7 +757,7 @@ object MainFrm: TMainFrm
           Font.Height = 16
           Font.Name = 'Tahoma'
           Font.Style = []
-          ItemHeight = 0
+          ItemHeight = 16
           ItemIndex = 0
           ParentFont = False
           TabOrder = 1
@@ -778,7 +778,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'

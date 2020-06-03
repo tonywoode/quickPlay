@@ -60,6 +60,9 @@ RD /S /Q %RELEASEDIR%\qp\dats
 RD /S /Q %RELEASEDIR%\qp\search
 RD /S /Q %RELEASEDIR%\qp\temp
 
+ECHO.Cleaning up my old data dir
+RD /S /Q %RELEASEDIR%\qp\data_PREV.7z
+
 ECHO.Cleaning up possible ini files (you may have run up some of the tools)
 DEL "%RELEASEDIR%\qp\tools\Romdata Magician\RomData Magician.ini"
 

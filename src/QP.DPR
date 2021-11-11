@@ -69,7 +69,8 @@ uses
   uVersionCheckThread in 'uVersionCheckThread.pas',
   fMamePrinter in 'fMamePrinter.pas' {FFrmMamePrinter},
   fMameMFMPrinter in 'fMameMFMPrinter.pas' {FrmMameMFMPrinter},
-  fMameMessPrinter in 'fMameMessPrinter.pas' {FrmMameMessPrinter};
+  fMameMessPrinter in 'fMameMessPrinter.pas' {FrmMameMessPrinter},
+  fMameFilePaths in 'fMameFilePaths.pas' {FrmMameFilePath};
 
 {$R *.RES}
 {$R WindowsXP.RES}

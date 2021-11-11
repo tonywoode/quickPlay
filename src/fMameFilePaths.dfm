@@ -2,8 +2,8 @@ object FrmMameFilePath: TFrmMameFilePath
   Left = 0
   Top = 0
   Caption = 'Mame File Path Options'
-  ClientHeight = 572
-  ClientWidth = 705
+  ClientHeight = 687
+  ClientWidth = 700
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -27,7 +27,7 @@ object FrmMameFilePath: TFrmMameFilePath
     Height = 16
     Caption = 'Mame Emulator to call'
   end
-  object Label5: TLabel
+  object RomPathLbl: TLabel
     Left = 8
     Top = 88
     Width = 90
@@ -37,7 +37,7 @@ object FrmMameFilePath: TFrmMameFilePath
   object GrpBoxArcadeSList: TGroupBox
     Left = 8
     Top = 126
-    Width = 681
+    Width = 684
     Height = 201
     Caption = 'Arcade and Softlist Printing Options'
     TabOrder = 0
@@ -120,82 +120,92 @@ object FrmMameFilePath: TFrmMameFilePath
       TabOrder = 0
     end
   end
-  object GroupBox1: TGroupBox
+  object GrpRomPathTypes: TGroupBox
     Left = 8
     Top = 333
-    Width = 681
-    Height = 194
-    Caption = 'Rom Paths'
+    Width = 684
+    Height = 306
+    Caption = 'Rom Path Types'
     TabOrder = 1
-    object Label1: TLabel
-      Left = 13
-      Top = 32
+    object RomsPathTypeLbl: TLabel
+      Left = 113
+      Top = 136
       Width = 32
       Height = 16
       Caption = 'Roms'
-      OnClick = Label1Click
+      OnClick = RomsPathTypeLblClick
     end
-    object Label2: TLabel
-      Left = 13
-      Top = 72
+    object ChdsPathTypeLbl: TLabel
+      Left = 113
+      Top = 176
       Width = 30
       Height = 16
       Caption = 'CHDs'
     end
-    object Label3: TLabel
-      Left = 13
-      Top = 112
+    object SoftlistRomsPathTypeLbl: TLabel
+      Left = 30
+      Top = 216
       Width = 111
       Height = 16
       Caption = 'Software List Roms'
     end
-    object Label4: TLabel
-      Left = 13
-      Top = 152
+    object SoftlistChdsPathTypeLbl: TLabel
+      Left = 32
+      Top = 256
       Width = 109
       Height = 16
       Caption = 'Software List CHDs'
     end
-    object ComboBox1: TComboBox
-      Left = 146
-      Top = 32
+    object RomPathDescLbl: TLabel
+      Left = 13
+      Top = 40
+      Width = 625
+      Height = 64
+      Caption = 
+        'We need to match each of the types of Rom MAME deals with to exa' +
+        'ctly one of the MAME Paths you'#39've put in your MAME Rompath in MA' +
+        'ME'#39's mame.ini. If you have more than one path for each type, you' +
+        ' can use symlinks on your filesystem to link them all into one f' +
+        'older. If you'#39're unsure what to do here, just select '#39'roms'#39' for ' +
+        'all the below'
+      WordWrap = True
+    end
+    object CmbRomsPath: TComboBox
+      Left = 165
+      Top = 136
       Width = 503
       Height = 24
       ItemHeight = 16
       TabOrder = 0
-      Text = 'ComboBox1'
     end
-    object ComboBox2: TComboBox
-      Left = 146
-      Top = 72
+    object CmbChdsPath: TComboBox
+      Left = 165
+      Top = 176
       Width = 503
       Height = 24
       ItemHeight = 16
       TabOrder = 1
-      Text = 'ComboBox1'
     end
-    object ComboBox3: TComboBox
-      Left = 146
-      Top = 112
+    object CmbSoftlistRomsPath: TComboBox
+      Left = 165
+      Top = 216
       Width = 501
       Height = 24
       ItemHeight = 16
       TabOrder = 2
-      Text = 'ComboBox1'
     end
-    object ComboBox4: TComboBox
-      Left = 146
-      Top = 152
+    object CmbSoftlistChdsPath: TComboBox
+      Left = 165
+      Top = 256
       Width = 501
       Height = 24
       ItemHeight = 16
       TabOrder = 3
-      Text = 'ComboBox1'
     end
   end
   object BtnCancel: TButton
-    Left = 597
-    Top = 533
+    Left = 600
+    Top = 645
     Width = 92
     Height = 31
     Cancel = True
@@ -205,7 +215,7 @@ object FrmMameFilePath: TFrmMameFilePath
   end
   object MameOptsOk: TButton
     Left = 478
-    Top = 533
+    Top = 645
     Width = 92
     Height = 31
     Caption = '&Ok'
@@ -246,12 +256,12 @@ object FrmMameFilePath: TFrmMameFilePath
     ParentFont = False
     TabOrder = 5
   end
-  object Edit1: TEdit
+  object RomPathEdit: TEdit
     Left = 329
     Top = 85
     Width = 345
     Height = 24
     TabOrder = 6
-    Text = 'Edit1'
+    Text = 'RomPathEdit'
   end
 end

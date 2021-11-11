@@ -18,24 +18,25 @@ type
     RadMameFileZip: TRadioButton;
     RadMameFile7z: TRadioButton;
     ChkBoxMameFilePaths: TCheckBox;
-    GroupBox1: TGroupBox;
-    ComboBox1: TComboBox;
-    ComboBox2: TComboBox;
-    ComboBox3: TComboBox;
-    ComboBox4: TComboBox;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
+    GrpRomPathTypes: TGroupBox;
+    CmbRomsPath: TComboBox;
+    CmbChdsPath: TComboBox;
+    CmbSoftlistRomsPath: TComboBox;
+    CmbSoftlistChdsPath: TComboBox;
+    RomsPathTypeLbl: TLabel;
+    ChdsPathTypeLbl: TLabel;
+    SoftlistRomsPathTypeLbl: TLabel;
+    SoftlistChdsPathTypeLbl: TLabel;
     BtnCancel: TButton;
     MameOptsOk: TButton;
     XMLEdit: TEdit;
     XMLTxtLbl: TLabel;
     CmbMame: TComboBox;
     lblMAME: TLabel;
-    Edit1: TEdit;
-    Label5: TLabel;
-    procedure Label1Click(Sender: TObject);
+    RomPathEdit: TEdit;
+    RomPathLbl: TLabel;
+    RomPathDescLbl: TLabel;
+    procedure RomsPathTypeLblClick(Sender: TObject);
   private
     { Private declarations }
   public

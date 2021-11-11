@@ -365,6 +365,8 @@ type
     Synctool1: TMenuItem;
     SynctoolOptions: TMenuItem;
     MakeallRomdatasfromhereLocalfromRemote1: TMenuItem;
+    ActMameFilePaths: TAction;
+    SetOptionsforoptionalMAMEFilepathprinting1: TMenuItem;
     procedure actSynctoolRomdataFlipExecute(Sender: TObject);
     procedure actSynctoolOptionsExecute(Sender: TObject);
     procedure ActMameOptionsExecute(Sender: TObject);
@@ -372,6 +374,7 @@ type
       Sender: TObject);
     procedure ActMameMFMPrinterExecute(Sender: TObject);
     procedure ActMamePrinterExecute(Sender: TObject);
+    procedure ActMameFilePathsExecute(Sender: TObject);
     procedure Tools1Click(Sender: TObject);
     procedure lblRowHeightClick(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
@@ -726,7 +729,7 @@ uses StrUtils, FindFile, ShellAPI, IniFiles,
 
      fScan, fAddaRom, fMameRename, fMameHolding, fFind, fFav, fOptions, fEmuFind,
      fExport, fZip, fAbout, fFolderOpt, fRomProperties,
-     fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive,
+     fColumns, fEditEmuFind, fRunDlg, fEmulators, fIPS, fScanRecursive, fMameFilePaths,
      fMameMerge, fMameOptions, fMamePrinter, fMameMFMPrinter, fMameMessPrinter, fWelcome, fMigrate, fBackup,
      uRomUtils, uEmuUtils, fCustomRomData, uQPVTEditor, uQuery,
      uQPConst, uExe, fTools, uTools, fMediaPanelOptions, fAppearanceOptions,
@@ -3002,6 +3005,21 @@ begin
        //FillRoms(GetSelectedTxt);
    finally
      FreeAndNil(MamePrinterfrm);
+   end;
+end;
+
+{-----------------------------------------------------------------------------}
+
+procedure TMainFrm.ActMameFilePathsExecute(Sender: TObject);
+Var
+   MameFilePathsFrm : TFrmMameFilePath;
+begin
+   MameFilePathsFrm := TFrmMameFilePath.Create(self);
+   try
+     If MameFilePathsFrm.ShowModal = MrOK then
+       //FillRoms(GetSelectedTxt);
+   finally
+     FreeAndNil(MameFilePathsfrm);
    end;
 end;
 

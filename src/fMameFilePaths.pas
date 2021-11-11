@@ -36,7 +36,6 @@ type
     RomPathEdit: TEdit;
     RomPathLbl: TLabel;
     RomPathDescLbl: TLabel;
-    procedure RomsPathTypeLblClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,5 +47,12 @@ var
 
 implementation
 
+uses fMain;
+
 {$R *.dfm}
+
+
+begin
+
+end.
 

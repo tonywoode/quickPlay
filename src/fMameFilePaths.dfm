@@ -133,7 +133,6 @@ object FrmMameFilePath: TFrmMameFilePath
       Width = 32
       Height = 16
       Caption = 'Roms'
-      OnClick = RomsPathTypeLblClick
     end
     object ChdsPathTypeLbl: TLabel
       Left = 113
@@ -159,7 +158,7 @@ object FrmMameFilePath: TFrmMameFilePath
     object RomPathDescLbl: TLabel
       Left = 13
       Top = 40
-      Width = 625
+      Width = 623
       Height = 64
       Caption = 
         'We need to match each of the types of Rom MAME deals with to exa' +
@@ -262,6 +261,5 @@ object FrmMameFilePath: TFrmMameFilePath
     Width = 345
     Height = 24
     TabOrder = 6
-    Text = 'RomPathEdit'
   end
 end

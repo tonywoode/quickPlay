@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'QuickPlay - Home and Away Edition'
-  ClientHeight = 900
+  ClientHeight = 950
   ClientWidth = 1054
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 881
+    Top = 931
     Width = 1054
     Height = 19
     Panels = <
@@ -113,19 +113,21 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
+    ExplicitTop = 906
   end
   object PanContent: TPanel
     Left = 0
     Top = 0
     Width = 1054
-    Height = 881
+    Height = 931
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitHeight = 906
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 881
+      Height = 931
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitLeft = 270
@@ -135,7 +137,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 879
       Top = 0
-      Height = 881
+      Height = 931
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -146,26 +148,29 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 881
+      Height = 931
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
+      ExplicitHeight = 906
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
         Width = 209
-        Height = 881
+        Height = 931
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
+        ExplicitHeight = 906
         object TabROMS: TTabSheet
           Caption = 'ROMs'
+          ExplicitHeight = 878
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
             Width = 201
-            Height = 824
+            Height = 874
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -204,6 +209,7 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
+            ExplicitHeight = 849
             Columns = <
               item
                 Position = 0
@@ -280,7 +286,7 @@ object MainFrm: TMainFrm
           ExplicitLeft = 0
           ExplicitTop = 0
           ExplicitWidth = 0
-          ExplicitHeight = 0
+          ExplicitHeight = 853
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -306,7 +312,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 824
+            Height = 849
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -342,6 +348,7 @@ object MainFrm: TMainFrm
             OnGetImageIndex = VTSearchesGetImageIndex
             OnGetPopupMenu = VTSearchesGetPopupMenu
             OnNewText = VTSearchesNewText
+            ExplicitHeight = 824
             Columns = <
               item
                 Position = 0
@@ -356,12 +363,12 @@ object MainFrm: TMainFrm
           ExplicitLeft = 0
           ExplicitTop = 0
           ExplicitWidth = 0
-          ExplicitHeight = 0
+          ExplicitHeight = 853
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 828
+            Height = 853
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -387,6 +394,7 @@ object MainFrm: TMainFrm
             OnGetPopupMenu = VTEmusGetPopupMenu
             OnInitChildren = VTEmusInitChildren
             OnInitNode = VTEmusInitNode
+            ExplicitHeight = 828
             Columns = <>
           end
           object PanEmuChk: TPanel
@@ -416,7 +424,7 @@ object MainFrm: TMainFrm
           ExplicitLeft = 0
           ExplicitTop = 0
           ExplicitWidth = 0
-          ExplicitHeight = 0
+          ExplicitHeight = 853
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -446,7 +454,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 824
+            Height = 849
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0
@@ -473,6 +481,7 @@ object MainFrm: TMainFrm
             OnGetImageIndex = vtToolsGetImageIndex
             OnGetPopupMenu = vtToolsGetPopupMenu
             OnMouseDown = vtToolsMouseDown
+            ExplicitHeight = 824
             Columns = <>
           end
         end
@@ -482,10 +491,11 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 667
-      Height = 881
+      Height = 931
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
+      ExplicitHeight = 906
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -575,7 +585,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 61
         Width = 667
-        Height = 820
+        Height = 870
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -627,6 +637,7 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
+        ExplicitHeight = 845
         Columns = <
           item
             Position = 0
@@ -757,7 +768,7 @@ object MainFrm: TMainFrm
           Font.Height = 16
           Font.Name = 'Tahoma'
           Font.Style = []
-          ItemHeight = 0
+          ItemHeight = 16
           ItemIndex = 0
           ParentFont = False
           TabOrder = 1
@@ -778,7 +789,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'
@@ -803,11 +814,12 @@ object MainFrm: TMainFrm
       Left = 882
       Top = 0
       Width = 172
-      Height = 881
+      Height = 931
       Align = alRight
       MultiLine = True
       TabOrder = 2
       TabStop = False
+      ExplicitHeight = 906
     end
   end
   object IconList: TImageList
@@ -1271,6 +1283,11 @@ object MainFrm: TMainFrm
       Caption = 'Check for Updates'
       OnExecute = actCheckForUpdatesExecute
     end
+    object ActMameFilePaths: TAction
+      Category = 'Mame'
+      Caption = 'Set Options for optional MAME Filepath printing'
+      OnExecute = ActMameFilePathsExecute
+    end
     object ActMamePrinter: TAction
       Category = 'Mame'
       Caption = 'Set Inputs and Print a MAME Romset in Current Folder'
@@ -1511,6 +1528,10 @@ object MainFrm: TMainFrm
         Action = ActMameOptions
         Caption = 'MAME / RetroArch MAME Options'
         ImageIndex = 9
+      end
+      object SetOptionsforoptionalMAMEFilepathprinting1: TMenuItem
+        Action = ActMameFilePaths
+        ImageIndex = 0
       end
       object PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem
         Action = ActMameMessPrinter

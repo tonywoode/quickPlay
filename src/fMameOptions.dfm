@@ -141,6 +141,7 @@ object FrmMameOptions: TFrmMameOptions
       ItemHeight = 16
       ParentFont = False
       TabOrder = 2
+      OnSelect = CmbMameSelect
     end
   end
   object ExtrasGroupBox: TGroupBox

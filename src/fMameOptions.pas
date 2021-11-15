@@ -7,6 +7,7 @@ uses
   Mask, JvExMask, JvToolEdit, ComCtrls;
 
 type
+  TStringArray = array of string;
   TFrmMameOptions = class(TJWinFontForm)
     MameOptsOk: TButton;
     BtnCancel: TButton;
@@ -50,12 +51,15 @@ type
     SoftlistChdsPathTypeLbl: TLabel;
     RomPathLbl: TLabel;
     RomPathEdit: TEdit;
+    procedure CmbMameSelect(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
-    function checkExtrasDir(const directory:String):boolean;
+    function  checkExtrasDir(const directory:String):boolean;
+    function  getRompath(const directory:String): TStringArray;
+
   private
     { Private declarations }
   public
@@ -82,6 +86,23 @@ begin
     Result:=true
     else
     Result:=false
+end;
+
+procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
+begin
+// here we need to (re)populate the rompath, and invalidate the rompath-types mapping. We also need to populate rompath
+//  on formshow
+getRompath('not sure yet')
+end;
+
+function TFrmMameOptions.getRompath(const directory:String):TStringArray;
+var
+r: TStringArray;
+i : Integer;
+
+begin
+Result := r;
+
 end;
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);

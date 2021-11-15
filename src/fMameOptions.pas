@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Graphics, SysUtils, StdCtrls, Controls, Classes, fJWinFontForm, JvSelectDirectory, JvBrowseFolder, Dialogs,
-  Mask, JvExMask, JvToolEdit;
+  Mask, JvExMask, JvToolEdit, ComCtrls;
 
 type
   TFrmMameOptions = class(TJWinFontForm)
@@ -26,7 +26,6 @@ type
     lblMAME: TLabel;
     MameScanLabel1: TLabel;
     XMLTxtLbl14: TLabel;
-    GrpBoxArcadeSList: TGroupBox;
     ChkBoxMameFilePaths: TCheckBox;
     LblMameFiletypeExplain: TLabel;
     LblMameRomsTypeExplain: TLabel;
@@ -36,6 +35,21 @@ type
     RadMameMergeNonMerged: TRadioButton;
     GBoxGroupFiletype: TGroupBox;
     GBoxMergeType: TGroupBox;
+    FilePrintOptions: TPageControl;
+    TabFilepath: TTabSheet;
+    TabRomtype: TTabSheet;
+    MameFilePathGroupBox: TGroupBox;
+    RomPathDescLbl: TLabel;
+    RomsPathTypeLbl: TLabel;
+    CmbRomsPath: TComboBox;
+    CmbChdsPath: TComboBox;
+    ChdsPathTypeLbl: TLabel;
+    SoftlistRomsPathTypeLbl: TLabel;
+    CmbSoftlistRomsPath: TComboBox;
+    CmbSoftlistChdsPath: TComboBox;
+    SoftlistChdsPathTypeLbl: TLabel;
+    RomPathLbl: TLabel;
+    RomPathEdit: TEdit;
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);

@@ -99,10 +99,35 @@ function TFrmMameOptions.getRompath(const directory:String):TStringArray;
 var
 r: TStringArray;
 i : Integer;
+Executable : String;
+Flags: String;
+mameExePath: String;
+romPathString: String;
+Str, Delimiter : String;
+// the ini path comes from the mame exe dir, but node works out what the filename is!
 
 begin
-Result := r;
 
+With MainFrm do
+begin
+Executable := Settings.Paths.QPNodeFile;
+  Flags := 'mametool --getRomPath ' + '"' + mameExePath + '"';
+      //SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
+      romPathString := GetDosOutput('cmd.exe /C' + Executable + ' ' + Flags, MainFrm.Settings.Paths.AppDir);
+      // https://stackoverflow.com/questions/2625707/split-a-string-into-an-array-of-strings-based-on-a-delimiter
+      begin
+      With TStringList.Create Do
+  try
+    Text := ReplaceText(Str,Delimiter,#13#10);
+
+    // From here on and until "finally", your desired result strings are
+    // in strings[0].. strings[Count-1)
+     finally
+    Free; //Clean everything up, and liberate your memory ;-)
+    end;
+Result := r;
+end;
+end;
 end;
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);

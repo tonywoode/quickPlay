@@ -49,15 +49,34 @@ var
 
 implementation
 
-uses fMain;
+uses fMain, uQPMiscTypes;
 
 {$R *.dfm}
 
-
+  const
+  EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
 
 
 procedure TFrmMameFilePath.FormShow(Sender: TObject);
 begin
+
+With MainFrm do
+  begin
+  EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
+if CmbMame.Items.Count = 0 then
+    begin
+      CmbMame.Items.Add(EmuEmptyMessage );
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
+      CmbMame.Color := clInactiveBorder;
+      CmbMame.Font.Color := clMaroon;
+      CmbMame.Font.Style := [fsBold];
+      CmbMame.Font.Size := 10;
+    end
+    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+    end ;
+
+
+
 ChkBoxMameFilePaths.Checked := MainFrm.Settings.MameFilePaths;
 
   if (MainFrm.Settings.MameZipType = '7z')

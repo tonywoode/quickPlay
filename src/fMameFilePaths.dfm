@@ -24,7 +24,7 @@ object FrmMameFilePath: TFrmMameFilePath
   end
   object lblMAME: TLabel
     Left = 8
-    Top = 23
+    Top = 18
     Width = 128
     Height = 16
     Caption = 'Mame Emulator to call'

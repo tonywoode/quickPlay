@@ -73,6 +73,17 @@ if CmbMame.Items.Count = 0 then
       CmbMame.Font.Size := 10;
     end
     else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+
+
+    //Do we have a loaded Mame Json?
+    if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
+      XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
+    else
+    begin
+      XMLEdit.text := 'Load an XML in Mame Options First';
+
+    end;
+
     end ;
 
 

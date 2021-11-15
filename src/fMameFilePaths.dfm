@@ -11,6 +11,8 @@ object FrmMameFilePath: TFrmMameFilePath
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
   PixelsPerInch = 120
   TextHeight = 16
   object XMLTxtLbl: TLabel
@@ -212,13 +214,14 @@ object FrmMameFilePath: TFrmMameFilePath
     ModalResult = 2
     TabOrder = 2
   end
-  object MameOptsOk: TButton
+  object MameFileOptsOk: TButton
     Left = 478
     Top = 645
     Width = 92
     Height = 31
     Caption = '&Ok'
     TabOrder = 3
+    OnClick = MameFileOptsOkClick
   end
   object XMLEdit: TEdit
     Left = 329

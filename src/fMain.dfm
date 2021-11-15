@@ -113,7 +113,6 @@ object MainFrm: TMainFrm
       item
         Width = 100
       end>
-    ExplicitTop = 906
   end
   object PanContent: TPanel
     Left = 0
@@ -123,7 +122,6 @@ object MainFrm: TMainFrm
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 906
     object SplitMain: TSplitter
       Left = 209
       Top = 0
@@ -152,7 +150,6 @@ object MainFrm: TMainFrm
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitHeight = 906
       object pgSideBar: TPageControl
         Left = 0
         Top = 0
@@ -162,10 +159,8 @@ object MainFrm: TMainFrm
         Align = alClient
         TabOrder = 0
         OnChange = pgSideBarChange
-        ExplicitHeight = 906
         object TabROMS: TTabSheet
           Caption = 'ROMs'
-          ExplicitHeight = 878
           object VTdir: TVirtualStringTree
             Left = 0
             Top = 29
@@ -209,7 +204,6 @@ object MainFrm: TMainFrm
             OnInitNode = VTdirInitNode
             OnKeyDown = VTdirKeyDown
             OnNewText = VTdirNewText
-            ExplicitHeight = 849
             Columns = <
               item
                 Position = 0
@@ -495,7 +489,6 @@ object MainFrm: TMainFrm
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitHeight = 906
       object PanRomTop: TPanel
         Left = 0
         Top = 0
@@ -637,7 +630,6 @@ object MainFrm: TMainFrm
         OnKeyDown = VTRomsKeyDown
         OnMouseDown = VTRomsMouseDown
         OnNewText = VTRomsNewText
-        ExplicitHeight = 845
         Columns = <
           item
             Position = 0
@@ -819,7 +811,6 @@ object MainFrm: TMainFrm
       MultiLine = True
       TabOrder = 2
       TabStop = False
-      ExplicitHeight = 906
     end
   end
   object IconList: TImageList

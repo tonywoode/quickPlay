@@ -42,6 +42,10 @@ object PrefForm: TPrefForm
     TabOrder = 0
     object TabGeneral: TTabSheet
       Caption = 'General Options'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GrpGeneral: TGroupBox
         Left = 10
         Top = 23
@@ -205,6 +209,10 @@ object PrefForm: TPrefForm
     object TabEmuOpt: TTabSheet
       Caption = 'Emulator Options'
       ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblUncompress: TLabel
         Left = 128
         Top = 188
@@ -239,7 +247,7 @@ object PrefForm: TPrefForm
         Width = 208
         Height = 24
         Style = csDropDownList
-        ItemHeight = 16
+        ItemHeight = 0
         TabOrder = 0
       end
       object CmbExtractDest: TComboBox
@@ -248,7 +256,7 @@ object PrefForm: TPrefForm
         Width = 208
         Height = 24
         Style = csDropDownList
-        ItemHeight = 16
+        ItemHeight = 0
         TabOrder = 1
         Items.Strings = (
           'ROM Directory'
@@ -259,6 +267,10 @@ object PrefForm: TPrefForm
     object TabRatings: TTabSheet
       Caption = 'Ratings'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lbllowtohigh: TLabel
         Left = 278
         Top = 89
@@ -401,6 +413,10 @@ object PrefForm: TPrefForm
     object TabSysFileExt: TTabSheet
       Caption = 'System File Extensions'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lblSysFileEditor: TLabel
         Left = 20
         Top = 10

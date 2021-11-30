@@ -222,7 +222,6 @@ object FrmMameOptions: TFrmMameOptions
       TabOrder = 0
       object TabFilepath: TTabSheet
         Caption = 'Filepath Options'
-        ExplicitHeight = 291
         object RomPathLbl: TLabel
           Left = 3
           Top = 31
@@ -323,9 +322,6 @@ object FrmMameOptions: TFrmMameOptions
       object TabRomtype: TTabSheet
         Caption = 'Romtype Options'
         ImageIndex = 4
-        ExplicitLeft = 0
-        ExplicitTop = 20
-        ExplicitHeight = 397
         object LblMameFiletypeExplain: TLabel
           Left = 22
           Top = 22

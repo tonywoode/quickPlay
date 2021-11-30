@@ -58,7 +58,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
     function  checkExtrasDir(const directory:String):boolean;
-    function  getRompath(const directory:String): TStringArray;
+    function  getRompath(const directory:String): String; //TStringArray;
 
   private
     { Private declarations }
@@ -95,7 +95,7 @@ begin
 getRompath('not sure yet')
 end;
 
-function TFrmMameOptions.getRompath(const directory:String):TStringArray;
+function TFrmMameOptions.getRompath(const directory:String):String; //TStringArray;
 var
 r: TStringArray;
 i : Integer;
@@ -103,7 +103,7 @@ Executable : String;
 Flags: String;
 mameExePath: String;
 romPathString: String;
-Str, Delimiter : String;
+Str, Delimiter: String;
 // the ini path comes from the mame exe dir, but node works out what the filename is!
 
 begin
@@ -125,7 +125,8 @@ Executable := Settings.Paths.QPNodeFile;
      finally
     Free; //Clean everything up, and liberate your memory ;-)
     end;
-Result := r;
+
+Result := romPathString;//r;
 end;
 end;
 end;
@@ -171,10 +172,17 @@ begin
       CmbMame.Font.Color := clMaroon;
       CmbMame.Font.Style := [fsBold];
       CmbMame.Font.Size := 10;
+      RomPathEdit.Text := '';
       MameOptsOK.Enabled := false
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+    else
+    begin
+    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+    RomPathEdit.Text := getRomPath(CmbMame.Items[CmbMame.ItemIndex]);
+    end;
    end;
+
+
 end;
 
 {-----------------------------------------------------------------------------}

@@ -111,7 +111,7 @@ begin
 With MainFrm do
 begin
 Executable := Settings.Paths.QPNodeFile;
-  Flags := 'mametool --getRomPath ' + '"' + mameExePath + '"';
+  Flags := 'mametool --getRomPath ' + '"' + directory + '"'; //+ '"' + mameExePath + '"';
       //SynctoolResult := RunProcessAndReport('cmd.exe /C ' + Executable + ' ' + Flags, True, MainFrm.Settings.Paths.AppDir, SW_SHOWNORMAL);
       romPathString := GetDosOutput('cmd.exe /C' + Executable + ' ' + Flags, MainFrm.Settings.Paths.AppDir);
       // https://stackoverflow.com/questions/2625707/split-a-string-into-an-array-of-strings-based-on-a-delimiter
@@ -178,7 +178,7 @@ begin
     else
     begin
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
-    RomPathEdit.Text := getRomPath(CmbMame.Items[CmbMame.ItemIndex]);
+    RomPathEdit.Text := getRomPath(Settings.MametoolMameExePath);
     end;
    end;
 

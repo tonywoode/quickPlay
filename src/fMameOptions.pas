@@ -59,6 +59,7 @@ type
     procedure BtnMameOptsOkClick(Sender: TObject);
     function  checkExtrasDir(const directory:String):boolean;
     function  getRompath(const directory:String): String; //TStringArray;
+    function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
   private
     { Private declarations }
@@ -87,6 +88,20 @@ begin
     else
     Result:=false
 end;
+
+//function  TFrmMameOptions.splitStringToArray(const serialisedArr, Delimiter:String): String;
+function  TFrmMameOptions.splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
+var
+   ListOfStrings: TStringList;
+begin
+   ListOfStrings := TStringList.Create;
+   ListOfStrings.Clear;
+   ListOfStrings.Delimiter       := Delimiter;
+   ListOfStrings.StrictDelimiter := True; // Requires D2006 or newer.
+   ListOfStrings.DelimitedText   := serialisedArr;
+   Result:=ListOfStrings;
+   end;
+
 
 procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
 begin
@@ -179,6 +194,8 @@ begin
     begin
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
     RomPathEdit.Text := getRomPath(Settings.MametoolMameExePath);
+    CmbRomsPath.Items := splitStringToArray(getRomPath(Settings.MametoolMameExePath), ';');
+
     end;
    end;
 

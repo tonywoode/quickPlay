@@ -147,6 +147,10 @@ end;
 end;
 
 procedure TFrmMameOptions.FormShow(Sender: TObject);
+var
+  rompathsListSerial: String;
+  romPathsList: TStrings;
+  rompathMsg : String;
 
 begin
   BtnXMLScan.Enabled := False;
@@ -192,10 +196,19 @@ begin
     end
     else
     begin
+    rompathMsg := 'Select a Rompath from your Mame Ini for this romtype';
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
-    RomPathEdit.Text := getRomPath(Settings.MametoolMameExePath);
-    CmbRomsPath.Items := splitStringToArray(getRomPath(Settings.MametoolMameExePath), ';');
-
+    RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
+    RomPathEdit.Text := RomPathsListSerial;
+    RomPathsList := splitStringToArray(RomPathsListSerial, ';');
+    CmbRomsPath.Items := RomPathsList;
+    CmbRomsPath.Text := rompathMsg;
+    CmbChdsPath.Items := RomPathsList;
+    CmbChdsPath.Text := rompathMsg;
+    CmbSoftlistRomsPath.Items := RomPathsList;
+    CmbSoftlistRomsPath.Text := RompathMsg;
+    CmbSoftlistChdsPath.Items := RomPathsList;
+    CmbSoftlistChdsPath.Text := RomPathMsg;
     end;
    end;
 

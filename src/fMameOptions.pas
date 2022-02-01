@@ -102,6 +102,7 @@ begin
    Result:=ListOfStrings;
    end;
 
+{-----------------------------------------------------------------------------}
 
 procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
 begin
@@ -109,6 +110,8 @@ begin
 //  on formshow
 getRompath('not sure yet')
 end;
+
+{-----------------------------------------------------------------------------}
 
 function TFrmMameOptions.getRompath(const directory:String):String; //TStringArray;
 var
@@ -140,7 +143,10 @@ Executable := Settings.Paths.QPNodeFile;
      finally
     Free; //Clean everything up, and liberate your memory ;-)
     end;
-
+//TODO: did we do some impure munging there? its very unclear, nevermind
+//  what we should do here is check if the rompath is the same as our saved setting
+// for rompath, and if it isn't, refresh it and invalidate the selection dropdowns
+Settings.MameRomPath := romPathString;
 Result := romPathString;//r;
 end;
 end;

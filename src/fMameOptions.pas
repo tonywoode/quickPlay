@@ -146,7 +146,8 @@ Executable := Settings.Paths.QPNodeFile;
 //TODO: did we do some impure munging there? its very unclear, nevermind
 //  what we should do here is check if the rompath is the same as our saved setting
 // for rompath, and if it isn't, refresh it and invalidate the selection dropdowns
-Settings.MameRomPath := romPathString;
+//there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
+Settings.MameRomPath := StringReplace(StringReplace(romPathString, #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
 Result := romPathString;//r;
 end;
 end;
@@ -339,6 +340,13 @@ procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
   MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
   MainFrm.Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+  //Save the four rompathtype settings
+  MainFrm.Settings.MameRomPathTypeRomsPath:= CmbRomsPath.Text;
+  MainFrm.Settings.MameRomPathTypeChdsPath := CmbChdsPath.Text;
+  MainFrm.Settings.MameRomPathTypeSoftlistRomsPath := CmbSoftlistRomsPath.Text;
+  MainFrm.Settings.MameRomPathTypeSoftlistChdsPath := CmbSoftlistChdsPath.Text;
+
+
   if RadMameFile7z.Checked
   then MainFrm.Settings.MameZipType := '7z'
   else MainFrm.Settings.MameZipType := 'Zip';

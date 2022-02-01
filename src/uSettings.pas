@@ -76,7 +76,11 @@ Type
       _bMameFilePaths : boolean; //print filepaths or not in MAME romdatas
       _sMameFilePathsRomsType : String; //do we have 7z or zipped MAME roms
       _sMameZipType : String; //do we have non-merged, split or merged MAME roms
-      _sMameRomPath : String;
+      _sMameRomPath : String;  //the bare rompath that node obtains from mame's ini file
+      _sMameRomPathTypeRomsPath : String; //user selected path for mame 'Roms' - derived from MameRomPath
+      _sMameRomPathTypeChdsPath : String; //user selected path for mame 'Chds' - derived from MameRomPath
+      _sMameRomPathTypeSoftlistRomsPath : String;  //user selected path for mame 'SoftlistRoms' - derived from MameRomPath
+      _sMameRomPathTypeSoftlistChdsPath : String;  //user selected path for mame 'SoftlistChds' - derived from MameRomPath
 
       //and here's all the checkboxes in the mame printer
       _bMameOptBios : boolean;
@@ -195,6 +199,10 @@ Type
       Property MameFilePathsRomsType : string read _sMameFilePathsRomsType write _sMameFilePathsRomsType;
       Property MameZipType : string read _sMameZipType write _sMameZipType ;
       Property MameRomPath : string read _SMameRomPath write _sMameRomPath ;
+      Property MameRomPathTypeRomsPath : string read _sMameRomPathTypeRomsPath write _sMameRomPathTypeRomsPath ;
+      Property MameRomPathTypeChdsPath : string read _sMameRomPathTypeChdsPath write _sMameRomPathTypeChdsPath ;
+      Property MameRomPathTypeSoftlistRomsPath : string read _sMameRomPathTypeSoftlistRomsPath write _sMameRomPathTypeSoftlistRomsPath ;
+      Property MameRomPathTypeSoftlistChdsPath : string read _sMameRomPathTypeSoftlistChdsPath write _sMameRomPathTypeSoftlistChdsPath ;
 
       //and here's all the check boxes in the mame printer
       property MameOptBios : Boolean read _bMameOptBios write _bMameOptBios;
@@ -708,6 +716,10 @@ begin
       _sMameZipType := Ini.ReadString('MAME', 'MameZipType', '');
       _sMameFilePathsRomsType := Ini.ReadString('MAME', 'MameFilePathsRomsType', '');
       _SMameRomPath := Ini.ReadString('MAME', 'MameRomPath', '')  ;
+      _sMameRomPathTypeRomsPath := Ini.ReadString('MAME', 'MameRomTypeRomsPath', '')  ;
+      _sMameRomPathTypeChdsPath := Ini.ReadString('MAME', 'MameRomTypeChdsPath', '')  ;
+      _sMameRomPathTypeSoftlistRomsPath := Ini.ReadString('MAME', 'MameRomTypeSoftlistRomsPath', '')  ;
+      _sMameRomPathTypeSoftlistChdsPath := Ini.ReadString('MAME', 'MameRomTypeSoftlistChdsPath', '')  ;
 
       //and here's all the checkobxes from the mame printer
       _bMameOptBios := Ini.ReadBool('MAME', 'MameOptBios', True);
@@ -1151,6 +1163,11 @@ begin
     Ini.WriteString('MAME', 'MameZipType', self._sMameZipType);
     Ini.WriteString('MAME',  'MameFilePathsRomsType', self._sMameFilePathsRomsType);
     Ini.WriteString('MAME', 'MameRomPath', self._sMameRomPath);
+    Ini.WriteString('MAME', 'MameRomPathTypeRomsPath', self._sMameRomPathTypeRomsPath);
+    Ini.WriteString('MAME', 'MameRomPathTypeChdsPath', self._sMameRomPathTypeChdsPath);
+    Ini.WriteString('MAME', 'MameRomPathTypeSoftlistRomsPath', self._sMameRomPathTypeSoftlistRomsPath);
+    Ini.WriteString('MAME', 'MameRomPathTypeSoftlistChdsPath', self._sMameRomPathTypeSoftlistChdsPath);
+
 
     //and here's all the checboxes from the mame printer
     Ini.WriteBool('MAME', 'MameOptBios', Self._bMameOptBios);

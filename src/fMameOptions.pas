@@ -58,6 +58,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
     function  checkExtrasDir(const directory:String):boolean;
+    procedure clearRompathSettings(Sender: TObject);
     function  getRompath(const directory:String): String; //TStringArray;
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
@@ -89,6 +90,23 @@ begin
     Result:=false
 end;
 
+{-----------------------------------------------------------------------------}
+procedure TFrmMameOptions.clearRompathSettings(Sender: TObject);
+begin
+  With MainFrm do
+    begin
+      Settings.MameRomPath := '';
+      Settings.MameRomPathTypeRomsPath:= '';
+      Settings.MameRomPathTypeChdsPath := '';
+      Settings.MameRomPathTypeSoftlistRomsPath := '';
+      Settings.MameRomPathTypeSoftlistChdsPath := '';
+      ActRefreshExecute(Sender);
+    end;
+end;
+
+
+{-----------------------------------------------------------------------------}
+
 //function  TFrmMameOptions.splitStringToArray(const serialisedArr, Delimiter:String): String;
 function  TFrmMameOptions.splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 var
@@ -103,6 +121,7 @@ begin
    end;
 
 {-----------------------------------------------------------------------------}
+
 
 procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
 begin
@@ -146,20 +165,22 @@ Executable := Settings.Paths.QPNodeFile;
 //TODO: did we do some impure munging there? its very unclear, nevermind
 //  what we should do here is check if the rompath is the same as our saved setting
 // for rompath, and if it isn't, refresh it and invalidate the selection dropdowns
-//there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
-Settings.MameRomPath := StringReplace(StringReplace(romPathString, #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
+
 Result := romPathString;//r;
 end;
 end;
 end;
 
+{-------------------------------------------------------------------------}
+
 procedure TFrmMameOptions.FormShow(Sender: TObject);
 var
   rompathsListSerial: String;
   romPathsList: TStrings;
-  rompathMsg : String;
+  rompathBlank : String;
 
 begin
+  clearRompathSettings(Sender);
   BtnXMLScan.Enabled := False;
   XMLEdit.Text := StatusNoExtras;
 
@@ -203,19 +224,19 @@ begin
     end
     else
     begin
-    rompathMsg := 'Select a Rompath from your Mame Ini for this romtype';
+    rompathBlank := '';
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
     RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
     RomPathEdit.Text := RomPathsListSerial;
     RomPathsList := splitStringToArray(RomPathsListSerial, ';');
     CmbRomsPath.Items := RomPathsList;
-    CmbRomsPath.Text := rompathMsg;
+    CmbRomsPath.Text := rompathBlank;
     CmbChdsPath.Items := RomPathsList;
-    CmbChdsPath.Text := rompathMsg;
+    CmbChdsPath.Text := rompathBlank;
     CmbSoftlistRomsPath.Items := RomPathsList;
-    CmbSoftlistRomsPath.Text := RompathMsg;
+    CmbSoftlistRomsPath.Text := rompathBlank;
     CmbSoftlistChdsPath.Items := RomPathsList;
-    CmbSoftlistChdsPath.Text := RomPathMsg;
+    CmbSoftlistChdsPath.Text := rompathBlank;
     end;
    end;
 
@@ -338,25 +359,41 @@ end;
 
 procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
-  MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-  MainFrm.Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+with MainFrm do
+begin
+  Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
+  Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+
+  //save the mameRomPath (we don't want to do this unless you've made selections tbh)
+  //note we have to do the whole call again
+  //there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
+  //and refer to the user story - we only EVER want to save the rompath if you've made a selection
+  if (Settings.MameRomPathTypeRomsPath <> '') AND
+  (Settings.MameRomPathTypeChdsPath <> '') AND
+  (Settings.MameRomPathTypeSoftlistRomsPath <> '') AND
+  (Settings.MameRomPathTypeSoftlistChdsPath <> '')
+  then
+    begin
+      Settings.MameRomPath := StringReplace(StringReplace(getRomPath(Settings.MametoolMameExePath), #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
+    end;
   //Save the four rompathtype settings
-  MainFrm.Settings.MameRomPathTypeRomsPath:= CmbRomsPath.Text;
-  MainFrm.Settings.MameRomPathTypeChdsPath := CmbChdsPath.Text;
-  MainFrm.Settings.MameRomPathTypeSoftlistRomsPath := CmbSoftlistRomsPath.Text;
-  MainFrm.Settings.MameRomPathTypeSoftlistChdsPath := CmbSoftlistChdsPath.Text;
+  Settings.MameRomPathTypeRomsPath:= CmbRomsPath.Text;
+  Settings.MameRomPathTypeChdsPath := CmbChdsPath.Text;
+  Settings.MameRomPathTypeSoftlistRomsPath := CmbSoftlistRomsPath.Text;
+  Settings.MameRomPathTypeSoftlistChdsPath := CmbSoftlistChdsPath.Text;
 
 
   if RadMameFile7z.Checked
-  then MainFrm.Settings.MameZipType := '7z'
-  else MainFrm.Settings.MameZipType := 'Zip';
+  then Settings.MameZipType := '7z'
+  else Settings.MameZipType := 'Zip';
 
   if RadMameMergeNonMerged.Checked
-  then MainFrm.Settings.MameFilePathsRomsType := 'NonMerged'
-  else MainFrm.Settings.MameFilePathsRomsType := 'Merged';
+  then Settings.MameFilePathsRomsType := 'NonMerged'
+  else Settings.MameFilePathsRomsType := 'Merged';
 
-  MainFrm.Settings.SaveAllSettings(); //in case you changed the mame extras dir but didn't do a scan
+  Settings.SaveAllSettings(); //in case you changed the mame extras dir but didn't do a scan
   //close the form with the modal result OK
+end;
   ModalResult := MrOK;
 
   //we want to refresh: sidebar icons, mame icons, info files will all now show up...
@@ -366,7 +403,8 @@ begin
   //  it was causing the first call to a mame game after a scan to fail as the game wasn't found (I suspect "./qp.exe") -  TODO: this
   //  should get called after the scan incase user presses cancel...
    setCurrentDir(MainFrm.Settings.Paths.AppDir);
-end;
+
+   end;
 
 {-----------------------------------------------------------------------------}
   procedure TFrmMameOptions.MameXMLLinkLabelClick(Sender: TObject);

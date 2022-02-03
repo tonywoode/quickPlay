@@ -291,7 +291,10 @@ object FrmMameOptions: TFrmMameOptions
           Top = 162
           Width = 501
           Height = 24
+          Hint = 'Select a Rompath from your Mame Ini for this romtype'
           ItemHeight = 16
+          ParentShowHint = False
+          ShowHint = True
           TabOrder = 2
         end
         object CmbRomsPath: TComboBox
@@ -299,7 +302,10 @@ object FrmMameOptions: TFrmMameOptions
           Top = 132
           Width = 501
           Height = 24
+          Hint = 'Select a Rompath from your Mame Ini for this romtype'
           ItemHeight = 16
+          ParentShowHint = False
+          ShowHint = True
           TabOrder = 3
         end
         object CmbSoftlistChdsPath: TComboBox
@@ -307,7 +313,10 @@ object FrmMameOptions: TFrmMameOptions
           Top = 222
           Width = 501
           Height = 24
+          Hint = 'Select a Rompath from your Mame Ini for this romtype'
           ItemHeight = 16
+          ParentShowHint = False
+          ShowHint = True
           TabOrder = 4
         end
         object CmbSoftlistRomsPath: TComboBox
@@ -315,17 +324,16 @@ object FrmMameOptions: TFrmMameOptions
           Top = 192
           Width = 501
           Height = 24
+          Hint = 'Select a Rompath from your Mame Ini for this romtype'
           ItemHeight = 16
+          ParentShowHint = False
+          ShowHint = True
           TabOrder = 5
         end
       end
       object TabRomtype: TTabSheet
         Caption = 'Romtype Options'
         ImageIndex = 4
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LblMameFiletypeExplain: TLabel
           Left = 22
           Top = 22

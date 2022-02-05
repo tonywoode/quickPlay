@@ -2718,7 +2718,7 @@ begin
 
     if Opt.ShowModal = mrOK then
       //now refresh the selected directory
-      RefreshAll;
+      RefreshAll();
 
   Finally
     FreeAndNil(Opt);
@@ -3577,7 +3577,7 @@ begin
     Multi.AddToDir := GetSelectedFolder;
     If Multi.ShowModal = mrOK then
       If MainFrm.Active then
-        RefreshAll;
+        RefreshAll();
 
   finally
     FreeAndNil(Multi);

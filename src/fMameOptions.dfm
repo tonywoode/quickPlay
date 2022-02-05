@@ -13,6 +13,7 @@ object FrmMameOptions: TFrmMameOptions
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnDestroy = saveSettingsToDisk
   OnShow = FormShow
   PixelsPerInch = 120
   TextHeight = 16
@@ -334,6 +335,10 @@ object FrmMameOptions: TFrmMameOptions
       object TabRomtype: TTabSheet
         Caption = 'Romtype Options'
         ImageIndex = 4
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 0
+        ExplicitHeight = 0
         object LblMameFiletypeExplain: TLabel
           Left = 22
           Top = 22

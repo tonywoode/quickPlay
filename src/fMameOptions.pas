@@ -59,6 +59,7 @@ type
     procedure BtnMameOptsOkClick(Sender: TObject);
     function  checkExtrasDir(const directory:String):boolean;
     procedure clearRompathSettings(Sender: TObject);
+    procedure saveSettingsToDisk(Sender: TObject);
     function  getRompath(const directory:String): String; //TStringArray;
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
@@ -100,10 +101,22 @@ begin
       Settings.MameRomPathTypeChdsPath := '';
       Settings.MameRomPathTypeSoftlistRomsPath := '';
       Settings.MameRomPathTypeSoftlistChdsPath := '';
-      ActRefreshExecute(Sender);
+      Settings.SaveAllSettings();
+      //ActRefreshExecute(Sender); //BUt look at this method - it doesn't seem to alter the filesystem at all?!?!?
+      //Thing is, we should set all the mamerom paths to '' sometimes even if you've not pressed ok, but HOW to save them in those circumstances?
     end;
 end;
 
+{-----------------------------------------------------------------------------}
+//because there's now a live dependency on mame's rompath in its ini, which affects the settings
+// in this form, we really want to make sure this setting reflects what we live when we last opened
+// this form, so save settings even if the user closes the form - actually I probably haven't thought
+//  enough about the other things this form does, so actually probably saving just the rompath settings
+//  might be better
+procedure TFrmMameOptions.saveSettingsToDisk(Sender: TObject);
+begin
+  MainFrm.Settings.SaveAllSettings();
+end;
 
 {-----------------------------------------------------------------------------}
 
@@ -180,7 +193,7 @@ var
   rompathBlank : String;
 
 begin
-  clearRompathSettings(Sender);
+  //clearRompathSettings(Sender); //was just testing - don't do this, but also don't forget when we do use this to pass sender
   BtnXMLScan.Enabled := False;
   XMLEdit.Text := StatusNoExtras;
 

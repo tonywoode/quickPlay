@@ -57,9 +57,9 @@ type
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
+    procedure InitialiseMameRompathSelects(const RomPathsListSerial:String);
     function  checkExtrasDir(const directory:String):boolean;
-    procedure clearRompathSettings(Sender: TObject);
-    procedure saveSettingsToDisk(Sender: TObject);
+    procedure clearRompathSettings();
     function  getRompath(const directory:String): String; //TStringArray;
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
@@ -92,7 +92,7 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
-procedure TFrmMameOptions.clearRompathSettings(Sender: TObject);
+procedure TFrmMameOptions.clearRompathSettings();
 begin
   With MainFrm do
     begin
@@ -101,22 +101,9 @@ begin
       Settings.MameRomPathTypeChdsPath := '';
       Settings.MameRomPathTypeSoftlistRomsPath := '';
       Settings.MameRomPathTypeSoftlistChdsPath := '';
-      Settings.SaveAllSettings();
-      //ActRefreshExecute(Sender); //BUt look at this method - it doesn't seem to alter the filesystem at all?!?!?
-      //Thing is, we should set all the mamerom paths to '' sometimes even if you've not pressed ok, but HOW to save them in those circumstances?
     end;
 end;
 
-{-----------------------------------------------------------------------------}
-//because there's now a live dependency on mame's rompath in its ini, which affects the settings
-// in this form, we really want to make sure this setting reflects what we live when we last opened
-// this form, so save settings even if the user closes the form - actually I probably haven't thought
-//  enough about the other things this form does, so actually probably saving just the rompath settings
-//  might be better
-procedure TFrmMameOptions.saveSettingsToDisk(Sender: TObject);
-begin
-  MainFrm.Settings.SaveAllSettings();
-end;
 
 {-----------------------------------------------------------------------------}
 
@@ -137,10 +124,25 @@ begin
 
 
 procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
+var
+  MameExeName, MameExePath, RomPathsListSerial: string;
+  MameExeIndex: Integer;
 begin
+  With MainFrm do
+Begin
+  //we need to get the executable name of the emulator selected in the dropdown, and then save it
+  MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
+  Settings.MametoolMameExeName := MameExeName;
+  MameExeIndex := EmuList.IndexOfName(MameExeName);
+  MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
+  BtnXMLScan.Enabled := True;
+  RomPathsListSerial := getRompath(MameExePath);
+  InitialiseMameRompathSelects(RomPathsListSerial)
+end;
+
 // here we need to (re)populate the rompath, and invalidate the rompath-types mapping. We also need to populate rompath
 //  on formshow
-getRompath('not sure yet')
+
 end;
 
 {-----------------------------------------------------------------------------}
@@ -183,6 +185,24 @@ Result := romPathString;//r;
 end;
 end;
 end;
+{-----------------------------------------------------------------------------}
+procedure TFrmMameOptions.InitialiseMameRompathSelects(const RomPathsListSerial:String);
+var
+  romPathsList: TStrings;
+  rompathBlank : String;
+begin
+rompathBlank := '';
+RomPathEdit.Text := RomPathsListSerial;
+    RomPathsList := splitStringToArray(RomPathsListSerial, ';');
+    CmbRomsPath.Items := RomPathsList;
+    CmbRomsPath.Text := rompathBlank;
+    CmbChdsPath.Items := RomPathsList;
+    CmbChdsPath.Text := rompathBlank;
+    CmbSoftlistRomsPath.Items := RomPathsList;
+    CmbSoftlistRomsPath.Text := rompathBlank;
+    CmbSoftlistChdsPath.Items := RomPathsList;
+    CmbSoftlistChdsPath.Text := rompathBlank;
+end;
 
 {-------------------------------------------------------------------------}
 
@@ -193,12 +213,11 @@ var
   rompathBlank : String;
 
 begin
-  //clearRompathSettings(Sender); //was just testing - don't do this, but also don't forget when we do use this to pass sender
   BtnXMLScan.Enabled := False;
   XMLEdit.Text := StatusNoExtras;
 
   TxtMameExtrasDirPath.Text := MainFrm.Settings.MameExtrasDir;
-  if (TXTMameExtrasDirPath.GetTextLen > 0) then
+  if (TXTMameExtrasDirPath.GetTextLen > 0) and (MainFrm.Settings.MametoolMameExeName <> '') then
   begin
    BtnXMLScan.Enabled := True;
    XMLEdit.Text := StatusNotLoaded;
@@ -233,23 +252,18 @@ begin
       CmbMame.Font.Style := [fsBold];
       CmbMame.Font.Size := 10;
       RomPathEdit.Text := '';
-      MameOptsOK.Enabled := false
+      MameOptsOK.Enabled := false;
+      //no one's going to be printing any filetypes in this state
+      ChkBoxMameFilePaths.Checked := false;
+      Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+      clearRompathSettings();
     end
     else
     begin
     rompathBlank := '';
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
     RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
-    RomPathEdit.Text := RomPathsListSerial;
-    RomPathsList := splitStringToArray(RomPathsListSerial, ';');
-    CmbRomsPath.Items := RomPathsList;
-    CmbRomsPath.Text := rompathBlank;
-    CmbChdsPath.Items := RomPathsList;
-    CmbChdsPath.Text := rompathBlank;
-    CmbSoftlistRomsPath.Items := RomPathsList;
-    CmbSoftlistRomsPath.Text := rompathBlank;
-    CmbSoftlistChdsPath.Items := RomPathsList;
-    CmbSoftlistChdsPath.Text := rompathBlank;
+    InitialiseMameRompathSelects(RomPathsListSerial);
     end;
    end;
 
@@ -328,6 +342,16 @@ begin
        // so lets remember what the setting was before we wipe it
        previousMameXMLVersion := Settings.MameXMLVersion;
        Settings.MameXMLVersion := '';
+
+       //hang on, this code shouldn't be here, that's why if you select a mame emu, it doesn't save
+       //  unless you do an xml scan! We need to move this code to be triggered on select of mameemu
+       //  and here instead we need a GUARD for there being a mame exe selection
+       //  now think about this - if you change the setting it of course resides in memory, it doesn;t
+       //  need to be saved to disk
+
+
+       
+
        //we need to get the executable name of the emulator selected in the dropdown, and then save it
        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
        Settings.MametoolMameExeName := MameExeName;

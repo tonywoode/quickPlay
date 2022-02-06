@@ -13,7 +13,6 @@ object FrmMameOptions: TFrmMameOptions
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
-  OnDestroy = saveSettingsToDisk
   OnShow = FormShow
   PixelsPerInch = 120
   TextHeight = 16
@@ -21,12 +20,12 @@ object FrmMameOptions: TFrmMameOptions
     Left = 24
     Top = 119
     Width = 681
-    Height = 284
+    Height = 298
     Caption = 'Scan and Find Mame Games and Emulators'
     TabOrder = 5
     object XMLTxtLbl1: TLabel
       Left = 20
-      Top = 97
+      Top = 105
       Width = 645
       Height = 32
       Caption = 
@@ -36,14 +35,14 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl4: TLabel
       Left = 20
-      Top = 175
+      Top = 191
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
     end
     object MameXMLLinkLabel: TLabel
       Left = 305
-      Top = 119
+      Top = 135
       Width = 358
       Height = 18
       Cursor = crHandPoint
@@ -62,7 +61,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl13: TLabel
       Left = 20
-      Top = 143
+      Top = 159
       Width = 486
       Height = 16
       Caption = 
@@ -71,8 +70,8 @@ object FrmMameOptions: TFrmMameOptions
       WordWrap = True
     end
     object lblMAME: TLabel
-      Left = 23
-      Top = 64
+      Left = 20
+      Top = 65
       Width = 132
       Height = 16
       Caption = 'Mame Emulator to call'
@@ -90,7 +89,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl14: TLabel
       Left = 17
-      Top = 208
+      Top = 232
       Width = 379
       Height = 48
       Caption = 
@@ -101,7 +100,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLEdit: TEdit
       Left = 305
-      Top = 165
+      Top = 191
       Width = 354
       Height = 27
       AutoSelect = False
@@ -120,7 +119,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object BtnXMLScan: TButton
       Left = 426
-      Top = 208
+      Top = 224
       Width = 223
       Height = 65
       Caption = 'Choose XML File and Start Scan'
@@ -128,8 +127,8 @@ object FrmMameOptions: TFrmMameOptions
       OnClick = BtnXMLScanClick
     end
     object CmbMame: TComboBox
-      Left = 235
-      Top = 61
+      Left = 255
+      Top = 62
       Width = 394
       Height = 24
       Style = csDropDownList
@@ -142,6 +141,7 @@ object FrmMameOptions: TFrmMameOptions
       ItemHeight = 16
       ParentFont = False
       TabOrder = 2
+      OnChange = CmbMameSelect
       OnSelect = CmbMameSelect
     end
   end
@@ -208,7 +208,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object MameFilePathGroupBox: TGroupBox
     Left = 24
-    Top = 415
+    Top = 423
     Width = 681
     Height = 322
     Caption = 'Arcade and  Softlist Path Printing Options (Optional)'
@@ -335,13 +335,9 @@ object FrmMameOptions: TFrmMameOptions
       object TabRomtype: TTabSheet
         Caption = 'Romtype Options'
         ImageIndex = 4
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object LblMameFiletypeExplain: TLabel
-          Left = 22
-          Top = 22
+          Left = 17
+          Top = 153
           Width = 644
           Height = 32
           Caption = 
@@ -352,7 +348,7 @@ object FrmMameOptions: TFrmMameOptions
         end
         object LblMameRomsTypeExplain: TLabel
           Left = 17
-          Top = 129
+          Top = 22
           Width = 630
           Height = 32
           Caption = 

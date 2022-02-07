@@ -51,6 +51,7 @@ type
     SoftlistChdsPathTypeLbl: TLabel;
     RomPathLbl: TLabel;
     RomPathEdit: TEdit;
+    procedure Free(Sender: TObject);
     procedure CmbMameSelect(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
@@ -64,7 +65,7 @@ type
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
   private
-    { Private declarations }
+    MameExeName, MameExePath : String;
   public
     { Public declarations }
   end;
@@ -125,14 +126,13 @@ begin
 
 procedure TFrmMameOptions.CmbMameSelect(Sender: TObject);
 var
-  MameExeName, MameExePath, RomPathsListSerial: string;
+  RomPathsListSerial: string;
   MameExeIndex: Integer;
 begin
   With MainFrm do
 Begin
   //we need to get the executable name of the emulator selected in the dropdown, and then save it
   MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-  Settings.MametoolMameExeName := MameExeName;
   MameExeIndex := EmuList.IndexOfName(MameExeName);
   MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
   BtnXMLScan.Enabled := True;
@@ -140,8 +140,8 @@ Begin
   InitialiseMameRompathSelects(RomPathsListSerial)
 end;
 
-// here we need to (re)populate the rompath, and invalidate the rompath-types mapping. We also need to populate rompath
-//  on formshow
+// here we need to (re)populate the rompath, and invalidate the rompath-types mapping.
+//    We also need to populate rompath on formshow
 
 end;
 
@@ -209,15 +209,15 @@ end;
 procedure TFrmMameOptions.FormShow(Sender: TObject);
 var
   rompathsListSerial: String;
-  romPathsList: TStrings;
-  rompathBlank : String;
-
 begin
   BtnXMLScan.Enabled := False;
   XMLEdit.Text := StatusNoExtras;
+  //grab these as we might want to send 'em to the xml scanner
+  MameExeName := MainFrm.Settings.MametoolMameExeName;
+  MameExePath := MainFrm.Settings.MametoolMameExePath;
 
   TxtMameExtrasDirPath.Text := MainFrm.Settings.MameExtrasDir;
-  if (TXTMameExtrasDirPath.GetTextLen > 0) and (MainFrm.Settings.MametoolMameExeName <> '') then
+  if (TXTMameExtrasDirPath.GetTextLen > 0) and (MainFrm.Settings.MametoolMameExePath <> '') then
   begin
    BtnXMLScan.Enabled := True;
    XMLEdit.Text := StatusNotLoaded;
@@ -260,13 +260,18 @@ begin
     end
     else
     begin
-    rompathBlank := '';
     CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+    if CmbMame.ItemIndex <> -1 then
+    begin
     RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
     InitialiseMameRompathSelects(RomPathsListSerial);
     end;
+    end;
    end;
+end;
 
+procedure TFrmMameOptions.Free(Sender: TObject);
+begin
 
 end;
 
@@ -306,7 +311,7 @@ end;
 
 procedure TFrmMameOptions.BtnXMLScanClick(Sender: TObject);
 var
-  selectedFile, Executable, Flags, MameExeName, MameExePath: string;
+  selectedFile, Executable, Flags: string;
   MameExeIndex: Integer;
   dlg: TOpenDialog;
   extrasDir : string;
@@ -342,26 +347,14 @@ begin
        // so lets remember what the setting was before we wipe it
        previousMameXMLVersion := Settings.MameXMLVersion;
        Settings.MameXMLVersion := '';
-
-       //hang on, this code shouldn't be here, that's why if you select a mame emu, it doesn't save
-       //  unless you do an xml scan! We need to move this code to be triggered on select of mameemu
-       //  and here instead we need a GUARD for there being a mame exe selection
-       //  now think about this - if you change the setting it of course resides in memory, it doesn;t
-       //  need to be saved to disk
-
-
-       
-
-       //we need to get the executable name of the emulator selected in the dropdown, and then save it
-       MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-       Settings.MametoolMameExeName := MameExeName;
-       MameExeIndex := EmuList.IndexOfName(MameExeName);
-       MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-       Settings.MameToolMameExePath := MameExePath;
-
        Settings.MameXMLPath := selectedFile;
+
+       //We'll need to save these now, node needs 'em
+       Settings.MametoolMameExeName := MameExeName;
+       Settings.MametoolMameExePath := MameExePath;
        Settings.SaveAllSettings(); //else how else will node read what you just did,
        //this will also save the mame extras dir for node to read, in case its newly-chosen
+       //and we also need Settings.MametoolMameExePath for node, but we assume we have it, or else this button wouldn't be selectable
 
        Flags := 'mametool --scan';
        Executable := Settings.Paths.QPNodeFile;
@@ -401,6 +394,9 @@ begin
   Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
   Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
 
+  //save the state of these dropdowns off now (in case you didn't run an xml scan and save 'em then)
+  Settings.MametoolMameExeName := MameExeName;
+  Settings.MametoolMameExePath := MameExePath;
   //save the mameRomPath (we don't want to do this unless you've made selections tbh)
   //note we have to do the whole call again
   //there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it

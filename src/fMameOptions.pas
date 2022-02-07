@@ -71,7 +71,7 @@ type
   end;
 
 const
-  StatusNoExtras = 'select Mame Extras dir first';
+  StatusNoExtras = 'select Mame Exe and Extras dir first';
   StatusNotLoaded = 'not loaded';
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
 

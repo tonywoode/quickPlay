@@ -335,6 +335,10 @@ object FrmMameOptions: TFrmMameOptions
       object TabRomtype: TTabSheet
         Caption = 'Romtype Options'
         ImageIndex = 4
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 0
+        ExplicitHeight = 0
         object LblMameFiletypeExplain: TLabel
           Left = 17
           Top = 153

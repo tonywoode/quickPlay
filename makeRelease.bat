@@ -59,6 +59,7 @@ RD /S /Q %RELEASEDIR%\qp\data_FAKE
 RD /S /Q %RELEASEDIR%\qp\dats
 RD /S /Q %RELEASEDIR%\qp\search
 RD /S /Q %RELEASEDIR%\qp\temp
+RD /S /Q %RELEASEDIR%\qp_test
 
 ECHO.Cleaning up my old data dir
 RD /S /Q %RELEASEDIR%\qp\data_PREV.7z

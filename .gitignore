@@ -66,3 +66,6 @@ qp/EFind/Gamebase.ini
 node_modules/
 QPNode.exe_test
 qp/qpnode_config.json
+
+#testing
+qp_test

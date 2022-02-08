@@ -716,10 +716,10 @@ begin
       _sMameZipType := Ini.ReadString('MAME', 'MameZipType', '');
       _sMameFilePathsRomsType := Ini.ReadString('MAME', 'MameFilePathsRomsType', '');
       _SMameRomPath := Ini.ReadString('MAME', 'MameRomPath', '')  ;
-      _sMameRomPathTypeRomsPath := Ini.ReadString('MAME', 'MameRomTypeRomsPath', '')  ;
-      _sMameRomPathTypeChdsPath := Ini.ReadString('MAME', 'MameRomTypeChdsPath', '')  ;
-      _sMameRomPathTypeSoftlistRomsPath := Ini.ReadString('MAME', 'MameRomTypeSoftlistRomsPath', '')  ;
-      _sMameRomPathTypeSoftlistChdsPath := Ini.ReadString('MAME', 'MameRomTypeSoftlistChdsPath', '')  ;
+      _sMameRomPathTypeRomsPath := Ini.ReadString('MAME', 'MameRomPathTypeRomsPath', '')  ;
+      _sMameRomPathTypeChdsPath := Ini.ReadString('MAME', 'MameRomPathTypeChdsPath', '')  ;
+      _sMameRomPathTypeSoftlistRomsPath := Ini.ReadString('MAME', 'MameRomPathTypeSoftlistRomsPath', '')  ;
+      _sMameRomPathTypeSoftlistChdsPath := Ini.ReadString('MAME', 'MameRomPathTypeSoftlistChdsPath', '')  ;
 
       //and here's all the checkobxes from the mame printer
       _bMameOptBios := Ini.ReadBool('MAME', 'MameOptBios', True);

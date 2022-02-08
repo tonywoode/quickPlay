@@ -63,6 +63,7 @@ type
     procedure clearRompathSettings();
     function  getRompath(const directory:String): String; //TStringArray;
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
+    function StringInArrayOrBlank(const dir:String; arr: TStrings):String;
 
   private
     _MameExeName, _MameExePath, _MameExtrasDir : String;
@@ -191,22 +192,42 @@ end;
 end;
 end;
 {-----------------------------------------------------------------------------}
+function TFrmMameOptions.StringInArrayOrBlank(const dir:String; arr: TStrings):String;
+var
+  rompathBlank : String;
+  IsStringInArray: Boolean;
+  idx: Integer;
+begin
+    rompathBlank := '';
+    //IsStringInArray := (AnsiIndexText(dir, arr) > -1);
+    idx := arr.IndexOf(dir);
+    if idx <> -1 then
+      Result := dir
+    else
+      Result := rompathBlank;
+end;
+{-----------------------------------------------------------------------------}
 procedure TFrmMameOptions.InitialiseMameRompathSelects(const RomPathsListSerial:String);
 var
   romPathsList: TStrings;
   rompathBlank : String;
 begin
+with MainFrm do
+begin
 rompathBlank := '';
 RomPathEdit.Text := RomPathsListSerial;
     RomPathsList := splitStringToArray(RomPathsListSerial, ';');
     CmbRomsPath.Items := RomPathsList;
-    CmbRomsPath.Text := rompathBlank;
+    CmbRomsPath.Text := StringInArrayOrBlank(Settings.MameRomPathTypeRomsPath, RomPathsList);
     CmbChdsPath.Items := RomPathsList;
-    CmbChdsPath.Text := rompathBlank;
+    CmbChdsPath.Text := StringInArrayOrBlank(Settings.MameRomPathTypeChdsPath, RomPathsList);
     CmbSoftlistRomsPath.Items := RomPathsList;
-    CmbSoftlistRomsPath.Text := rompathBlank;
+    CmbSoftlistRomsPath.Text := StringInArrayOrBlank(Settings.MameRomPathTypeSoftlistRomsPath, RomPathsList);
     CmbSoftlistChdsPath.Items := RomPathsList;
-    CmbSoftlistChdsPath.Text := rompathBlank;
+    CmbSoftlistChdsPath.Text := StringInArrayOrBlank(Settings.MameRomPathTypeSoftlistChdsPath, RomPathsList);
+ end;
+
+
 end;
 
 {-------------------------------------------------------------------------}
@@ -266,12 +287,13 @@ begin
     end
     else
     begin
-    CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
-    if CmbMame.ItemIndex <> -1 then
-    begin
-    RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
-    InitialiseMameRompathSelects(RomPathsListSerial);
-    end;
+      CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+      if CmbMame.ItemIndex <> -1 then
+      begin
+        RomPathsListSerial := getRomPath(Settings.MametoolMameExePath);
+        InitialiseMameRompathSelects(RomPathsListSerial);
+
+      end;
     end;
    end;
 end;
@@ -405,24 +427,16 @@ procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
 with MainFrm do
 begin
-  Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
   Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
 
   //save the state of these dropdowns off now (in case you didn't run an xml scan and save 'em then)
+  Settings.MameExtrasDir := _MameExtrasDir;
   Settings.MametoolMameExeName := _MameExeName;
   Settings.MametoolMameExePath := _MameExePath;
   //save the mameRomPath (we don't want to do this unless you've made selections tbh)
   //note we have to do the whole call again
   //there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
-  //and refer to the user story - we only EVER want to save the rompath if you've made a selection
-  if (Settings.MameRomPathTypeRomsPath <> '') AND
-  (Settings.MameRomPathTypeChdsPath <> '') AND
-  (Settings.MameRomPathTypeSoftlistRomsPath <> '') AND
-  (Settings.MameRomPathTypeSoftlistChdsPath <> '')
-  then
-    begin
-      Settings.MameRomPath := StringReplace(StringReplace(getRomPath(Settings.MametoolMameExePath), #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
-    end;
+  Settings.MameRomPath := StringReplace(StringReplace(getRomPath(Settings.MametoolMameExePath), #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
   //Save the four rompathtype settings
   Settings.MameRomPathTypeRomsPath:= CmbRomsPath.Text;
   Settings.MameRomPathTypeChdsPath := CmbChdsPath.Text;

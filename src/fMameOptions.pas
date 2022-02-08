@@ -65,14 +65,13 @@ type
     function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
 
   private
-    _MameExeName, _MameExePath : String;
-    _IsExtrasDirValid: Boolean;
+    _MameExeName, _MameExePath, _MameExtrasDir : String;
   public
     { Public declarations }
   end;
 
 const
-  StatusNoExtras = 'select Mame Exe and Extras dir first';
+  StatusNoExeOrExtras = 'select Mame Exe and Extras dir first';
   StatusNotLoaded = 'not loaded';
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
 
@@ -136,11 +135,14 @@ Begin
   _MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
   MameExeIndex := EmuList.IndexOfName(_MameExeName);
   _MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-  BtnXMLScan.Enabled := True;
   RomPathsListSerial := getRompath(_MameExePath);
   InitialiseMameRompathSelects(RomPathsListSerial);
   //we have a potentially valid mame emu, if we also have a potentially valid exrtras dir, we can do a scan
-  if (_IsExtrasDirValid = True) and (XMLEdit.Text = StatusNoExtras) then XMLEdit.Text := StatusNotLoaded;
+  if (_MameExtrasDir <> '') and (XMLEdit.Text = StatusNoExeOrExtras) then
+  begin
+    XMLEdit.Text := StatusNotLoaded;
+    BtnXMLScan.Enabled := True;
+  end;
 end;
 
 // here we need to (re)populate the rompath, and invalidate the rompath-types mapping.
@@ -214,15 +216,13 @@ var
   rompathsListSerial: String;
 begin
   BtnXMLScan.Enabled := False;
-  XMLEdit.Text := StatusNoExtras;
+  XMLEdit.Text := StatusNoExeOrExtras;
   //grab these as we might want to send 'em to the xml scanner
   _MameExeName := MainFrm.Settings.MametoolMameExeName;
   _MameExePath := MainFrm.Settings.MametoolMameExePath;
-  //If we saved an extras dir, that means it was valid
-  _IsExtrasDirValid  := False;
-  if MainFrm.Settings.MameExtrasDir <> '' then _IsExtrasDirValid := True;
+  _MameExtrasDir := MainFrm.Settings.MameExtrasDir;
 
-  TxtMameExtrasDirPath.Text := MainFrm.Settings.MameExtrasDir;
+  TxtMameExtrasDirPath.Text := _MameExtrasDir;
   if (TXTMameExtrasDirPath.GetTextLen > 0) and (MainFrm.Settings.MametoolMameExePath <> '') then
   begin
    BtnXMLScan.Enabled := True;
@@ -299,11 +299,16 @@ begin
          if checkExtrasDir(jvBrowse.Directory) then
             begin
              TxtMameExtrasDirPath.Text := jvBrowse.Directory;
-              MainFrm.Settings.MameExtrasDir := TxtMameExtrasDirPath.Text;
-              BtnXMLScan.Enabled := True;
-              _IsExtrasDirValid := True;
+              _MameExtrasDir := TxtMameExtrasDirPath.Text;
               //we don't need to save this to file, because a mame scan isn't possible without a valid saved path
-              if (XMLEdit.Text = StatusNoExtras) then XMLEdit.Text := StatusNotLoaded;
+
+              //if we also have a mame exe path, we can do a scan
+              if (XMLEdit.Text = StatusNoExeOrExtras) and (_MameExePath <> '') then
+              begin
+                XMLEdit.Text := StatusNotLoaded;
+                BtnXMLScan.Enabled := True;
+              end;
+
             end
          else
              MessageDlg(QP_MAMEOPT_BAD_DIR, mtError, [mbOK], 0);
@@ -327,7 +332,7 @@ var
   previousMameXMLVersion : string;
 
 begin
-  extrasDir := MainFrm.Settings.MameExtrasDir;
+  extrasDir := _MameExtrasDir;
   extrasDirOk := checkExtrasDir(extrasDir);
 
   selectedFile := '';
@@ -360,6 +365,7 @@ begin
        //We'll need to save these now, node needs 'em
        Settings.MametoolMameExeName := _MameExeName;
        Settings.MametoolMameExePath := _MameExePath;
+       Settings.MameExtrasDir := _MameExtrasDir;
        Settings.SaveAllSettings(); //else how else will node read what you just did,
        //this will also save the mame extras dir for node to read, in case its newly-chosen
        //and we also need Settings.MametoolMameExePath for node, but we assume we have it, or else this button wouldn't be selectable

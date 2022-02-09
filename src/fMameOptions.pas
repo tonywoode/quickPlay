@@ -157,11 +157,7 @@ function TFrmMameOptions.getRompath(const directory:String):String; //TStringArr
 var
 r: TStringArray;
 i : Integer;
-Executable : String;
-Flags: String;
-mameExePath: String;
-romPathString: String;
-Str, Delimiter: String;
+Executable, Flags, mameExePath, romPathString, romPathStringTrimmed, Str, Delimiter: String;
 // the ini path comes from the mame exe dir, but node works out what the filename is!
 
 begin
@@ -187,7 +183,10 @@ Executable := Settings.Paths.QPNodeFile;
 //  what we should do here is check if the rompath is the same as our saved setting
 // for rompath, and if it isn't, refresh it and invalidate the selection dropdowns
 
-Result := romPathString;//r;
+// get rid of spurious line endings that might be in the rompath (we're going to split this up into elements in any consumer
+romPathStringTrimmed := StringReplace(StringReplace(romPathString, #10, '', [rfReplaceAll]), #13, '', [rfReplaceAll]);
+
+Result := romPathStringTrimmed;//r;
 end;
 end;
 end;
@@ -436,9 +435,8 @@ begin
 
   Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
   //save the mameRomPath (we don't want to do this unless you've made selections tbh)
-  //note we have to do the whole call again
-  //there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
-  Settings.MameRomPath := StringReplace(StringReplace(getRomPath(Settings.MametoolMameExePath), #10, ' ', [rfReplaceAll]), #13, ' ', [rfReplaceAll]);
+  //note we prob shouldn't have to do the whole call again
+  Settings.MameRomPath := getRomPath(Settings.MametoolMameExePath);
   //Save the four rompathtype settings
   Settings.MameRomPathTypeRomsPath:= CmbRomsPath.Text;
   Settings.MameRomPathTypeChdsPath := CmbChdsPath.Text;

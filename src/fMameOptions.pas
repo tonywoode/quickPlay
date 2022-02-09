@@ -51,19 +51,19 @@ type
     SoftlistChdsPathTypeLbl: TLabel;
     RomPathLbl: TLabel;
     RomPathEdit: TEdit;
-    procedure Free(Sender: TObject);
     procedure CmbMameSelect(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
+    procedure clearRompathSettings();
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
     procedure InitialiseMameRompathSelects(const RomPathsListSerial:String);
-    function  checkExtrasDir(const directory:String):boolean;
-    procedure clearRompathSettings();
-    function  getRompath(const directory:String): String; //TStringArray;
-    function  splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
+    function checkExtrasDir(const directory:String):Boolean;
+    function getRompath(const directory:String): String; //TStringArray;
+    function splitStringToArray(const serialisedArr:String; const delimiter:Char): TStrings;
     function StringInArrayOrBlank(const dir:String; arr: TStrings):String;
+    function AreMameRomPathTypesValid():Boolean;
 
   private
     _MameExeName, _MameExePath, _MameExtrasDir : String;
@@ -199,7 +199,6 @@ var
   idx: Integer;
 begin
     rompathBlank := '';
-    //IsStringInArray := (AnsiIndexText(dir, arr) > -1);
     idx := arr.IndexOf(dir);
     if idx <> -1 then
       Result := dir
@@ -296,11 +295,6 @@ begin
       end;
     end;
    end;
-end;
-
-procedure TFrmMameOptions.Free(Sender: TObject);
-begin
-
 end;
 
 {-----------------------------------------------------------------------------}
@@ -427,12 +421,20 @@ procedure TFrmMameOptions.BtnMameOptsOkClick(Sender: TObject);
 begin
 with MainFrm do
 begin
-  Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
+  //if they want mame filepath printing, but some of the 4 rompath types haven't been chosen or became
+  //  invalid, don't let them leave the form till they've chosen
+  if not AreMameRomPathTypesValid() then
+  begin
+    MessageDlg('Some Rompath Type mappings not valid, please rechoose or disable Mame Filepath printing', mtError, [mbOK], 0);
+    Exit;
+  end;
 
   //save the state of these dropdowns off now (in case you didn't run an xml scan and save 'em then)
   Settings.MameExtrasDir := _MameExtrasDir;
   Settings.MametoolMameExeName := _MameExeName;
   Settings.MametoolMameExePath := _MameExePath;
+
+  Settings.MameFilePaths := ChkBoxMameFilePaths.Checked;
   //save the mameRomPath (we don't want to do this unless you've made selections tbh)
   //note we have to do the whole call again
   //there's a line break here, which goes through to the text settings file, remove it. I think it only matters when we persist it
@@ -466,6 +468,27 @@ end;
    setCurrentDir(MainFrm.Settings.Paths.AppDir);
 
    end;
+
+{-----------------------------------------------------------------------------}
+// ok-ing the mame options dialog will allow us to print rompaths, this will mess up
+// if you have invalid rompathtypes. we can simply disallow exiting the form unless these options are valid
+// note here that we don't check that any of the type mappings fail to agree with the mame ini's rompath, because
+// the mame emu selection dropdown does that for us, and its a gatekeeper to get to this point
+function TFrmMameOptions.AreMameRomPathTypesValid():Boolean;
+var valid: Boolean;
+begin
+  valid := false;
+  if (ChkBoxMameFilePaths.checked) and
+  (CmbRomsPath.Text <> '') and
+  (CmbChdsPath.Text <> '') and
+  (CmbSoftlistRomsPath.Text <> '') and
+  (CmbSoftlistChdsPath.Text <> '')
+  then
+  valid := true;
+  Result := valid
+end;
+
+
 
 {-----------------------------------------------------------------------------}
   procedure TFrmMameOptions.MameXMLLinkLabelClick(Sender: TObject);

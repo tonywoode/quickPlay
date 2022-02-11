@@ -48,7 +48,7 @@ type
 
 const
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
-  EmuNotSelected =  'select MAME Emulator in Mame Options';
+  EmuNotSelected =  'Select MAME Emulator in Mame Options';
 
 implementation
 

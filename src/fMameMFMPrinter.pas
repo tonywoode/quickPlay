@@ -8,7 +8,6 @@ uses
 
 type
   TFrmMameMFMPrinter = class(TJWinFontForm)
-    CmbMame: TComboBox;
     lblMAME: TLabel;
     BtnGo: TButton;
     BtnCancel: TButton;
@@ -19,6 +18,8 @@ type
     MamePrintDescLabel2: TLabel;
     XMLEdit: TEdit;
     MameXMLLabel: TLabel;
+    EditMameEmu: TEdit;
+    procedure TxtMameFileManagerFilePathChange(Sender: TObject);
     procedure MFMLabelClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure BtnGoClick(Sender: TObject);
@@ -31,6 +32,7 @@ type
 
 const
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+  EmuNotSelected =  'Select MAME Emulator in Mame Options';
 
   implementation
 
@@ -39,33 +41,51 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses;
 {$R *.dfm}
 
 procedure TFrmMameMFMPrinter.FormShow(Sender: TObject);
+var strList : TStringlist;
 begin
-
   With MainFrm do
   begin
-    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    if CmbMame.Items.Count = 0 then
+  // If there's no mame emu, distinguish between not having done and efind yet, and not having selected
+  //  a mame emu in mame options form. We're using a method intended for comboboxes hence the temp stringlist
+    strList := TStringList.Create;
+    try
+    EmuList.EmusToStrings(strList, cfMameArcade);
+    if strList.Count = 0 then
     begin
-      CmbMame.Items.Add(EmuEmptyMessage );
-      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
-      CmbMame.Color := clInactiveBorder;
-      CmbMame.Font.Color := clMaroon;
-      CmbMame.Font.Style := [fsBold];
-      CmbMame.Font.Size := 10;
-      BtnGo.Enabled := false
+      EditMameEmu.Text := EmuEmptyMessage;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
+    else if Settings.MametoolMameExeName = '' then
+    begin
+      EditMameEmu.Text := EmuNotSelected;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
+    end
+    else EditMameEmu.Text := Settings.MametoolMameExeName;
+    finally
+    strList.Free;
+    end;
 
     //Do we have a loaded Mame Json?
+    if TXTMameFileManagerFilePath.Text = '' then BtnGo.Enabled := false;
+    
     if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
       XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
+      EditMameEmu.Font.Color := clMaroon;
       BtnGo.Enabled := false
     end;
 
-    if (Settings.MameXMLVersion = '') or (CmbMame.Items.Count = 0)  then
+    if (Settings.MameXMLVersion = '') or (EditMameEmu.Text = EmuEmptyMessage) or (EditMameEmu.Text = EmuNotSelected) then
       TxtMameFileManagerFilePath.Enabled := False;
 
 
@@ -79,6 +99,17 @@ end;
 procedure TFrmMameMFMPrinter.MFMLabelClick(Sender: TObject);
 begin
   ShellExecute(Handle, 'open', PChar(MFMLabel.Caption), '', '', sw_Show);
+end;
+
+procedure TFrmMameMFMPrinter.TxtMameFileManagerFilePathChange(Sender: TObject);
+begin
+ if (BtnGo.Enabled = false) and
+    (TXTMameFileManagerFilePath.Text <> '') and
+    (MainFrm.Settings.MameXMLVersion <> '') and
+    (EditMameEmu.Text <> EmuEmptyMessage) and
+    (EditMameEmu.Text <> EmuNotSelected) then
+    BtnGo.Enabled := True;
+ 
 end;
 
 {-----------------------------------------------------------------------------}
@@ -99,17 +130,6 @@ begin
    Process := True;
    With MainFrm do
    begin
-     if CmbMame.ItemIndex <>-1 then
-        Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-        //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-        //  we don't save it, the settings will end up inconsistent,
-        //  and we need to save it in the mame options form because mametool needs to read it
-        MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-        Settings.MametoolMameExeName := MameExeName;
-        MameExeIndex := EmuList.IndexOfName(MameExeName);
-        MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-        Settings.MameToolMameExePath := MameExePath;
-
         Settings.MameFileManagerFilePath := TxtMameFileManagerFilePath.Text;
         Settings.SaveAllSettings();
    end;

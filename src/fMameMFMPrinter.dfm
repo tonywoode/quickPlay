@@ -19,9 +19,9 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
   object lblMAME: TLabel
     Left = 36
     Top = 168
-    Width = 132
+    Width = 94
     Height = 16
-    Caption = 'Mame Emulator to call'
+    Caption = 'Mame Emulator'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = 14
@@ -89,20 +89,11 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     ParentFont = False
   end
   object MameXMLLabel: TLabel
-    Left = 33
-    Top = 255
+    Left = 36
+    Top = 231
     Width = 107
     Height = 16
     Caption = 'Mame XML Status'
-  end
-  object CmbMame: TComboBox
-    Left = 85
-    Top = 200
-    Width = 348
-    Height = 24
-    Style = csDropDownList
-    ItemHeight = 16
-    TabOrder = 0
   end
   object BtnGo: TButton
     Left = 349
@@ -110,7 +101,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Width = 92
     Height = 31
     Caption = '&Go'
-    TabOrder = 1
+    TabOrder = 0
     OnClick = BtnGoClick
   end
   object BtnCancel: TButton
@@ -121,7 +112,7 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     Cancel = True
     Caption = '&Cancel'
     ModalResult = 2
-    TabOrder = 2
+    TabOrder = 1
   end
   object TxtMameFileManagerFilePath: TJvFilenameEdit
     Left = 85
@@ -132,25 +123,43 @@ object FrmMameMFMPrinter: TFrmMameMFMPrinter
     AddQuotes = False
     Filter = 'TXT files (*.txt)|*.txt|All files (*.*)|*.*'
     ButtonWidth = 27
-    TabOrder = 3
+    TabOrder = 2
+    OnChange = TxtMameFileManagerFilePathChange
   end
   object XMLEdit: TEdit
-    Left = 199
-    Top = 245
+    Left = 85
+    Top = 257
     Width = 354
     Height = 27
     AutoSelect = False
     BevelInner = bvNone
     BorderStyle = bsNone
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clMaroon
+    Font.Color = clBlack
     Font.Height = 25
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentColor = True
     ParentFont = False
     ReadOnly = True
-    TabOrder = 4
+    TabOrder = 3
     Text = 'not loaded'
+  end
+  object EditMameEmu: TEdit
+    Left = 85
+    Top = 190
+    Width = 468
+    Height = 24
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Color = clMenu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
   end
 end

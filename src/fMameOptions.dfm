@@ -35,14 +35,14 @@ object FrmMameOptions: TFrmMameOptions
     end
     object XMLTxtLbl4: TLabel
       Left = 20
-      Top = 191
+      Top = 196
       Width = 105
       Height = 16
       Caption = 'Mame XML status'
     end
     object MameXMLLinkLabel: TLabel
       Left = 305
-      Top = 135
+      Top = 137
       Width = 358
       Height = 18
       Cursor = crHandPoint
@@ -62,16 +62,16 @@ object FrmMameOptions: TFrmMameOptions
     object XMLTxtLbl13: TLabel
       Left = 20
       Top = 159
-      Width = 486
-      Height = 16
+      Width = 629
+      Height = 15
       Caption = 
-        'Download the zip named "mame{version number}lx.zip", unzip it, a' +
-        'nd scan it below'
+        'Download the zip named "mame{version number}lx.zip" unzip it and' +
+        ' scan it below'
       WordWrap = True
     end
     object lblMAME: TLabel
       Left = 20
-      Top = 65
+      Top = 70
       Width = 132
       Height = 16
       Caption = 'Mame Emulator to call'
@@ -79,12 +79,12 @@ object FrmMameOptions: TFrmMameOptions
     object MameScanLabel1: TLabel
       Left = 17
       Top = 24
-      Width = 623
+      Width = 648
       Height = 32
       Caption = 
-        'To use QuickPlay'#39's MAME features, make sure you already have a M' +
-        'AME/RetroArch arcade emulator in your emulators list, Select it ' +
-        'below and the XML scan will  find new emulators based on it'
+        'Make sure you already have a MAME/RetroArch arcade emulator in y' +
+        'our emulators list, Select it below and the XML scan will  find ' +
+        'new emulators based on it'
       WordWrap = True
     end
     object XMLTxtLbl14: TLabel
@@ -128,7 +128,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object CmbMame: TComboBox
       Left = 255
-      Top = 62
+      Top = 70
       Width = 394
       Height = 24
       Style = csDropDownList
@@ -165,7 +165,7 @@ object FrmMameOptions: TFrmMameOptions
     end
     object ExtrasTxtLbl2: TLabel
       Left = 17
-      Top = 56
+      Top = 65
       Width = 135
       Height = 16
       Caption = 'Mame Extras Directory'
@@ -192,7 +192,7 @@ object FrmMameOptions: TFrmMameOptions
   end
   object TxtMameExtrasDirPath: TEdit
     Left = 191
-    Top = 70
+    Top = 75
     Width = 400
     Height = 24
     ReadOnly = True
@@ -240,16 +240,15 @@ object FrmMameOptions: TFrmMameOptions
         end
         object RomPathDescLbl: TLabel
           Left = 3
-          Top = 62
-          Width = 616
-          Height = 64
+          Top = 65
+          Width = 670
+          Height = 48
           Caption = 
-            'We need to match each of the types of Rom MAME deals with to exa' +
-            'ctly one of the MAME Paths you'#39've put in your MAME Rompath in MA' +
-            'ME'#39's mame.ini. If you have more than one path for each type, you' +
-            ' can use symlinks on your filesystem to link them all into one f' +
-            'older. If you'#39're unsure what to do here, just select '#39'roms'#39' for ' +
-            'all the below'
+            'Match each of the types of Rom MAME deals with to exactly one of' +
+            ' the MAME Paths in your MAME Rompath in MAME'#39's mame.ini. If you ' +
+            'have more than one path for each type, use symlinks on your file' +
+            'system to link them all into one folder. If you'#39're unsure what t' +
+            'o do, select '#39'roms'#39' for all the below'
           WordWrap = True
         end
         object RomsPathTypeLbl: TLabel
@@ -284,7 +283,7 @@ object FrmMameOptions: TFrmMameOptions
         object RomPathEdit: TEdit
           Left = 165
           Top = 31
-          Width = 501
+          Width = 492
           Height = 24
           ReadOnly = True
           TabOrder = 1

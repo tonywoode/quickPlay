@@ -2,7 +2,7 @@ object MainFrm: TMainFrm
   Left = 323
   Top = 450
   Caption = 'QuickPlay - Home and Away Edition'
-  ClientHeight = 975
+  ClientHeight = 1000
   ClientWidth = 1054
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -103,7 +103,7 @@ object MainFrm: TMainFrm
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 956
+    Top = 981
     Width = 1054
     Height = 19
     Panels = <
@@ -118,14 +118,14 @@ object MainFrm: TMainFrm
     Left = 0
     Top = 0
     Width = 1054
-    Height = 956
+    Height = 981
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
     object SplitMain: TSplitter
       Left = 209
       Top = 0
-      Height = 956
+      Height = 981
       Beveled = True
       ResizeStyle = rsUpdate
       ExplicitLeft = 270
@@ -135,7 +135,7 @@ object MainFrm: TMainFrm
     object SplitImage: TSplitter
       Left = 879
       Top = 0
-      Height = 956
+      Height = 981
       Align = alRight
       Beveled = True
       ResizeStyle = rsLine
@@ -146,7 +146,7 @@ object MainFrm: TMainFrm
       Left = 0
       Top = 0
       Width = 209
-      Height = 956
+      Height = 981
       Align = alLeft
       BevelOuter = bvNone
       TabOrder = 0
@@ -154,7 +154,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 0
         Width = 209
-        Height = 956
+        Height = 981
         ActivePage = TabROMS
         Align = alClient
         TabOrder = 0
@@ -165,7 +165,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 899
+            Height = 924
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -485,7 +485,7 @@ object MainFrm: TMainFrm
       Left = 212
       Top = 0
       Width = 667
-      Height = 956
+      Height = 981
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
@@ -578,7 +578,7 @@ object MainFrm: TMainFrm
         Left = 0
         Top = 61
         Width = 667
-        Height = 895
+        Height = 920
         Align = alClient
         BevelInner = bvNone
         BevelOuter = bvNone
@@ -760,7 +760,7 @@ object MainFrm: TMainFrm
           Font.Height = 16
           Font.Name = 'Tahoma'
           Font.Style = []
-          ItemHeight = 0
+          ItemHeight = 16
           ItemIndex = 0
           ParentFont = False
           TabOrder = 1
@@ -781,7 +781,7 @@ object MainFrm: TMainFrm
           Width = 81
           Height = 21
           Style = csDropDownList
-          ItemHeight = 0
+          ItemHeight = 13
           ItemIndex = 0
           TabOrder = 2
           Text = 'This Folder'
@@ -806,7 +806,7 @@ object MainFrm: TMainFrm
       Left = 882
       Top = 0
       Width = 172
-      Height = 956
+      Height = 981
       Align = alRight
       MultiLine = True
       TabOrder = 2
@@ -1277,7 +1277,6 @@ object MainFrm: TMainFrm
     object ActMameFilePaths: TAction
       Category = 'Mame'
       Caption = 'Set Options for optional MAME Filepath printing'
-      OnExecute = ActMameFilePathsExecute
     end
     object ActMamePrinter: TAction
       Category = 'Mame'
@@ -1519,10 +1518,6 @@ object MainFrm: TMainFrm
         Action = ActMameOptions
         Caption = 'MAME / RetroArch MAME Options'
         ImageIndex = 9
-      end
-      object SetOptionsforoptionalMAMEFilepathprinting1: TMenuItem
-        Action = ActMameFilePaths
-        ImageIndex = 0
       end
       object PrintMameRetroArchMessRomdatasinCurrentFolder1: TMenuItem
         Action = ActMameMessPrinter

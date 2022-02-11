@@ -13,10 +13,10 @@ type
     MameMessPrinterDescLabel1: TLabel;
     MameMessPrinterDescLabel2: TLabel;
     lblMAME: TLabel;
-    CmbMame: TComboBox;
     MameMessPrinterDescLabel3: TLabel;
     XMLTxtLbl: TLabel;
     XMLEdit: TEdit;
+    EditMameEmu: TEdit;
     procedure FormShow(Sender: TObject);
     procedure BtnGoClick(Sender: TObject);
   private
@@ -27,6 +27,7 @@ type
 
   const
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+  EmuNotSelected =  'Select MAME Emulator in Mame Options';
 
 implementation
 
@@ -37,29 +38,44 @@ uses fMain, uJFile, uQPConst, uQPMiscTypes,ujProcesses, strUtils;
 
 
 procedure TFrmMameMessPrinter.FormShow(Sender: TObject);
+var strList : TStringlist;
 begin
-
   With MainFrm do
   begin
-    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    if CmbMame.Items.Count = 0 then
+  // If there's no mame emu, distinguish between not having done and efind yet, and not having selected
+  //  a mame emu in mame options form. We're using a method intended for comboboxes hence the temp stringlist
+    strList := TStringList.Create;
+    try
+    EmuList.EmusToStrings(strList, cfMameArcade);
+    if strList.Count = 0 then
     begin
-      CmbMame.Items.Add(EmuEmptyMessage );
-      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage );
-      CmbMame.Color := clInactiveBorder;
-      CmbMame.Font.Color := clMaroon;
-      CmbMame.Font.Style := [fsBold];
-      CmbMame.Font.Size := 10;
-      BtnGo.Enabled := false
+      EditMameEmu.Text := EmuEmptyMessage;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
-
+    else if Settings.MametoolMameExeName = '' then
+    begin
+      EditMameEmu.Text := EmuNotSelected;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
+    end
+    else EditMameEmu.Text := Settings.MametoolMameExeName;
+    finally
+    strList.Free;
+    end;
     //Do we have a loaded Mame Json?
     if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
       XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
+      XMLEdit.Font.Color := clMaroon;
       BtnGo.Enabled := false
     end;
   end;
@@ -91,7 +107,7 @@ begin
   //take a bit of care here as the logic that follows expects these names to be folder names of SUBFOLDERS in the src, so
  //both src and dest folders must be the same name
  //nah since we lost mame type this no longer works
- if AnsiContainsText(CmbMame.Items.Strings[CmbMame.ItemIndex], 'RetroArch')
+ if AnsiContainsText(MainFrm.Settings.MametoolMameExeName, 'RetroArch')
    then softlistFolderName := 'RetroArch Softlists' else softlistFolderName := 'MAME Softlists';
    if (DirectoryExists(RomdataFolder + '\' + softlistFolderName)) and
      (MessageDlg(QP_MAME_SOFTLISTS_EXIST_IN_SRC_DIR, mtConfirmation, [mbYes, mbNo], 0) = mrNo) then Process := False;
@@ -100,23 +116,7 @@ begin
   if RomdataFolder = '' then Process := False;
 
   if (Process = True) then
-   begin
-
-     With MainFrm do
-     begin
-       if CmbMame.ItemIndex <>-1 then
-          Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-          //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-          // we don't save it, the settings will end up inconsistent, and we need to save it in the mame options because mametool needs to read it
-          MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-          Settings.MametoolMameExeName := MameExeName;
-          MameExeIndex := EmuList.IndexOfName(MameExeName);
-          MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-          Settings.MameToolMameExePath := MameExePath;
-
-          Settings.SaveAllSettings();
-     end;
-
+  begin
      Executable := MainFrm.Settings.Paths.QPNodeFile;
      //other settings needed will all come from qps settings ini: mamepath, extrasdir, xmlpath, mfm path
      Flags := 'mametool --softlists --output-dir ' + '"' + ExcludeTrailingPathDelimiter(RomdataFolder) + '"';  //folder inclues trailing backslash which literals the quote
@@ -130,10 +130,6 @@ begin
      //I managed to get the first call to an MFM rom not work, so this in an attempt to ensure dir is correct after processing
      setCurrentDir(MainFrm.Settings.Paths.AppDir);
      end;
-
-
-
-
 
     //close the form with the modal result OK
     ModalResult := MrOK;

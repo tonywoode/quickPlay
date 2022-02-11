@@ -3,7 +3,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
   Top = 0
   Caption = 'Mame Mess Softlist Romdata Printer'
   ClientHeight = 326
-  ClientWidth = 565
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -78,7 +78,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     Caption = 'Mame XML status'
   end
   object BtnGo: TButton
-    Left = 345
+    Left = 393
     Top = 273
     Width = 92
     Height = 31
@@ -87,7 +87,7 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     OnClick = BtnGoClick
   end
   object BtnCancel: TButton
-    Left = 454
+    Left = 510
     Top = 273
     Width = 92
     Height = 31
@@ -95,22 +95,6 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 1
-  end
-  object CmbMame: TComboBox
-    Left = 201
-    Top = 219
-    Width = 345
-    Height = 24
-    Style = csDropDownList
-    Color = clMenu
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -14
-    Font.Name = 'MS Sans Serif'
-    Font.Style = []
-    ItemHeight = 16
-    ParentFont = False
-    TabOrder = 2
   end
   object XMLEdit: TEdit
     Left = 192
@@ -121,14 +105,31 @@ object FrmMameMessPrinter: TFrmMameMessPrinter
     BevelInner = bvNone
     BorderStyle = bsNone
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clMaroon
+    Font.Color = clBlack
     Font.Height = 25
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentColor = True
     ParentFont = False
     ReadOnly = True
-    TabOrder = 3
+    TabOrder = 2
     Text = 'not loaded'
+  end
+  object EditMameEmu: TEdit
+    Left = 201
+    Top = 222
+    Width = 392
+    Height = 24
+    BevelInner = bvNone
+    BorderStyle = bsNone
+    Color = clMenu
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = 25
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
   end
 end

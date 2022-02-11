@@ -340,4 +340,12 @@ object FrmMamePrinter: TFrmMamePrinter
     TabOrder = 17
     Text = 'not loaded'
   end
+  object EditMameEmu: TEdit
+    Left = 216
+    Top = 320
+    Width = 345
+    Height = 24
+    ReadOnly = True
+    TabOrder = 18
+  end
 end

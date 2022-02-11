@@ -37,6 +37,7 @@ type
     MamePrintDescLabel2: TLabel;
     MamePrintDescLabel3: TLabel;
     XMLEdit: TEdit;
+    EditMameEmu: TEdit;
     procedure FormShow(Sender: TObject);
     procedure BtnGoClick(Sender: TObject);
 
@@ -48,6 +49,7 @@ type
 
 const
   EmuEmptyMessage = 'No MAME Emulators. Run an E-Find';
+  EmuNotSelected =  'select MAME Emulator in Mame Options';
 
 implementation
 
@@ -56,22 +58,37 @@ uses fMain, uQPConst, ShellAPI, uQPMiscTypes, ujProcesses, uSettings;
 {$R *.dfm}
 
 procedure TFrmMamePrinter.FormShow(Sender: TObject);
+var strList : TStringlist;
 begin
   With MainFrm do
   begin
-    EmuList.EmusToStrings(CmbMame.Items, cfMameArcade);
-    if CmbMame.Items.Count = 0 then
+  // If there's no mame emu, distinguish between not having done and efind yet, and not having selected
+  //  a mame emu in mame options form. We're using a method intended for comboboxes hence the temp stringlist
+    strList := TStringList.Create;
+    try
+    EmuList.EmusToStrings(strList, cfMameArcade);
+    if strList.Count = 0 then
     begin
-      CmbMame.Items.Add(EmuEmptyMessage);
-      CmbMame.ItemIndex := CmbMame.Items.IndexOf(EmuEmptyMessage);
-      CmbMame.Color := clInactiveBorder;
-      CmbMame.Font.Color := clMaroon;
-      CmbMame.Font.Style := [fsBold];
-      CmbMame.Font.Size := 10;
-      BtnGo.Enabled := false
+      EditMameEmu.Text := EmuEmptyMessage;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
     end
-    else CmbMame.ItemIndex := CmbMame.Items.IndexOf(Settings.MametoolMameExeName);
-
+    else if Settings.MametoolMameExeName = '' then
+    begin
+      EditMameEmu.Text := EmuNotSelected;
+      EditMameEmu.Color := clInactiveBorder;
+      EditMameEmu.Font.Color := clMaroon;
+      EditMameEmu.Font.Style := [fsBold];
+      EditMameEmu.Font.Size := 10;
+      BtnGo.Enabled := false;
+    end
+    else EditMameEmu.Text := Settings.MametoolMameExeName;
+    finally
+    strList.Free;
+    end;
     //Do we have a loaded Mame Json?
       if (Settings.MameXMLVersion <> '') and FileExists(Settings.MameXMLPath) then
     XMLEdit.Text := 'Loaded: ' + MainFrm.Settings.MameXMLVersion

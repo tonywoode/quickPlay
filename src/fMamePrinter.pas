@@ -8,7 +8,6 @@ uses
 
 type
   TFrmMamePrinter = class(TJWinFontForm)
-    CmbMame: TComboBox;
     lblMAME: TLabel;
     BtnGo: TButton;
     BtnCancel: TButton;
@@ -95,6 +94,7 @@ begin
     else
     begin
       XMLEdit.text := 'Load an XML in Mame Options First';
+      XMLEdit.Font.Color := clMaroon;
       BtnGo.Enabled := false
     end;
 
@@ -138,21 +138,9 @@ var
 begin
    Process := True;
 
-   if CmbMame.ItemIndex <>-1 then
-
         With MainFrm do
         begin
-          Settings.MametoolMameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-          //To be consistent with the mame options mame exe, we don't need the filename of the mame exe here, but if
-          //  we don't save it, the settings will end up inconsistent,
-          //  and we need to save it in the mame options form because mametool needs to read it
-           MameExeName := CmbMame.Items.Strings[CmbMame.ItemIndex];
-           Settings.MametoolMameExeName := MameExeName;
-           MameExeIndex := EmuList.IndexOfName(MameExeName);
-           MameExePath := EmuList.GetItemByIndex(MameExeIndex).ExePath;
-           Settings.MameToolMameExePath := MameExePath;
-
-          //and here's all the checkbox settings
+          //here's all the checkbox settings
           Settings.MameOptBios        := ChkBios.Checked;
           Settings.MameOptCasino      := ChkCasino.Checked;
           Settings.MameOptClones      := ChkClones.Checked;

@@ -279,6 +279,7 @@ object FrmMameOptions: TFrmMameOptions
           Height = 17
           Caption = 'Print MAME File Paths'
           TabOrder = 0
+          OnClick = ChkBoxMameFilePathsClick
         end
         object RomPathEdit: TEdit
           Left = 165

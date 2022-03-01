@@ -51,11 +51,13 @@ type
     SoftlistChdsPathTypeLbl: TLabel;
     RomPathLbl: TLabel;
     RomPathEdit: TEdit;
+    procedure ChkBoxMameFilePathsClick(Sender: TObject);
     procedure CmbMameSelect(Sender: TObject);
     procedure MameXMLLinkLabelClick(Sender: TObject);
     procedure BtnXMLScanClick(Sender: TObject);
     procedure BtnMameExtrasDirFindClick(Sender: TObject);
     procedure clearRompathSettings();
+    procedure togglePrintPaths();
     procedure FormShow(Sender: TObject);
     procedure BtnMameOptsOkClick(Sender: TObject);
     procedure InitialiseMameRompathSelects(const RomPathsListSerial:String);
@@ -91,6 +93,32 @@ begin
     Result:=true
     else
     Result:=false
+end;
+
+procedure TFrmMameOptions.togglePrintPaths();
+begin
+       if not (ChkBoxMameFilePaths.checked) then
+       begin
+         RomPathEdit.Enabled := False;
+         CmbRomsPath.Enabled := False;
+         CmbChdsPath.Enabled := False;
+         CmbSoftlistRomsPath.Enabled := False;
+         CmbSoftlistChdsPath.Enabled := False;
+       end;
+       if     (ChkBoxMameFilePaths.checked) then
+       begin
+         RomPathEdit.Enabled := True;
+         CmbRomsPath.Enabled := True;
+         CmbChdsPath.Enabled := True;
+         CmbSoftlistRomsPath.Enabled := True;
+         CmbSoftlistChdsPath.Enabled := True;
+       end;
+
+end;
+
+procedure TFrmMameOptions.ChkBoxMameFilePathsClick(Sender: TObject);
+begin
+  togglePrintPaths();
 end;
 
 {-----------------------------------------------------------------------------}
@@ -255,6 +283,7 @@ begin
   end;
 
   ChkBoxMameFilePaths.Checked := MainFrm.Settings.MameFilePaths;
+  togglePrintPaths();
 
   if (MainFrm.Settings.MameZipType = '7z')
   then RadMameFile7z.Checked := True
@@ -476,6 +505,7 @@ function TFrmMameOptions.AreMameRomPathTypesValid():Boolean;
 var valid: Boolean;
 begin
   valid := false;
+  if not (ChkBoxMameFilePaths.checked) then valid := true;
   if (ChkBoxMameFilePaths.checked) and
   (CmbRomsPath.Text <> '') and
   (CmbChdsPath.Text <> '') and

@@ -68,12 +68,14 @@ begin
   _Options := TStringList.Create;
 
   //add all the options.
+  _Options.Add(QP_ROM_NAME);
   _Options.Add(QP_ROM_COMPANY);
   _Options.Add(QP_ROM_LANG);
   _Options.Add(QP_ROM_RATING);
   _Options.Add(QP_ROM_TYPE);
   _Options.Add(QP_ROM_YEAR);
   _Options.Add(QP_ROM_PLAYERS);
+  _Options.Add(QP_ROM_COMMENT);
 end;
 
 procedure TFrmROMData.FormDestroy(Sender: TObject);
@@ -126,7 +128,7 @@ end;
 
 procedure TFrmROMData.BtnStartWorkClick(Sender: TObject);
 var
-  IncRating, IncCompany, IncLang, IncYear, IncType, IncPlayers : Boolean;
+  IncName, IncRating, IncCompany, IncLang, IncYear, IncType, IncPlayers, IncComment : Boolean;
   aNode : PVirtualNode;
   OldCursor : TCursor;
 begin
@@ -139,6 +141,12 @@ begin
     try
 
     //do some damn butt ugly code to get checked states in the VT.
+    aNode := VTOpt.GetFirst;
+    if VTOpt.CheckState[aNode] = csCheckedNormal then
+      IncName := True
+    else
+      IncName := False;
+
     aNode := VTOpt.GetFirst;
     if VTOpt.CheckState[aNode] = csCheckedNormal then
       IncCompany := True
@@ -175,11 +183,17 @@ begin
     else
       IncPlayers := False;
 
+    aNode := VTOpt.GetNext(aNode);
+    if VTOpt.CheckState[aNode] = csCheckedNormal then
+      IncComment := True
+    else
+      IncComment := False;
+
     if _ImportMode then
     begin
       //import mode.
-      MainFrm.RomList.ImportCustomData(TxtDataFile.Text, ChkOverWrite.Checked, IncCompany,
-        IncType, IncLang, IncYear, IncRating, IncPlayers);
+      MainFrm.RomList.ImportCustomData(TxtDataFile.Text, ChkOverWrite.Checked, IncName, IncCompany,
+        IncType, IncLang, IncYear, IncRating, IncPlayers, IncComment);
       lblDone.Caption := QP_CUSTOM_IMPORT_COMPLETE;
       pgCustom.ActivePageIndex := 2;
     end
@@ -189,8 +203,8 @@ begin
       //for the export mode we need to make sure that the directory exists that the file is going to.
       if DirectoryExists(ExtractFilePath(TxtDataFile.Text)) then
       begin
-        MainFrm.RomList.ExportCustomData(TxtDatafile.Text, IncCompany, Inctype, IncLang,
-          IncYear, IncRating, IncPlayers);
+        MainFrm.RomList.ExportCustomData(TxtDatafile.Text, IncName, IncCompany, Inctype, IncLang,
+          IncYear, IncRating, IncPlayers, IncComment);
         lblDone.Caption := QP_CUSTOM_EXPORT_COMPLETE;
         pgCustom.ActivePageIndex := 2;
       end

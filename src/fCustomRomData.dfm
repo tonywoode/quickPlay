@@ -3,49 +3,49 @@ object FrmROMData: TFrmROMData
   Top = 406
   BorderStyle = bsDialog
   Caption = 'Import/Export Custom ROM Data'
-  ClientHeight = 308
-  ClientWidth = 429
+  ClientHeight = 403
+  ClientWidth = 561
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -14
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 120
+  TextHeight = 17
   object PGCustom: TPageControl
     Left = 0
     Top = 0
-    Width = 429
-    Height = 308
-    ActivePage = TabIntro
+    Width = 561
+    Height = 403
+    ActivePage = TabWork
     Align = alClient
     Style = tsButtons
     TabOrder = 0
     object TabIntro: TTabSheet
       Caption = 'Intro'
       object lblTitle: TLabel
-        Left = 8
+        Left = 10
         Top = 0
-        Width = 322
-        Height = 23
+        Width = 390
+        Height = 28
         Caption = 'Import/Export Custom ROM Data'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -19
+        Font.Height = -23
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblDescription: TLabel
-        Left = 16
-        Top = 40
-        Width = 402
-        Height = 120
+        Left = 21
+        Top = 52
+        Width = 396
+        Height = 119
         Caption = 
           'The custom data importer/exporter can create a file containing '#13 +
           #10'custom data for a ROM, such as company, year, etc.  The '#13#10'custo' +
@@ -54,26 +54,26 @@ object FrmROMData: TFrmROMData
           ' your'#13#10'ROMS are named consistently.'
       end
       object RadImport: TRadioButton
-        Left = 136
-        Top = 166
-        Width = 194
-        Height = 17
+        Left = 178
+        Top = 217
+        Width = 254
+        Height = 22
         Caption = 'Import Custom Data'
         TabOrder = 0
       end
       object RadExport: TRadioButton
-        Left = 136
-        Top = 190
-        Width = 209
-        Height = 17
+        Left = 178
+        Top = 248
+        Width = 273
+        Height = 23
         Caption = 'Export Custom Data'
         TabOrder = 1
       end
       object BtnBegin: TButton
-        Left = 160
-        Top = 222
-        Width = 75
-        Height = 25
+        Left = 209
+        Top = 290
+        Width = 98
+        Height = 33
         Caption = '&Begin'
         TabOrder = 2
         OnClick = BtnBeginClick
@@ -83,38 +83,39 @@ object FrmROMData: TFrmROMData
       Caption = 'Worker'
       ImageIndex = 1
       object lblWork: TLabel
-        Left = 67
-        Top = 16
-        Width = 63
-        Height = 19
+        Left = 88
+        Top = 21
+        Width = 88
+        Height = 27
         Caption = 'lblWork'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -16
+        Font.Height = -22
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblDataFile: TLabel
-        Left = 8
-        Top = 60
-        Width = 42
-        Height = 13
+        Left = 10
+        Top = 78
+        Width = 51
+        Height = 17
         Caption = 'Data File'
       end
       object lblDataOpt: TLabel
-        Left = 67
-        Top = 88
-        Width = 101
-        Height = 13
+        Left = 88
+        Top = 115
+        Width = 132
+        Height = 17
         Caption = 'Custom Data Options'
       end
       object VTOpt: TVirtualStringTree
-        Left = 67
-        Top = 104
-        Width = 152
-        Height = 113
+        Left = 88
+        Top = 136
+        Width = 198
+        Height = 148
         Header.AutoSizeIndex = 0
+        Header.DefaultHeight = 17
         Header.Font.Charset = DEFAULT_CHARSET
         Header.Font.Color = clWindowText
         Header.Font.Height = -11
@@ -122,7 +123,7 @@ object FrmROMData: TFrmROMData
         Header.Font.Style = []
         Header.MainColumn = -1
         Header.Options = [hoColumnResize, hoDrag]
-        RootNodeCount = 6
+        RootNodeCount = 8
         TabOrder = 0
         TreeOptions.AutoOptions = []
         TreeOptions.MiscOptions = [toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning]
@@ -134,33 +135,34 @@ object FrmROMData: TFrmROMData
         Columns = <>
       end
       object ChkOverwrite: TCheckBox
-        Left = 224
-        Top = 144
-        Width = 194
-        Height = 17
+        Left = 293
+        Top = 188
+        Width = 254
+        Height = 23
         Caption = 'Overwrite Existing Data'
         TabOrder = 1
         Visible = False
       end
       object BtnStartWork: TButton
-        Left = 168
-        Top = 224
-        Width = 75
-        Height = 25
+        Left = 220
+        Top = 293
+        Width = 98
+        Height = 33
         Caption = 'Start'
         TabOrder = 2
         OnClick = BtnStartWorkClick
       end
       object TxtDataFile: TJvFilenameEdit
-        Left = 67
-        Top = 56
-        Width = 353
-        Height = 21
+        Left = 88
+        Top = 73
+        Width = 461
+        Height = 25
         OnButtonClick = TxtDataFileButtonClick
         ClipboardCommands = []
         AddQuotes = False
         DefaultExt = '.ini'
         Filter = 'Ini Files (*.ini)|*.ini'
+        ButtonWidth = 27
         TabOrder = 3
       end
     end
@@ -168,32 +170,32 @@ object FrmROMData: TFrmROMData
       Caption = 'Done'
       ImageIndex = 3
       object lblDone: TLabel
-        Left = 128
-        Top = 48
-        Width = 79
-        Height = 25
+        Left = 167
+        Top = 63
+        Width = 107
+        Height = 34
         Caption = 'lblDone'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -21
+        Font.Height = -28
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
         ParentFont = False
       end
       object lblEnd: TLabel
-        Left = 64
-        Top = 112
-        Width = 283
-        Height = 13
+        Left = 84
+        Top = 146
+        Width = 361
+        Height = 17
         Caption = 'Press the close button in the corner to return to QuickPlay.'
       end
     end
   end
   object BtnClose: TButton
-    Left = 349
-    Top = 280
-    Width = 75
-    Height = 25
+    Left = 456
+    Top = 366
+    Width = 98
+    Height = 33
     Caption = '&Close'
     ModalResult = 2
     TabOrder = 1

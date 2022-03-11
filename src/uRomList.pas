@@ -33,12 +33,12 @@ Type
     Function ChangeEmus(OldEmu, NewEmu : String): Integer;
     Function DeleteByEmu(EmuStr : String) : Integer;
     Function DeleteOrphans() : Integer;
-    Procedure ExportCustomData(outFile : TFileName; IncCompany, IncType, IncLang, IncYear,
-          IncRating, IncPlayers : Boolean);
+    Procedure ExportCustomData(outFile : TFileName; IncName, IncCompany, IncType, IncLang, IncYear,
+          IncRating, IncPlayers, IncComment : Boolean);
     Function ExportRoms(CList : TStrings; Format : TQPExportFormat; Opt : TQPExportOpt;
           EList : TQPEmuList; Mode : TQPExportMode; Filter : String = '') : Integer;
-    procedure ImportCustomData(inFile : TFileName; Overwrite, IncCompany, IncType, IncLang,
-          IncYear, IncRating, IncPlayers : Boolean);
+    procedure ImportCustomData(inFile : TFileName; Overwrite, IncName, IncCompany, IncType, IncLang,
+          IncYear, IncRating, IncPlayers, IncComment : Boolean);
     function last(): TQPRom;
     procedure LoadFromFile(In_file : TFileName);
     procedure LoadMatchesFromFile(In_file : TFileName; Query : TObjectList;
@@ -569,8 +569,8 @@ End;
 
 {-----------------------------------------------------------------------------}
 
-Procedure TQPROMlist.ExportCustomData(outFile : TFileName; IncCompany, IncType,
-          IncLang, IncYear, IncRating, IncPlayers : Boolean);
+Procedure TQPROMlist.ExportCustomData(outFile : TFileName; IncName, IncCompany, IncType,
+          IncLang, IncYear, IncRating, IncPlayers, IncComment : Boolean);
 var
   i : Integer;
   data : TStringList;
@@ -583,6 +583,10 @@ begin
     begin
 
       Data.Add('[' + Self[i].FileNameNoExt + ']');
+
+      if (IncName) and (Self[i].Name <> '') then
+        Data.Add('Name=' + Self[i].Name);
+
       if (IncCompany) and (Self[i].Company <> '') then
         Data.Add('Company=' + Self[i].Company);
 
@@ -598,8 +602,11 @@ begin
       if (IncRating) and (Self[i].Rating <> '') then
         Data.Add('Rating=' + Self[i].Rating);
 
-      if (incPlayers) and (Self[i].Multiplayer <> '') then
+      if (IncPlayers) and (Self[i].Multiplayer <> '') then
         Data.Add('Players=' + Self[i].Multiplayer);
+        
+      if (IncComment) and (Self[i].Comment <> '') then
+        Data.Add('Comment=' + Self[i].Comment);
 
       Data.Add('');
     end;
@@ -673,8 +680,8 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TQPROMlist.ImportCustomData(inFile : TFileName; Overwrite, IncCompany, IncType, IncLang,
-          IncYear, IncRating, IncPlayers : Boolean);
+procedure TQPROMlist.ImportCustomData(inFile : TFileName; Overwrite, IncName, IncCompany, IncType, IncLang,
+          IncYear, IncRating, IncPlayers, IncComment : Boolean);
 var
   i : Integer;
   ini : TMemIniFile;
@@ -688,6 +695,8 @@ begin
       for i := 0 to Self.Count-1 do
       begin
 
+        if (IncName) and ((Self[i].Name = '') or (overwrite)) then
+          Self[i].Name := Ini.ReadString(Self[i].FileNameNoExt, 'Name', Self[i].Name);
         if (IncCompany) and ((Self[i].Company = '') or (overwrite)) then
           Self[i].Company := Ini.ReadString(Self[i].FileNameNoExt, 'Company', Self[i].Company);
         if (IncType) and ((Self[i].GameType = '') or (overwrite)) then
@@ -699,8 +708,9 @@ begin
         if (IncRating) and ((Self[i].Rating = '') or (overwrite)) then
           Self[i].Rating := Ini.ReadString(Self[i].FileNameNoExt, 'Rating', Self[i].Rating);
         if (IncPlayers) and ((Self[i].Multiplayer = '') or (overwrite)) then
-          Self[i].Multiplayer := Ini.ReadString(Self[i].FileNameNoExt, 'Players', Self[i].Rating);
-
+          Self[i].Multiplayer := Ini.ReadString(Self[i].FileNameNoExt, 'Players', Self[i].Multiplayer);
+        if (IncComment) and ((Self[i].Comment = '') or (overwrite)) then
+          Self[i].Comment := Ini.ReadString(Self[i].FileNameNoExt, 'Comment', Self[i].Comment);
       end;
 
       //save the updated list

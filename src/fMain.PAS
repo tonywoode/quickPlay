@@ -70,7 +70,7 @@ uses Windows, Classes, SysUtils, Graphics, Controls, Forms,
      JvTrayIcon, JvDragDrop, JvAppInst, ToolWin,
      uQPDir, uRomList, uEmuList, uRom, uEmu, uJCompression, ujprocesses,
      uToolList, uMediaPanelClasses,uMediaTabClass, uQPMiscTypes, JvComponentBase,
-     fjWinFontForm, uVersionCheckThread, mmSystem, JvJoystick ;
+     fjWinFontForm, uVersionCheckThread, mmSystem;
 
 type
   TMMJoyStick  = packed record
@@ -366,6 +366,8 @@ type
     SynctoolOptions: TMenuItem;
     MakeallRomdatasfromhereLocalfromRemote1: TMenuItem;
     ActMameFilePaths: TAction;
+    joysticktimer: TTimer;
+    procedure joysticktimerTimer(Sender: TObject);
     procedure actSynctoolRomdataFlipExecute(Sender: TObject);
     procedure actSynctoolOptionsExecute(Sender: TObject);
     procedure ActMameOptionsExecute(Sender: TObject);
@@ -377,12 +379,6 @@ type
     procedure lblRowHeightClick(Sender: TObject);
     procedure vtToolsChange(Sender: TBaseVirtualTree; Node: PVirtualNode);
     procedure pgSideBarChange(Sender: TObject);
-   // procedure JoyCntrlJoyMove(Sender: TObject; X, Y: Integer; But1Pressed,
-   //   But2Pressed, But3Pressed, But4Pressed: Boolean);
-   // procedure JoyCntrlJoyButtonDown(Sender: TObject; X, Y,
-    //  ButtonChanged: Integer; But1Pressed, But2Pressed, But3Pressed,
-    //  But4Pressed: Boolean);
-
     procedure SlideBarMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure SlideBarDirMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure VTRomsHeaderClick(Sender: TVTHeader; HitInfo: TVTHeaderHitInfo );
@@ -587,6 +583,10 @@ type
     procedure MnuToolSidebarClick(Sender: TObject);
     procedure ActZiNcScanExecute(Sender: TObject);
 
+    procedure MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick); message MM_JOY1BUTTONDOWN;
+    procedure MMJOY1MOVE       (var LocMessage: TMMJoyStick); message MM_JOY1MOVE;   // ButtonDown and Move are not shown, they just call ButtonUp
+
+
 
   private
     _ROMPoint : TPoint;
@@ -669,10 +669,6 @@ type
     RomList : TQPRomList;
     EmuList : TQPEmuList;
     ToolList : TQPToolList;
-
-    myjoy: tjoyinfo;
-    procedure MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick); message MM_JOY1BUTTONDOWN;
-    procedure MMJOY1MOVE       (var LocMessage: TMMJoyStick); message MM_JOY1MOVE;   // ButtonDown and Move are not shown, they just call ButtonUp
 
 
     Function GetROM(cNode : PVirtualNode) : TQPRom;
@@ -779,6 +775,11 @@ begin
   //now load in the new dimensions
   Settings.LoadDimensions(_WindowLayout);
 end;
+
+Procedure CheckUSBevent;  stdcall;
+//Callback procedure for USB change event
+Begin
+End;
 
 {-----------------------------------------------------------------------------}
 
@@ -1889,155 +1890,6 @@ end;
 
 {-----------------------------------------------------------------------------}
 
-procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
-  var  Node: PVirtualNode;
-  var wnd : TVirtualStringTree;
-begin
-if GetForegroundWindow = self.Handle then
-begin
-  if Settings.Joy then
-    begin
-
-     //first we need to make sure we start in roms view, so if the mesage is 'all centred' and
-     //  we haven't navigaated anywhere else, that's where inout will act
-     // Why these values for movement? analog pads need accounting for (so 0 and 65535 won't work)
-     //   but analog and digital were giving distinct values for centred. So this marging seemed appropriate
-     if ((LocMessage.xpos > 30000)
-     and (LocMessage.xpos < 40000) ) //or (pgMediaPanel.Focused) then
-     and not pgMediaPanel.Focused
-     and not VTdir.Focused then
-     Begin
-       VTROMs.SetFocus;
-       wnd := VTROMs;
-     end
-
-     else if (LocMessage.xpos < 30000) //if its left
-     and VTRoms.Focused then
-     Begin
-        VTdir.SetFocus;
-        wnd := VTdir;
-     end
-
-     else if (LocMessage.xpos < 30000)
-     and pgMediaPanel.Focused then
-     Begin
-        VTROMs.SetFocus;
-        wnd := VTROMs;
-     end
-
-
-      else if (LocMessage.xpos > 40000)
-      and VTRoms.Focused then  //right
-      Begin
-        pgMediaPanel.SetFocus;
-      end
-
-      else if (LocMessage.xpos > 40000)
-      and VTDir.Focused then  //right
-      Begin
-        VTROMs.SetFocus;
-        wnd := VTROMs;
-      end;
-
-      if (LocMessage.ypos > 40000) and (VTROMs.Focused) then
-      begin
-        SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
-        Node := VTROMs.GetFirstSelected();
-        wnd.ScrollIntoView(Node, true);
-      end
-
-      else if (LocMessage.ypos < 30000)  and (VTROMS.Focused) then
-      begin
-        SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
-        Node := VTROMs.GetFirstSelected();
-        wnd.ScrollIntoView(Node, true);
-      end
-
-      else if (LocMessage.ypos > 40000) and (VTdir.Focused) then
-      begin
-        wnd := VTdir;
-        SendMessage(wnd.Handle,WM_KEYDOWN,VK_DOWN,0);
-        Node := VTdir.GetFirstSelected();
-        wnd.ScrollIntoView(Node, true);
-      end
-
-      else if (LocMessage.ypos < 30000)  and (VTdir.Focused) then
-      begin
-        wnd := VTdir;
-        SendMessage(wnd.Handle,WM_KEYDOWN,VK_UP,0);
-        Node := VTdir.GetFirstSelected();
-        wnd.ScrollIntoView(Node, true);
-      end
-
-    end
-  end;
-end;
-
-procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
-  var  Node: PVirtualNode;
-  var wnd : TVirtualStringTree;
-
-  begin
-    if GetForegroundWindow = self.Handle then
-    begin
-    if Settings.Joy then
-      begin
-        if VTROMs.Focused  then
-        begin
-          if ((LocMessage.Buttons and joy_button2)=joy_button2) then
-          begin //expand
-            if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
-            begin
-              VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
-            end
-          else
-          begin
-            VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
-          end;
-        end
-        else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-        begin //run
-          SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
-        end
-      end;
-
-      if VTdir.Focused then
-      begin
-        if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-        begin //expand
-          if VTDir.Expanded [ VTdir.GetFirstSelected() ] then
-          begin
-            VTdir.Expanded [ VTdir.GetFirstSelected() ] := false;
-          end
-        else
-        begin
-          VTdir.Expanded [ VTdir.GetFirstSelected() ] := true;
-        end;
-      end
-    end
-
-    else if pgMediaPanel.Focused then
-    begin
-     if ((LocMessage.Buttons and joy_button1)=joy_button1) then
-     begin //expand
-       pgMediaPanel.SelectNextPage(True) ;
-     end;
-
-     //joy2 is going to go backwards through tabs, but there is no 'selectPreviousPage' type method
-     //  so deal with it manually including what happens when we go off the left side of array
-      if ((LocMessage.Buttons and joy_button2)=joy_button2) then
-     begin //expand
-       if pgMediaPanel.ActivePageIndex > 0  then
-         pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.ActivePageIndex-1]
-       else pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.PageCount-1]
-     end;
-
-      end
-
-
-    end
-  end;
-end;
 
 Function TMainFrm.JumpToROM(Dir, ROM : String; SType : TQPRefresh) : Boolean;
 var
@@ -2716,7 +2568,7 @@ begin
 
     if Opt.ShowModal = mrOK then
       //now refresh the selected directory
-      RefreshAll();
+      RefreshAll;
 
   Finally
     FreeAndNil(Opt);
@@ -3560,7 +3412,7 @@ begin
     Multi.AddToDir := GetSelectedFolder;
     If Multi.ShowModal = mrOK then
       If MainFrm.Active then
-        RefreshAll();
+        RefreshAll;
 
   finally
     FreeAndNil(Multi);
@@ -4108,33 +3960,17 @@ end;
 
 procedure TMainFrm.FormCreate(Sender: TObject);
 
- var myJoyCaps: TJoyCaps;
-
- const PollingFreq=50;
-(*PollingFreq of 100 (rec'd by original poster) sets Joystick interface to
-  transmit messages every 100ms.*)
-
+   var  myJoyCaps: TJoyCaps;
+   var isJoy: Integer;
 begin
   //MemCheckLogFileName := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0))) + 'memcheck.txt';
   //MemChk;
+ 
+  isJoy := joyGetDevCaps(joystickid1,@myJoyCaps, sizeof(myJoyCaps)); // for test
+  if isJoy > 1 then joysticktimer.Enabled := false;
 
- joyGetDevCaps(joystickid1,@myJoyCaps, sizeof(myJoyCaps)); // for test
-joySetCapture(self.Handle, joystickid1, PollingFreq, true);
-  (*See const decl for function of Polling Freq*)
+  joySetCapture(self.Handle, joystickid1, 50, true);
 
-
-//  if JoyCntrl.HasJoystick1 then  //  Joy1
-//  begin
-//    JoyCntrl.CaptureJoystick1 := True;
-//    JoyCntrl.Joy1Move := JoyCntrlJoyMove;
-//    JoyCntrl.Joy1ButtonDown := JoyCntrlJoyButtonDown;
-//  end;
-//  if JoyCntrl.HasJoystick2 then //Joy2
-//  begin
-//    JoyCntrl.CaptureJoystick2 := True;
-//    JoyCntrl.Joy2Move := JoyCntrlJoyMove;
-//    JoyCntrl.Joy2ButtonDown := JoyCntrlJoyButtonDown;
-//  end;
 
   SlideBar.OnMouseUp := SlideBarMouseUp;
   SlideBarDir.OnMouseUp := SlideBarDirMouseUp;
@@ -4324,7 +4160,9 @@ begin
   AddToLog('QuickPlay is about to shutdown');
   {$ENDIF}
 
-  VTRoms.EndEditNode();
+   joyReleaseCapture(joystickid1);
+
+    VTRoms.EndEditNode();
 
   //kill any hints.  yes this is done because im paranoid about shutdown code!
   Application.CancelHint;
@@ -4702,7 +4540,7 @@ begin
     _MediaSearch.BuildPageControl(@ROM, @Emu, nil);
     TimerAutoMove.Enabled := _MediaSearch.AutoMove;
 
-  End;    
+  End;
      
 end;
 
@@ -6206,6 +6044,135 @@ begin
 end;
 
 {-----------------------------------------------------------------------------}
+procedure TMainFrm.joysticktimerTimer(Sender: TObject);
+  var  Node: PVirtualNode;
+  var wnd : TVirtualStringTree;
+   myjoy: tjoyinfo;
+begin
+  joygetpos(joystickid1,@myjoy);
+  if (GetForegroundWindow = self.Handle) and (VTRoms.focused or VTdir.focused )  then
+    begin
+     if (myjoy.wxpos< 10000)   and VTRoms.Focused then
+     Begin
+        VTdir.SetFocus;
+        wnd := VTdir;
+     end
+
+     else if (myjoy.wxpos > 60000)  and VTDir.Focused then  //right
+     Begin
+       VTROMs.SetFocus;
+       wnd := VTROMs;
+     end;
+      
+      if (myjoy.wypos > 60000) and (VTROMs.Focused) then
+      begin
+        VTROMs.SetFocus;
+        keybd_event(VK_DOWN, 0, WM_KEYDOWN, 0);
+        Node := VTROMs.GetFirstSelected();
+        VTROMs.ScrollIntoView(Node, true);
+      end
+
+      else if (myjoy.wypos< 10000)  and (VTROMS.Focused) then
+      begin
+        VTROMs.SetFocus;
+        keybd_event(VK_UP, 0, WM_KEYDOWN, 0);
+        Node := VTROMs.GetFirstSelected();
+        VTROMs.ScrollIntoView(Node, true);
+      end
+
+      else if (myjoy.wypos> 60000) and (VTdir.Focused) then
+      begin
+        VTdir.SetFocus;
+        keybd_event(VK_DOWN, 0, WM_KEYDOWN, 0);
+        Node := VTdir.GetFirstSelected();
+        VTdir.ScrollIntoView(Node, true);
+      end
+
+      else if (myjoy.wypos< 10000)  and (VTdir.Focused) then
+      begin
+        VTdir.SetFocus;
+        keybd_event(VK_UP, 0, WM_KEYDOWN, 0);
+        Node := VTdir.GetFirstSelected();
+        VTdir.ScrollIntoView(Node, true);
+      end
+  end;
+end;
+
+
+   
+procedure TMainFrm.MMJOY1BUTTONDOWN (var LocMessage: TMMJoyStick);
+  var  Node: PVirtualNode;
+  var wnd : TVirtualStringTree;
+
+  begin
+    if GetForegroundWindow = self.Handle then
+    begin
+      begin
+        if VTROMs.Focused  then
+        begin
+          if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+          begin //expand
+            if VTROMs.Expanded [ VTROMs.GetFirstSelected() ] then
+            begin
+              VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := false;
+            end
+          else
+          begin
+            VTROMs.Expanded [ VTROMs.GetFirstSelected() ] := true;
+          end;
+        end
+        else if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+        begin //run
+          SendMessage(VTROMs.Handle,WM_KEYDOWN,VK_RETURN,0);
+        end
+      end;
+
+      if VTdir.Focused then
+      begin
+        if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+        begin //expand
+          if VTDir.Expanded [ VTdir.GetFirstSelected() ] then
+          begin
+            VTdir.Expanded [ VTdir.GetFirstSelected() ] := false;
+          end
+        else
+        begin
+          VTdir.Expanded [ VTdir.GetFirstSelected() ] := true;
+        end;
+      end
+    end
+
+    else if pgMediaPanel.Focused then
+    begin
+     if ((LocMessage.Buttons and joy_button1)=joy_button1) then
+     begin //expand
+       pgMediaPanel.SelectNextPage(True) ;
+     end;
+
+     //joy2 is going to go backwards through tabs, but there is no 'selectPreviousPage' type method
+     //  so deal with it manually including what happens when we go off the left side of array
+      if ((LocMessage.Buttons and joy_button2)=joy_button2) then
+     begin //expand
+       if pgMediaPanel.ActivePageIndex > 0  then
+         pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.ActivePageIndex-1]
+       else pgMediaPanel.ActivePage := pgMediaPanel.Pages[pgMediaPanel.PageCount-1]
+     end;
+
+      end
+
+
+    end
+  end;
+end;
+
+
+procedure TMainFrm.MMJOY1MOVE (var LocMessage: TMMJoyStick);
+begin
+    if  not VTDir.Focused and not VTROMs.Focused then  //right
+     Begin
+       VTDir.SetFocus;
+     end;
+end;
 
 procedure TMainFrm.TimerAutoMoveTimer(Sender: TObject);
 var
@@ -6257,3 +6224,4 @@ end;
 
 
 end.
+

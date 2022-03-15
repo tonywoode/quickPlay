@@ -231,7 +231,7 @@ var
 begin
   if DirectoryExists(ExtractFilePath(_Path)) then
   begin
-  select := PAnsiChar('/select,' + _Path)   ;
+  select := PAnsiChar('/select,"' + _Path + '"')   ;
   //JCLShell.ShellExecEx(ExtractFilePath(_path))
 
   ShellExecute(0, nil, 'explorer.exe', select, nil,

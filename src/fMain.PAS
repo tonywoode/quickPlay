@@ -3152,8 +3152,11 @@ end;
 procedure TMainFrm.ActClearRomsExecute(Sender: TObject);
 begin
   if fileexists(GetSelectedTxt) then
-    If DeleteFile(GetSelectedTxt) then
-      FillRoms(GetSelectedTxt);
+    if MessageDlg(QP_ROMLIST_CLEAR, mtWarning, [mbYes,mbNo], poMainFormCenter) = mrYes then
+      begin
+        If DeleteFile(GetSelectedTxt) then
+        FillRoms(GetSelectedTxt);
+      end;
 end;
 
 {-----------------------------------------------------------------------------}

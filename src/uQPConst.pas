@@ -111,6 +111,9 @@ QP_LINKED_EMU_NOT_FOUND = 'The emulator linked to this ROM was not found.';
 QP_SELECT_ROM = 'Please Select The Rom';
 QP_GM_CHOICE_ERROR = 'Unable to determine which ROM to launch, fatal error!';
 
+//RomList Realted
+QP_ROMLIST_CLEAR = 'are you sure that you want to clear the ROM list?';
+
 //ratings
 QP_RATING_5 = '5 - Excellent';
 QP_RATING_4 = '4 - Good';

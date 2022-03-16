@@ -116,7 +116,10 @@ object FrmEmuDlg: TFrmEmuDlg
     ExplicitWidth = 664
     object TabConfiguration: TTabSheet
       Caption = 'Emulator Configuration'
+      ExplicitLeft = 0
+      ExplicitTop = 0
       ExplicitWidth = 656
+      ExplicitHeight = 0
       object VTEmuOpt: TVirtualStringTree
         Left = 0
         Top = 0
@@ -162,7 +165,7 @@ object FrmEmuDlg: TFrmEmuDlg
           end
           item
             Position = 1
-            Width = 382
+            Width = 386
             WideText = 'Value'
           end>
       end
@@ -171,7 +174,6 @@ object FrmEmuDlg: TFrmEmuDlg
       Caption = 'Media Configuration'
       ImageIndex = 1
       OnExit = TabMediaConfigExit
-      ExplicitWidth = 656
       object lblSysImage: TLabel
         Left = 10
         Top = 73

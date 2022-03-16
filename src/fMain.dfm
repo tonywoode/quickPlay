@@ -277,10 +277,6 @@ object MainFrm: TMainFrm
         object TabSearches: TTabSheet
           Caption = 'Searches'
           ImageIndex = 3
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 853
           object ToolBar1: TToolBar
             Left = 0
             Top = 0
@@ -306,7 +302,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 849
+            Height = 949
             Align = alClient
             DefaultNodeHeight = 20
             DragType = dtVCL
@@ -342,11 +338,10 @@ object MainFrm: TMainFrm
             OnGetImageIndex = VTSearchesGetImageIndex
             OnGetPopupMenu = VTSearchesGetPopupMenu
             OnNewText = VTSearchesNewText
-            ExplicitHeight = 824
             Columns = <
               item
                 Position = 0
-                Width = 201
+                Width = 197
                 WideText = 'Caption'
               end>
           end
@@ -354,15 +349,11 @@ object MainFrm: TMainFrm
         object TabEmus: TTabSheet
           Caption = 'Emulators'
           ImageIndex = 1
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 853
           object VTEmus: TVirtualStringTree
             Left = 0
             Top = 25
             Width = 201
-            Height = 853
+            Height = 953
             Align = alClient
             DefaultNodeHeight = 20
             Header.AutoSizeIndex = 0
@@ -388,7 +379,6 @@ object MainFrm: TMainFrm
             OnGetPopupMenu = VTEmusGetPopupMenu
             OnInitChildren = VTEmusInitChildren
             OnInitNode = VTEmusInitNode
-            ExplicitHeight = 828
             Columns = <>
           end
           object PanEmuChk: TPanel
@@ -415,10 +405,6 @@ object MainFrm: TMainFrm
         object TabTools: TTabSheet
           Caption = 'Tools'
           ImageIndex = 2
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 853
           object ToolBarTools: TToolBar
             Left = 0
             Top = 0
@@ -448,7 +434,7 @@ object MainFrm: TMainFrm
             Left = 0
             Top = 29
             Width = 201
-            Height = 849
+            Height = 949
             Align = alClient
             DefaultNodeHeight = 24
             Header.AutoSizeIndex = 0
@@ -475,7 +461,6 @@ object MainFrm: TMainFrm
             OnGetImageIndex = vtToolsGetImageIndex
             OnGetPopupMenu = vtToolsGetPopupMenu
             OnMouseDown = vtToolsMouseDown
-            ExplicitHeight = 824
             Columns = <>
           end
         end
@@ -1657,6 +1642,7 @@ object MainFrm: TMainFrm
     end
     object PopDelRom: TMenuItem
       Action = ActDelRom
+      Caption = '&Remove ROM from Romlist'
     end
     object popClear: TMenuItem
       Action = ActClearRoms

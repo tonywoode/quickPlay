@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvAppFrm" Design="0">
+  <Description>JVCL Application and Form Components Runtime Package</Description>
+  <GUID>{E00CE13F-DE42-43C5-AEC9-57C655403758}</GUID>
+  <C6PFlags>-LUJcl -LUJclVcl</C6PFlags>
+  <C6Libs/>
+  <ImageBase>49020000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="all" Condition=""/>
+    <Package Name="JvSystem-R" Targets="all" Condition=""/>
+    <Package Name="JvCtrls-R" Targets="all" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="JclVcl" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="vcljpg" Targets="c6,c6p,d6,d6p,d7,d7p,d9,d9p,d10,d10p,d11" Condition=""/>
+    <Package Name="vclimg" Targets="allv12up" Condition=""/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvGradientCaption.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvAnimTitle.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvAppAnimatedIcon.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvAppEvent.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvAppHotKey.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormAnimatedIcon.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormAnimation.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormAutoSize.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormMagnet.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormTransparent.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvFormWallpaper.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvEmbeddedForms.pas" Targets="all" Formname="" Condition=""/>
+  </Contains>
+</Package>

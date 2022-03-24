@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvPrintPreview" Design="0">
+  <Description>JVCL Print Preview Components Runtime Package</Description>
+  <GUID>{08661E45-2C90-4301-A95E-77C50EE00CAF}</GUID>
+  <C6PFlags>-LUJcl</C6PFlags>
+  <C6Libs/>
+  <ImageBase>49A40000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="VCL" Condition=""/>
+    <Package Name="JvStdCtrls-R" Targets="VCL" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="vclx" Targets="allv6up" Condition=""/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvPrvwRender.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvPrvwDoc.pas" Targets="VCL" Formname="" Condition=""/>
+  </Contains>
+</Package>

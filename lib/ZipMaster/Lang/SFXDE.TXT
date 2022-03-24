@@ -1,0 +1,126 @@
+// language id
+LANG_ID='07 04'
+
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Überschreiben bestätigen
+
+// message
+FILEEXISTS_MESSAGE=Existierende Datei >< überschreiben?
+// buttons 
+YES=&Ja
+NO=&Nein
+// don't ask again check
+DONT_ASK_AGAIN=Nicht mehr &fragen
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32	
+
+// extract folder label 
+EXTRACT_TO=E&ntpacken in:
+// "files" label
+FILES=&Dateien:
+// overwrite action label
+EXISTING_FILES=Vorhandene Dateien:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Fragen
+// skip
+OVERWRITE_SKIP=N&icht überschreiben
+// overwrite
+OVERWRITE_DO=Übe&rschreiben
+// about button
+ABOUT_BUTTON=Üb&er DelZip...
+// show files button
+SHOW_FILES_BUTTON=Dateien &zeigen
+// start extraction button
+START_BUTTON=&Start
+// close button
+CLOSE_BUTTON=Sch&ließen
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Nach dem Entpacken ausführen: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Nach dem Entpacken installieren: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Kennwort eingeben:
+
+// password message
+PASSWORD_MESSAGE=Kennwort für >< eingeben:
+// buttons
+OK=Ok
+CANCEL=&Abbruch
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=Über DelZip Selbstentpackendes Archiv...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nDie Autoren : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits an :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson u.a.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Entpacken abgeschlossen.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Fehler
+
+// cannot close
+ERR_CANNOT_CLOSE=Kann >< nicht schließen
+// error reading archive
+ERR_READING_ARCHIVE=Fehler beim Lesen des Archivs ><.
+// invalid filename
+ERR_FILENAME=Ungültiger Dateiname.
+// failed processing directory
+ERR_DIRECTORY=Kann Verzeichnis >< nicht erstellen
+// unknown compression type
+ERR_COMPRESSION_TYPE=Unbekannter Kompressionstyp
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Fehlerhaftes Archiv, bitte versuchen Sie, es erneut zu downloaden.
+// cannot open file
+ERR_CANNOT_OPEN=Kann >< nicht öffnen
+// cannot write to file
+ERR_CANNOT_WRITE=Kann nicht nach >< schreiben
+// couldn't run program
+ERR_COULDNT_RUN=Konnte >< >< nicht ausführen
+// couldn't install app
+ERR_COULDNT_INSTALL=Konnte >< >< nicht installieren
+// CRC32 Error in ><
+ERR_CRC32=CRC32-Prüfsummenfehler in ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Dateiname
+// file size
+FILESIZE=Größe
+
+// default title
+DEFAULT_TITLE=DelZip Selbstentpackendes Archiv
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Bitte wählen Sie das Zielverzeichnis
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Alle Dateien wurden entpackt.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Einige Dateien konnten nicht entpackt werden.
+// these files not extracted
+THESE_NOT_EXTRACTED=Die markierten Dateien konnten nicht entpackt werden.
+
+// ask on cancellation
+CANCEL_QUESTION=Wollen Sie das Entpacken abbrechen?
+
+// change disk volume
+INSERT_VOLUME=Bitte legen Sie Diskette >< in Laufwerk >< ein

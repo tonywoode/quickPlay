@@ -1,0 +1,75 @@
+Recent changes
+1.79.10.22
+  D2009 Bug fix
+1.79.10.16
+  Bug fix - won't list if garbage on end.
+
+1.79.10.14
+  All versions use hash list
+
+1.79.10.12
+  Delphi 6 up - use hash list to speed up finding entries
+     Property Entry[const Name: String]: pZipDirEntry;
+
+1.79.10.09
+  Change to Rename - it now allows changing the file comment- 
+- Setting a new comment goes in the new comment field
+- Removing the comment requires NComment = #0;   (char zero)
+- Leaving the comment unchanged (e.g. only change the filename) set Ncomment = ''; ( empty string).
+
+1.79.10.07
+  Change to Rename 
+  TZMRenameOpts = (htrDefault,  // does substring matches, will do all that apply
+		   htrOnce, 	// will only change each entry once
+		   htrFull);	// will only match the full name
+
+function TZMWorker.Rename(RenameList: TList; DateTime: Integer; How:
+    TZMRenameOpts = htrDefault): Integer;
+
+1.79.10.01
+Compile with D2009
+  Only the main source has been updated - not the tools or SFX
+
+1.79.08.06
+DLL encryption bug fix
+added missing SFX??.bin files
+  SFX_UPX.zip - compressed with UPX ** Note may cause false positives for Virus
+  SFX_STD.zip - not compressed (safer but larger)
+added alternate component resources ZMRes_nodll.* that does not have compressed dll
+
+1.79.08.02
+To avoid Vista complications the installer DOES NOT install the packages into the IDE.
+Fixed problem renaming (changing dates) encrypted files
+
+Changed folder layout - only need to add the installed root path to search path
+Various fixes for Delphi 2007
+Demos updated to not need the SortGrid installed (its source is still required)
+SortGrid updated
+
+1.79.07.06
+Fixed problem replacing SFX icons under BDS 4.0
+Added HTML help
+Additional Windows error information added to some errors (more to come)
+
+1.79.06.01
+Fixed problem in CopyZippedFiles - asked overwrite when it should not
+
+1.79.05.01
+Fixed
+  wrong file name with single part 'span'
+  
+1.79.02.03
+Fixed
+  more problems with very large files (2 - 4G)
+  dll problems with very large files
+  Demo6 problem with Delphi5
+  
+1.79.01.02
+Fixed
+  problems with very large zip files if Range checks enabled
+  reduced debugging conversion exceptions under D4/D5
+  Demos under D4
+Changed 
+  Setup name to reflect the version
+
+       

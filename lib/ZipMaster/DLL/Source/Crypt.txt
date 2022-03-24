@@ -1,0 +1,16 @@
+Encrypted Archive Support - new in v1.30
+
+Thanks to Mike Wilkey <mtw@allways.net> for his very useful source
+code and helpful comments.  He basically got this functionality
+working by himself.  I just plugged in his result to TZipMaster.
+
+The source for the actual encryption algorithm is the overseas link
+pointed-to by InfoZip.  I have learned that this is NOT being controlled
+by the US government, so I am including it with this release.
+
+Specifically, I used the crypt.c and crypt.h files from this version
+of the InfoZip code:  ZCRYPT27.ZIP
+
+I added a few lines of code to assist in debugging, but the
+bulk of the code is unchanged.
+

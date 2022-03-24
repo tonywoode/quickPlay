@@ -1,0 +1,219 @@
+#include "ZipMsg.h"
+
+// updates provided by Sólya Zoltán (soyos@freestart.hu) 2007-09-06
+// edited R.Peters 2005-11-28
+
+STRINGTABLE LANGUAGE 0x0E, 1 // 040E
+{
+DT_Language,        "HU: Hungarian";
+DT_Author,          "Sólya Zoltán";
+DT_Desc,            "Magyar nyelvi fájl";
+
+GE_FatalZip,        "Súlyos hiba a DLL fájlban: A program futása befejezõdött";
+GE_NoZipSpecified,  "Hiba - nincs megadva az archívum!";
+GE_NoMem,           "Nincs elég memória";
+GE_WrongPassword,   "Hiba - a jelszavak nem egyeznek\nJelszó figyelmen kívül hagyva";
+GE_CopyFile,        "Másolás: ";
+GE_Except,          "Váratlan kivétel történt ";
+GE_Reentered,       "Dolgozom, a további utasítások végrehajtása bizonytalan!";
+GE_Busy,            " Dolgozom, kérem várjon";
+GE_Inactive,        "nem aktív";
+GE_RangeError,      "Az érték (%d) a megadott 1..%d tartományon kívül van";
+GE_TempZip,         "Ideiglenes archívum: %s";
+GE_WasBusy,         "Dolgozom + %s";
+GE_EventEx,         "Váratlan kivétel ";
+GE_DLLAbort,        "DLL Hiba - Megszakítva";
+GE_DLLBusy,         "DLL Hiba - Dolgozom";
+GE_DLLCancel,       "DLL Hiba - Felhasználói megszakítás";
+GE_DLLMem,          "DLL Hiba - Nincs elég memória";
+GE_DLLStruct,       "DLL Hiba - Érvénytelen szerkezet";
+GE_DLLEvent,        "DLL Hiba - Váratlan kivétel ";
+GE_DLLCritical,     "kritikus DLL hiba %d";
+GE_Unknown,         " Ismeretlen hiba %d";
+GE_Skipped,         "Átlépve %s %d";
+
+RN_ZipSFXData,      "Hiba az SFX fejléc másolása közben";
+RN_NoRenOnSpan,     "Több kötetes archívumban nem nevezhetõk át a fájlok";
+RN_ProcessFile,     "Feldolgozás: ";
+RN_RenameTo,        " új név: ";
+RN_InvalidDateTime, "A következõ fájlban hibás a dátum/idõ érték: ";
+
+PW_UnatAddPWMiss,   "Hiba - nincs jelszó megadva a becsomagoláshoz";
+PW_UnatExtPWMiss,   "Hiba - nincs jelszó megadva a kicsomagoláshoz";
+PW_Caption,         "Jelszó megadása";
+PW_MessageEnter,    "Jelszó ";
+PW_MessageConfirm,  "Jelszó újra ";
+PW_ForFile,         " fájl számára: ";
+
+CF_SourceIsDest,    "A kiinduló fájl ugyanaz mint a célfájl!";
+CF_OverwriteYN,     "Felülírjam a(z) '%s' fájlt a(z) '%s' archívumban?";
+CF_CopyFailed,      "A(z) '%s' nevû fájlból a(z) '%s' fájlba történõ másolás nem sikerült";
+CF_SourceNotFound,  "A(z) '%s' nem található a(z) '%s' fájlban!";
+CF_SFXCopyError,    "Hiba az SFX adatok másolása közben";
+CF_DestFileNoOpen,  "A cél archívumot nem tudom megynyitni!";
+CF_NoCopyOnSpan,    "CopyZippedFiles több kötetes archívumon nem hajtható végre";
+
+LI_ReadZipError,    "Keresési hiba az archívum olvasása közben!";
+LI_ErrorUnknown,    "Ismeretlen hiba a List() függvényben\n";
+LI_WrongZipStruct,  "Figyelem - Hiba az archívum szerkezetében!";
+LI_GarbageAtEOF,    "Figyelem - szemét van az archívum végén!";
+LI_FileTooBig,      "A fájl nagyobb mint 4GB";
+LI_MethodUnknown,   "Ismeretlen tömörítési eljárás";
+
+ZB_Yes,             "&Igen";
+ZB_No,              "&Nem";
+ZB_OK,              "&OK";
+ZB_Cancel,          "&Mégse";
+ZB_Abort,           "Megsz&akítás";
+ZB_Retry,           "Új&ra";
+ZB_Ignore,          "&Felfüggeszt";
+ZB_CancelAll,       "Mégse";
+ZB_NoToAll,         "Egyiket sem";
+ZB_YesToAll,        "Mindet";
+
+AD_NothingToZip,    "Hiba - nincsenek fájlok kijelölve!";
+AD_UnattPassword,   "A mûvelet nem lehetséges jelszó megadása nélkül";
+AD_NoFreshenUpdate, "AddFreshen vagy AddUpdate több kötetes fájlokon nem hajtható végre";
+AD_AutoSFXWrong,    "Hiba %.1d keletkezett az automatikus SFX készítés közben.";
+AD_InIsOutStream,   "A kimenethez nem lett beállítva bemeneti adat";
+AD_InvalidName,     "Helyettesítõ karakterek nem megengedettek a fájlnevekben";
+AD_NoDestDir,       "A megadott célkönyvtárnak ('%s') léteznie kell!";
+
+DL_NothingToDel,    "Hiba - a törléshez nincsenek kiválasztva a fájlok";
+DL_NoDelOnSpan,     "Több kötetes arhívumokból nem törölhetõk fájlok";
+
+EX_FatalUnZip,      "Súlyos hiba az UnzDLL.DLL fájlban: A program futása befejezõdött";
+EX_UnAttPassword,   "Figyelem - nincs megadva jelszó: nem minden fájlt lehet kitömöríteni";
+EX_NoExtrDir,       "A(z) '%s' célkönyvtárnak léteznie kell";
+
+LD_NoDll,           "Hiba a(z) %s betöltése közben";
+LD_BadDll,          "Nem lehet betölteni, régi vagy sérült állomány: %s";
+LD_DllLoaded,       "%s betöltve";
+LD_DllUnloaded,     "%s eltávolítva";
+
+SF_StringTooLong,   "Hiba - A felsorolt négy tulajdonság közül, egy vagy több túllépte a 255 karaktert!";
+SF_NoZipSFXBin,     "Hiba: A(z) '%s' SFX törzs nem található!";
+SF_InputIsNoZip,    "Hiba: a bemeneti fájl nem archívum";
+SF_NoSFXSupport,    "Az SFX függvények nem támogatottak";
+SF_MsgTooLong,      "Az SFX üzenet túllépte a 255 karaktert!";
+SF_DefPathTooLong,  "Az SFX alapértelmezett útvonala túllépte a 255 karaktert!";
+SF_DlgTitleTooLong, "Az SFX párbeszédablak címsora túllépte a 255 karaktert!";
+SF_CmdLineTooLong,  "Az SFX parancssor túllépte a 255 karaktert!";
+SF_FBkPathTooLong,  "Az SFX tartalék útvonal túllépte a 255 karaktert!";
+
+CZ_NoExeSpecified,  "Hiba - nincs megadva az .EXE fájl";
+CZ_InputNotExe,     "Hiba: a megadott állomány nem valódi .EXE fájl";
+CZ_SFXTypeUnknown,  "Hiba az SFX archívum típusának meghatározása során";
+CZ_WrongConvert,    "ZIP-bõl EXE-t, EXE-bõl ZIP-et lehet csak konvertálni";
+CZ_UnknownHeader,   "Ismeretlen SFX fejléc a(z) %s fájlban";
+CZ_BrowseError,     "Hiba az erõforrások tallózása közben.";
+CZ_NoExeResource,   "Hiba a futtatható állomány olvasása közben.";
+CZ_ExeSections,     "Hiba a futtatható rész olvasása közben.";
+CZ_NoExeIcon,       "Nincs ikon a futtatható állományban.";
+CZ_NoIcon,          "Nincs ikon.";
+CZ_NoCopyIcon,      "Az ikon nem másolható.";
+CZ_NoIconFound,     "Nincs azonos ikon.";
+
+DS_NoInFile,        "A bemeneti állomány nem található";
+DS_FileOpen,        "Az archívumot nem lehet megnyitni";
+DS_NotaDrive,       "Érvénytelen meghajtó: %s";
+DS_DriveNoMount,    "%s meghajtó nincs megadva";
+DS_NoVolume,        "Nincs megadva a kötetcimke";
+DS_NoMem,           "Kevés a memória a párbeszédablak megjelenítéséhez";
+DS_Canceled,        "Felhasználói megszakítás";
+DS_FailedSeek,      "Keresési hiba a bemeneti fájlban";
+DS_NoOutFile,       "A kimeneti állomány létrehozása sikertelen";
+DS_NoWrite,         "Írási hiba a kimeneti állományban";
+DS_EOCBadRead,      "Hiba a központi címtár végének olvasásakor";
+DS_LOHBadRead,      "Hiba egy helyi fejléc olvasásakor";
+DS_CEHBadRead,      "Hiba egy központi fejléc olvasásakor";
+DS_LOHWrongSig,     "Egy helyi fejléc aláírás hibás";
+DS_CEHWrongSig,     "Egy központi fejléc aláírás hibás";
+DS_LONameLen,       "Hiba egy helyi fájlnév olvasásakor";
+DS_CENameLen,       "Hiba egy központi fájlnév olvasásakor";
+DS_LOExtraLen,      "Hiba egy helyi bõvitett mezõ olvasásakor";
+DS_CEExtraLen,      "Hiba egy központi bõvitett mezõ olvasásakor";
+DS_DataDesc,        "Hiba egy adat leíró terület írása/olvasása közben";
+DS_ZipData,         "Hiba a tömörített adatok olvasása közben";
+DS_CECommentLen,    "Hiba egy fájlhoz tartozó leírás olvasásakor";
+DS_EOArchComLen,    "Hiba az archívumhoz tartozó leírás olvasásakor";
+DS_ErrorUnknown,    "Ismeretlen hiba a következõ függvényekben: ReadSpan(), WriteSpan(), ChangeFileDetails() vagy CopyZippedFiles()\n";
+DS_NoUnattSpan,     "A felügyelet nélküli több lemezes archívum nem támogatott";
+DS_EntryLost,       "Egy helyi fejléc nem található a belsõ szerkezetben";
+DS_NoTempFile,      "Ideiglenes fájl nem hozható létre";
+DS_LOHBadWrite,     "Hiba egy helyi fejléc írásakor";
+DS_CEHBadWrite,     "Hiba egy központi fejléc írásakor";
+DS_EOCBadWrite,     "Hiba a központi címtár végének írásakor";
+DS_ExtWrongSig,     "Hiba egy helyi kiterjesztett fejléc aláírás olvasásakor";
+DS_NoDiskSpace,     "Ezen a lemezen nincs elég szabad hely";
+DS_InsertDisk,      "Helyezze be az utolsó lemezt";
+DS_InsertVolume,    "Helyezze be a(z) %.1d. lemezt a(z)%.1d lemezbõl";
+DS_InDrive,         "\na következõ meghajtóban: %s";
+DS_NoValidZip,      "Ez a fájl sérült, vagy nem valódi archívum";
+DS_FirstInSet,      "Ez egy mentési készlet elsõ lemeze,\nkérem helyezze be az utolsó lemezt";
+DS_NotLastInSet,    "Ez egy mentési készlet %d. lemeze,\nkérem helyezze be az utolsó lemezt";
+DS_AskDeleteFile,   "Már létezik egy ilyen nevû fájl: '%s'\nFelülírjam?";
+DS_AskPrevFile,     "Figyelem: Ez az elõzõ lemez, nem a %d.!!!\nBiztosan felül akarja iratni?";
+DS_NoSFXSpan,       "Hiba - az önkicsomagoló fájlokat nem lehet több kötetre bontani";
+DS_CEHBadCopy,      "Hiba egy fájlnévnek a központi fejlécbõl történõ másolása közben";
+DS_EOCBadSeek,      "Keresési hiba egy központi címtár végére lépés közben";
+DS_EOCBadCopy,      "Hiba az archívumhoz tartozó leírás másolásakor";
+DS_FirstFileOnHD,   "Ez egy mentési készlet elsõ fájlja,\nkérem válassza ki az utolsó fájlt";
+DS_InsertAVolume,   "Helyezze be a következõ lemezt: %.1d";
+DS_CopyCentral,     "Központi címtár";
+DS_NoDiskSpan,      "DiskSpanning nem támogatott";
+DS_UnknownError,    "Ismeretlen hiba";
+DS_NoRenamePart,    "A hátralévõ rész : %s";
+DS_NotChangeable,   "Nem írható a(z) %s";
+
+FM_Erase,           "%s törlése";
+FM_Confirm,         "Rendben";
+
+ED_SizeTooLarge,    "A FileExtraData nagyobb mint a tömb legnagyobb mérete";
+
+CD_NoCDOnSpan,      "ChangeFileDetails több kötetes archívumokon nem hajtható végre";
+CD_NoEventHndlr,    "Nincs eseménykezelõ a fájl tulajdonságok módosításához";
+CD_LOExtraLen,      "Hiba egy helyi bõvitett mezõ írásakor";
+CD_CEExtraLen,      "Hiba egy központi bõvitett mezõ írásakor";
+CD_CEComLen,        "Hiba egy fájlhoz tartozó leírás írásakor";
+CD_CEHDataSize,     "A Központi Címtár + Fájlnév + Fájl leírás + Bõvitett adatok mérete túllépte a 65535-öt";
+CD_Changing,        "A következõ fájl tulajdonságainak módosítása: ";
+CD_DuplFileName,    "A fájlnév már létezik: %s";
+CD_NoProtected,     "Titkosított fájl tulajdonságait nem lehet módosítani";
+CD_InvalidFileName, "Érvénytelen fájlnév: '%s'";
+CD_NoChangeDir,     "Az útvonal nem módosítható";
+CD_FileSpecSkip,    "A következõ fájlok kihagyva: '%s'";
+
+DU_InvalidName,     "Érvénytelen név: '%s'";
+DU_WrongMethod,     "'%s' tömörítési módja nem támogatott";
+
+PR_Archive,         "*Arhiválásra kész";
+PR_CopyZipFile,     "*Archívum másolása";
+PR_SFX,             "*SFX";
+PR_Header,          "*??";
+PR_Finish,          "*Befejezés";
+PR_Copying,         "*Másolás";
+PR_CentrlDir,       "*Központi címtár";
+PR_Checking,        "*Ellenõrzés";
+PR_Loading,         "*Címtár betöltése";
+PR_Joining,         "*Hozzáadás egy több kötetes fájlhoz";
+PR_Splitting,       "*Több kötetre bontás";
+
+
+DZ_Skipped,         "A következõ fájlok kihagyva: '%s'";
+DZ_InUse,           "A(z) '%s' már használatban van, nem lehet megnyitni";
+DZ_Refused,         "A(z) '%s' megnyitása nem engedélyezett";
+DZ_NoOpen,          "A(z) '%s' megnyitása nem lehetséges";
+DZ_NoFiles,         "fájlok nem találhatóak";
+DZ_SizeChanged,     "'%s' mérete megváltozott";
+DZ_InvalidName,     "A(z) '%s' név nem megfelelõ";
+DZ_TooBig,          "túl nagy állomány";
+
+WZ_DropDirOnly,     "%d üres könyvtár kihagyva";
+WZ_NothingToWrite,  "Nem lett kiírva semmi";
+
+TM_Erasing,         "EraseFloppy - %s törlése";
+TM_Deleting,        "EraseFloppy - %s törlése";
+TM_GetNewDisk,      "Nyomkövetés : GetNewDisk megnyitása: %s";
+TM_SystemError,     "Rendszerhiba: %d";
+}

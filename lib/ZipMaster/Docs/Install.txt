@@ -1,0 +1,223 @@
+Delphi Zip
+Version 1.79
+Updated October 5, 2008 
+D2009
+	It is best to install into a different folder to any other versions.
+	I would suggest <Public Documents>\RadStudio\6.0\ZM179 {or Zipmaster179 if you prefer being verbose}
+
+Updated August 20, 2007
+
+NEW: Now supports Delphi 2006! 
+DOES NOT support before Delphi 4
+
+If you already have an earlier version installed, remove it before you
+install this.  Make sure you rebuild the Component library with the updated
+ VCLs included with this release.
+
+To avoid Vista complications the installer DOES NOT install the packages into the IDE.
+The components not need to be opened and installed from the IDE.
+
+This is a complete release, so you DO NOT need to have any prior   
+version before installing this release.
+
+Instructions for manual installation - don't know why you would want too but...
+ 
+These instructions assume a base directory of <ZipMstr179> but the proper directory should be substituted.
+
+The safest destination to install these files is off the default 'projects' directory
+- the exact path depends upon the Delphi and Windows versions!
+
+
+IMPORTANT!
+----------
+You need to copy the redistributable modules to your desired
+directory on your development computer.  
+
+Copy <ZipMstr179>\DLL\DelZip179.DLL to your Windows System directory.
+Copy <ZipMstr179>\SFX\SFX\dzsfx??.BIN to your Windows System directory. ??=language
+
+
+Unsupported Properties
+----------------------
+Since I normally use the latest Delphi release, sometimes new properties
+of Delphi's VCLs will get saved with DFM files.  Please tell it to
+"Ignore" and "Property not found" type of error you may see.
+
+Changed Event Signitures
+------------------------
+Because of support for larger files some handlers will now use int64.
+Please tell it to "ignore".
+
+Installation
+------------
+
+This is one of the biggest freeware software releases for Delphi and
+C++ Builder.  To get going quickly and correctly, please follow these
+instructions.  Read them over once before starting.  If you don't
+understand a step, get help before you start the install!
+
+   Please un-install the old version first 
+
+1. You MUST install this package on a computer that has Delphi (any 
+   version from 4 thru 7).
+
+2. The VCLs included with this release are:
+      TZipMaster - the main ZIP support VCL
+      TSortGrid  - a very handy descendant from TStringGrid
+      TZipSFX - a zip <> exe converter
+
+    The files required to support these VCLs are located in the
+    VCL subdirectory  
+    You have two choices for how to proceed
+    (option A is recommended):
+
+	  A) add the directories <ZipMstr179>\Source 
+                  to your VCL search path
+         IMPORTANT! If you have the non-beta C:\ZIP\VCL path on
+         your system, you should remove it from the search path.
+                             or
+	  B) copy the files in <ZipMstr179>\ to another directory already
+         in your VCL search path
+
+    If you want to use option A, the instructions for this are
+    included below.  If you want option B, then please copy those
+    files now.
+  
+
+3.  Install the VCLs       
+
+    This procedure will install the VCLs into the IDE.  After
+    this, you will be able to see them on the "DelphiZip" tab.
+    Un-install old version(s) first.
+
+  
+    Delphi 4, 5, 6, and 7:
+      Here's some new instructions that will install into a new package.
+    Preferred method
+      1) From the Delphi directory 
+         a) open, build and install ZipMaster179D?.dpk (where ? is Delphi version) Design and Run-Time package
+      
+    OR
+      1) Menu | Component | Install Component...
+        a) Tab->Into New package
+        b)   Package file name:   ZipMaster179
+        c)   Package description: Freeware Zip and Unzip package
+        d)   Unit Filename:  Choose Browse and select ZipMstr.pas 
+                             from the directory where you put it in.
+        e)   Click Ok
+
+	 ( Message "ZipMaster.bpl will be built then installed", Continue )
+
+	 2) Click No
+
+	 3) Menu |Comoponent | Install Component...
+		a) Tab->Into Existing package
+		b)   Unit Filename:  Choose Browse and select    
+            	ZMCore.pas		 
+            	ZMDBind.pas		 
+            	ZMMsgStr.pas	 
+            	ZMSBind.pas		  
+            	ZMWrkr.pas		 
+            	ZMXcpt.pas		 
+            	ZMDlg.pas		 
+            	ZMCtx.pas		  
+            	ZMDelZip.pas	  
+            	ZMExtrLZ77.pas	  
+            	ZipStructs.pas	  
+		        ZMDefMsgs.pas	 
+	            ZipMsg.pas		 
+        	    ZMUtils.pas		  
+	            ZipSFX.pas		    
+            	SFXInterface.pas	  
+            	SFXStructs.pas	  
+	    	    DZUtils.pas	 
+			 from the directory where you put it in.
+		c)   Click Ok
+
+	( Message "ZipMaster.bpl will be built then installed", Continue )
+
+	 4) Click Yes
+
+       After the compilation a message should popup that TZipMaster and TZipSFX
+         have been installed and registered.
+ 
+ 
+
+                            DELPHI DEMO
+
+   NOTE: You should have the compiler option "break on exception"
+   turned off because the demos that use the SortGrid VCL use 
+   exceptions to determine datatypes.  This is only a concern 
+   when running the demo programs from the IDE.
+
+1.  From the IDE, open the project <ZipMstr179>\Demos\Demo1\ZipDemo1.DPR.
+
+    Examine the forms and decide if you need to resize any of
+    the controls, or change the position of anything. This is
+    sometimes necessary if I developed the forms at a different
+    screen resolution than you are using.
+
+    The demo1 program is a fairly straight-forward example
+    of what you can do with this package!  Everything revolves
+    around the TSortGrid, which always shows you the contents 
+    of your ZIP archive.  Use right-click on a column header to
+    do an descending sort, or a left-click for an ascending sort.
+ 
+
+7.  There is a new requirement for programs that you write.  We have
+    put most of our error messages put into a resource file.  You
+    need to add the desired resource file to your project file.
+    Simply add a line like this to your project file:
+
+       {$R ZMRes.res}
+
+    You can see how this was done by checking Demo1's .DPR file. 
+       
+
+                  Deployment of Your Programs
+
+Any program you write using this package will require the Dll
+ DelZip179.DLL to be present of each user's
+hard disk.  You should have your install procedures put this
+file into the WINDOWS SYSTEM directory (which is named differently
+on some systems - especially WinNT systems).  If that isn't 
+possible, then you should put them into the same directory as 
+your .EXE program that uses them.
+
+Also, the dzsfx??.BIN module must be installed into the same
+directory as the DLLs.  This module is only needed if your
+application program needs to make .EXE archives.
+
+IMPORTANT: Any .EXE archives you make with this package do
+NOT need any supporting files on the end-user's computer!
+This is very handy!
+
+Of course, there are no distribution fees for the DLL, or
+any other part of the package.  This whole package is 
+freeware, but does have some minor distribution restrictions
+(mainly that you can't profit from the ZIP DLLs, and you need
+to document where users can get source code).  Please see 
+README.TXT for these restrictions.
+
+See README.TXT for more general information about this release,
+and also check out the DOC subdirectory.
+
+
+                Problem Reports or Suggestions
+
+We DO want to hear your ideas!  If you find a problem with
+any part of this project, or if you just have an idea for us
+to consider, send us e-mail!
+
+But, please make sure that your bug has not already been
+reported.  Check our "official" web sites often:
+
+Old main web page:
+http://www.geocities.com/SiliconValley/Network/2114/
+   
+Latest Versions and changes available at
+http://www.delphizip.org/index.html
+
+Amended and updated by
+R.Peters
+problems@delphizip.org 

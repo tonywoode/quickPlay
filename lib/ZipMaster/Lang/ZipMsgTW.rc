@@ -1,0 +1,126 @@
+#include "ZipMsg.h"
+/*-----------------------------------------------------
+  Traditional Chinese translation for DelpZip v1.60p
+  Translated by Huanlin Tsai, Dec-27-2001.
+  huanlin_tsai@yahoo.com
+-----------------------------------------------------*/
+// edited R.Peters 2005-11-27
+
+STRINGTABLE
+LANGUAGE 0x04,1 // 0404
+{
+  DT_Language,        "TW: Taiwanese"
+  GE_FatalZip,        "致命的錯誤發生於 DelZip179.DLL: abort exception"
+  GE_NoZipSpecified,  "錯誤 - 未指定 Zip 檔案!"
+  GE_NoMem,           "記憶體配置失敗"
+  GE_WrongPassword,   "錯誤 - 密碼不正確\n密碼已被忽略"
+  GE_CopyFile,        "複製: "
+
+  RN_ZipSFXData,      "複製自解檔檔頭資料時發生錯誤"
+  RN_NoRenOnSpan,     "切割的 Zip 檔案不支援重新命名這項功能"
+  RN_ProcessFile,     "正在處理: "
+  RN_RenameTo,        " 重新命名為: "
+
+  PW_UnatAddPWMiss,   "錯誤 - 未提供壓縮時的密碼"
+  PW_UnatExtPWMiss,   "錯誤 - 未提供解壓縮時的密碼"
+  ZB_OK,              "確定(&O)"
+  ZB_Cancel,          "取消(&C)"
+  PW_Caption,         "密碼"
+  PW_MessageEnter,    "輸入密碼 "
+  PW_MessageConfirm,  "確認密碼 "
+  ZB_CancelAll,		    "取消全部"
+  ZB_Abort,			      "放棄"
+  PW_ForFile,			    " for file: "
+
+  CF_SourceIsDest	    "來源與目的是同一個壓縮檔!";
+  CF_OverwriteYN		  "覆蓋檔案 '%s' 在 '%s' ?"
+  CF_CopyFailed		    "無法將檔案 '%s' 複製為 '%s'"
+  CF_SourceNotFound	  "檔案 '%s' 不存在於 '%s'!"
+  CF_SFXCopyError	    "複製 SFX 資料時發生錯誤!"
+  CF_DestFileNoOpen,  "目的壓縮檔無法被開啟!"
+
+  LI_ReadZipError,    "讀取 Zip 檔案時發生 seek error!"
+  LI_ErrorUnknown,    "不明的錯誤發生於 List() 函式\n"
+  LI_WrongZipStruct,  "警告 - Zip 結構錯誤!"
+  LI_GarbageAtEOF,    "警告 - 壓縮檔案結尾處有垃圾資料!"
+
+  AD_NothingToZip,    "錯誤 - 沒有指定檔案!"
+  AD_UnattPassword,   "使用 Unattended 模式必須同時使用密碼"
+  AD_NoFreshenUpdate, "AddFreshen 或 AddUpdate 不能夠使用於切割的壓縮檔"
+  AD_AutoSFXWrong,    "在自動建立自解檔的過程發生錯誤 %.1d"
+//  AD_NoStreamDLL,	    "錯誤 - 您的 ZipDLL.dll 不支援串流操作，請更新至 1.60 以後的版本"
+  AD_InIsOutStream,	  "輸入串流不可被設定至輸出串流"
+  AD_InvalidName,	    "檔案名稱不可以使用萬用字元"
+
+  DL_NothingToDel,    "錯誤 - 未選擇要刪除的檔案"
+
+  EX_FatalUnZip,      "致命的錯誤發生於 DelZip179.DLL"
+  EX_UnAttPassword,   "警告 - Unattended 模式: 可能不會將全部的檔案解壓縮"
+//  EX_NoStreamDLL,     "錯誤 - 您的 UnzDLL.dll 不支援串流操作，請更新至 v1.60 以上的版本"
+
+  LD_DllLoaded,    "%s 動態連結檔已載入"
+//  LZ_NoZipDllExec,    "在 ZIPDLL.DLL 中找不到 ZipDllExec 函式!"
+//  LZ_NoZipDllVers,    "在 ZIPDLL.DLL 中找不到 GetZipDllVersion 函式!"
+  LD_NoDll,        "找不到 %s"
+
+//  LU_UnzDllLoaded,    "UNZDLL 動態連結檔已載入!"
+//  LU_NoUnzDllExec,    "在 UNZDLL.DLL 中找不到 UnzDllExec 函式"
+//  LU_NoUnzDllVers,    "在 UNZDLL.DLL 中找不到 GetUnzDllVersion 函式!"
+//  LU_NoUnzDll,        "找不到 UNZDLL.DLL"
+
+  SF_StringTooLong,    "錯誤 - 以下所列出的字串屬性至少有一個其長度超過 255 個字元"
+  SF_NoZipSFXBin,     "錯誤 - 找不到 %s"
+  SF_InputIsNoZip,    "錯誤 - 輸入的檔案不是 zip 檔"
+
+  CZ_NoExeSpecified,  "錯誤 - 未指定 .EXE 檔案"
+  CZ_InputNotExe,     "錯誤 - 輸入的檔案不是 .EXE 檔"
+  CZ_SFXTypeUnknown,  "無法判斷自解檔的型態"
+
+  DS_NoInFile,        "指定的檔案不存在"
+  DS_FileOpen,        "Zip 檔案無法開啟"
+  DS_NotaDrive,       "無效的磁碟機: %s"
+  DS_DriveNoMount,    "磁碟機未定義: %s"
+  DS_NoVolume,        "無法設定磁碟標籤"
+  DS_NoMem,           "沒有足夠的記憶體以顯示 MsgBox"
+  DS_Canceled,        "使用者取消"
+  DS_FailedSeek,      "檔案指標移動(seek)時發生錯誤"
+  DS_NoOutFile,       "無法建立輸出的檔案"
+  DS_NoWrite,         "檔案寫入失敗"
+  DS_EOCBadRead,      "錯誤 - 讀取 End Of Central Directory"
+  DS_LOHBadRead,      "錯誤 - 讀取 local header"
+  DS_CEHBadRead,      "錯誤 - 讀取 central header"
+  DS_LOHWrongSig,     "Local header 識別符號不正確"
+  DS_CEHWrongSig,     "Central header 識別符號不正確"
+  DS_LONameLen,       "錯誤 - 讀取 local file name"
+  DS_CENameLen,       "錯誤 - 讀取 central file name"
+  DS_LOExtraLen,      "錯誤 - 讀取 local extra field"
+  DS_CEExtraLen,      "錯誤 - 讀取 central extra field"
+  DS_DataDesc,        "錯誤 - 讀取/寫入資料描述區(data descriptor area)"
+  DS_ZipData,         "錯誤 - 讀取壓縮的資料"
+  DS_CECommentLen,    "錯誤 - 讀取檔案註解"
+  DS_EOArchComLen,    "錯誤 - 讀取壓縮檔註解"
+  DS_ErrorUnknown,    "未知的錯誤發生於函式 ReadSpan()、WriteSpan() 或 Rename()\n"
+  DS_NoUnattSpan,     "不支援 Unattended 模式下的磁碟切割"
+  DS_EntryLost,       "在內部結構中找不到 local header"
+  DS_NoTempFile,      "無法建立暫存檔案"
+  DS_LOHBadWrite,     "錯誤 - 寫入 local header"
+  DS_CEHBadWrite,     "錯誤 - 寫入 central header"
+  DS_EOCBadWrite,     "錯誤 - 寫入 End Of Central Directory"
+  DS_ExtWrongSig,     "錯誤 - 寫入 Extended Local signature"
+  DS_NoDiskSpace,     "磁碟的空間不夠"
+  DS_InsertDisk,      "請插入最後一片磁碟片"
+  DS_InsertVolume,    "請插入第 %1d 片磁碟片(共 %.1d 片)"
+  DS_InDrive,         "\n於磁碟機: %s"
+  DS_NoValidZip,      "這個壓縮檔不是有效的 Zip 檔案"
+  DS_FirstInSet,      "這是備份檔的第一片磁碟片,\n請插入最後一片磁碟片"
+  DS_NotLastInSet,    "這是備份檔的第 %d 片磁碟片,\n請插入最後一片磁碟片"
+  DS_AskDeleteFile,   "檔案已經存在: %s\n您是否要覆蓋掉這個檔案?"
+  DS_AskPrevFile,     "注意: 這片磁碟片是之前的第 %d 片!!!\n您確定要覆蓋掉這塊磁碟片的資料嗎?"
+  DS_NoSFXSpan,       "錯誤 - 自解檔不能被切割"
+  DS_CEHBadCopy,      "錯誤 - 複製 CEH 結構的一個檔案"
+  DS_EOCBadSeek,      "移動檔案指標經過 EOC 結構時發生錯誤"
+  DS_EOCBadCopy,      "複製壓檔案的註解時發生錯誤"
+  DS_FirstFileOnHD,   "這是備份檔的第一個檔案,\n請選擇最後一個檔案"
+  DS_InsertAVolume,   "請插入第 %.1d 片磁碟片"
+  DS_CopyCentral,     "Central directory"
+}

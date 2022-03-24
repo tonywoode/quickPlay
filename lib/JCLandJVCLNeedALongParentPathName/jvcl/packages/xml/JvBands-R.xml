@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvBands" Design="0">
+  <Description>JVCL Band Objects Runtime Package</Description>
+  <GUID>{DD2CB040-B066-4061-B05C-1F1CD0FD0D5D}</GUID>
+  <C6PFlags>-LUJcl</C6PFlags>
+  <C5Libs/>
+  <ImageBase>4D650000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="all" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="vclx" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvBandForms.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBandObject.pas" Targets="VCL" Formname="" Condition=""/>
+  </Contains>
+</Package>

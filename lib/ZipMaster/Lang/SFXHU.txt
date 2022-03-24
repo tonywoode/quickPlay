@@ -1,0 +1,126 @@
+// language id
+LANG_ID='0E 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Fájl felülírása
+
+// message
+FILEEXISTS_MESSAGE=>< már létezik, felülírható ?
+// buttons
+YES=&Igen
+NO=&Nem
+// don't ask again check
+DONT_ASK_AGAIN=Nem kérdez rá többször
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label
+EXTRACT_TO=&Kicsomagolás helye:
+// "files" label
+FILES=&Fájlok:
+// overwrite action label
+EXISTING_FILES=Létezõ fájlok felülírása:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Kérdezzen
+// skip
+OVERWRITE_SKIP=&Ne írja felül
+// overwrite
+OVERWRITE_DO=&Írja felül
+// about button
+ABOUT_BUTTON=&A DelZip névjegye...
+// show files button
+SHOW_FILES_BUTTON=&Fájllista
+// start extraction button
+START_BUTTON=&Mehet
+// close button
+CLOSE_BUTTON=K&ilépés
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Kicsomagolás után futtatás: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Kicsomagolás után installálás: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Jelszó megadása...
+
+// password message
+PASSWORD_MESSAGE=Adja meg a jelszót ><:
+// buttons
+OK=OK
+CANCEL=&Mégsem
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=A DelZip Self-Extractor névjegye...
+
+// message
+ABOUT=©1997-2004 C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nSzerzõk : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nKözremûködtek :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson és még sokan mások.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Kicsomagolás kész.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Hiba...
+
+// cannot close
+ERR_CANNOT_CLOSE=>< bezárása sikertelen
+// error reading archive
+ERR_READING_ARCHIVE=A(z) >< archívum olvasása sikertelen
+// invalid filename
+ERR_FILENAME=Érvénytelen fájlnév.
+// failed processing directory
+ERR_DIRECTORY=Hiba a(z) >< könyvtárban
+// unknown compression type
+ERR_COMPRESSION_TYPE=Ismeretlen tömörítés
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Az archívum sérült, töltse le újra.
+// cannot open file
+ERR_CANNOT_OPEN=A(z) >< megnyitása sikertelen
+// cannot write to file
+ERR_CANNOT_WRITE=A(z) >< írása sikertelen
+// couldn't run program
+ERR_COULDNT_RUN=A program nem futtatható: >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Az alkalmazás nem installálható: >< ><
+// CRC32 Error in ><
+ERR_CRC32=CRC32 hiba a következõ fájlban: ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Fájlnév
+// file size
+FILESIZE=Méret
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Válasszon célkönyvtárat
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Minden fájl sikerült kicsomagolni.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Néhány fájlt nem sikerült kicsomagolni.
+// these files not extracted
+THESE_NOT_EXTRACTED=A kijelölt fájlok kicsomagolása nem sikerült.
+
+// ask on cancellation
+CANCEL_QUESTION=Meg kívánja szakítani a kicsomagolást?
+
+// change disk volume
+INSERT_VOLUME=Helyezze a(z) ><. lemezt a(z) >< meghajtóba
+

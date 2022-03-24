@@ -1,0 +1,220 @@
+#include "ZipMsg.h"
+// 1.78  24 November 2004
+// Slovenia LCID 0x0424 (1060) CP 1250 by Goran Brumen
+// edited R.Peters 2005-11-27
+
+
+STRINGTABLE
+LANGUAGE 0x24, 1 // 0424
+{
+  DT_Language,        "SL: Slovenia"
+
+GE_FatalZip,		"Huda napaka v DelZip179.DLL: Operacija je prekinjena.";
+GE_NoZipSpecified,	"Napaka - ime datoteke Zip ni dodeljeno!";
+GE_NoMem,		"Premalo pomnilnika";
+GE_WrongPassword,	"Napaka - vnesena gesla niso pravilna\nGesla ignoriram";
+GE_CopyFile,		"Prenašam: ";
+GE_Except,		"Izjemna napaka v event handlerju ";
+GE_Reentered,		"Je bil zaposlen, instrukcije so morda izgubljene!";
+GE_Busy,		" Zaposlen, prosim poèakajte";
+GE_Inactive,		"ni aktiven";
+GE_RangeError,		"Index (%d) izven obsega 1..%d";
+GE_TempZip,		"Zaèasen ZIP: %s";
+GE_WasBusy,		"Zaposlen + %s";
+GE_Unknown,		" Neznana napaka %d";
+GE_EventEx,		"Izjemna napaka v dogodku ";
+GE_DLLAbort,		"DLL napaka - konèujem";
+GE_DLLBusy,		"DLL napaka - zaposlen";
+GE_DLLCancel,		"DLL napaka - Uporabnik prekinil";
+GE_DLLMem,		"DLL napaka - Premalo pomnilnika";
+GE_DLLStruct,		"DLL napaka - Napaèna struktura";
+GE_DLLEvent,		"DLL napaka - Napaka v handlerju ";
+GE_DLLCritical,		"kritièna napaka v DLL %d";
+GE_Skipped,		"Preskoèen %s %d";
+
+RN_ZipSFXData,		"Napaka pri prenašanju SFX dela";
+RN_NoRenOnSpan,		"Preimenovanje ni vgrajeno pri delu z veè volumskim arhivom";
+RN_ProcessFile,		"Procesiram: ";
+RN_RenameTo,		" preimenovan v:";
+RN_InvalidDateTime,	"Napaèen datum/ura v argumentu za datoteko: ";
+
+PW_UnatAddPWMiss,	"Napaka - geslo za dodajanje ni vpisano";
+PW_UnatExtPWMiss,	"Napaka - geslo za razpakiranje ni vpisano";
+//PW_Ok,		"&V redu";
+//PW_Cancel,		"&Preklièi";
+PW_Caption,		"Geslo ";
+PW_MessageEnter,	"Vnesite geslo";
+PW_MessageConfirm,	"Potrdite geslo";
+//PW_CancelAll,		"Preklièi vse";
+//PW_Abort,		"Preklic";
+PW_ForFile,		" za datoteko: ";
+
+CF_SourceIsDest,	"Izvorni arhiv je enak ponornemu arhivu!";
+CF_OverwriteYN,		"Prepišem datoteko '%s' v '%s' ?";
+CF_CopyFailed,		"Napaka pri kopiranju datoteko iz '%s' v '%s'";
+CF_SourceNotFound,	"Datotek '%s' ni moè najti v '%s'!";
+CF_SFXCopyError,	"Napaka pri kopiranju SFX podatkov";
+CF_DestFileNoOpen,	"Ponornega ZIP arhiva ni bilo moè odpreti!";
+CF_NoCopyOnSpan,	"Funkcija CopyZippedFiles ni implementirana v veèvolumski ZIP datoteki";
+
+LI_ReadZipError,	"Napaka pri pozicioniranju med branjem";
+LI_ErrorUnknown,	"Neznana napaka v funkciji List()\n";
+LI_WrongZipStruct,	"Napaka - Napaka v strukturi ZIP-a";
+LI_GarbageAtEOF,	"Pozor - nepotrebni byti na koncu ZIP-a";
+LI_FileTooBig,		"Datoteka je veèja od 4GB";
+LI_MethodUnknown,	"Neznana metoda stiskanja";
+
+ZB_Yes,			"&Da";
+ZB_No,			"&Ne";
+ZB_OK,			"&V redu";
+ZB_Cancel,		"&Preklièi";
+ZB_Abort,		"&Konèaj";
+ZB_Retry,		"&Ponovi";
+ZB_Ignore,		"&Ignoriraj";
+ZB_CancelAll,		"Preklièi vse";
+ZB_NoToAll,		"Ne za vse";
+ZB_YesToAll,		"Da za vse";
+//ZB_Help,		"Pomoè";
+
+AD_NothingToZip,	"Napaka - ni datotek za pakiranje";
+AD_UnattPassword,	"Nenadzorovan potrebuje geslo za delo";
+AD_NoFreshenUpdate,	"AddFreshen ali/in AddUpdate ne delajo z veè volumskim arhivom";
+AD_AutoSFXWrong,	"Napaka %.1d pri samoizdelavi SFX glave";
+//AD_NoStreamDLL,	"Napaka - uporabljen ZipDLL.dll ne more uporabljati strema, nadgradite na verzijo >= 1.60";
+AD_InIsOutStream,	"Vhodni stream verjetno ni prirejen izhodnemu stream-u";
+AD_InvalidName,		"Joker znaki niso dovoljeni za ime datoteke ali za specifikacijo datotek";
+AD_NoDestDir,		"Ponorna mapa '%s' mora obstajati!";
+
+DL_NothingToDel,	"Napaka -  datoteke za brisanje niso vpisane";
+DL_NoDelOnSpan,		"Brisanje datotek iz arhiva ni implementirano v veèvolumskem arhivu";
+
+EX_FatalUnZip,		"Huda napaka v DelZip179.DLL: Prekinjam delo";
+EX_UnAttPassword,	"Pozor - Unattended Extract. Mogoce niso vse datoteke razpakirane";
+//EX_NoStreamDLL,		"Napaka - namešèen UnzDLL.dll ne dela s streami; Posodobite ga z verzijo 1.6 ali novejšo.";
+
+//LZ_ZipDllLoaded,	"ZIP DLL aktiviran";
+//LZ_NoZipDllExec,	"Funkcija ZipDllExec ni v ZIPDLL.DLL!";
+//LZ_NoZipDllVers,	"Funkcija GetZipDllVersion ni v ZIPDLL.DLL!";
+//LZ_NoZipDll,		"Pot ne vsebuje ZIPDLL.DLL!";
+//LZ_OldZipDll,		"Poskušam naložiti ZipDll iz ";
+//LZ_ZipDllUnloaded,	"Zip DLL izklopljen";
+
+LD_NoDll,		"Napaka pri nalaganju %s";
+LD_BadDll,		"Ne morem naložiti dattoeke %s - Ali je prestara ali pokvarjena";
+LD_DllLoaded,		"Naložen %s";
+LD_DllUnloaded,		"Izklopljen %s";
+
+//LU_UnzDllLoaded,	"UNZDLL aktiviran!";
+//LU_NoUnzDllExec,	"Funkcija UnzDllExec ni v UNZDLL.DLL!";
+//LU_NoUnzDllVers,	"Funkcija GetUnzDllVersion ni u UNZDLL.DLL!";
+//LU_NoUnzDll,		"Datoteka UNZDLL.DLL ne obstaja!";
+//LU_OldUnzDll,		"Poskušam naložiti UnzDll from ";
+//LU_UnzDllUnloaded,	"Unz DLL izklopljen";
+
+SF_StringTooLong,	"Error - On or more of the 4 property strings mentioned below exceeds 255 characters!";
+SF_NoZipSFXBin,		"Napaka - datoteke %s ni!";
+SF_InputIsNoZip,	"Napaka - vhodna datoteka ni tipa ZIP";
+SF_NoSFXSupport,	"SFX Funkcije niso podprte";
+SF_MsgTooLong,		"SFX Sporoèilo presega 255 znakov!";
+SF_DefPathTooLong,	"SFX Privzeta pot presega 255 znakov!";
+SF_DlgTitleTooLong,	"SFX Naziv okna presega 255 znakov!";
+SF_CmdLineTooLong,	"SFX Ukazna vrstica presega 255 znakov!";
+SF_FBkPathTooLong,	"SFX Fallback pot presega 255 znakov!";
+
+CZ_NoExeSpecified,	"Napaka - datoteka EXE ni dodeljena";
+CZ_InputNotExe,		"Napaka - vhodna datoteka ni tipa EXE";
+CZ_SFXTypeUnknown,	"Prišlo je do napake pri ugotavljanju tipa SFX.";
+
+DS_NoInFile,		"Vhodna datoteka ne obstaja";
+DS_FileOpen,		"Ne morem odpreti datoteke ZIP";
+DS_NotaDrive,		"Pogona ni mogoèe najti: %s";
+DS_DriveNoMount,	"Pogon %s ne obstaja";
+DS_NoVolume,		"Ne morem preimenovati pogona";
+DS_NoMem,		"Premalo pomnilnika za MsgBox";
+DS_Canceled,		"Uporabnik prekinil delo";
+DS_FailedSeek,		"Napaka pri pozicioniranju v vhodni datoteki";
+DS_NoOutFile,		"Nisem uspel ustvariti izhodne datoteke";
+DS_NoWrite,		"Napaka pri pisanju ihodne datoteke";
+DS_EOCBadRead,		"Napaka pri branju konca glavnega kazala";
+DS_LOHBadRead,		"Napaka pri branju lokalne glave";
+DS_CEHBadRead,		"Napaka pri branju glavne glave";
+DS_LOHWrongSig,		"Podpis lokalne glave je napaèen";
+DS_CEHWrongSig,		"Podpis glavne glave je napaèen";
+DS_LONameLen,		"Napaka pri branju lokalnih datotek";
+DS_CENameLen,		"Napaka pri branju glavnih datotek";
+DS_LOExtraLen,		"Napaka pri branju lokalnega ekstra polja";
+DS_CEExtraLen,		"Napaka pri branju glavnega ekstra polja";
+DS_DataDesc,		"Napaka pri branju/pisanju polja opisa";
+DS_ZipData,		"Napaka pri branju stisnjenih podatkov";
+DS_CECommentLen,	"Napaka pri branju komentarja datoteke";
+DS_EOArchComLen,	"Napaka pri branju komentarja arhiva";
+DS_ErrorUnknown,	"Neznana napaka v funkciji ReadSpan(), WriteSpan() ali Rename()\n";
+DS_NoUnattSpan,		"Nenadzorovana premostitev diska ni implementirana";
+DS_EntryLost,		"Neuspeh pri iskanju lokalne glave interni strukturi";
+DS_NoTempFile,		"Neuspeh pri izdelavi zaèasne datoteke";
+DS_LOHBadWrite,		"Napaka pri pisanju lokalno glavo";
+DS_CEHBadWrite,		"Napaka pri pisanju glavno glavo";
+DS_EOCBadWrite,		"Napaka pri pisanju konca glavnega kazala";
+DS_ExtWrongSig,		"Napaka pri branju podpisa razširjenega lokalnega podpisa";
+DS_NoDiskSpace,		"Premalo prostora na disku";
+DS_InsertDisk,		"Prosim, vstavite zadnji disk";
+DS_InsertVolume,	"Prosim, vstavite disk %.1d od %.1d";
+DS_InDrive,		"\nv pogon: %s";
+DS_NoValidZip,		"To ni veljaven Zip arhiv";
+DS_FirstInSet,		"To je prvi disk!\nProsim, vstavite zadnji";
+DS_NotLastInSet,	"To je %d-ti disk ,\nProsim, vstavite zadnji";
+DS_AskDeleteFile,	"Datoteka že obstaja %s\nAli jo povozim?";
+DS_AskPrevFile,		"POZOR: To je prejšnji disk št. %d!!!\nAli ste preprièani, da želite pisati preko njega?";
+DS_NoSFXSpan,		"Napaka -  SFX v veè delih ne deluje.";
+DS_CEHBadCopy,		"Napaka pri kopiranju datoteke CEH strukture";
+DS_EOCBadSeek,		"Napaka pri pozicioniranju pri prehodu EOC structure";
+DS_EOCBadCopy,		"Napaka med pisanjem komentarja";
+DS_FirstFileOnHD,	"To je prva datoteka.\nProsim izberite zadnjo";
+DS_InsertAVolume,	"Prosim, vstavite disk %.1d";
+DS_CopyCentral,		"Glavno kazalo";
+DS_NoDiskSpan,		"Veè volumsko arhiviranje ni podprto";
+DS_UnknownError,	"Neznana napaka";
+DS_NoRenamePart,	"Zadnji del shranjen kot: %s";
+
+FM_Erase,		"Brisanje ";
+FM_Confirm,		"Potrdi";
+
+ED_SizeTooLarge,	"Velikost FileExtraData je veèje kot je v matriki";
+
+CD_NoCDOnSpan,		"Funkcija ChangeFileDetails ni implementirana za veèvolumski ZIP";
+CD_NoEventHndlr,	"Ni ustrezne metode za dogodek v Change File Details";
+CD_LOExtraLen,		"Napaka pri pisanju v lokalno ekstra polje";
+CD_CEExtraLen,		"Napaka pri pisanju v centralno ekstra polje";
+CD_CEComLen,		"Napaka pri pisanju komentarja za datoteko";
+//CD_FileName,		"Ni imena datoteke v spremenjenih detajlih datoteke";
+CD_CEHDataSize,		"Skupna dolžina CEH + ime datoteke + komentar datoteke + dodatni podatki presega 65535";
+CD_Changing,		"Spreminjam detajle v: ";
+CD_DuplFileName,	"Podvojeno ime datoteke: %s";
+CD_NoProtected,		"Ne morem spremeniti detajlov razširjene datoteke";
+CD_InvalidFileName,	"Napaèno ime datoteke: '%s'";
+CD_NoChangeDir,		"Ne morem spremeniti poti";
+CD_FileSpecSkip,	"Specifikacije datoteke '%s' preskoèene";
+
+//EX_NoExtrDir,		"Mapa za razširjanje mora obstajati!";
+
+PR_Archive,		"*Resetiram Arhivski bit";
+PR_CopyZipFile,		"*Kopiram Zip datoteko";
+PR_SFX,			"*SFX";
+PR_Header,		"*??";
+PR_Finish,		"*Zakljuèevanje";
+PR_Copying,		"*Kopiranje";
+PR_CentrlDir,		"*Centralna mapa";
+PR_Checking,		"*Preverjanje";
+PR_Loading,		"*Nalaganje mape";
+PR_Joining,		"*Združujem razdeljeno ZIP datoteko";
+PR_Splitting,		"*Razdružujem ZIP datoteko";
+
+//EX_NoExtrDir,		"Mapa za razširjanje mora obstajati!";
+WZ_DropDirOnly,		"Brisanje %d prazn(ih) map(e)";
+WZ_NothingToWrite,	"Niè za zapisati";
+
+TM_Erasing,		"EraseFloppy - Odstranjujem %s";
+TM_Deleting,		"EraseFloppy - Brisanje %s";
+TM_GetNewDisk,		"Trace : GetNewDisk odpiranje: %s";
+
+}

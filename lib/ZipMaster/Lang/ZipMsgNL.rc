@@ -1,0 +1,219 @@
+#include "ZipMsg.h"
+// edited Roger Aelbrecht 2005-11-27
+
+STRINGTABLE
+LANGUAGE 0x13 0x01 // 0x0413
+{
+DT_Language,        "NL: Dutch"
+DT_Author,          "Roger Aelbrecht"
+GE_FatalZip,		    "Fatale fout in DLL: Actie afgebroken";
+GE_NoZipSpecified,	"Fout - geen zip file opgegeven!";
+GE_NoMem,		        "Gevraagde hoeveelheid geheugen niet beschikbaar";
+GE_WrongPassword,	  "Fout - Wachtwoorden verschillend\nWachtwoord wordt niet gebruikt";
+GE_CopyFile,		    "Kopieren van: ";
+GE_Except,		      "Exceptie in Event handler ";
+GE_Reentered,		    "Was bezig, instructies kunnen verloren zijn!";
+GE_Busy,		        "Bezig, even wachten";
+GE_Inactive,		    "Niet aktief";
+GE_RangeError,		  "Index (%d) buiten bereik 1..%d";
+GE_TempZip,		      "Tijdelijk zip bestand: %s";
+GE_WasBusy,		      "Bezig + %s";
+GE_EventEx,		      "Exceptie in Event ";
+GE_DLLAbort,		    "DLL Fout - wordt onderbroken";
+GE_DLLBusy,		      "DLL Fout - Bezig";
+GE_DLLCancel,		    "DLL Fout - Afgebroken door gebruiker";
+GE_DLLMem,		      "DLL Fout - Niet genoeg geheugen";
+GE_DLLStruct,		    "DLL Fout - Ongeldige structuur";
+GE_DLLEvent,		    "DLL Fout - Exceptie in event routine";
+GE_DLLCritical,		  "Kritische DLL Fout %d";
+GE_Unknown,		      "Onbekende fout %d";
+GE_Skipped,		      "Niet uitgepakt %s %d";
+
+RN_ZipSFXData,		  "Fout tijdens het kopieren van de SFX code";
+RN_NoRenOnSpan,		  "Functie Rename is niet geimplementeerd voor een multi disk Zip archief";
+RN_ProcessFile,		  "Verwerken van: ";
+RN_RenameTo,		    " hernoemd naar: ";
+RN_InvalidDateTime,	"Ongeldig datum/tijd argument voor bestand: ";
+
+PW_UnatAddPWMiss,	  "Fout - geen Add wachtwoord gegeven";
+PW_UnatExtPWMiss,	  "Fout - geen Extract wachtwoord gegeven";
+PW_Caption,		      "Wachtwoord";
+PW_MessageEnter,	  "Geef wachtwoord ";
+PW_MessageConfirm,	"Bevestig wachtwoord ";
+PW_ForFile,		      " voor bestand: ";
+
+CF_SourceIsDest,	  "Bron archief is hetzelfde als het doel archief!";
+CF_OverwriteYN,		  "Mag bestand '%s' in '%s' overschreven worden?";
+CF_CopyFailed,		  "Kopieren van een bestand uit '%s' naar '%s' is mislukt";
+CF_SourceNotFound,	"Bestand '%s' is niet aanwezig in '%s'!";
+CF_SFXCopyError,	  "Fout tijdens het kopieren van de SFX gegevens";
+CF_DestFileNoOpen,	"Doel zip archief kon niet worden geopend!";
+CF_NoCopyOnSpan,	  "Functie CopyZippedFiles is niet geimplementeerd voor een multi disk Zip archief ";
+
+LI_ReadZipError,	  "Zoek fout bij het lezen van het Zip archief!";
+LI_ErrorUnknown,	  "Onbekende fout in de List() functie!\n";
+LI_WrongZipStruct,	"Waarschuwing - Fout in Zip struktuur!";
+LI_GarbageAtEOF, 	  "Waarschuwing - Rommel aan het einde van de zip file!";
+LI_FileTooBig,		  "Bestand is groter dan 4GB";
+LI_MethodUnknown,	  "Compressie methode niet bekend";
+
+ZB_Yes,			        "&Ja";
+ZB_No,			        "&Nee";
+ZB_OK,			        "&OK";
+ZB_Cancel,		      "&Annuleren";
+ZB_Abort,		        "&Afbreken";
+ZB_Retry,		        "&Opnieuw";
+ZB_Ignore,		      "&Negeer";
+ZB_CancelAll,		    "Alles Annuleren";
+ZB_NoToAll,		      "Nee op alles";
+ZB_YesToAll,		    "Ja op alles";
+
+AD_NothingToZip,	  "Fout - geen bron bestand(en) aanwezig!";
+AD_UnattPassword,	  "Onbeheerde aktie niet mogelijk zonder een wachtwoord op te geven";
+AD_NoFreshenUpdate,	"AddFreshen of AddUpdate niet mogelijk met een multi volume archief";
+AD_AutoSFXWrong,	  "Fout %.1d opgetreden tijdens het automatisch maken van een SFX bestand";
+AD_InIsOutStream,	  "Input stream mag niet hetzelfde zijn als de output stream";
+AD_InvalidName,		  "Wildcard tekens niet toegestaan in Filename of file specifikatie";
+AD_NoDestDir,		    "Bestemmingsmap '%s' moet bestaan!";
+
+DL_NothingToDel,	  "Fout - geen bestand(en) gekozen om te verwijderen";
+DL_NoDelOnSpan,		  "Functie Delete is niet geimplementeerd voor een multi volume archief";
+
+EX_FatalUnZip,		  "Fatale fout in DelZip179.DLL: Actie afgebroken";
+EX_UnAttPassword,	  "Waarschuwing - Onbeheerde Extract: mogelijk niet alle bestanden uitgepakt.";
+//  EX_NoStreamDLL,	"Fout - uw DelZip179.dll kan geen streams aan, update naar versie >= 1.60";
+EX_NoExtrDir,		    "Bestemmingsmap '%s' voor extraheren moet bestaan";
+
+LD_NoDll,		        "Laden van %s is mislukt";
+LD_BadDll,		      "Kan %s niet laden - Is te oud of beschadigd";
+LD_DllLoaded,		    "Geladen %s";
+LD_DllUnloaded,		  "Verwijderd %s";
+
+SF_NoZipSFXBin,		  "Fout - SFX stub '%s' niet gevonden!";
+SF_InputIsNoZip,	  "Fout: Gekozen bestand is geen .Zip bestand";
+SF_NoSFXSupport,	  "SFX functies zijn niet beschikbaar";
+SF_MsgTooLong,		  "SFX Bericht meer dan 255 lettertekens!";
+SF_DefPathTooLong,	"SFX Default path meer dan 255 lettertekens!";
+SF_DlgTitleTooLong,	"SFX Dialog titel meer dan 255 lettertekens!";
+SF_CmdLineTooLong,	"SFX Commando lijn meer dan 255 lettertekens!";
+SF_FBkPathTooLong,	"SFX Fallback path meer dan 255 lettertekens!";
+
+CZ_InputNotExe,		  "Fout: Gekozen bestand is geen .EXE bestand";
+CZ_SFXTypeUnknown,	"Fout bij het vaststellen van het type .SFX archief bestand";
+CZ_WrongConvert,	  "Alleen convertie Zip naar EXE en EXE naar Zip mogelijk";
+CZ_UnknownHeader,	  "Onbekend SFX header formaat in %s";
+CZ_BrowseError,		  "Fout tijdens zoeken in resources.";
+CZ_NoExeResource,	  "Geen resources gevonden in het programma.";
+CZ_ExeSections,		  "Fout tijdens lezen van executable secties.";
+CZ_NoExeIcon,		    "Geen icon resources gevonden in de executable.";
+CZ_NoIcon,		      "Geen icon gevonden.";
+CZ_NoCopyIcon,		  "Kan icon niet kopiëren.";
+CZ_NoIconFound,		  "Geen overeenstemmend Icon gevonden.";
+//CZ_NoComp,		    "Geen TZipBuilder component verbonden";
+
+DS_NoInFile,		    "Gekozen bron bestand bestaat niet";
+DS_FileOpen,		    "Zip bestand kan niet worden geopend";
+DS_NotaDrive,		    "Drive %s is niet bekend";
+DS_DriveNoMount,	  "Drive %s is niet beschikbaar";
+DS_NoVolume,		    "Volume label kon niet worden aangepast";
+DS_NoMem,		        "Niet genoeg geheugen om MsgBox te tonen";
+DS_Canceled,		    "Gebruiker annuleerde aktie";
+DS_FailedSeek,		  "Zoek fout in het bron bestand";
+DS_NoOutFile,		    "Maken van het doel bestand mislukt";
+DS_NoWrite,		      "Schrijffout in het doel bestand";
+DS_EOCBadRead,		  "Fout tijdens het lezen van de EOC struktuur";
+DS_LOHBadRead,		  "Fout tijdens het lezen van een lokale struktuur";
+DS_CEHBadRead,		  "Fout tijdens het lezen een centrale struktuur";
+DS_LOHWrongSig,		  "Een lokale herkenning is fout";
+DS_CEHWrongSig,		  "Een centrale herkenning is fout";
+DS_LONameLen,		    "Fout tijdens het lezen van een lokale bestandsnaam";
+DS_CENameLen,		    "Fout tijdens het lezen van een centrale bestandsnaam";
+DS_LOExtraLen,		  "Fout tijdens het lezen van een lokaal extra veld";
+DS_CEExtraLen,		  "Fout tijdens het lezen van een centraal extra veld";
+DS_DataDesc,		    "Fout tijdens het lezen/schrijven van een gegevens beschrijvings gebied";
+DS_ZipData,		      "Fout tijdens het lezen gecomprimeerde zip gegevens";
+DS_CECommentLen,	  "Fout tijdens het lezen van een bestands commentaar";
+DS_EOArchComLen,	  "Fout tijdens het lezen van het zip archief commentaar";
+DS_ErrorUnknown,	  "Onbekende fout in de functie ReadSpan(), WriteSpan(), ChangeFileDetails() or CopyZippedFiles()\n";
+DS_NoUnattSpan,		  "Onbeheerd kopieren naar meerdere disks is niet geimplementeerd";
+DS_EntryLost,		    "Een lokale struktuur niet gevonden in de interne tabel";
+DS_NoTempFile,		  "Tijdelijke bestand kon niet worden gemaakt";
+DS_LOHBadWrite,		  "Fout tijdens het schrijven van een lokaal record";
+DS_CEHBadWrite,		  "Fout tijdens het schrijven van een centraal record";
+DS_EOCBadWrite,		  "Fout tijdens het schrijven van de EOC struktuur";
+DS_ExtWrongSig,		  "Fout tijdens het lezen van een uitgebreide lokale herkenning";
+DS_NoDiskSpace,		  "Deze disk heeft niet genoeg vrije ruimte beschikbaar";
+DS_InsertDisk,		  "Plaats de laatste disk";
+DS_InsertVolume,	  "Plaats disk volume %.1d van %.1d";
+DS_InDrive,		      "\nin drive: %s";
+DS_NoValidZip,		  "Dit bestand is geen (goed) Zip archief bestand";
+DS_FirstInSet,		  "Dit is een disk van een backup set,\nplaats de laatste disk van deze set";
+DS_NotLastInSet,	  "Dit is de %de disk in een backup set,\nplaats de laatste disk van deze set";
+DS_AskDeleteFile,	  "Er is al een bestand %s\n Wilt u dit bestand overschrijven.";
+DS_AskPrevFile,		  "ATTENTIE: Dit is vorige disk nr. %d!!!\nWeet u het zeker dat u de inhoud wilt overschrijven.";
+DS_NoSFXSpan,		    "Fout - .exe archief(SFX) kopieren naar meerdere disks is niet mogelijk";
+DS_CEHBadCopy,		  "Fout tijdens het kopieren van een bestandsnaam van een CEH struktuur";
+DS_EOCBadSeek,		  "Zoek fout tijdens overslaan van een EOC struktuur";
+DS_EOCBadCopy,		  "Fout tijdens kopieren van het zip archief commentaar";
+DS_FirstFileOnHD,	  "Dit is het eerste bestand van een backup set,\nkies het laatste bestand van deze set";
+DS_InsertAVolume,	  "Plaats disk volume %.1d";
+DS_CopyCentral,		  "Centrale struktuur";
+DS_NoDiskSpan,		  "Archieveren naar meerdere disken is niet voorzien";
+DS_UnknownError,	  "Onbekende fout";
+DS_NoRenamePart,	  "Naam van laatste deel blijft : %s";
+DS_NotChangeable,	  "Kan niet schrijven naar %s";
+
+FM_Erase,		        "Leeg maken ";
+FM_Confirm,		      "Bevestig";
+
+ED_SizeTooLarge,	  "De hoeveelheid FileExtraData is groter dan de beschikbare ruimte";
+
+CD_NoCDOnSpan,		  "Functie ChangeFileDetails is niet geimplementeerd voor een multi disk Zip archief";
+CD_NoEventHndlr,	  "Geen Event Handler gevonden om bestandsdetails te wijzigen";
+CD_LOExtraLen,		  "Fout tijdens schrijven van lokaal extra veld";
+CD_CEExtraLen,		  "Fout tijdens schrijven van een centraal extra veld";
+CD_CEComLen,		    "Fout tijdens schrijven van bestand kommentaar";
+CD_CEHDataSize,		  "De gecombineerde lengte van CEH + FileName + FileComment + ExtraData is groter dan 65535";
+CD_Changing,		    "Details wijzigen van: ";
+CD_DuplFileName,	  "Bestands naam \"%s\" in %s bestaat reeds";
+CD_NoProtected,		  "Details veranderen van beschermd bestand is niet toegelaten";
+CD_InvalidFileName,	"Ongeldige bestandsnaam '%s' ";
+CD_NoChangeDir,		  "Kan de data van bestand '%s' niet wijzigen";
+CD_FileSpecSkip,	  "Niet gebruikt %s";
+
+DU_InvalidName,		  "Ongeldige naam '%s'";
+DU_WrongMethod,		  "niet ondersteunde compressie vor '%s'";
+
+PR_Archive,		      "*Archievering bit op nul zetten";
+PR_CopyZipFile,		  "*Copieren van Zip File";
+PR_SFX,			        "*SFX";
+PR_Header,		      "*Hoofding";
+PR_Finish,		      "*Beëindigen";
+PR_Copying,		      "*Copieren";
+PR_CentrlDir,		    "*Centrale Struktuur";
+PR_Checking,		    "*Kontroleren";
+PR_Loading,		      "*Laden Directory";
+PR_Joining,		      "*Herenigen van gesplitste zip bestand";
+PR_Splitting,		    "*Splitsen van zip bestand";
+
+
+DZ_Skipped,		      "Bestandsnaam '%s' overgeslagen";
+DZ_InUse,		        "Kan bestand in-gebruik '%s' niet openen";
+DZ_Refused,		      "Openen '%s' niet toegelaten";
+DZ_NoOpen,		      "Kan '%s' niet openen";
+DZ_NoFiles,		      "Geen bestanden gevonden";
+DZ_SizeChanged,		  "Grootte van '%s' is gewijzigd";
+DZ_InvalidName,		  "'%s' is geen geldige naam";
+DZ_TooBig,		      "Bestand is te groot";
+
+WZ_DropDirOnly,		  "Verwijderen van %d lege directory bestanden";
+WZ_NothingToWrite,	"Niets te schrijven";
+
+TM_Erasing,		      "EraseFloppy - Verwijderen van %s";
+TM_Deleting,		    "EraseFloppy - Schrappen van %s";
+TM_GetNewDisk,		  "Trace : GetNewDisk Openen van : %s";
+TM_SystemError,		  "Systeem fout: %d";
+
+}
+
+

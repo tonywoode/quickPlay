@@ -1,0 +1,113 @@
+#include "ZipMsg.h"
+/*-----------------------------------------------------
+  Translated to Simplified Chinese
+  Translated by Wxf.Amm, Mar-21-1999
+  Modified in Apr-8-1999
+  Email: Wxf.Amm@usa.net
+-----------------------------------------------------*/
+// edited R.Peters 2005-11-27
+
+STRINGTABLE LANGUAGE 0x04, 2 // 0804
+{
+  DT_Language,        "CN: Simplified Chinese"
+  GE_FatalZip,        "压缩动态连接库(DelZip179.DLL)中发生致命错误"
+  GE_NoZipSpecified,  "错误 - 未指定压缩文件!"
+  GE_NoMem,           "没有足够内存空间申请"
+  GE_WrongPassword,   "错误 - 密码错误\n未提供密码"
+  GE_CopyFile,        "正在复制: "
+
+  RN_ZipSFXData,      "复制自解压(SFX)文件头时出现错误"
+  RN_NoRenOnSpan,     "分卷压缩文件不支持重命名操作"
+  RN_ProcessFile,     "正在处理: "
+  RN_RenameTo,        "重命名为: "
+
+  PW_UnatAddPWMiss,   "错误 - 没有压缩文件所需密码"
+  PW_UnatExtPWMiss,   "错误 - 没有解压缩文件所需密码"
+  ZB_OK,              "确定(&O)"
+  ZB_Cancel,          "取消(&C)"
+  PW_Caption,         "密码"
+  PW_MessageEnter,    "输入密码 "
+  PW_MessageConfirm,  "确认密码 "
+
+  LI_ReadZipError,    "读取压缩文件时文件指针定位错误!"
+  LI_ErrorUnknown,    "未知错误发生在 List() 函数中\n"
+  LI_WrongZipStruct,  "警告 - 压缩文件结构错误!"
+  LI_GarbageAtEOF,    "警告 - 压缩文件尾处有多余数据!"
+
+  AD_NothingToZip,    "错误 - 未指定被压缩的文件!"
+  AD_UnattPassword,   "采用自动模式(Unattended)时必须同时使用密码"
+  AD_NoFreshenUpdate, "分卷的压缩文件不支持重新整理(AddFreshen)和更新(AddUpdate)操作"
+  AD_AutoSFXWrong,    "自动创建自解压(SFX)文件时发生错误 %.1d"
+
+  DL_NothingToDel,    "错误 - 没有选择要被删除得文件"
+
+  EX_FatalUnZip,      "解压缩动态连接库(DelZip179.DLL)中发生致命的错误"
+  EX_UnAttPassword,   "警告 - 自动解压模式(Unattended Extract)可能并非所有文件都被解压"
+  EX_NoStreamDLL,     "错误 - 您的解压缩动态连接库(UnzDLL.dll)不支持流(streams),请更新到1.60 以上版本"
+
+  LD_DllLoaded,    "压缩动态连接库(%s)已调入"
+//  LZ_NoZipDllExec,    "在压缩动态连接库(DelZip179.DLL)中找不到 ZipDllExec 函数!"
+//  LZ_NoZipDllVers,    "在压缩动态连接库(DelZip179.DLL)中找不到 GetZipDllVersion 函数!"
+  LD_NoDll,        "未找到压缩动态连接库(%s)"
+
+//  LU_UnzDllLoaded,    "解压缩动态连接库(UNZDLL)已调入!"
+//  LU_NoUnzDllExec,    "在解压缩动态连接库(UNZDLL.DLL)中找不到 UnzDllExec 函数"
+//  LU_NoUnzDllVers,    "在解压缩动态连接库(UNZDLL.DLL)中找不到 GetUnzDllVersion 函数!"
+//  LU_NoUnzDll,        "未找到解压缩动态连接库(UNZDLL.DLL)"
+
+  SF_StringTooLong,    "错误 - 下列的四个字符串属性值中有长度超过255个字符的字符串"
+  SF_NoZipSFXBin,     "错误 - 找不到自解压头(SFX)文件(%s)"
+  SF_InputIsNoZip,    "错误 - 输入的文件不是压缩(ZIP)格式文件"
+
+  CZ_NoExeSpecified,  "错误 - 没有指定可执行文件(.EXE)"
+  CZ_InputNotExe,     "错误 - 输入的文件不是可执行文件(.EXE)"
+  CZ_SFXTypeUnknown,  "无法识别自解压(SFX)文件的类型"
+
+  DS_NoInFile,        "指定文件不存在"
+  DS_FileOpen,        "压缩(ZIP)文件无法打开"
+  DS_NotaDrive,       " %s 是不可用的磁盘: "
+  DS_DriveNoMount,    "磁盘 %s 未定义 "
+  DS_NoVolume,        "无法设置卷标"
+  DS_NoMem,           "没有足够内存显示消息框(MsgBox)"
+  DS_Canceled,        "用户取消操作"
+  DS_FailedSeek,      "文件指针定位时发生错误"
+  DS_NoOutFile,       "无法创建输出文件"
+  DS_NoWrite,         "写文件操作失败"
+  DS_EOCBadRead,      "读取重要目录结尾(End Of Central Directory)错误"
+  DS_LOHBadRead,      "读取局部头(local header)错误"
+  DS_CEHBadRead,      "读取中间头(central header)错误"
+  DS_LOHWrongSig,     "局部头(Local header)识别符号错误"
+  DS_CEHWrongSig,     "中间头(Central header)识别符号错误"
+  DS_LONameLen,       "读取局部文件名(local file name)错误"
+  DS_CENameLen,       "读取中间文件名(central file name)错误"
+  DS_LOExtraLen,      "读取局部扩展字段(local extra field)错误"
+  DS_CEExtraLen,      "读取中间扩展字段(central extra field)错误"
+  DS_DataDesc,        "读取/写入数据描述区(data descriptor area)错误"
+  DS_ZipData,         "读取压缩数据错误"
+  DS_CECommentLen,    "读取文件注释错误"
+  DS_EOArchComLen,    "读取压缩文件注释错误"
+  DS_ErrorUnknown,    "ReadSpan()、WriteSpan() 或 Rename()函数中发生未知错误\n"
+  DS_NoUnattSpan,     "不支持自动模式(Unattended)下的分盘压缩"
+  DS_EntryLost,       "在内部数据结构中找不到局部头(local header)"
+  DS_NoTempFile,      "无法创建临时文件"
+  DS_LOHBadWrite,     "写入局部头(local header)发生错误"
+  DS_CEHBadWrite,     "写入中间头(central header)发生错误"
+  DS_EOCBadWrite,     "写入重要目录结尾(End Of Central Directory)发生错误"
+  DS_ExtWrongSig,     "读取扩展局部标识(Extended Local signature)发生错误"
+  DS_NoDiskSpace,     "磁盘没有足够空闲空间"
+  DS_InsertDisk,      "请插入最后一张磁盘"
+  DS_InsertVolume,    "请插入第 %1d 张磁盘(共 %.1d 张)"
+  DS_InDrive,         "\n在磁盘: %s"
+  DS_NoValidZip,      "该压缩文件无效的压缩(ZIP)文件"
+  DS_FirstInSet,      "这是备份文件的第一张磁盘,\n请插入备份文件最后一张磁盘"
+  DS_NotLastInSet,    "这是备份文件的第 %d 张磁盘,\n请插入备份文件最后一张磁盘"
+  DS_AskDeleteFile,   "文件 %s 已存在\n您是否要覆盖掉该文件?"
+  DS_AskPrevFile,     "注意: 这是前第 %d 片备份磁盘!!!\n您确信要覆盖该磁盘上的文件?"
+  DS_NoSFXSpan,       "错误 - 自解压文件不能被切割"
+  DS_CEHBadCopy,      "复制 CEH 结构的文件名发生错误"
+  DS_EOCBadSeek,      "文件指针定位 EOC 结构时发生错误"
+  DS_EOCBadCopy,      "复制压缩文件的注释时发生错误"
+  DS_FirstFileOnHD,   "这是备份中的第一个文件,\n请选择备份中的最后一个文件"
+  DS_InsertAVolume,   "请插入第 %.1d 张磁盘"
+  DS_CopyCentral,     "重要目录"
+}

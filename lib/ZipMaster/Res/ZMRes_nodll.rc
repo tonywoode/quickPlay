@@ -1,0 +1,40 @@
+/* ZMRes.rc 
+    machine generated 
+      by ZipResMaker (c) 
+     Do NOT edit 
+  ZMRes.rc - resource script
+  TZipMaster VCL by Chris Vleghert and Eric W. Engler
+ 
+  v1.79
+      Copyright (C) 2005  Russell Peters
+ 
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+ 
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License (licence.txt) for more details.
+ 
+  You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software 
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ 
+  contact: zipmaster AT delphizip DOT net
+  updates: http://www.delphizip.net 
+ 
+  modified 20/04/2008 10:15:53 AM
+---------------------------------------------------------------------------*/
+ 
+/* ZipMaster 1.79.00.05       */
+/* Copyright (c) 2005         */
+ 
+#define  RDLL_Dll  11613
+#define  RDLL_Ver 11612
+#define  DZRES_Str 11610
+ 
+DZRES_Str RCDATA LOADONCALL MOVEABLE DISCARDABLE "langs.bin"
+ 
+ 

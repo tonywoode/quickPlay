@@ -1,0 +1,391 @@
+***************************************
+BEGIN: Unregistering Component Package
+***************************************
+
+Reading Extra Paths from Setup.ini
+   C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\ZipMaster
+
+Cleaning Known Package Registry Entry
+
+Reading Packages:
+c:\program files\borland\bds\4.0\RaveReports\Lib\dclRave.bpl
+c:\program files\borland\bds\4.0\Bin\dclstd100.bpl
+c:\program files\borland\bds\4.0\Bin\dcldb100.bpl
+c:\program files\borland\bds\4.0\bin\dclado100.bpl
+c:\program files\borland\bds\4.0\Bin\dcldbx100.bpl
+c:\program files\borland\bds\4.0\Bin\dclib100.bpl
+c:\program files\borland\bds\4.0\Bin\dclIntraweb_80_100.bpl
+c:\program files\borland\bds\4.0\Bin\dclnet100.bpl
+c:\program files\borland\bds\4.0\Bin\dclIndyCore100.bpl
+c:\program files\borland\bds\4.0\Bin\dclofficexp100.bpl
+c:\program files\borland\bds\4.0\Bin\dclbcbsmp100.bpl
+c:\program files\borland\bds\4.0\Bin\dclsmp100.bpl
+c:\program files\borland\bds\4.0\Bin\dclsoap100.bpl
+c:\program files\borland\bds\4.0\Bin\dclIndyProtocols100.bpl
+c:\program files\borland\bds\4.0\Bin\bcbie100.bpl
+c:\program files\borland\bds\4.0\Bin\dcl31w100.bpl
+c:\program files\borland\bds\4.0\Bin\dclmid100.bpl
+c:\program files\borland\bds\4.0\Bin\dcltee100.bpl
+c:\program files\borland\bds\4.0\Bin\dclmcn100.bpl
+c:\program files\borland\bds\4.0\Bin\dcldbxcds100.bpl
+c:\program files\borland\bds\4.0\Bin\dclie100.bpl
+c:\program files\borland\bds\4.0\Bin\dclwebsnap100.bpl
+c:\program files\borland\bds\4.0\Bin\dclsmpedit100.bpl
+c:\program files\borland\bds\4.0\Bin\dclemacsedit100.bpl
+c:\program files\borland\bds\4.0\Bin\dclmlwiz100.bpl
+c:\program files\borland\bds\4.0\Bin\applet100.bpl
+c:\program files\borland\bds\4.0\Bin\dclact100.bpl
+c:\program files\borland\bds\4.0\bin\dclbde100.bpl
+$(BDSPROJECTSDIR)\Bpl\JclBaseExpert100.bpl
+$(BDSPROJECTSDIR)\Bpl\JclDebugExpert100.bpl
+ 
+Stripping off path and extension
+dclRave
+dclstd100
+dcldb100
+dclado100
+dcldbx100
+dclib100
+dclIntraweb_80_100
+dclnet100
+dclIndyCore100
+dclofficexp100
+dclbcbsmp100
+dclsmp100
+dclsoap100
+dclIndyProtocols100
+bcbie100
+dcl31w100
+dclmid100
+dcltee100
+dclmcn100
+dcldbxcds100
+dclie100
+dclwebsnap100
+dclsmpedit100
+dclemacsedit100
+dclmlwiz100
+applet100
+dclact100
+dclbde100
+JclBaseExpert100
+JclDebugExpert100
+ 
+Reading Packages to remove
+ZipmasterD10
+ 
+Stripping off path and extension
+ZipmasterD10
+ 
+Scanning for previously installed packages....
+Known Package Registry Entry Cleaned
+
+Cleaning Disabled Package Registry Entry
+
+Reading Packages:
+ 
+Stripping off path and extension
+ 
+Reading Packages to remove
+ZipmasterD10
+ 
+Stripping off path and extension
+ZipmasterD10
+ 
+Scanning for previously installed packages....
+Disabled Package Registry Entry Cleaned
+
+Cleaning Package Cache Registry Entry
+
+Reading Packages:
+ 
+Stripping off path and extension
+ 
+Reading Packages to remove
+ZipmasterD10
+ 
+Stripping off path and extension
+ZipmasterD10
+ 
+Scanning for previously installed packages....
+Package Cache Registry Entry Cleaned
+
+Reading Search Path Registry Entry
+C:\Program Files\Borland\BDS\4.0\lib
+C:\Program Files\Borland\BDS\4.0\Imports
+C:\Program Files\Borland\BDS\4.0\Lib\Indy10
+C:\Program Files\Borland\BDS\4.0\RaveReports\Lib
+C:\Documents and Settings\ME\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\modulesLibraries\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\LibModPackages\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\lib\D10
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\Resources
+    
+    
+Writing Search Path Registry Entry
+Removing extra characters and blank lines
+Formatting.....
+$(BDS)\lib
+$(BDS)\Imports
+$(BDS)\Lib\Indy10
+$(BDS)\RaveReports\Lib
+C:$(HOMEPATH)\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\modulesLibraries\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\LibModPackages\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\lib\D10
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\Resources
+Writing to Key: Software\Borland\BDS\4.0\Library  Value: Search Path
+Search Path Registry Entry written
+
+Reading Browse Path Registry Entry
+C:\Program Files\Borland\BDS\4.0\source\Win32\vcl
+C:\Program Files\Borland\BDS\4.0\source\Win32\rtl\common
+C:\Program Files\Borland\BDS\4.0\source\Win32\rtl\sys
+C:\Program Files\Borland\BDS\4.0\source\Win32\rtl\win
+C:\Program Files\Borland\BDS\4.0\source\Win32\WebSnap
+C:\Program Files\Borland\BDS\4.0\source\ToolsAPI
+C:\Program Files\Borland\BDS\4.0\source\Win32\IBX
+C:\Program Files\Borland\BDS\4.0\source\Win32\Internet
+C:\Program Files\Borland\BDS\4.0\source\Win32\Property Editors
+C:\Program Files\Borland\BDS\4.0\source\Win32\soap
+C:\Program Files\Borland\BDS\4.0\source\win32\xml
+C:\Program Files\Borland\BDS\4.0\source\Win32\db
+C:\Program Files\Borland\BDS\4.0\source\Win32\Decision Cube
+C:\Program Files\Borland\BDS\4.0\source\Indy10
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\run
+    
+    
+Writing Browse Path Registry Entry
+Removing extra characters and blank lines
+Formatting.....
+$(BDS)\source\Win32\vcl
+$(BDS)\source\Win32\rtl\common
+$(BDS)\source\Win32\rtl\sys
+$(BDS)\source\Win32\rtl\win
+$(BDS)\source\Win32\WebSnap
+$(BDS)\source\ToolsAPI
+$(BDS)\source\Win32\IBX
+$(BDS)\source\Win32\Internet
+$(BDS)\source\Win32\Property Editors
+$(BDS)\source\Win32\soap
+$(BDS)\source\win32\xml
+$(BDS)\source\Win32\db
+$(BDS)\source\Win32\Decision Cube
+$(BDS)\source\Indy10
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\run
+Writing to Key: Software\Borland\BDS\4.0\Library  Value: Browsing Path
+Browse Path Registry Entry written
+
+***************************************
+END: Unregistering Component Package
+***************************************
+
+
+***************************************
+BEGIN: Compiling Component Package
+***************************************
+Validating Output Folders
+Creating temp compile folder
+Folder Created: C:\DOCUME~1\ME\LOCALS~1\Temp\ESetup
+
+Config.ini -JP Switch: 
+Config.ini -U Switch: C:\PROGRA~1\Borland\BDS\4.0\lib;C:\PROGRA~1\Borland\BDS\4.0\Imports;C:\PROGRA~1\Borland\BDS\4.0\Lib\Indy10;C:\PROGRA~1\Borland\BDS\4.0\RAVERE~1\Lib;C:\Documents and Settings\ME\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\modulesLibraries\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\LibModPackages\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jcl\source\include;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jcl\lib\d10;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\lib\D10;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\common;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\RESOUR~1;
+Config.ini -I Switch: ..\
+Config.ini -LE Switch: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\Bpl
+Config.ini -LN Switch: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\Bpl
+Config.ini -N Switch: C:\DOCUME~1\ME\LOCALS~1\Temp\ESetup
+
+Compiling....
+
+Redirector Working Dir: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\Delphi
+Redirector CreateProcess command: "C:\PROGRA~1\Borland\BDS\4.0\Bin\DCC32.exe" ZipmasterD10.dpk
+
+
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+ZipMasterD10.dpk(1) ZipMasterD10.dpk(31) ZipMasterD10.dpk(33) ZipMasterD10.dpk(33) ZipMasterD10.dpk(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMsg.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMsg.pas(236) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176)   
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\missing_types.inc(118) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(28) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(129) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(44) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(303) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(101) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(737) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(431) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(611) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(127) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(69) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(611) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(60) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(62) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(159) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(26) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\missing_types.inc(118) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(153) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(220) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(732) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(880) 
+ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(25) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(211) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXVER.INC(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXVER.INC(5) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\lang2.inc(6) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(328) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(347) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(840) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1352) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1476) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(260) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(69) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(308) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCtx.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCtx.pas(55) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(198) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(836) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(1)  C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(79) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(81) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(291) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(47) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(89) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(484) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(52) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(53) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(77) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(308) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1827) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(2339) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(2851) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(3363) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(3875) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(4387) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(4899) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(5411) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(5923) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(6387) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(799) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1827) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(2297) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMSBind.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMSBind.pas(194) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(56) ZipMasterD10.dpk(57) 
+19236 lines, 2.03 seconds, 625 bytes code, 0 bytes data.
+
+
+Compiling C++Builder Files
+
+Config.ini -JL Switch: 
+Config.ini -U Switch: C:\PROGRA~1\Borland\BDS\4.0\lib;C:\PROGRA~1\Borland\BDS\4.0\Imports;C:\PROGRA~1\Borland\BDS\4.0\Lib\Indy10;C:\PROGRA~1\Borland\BDS\4.0\RAVERE~1\Lib;C:\Documents and Settings\ME\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\modulesLibraries\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\LibModPackages\jcl\source\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jcl\source\include;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jcl\lib\d10;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\lib\D10;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\common;C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\JCLAND~1\jvcl\RESOUR~1;
+Config.ini -I Switch: ..\
+Config.ini -LE Switch: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\Bpl
+Config.ini -LN Switch: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\Bpl
+Config.ini -N Switch: C:\DOCUME~1\ME\LOCALS~1\Temp\ESetup
+
+Compiling....
+
+Redirector Working Dir: C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\Delphi
+Redirector CreateProcess command: "C:\PROGRA~1\Borland\BDS\4.0\Bin\DCC32.exe" ZipmasterD10.dpk
+
+
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+ZipMasterD10.dpk(1) ZipMasterD10.dpk(31) ZipMasterD10.dpk(33) ZipMasterD10.dpk(33) ZipMasterD10.dpk(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMsg.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMsg.pas(236) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176)   
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\missing_types.inc(118) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(28) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXStructs.pas(129) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(44) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMStructs.pas(303) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(98) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(101) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMUtils.pas(737) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(431) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDefMsgs.pas(611) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMExtrLZ77.pas(127) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(69) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMMsgStr.pas(611) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(60) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(62) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMXcpt.pas(159) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(21) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(26) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\missing_types.inc(118) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(153) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(220) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(732) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DZUtils.pas(880) 
+ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(25) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXInterface.pas(211) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1)   C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(15) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(19) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\DELVER.INC(176) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXVER.INC(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\SFXVER.INC(5) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\lang2.inc(6) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(328) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(347) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(840) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1352) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipSFX.pas(1476) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(39) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(38) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDelZip.pas(260) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(34) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(37) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(67) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(69) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDlg.pas(308) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(190) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCtx.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCtx.pas(55) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(198) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCore.pas(836) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(797) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1)    C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(40) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(41) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(42) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(43) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(1)  C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(79) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(81) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMHash.pas(291) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(47) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(33) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(35) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(87) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(89) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMDBind.pas(484) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(49) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(52) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(291) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(304) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(53) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMCompat.pas(77) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(308) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(1827) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(2339) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(2851) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(3363) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(3875) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(4387) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(4899) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(5411) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(5923) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMWrkr.pas(6387) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(799) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(803) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1315) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(1827) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipMstr.pas(2297) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMSBind.pas(1) C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipConfig.inc(25) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZipVers.inc(198) 
+C:\DOCUME~1\ME\MYDOCU~1\BORLAN~1\QUICKP~1\lib\ZIPMAS~1\ZMSBind.pas(194) 
+ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(54) ZipMasterD10.dpk(56) ZipMasterD10.dpk(57) 
+19236 lines, 2.06 seconds, 112268 bytes code, 4748 bytes data.
+
+
+Found compiled BPL file: C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\ZipmasterD10.bpl
+
+
+ 
+Adding Package BPL to Registry
+Adding: $(BDSPROJECTSDIR)\Bpl\ZipmasterD10.bpl
+***************************************
+END: Compiling Component Package
+***************************************
+
+***************************************
+BEGIN: Registering Component Package Paths
+***************************************
+
+Reading Search Path Registry Entry
+Search Path Registry Entry Read...
+C:\Program Files\Borland\BDS\4.0\lib
+C:\Program Files\Borland\BDS\4.0\Imports
+C:\Program Files\Borland\BDS\4.0\Lib\Indy10
+C:\Program Files\Borland\BDS\4.0\RaveReports\Lib
+C:\Documents and Settings\ME\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\modulesLibraries\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\LibModPackages\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\lib\D10
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\Resources
+ 
+Adding Package source path:
+   C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\ZipMaster
+
+Reading Extra Paths from Setup.ini
+   C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\ZipMaster
+
+    
+Writing Search Path Registry Entry
+Removing extra characters and blank lines
+Formatting.....
+$(BDS)\lib
+$(BDS)\Imports
+$(BDS)\Lib\Indy10
+$(BDS)\RaveReports\Lib
+C:$(HOMEPATH)\Desktop\JVCL339CompleteJCL211-Build3536\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\modulesLibraries\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\LibModPackages\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlay Frontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\lib\D10
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\common
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jvcl\Resources
+$(BDSPROJECTSDIR)\QuickPlayFrontend\lib\ZipMaster
+Writing to Key: Software\Borland\BDS\4.0\Library  Value: Search Path
+Search Path Registry Entry written
+
+***************************************
+END: Registering Component Package Paths
+***************************************
+

@@ -1,0 +1,127 @@
+// language id
+LANG_ID='06 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Godkend Overskriv
+
+// message
+FILEEXISTS_MESSAGE=>< findes allerede, overskriv ?
+// buttons 
+YES=&Ja
+NO=&Nej
+// don't ask again check
+DONT_ASK_AGAIN=&Spørg ikke igen
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label 
+EXTRACT_TO=&Udpak til:
+// "files" label
+FILES=&Filer:
+// overwrite action label
+EXISTING_FILES=Eksisterende filer:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=S&pørg
+// skip
+OVERWRITE_SKIP=&Overskriv ikke
+// overwrite
+OVERWRITE_DO=O&verskriv
+// about button
+ABOUT_BUTTON=Om &DelZip...
+// show files button
+SHOW_FILES_BUTTON=Vis &filer
+// start extraction button
+START_BUTTON=&Start
+// close button
+CLOSE_BUTTON=&Luk
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Kør, efter udpakning: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Installer, efter udpakning: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Indtast Kodeord...
+
+// password message
+PASSWORD_MESSAGE=Indtast kodeord for ><:
+// buttons
+OK=Ok
+CANCEL=&Annuller
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=Om DelZip selv-udpakker...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.\n\nDanish translation by Carsten S. Rasmussen.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Færdig.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Fejl..
+
+// cannot close
+ERR_CANNOT_CLOSE=Kan ikke lukke ><
+// error reading archive
+ERR_READING_ARCHIVE=Fejl ved læsning af arkiv ><.
+// invalid filename
+ERR_FILENAME=Ugyldigt filnavn.
+// failed processing directory
+ERR_DIRECTORY=Fejl i mappe ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Ukendt kompressions type
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Arkivet er kurrupt, prøv venligst at downloade filen igen.
+// cannot open file
+ERR_CANNOT_OPEN=Kan ikke åbne ><
+// cannot write to file
+ERR_CANNOT_WRITE=Fejl ved skriv af ><
+// couldn't run program
+ERR_COULDNT_RUN=Kunne ikke køre >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Kunne ikke installere >< ><
+// CRC32 Error in ><
+ERR_CRC32=CRC32 Error in ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Filnavn
+// file size
+FILESIZE=Størrelse
+
+// default title
+DEFAULT_TITLE=DelZip selv-udpakker
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Vælg destinations mappen
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Alle filer blev pakket ud.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Nogle fil(er) kunne ikke pakkes ud.
+// these files not extracted
+THESE_NOT_EXTRACTED=De valgte fil(er) kunne ikke pakkes ud.
+
+// ask on cancellation
+CANCEL_QUESTION=Ønsker du at afbryde udpakningen?
+
+// change disk volume
+INSERT_VOLUME=Indsæt venligst disk volume >< i drev ><
+
+

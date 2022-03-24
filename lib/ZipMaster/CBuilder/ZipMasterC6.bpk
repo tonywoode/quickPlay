@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="$(BCB)\Projects\Bpl\ZipMasterC6.bpl"/>
+    <OBJFILES value="ZipMasterC6.obj ZipMstr.obj ZipMsg.obj ZMUtils.obj DZUtils.obj 
+      SFXInterface.obj SFXStructs.obj ZipSFX.obj ZMCore.obj ZMCtx.obj 
+      ZMDBind.obj ZMSBind.obj ZMDefMsgs.obj ZMDelZip.obj ZMDlg.obj ZMExtrLZ77.obj 
+      ZMMsgStr.obj ZMStructs.obj ZMWrkr.obj ZMXcpt.obj"/>
+    <RESFILES value="ZipMasterC6.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="rtl.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi vclx.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;.."/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="ZipMasterC6.cpp"/>
+    <INCLUDEPATH value="..;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\ZipMaster;$(BCB)\Projects\Lib;$(BCB)\Projects\Bpl;$(BCB)\Lib;$(BCB)\Lib\Debug;$(BCB)\lib\obj"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -D_DEBUG -I.. -I$(BCB)\include -I$(BCB)\include\vcl -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\Projects\Intermed\ZipMasterC6.csm -Hc -Vx -Ve -X- -a8 -b- 
+      -k- -vi -c -tWM"/>
+    <PFLAGS value="-N2..\CBuilder -N0..\CBuilder -$Y- -$T -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-l$(BCB)\Projects\Lib -I..\CBuilder -D&quot;ZipMaster 179&quot; -aa -Tpp -x -Gn -Gl 
+      -Gi"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ZipMasterC6.cpp" FORMNAME="" UNITNAME="ZipMasterC6" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipMasterC6.res" FORMNAME="" UNITNAME="ZipMasterC6.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZipMstr.pas" FORMNAME="" UNITNAME="ZipMstr" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZipMsg.pas" FORMNAME="" UNITNAME="ZipMsg" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMUtils.pas" FORMNAME="" UNITNAME="ZMUtils" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\DZUtils.pas" FORMNAME="" UNITNAME="DZUtils" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\SFXInterface.pas" FORMNAME="" UNITNAME="SFXInterface" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\SFXStructs.pas" FORMNAME="" UNITNAME="SFXStructs" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZipSFX.pas" FORMNAME="" UNITNAME="ZipSFX" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMCore.pas" FORMNAME="" UNITNAME="ZMCore" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMCtx.pas" FORMNAME="" UNITNAME="ZMCtx" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMDBind.pas" FORMNAME="" UNITNAME="ZMDBind" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMSBind.pas" FORMNAME="" UNITNAME="ZMSBind" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMDefMsgs.pas" FORMNAME="" UNITNAME="ZMDefMsgs" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMDelZip.pas" FORMNAME="" UNITNAME="ZMDelZip" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMDlg.pas" FORMNAME="" UNITNAME="ZMDlg" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMExtrLZ77.pas" FORMNAME="" UNITNAME="ZMExtrLZ77" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMMsgStr.pas" FORMNAME="" UNITNAME="ZMMsgStr" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMStructs.pas" FORMNAME="" UNITNAME="ZMStructs" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMWrkr.pas" FORMNAME="" UNITNAME="ZMWrkr" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ZMXcpt.pas" FORMNAME="" UNITNAME="ZMXcpt" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vclx.bpi" FORMNAME="" UNITNAME="vclx" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=79
+Release=8
+Build=7
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=DelphiZip
+FileDescription=Freeware Delphi zip component
+FileVersion=1.79.8.7
+InternalName=ZipMaster
+LegalCopyright=Copyright © 2008, Russell Peters
+LegalTrademarks=
+OriginalFilename=ZipMasterC6.dpk
+ProductName=TZipMaster
+ProductVersion=1.79.08.07
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=..;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\Source;..;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=$(BCB)\Projects\ZipMaster;$(BCB)\Projects\Lib;$(BCB)\Projects\Bpl;$(BCB)\Lib;$(BCB)\Lib\Debug;$(BCB)\lib\obj
+Item1=$(BCB)\Projects\Lib;$(BCB)\Projects\Bpl;$(BCB)\Lib;$(BCB)\Lib\Debug;$(BCB)\lib\obj
+Item2=..;$(BCB)\Projects\Intermed;$(BCB)\Projects\Lib;$(BCB)\Projects\Bpl;$(BCB)\Lib;$(BCB)\Lib\Debug;$(BCB)\lib\obj
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=..\CBuilder
+Item1=$(BCB)\Projects\Intermed
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=$(BCB)\Projects\Bpl\
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=$(BCB)\Projects\Lib
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

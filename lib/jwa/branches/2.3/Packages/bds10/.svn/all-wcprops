@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10
+END
+JediApi_StaticRelease.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_StaticRelease.bdsproj
+END
+JediApi_StaticDebug.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_StaticDebug.dpk
+END
+JediApi_DynamicDebug.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_DynamicDebug.bdsproj
+END
+JediApi_StaticDebug.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_StaticDebug.bdsproj
+END
+JediApi_SingleUnits.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_SingleUnits.dpk
+END
+JediApi_DynamicRelease.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_DynamicRelease.dpk
+END
+JediApi_StaticRelease.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_StaticRelease.dpk
+END
+JediApi_SingleUnits.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_SingleUnits.bdsproj
+END
+JediApi_DynamicRelease.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_DynamicRelease.bdsproj
+END
+JediApi_DynamicDebug.dpk
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/JediApi_DynamicDebug.dpk
+END
+_PackageProjectGroup_Delphi_V10.bdsgroup
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Packages/bds10/_PackageProjectGroup_Delphi_V10.bdsgroup
+END

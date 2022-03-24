@@ -1,0 +1,1348 @@
+================================================================================
+JCL 2.1 Release Build 3536
+==========Borland Developer Studio 2006=========================================
+Installed personalities :
+32 bit Delphi
+32 bit C++Builder
+32 bit Delphi.net
+32 bit C#Builder
+================================================================================
+Multiple profile installation
+Single profile installation
+================================================================================
+Saving conditional defines...
+Loaded template for include file C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include\jcl.template.inc
+Saved include file C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include\jcld10.inc
+Building common library units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" bzip2 Jcl8087 JclAbstractContainers JclAlgorithms JclAnsiStrings JclArrayLists JclArraySets JclBase JclBinaryTrees JclBorlandTools JclCharsets JclComplex JclCompression JclContainerIntf JclCounter JclDateTime JclEDI JclEDISEF JclEDITranslators JclEDIXML JclEDI_ANSIX12 JclEDI_ANSIX12_Ext JclEDI_UNEDIFACT JclEDI_UNEDIFACT_Ext JclExprEval JclFileUtils JclHashMaps JclHashSets JclIniFiles JclLinkedLists JclLogic JclMath JclMIDI JclMime JclNotify JclPCRE JclQueues JclResources JclRTTI JclSchedule JclSimpleXml JclSortedMaps JclStacks JclStatistics JclStreams JclStrHashMap JclStringConversions JclStringLists JclStrings JclSynch JclSysInfo JclSysUtils JclTrees JclUnicode JclUnitConv JclUnitVersioning JclUnitVersioningProviders JclValidation JclVectors JclWideStrings pcre zlibh --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C- -$D- -$I- -$L- -$O+ -$Q- -$R- -$W- -$Y- -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10" -NO"..\..\lib\d10" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U".;..\windows;..\vcl" -R".;..\windows;..\vcl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+556622 lines, 2.92 seconds, 50250 bytes code, 16736 bytes data.
+Building windows library units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" Hardlinks JclAppInst JclCIL JclCLR JclCOM JclConsole JclDebug JclDebugSerialization JclDebugXMLDeserializer JclDebugXMLSerializer JclDotNet JclHookExcept JclLANMan JclLocales JclMapi JclMetadata JclMiscel JclMsdosSys JclMultimedia JclNTFS JclPeImage JclRegistry JclSecurity JclShell JclStructStorage JclSvcCtrl JclTask JclTD32 JclTimeZones JclWideFormat JclWin32 JclWin32Ex JclWinMIDI mscoree_TLB mscorlib_TLB MSHelpServices_TLB MSTask sevenzip Snmp --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C- -$D- -$I- -$L- -$O+ -$Q- -$R- -$W- -$Y- -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10" -NO"..\..\lib\d10" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U"..\common;.;..\vcl" -R"..\common;.;..\vcl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+206029 lines, 1.92 seconds, 1836 bytes code, 164 bytes data.
+Building vcl library units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" JclFont JclGraphics JclGraphUtils JclOpenDialogFavorites JclOpenDialogHooks JclPrint JclVclResources JclVersionControl JclVersionCtrlCVSImpl JclVersionCtrlSVNImpl --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C- -$D- -$I- -$L- -$O+ -$Q- -$R- -$W- -$Y- -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10" -NO"..\..\lib\d10" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U"..\common;..\windows;." -R"..\common;..\windows;."
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+37922 lines, 0.34 seconds, 3648 bytes code, 36 bytes data.
+Building common library debug units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" bzip2 Jcl8087 JclAbstractContainers JclAlgorithms JclAnsiStrings JclArrayLists JclArraySets JclBase JclBinaryTrees JclBorlandTools JclCharsets JclComplex JclCompression JclContainerIntf JclCounter JclDateTime JclEDI JclEDISEF JclEDITranslators JclEDIXML JclEDI_ANSIX12 JclEDI_ANSIX12_Ext JclEDI_UNEDIFACT JclEDI_UNEDIFACT_Ext JclExprEval JclFileUtils JclHashMaps JclHashSets JclIniFiles JclLinkedLists JclLogic JclMath JclMIDI JclMime JclNotify JclPCRE JclQueues JclResources JclRTTI JclSchedule JclSimpleXml JclSortedMaps JclStacks JclStatistics JclStreams JclStrHashMap JclStringConversions JclStringLists JclStrings JclSynch JclSysInfo JclSysUtils JclTrees JclUnicode JclUnitConv JclUnitVersioning JclUnitVersioningProviders JclValidation JclVectors JclWideStrings pcre zlibh --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C+ -$D+ -$I+ -$L+ -$O- -$Q+ -$R+ -$W+ -$Y+ -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10\debug" -NO"..\..\lib\d10\debug" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U".;..\windows;..\vcl" -R".;..\windows;..\vcl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+556622 lines, 3.15 seconds, 50418 bytes code, 16736 bytes data.
+Building windows library debug units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" Hardlinks JclAppInst JclCIL JclCLR JclCOM JclConsole JclDebug JclDebugSerialization JclDebugXMLDeserializer JclDebugXMLSerializer JclDotNet JclHookExcept JclLANMan JclLocales JclMapi JclMetadata JclMiscel JclMsdosSys JclMultimedia JclNTFS JclPeImage JclRegistry JclSecurity JclShell JclStructStorage JclSvcCtrl JclTask JclTD32 JclTimeZones JclWideFormat JclWin32 JclWin32Ex JclWinMIDI mscoree_TLB mscorlib_TLB MSHelpServices_TLB MSTask sevenzip Snmp --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C+ -$D+ -$I+ -$L+ -$O- -$Q+ -$R+ -$W+ -$Y+ -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10\debug" -NO"..\..\lib\d10\debug" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U"..\common;.;..\vcl" -R"..\common;.;..\vcl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+206029 lines, 2.02 seconds, 1973 bytes code, 164 bytes data.
+Building vcl library debug units for Borland Developer Studio 2006...
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" JclFont JclGraphics JclGraphUtils JclOpenDialogFavorites JclOpenDialogHooks JclPrint JclVclResources JclVersionControl JclVersionCtrlCVSImpl JclVersionCtrlSVNImpl --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -M -$X+ -$G+ -$H+ -$P+ -$U- -$T- -$V+ -$J+ -$Z1 -$J+ -$C+ -$D+ -$I+ -$L+ -$O- -$Q+ -$R+ -$W+ -$Y+ -D_RTLDLL;NO_STRICT;USEPACKAGES -N0"..\..\lib\d10\debug" -NO"..\..\lib\d10\debug" -N1"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\Include\Vcl" -JPHNE --BCB -I"..\include" -U"..\common;..\windows;." -R"..\common;..\windows;."
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+37922 lines, 0.34 seconds, 3917 bytes code, 36 bytes data.
+Checking .hpp files
+"C:\Program Files\Borland\BDS\4.0\bin\bcc32.exe" -c -Ve -X -a8 -b -k- -tWM -w-par -w-aus -I"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl;C:\Program Files\Borland\BDS\4.0\include;C:\Program Files\Borland\BDS\4.0\Include\Vcl" -DTEST_COMMON -DTEST_WINDOWS -DTEST_VCL "jcl_a2z.cpp"
+Borland C++ 5.8 for Win32 Copyright (c) 1993, 2005 Borland
+jcl_a2z.cpp:
+"C:\Program Files\Borland\BDS\4.0\bin\bcc32.exe" -c -Ve -X -a8 -b -k- -tWM -w-par -w-aus -I"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\include;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl;C:\Program Files\Borland\BDS\4.0\include;C:\Program Files\Borland\BDS\4.0\Include\Vcl" -DTEST_COMMON -DTEST_WINDOWS -DTEST_VCL "jcl_z2a.cpp"
+Borland C++ 5.8 for Win32 Copyright (c) 1993, 2005 Borland
+jcl_z2a.cpp:
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\Jcl.dpk...
+Cleaning package cache for Jcl100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\Jcl.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\Jcl.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"  -JL -NB"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10" -NO"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+137 lines, 0.76 seconds, 1339296 bytes code, 119960 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclContainers.dpk...
+Cleaning package cache for JclContainers100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclContainers.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclContainers.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;Jcl" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"  -JL -NB"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10" -NO"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+65 lines, 0.37 seconds, 1386768 bytes code, 812 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclVcl.dpk...
+Cleaning package cache for JclVcl100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclVcl.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclVcl.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;vcljpg;Jcl" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"  -JL -NB"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10" -NO"C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+63 lines, 0.09 seconds, 92060 bytes code, 1756 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclBaseExpert.dpk...
+Cleaning package cache for JclBaseExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclBaseExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclBaseExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+19556 lines, 0.12 seconds, 36172 bytes code, 592 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclDebugExpert.dpk...
+Cleaning package cache for JclDebugExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclDebugExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclDebugExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+6012 lines, 0.08 seconds, 30200 bytes code, 360 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclProjectAnalysisExpert.dpk...
+Cleaning package cache for JclProjectAnalysisExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclProjectAnalysisExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclProjectAnalysisExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+4843 lines, 0.08 seconds, 19364 bytes code, 232 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclFavoriteFoldersExpert.dpk...
+Cleaning package cache for JclFavoriteFoldersExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclFavoriteFoldersExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclFavoriteFoldersExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclVcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+1978 lines, 0.08 seconds, 5080 bytes code, 96 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclRepositoryExpert.dpk...
+Cleaning package cache for JclRepositoryExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclRepositoryExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclRepositoryExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+24080 lines, 0.14 seconds, 38136 bytes code, 632 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclSIMDViewExpert.dpk...
+Cleaning package cache for JclSIMDViewExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclSIMDViewExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclSIMDViewExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+12483 lines, 0.12 seconds, 42020 bytes code, 868 bytes data.
+Compilation success
+...done.
+Building C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclStackTraceViewerExpert.dpk...
+Cleaning package cache for JclStackTraceViewerExpert100.bpl
+Cleaning ok
+Compiling package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclStackTraceViewerExpert.dpk
+"C:\Program Files\Borland\BDS\4.0\bin\dcc32.exe" "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\packages\d10\JclStackTraceViewerExpert.dpk" --no-config -U"..\..\..\..\..\..\..\..\..\..\Program Files\Borland\BDS\4.0\lib" -N"..\..\lib\d10" -I"..\..\lib\d10;..\..\source\include" -R"..\..\lib\d10;..\..\source\include" -DBCB;RELEASE -U"..\..\lib\d10;..\..\..\..\..\..\Bpl;..\..\lib\d10;..\..\source\include" -LU"rtl;vcl;designide;Jcl;JclBaseExpert" -LN"..\..\lib\d10" -LE"..\..\..\..\..\..\Bpl"
+Borland Delphi for Win32 compiler version 18.0
+Copyright (c) 1983,2005 Borland Software Corporation
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\s
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\e
+28877 lines, 0.15 seconds, 47404 bytes code, 676 bytes data.
+Compilation success
+...done.
+Added "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include" to library search path.
+Added "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\include" to cpp search path.
+Added "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl" to library browsing path.
+Added "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\common;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\windows;C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\source\vcl" to cpp browsing path.
+Added "C:\Documents and Settings\ME\My Documents\Borland Studio Projects\QuickPlayFrontend\lib\JCLandJVCLNeedALongParentPathName\jcl\lib\d10\debug" to Debug DCU Path.
+Cleaning package cache for JclBaseExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclBaseExpert100.bpl
+Registration ok
+Cleaning package cache for JclDebugExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclDebugExpert100.bpl
+Registration ok
+Cleaning package cache for JclProjectAnalysisExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclProjectAnalysisExpert100.bpl
+Registration ok
+Cleaning package cache for JclFavoriteFoldersExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclFavoriteFoldersExpert100.bpl
+Registration ok
+Cleaning package cache for JclRepositoryExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclRepositoryExpert100.bpl
+Registration ok
+Cleaning package cache for JclSIMDViewExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclSIMDViewExpert100.bpl
+Registration ok
+Cleaning package cache for JclStackTraceViewerExpert100.bpl
+Cleaning ok
+Registering package C:\Documents and Settings\ME\My Documents\Borland Studio Projects\Bpl\JclStackTraceViewerExpert100.bpl
+Registration ok

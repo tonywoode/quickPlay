@@ -1,0 +1,126 @@
+// language id
+LANG_ID='15 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=PotwierdŸ zast¹pienie
+
+// message
+FILEEXISTS_MESSAGE=>< istnieje, zamieniæ?
+// buttons 
+YES=&Tak
+NO=&Nie
+// don't ask again check
+DONT_ASK_AGAIN=Nie pytaj wiêcej o potwierdzenie
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label 
+EXTRACT_TO=&Rozpakuj do:
+// "files" label
+FILES=&Pliki:
+// overwrite action label
+EXISTING_FILES=istniej¹ce pliki:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Zamieñ
+// skip
+OVERWRITE_SKIP=&Nie zamieniaj
+// overwrite
+OVERWRITE_DO=&Zamieñ
+// about button
+ABOUT_BUTTON=&O DelZip...
+// show files button
+SHOW_FILES_BUTTON=Wyœwietl p&liki
+// start extraction button
+START_BUTTON=&Start
+// close button
+CLOSE_BUTTON=Z&amknij
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Po rozpakowaniu, wykonaj: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Po rozpakowaniu, instaluj: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=WprowadŸ has³o...
+
+// password message
+PASSWORD_MESSAGE=Podaj has³o dla ><:
+// buttons
+OK=Ok
+CANCEL=&Anuluj
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=About DelZip Self-Extractor...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.\nWersja polska - Mariusz Dec
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Zakoñczono.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=B³¹d...
+
+// cannot close
+ERR_CANNOT_CLOSE=Nie mo¿na zamkn¹æ ><
+// error reading archive
+ERR_READING_ARCHIVE=B³¹d odczytu archiwum ><
+// invalid filename
+ERR_FILENAME=NIew³aœciwa nazwa zbioru.
+// failed processing directory
+ERR_DIRECTORY=B³¹d w katalogu ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Nieznany rodzaj kompresji
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Archiwum uszkodzone, proszê spróbowaæ pobraæ je ponownie.
+// cannot open file
+ERR_CANNOT_OPEN=Nie mo¿na otworzyæ zbioru ><
+// cannot write to file
+ERR_CANNOT_WRITE=Nie mogê zapisaæ do ><
+// couldn't run program
+ERR_COULDNT_RUN=Program nie mo¿e byc uruchomiony >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Nie moge zainstalowaæ >< ><
+// CRC32 Error in ><
+ERR_CRC32=B³¹d CRC32 w ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Pliki
+// file size
+FILESIZE=Rozmiar
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Prosze wybraæ katalog docelowy
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Wszystkie zbiory zosta³y rozpakowane.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Nie uda³o siê rozpakowaæ niektóych zbiorów.
+// these files not extracted
+THESE_NOT_EXTRACTED=Nie uda³o siê rozpakowaæ wybranych zbiorów.
+
+// ask on cancellation
+CANCEL_QUESTION=Czy chcesz przerwaæ proces rozpakowania?
+
+// change disk volume
+INSERT_VOLUME=Proszê w³o¿yæ noœnik (dysk, wolumin) >< do napêdu ><
+

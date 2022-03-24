@@ -1,0 +1,126 @@
+// language id
+LANG_ID='0c 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Confirmer le remplacement
+
+// message
+FILEEXISTS_MESSAGE=>< existe déjà, le remplacer ?
+// buttons 
+YES=&Oui
+NO=&Non
+// don't ask again check
+DONT_ASK_AGAIN=Ne plus me demander
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label 
+EXTRACT_TO=&Extraire vers:
+// "files" label
+FILES=&Fichiers:
+// overwrite action label
+EXISTING_FILES=Fichiers existants:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Confirmer
+// skip
+OVERWRITE_SKIP=&Ne pas remplacer
+// overwrite
+OVERWRITE_DO=&Remplacer
+// about button
+ABOUT_BUTTON=&A propos de DelZip...
+// show files button
+SHOW_FILES_BUTTON=Voir les fichiers
+// start extraction button
+START_BUTTON=&Démarrer
+// close button
+CLOSE_BUTTON=Fermer
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Après l'extraction, lancer: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Après l'extraction, installer: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Entrez un mot de passe...
+
+// password message
+PASSWORD_MESSAGE=Entrez un mot de passe pour ><:
+// buttons
+OK=Ok
+CANCEL=&Annuler
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=A propos de DelZip Self-Extractor...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.\n\nTraduit en français par Nicolas Mastin.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Terminé.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Erreur...
+
+// cannot close
+ERR_CANNOT_CLOSE=Impossible de fermer ><
+// error reading archive
+ERR_READING_ARCHIVE=Impossible de lire l'archive ><
+// invalid filename
+ERR_FILENAME=Nom de fichier incorrect.
+// failed processing directory
+ERR_DIRECTORY=Répertoire invalide ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Type de compression inconnue
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Archive corrompue, merci de télécharger le fichier à nouveau.
+// cannot open file
+ERR_CANNOT_OPEN=Impossible d'ouvrir ><
+// cannot write to file
+ERR_CANNOT_WRITE=Erreur d'écriture de ><
+// couldn't run program
+ERR_COULDNT_RUN=Impossible d'exécuter >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Impossible d'installer >< ><
+// CRC32 Error in ><
+ERR_CRC32=Erreur de redondance cyclique CRC32 dans ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Nom de fichier
+// file size
+FILESIZE=Taille
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Merci de choisir le répertoire de destination
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Tous les fichiers ont été extraits.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Certains fichiers n'ont pas pu être extraits.
+// these files not extracted
+THESE_NOT_EXTRACTED=Le ou les fichiers sélectionné(s) n'ont pas pu être extraits.
+
+// ask on cancellation
+CANCEL_QUESTION=Etes-vous sur de vouloir annuler l'extraction ?
+
+// change disk volume
+INSERT_VOLUME=Insérer le volume n°>< dans le lecteur: ><.
+

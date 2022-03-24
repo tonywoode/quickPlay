@@ -1,0 +1,1565 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API
+END
+JwaWinEFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinEFS.pas
+END
+JwaBugCodes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBugCodes.pas
+END
+JwaAuthz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAuthz.pas
+END
+JwaDSQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDSQuery.pas
+END
+JwaAdtGen.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdtGen.pas
+END
+JwaNb30.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNb30.pas
+END
+JwaWPCrsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPCrsMsg.pas
+END
+JwaWabMem.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabMem.pas
+END
+JwaIpExport.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpExport.pas
+END
+JwaWPTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPTypes.pas
+END
+JwaIssPer16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIssPer16.pas
+END
+JwaPowrProf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPowrProf.pas
+END
+JwaRpcASync.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcASync.pas
+END
+JwaAdsnms.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsnms.pas
+END
+JwaWinWlx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinWlx.pas
+END
+JwaIpRtrMib.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpRtrMib.pas
+END
+JwaNspApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNspApi.pas
+END
+JwaDhcpsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDhcpsApi.pas
+END
+JwaLmRepl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmRepl.pas
+END
+JwaDde.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDde.pas
+END
+JwaFaxMmc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaFaxMmc.pas
+END
+JwaWinDLLNames.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinDLLNames.pas
+END
+JwaSnmp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSnmp.pas
+END
+JwaMsiQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMsiQuery.pas
+END
+JwaPdhMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPdhMsg.pas
+END
+JwaLmWkSta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmWkSta.pas
+END
+JwaLpmApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLpmApi.pas
+END
+JwaBtHDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBtHDef.pas
+END
+JwaWinsock2.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinsock2.pas
+END
+JwaRpcDce.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcDce.pas
+END
+JwaAdssts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdssts.pas
+END
+JwaWinDNS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinDNS.pas
+END
+JwaDSClient.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDSClient.pas
+END
+JwaBits1_5.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBits1_5.pas
+END
+JwaMprError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMprError.pas
+END
+JwaWS2atm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWS2atm.pas
+END
+JwaQosPol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaQosPol.pas
+END
+JwaHtmlHelp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaHtmlHelp.pas
+END
+JwaSspi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSspi.pas
+END
+JwaMSTcpIP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMSTcpIP.pas
+END
+JwaDwmapi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDwmapi.pas
+END
+JwaWbemCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWbemCli.pas
+END
+JwaEventDefs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaEventDefs.pas
+END
+JwaLmSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmSvc.pas
+END
+JwaSceSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSceSvc.pas
+END
+JwaMsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMsi.pas
+END
+JwaPatchApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPatchApi.pas
+END
+JwaWinFax.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinFax.pas
+END
+JwaLmConfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmConfig.pas
+END
+JwaLmAudit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmAudit.pas
+END
+JwaShLWAPI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShLWAPI.pas
+END
+JwaAdsProp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsProp.pas
+END
+JwaDbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDbt.pas
+END
+JwaHhError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaHhError.pas
+END
+JwaUrlMon.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaUrlMon.pas
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/readme.html
+END
+JwaSpOrder.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSpOrder.pas
+END
+JwaCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCpl.pas
+END
+JwaAuthif.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAuthif.pas
+END
+JwaProfInfo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaProfInfo.pas
+END
+JwaMSWSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMSWSock.pas
+END
+JwaWdm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWdm.pas
+END
+JwaWinBase.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinBase.pas
+END
+JwaDSRole.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDSRole.pas
+END
+JwaEventTracing.pas
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaEventTracing.pas
+END
+JwaWinUser.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinUser.pas
+END
+JwaStrSafe.obj
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaStrSafe.obj
+END
+JwaWinType.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinType.pas
+END
+JwaPrSht.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPrSht.pas
+END
+JwaErrorRep.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaErrorRep.pas
+END
+JwaBits2_0.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBits2_0.pas
+END
+JwaNtDsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtDsApi.pas
+END
+JwaCmnQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCmnQuery.pas
+END
+JwaWinSta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinSta.pas
+END
+JwaColorDlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaColorDlg.pas
+END
+JwaMciAvi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMciAvi.pas
+END
+JwaWs2Bth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWs2Bth.pas
+END
+JwaWinNLS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinNLS.pas
+END
+JwaWinSafer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinSafer.pas
+END
+JwaLmUseFlg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmUseFlg.pas
+END
+JwaWPPstMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPPstMsg.pas
+END
+JwaSrRestorePtApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSrRestorePtApi.pas
+END
+JwaWabNot.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabNot.pas
+END
+JwaSchedule.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSchedule.pas
+END
+JwaIpTypes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpTypes.pas
+END
+JwaLmApiBuf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmApiBuf.pas
+END
+JwaShellAPI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShellAPI.pas
+END
+JwaStrSafe.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaStrSafe.pas
+END
+_JwaTemplate.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/_JwaTemplate.pas
+END
+JwaPdh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPdh.pas
+END
+JwaSisBkUp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSisBkUp.pas
+END
+JwaNetSh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNetSh.pas
+END
+JwaWmiStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWmiStr.pas
+END
+JwaVista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaVista.pas
+END
+JwaUserEnv.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaUserEnv.pas
+END
+JwaWabTags.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabTags.pas
+END
+JwaDskQuota.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDskQuota.pas
+END
+JwaLmCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmCons.pas
+END
+JwaLmDFS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmDFS.pas
+END
+JwaSHFolder.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSHFolder.pas
+END
+JwaWinError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinError.pas
+END
+JwaWPFtpMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPFtpMsg.pas
+END
+JwaWinSvc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinSvc.pas
+END
+JwaGPEdit.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaGPEdit.pas
+END
+JwaLmErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmErr.pas
+END
+JwaWinBer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinBer.pas
+END
+JwaWinCred.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinCred.pas
+END
+JwaLmShare.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmShare.pas
+END
+JwaLmSName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmSName.pas
+END
+JwaTlHelp32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaTlHelp32.pas
+END
+JwaCplext.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCplext.pas
+END
+JwaLmAlert.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmAlert.pas
+END
+JwaTmSchema.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaTmSchema.pas
+END
+JwaDsSec.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDsSec.pas
+END
+JwaWinternl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinternl.pas
+END
+JwaActiveDS.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaActiveDS.pas
+END
+JwaActiveX.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaActiveX.pas
+END
+JwaBthSdpDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBthSdpDef.pas
+END
+JwaWSNwLink.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWSNwLink.pas
+END
+JwaWinSock.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinSock.pas
+END
+JwaDhcpCSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDhcpCSdk.pas
+END
+JwaWabIab.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabIab.pas
+END
+JwaLmUse.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmUse.pas
+END
+JwaSddl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSddl.pas
+END
+JwaWPApiMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPApiMsg.pas
+END
+JwaReason.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaReason.pas
+END
+JwaWinIoctl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinIoctl.pas
+END
+JwaUrlHist.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaUrlHist.pas
+END
+JwaShlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShlGuid.pas
+END
+JwaRpcNtErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcNtErr.pas
+END
+JwaLmServer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmServer.pas
+END
+JwaLmRemUtl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmRemUtl.pas
+END
+JwaNtDsbCli.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtDsbCli.pas
+END
+JwaDhcpSSdk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDhcpSSdk.pas
+END
+JwaBits2_5.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBits2_5.pas
+END
+JwaAdsTLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsTLB.pas
+END
+JwaImapiError.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaImapiError.pas
+END
+JwaWabDefs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabDefs.pas
+END
+JwaObjSel.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaObjSel.pas
+END
+JwaCardErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCardErr.pas
+END
+JwaWowNT32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWowNT32.pas
+END
+JwaWSnetbs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWSnetbs.pas
+END
+JwaWsrm.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWsrm.pas
+END
+JwaPatchWiz.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPatchWiz.pas
+END
+JwaIAdmExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIAdmExt.pas
+END
+JwaImapi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaImapi.pas
+END
+readmefirst.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/readmefirst.txt
+END
+JwaRpcSsl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcSsl.pas
+END
+JwaBitsMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBitsMsg.pas
+END
+JwaWS2tcpip.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWS2tcpip.pas
+END
+JwaAccCtrl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAccCtrl.pas
+END
+JwaWinInet.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinInet.pas
+END
+JwaDSGetDc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDSGetDc.pas
+END
+JwaSchemaDef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSchemaDef.pas
+END
+JwaWinGDI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinGDI.pas
+END
+JwaSoftpub.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSoftpub.pas
+END
+JwaZMOUSE.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaZMOUSE.pas
+END
+JwaRpc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpc.pas
+END
+JwaLmJoin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmJoin.pas
+END
+JwaDlgs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDlgs.pas
+END
+JwaBits3_0.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBits3_0.pas
+END
+JwaWinNetWk.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinNetWk.pas
+END
+JwaRegStr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRegStr.pas
+END
+JwaRpcWinsta.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcWinsta.pas
+END
+JwaSubAuth.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSubAuth.pas
+END
+JwaAdsHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsHlp.pas
+END
+JwaPsApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPsApi.pas
+END
+JwaWShisotp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWShisotp.pas
+END
+JwaLmErrLog.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmErrLog.pas
+END
+JwaWS2spi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWS2spi.pas
+END
+JwaWinReg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinReg.pas
+END
+JwaWinLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinLDAP.pas
+END
+JwaAppRecovery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAppRecovery.pas
+END
+JwaBits.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBits.pas
+END
+JwaMsTask.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMsTask.pas
+END
+JwaWabCode.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabCode.pas
+END
+JwaLM.pas
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLM.pas
+END
+JwaUxTheme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaUxTheme.pas
+END
+JwaNCrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNCrypt.pas
+END
+JwaShlObj.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShlObj.pas
+END
+JwaIisCnfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIisCnfg.pas
+END
+JwaPbt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaPbt.pas
+END
+JwaNative.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNative.pas
+END
+JwaCryptUIApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCryptUIApi.pas
+END
+JwaWinResrc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinResrc.pas
+END
+JwaWinCpl.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinCpl.pas
+END
+JwaBatClass.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBatClass.pas
+END
+JwaAclUI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAclUI.pas
+END
+JwaWinNT.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinNT.pas
+END
+JwaQosName.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaQosName.pas
+END
+JwaBitFields.pas
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBitFields.pas
+END
+JwaIsGuids.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIsGuids.pas
+END
+JwaSens.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSens.pas
+END
+JwaSensEvts.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSensEvts.pas
+END
+JwaIme.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIme.pas
+END
+JwaAdsDb.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsDb.pas
+END
+JwaHtmlGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaHtmlGuid.pas
+END
+JwaWPApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPApi.pas
+END
+JwaBitscfg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBitscfg.pas
+END
+JwaIcmpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIcmpApi.pas
+END
+JwaNtLDAP.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtLDAP.pas
+END
+JwaEvntProv.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaEvntProv.pas
+END
+JwaLmAt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmAt.pas
+END
+JwaFaxExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaFaxExt.pas
+END
+JwaWPSpiHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPSpiHlp.pas
+END
+JwaShlDisp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShlDisp.pas
+END
+JwaWabUtil.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabUtil.pas
+END
+JwaIoEvent.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIoEvent.pas
+END
+JwaWinPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinPerf.pas
+END
+JwaSfc.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSfc.pas
+END
+JwaWtsApi32.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWtsApi32.pas
+END
+JwaAtalkWsh.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAtalkWsh.pas
+END
+JwaWinCrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinCrypt.pas
+END
+JwaShAppMgr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaShAppMgr.pas
+END
+JwaNtStatus.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtStatus.pas
+END
+JwaWPWizMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWPWizMsg.pas
+END
+JwaLmStats.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmStats.pas
+END
+JwaLoadPerf.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLoadPerf.pas
+END
+JwaNtDdPar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtDdPar.pas
+END
+JwaWintrust.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWintrust.pas
+END
+JwaEvntCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaEvntCons.pas
+END
+JwaProtocol.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaProtocol.pas
+END
+JwaSensAPI.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSensAPI.pas
+END
+JwaSvcGuid.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSvcGuid.pas
+END
+JwaQosSp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaQosSp.pas
+END
+JwaNtSecApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtSecApi.pas
+END
+JwaNtQuery.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtQuery.pas
+END
+JwaBLBErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBLBErr.pas
+END
+JwaIAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIAccess.pas
+END
+JwaDSAdmin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaDSAdmin.pas
+END
+JwaAdsErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAdsErr.pas
+END
+JwaNtDsBMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaNtDsBMsg.pas
+END
+JwaBluetoothAPIs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBluetoothAPIs.pas
+END
+JwaExcpt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaExcpt.pas
+END
+JwaWowNT16.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWowNT16.pas
+END
+JwaAF_Irda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAF_Irda.pas
+END
+JwaWS2dnet.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWS2dnet.pas
+END
+JwaAclApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaAclApi.pas
+END
+JwaMsiDefs.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaMsiDefs.pas
+END
+JwaSecExt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSecExt.pas
+END
+JwaWinCon.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinCon.pas
+END
+JwaFaxRoute.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaFaxRoute.pas
+END
+JwaRpcNsi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaRpcNsi.pas
+END
+JwaCdErr.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaCdErr.pas
+END
+JwaIpInfoId.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpInfoId.pas
+END
+JwaQos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaQos.pas
+END
+JwaWabApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWabApi.pas
+END
+JwaBCrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaBCrypt.pas
+END
+JwaIpHlpApi.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpHlpApi.pas
+END
+JwaSecurity.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaSecurity.pas
+END
+JwaWinVer.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinVer.pas
+END
+JwaWSipx.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWSipx.pas
+END
+JwaIpIfCons.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaIpIfCons.pas
+END
+JwaFaxDev.pas
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaFaxDev.pas
+END
+JwaTraffic.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaTraffic.pas
+END
+JwaLmMsg.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmMsg.pas
+END
+JwaWSvns.pas
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWSvns.pas
+END
+JwaWinAble.pas
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaWinAble.pas
+END
+JwaImageHlp.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaImageHlp.pas
+END
+JwaLmAccess.pas
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Win32API/JwaLmAccess.pas
+END

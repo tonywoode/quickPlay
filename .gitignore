@@ -7,7 +7,8 @@
 dcu/
 
 #All Delphi library files - we include libinstalls for you to install your own lib dir as some are install sources
-lib/
+# I re-added the lib dir in 2022 after every single person who got involved in the codebase benefitted by having my lib dir
+#lib/
 
 #Delphi ignore files - see https://github.com/github/gitignore/blob/master/Delphi.gitignore
 *.local

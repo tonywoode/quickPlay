@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\DelZip179.dll"/>
+    <OBJFILES value="Temp\Bits.obj Temp\Crc32.obj Temp\CrcTab.obj Temp\Crypt.obj 
+      Temp\Deflate.obj Temp\dllzip.obj Temp\Enter.obj Temp\Explode.obj 
+      Temp\Extract.obj Temp\FileIO.obj Temp\Inflate.obj  
+      Temp\lngmtch.obj Temp\Match.obj Temp\Process.obj Temp\Trees.obj 
+      Temp\UCrypt.obj Temp\UFileIO.obj Temp\UGlobals.obj Temp\Unshrink.obj 
+      Temp\Unzmain.obj Temp\Util.obj Temp\UWin32.obj Temp\Win32.obj 
+      Temp\Win32Zip.obj Temp\ZGlobals.obj Temp\ZipFile.obj Temp\ZipMain.obj 
+      Temp\ZipUp.obj Temp\zl_seek.obj Temp\ZCrypt.obj Temp\Common.obj 
+      Temp\UserCB.obj"/>
+    <RESFILES value="DelZip179.res"/>
+    <DEFFILE value="DelZipExp.def"/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vcl.bpi rtl.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="DelZip179.bpf"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;E:\Builder"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-wprc -wucp -wstv -wstu -wsig -wpin -wnod -wdef -wcln -wbbf -wamp -wamb"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-WD -O2 -Q -Vx -Ve -xd- -xp -RT- -f- -X- -a8 -5 -b- -k- -vi -tWD -tWM -c"/>
+    <PFLAGS value="-N2Temp -N0Temp -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-ITemp -D&quot;&quot; -H:0x200000 -aa -Tpd -GD -x -Gn -Gi"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0d32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="DelZip179.res" FORMNAME="" UNITNAME="DelZip179.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DelZip179.bpf" FORMNAME="" UNITNAME="DelZip179" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DZ179.res" FORMNAME="" UNITNAME="DZ179.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bits.c" FORMNAME="" UNITNAME="Bits.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Crc32.c" FORMNAME="" UNITNAME="Crc32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CrcTab.c" FORMNAME="" UNITNAME="CrcTab.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Crypt.c" FORMNAME="" UNITNAME="Crypt.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Deflate.c" FORMNAME="" UNITNAME="Deflate.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dllzip.c" FORMNAME="" UNITNAME="dllzip.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Enter.c" FORMNAME="" UNITNAME="Enter.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Explode.c" FORMNAME="" UNITNAME="Explode.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Extract.c" FORMNAME="" UNITNAME="Extract.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FileIO.c" FORMNAME="" UNITNAME="FileIO.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Inflate.c" FORMNAME="" UNITNAME="Inflate.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lngmtch.c" FORMNAME="" UNITNAME="lngmtch.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Match.c" FORMNAME="" UNITNAME="Match.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Process.c" FORMNAME="" UNITNAME="Process.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Trees.c" FORMNAME="" UNITNAME="Trees.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UCrypt.c" FORMNAME="" UNITNAME="UCrypt.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UFileIO.c" FORMNAME="" UNITNAME="UFileIO.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UGlobals.c" FORMNAME="" UNITNAME="UGlobals.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unshrink.c" FORMNAME="" UNITNAME="Unshrink.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unzmain.c" FORMNAME="" UNITNAME="Unzmain.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Util.c" FORMNAME="" UNITNAME="Util.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UWin32.c" FORMNAME="" UNITNAME="UWin32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Win32.c" FORMNAME="" UNITNAME="Win32.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Win32Zip.c" FORMNAME="" UNITNAME="Win32Zip.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZGlobals.c" FORMNAME="" UNITNAME="ZGlobals.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipFile.c" FORMNAME="" UNITNAME="ZipFile.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipMain.c" FORMNAME="" UNITNAME="ZipMain.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZipUp.c" FORMNAME="" UNITNAME="ZipUp.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="zl_seek.c" FORMNAME="" UNITNAME="zl_seek.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Crypt.h" FORMNAME="" UNITNAME="Crypt.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Enter.h" FORMNAME="" UNITNAME="Enter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ZCrypt.c" FORMNAME="" UNITNAME="ZCrypt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Common.c" FORMNAME="" UNITNAME="Common" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DelZip.h" FORMNAME="" UNITNAME="DelZip.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UserCB.c" FORMNAME="" UNITNAME="UserCB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DelZipExp.def" FORMNAME="" UNITNAME="DelZipExp.def" CONTAINERID="DefTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=79
+Release=6
+Build=2
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=1
+Locale=3081
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=DelphiZip
+FileDescription=freeware Zip/Unzip
+FileVersion=1.79.6.2
+InternalName=
+LegalCopyright=Copyright © 2005, Russell Peters
+LegalTrademarks=Uses code from InfoZip's ZIP
+OriginalFilename=DelZip179.dll
+ProductName=DelphiZip
+ProductVersion=1.79
+Comments=Uses code from InfoZip's ZIP
+
+[Excluded Packages]
+I:\WINDOWS\system32\ibevnt60.bpl=Borland Interbase Event Alerter Component
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=$(BCB)\include;$(BCB)\include\vcl;E:\Builder
+Item1=E:\Builder;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=E:\Builder;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=6
+Item0=..\..\Source\;$(BCB)\source\vcl;E:\DelphiZip\ZipMaster179\Test\
+Item1=$(BCB)\source\vcl;..\..\VCL\;E:\DelphiZip\ZipMaster179\Test\
+Item2=$(BCB)\source\vcl;..\..\VCL\;E:\DelphiZip\1790\Test\
+Item3=$(BCB)\source\vcl;..\..\VCL\
+Item4=$(BCB)\source\vcl;E:\DelphiZip\ZipMstr1790\Source\
+Item5=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=8
+Item0=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_
+Item1=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_;_DEBUG
+Item2=WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_;WIN32_LEAN_AND_MEAN
+Item3=_DEBUG;WIN32;_WINDOWS;NDEBUG;USE_STRM_INPUT;USE_STRM_OUTPUT;_USE_ASM_
+Item4=_DEBUG
+Item5=_DEBUG;MULTITHREAD
+Item6=_DEBUG;Mutlithread
+Item7=_DEBUG;Mutlithreaded
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=Temp
+Item1=Temp\
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=..\
+Item1=Temp\
+
+[Debugging]
+DebugSourceDirs=..\..\;$(BCB)\source\vcl;..\..ZM179_800\Test\
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=..\..\test\Test1.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

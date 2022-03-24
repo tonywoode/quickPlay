@@ -1,0 +1,10 @@
+VERSION 4.0
+EXPORTS
+ DllEntryPoint
+ DZ_PrivVersion
+ DZ_Version
+ DZ_ZipExec
+ DZ_UnzExec
+ DZ_Path
+ DZ_Abort
+ 

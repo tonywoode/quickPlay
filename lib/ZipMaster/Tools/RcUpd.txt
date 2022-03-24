@@ -1,0 +1,7 @@
+RcUpd - Language string updating tool for ZipMaster
+ by Xavier Mor-Mur
+
+Now a separate download for source or executable see
+
+http://personal.auna.com/xav58806/RcUpd.html
+

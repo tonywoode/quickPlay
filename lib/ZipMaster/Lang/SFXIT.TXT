@@ -1,0 +1,125 @@
+// language id
+LANG_ID='10 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Conferma sovrascrittura
+
+// message
+FILEEXISTS_MESSAGE=>< esiste già, vuoi sovrascriverlo?
+// buttons 
+YES=&Sì
+NO=&No
+// don't ask again check
+DONT_ASK_AGAIN=Non &ripetere
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32	
+
+// extract folder label 
+EXTRACT_TO=&Estrai in:
+// "files" label
+FILES=&Files:
+// overwrite action label
+EXISTING_FILES=Files esistenti:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Chiedi
+// skip
+OVERWRITE_SKIP=&Non sovrascrivere
+// overwrite
+OVERWRITE_DO=&Sovrascrivi
+// about button
+ABOUT_BUTTON=&Informazioni...
+// show files button
+SHOW_FILES_BUTTON=&Mostra files
+// start extraction button
+START_BUTTON=&Estrai
+// close button
+CLOSE_BUTTON=C&hiudi
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Al termine, esegui: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Al termine, installa: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Inserire password
+
+// password message
+PASSWORD_MESSAGE=Inserire la password per ><:
+// buttons
+OK=&Ok
+CANCEL=&Annulla
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=Info su DelZip Self-Extractor...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.\n\nTradotto in italiano da Matteo Riso.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Finito.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Errore
+
+// cannot close
+ERR_CANNOT_CLOSE=Impossibile chiudere ><
+// error reading archive
+ERR_READING_ARCHIVE=Errore durante la lettura dell'archivio ><.
+// invalid filename
+ERR_FILENAME=Nome file non valido.
+// failed processing directory
+ERR_DIRECTORY=Errore nella directory ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Tipo di compressione sconosciuto
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Archivio corrotto, prova a scaricare nuovamente il file
+// cannot open file
+ERR_CANNOT_OPEN=Impossibile aprire ><
+// cannot write to file
+ERR_CANNOT_WRITE=Errore scrivendo ><
+// couldn't run program
+ERR_COULDNT_RUN=Impossibile eseguire >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Impossibile installare >< ><
+// CRC32 Error in ><
+ERR_CRC32=CRC32 Error in ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Nome file
+// file size
+FILESIZE=Bytes
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Scegli la cartella di destinazione
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Tutti i files sono stati estratti.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Alcuni files non possono essere estratti.
+// these files not extracted
+THESE_NOT_EXTRACTED=I files selezionati non possono essere estratti.
+
+// ask on cancellation
+CANCEL_QUESTION=Vuoi annullare l'estrazione?
+
+// change disk volume
+INSERT_VOLUME=Cortesemente, inserisci il disco >< nel drive ><

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvEDI" Design="0">
+  <Description>JVCL EDI Components Runtime Package</Description>
+  <GUID>{E6B694C0-1FE7-4FF5-A8BD-FA186B72076F}</GUID>
+  <C6PFlags>-LUJcl</C6PFlags>
+  <C6Libs/>
+  <ImageBase>49640000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="all" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="dbrtl" Targets="DBv6up" Condition=""/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvEDIDBBuffering.pas" Targets="DB" Formname="" Condition=""/>
+  </Contains>
+</Package>

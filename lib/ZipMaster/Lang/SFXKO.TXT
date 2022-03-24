@@ -1,0 +1,127 @@
+// language id
+LANG_ID='12 04'
+// use korean codepage with brcc32
+BRCC32_FLAGS=-c0949
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=덮어쓰기 확인
+
+// message
+FILEEXISTS_MESSAGE=>< 이미 있습니다. 덮어쓸까요 ?
+// buttons 
+YES=예 (&Y)
+NO=아니오 (&N)
+// don't ask again check
+DONT_ASK_AGAIN=되묻지 않기 (&a)
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label 
+EXTRACT_TO=풀기 위치 (&E):
+// "files" label
+FILES=파일 (&F):
+// overwrite action label
+EXISTING_FILES=있는 파일들:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=확인 (&C)
+// skip
+OVERWRITE_SKIP=덮어쓰지 않기 (&D)
+// overwrite
+OVERWRITE_DO=덮어쓰기 (&O)
+// about button
+ABOUT_BUTTON=정보(&A) ...
+// show files button
+SHOW_FILES_BUTTON=파일보기(&f)
+// start extraction button
+START_BUTTON=시작 (&S)
+// close button
+CLOSE_BUTTON=닫기 (&X)
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=푼 후 실행: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=푼 후 설치: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=암호입력...
+
+// password message
+PASSWORD_MESSAGE=다음의 암호입력 ><:
+// buttons
+OK=확인
+CANCEL=취소(&X)
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=DelZip Self-Extractor 정보 ...
+
+// message
+ABOUT=�1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=마침.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=에러...
+
+// cannot close
+ERR_CANNOT_CLOSE=닫을 수 없음 ><
+// error reading archive
+ERR_READING_ARCHIVE=압축읽기 에러 ><
+// invalid filename
+ERR_FILENAME=파일이름 에러
+// failed processing directory
+ERR_DIRECTORY=디렉토리에서 에러 ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=알려지지 않은 압축형식
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=압축파일이 손상되었습니다. 파일을 다시 다운로드 받으세요.
+// cannot open file
+ERR_CANNOT_OPEN=열 수 없음 ><
+// cannot write to file
+ERR_CANNOT_WRITE=>< 를 쓰는 동안 에러발생
+// couldn't run program
+ERR_COULDNT_RUN=실행할 수 없음 >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=설치할 수 없음 >< ><
+// CRC32 Error in ><
+ERR_CRC32=CRC32 Error in ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=파일이름
+// file size
+FILESIZE=크기
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=대상 디렉토리를 선택하시오.
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=모든 파일 압축이 풀렸습니다.
+// some have not been extracted
+SOME_NOT_EXTRACTED=몇몇 파일의 압축이 풀리지 않았습니다.
+// these files not extracted
+THESE_NOT_EXTRACTED=몇몇 선택된 파일의 압축이 풀리지 않았습니다.
+
+// ask on cancellation
+CANCEL_QUESTION=압축 풀기를 취소하시겠습니까?
+
+// change disk volume
+INSERT_VOLUME=볼륨이 >< 인 디스크를 넣으세요. in drive: ><

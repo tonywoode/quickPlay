@@ -1,0 +1,127 @@
+// language id
+LANG_ID='03 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Confirma sobreescriure
+
+// message
+FILEEXISTS_MESSAGE=>< ja existeix, sobreescriure'l?
+// buttons 
+YES=&Sí
+NO=&No
+// don't ask again check
+DONT_ASK_AGAIN=No ho tornis a pregunt&ar
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label 
+EXTRACT_TO=&Extreure a:
+// "files" label
+FILES=&Fitxers:
+// overwrite action label
+EXISTING_FILES=Fitxers existents:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Confirma
+// skip
+OVERWRITE_SKIP=&No sobreescriguis
+// overwrite
+OVERWRITE_DO=&Sobreescriu
+// about button
+ABOUT_BUTTON=&Sobre DelZip...
+// show files button
+SHOW_FILES_BUTTON=Mostra &Fitxers
+// start extraction button
+START_BUTTON=&Comença
+// close button
+CLOSE_BUTTON=&Tanca
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Després d'extreure, executa: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Després d'extreure, instal·la: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Entra la contrasenya...
+
+// password message
+PASSWORD_MESSAGE=Entra la contrasenya per ><:
+// buttons
+OK=D'acord
+CANCEL=&Cancel·la
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=Sobre Delzip Self-Extractor...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Acabat.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Error...
+
+// cannot close
+ERR_CANNOT_CLOSE=No es pot tancar ><
+// error reading archive
+ERR_READING_ARCHIVE=Error llegint el fitxer ><
+// invalid filename
+ERR_FILENAME=Nom del fitxer invàlid.
+// failed processing directory
+ERR_DIRECTORY=Error en el directori ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Tipus de compressió desconegut
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Fitxer corromput, intenteu baixar-lo de nou.
+// cannot open file
+ERR_CANNOT_OPEN=No es pot obrir ><
+// cannot write to file
+ERR_CANNOT_WRITE=Error escrivint ><
+// couldn't run program
+ERR_COULDNT_RUN=No s'ha pogut executar >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=No s'ha pogut instal·lar >< ><
+// CRC32 Error in ><
+ERR_CRC32=Error CRC32 in ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Nom del fixer
+// file size
+FILESIZE=Mida
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Si us plau, seleccioneu el directori de destí.
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Tots els fitxers han estat extrets.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Algun(s) fitxer(s) no s'han pogut extreure.
+// these files not extracted
+THESE_NOT_EXTRACTED=El(s) fitxer(s) seleccionat(s) no s'han pogut extreure.
+
+// ask on cancellation
+CANCEL_QUESTION=Voleu cancel·lar l'extracció?
+
+// change disk volume
+INSERT_VOLUME=Per favor insereix el disc >< en la unitat: ><
+
+

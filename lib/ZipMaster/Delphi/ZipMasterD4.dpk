@@ -1,0 +1,55 @@
+package ZipmasterD4;
+
+{$R *.res}
+{$R '..\ZipSFX.dcr'}
+{$ALIGN OFF}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA OFF}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS OFF}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $06200000}
+{$DESCRIPTION 'ZipMaster 1.79'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl40,
+  vclx40;
+
+contains
+  DZUtils in '..\DZUtils.pas',
+  SFXInterface in '..\SFXInterface.pas',
+  SFXStructs in '..\SFXStructs.pas',
+  ZipMsg in '..\ZipMsg.pas',
+  ZipMstr in '..\ZipMstr.pas',
+  ZipSFX in '..\ZipSFX.pas',
+  ZMCore in '..\ZMCore.pas',
+  ZMCtx in '..\ZMCtx.pas',
+  ZMDBind in '..\ZMDBind.pas',
+  ZMDefMsgs in '..\ZMDefMsgs.pas',
+  ZMDelZip in '..\ZMDelZip.pas',
+  ZMDlg in '..\ZMDlg.pas',
+  ZMExtrLZ77 in '..\ZMExtrLZ77.pas',
+  ZMHash in '..\ZMHash.pas',
+  ZMMsgStr in '..\ZMMsgStr.pas',
+  ZMSBind in '..\ZMSBind.pas',
+  ZMStructs in '..\ZMStructs.pas',
+  ZMUtils in '..\ZMUtils.pas',
+  ZMWrkr in '..\ZMWrkr.pas',
+  ZMXcpt in '..\ZMXcpt.pas';
+
+end.

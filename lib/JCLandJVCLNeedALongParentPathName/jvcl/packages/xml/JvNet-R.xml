@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvNet" Design="0">
+  <Description>JVCL Network Components Runtime Package</Description>
+  <GUID>{C70AFC0D-40D7-4F4D-A0F6-B1C17B608455}</GUID>
+  <C6PFlags>-LUJcl</C6PFlags>
+  <C6Libs>wininet.lib</C6Libs>
+  <ImageBase>4D3F0000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="all" Condition=""/>
+    <Package Name="JvStdCtrls-R" Targets="all" Condition=""/>
+    <Package Name="JvDlgs-R" Targets="all" Condition=""/>
+    <Package Name="JvSystem-R" Targets="all" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="vclx" Targets="allv6up" Condition=""/>
+    <Package Name="indy" Targets="allv6up" Condition="USE_3RDPARTY_INDY && !USE_3RDPARTY_INDY10"/>
+    <Package Name="IndySystem60" Targets="C6,C6p,D6,D6p" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IndySystem70" Targets="D7,D7p" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IndySystem" Targets="D9,D9p,D10,D10p,D11,D12" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IndyProtocols60" Targets="C6,C6p,D6,D6p" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IndyProtocols70" Targets="D7,D7p" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IndyProtocols" Targets="D9,D9p,D10,D10p,D11,D12" Condition="USE_3RDPARTY_INDY && USE_3RDPARTY_INDY10"/>
+    <Package Name="IcsBcb60" Targets="C6,C6p" Condition="USE_3RDPARTY_ICS"/>
+    <Package Name="IcsDel60" Targets="D6,D6p" Condition="USE_3RDPARTY_ICS"/>
+    <Package Name="IcsDel70" Targets="D7,D7p" Condition="USE_3RDPARTY_ICS"/>
+    <Package Name="IcsDel90" Targets="D9,D9p" Condition="USE_3RDPARTY_ICS"/>
+    <Package Name="IcsDel100" Targets="D10,D10p" Condition="USE_3RDPARTY_ICS"/>
+    <Package Name="IcsDel110" Targets="D11" Condition="USE_3RDPARTY_ICS"/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvFormToHtml.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvHtmlParser.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvMail.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvProgramVersionCheck.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvRgbToHtml.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvRichEditToHtml.pas" Targets="VCL" Formname="" Condition=""/>
+    <File Name="..\..\run\JvStringListToHtml.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvStrToHtml.pas" Targets="all" Formname="" Condition=""/>
+    <File Name="..\..\run\JvUrlGrabbers.pas" Targets="windows" Formname="" Condition=""/>
+    <File Name="..\..\run\JvUrlListGrabber.pas" Targets="windows" Formname="" Condition=""/>
+  </Contains>
+</Package>

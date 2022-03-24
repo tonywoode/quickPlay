@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api
+END
+WUApiLib_TLB.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api/WUApiLib_TLB.pas
+END
+JwaWuaErrors.inc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api/JwaWuaErrors.inc
+END
+Main.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api/Main.pas
+END
+Main.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api/Main.dfm
+END
+WuaExample.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/WUA%20Api/WuaExample.dpr
+END

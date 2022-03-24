@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon
+END
+Install.reg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/Install.reg
+END
+Unit1.pas
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/Unit1.pas
+END
+xLogonNotify.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/xLogonNotify.dpr
+END
+Unit1.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/Unit1.dfm
+END
+Logo.RES
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/Logo.RES
+END
+winlogon.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/winlogon.txt
+END
+LogoAppThread.pas
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/LogoAppThread.pas
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/jedi-apilib/!svn/ver/813/jwapi/branches/2.3/Examples/Winlogon/Readme.txt
+END

@@ -1,0 +1,154 @@
+;This help file was created with HelpScribble 7.7.5
+;Licensed to: Russell Peters
+
+:BASE ZipMaster.hlp
+:TITLE ZipMaster Component Help
+:LINK D7VCL.HLP
+1 TZipMaster component
+2 General information =Scribble10
+2 Error and warning messages=Scribble2080
+2 Copyright, Contact information, Bug reports and more
+3 Contact information=TZipMaster_Contact
+3 Bug reports and other information=Scribble30
+3 Licence=Scribble70
+2 Files
+3 Source files=Scribble140
+2 Changes
+3 Version 1.79=Scribble80
+3 Version 1.78=Scribble90
+3 Version 1.77=Scribble100
+3 Version 1.76=Scribble100
+3 Version 1.73=Scribble110
+3 Version 1.72=Scribble120
+2 Properties
+3 Properties=Scribble200
+3 AddCompLevel =Scribble320
+3 AddOptions =Scribble350
+3 AddStoreSuffixes=Scribble360
+3 Build=Scribble370
+3 Cancel =Scribble400
+3 CodePage=Scribble410
+3 ConfirmErase=Scribble430
+3 Count =Scribble440
+3 DirEntry=Scribble250
+3 DLL_Build=Scribble470
+3 DLL_Load=Scribble490
+3 DLL_Path=Scribble540
+3 DLL_Version=Scribble510
+3 DLLDirectory =Scribble460
+3 ErrCode =Scribble570
+3 ExtAddStoreSuffixes=Scribble600
+3 ExtrBaseDir =Scribble610
+3 ExtrOptions =Scribble630
+3 FSpecArgs =Scribble640
+3 FSpecArgsExcl=Scribble650
+3 FullErrCode=Scribble660
+3 Handle =Scribble680
+3 HowToDelete=Scribble690
+3 IsSpanned=Scribble700
+3 KeepFreeOnDisk1=Scribble720
+3 KeepFreeOnAllDisks=Scribble760
+3 Language=Scribble760>main
+3 LanguageInfo=Scribble780>main
+3 MaxVolumeSize=Scribble820
+3 Message =Scribble800>main
+3 MinFreeVolumeSize=Scribble800
+3 MsgHandler=Scribble800
+3 NotMainThread=Scribble840
+3 Password =Scribble850
+3 PasswordReqCount=Scribble870
+3 RootDir=Scribble880
+3 SFXCaption =Scribble890
+3 SFXCommandLine =Scribble900
+3 SFXDefaultDir =Scribble910
+3 SFXIcon=Scribble920
+3 SFXMessage=Scribble930
+3 SFXOffset=Scribble940
+3 SFXOptions =Scribble950
+3 SFXOverWriteMode =Scribble960
+3 SFXPath =Scribble970
+3 SFXSlave=Scribble210
+3 SpanOptions=Scribble240
+3 SuccessCnt =Scribble980
+3 TempDir=Scribble990
+3 TotalSizeToProcess=Scribble1000
+3 Trace =Scribble1010
+3 Unattended=Scribble1030
+3 UnzBusy =Scribble1050
+3 UnzVers =Scribble1060
+3 Verbose =Scribble1090
+3 version=Scribble1190
+3 ZipBusy =Scribble1110
+3 ZipComment=Scribble1120
+3 ZipContents =Scribble1130
+3 ZipEOC=Scribble1220
+3 ZipFileName=Scribble1240
+3 ZipFileSize=Scribble1250
+3 ZipSOC=Scribble1260
+3 ZipStream=Scribble1280
+3 ZipVers =Scribble1300
+2 Methods
+3 Methods=Scribble270
+3 Add =Scribble1310
+3 AddStreamToFile=Scribble1330
+3 AddStreamToStream=Scribble1340
+3 AppendSlash=Scribble1360
+3 Busy=Scribble390
+3 ConvertSFX =Scribble1370
+3 ConvertZIP =Scribble1390
+3 Copy_File=Scribble1420
+3 CopyZippedFiles=Scribble1430
+3 Delete =Scribble1450
+3 EraseFile=Scribble1460
+3 Extract =Scribble1470
+3 ExtractFileToStream=Scribble1480
+3 ExtractStreamToStream=Scribble1500
+3 FullVersionString=Scribble290
+3 GetAddPassword =Scribble1520
+3 GetExtrPassword =Scribble1540
+3 GetPassword=Scribble1560
+3 List =Scribble1610
+3 Load_Unz_Dll =Scribble1620
+3 Load_Zip_Dll =Scribble1630
+3 PathConcat=Scribble280
+3 ReadSpan=Scribble1650
+3 Rename=Scribble1670
+3 ShowZipMessage=Scribble1680
+3 Unload_Unz_Dll =Scribble1700
+3 Unload_Zip_Dll =Scribble1710
+3 WriteSpan=Scribble1720
+2 Events
+3 Events=Scribble310
+3 OnAfterCallback=Scribble2100
+3 OnCopyZipOverwrite=Scribble1750
+3 OnCRC32Error=Scribble1770
+3 OnDirUpdate =Scribble1780
+3 OnExtractOverwrite=Scribble1790
+3 OnExtractSkipped=Scribble1800
+3 OnFileComment=Scribble1810
+3 OnGetNextDisk=Scribble1820
+3 OnItemProgress=Scribble2030
+3 OnMessage =Scribble1830
+3 OnNewName=Scribble1850
+3 OnPasswordError=Scribble1870
+3 OnProgress =Scribble1890
+3 OnProgressDetails=Scribble1910
+3 OnSetNewName=Scribble1940
+3 OnTick=Scribble1970
+3 OnTotalProgress=Scribble2010
+3 OnStatusDisk=Scribble2050
+3 OnZipDialog=Scribble1990
+3 OnZipStr=Scribble1980
+2 Utility Functions
+3 DelimitPath=Scribble2160>main
+3 DirExists=Scribble2170>main
+3 FilenameMatch=Scribble2130>main
+3 IsWild=Scribble2180>main
+3 PathConcat=Scribble2120>main
+3 QueryZip=Scribble2200>main
+3 IsWinXP=Scribble2220>main
+3 SetSlash=Scribble2150>main
+3 IsSameFile=Scribble2230>main
+2 Tools
+3 ZipResMaker=Scribble2250>main
+3 ZMConfig=Scribble2260>main

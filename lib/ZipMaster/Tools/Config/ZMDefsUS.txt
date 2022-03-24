@@ -1,0 +1,62 @@
+1. Select the ZipConfig.inc to edit
+2. adjust the required defines
+3. Save any changes
+
+[USE_COMPRESSED_STRINGS]
+To reduce the size of the executable file, especially when multiple languages are used, the message string resources are compressed (default).
+If this define is removed 'normal' resource strings are used.
+
+[STATIC_LOAD_DLL]
+When you want to work with static binding define the STATIC_LOAD_DLL directive.
+Make sure that the component, and the Delphi IDE, can find DelZip179.dll . ( Either in the Windows System directory or in the same directory as your application executable. The IDE may require it to be either in the 'bpl' or the 'bin' directory depending upon version. )
+
+[NO_SPAN]
+When you want to build without disk spanning then define NO_SPAN; this will reduce size.
+
+When built with NO_SPAN defined following properties are not available:
+- ConfirmErase
+- KeepFreeOnDisk1
+- KeepFreeOnAllDisks
+- MaxVolumeSize
+- MinFreeVolumeSize
+
+Following methods are not available
+- ReadSpan
+- WriteSpan
+
+Following events are not available
+- OnGetNextDisk
+- OnStatusDisk
+
+[INTERNAL_SFX]
+To reduce code size if you don't want (or need) to use SFX functionality you may want to build without the internal componet; using an external component to handle SFX functions
+
+When built without INTERNAL_SFX defined the external component's properties and functions are used. 
+The following ZipMaster properties are not available 
+- SFXCaption
+- SFXCommandLine
+- SFXDefaultDir
+- SFXIcon
+- SFXMessage
+- SFXOptions
+- SFXOverWriteMode
+- SFXPath
+There will be an additional property
+- SFXSlave
+which connects to the external component
+
+[KEEP_BACKWARD]
+To make the transition to the new version easier KEEP_BACKWARD can be defined. 
+This will include adapted versions of the following functions for the separate dlls.  
+- Load_Unz_Dll 
+- Load_Zip_Dll 
+- Unload_Unz_Dll 
+- Unload_Zip_Dll 
+- UnzDllPath 
+- ZipDllPath 
+- UnzVers 
+- ZipVers
+
+[ALLOW_2G]
+ALLOW_2G define to use file with sizes larger than 2GigaBytes.
+When set the FileSize in OnProgress event, and TotalSize in OnTotalProgress event are changed to type Cardinal, instead of type integer 

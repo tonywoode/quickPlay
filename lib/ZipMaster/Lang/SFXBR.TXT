@@ -1,0 +1,125 @@
+// language id, hexadecimal values!
+LANG_ID='16 04'
+
+// fileexist dialog ================================================================
+// caption
+FILEEXISTS_TITLE=Confirmar substituiзгo
+
+// message
+FILEEXISTS_MESSAGE=>< jб existe, sobreescrever ?
+// buttons
+YES=&Sim
+NO=&Nгo
+// don't ask again check
+DONT_ASK_AGAIN=Nгo perguntar novamente
+
+
+// main dialog =====================================================================
+// caption
+MAIN_TITLE=Delphi Zip SFX32
+
+// extract folder label
+EXTRACT_TO=E&xtrair para:
+// "files" label
+FILES=&Arquivos:
+// overwrite action label
+EXISTING_FILES=Arquivos existentes:
+// overwrite actions
+// confirm
+OVERWRITE_CONFIRM=&Confirmar
+// skip
+OVERWRITE_SKIP=&Nгo sobreescrever
+// overwrite
+OVERWRITE_DO=&Sobreescrever
+// about button
+ABOUT_BUTTON=So&bre DelZip...
+// show files button
+SHOW_FILES_BUTTON=&Mostrar Arquivos
+// start extraction button
+START_BUTTON=&Iniciar
+// close button
+CLOSE_BUTTON=Ence&rrar
+// run after extraction checkbox
+RUN_AFTER_EXTRACTION=Apуs extrair, executar: >< ><
+// install after extraction checkbox
+INSTALL_AFTER_EXTRACTION=Apуs extrair, instalar: >< ><
+
+
+// password dialog =================================================================
+// caption
+PASSWORD_TITLE=Informe a senha...
+
+// password message
+PASSWORD_MESSAGE=Senha para ><:
+// buttons
+OK=Ok
+CANCEL=&Cancelar
+
+
+// about box =======================================================================
+// caption
+ABOUT_TITLE=Sobre o DelZip Self-Extractor...
+
+// message
+ABOUT=©1997-2004 by C. Bunton, E. W. Engler, M. Stephany, R. Aelbrecht\n\nThe authors : \n\n- Carl Bunton (http://www.concentric.net/~twojags)\n- Eric W. Engler (http://www.geocities.com/SiliconValley/Network/2114)\n- Markus Stephany (http://www.mirkes.de)\n- Roger Aelbrecht (http://home.tiscali.be/driehoeksw)\n\nCredits to :\n\nThomas Hoelzer, Deepu Chandy Thomas, Todd Fast,\nDidier Havelange, Frank Reichert, Angus Johnson et al.\n\nBrazilian Portuguese translation by Celso Malheiro.
+
+
+// finished box ====================================================================
+FINISHED_TITLE=Terminado.
+
+
+// error messages ==================================================================
+// caption
+ERROR_TITLE=Erro...
+
+// cannot close
+ERR_CANNOT_CLOSE=Nгo conseguiu fechar ><
+// error reading archive
+ERR_READING_ARCHIVE=Erro ao ler o arquivo ><
+// invalid filename
+ERR_FILENAME=Nome de arquivo invбlido.
+// failed processing directory
+ERR_DIRECTORY=Erro no diretуrio ><
+// unknown compression type
+ERR_COMPRESSION_TYPE=Tipo de compressгo desconhecida
+// archive corrupted, please download again
+ERR_ARCHIVE_CORRUPTED=Archivo corrompido, por favor tente baixб-lo novamente.
+// cannot open file
+ERR_CANNOT_OPEN=Nгo conseguiu abrir ><
+// cannot write to file
+ERR_CANNOT_WRITE=Erro gravando ><
+// couldn't run program
+ERR_COULDNT_RUN=Nгo conseguiu executar >< ><
+// couldn't install app
+ERR_COULDNT_INSTALL=Nгo conseguiu instalar >< ><
+// CRC32 Error in ><
+ERR_CRC32=CRC32 Erro em ><
+
+
+// other strings ==================================================================
+
+// listview columns
+// filename
+FILENAME=Nome
+// file size
+FILESIZE=Tamanho
+
+// default title
+DEFAULT_TITLE=DelZip Self-Extractor
+
+// browse folder hint message
+BROWSEFOLDER_HINT=Por favor, escolha o diretуrio de destino
+
+// final messages
+// all have been extracted
+ALL_EXTRACTED=Todos os arquivos foram extraнdos.
+// some have not been extracted
+SOME_NOT_EXTRACTED=Nгo foi possнvel extrair alguns arquivos.
+// these files not extracted
+THESE_NOT_EXTRACTED=Nгo foi possнvel extrair o(s) arquivo(s) selecionado(s).
+
+// ask on cancellation
+CANCEL_QUESTION=Deseja cancelar a extraзгo?
+
+// change disk volume
+INSERT_VOLUME=Por favor, insira o disco >< no drive: ><

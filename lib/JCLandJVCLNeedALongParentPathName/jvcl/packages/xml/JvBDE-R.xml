@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Package Name="JvBDE" Design="0">
+  <Description>JVCL BDE Components Runtime Package</Description>
+  <GUID>{9189FAE4-7284-4821-8E3F-0F17EA23C445}</GUID>
+  <C6PFlags>-LUJcl</C6PFlags>
+  <C6Libs/>
+  <ImageBase>49060000</ImageBase>
+  <Requires>
+    <Package Name="JvCore-R" Targets="all" Condition=""/>
+    <Package Name="JvSystem-R" Targets="all" Condition=""/>
+    <Package Name="JvDlgs-R" Targets="all" Condition=""/>
+    <Package Name="JvStdCtrls-R" Targets="all" Condition=""/>
+    <Package Name="JvDB-R" Targets="DB" Condition=""/>
+    <Package Name="Jcl" Targets="allv6up" Condition=""/>
+    <Package Name="rtl" Targets="allv6up" Condition=""/>
+    <Package Name="vcl" Targets="allv6up" Condition=""/>
+    <Package Name="dbrtl" Targets="DBv6up" Condition=""/>
+    <Package Name="bdertl" Targets="DBv6up" Condition=""/>
+    <Package Name="vcldb" Targets="DBv6up" Condition=""/>
+    <Package Name="vclx" Targets="allv6up" Condition=""/>
+  </Requires>
+  <Contains>
+    <File Name="..\..\run\JvBDELoginDialog.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEMemTable.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEMove.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEProgress.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEQBE.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEQuery.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDESecurity.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDESQLScript.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBdeUtils.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDECheckPasswordForm.pas" Targets="DB" Formname="JvChPswdForm" Condition=""/>
+    <File Name="..\..\run\JvBDEExceptionForm.pas" Targets="DB" Formname="JvBdeErrorDlg" Condition=""/>
+    <File Name="..\..\run\JvBDEFilter.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDEIndex.pas" Targets="DB" Formname="" Condition=""/>
+    <File Name="..\..\run\JvBDELists.pas" Targets="DB" Formname="" Condition=""/>
+  </Contains>
+</Package>

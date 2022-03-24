@@ -1,0 +1,131 @@
+#include "ZipMsg.h"
+
+// edited R.Peters 2005-11-27
+
+STRINGTABLE
+LANGUAGE 0x11, 1 // 0411
+{
+  DT_Language,        "JP: Japanese"
+
+GE_FatalZip,		"DelZip179.DLL内で致命的エラー : 例外により中断"
+GE_NoZipSpecified,	"エラー - Zipファイルが指定されていません！"
+GE_NoMem,		"利用不可能なメモリを要求しました"
+GE_WrongPassword,	"エラー - パスワードが違います\nパスワードは無視されました"
+GE_CopyFile,		"コピー中： "
+
+
+RN_ZipSFXData,          "SFXヘッダーをコピー中のエラー"
+RN_NoRenOnSpan,         "「Spanned Zip File」では「Rename」は実装されていません"
+RN_ProcessFile,         "処理中： "
+RN_RenameTo,		"名前の変更 ："
+
+
+PW_UnatAddPWMiss,	"エラー - まだパスワードがありません"
+PW_UnatExtPWMiss,	"エラー - 解凍用のパスワードがありません"
+ZB_OK,			"&Ok"
+ZB_Cancel,		"&Cancel"
+PW_Caption,		"パスワード"
+PW_MessageEnter,	"パスワードの入力"
+PW_MessageConfirm,	"パスワードの確認"
+ZB_CancelAll,		"Cancel all"
+ZB_Abort,		"中断"
+PW_ForFile,		"ファイル："
+
+
+CF_SourceIsDest,	"同名ファイルが存在します"
+CF_OverwriteYN,		"上書き確認 '%s' in '%s' ?"
+CF_CopyFailed,		"ファイルのコピー '%s' から '%s' は、失敗しました"
+CF_SourceNotFound, 	"ファイル '%s' は '%s' の中にありません！"
+CF_SFXCopyError,	"SFX Data コピー中のエラー"
+CF_DestFileNoOpen,	"保存先のZipファイルを開けられません！"
+CF_NoCopyOnSpan,	"「Spanned Zip File」では「CopyZippedFiles」は実装されていません"
+
+
+LI_ReadZipError,	"Zip書庫の読み込み中のシークエラー！"
+LI_ErrorUnknown,	"未知のエラー in List() Function\n"
+LI_WrongZipStruct,	"警告 - Zip構造体中にエラー！"
+LI_GarbageAtEOF,	"警告 - 書庫の末尾にゴミがあります！"
+
+
+AD_NothingToZip,	"エラー - 圧縮するファイルがありません！"
+AD_UnattPassword,	"Unattendedオプション付きの操作では、パスワードが必要です"
+AD_NoFreshenUpdate,	"「Spanned Archive」ではAddFreshen 、AddUpdate は実行不可能です"
+AD_AutoSFXWrong,	"エラー %.1d 自動SFX生成中に生じました"
+AD_InIsOutStream,	"インプットストリームは、アウトプットストリームにセットされないかもしれません"
+AD_InvalidName,		"ワイルドカードはファイル名、ファイルの明細の中では使えません"
+
+
+DL_NothingToDel,	"エラー - 削除用に選ばれたファイルがありません"
+DL_NoDelOnSpan,		"「Spanned Zip File」では「Delete Files」は実装されていません"
+
+
+EX_FatalUnZip,		"DelZip179.DLL内で致命的エラー : 例外により中断"
+EX_UnAttPassword,	"警告 - Unattendedオプション付き解凍：一部のファイルが解凍されない可能性があります"
+//EX_NoStreamDLL,		"エラー - あなたのDelZip179.dllはストリームが使えません。バージョン1.60以降にアップデートして下さい"
+
+
+LD_DllLoaded,	"%s Loaded"
+LD_NoDll,		"%sが見つかりません！"
+LD_BadDll,		"以下のディレクトリから古い%sの読込みを試みました "
+
+
+SF_StringTooLong,	"エラー - プロパティーの文字列が長すぎます。255文字を超えました！"
+SF_NoZipSFXBin,		"エラー - %sが見つかりません！"
+SF_InputIsNoZip,	"エラー : 指定されたファイルはZipファイルではありません"
+SF_NoSFXSupport,	"SFX関数群はサポートしていません"
+
+
+CZ_NoExeSpecified,	"エラー - EXEファイルが指定されていません"
+CZ_InputNotExe,		"エラー : 指定されたファイルはEXEファイルではありません"
+CZ_SFXTypeUnknown,	"エラー 自己解凍型書庫に決定しています"
+
+
+DS_NoInFile,		"指定されたファイルは存在しません"
+DS_FileOpen,		"Zipファイルを開けません"
+DS_NotaDrive,		"有効なドライブではありません: %s"
+DS_DriveNoMount,	"未定義のドライブ %s"
+DS_NoVolume,		"ボリュームラベルをセットできません"
+DS_NoMem,		"メッセージを表示するメモリーが足りません"
+DS_Canceled,		"ユーザーにより操作がキャンセルされました"
+DS_FailedSeek,		"指定ファイルのシークエラー"
+DS_NoOutFile,		"出力用ファイルの生成失敗"
+DS_NoWrite,		"出力用ファイルへの書き込み失敗"
+DS_EOCBadRead,		"Central Directory末尾を読み込み中のエラー"
+DS_LOHBadRead,		"Local Header読み込み中のエラー"
+DS_CEHBadRead,		"Central Header読み込み中のエラー"
+DS_LOHWrongSig,		"Local Header signatureが不正です"
+DS_CEHWrongSig,		"Central Header signatureが不正です"
+DS_LONameLen,		"Local File Name読み込み中のエラー"
+DS_CENameLen,		"Central File Name読み込み中のエラー"
+DS_LOExtraLen,		"Local Extra Field読み込み中のエラー"
+DS_CEExtraLen,		"Central Extra Field読み込み中のエラー"
+DS_DataDesc,		"Data Descriptor Area読み書き中のエラー"
+DS_ZipData,		"Zipped Data読み込み中のエラー"
+DS_CECommentLen,	"File Comment読み込み中のエラー"
+DS_EOArchComLen,	"Archive Comment読み込み中のエラー"
+DS_ErrorUnknown,	"以下の関数の中で未知のエラー ReadSpan(), WriteSpan(), Rename() or CopyZippedFiles()\n"
+DS_NoUnattSpan,		"Unattended Disk Spanningは未実装です"
+DS_EntryLost,		"Internal Structure内に Local Headerが見つかりません"
+DS_NoTempFile,		"作業用ファイルの生成ができません"
+DS_LOHBadWrite,		"Local Header書き込み中のエラー"
+DS_CEHBadWrite,		"Central Header書き込み中のエラー"
+DS_EOCBadWrite,		"Central Directory末尾を書き込み中のエラー"
+DS_ExtWrongSig,		"Extended Local signature書き込み中のエラー"
+DS_NoDiskSpace,		"ディスクの空き容量が不足しています"
+DS_InsertDisk,		"最後のディスクを入れてください"
+DS_InsertVolume,	"Disk Volume %.1d の %.1d ディスクを入れてください"
+DS_InDrive,		"\nは Drive: %sにあります"
+DS_NoValidZip,		"この書庫は不正なZip書庫です"
+DS_FirstInSet,		"これはバックアップ・ディスクセット中の最初のディスクです \nこのセットの最後のディスクを入れてください"
+DS_NotLastInSet,	"これはバックアップ・ディスクセット中の %d番目のディスクです,\nこのセットの最後のディスクを入れてください"
+DS_AskDeleteFile,	"同名ファイルがあります %s\nこのファイルを上書きしても良いですか"
+DS_AskPrevFile,		"注意：これは1つ前のディスクです。 No %d！！！\n内容を上書きしても良いですか"
+DS_NoSFXSpan,		"エラー - 自己解凍型書庫(.exe)で 「Spanned」はありえません"
+DS_CEHBadCopy,		"エラー CEH 構造体のファイルネームをコピー中のエラー"
+DS_EOCBadSeek,		"EOC 構造体をスキップ中のシークエラー"
+DS_EOCBadCopy,		"Zip書庫コメントをコピー中のエラー"
+DS_FirstFileOnHD,	"これはバックアップ・セット中の最初のファイルです,\nこのセットの最後のファイルを選んでください"
+DS_InsertAVolume,       "Disk Volume %.1dのディスクを入れてください"
+DS_CopyCentral,         "Central Directory"
+DS_NoDiskSpan,		"Disk Spanningはサポートしていません"
+}

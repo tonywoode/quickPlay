@@ -1,0 +1,909 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title> &nbsp; How to setup the library&nbsp;by&nbsp;JEDI Windows API</title> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<link rel="shorcut icon" type="image/x-ico" href="http://blog.delphi-jedi.net/wp-content/themes/InSense/favicon.ico">
+
+<link href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/wp-layout-normal.css" title="normal">
+<link rel="alternate stylesheet" type="text/css" href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/wp-layout-large.css" title="large">
+<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/imghover.js"> </script>
+<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/styleswitcher.js"> </script>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.delphi-jedi.net/feed/">
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.delphi-jedi.net/feed/rss/">
+<link rel="alternate" type="application/rss+xml" title="JEDI Windows API » How to setup the library Comments Feed" href="http://blog.delphi-jedi.net/2007/12/27/how-to-setup-the-library/feed/">
+<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/jquery_002.js"></script>
+<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/jquery.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.delphi-jedi.net/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.delphi-jedi.net/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="JEDI Windows API" href="http://blog.delphi-jedi.net/">
+<link rel="start" title="Vista: integrity label" href="http://blog.delphi-jedi.net/2007/10/27/jwscl-entry/">
+<link rel="prev" title="Vista: integrity label" href="http://blog.delphi-jedi.net/2007/10/27/jwscl-entry/">
+<link rel="next" title="Welcome" href="http://blog.delphi-jedi.net/2008/03/02/welcome/">
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel="stylesheet" href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/geshi.css" type="text/css">	<link type="text/css" rel="stylesheet" href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shCore.css">
+	<link type="text/css" rel="stylesheet" href="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shThemeDefault.css">
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shCore.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushBash.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushCpp.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushCSharp.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushCss.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushDelphi.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushDiff.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushGroovy.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushJava.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushJScript.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushPerl.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushPhp.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushPlain.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushPython.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushRuby.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushScala.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushSql.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushVb.js"></script>
+	<script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/shBrushXml.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<style type="text/css" media="all">
+/* <![CDATA[ */
+.wp-table-reloaded {
+	background-color:#CDCDCD;
+	margin:10px 0px 15px 0px;
+	font-size:8pt;
+	width:100%;
+	text-align:left;
+}
+.wp-table-reloaded th {
+	background-color:#E6EEEE;
+	border:1px solid #FFFFFF;
+	padding:4px;
+}
+.wp-table-reloaded td {
+	color:#3D3D3D;
+	padding:4px;
+	background-color:#FFFFFF;
+	vertical-align:top;
+}
+.wp-table-reloaded .even td {
+	background-color:#FFFFFF;
+}
+.wp-table-reloaded .odd td{
+	background-color:#F0F0F6;
+}
+.wp-table-reloaded .header {
+	background-image:url(http://blog.delphi-jedi.net/wp-content/plugins/wp-table-reloaded/img/bg.gif);
+	background-repeat:no-repeat;
+	background-position:center right;
+	cursor:pointer;
+}
+.wp-table-reloaded .headerSortUp {
+	background-color:#8DBDD8;
+	background-image:url(http://blog.delphi-jedi.net/wp-content/plugins/wp-table-reloaded/img/asc.gif);
+}
+
+.wp-table-reloaded .headerSortDown {
+	background-color:#8DBDD8;
+	background-image:url(http://blog.delphi-jedi.net/wp-content/plugins/wp-table-reloaded/img/desc.gif);
+}
+/* ]]> */
+</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  jQuery("img").lazyload({
+    effect:"fadeIn",
+    placeholder: "http://blog.delphi-jedi.net/wp-content/plugins/jquery-image-lazy-loading/images/grey.gif"
+  });
+});
+</script><style type="text/css">.recaptchatable td img {
+/* see http://developer.mozilla.org/en/docs/Images%2C_Tables%2C_and_Mysterious_Gaps */
+display: block;
+}
+.recaptchatable .recaptcha_r1_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -0px -63px no-repeat; width: 318px; height: 9px; }
+.recaptchatable .recaptcha_r2_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -18px -0px no-repeat; width: 9px; height: 57px; }
+.recaptchatable .recaptcha_r2_c2 { background: url(http://api.recaptcha.net/img/red/sprite.png) -27px -0px no-repeat; width: 9px; height: 57px; }
+.recaptchatable .recaptcha_r3_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -0px -0px no-repeat; width: 9px; height: 63px; }
+.recaptchatable .recaptcha_r3_c2 { background: url(http://api.recaptcha.net/img/red/sprite.png) -18px -57px no-repeat; width: 300px; height: 6px; }
+.recaptchatable .recaptcha_r3_c3 { background: url(http://api.recaptcha.net/img/red/sprite.png) -9px -0px no-repeat; width: 9px; height: 63px; }
+.recaptchatable .recaptcha_r4_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -43px -0px no-repeat; width: 171px; height: 49px; }
+.recaptchatable .recaptcha_r4_c2 { background: url(http://api.recaptcha.net/img/red/sprite.png) -36px -0px no-repeat; width: 7px; height: 57px; }
+.recaptchatable .recaptcha_r4_c4 { background: url(http://api.recaptcha.net/img/red/sprite.png) -214px -0px no-repeat; width: 97px; height: 57px; }
+.recaptchatable .recaptcha_r7_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -43px -49px no-repeat; width: 171px; height: 8px; }
+.recaptchatable .recaptcha_r8_c1 { background: url(http://api.recaptcha.net/img/red/sprite.png) -43px -49px no-repeat; width: 25px; height: 8px; }
+.recaptchatable .recaptcha_image_cell center img { height:57px;}
+.recaptchatable .recaptcha_image_cell center { height:57px;}
+.recaptchatable .recaptcha_image_cell {
+background-color:white; height:57px;
+}
+/* some people break their style sheet, we need to clean up after them */
+#recaptcha_area, #recaptcha_table {
+width: 318px !important;
+}
+.recaptchatable, #recaptcha_area tr, #recaptcha_area td, #recaptcha_area th {
+margin:0px !important;
+border:0px !important;
+padding:0px !important;
+border-collapse: collapse !important;
+vertical-align: middle !important;
+}
+.recaptchatable * {
+margin:0px;
+padding:0px;
+border:0px;
+font-family:helvetica,sans-serif;
+font-size:8pt;
+color:black;
+position:static;
+top:auto;
+left:auto;
+right:auto;
+bottom:auto;
+text-align:left !important;
+}
+.recaptchatable #recaptcha_image {
+margin:auto;
+}
+.recaptchatable img {
+border:0px !important;
+margin:0px !important;
+padding:0px !important;
+}
+.recaptchatable a, .recaptchatable a:hover {
+-moz-outline:none;
+border:0px !important;
+padding:0px !important;
+text-decoration:none;
+color:blue;
+background:none !important;
+font-weight: normal;
+}
+.recaptcha_input_area {
+position:relative !important;
+width:146px !important;
+height:45px !important;
+margin-left:20px !important;
+margin-right:5px !important;
+margin-top:4px !important;
+background:none !important;
+}
+.recaptchatable label.recaptcha_input_area_text {
+margin:0px !important;  
+padding:0px !important;
+position:static !important;
+top:auto !important;
+left:auto !important;
+right:auto !important;
+bottom:auto !important;
+background:none !important;
+height:auto !important;
+width:auto !important;
+}
+.recaptcha_theme_red label.recaptcha_input_area_text,
+.recaptcha_theme_white label.recaptcha_input_area_text {
+color:black !important;
+}
+.recaptcha_theme_blackglass label.recaptcha_input_area_text {
+color:white !important;
+}
+.recaptchatable #recaptcha_response_field  {
+width:145px !important;
+position:absolute !important;
+bottom:7px !important;
+padding:0px !important;
+margin:0px !important;
+font-size:10pt;
+}
+.recaptcha_theme_blackglass #recaptcha_response_field,
+.recaptcha_theme_white #recaptcha_response_field {
+border: 1px solid gray;
+}
+.recaptcha_theme_red #recaptcha_response_field {
+border:1px solid #cca940;
+}
+.recaptcha_audio_cant_hear_link {
+font-size:7pt;
+color:black;
+}
+.recaptchatable {
+line-height:1em;
+}
+#recaptcha_instructions_error {
+color:red !important;
+}
+
+
+.recaptcha_is_showing_audio .recaptcha_only_if_image,.recaptcha_isnot_showing_audio .recaptcha_only_if_audio,.recaptcha_had_incorrect_sol .recaptcha_only_if_no_incorrect_sol,.recaptcha_nothad_incorrect_sol .recaptcha_only_if_incorrect_sol{display:none !important}</style></head><body>
+
+<!-- bgcontain & bgcontainIn START -->
+<div id="bgcontain"><div id="bgcontainIn">
+
+<!-- Header START -->
+<div class="HeaderBG">
+ <div class="Header">
+ <h1><a linkindex="0" href="http://blog.delphi-jedi.net/">JEDI Windows API</a></h1>
+ <div class="TagLine">Joint Endeavor of Delphi Innovators of Windows Programming</div>
+ <div class="CornerLeft"></div><div class="CornerRight"></div>
+ 
+   <div class="TopMenu">
+    <ul>
+      <li><a linkindex="1" href="#Content">Skip to Content</a></li><li><a linkindex="2" href="http://blog.delphi-jedi.net/">Home</a></li><li><a href="http://blog.delphi-jedi.net/wp-login.php">Log in</a></li>
+    </ul>
+  </div>
+ 
+   <div class="WidthSize">
+   Options:
+    <ul>
+      <li><a href="#" onclick="setActiveStyleSheet('normal'); return false;">Normal</a></li><li><a href="#" onclick="setActiveStyleSheet('large'); return false;">Large</a></li>
+    </ul>
+  </div>
+</div> 
+<!-- Header END -->
+
+<!-- Menu START -->
+<div class="Menu">
+  <div class="MainMenu">
+   <ul>
+    <li class="page_item page-item-9"><a linkindex="3" href="http://blog.delphi-jedi.net/home/" title="Home">Home</a></li>
+<li class="page_item page-item-10"><a linkindex="4" href="http://blog.delphi-jedi.net/jedi-api-headers/" title="API Headers">API Headers</a></li>
+<li class="page_item page-item-11"><a linkindex="5" href="http://blog.delphi-jedi.net/security-library/" title="Security Library">Security Library</a></li>
+<li class="page_item page-item-166"><a linkindex="6" href="http://blog.delphi-jedi.net/sponsors/" title="Sponsors">Sponsors</a></li>
+<li class="page_item page-item-2"><a linkindex="7" href="http://blog.delphi-jedi.net/about/" title="About Fame">About Fame</a></li>
+ 
+   </ul>
+  </div>
+  
+  <div class="MainSyn">
+  <ul>
+   <li><a linkindex="8" href="http://blog.delphi-jedi.net/feed/"><span>Entries RSS</span></a></li>
+   <li><a linkindex="9" href="http://blog.delphi-jedi.net/comments/feed/"><span>Comments RSS</span></a></li>
+  </ul>
+  </div>
+  
+</div>
+ 
+</div> 
+<!-- Menu END -->
+
+
+<!-- Content START -->
+<div id="Content">
+
+<!-- Side ContentWrapper START -->
+<div id="ContentWrapper">
+
+<!-- Side SC START -->
+<div class="SC">
+
+
+<!-- Post START -->
+<div class="Post">
+2,879 views
+<div class="PostHead">
+ <h1>How to setup the library</h1>
+ <p class="PostDate">
+   <strong class="day">27</strong>
+   <strong class="month">Dec</strong>
+ </p>
+  <p class="PostInfo">  Posted by: Christian Wimmer in: <a linkindex="10" href="http://blog.delphi-jedi.net/category/jedi-windows-api-headers/" title="View all posts in JEDI Windows API Headers" rel="category tag">JEDI Windows API Headers</a></p>
+</div>
+  
+<div class="PostContent">
+  <p>The Jedi API Lib units can be used <strong>solely</strong> or just by including <strong>jwaWindows</strong>.pas.</p>
+<p><span style="text-decoration: underline;">1. Single units use:<br>
+</span><br>
+If you want to use it solely you just have to set the compiler unit path to</p>
+<ul>
+<li>\commond and</li>
+<li>\win32API .</li>
+</ul>
+<p>Thats all.</p>
+<p><span style="text-decoration: underline;">2. JwaWindows.pas and JwaVista.pas (also for the use with <a linkindex="11" href="http://blog.delphi-jedi.net/security-library/">JWSCL</a>)<br>
+</span></p>
+<p>There is also the possibility to use only one file that includes all other Jedi API headers.<br>
+It is called <em>JwaWindows.pas</em> and should not be included along the other unit files.</p>
+<div class="dean_ch" style=""><span class="kw1">uses</span> SysUtils, JwaWindows, JwaVista;</div>
+<p>Do not mix up the Jwa units like this:</p>
+<div class="dean_ch" style=""><span class="kw1">uses</span> SysUtils, JwaWindows, JwaWinNT, JwaVista;</div>
+<p>We also suggest that you compile the file at first and then use the binary dcu file instead of the source.<br>
+Because the source file will need a lot of time when recompiling.</p>
+<p>Howto:<br>
+For this purpose there are packages in the <strong>jwapi\Packages</strong> folder for the different Delphi versions. If not just<br>
+use an older package version.</p>
+<p>You can load the project group for your Delphi version and compile the different package types :</p>
+<ol>
+<li>static debug = for static linked functions and debugger information and no optimization</li>
+<li>static release = for static linked functions and optimization</li>
+<li>dynamic debug = for dynamic linked functions and debugger information and no optimization (<strong>recommended for using with JWSCL</strong> for debugging)</li>
+<li>dynamic release = for dynamic linked functions and optimization (<strong>recommended for using with JWSCL</strong> in releases)</li>
+</ol>
+<p>The project group contains all four package types and are predefined to save the output in different folders.</p>
+<p>After a successful compilation, copy the folder or point the
+compiler path to the directory of your choice e.g. &lt;your absolute
+path&gt;\jwapi\trunk\Packages\d7\bin\debug\dynamic . Now your Delphi
+will use the dcu files instead of the source files.<br>
+The packages contains JwaWindows AND jwaVista. Both units must be included in a uses clause. JwaWindows does <span style="text-decoration: underline;">not</span> contain jwaVista!</p>
+<p><strong>The JEDI Windows Security Code Library uses the second choice (</strong>JwaWindows.pas and JwaVista.pas<strong> (JwaVista is deprecated in future versions)) only. See <a linkindex="12" title="Go to blog entry." href="http://blog.delphi-jedi.net/2008/03/03/how-to-setup-jwscl/">here</a> how to setup JWSCL. Furthermore </strong><strong>it is recommended to use any of the <span style="text-decoration: underline;">dynamic</span> linking packages for JWSCL.<br>
+</strong></p>
+<h2>Subversion</h2>
+<p><a linkindex="13" href="http://sourceforge.net/svn/?group_id=121894">Sourceforge </a>gives a short introduction how you can access the Subversion repository of the JEDI project.</p>
+<p>The download packages (from Sourceforge) contain Subversion
+information so you can use your subversion tool to just update them.
+(Tortoisesvn: Right click the JWA folder and choose Subversion Update)</p>
+<p>To get the latest release updates directly you can use this path
+with your Subversion client. Be aware that new versions (currently
+2.2a) can make this path obsolete (but still valid). The downloadable
+release packages are already provided with Subversion information so
+you can just update them to get the newest updates.<br>
+Click on the turtle to checkout the repository with TortoiseSVN.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><a linkindex="14" href="tsvn:https://jedi-apilib.svn.sourceforge.net/svnroot/jedi-apilib/jwapi/branches/2.2a"><img original="http://blog.delphi-jedi.net/wp-content/uploads/2007/12/tortoisecheckout.png" class="size-full wp-image-387 alignnone" title="tortoisecheckout" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" alt="Checkout with TortoiseSVN" height="48" width="48"></a></td>
+<td>https://jedi-apilib.svn.sourceforge.net/svnroot/jedi-apilib/jwapi/branches/2.2a</td>
+</tr>
+</tbody>
+</table>
+<p><a linkindex="15" href="tsvn:https://jedi-apilib.svn.sourceforge.net/svnroot/jedi-apilib/jwapi/branches/2.2a"></a></p>
+<p>There is also a development branch that contains new untested features. Use it with care:</p>
+<table border="0">
+<tbody>
+<tr>
+<td><a linkindex="16" href="tsvn:https://jedi-apilib.svn.sourceforge.net/svnroot/jedi-apilib/jwapi"><img original="http://blog.delphi-jedi.net/wp-content/uploads/2007/12/tortoisecheckout.png" class="size-full wp-image-387 alignnone" title="tortoisecheckout" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" alt="Checkout with TortoiseSVN" height="48" width="48"></a></td>
+<td>https://jedi-apilib.svn.sourceforge.net/svnroot/jedi-apilib/jwapi</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<ul class="PostNote">
+<li class="TrackBack">
+<a linkindex="17" href="http://blog.delphi-jedi.net/2007/12/27/how-to-setup-the-library/trackback/" rel="trackback">TrackBack <abbr title="Uniform Resource Identifier">URI</abbr></a></li>
+<li class="RSS"><a linkindex="18" href="http://blog.delphi-jedi.net/2007/12/27/how-to-setup-the-library/feed/"><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post</a></li>
+</ul>
+<br>
+<br>
+
+<div class="Comments">
+<div class="List">
+<!-- Start CommentsList-->
+
+<!-- You can start editing here. -->
+<h3 id="comments">3 Responses</h3> 
+
+<ol>
+
+
+ <li id="comment-4">
+ <p class="ListUser"><a linkindex="19" href="http://blog.delphi-jedi.net/2008/03/03/how-to-setup-jwscl/" rel="external nofollow" class="url">&nbsp; How to setup JWSCL?&nbsp;by&nbsp;JEDI Windows API</a></p>
+ <span class="ListDate"><a linkindex="20" href="#comment-4" title="">03|Mar|2008</a></span>
+ <span class="ListNr">1</span>
+ <div class="ListContent">
+ <p>[...]
+The JWSCL does not need to be setup. The only setup is needed to create
+a binary unit file (DCU-file) for the JEDI API Headers as described
+here. [...]</p>
+ 
+    
+  
+</div></li>
+
+ <li id="comment-8">
+ <p class="ListUser">Ron</p>
+ <span class="ListDate"><a linkindex="21" href="#comment-8" title="">07|Mar|2008</a></span>
+ <span class="ListNr">2</span>
+ <div class="ListContent">
+ <p>“JWSCL uses the second choice only” ?</p>
+<p>What dose this means?</p>
+<p>Regards.</p>
+<p><em><br>
+[Edit by Christian Wimmer<br>
+It means that JWSCL does not include single units like JwaAccCtrl.pas or JwaWSnetbs.pas.<br>
+JWSCL only uses JwaWindows and JwaVista that you either have to make
+available through source path or compile it and make the binary DCU
+files available. I recommend the DCU thing because it makes compiling
+much faster if you rebuilt your project.]</em></p>
+ 
+    
+  
+</div></li>
+
+ <li id="comment-542">
+ <p class="ListUser"><a linkindex="22" href="http://blog.delphi-jedi.net/2008/05/09/you-cannot-compile-jwscl-1/" rel="external nofollow" class="url">&nbsp; You cannot compile JWSCL? #1&nbsp;by&nbsp;JEDI Windows API</a></p>
+ <span class="ListDate"><a linkindex="23" href="#comment-542" title="">09|May|2008</a></span>
+ <span class="ListNr">3</span>
+ <div class="ListContent">
+ <p>[...] this case you did not follow the instructions of How to setup JWSCL. However there is [...]</p>
+ 
+    
+  
+</div></li>
+</ol>
+
+<br>
+<!-- Ends CommentsList-->
+</div>
+
+
+
+<!-- Start Comments Form-->
+<div class="Form">
+<h3 id="respond">Leave a reply</h3> 
+
+
+<div class="FormTop"></div><form action="http://blog.delphi-jedi.net/wp-comments-post.php" method="post" id="commentform">
+
+<p>
+<label for="author">
+<input name="author" id="author" tabindex="1" class="TextField" style="width: 210px;" type="text">Name <small>(required)</small></label>
+</p>
+		
+<p>
+<label for="email">
+<input name="email" id="email" tabindex="2" class="TextField" style="width: 210px;" type="text">E-mail <small>(required, never displayed)</small></label>
+</p>
+		
+<p>
+<label for="url">
+<input name="url" id="url" tabindex="3" class="TextField" style="width: 210px;" type="text"><abbr title="Uniform Resource Identifier">URI</abbr></label>
+</p>
+
+<p>
+<textarea name="comment" id="comment" rows="10" tabindex="4" class="TextArea" style="width: 100%;"></textarea>
+</p>
+
+<p>
+<input name="SubmitComment" class="SubmitComment" onmouseover="javascript:changeSty('SubmitCommentIE');" onmouseout="javascript:changeSty('SubmitComment');" title="Post Your Comment" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/SearchTransparent.png" alt="Post Your Comment" type="image">
+<input name="comment_post_ID" value="13" type="hidden">
+</p>
+		<script type="text/javascript">
+			var RecaptchaOptions = { theme : 'red', tabindex : 5 };
+		</script><script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/challenge"></script><script type="text/javascript" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/recaptcha.js"></script><div class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio" id="recaptcha_widget_div" style=""><div id="recaptcha_area"><table id="recaptcha_table" class="recaptchatable recaptcha_theme_red">
+<tbody><tr>
+<td colspan="6" class="recaptcha_r1_c1"></td>
+</tr>
+<tr>
+<td class="recaptcha_r2_c1"></td>
+<td colspan="4" class="recaptcha_image_cell"><div style="width: 300px; height: 57px;" id="recaptcha_image"><img original="http://api.recaptcha.net/image?c=02Yto16aPYjoGDZNTqAFxNhVfIi-gupcfQoMNhtEg8tsA-dj1CZwK2GdOXmK4YvBRx3_fPZcqrme3PdRwpOxACzke8U1qhK1N5RvgCCUVswANyXMYGyT5sS7uO-jX8R9w0u-858oBKHnEc7f849C9CilBKo1ywtMc0ixlh8hGxF-YWuzcD8kED1y75WMI7rdIY0hMhn6znXNkWwmjxuOlIs8L2XM_sfB-6FMoLkVMXq1Tjjj6PdsloVr-_1Qb5E1w-kkVIpUUsHdqcGgLpix0PjBO3GrkB" style="display: block;" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" height="57" width="300"></div></td>
+<td class="recaptcha_r2_c2"></td>
+</tr>
+<tr>
+<td rowspan="6" class="recaptcha_r3_c1"></td>
+<td colspan="4" class="recaptcha_r3_c2"></td>
+<td rowspan="6" class="recaptcha_r3_c3"></td>
+</tr>
+<tr>
+<td rowspan="3" class="recaptcha_r4_c1" height="49">
+<div class="recaptcha_input_area">
+<label for="recaptcha_response_field" class="recaptcha_input_area_text"><span id="recaptcha_instructions_image" class="recaptcha_only_if_image recaptcha_only_if_no_incorrect_sol">Type the two words:</span><span id="recaptcha_instructions_audio" class="recaptcha_only_if_no_incorrect_sol recaptcha_only_if_audio">Type what you hear:</span><span id="recaptcha_instructions_error" class="recaptcha_only_if_incorrect_sol">Incorrect. Try again.</span></label><br>
+<span style="display: none;" id="recaptcha_challenge_field_holder"><input name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="02Yto16aPYjoGDZNTqAFxNhVfIi-gupcfQoMNhtEg8tsA-dj1CZwK2GdOXmK4YvBRx3_fPZcqrme3PdRwpOxACzke8U1qhK1N5RvgCCUVswANyXMYGyT5sS7uO-jX8R9w0u-858oBKHnEc7f849C9CilBKo1ywtMc0ixlh8hGxF-YWuzcD8kED1y75WMI7rdIY0hMhn6znXNkWwmjxuOlIs8L2XM_sfB-6FMoLkVMXq1Tjjj6PdsloVr-_1Qb5E1w-kkVIpUUsHdqcGgLpix0PjBO3GrkB" type="hidden"></span><input tabindex="5" autocomplete="off" name="recaptcha_response_field" id="recaptcha_response_field" type="text">
+</div>
+</td>
+<td rowspan="4" class="recaptcha_r4_c2"></td>
+<td><a tabindex="5" title="Get a new challenge" href="javascript:Recaptcha.reload%20();" id="recaptcha_reload_btn"><img original="http://api.recaptcha.net/img/red/refresh.gif" alt="Get a new challenge" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" id="recaptcha_reload" height="17" width="25"></a></td>
+<td rowspan="4" class="recaptcha_r4_c4"></td>
+</tr>
+<tr>
+<td><a tabindex="5" title="Get an audio challenge" href="javascript:Recaptcha.switch_type('audio');" id="recaptcha_switch_audio_btn" class="recaptcha_only_if_image"><img original="http://api.recaptcha.net/img/red/audio.gif" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" id="recaptcha_switch_audio" alt="Get an audio challenge" height="16" width="25"></a><a tabindex="5" title="Get a visual challenge" href="javascript:Recaptcha.switch_type('image');" id="recaptcha_switch_img_btn" class="recaptcha_only_if_audio"><img original="http://api.recaptcha.net/img/red/text.gif" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/text.gif" id="recaptcha_switch_img" alt="Get a visual challenge" height="16" width="25"></a></td>
+</tr>
+<tr>
+<td><a linkindex="24" tabindex="5" title="Help" target="_blank" href="http://recaptcha.net/popuphelp/" id="recaptcha_whatsthis_btn"><img original="http://api.recaptcha.net/img/red/help.gif" alt="Help" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" id="recaptcha_whatsthis" height="16" width="25"></a></td>
+</tr>
+<tr>
+<td class="recaptcha_r7_c1"></td>
+<td class="recaptcha_r8_c1"></td>
+</tr>
+</tbody></table>
+</div></div><script>Recaptcha.widget = Recaptcha.$("recaptcha_widget_div"); Recaptcha.challenge_callback();</script>
+
+	<noscript>
+<iframe
+src="http://api.recaptcha.net/noscript?k=6LeLjAEAAAAAAEGTLrj2NuBpuwhUQSxNZy_EzmuG"
+height="300" width="500" frameborder="0"></iframe><br/> <textarea
+name="recaptcha_challenge_field" rows="3" cols="40"></textarea> <input
+type="hidden" name="recaptcha_response_field"
+value="manual_challenge"/> </noscript>		<div id="recaptcha-submit-btn-area"></div> 
+		<script type="text/javascript">
+			var sub = document.getElementById('submit');
+			sub.parentNode.removeChild(sub);
+			document.getElementById('recaptcha-submit-btn-area').appendChild (sub);
+			document.getElementById('submit').tabIndex = 6;
+			if ( typeof _recaptcha_wordpress_savedcomment != 'undefined') {
+				document.getElementById('comment').value = _recaptcha_wordpress_savedcomment;
+			}
+		</script>
+		<noscript>
+		 <style type='text/css'>#submit {display:none;}</style>
+		 <input name="submit" type="submit" id="submit-alt" tabindex="6" value="Submit Comment"/> 
+		</noscript><div class="FormCorner"></div> 
+</form>
+</div>
+</div>
+		
+ 
+</div>
+<!-- Post END -->
+</div>
+<!--  Side SC END -->
+</div>
+<!--  Side ContentWrapper END -->
+
+<!-- Side Right - START -->
+<div class="SR">
+
+<!-- START Search -->
+<div class="Search">
+ <h3>Search</h3>
+    <form action="/index.php" method="post">
+     <input name="s" class="keyword" style="width: 198px;" type="text">
+    </form>
+ <div class="SearchCorner"></div>
+</div>
+<!-- END Search -->
+
+<h2>Paypal donation (EUR)</h2>
+<form action="https://www.paypal.com/cgi-bin/webscr" target="paypal" method="post"><input name="cmd" value="_xclick" type="hidden"><input name="business" value="chriswimmer@gmx.de" type="hidden"><input name="item_name" value="Donation Support for JEDI API/JWSCL" type="hidden"><input name="no_shipping" value="1" type="hidden"><input name="return" value="http://blog.delphi-jedi.net/" type="hidden"><input name="cancel_return" value="http://blog.delphi-jedi.net/" type="hidden"><input name="currency_code" value="EUR" type="hidden">
+<input name="on0" value="Website" type="hidden">
+Amount: 
+<select id="amount" name="amount" class="">
+<option selected="selected" value="2.50">2.50</option>
+<option value="5.00">5.00</option>
+<option value="10.00">10.00</option>
+<option value="25.00">25.00</option>
+<option value="50.00">50.00</option>
+<option value="100.00">100.00</option></select>
+<br>
+Website(Optional): <br><input size="16" title="Your website (will be displayed)" name="os0" type="text"><br><input class="ppimg" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/x-click-but21.gif" name="submit" style="" alt="Make payments with PayPal - fast, free and secure" type="image">
+<input name="tax" value="0" type="hidden">
+<input name="bn" value="PP-DonationsBF" type="hidden">
+</form>
+<!--<div class="Categories">			<div class="textwidget"><a href="http://www.sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=121894&type=5"></img></a></div>
+		</div><div class="Categories"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://blog.delphi-jedi.net/category/common/" title="View all posts filed under Common">Common</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.delphi-jedi.net/category/downloads/" title="View all posts filed under Downloads">Downloads</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.delphi-jedi.net/category/jedi-windows-api-headers/" title="View all posts filed under JEDI Windows API Headers">JEDI Windows API Headers</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://blog.delphi-jedi.net/category/jedi-windows-security-code-library/" title="View all posts filed under JEDI Windows Security Code Lib">JEDI Windows Security Code Lib</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://blog.delphi-jedi.net/category/downloads/jwa-downloads/" title="View all posts filed under JWA Downloads">JWA Downloads</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.delphi-jedi.net/category/downloads/jwscl-downloads/" title="View all posts filed under JWSCL Downloads">JWSCL Downloads</a>
+</li>
+		</ul>
+</div><div class="Categories"><h3>Archives</h3>		<ul>
+			<li><a href='http://blog.delphi-jedi.net/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/11/' title='November 2008'>November 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/10/' title='October 2008'>October 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/09/' title='September 2008'>September 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/08/' title='August 2008'>August 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/07/' title='July 2008'>July 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/06/' title='June 2008'>June 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/05/' title='May 2008'>May 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.delphi-jedi.net/2007/10/' title='October 2007'>October 2007</a></li>
+		</ul>
+</div><div class="Categories"><h3>Tags</h3><div><a href='http://blog.delphi-jedi.net/tag/acl/' class='tag-link-72' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>ACL</a>
+<a href='http://blog.delphi-jedi.net/tag/administrator/' class='tag-link-60' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>Administrator</a>
+<a href='http://blog.delphi-jedi.net/tag/callback/' class='tag-link-34' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>callback</a>
+<a href='http://blog.delphi-jedi.net/tag/com/' class='tag-link-29' title='4 topics' rel="tag" style='font-size: 9.23529411765pt;'>COM</a>
+<a href='http://blog.delphi-jedi.net/tag/conversion/' class='tag-link-38' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>Conversion</a>
+<a href='http://blog.delphi-jedi.net/tag/createprocess/' class='tag-link-77' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>CreateProcess</a>
+<a href='http://blog.delphi-jedi.net/tag/dacl/' class='tag-link-83' title='4 topics' rel="tag" style='font-size: 9.23529411765pt;'>DACL</a>
+<a href='http://blog.delphi-jedi.net/tag/delphi/' class='tag-link-13' title='5 topics' rel="tag" style='font-size: 9.64705882353pt;'>Delphi</a>
+<a href='http://blog.delphi-jedi.net/tag/dialog/' class='tag-link-33' title='1 topic' rel="tag" style='font-size: 8pt;'>dialog</a>
+<a href='http://blog.delphi-jedi.net/tag/didyouknow/' class='tag-link-112' title='5 topics' rel="tag" style='font-size: 9.64705882353pt;'>DidYouKnow</a>
+<a href='http://blog.delphi-jedi.net/tag/dll/' class='tag-link-31' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>DLL</a>
+<a href='http://blog.delphi-jedi.net/tag/documentation/' class='tag-link-67' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>documentation</a>
+<a href='http://blog.delphi-jedi.net/tag/download/' class='tag-link-46' title='5 topics' rel="tag" style='font-size: 9.64705882353pt;'>Download</a>
+<a href='http://blog.delphi-jedi.net/tag/elevation/' class='tag-link-42' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>elevation</a>
+<a href='http://blog.delphi-jedi.net/tag/file/' class='tag-link-48' title='4 topics' rel="tag" style='font-size: 9.23529411765pt;'>file</a>
+<a href='http://blog.delphi-jedi.net/tag/handle/' class='tag-link-25' title='1 topic' rel="tag" style='font-size: 8pt;'>Handle</a>
+<a href='http://blog.delphi-jedi.net/tag/header/' class='tag-link-66' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>header</a>
+<a href='http://blog.delphi-jedi.net/tag/howto/' class='tag-link-37' title='7 topics' rel="tag" style='font-size: 10.4705882353pt;'>HowTo</a>
+<a href='http://blog.delphi-jedi.net/tag/interface/' class='tag-link-35' title='1 topic' rel="tag" style='font-size: 8pt;'>interface</a>
+<a href='http://blog.delphi-jedi.net/tag/jwa/' class='tag-link-15' title='29 topics' rel="tag" style='font-size: 19.5294117647pt;'>JWA</a>
+<a href='http://blog.delphi-jedi.net/tag/jwscl/' class='tag-link-14' title='35 topics' rel="tag" style='font-size: 22pt;'>JWSCL</a>
+<a href='http://blog.delphi-jedi.net/tag/kernel-microsoft/' class='tag-link-26' title='1 topic' rel="tag" style='font-size: 8pt;'>Kernel Microsoft</a>
+<a href='http://blog.delphi-jedi.net/tag/killprocess/' class='tag-link-20' title='1 topic' rel="tag" style='font-size: 8pt;'>KillProcess</a>
+<a href='http://blog.delphi-jedi.net/tag/laptop/' class='tag-link-21' title='1 topic' rel="tag" style='font-size: 8pt;'>Laptop</a>
+<a href='http://blog.delphi-jedi.net/tag/mailinglist/' class='tag-link-30' title='1 topic' rel="tag" style='font-size: 8pt;'>mailinglist</a>
+<a href='http://blog.delphi-jedi.net/tag/manifest/' class='tag-link-12' title='1 topic' rel="tag" style='font-size: 8pt;'>manifest</a>
+<a href='http://blog.delphi-jedi.net/tag/permission/' class='tag-link-49' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>permission</a>
+<a href='http://blog.delphi-jedi.net/tag/privilege/' class='tag-link-16' title='1 topic' rel="tag" style='font-size: 8pt;'>Privilege</a>
+<a href='http://blog.delphi-jedi.net/tag/process/' class='tag-link-19' title='7 topics' rel="tag" style='font-size: 10.4705882353pt;'>Process</a>
+<a href='http://blog.delphi-jedi.net/tag/processexplorer/' class='tag-link-28' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>ProcessExplorer</a>
+<a href='http://blog.delphi-jedi.net/tag/registry/' class='tag-link-91' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>Registry</a>
+<a href='http://blog.delphi-jedi.net/tag/runel/' class='tag-link-41' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>RunEl</a>
+<a href='http://blog.delphi-jedi.net/tag/russinovich/' class='tag-link-27' title='1 topic' rel="tag" style='font-size: 8pt;'>Russinovich</a>
+<a href='http://blog.delphi-jedi.net/tag/service/' class='tag-link-95' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>Service</a>
+<a href='http://blog.delphi-jedi.net/tag/setup/' class='tag-link-79' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>Setup</a>
+<a href='http://blog.delphi-jedi.net/tag/sid/' class='tag-link-57' title='3 topics' rel="tag" style='font-size: 8.82352941176pt;'>Sid</a>
+<a href='http://blog.delphi-jedi.net/tag/terminateprocess/' class='tag-link-18' title='1 topic' rel="tag" style='font-size: 8pt;'>TerminateProcess</a>
+<a href='http://blog.delphi-jedi.net/tag/theme/' class='tag-link-32' title='1 topic' rel="tag" style='font-size: 8pt;'>Theme</a>
+<a href='http://blog.delphi-jedi.net/tag/thread/' class='tag-link-24' title='6 topics' rel="tag" style='font-size: 10.0588235294pt;'>Thread</a>
+<a href='http://blog.delphi-jedi.net/tag/token/' class='tag-link-75' title='6 topics' rel="tag" style='font-size: 10.0588235294pt;'>Token</a>
+<a href='http://blog.delphi-jedi.net/tag/uac/' class='tag-link-9' title='1 topic' rel="tag" style='font-size: 8pt;'>UAC</a>
+<a href='http://blog.delphi-jedi.net/tag/user/' class='tag-link-23' title='1 topic' rel="tag" style='font-size: 8pt;'>user</a>
+<a href='http://blog.delphi-jedi.net/tag/vista/' class='tag-link-10' title='4 topics' rel="tag" style='font-size: 9.23529411765pt;'>Vista</a>
+<a href='http://blog.delphi-jedi.net/tag/window/' class='tag-link-80' title='2 topics' rel="tag" style='font-size: 8.41176470588pt;'>Window</a>
+<a href='http://blog.delphi-jedi.net/tag/windows/' class='tag-link-22' title='4 topics' rel="tag" style='font-size: 9.23529411765pt;'>Windows</a></div>
+</div>		<div class="Categories">		<h3>Recent Posts</h3>		<ul>
+				<li><a href="http://blog.delphi-jedi.net/2009/08/29/version-checking-for-delphi/" title="Version Checking for Delphi (2nd Update)">Version Checking for Delphi (2nd Update) </a></li>
+				<li><a href="http://blog.delphi-jedi.net/2009/07/20/the-case-of-the-failed-loading-of-the-user-profile/" title="The Case of The Failed Loading of The User Profile">The Case of The Failed Loading of The User Profile </a></li>
+				<li><a href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/" title="I&#8217;m burning baby!">I&#8217;m burning baby! </a></li>
+				<li><a href="http://blog.delphi-jedi.net/2009/05/30/if-youre-missing-api-headers/" title="If you&#8217;re missing api headers&#8230;">If you&#8217;re missing api headers&#8230; </a></li>
+				<li><a href="http://blog.delphi-jedi.net/2009/03/31/site-recommondation/" title="Site Recommendation">Site Recommendation </a></li>
+				</ul>
+		</div>		<div class="Categories">			<h3>Recent Comments</h3>			<ul id="recentcomments"><li class="recentcomments">Luke on <a href="http://blog.delphi-jedi.net/2008/05/17/the-case-of-shellexecute-shellexecuteex-createprocess-and-oskexe/comment-page-1/#comment-26491">The case of ShellExecute, ShellExecuteEx, CreateProcess and osk.exe (Update)</a></li><li class="recentcomments"><a href='http://www.TheUnknownOnes.net' rel='external nofollow' class='url'>Chaosben</a> on <a href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26355">I&#8217;m burning baby!</a></li><li class="recentcomments">bilm on <a href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26244">I&#8217;m burning baby!</a></li><li class="recentcomments">Benjamin on <a href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26230">I&#8217;m burning baby!</a></li><li class="recentcomments">bilm on <a href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26212">I&#8217;m burning baby!</a></li></ul>
+		</div><div class="Categories"><h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://blog.assarbad.net/" title="Programming, reverse engineering and anything else as well …" target="_blank">Assa’s blog</a></li>
+<li><a href="http://www.christianwimmer.info" title="The private hompage of the author of JWSCL." target="_blank">Christian Wimmer</a></li>
+<li><a href="http://www.delphifeeds.com" title="Blog central to Delphi" target="_blank">Delphi Feeds</a></li>
+<li><a href="http://www.remkoweijnen.nl" title="About Terminal Server, Citrix, Delphi and other stuff">Remko Weijnen&#8217;s blog</a></li>
+<li><a href="http://www.private-storm.de" title="JEDI Member Storm&#8217;s Blog " target="_blank">Storm&#8217;s Blog</a></li>
+
+	</ul>
+</div>
+<div class="Categories"><h3>JEDI Sites</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://sourceforge.net/projects/jedi-apilib" title="Visit the JEDI API Sourceforge Portal" target="_blank">JEDI API Sourceforge</a></li>
+<li><a href="http://blog.delphi-jedi.net/2008/03/03/suggestion-box/" title="Do you want a blog entry about a WinAPI or JWSCL related subject?">JEDI Blog Suggestion Box</a></li>
+<li><a href="http://issuetracker.delphi-jedi.org/" title="This is the bug tracker for all JEDI projects. Switch to JEDI API&amp;WSCL to send us bug reports." target="_blank">JEDI Issue Tracker</a></li>
+<li><a href="http://jwscldoc.delphi-jedi.net/" title="The online documentation of JWSCL" target="_blank">JWSCL Help</a></li>
+<li><a href="http://sourceforge.net/projects/projectjedi" title="The main portal of all JEDI projects." target="_blank">Project JEDI</a></li>
+
+	</ul>
+</div>
+<div class="Categories"><h3>&nbsp;</h3><div id="calendar_wrap"><table id="wp-calendar" summary="Calendar">
+	<caption>December 2007</caption>
+	<thead>
+	<tr>
+		<th abbr="Monday" scope="col" title="Monday">M</th>
+		<th abbr="Tuesday" scope="col" title="Tuesday">T</th>
+		<th abbr="Wednesday" scope="col" title="Wednesday">W</th>
+		<th abbr="Thursday" scope="col" title="Thursday">T</th>
+		<th abbr="Friday" scope="col" title="Friday">F</th>
+		<th abbr="Saturday" scope="col" title="Saturday">S</th>
+		<th abbr="Sunday" scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td abbr="October" colspan="3" id="prev"><a href="http://blog.delphi-jedi.net/2007/10/" title="View posts for October 2007">&laquo; Oct</a></td>
+		<td class="pad">&nbsp;</td>
+		<td abbr="March" colspan="3" id="next"><a href="http://blog.delphi-jedi.net/2008/03/" title="View posts for March 2008">Mar &raquo;</a></td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
+	</tr>
+	<tr>
+		<td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td>24</td><td>25</td><td>26</td><td><a href="http://blog.delphi-jedi.net/2007/12/27/" title="How to setup the library">27</a></td><td>28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div><div class="Categories"><h3>Pages</h3>		<ul>
+			<li class="page_item page-item-2"><a href="http://blog.delphi-jedi.net/about/" title="About Fame">About Fame</a></li>
+<li class="page_item page-item-10"><a href="http://blog.delphi-jedi.net/jedi-api-headers/" title="API Headers">API Headers</a></li>
+<li class="page_item page-item-9"><a href="http://blog.delphi-jedi.net/home/" title="Home">Home</a></li>
+<li class="page_item page-item-11"><a href="http://blog.delphi-jedi.net/security-library/" title="Security Library">Security Library</a></li>
+<li class="page_item page-item-166"><a href="http://blog.delphi-jedi.net/sponsors/" title="Sponsors">Sponsors</a></li>
+		</ul>
+		</div>-->
+<!---->
+
+<div class="Categories">			<div class="textwidget"><a linkindex="25" href="http://www.sourceforge.net/"><img original="http://sourceforge.net/sflogo.php?group_id=121894&amp;type=5" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/sflogo.png"></a></div>
+		</div><div class="Categories"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a linkindex="26" href="http://blog.delphi-jedi.net/category/common/" title="View all posts filed under Common">Common</a>
+</li>
+	<li class="cat-item cat-item-5"><a linkindex="27" href="http://blog.delphi-jedi.net/category/downloads/" title="View all posts filed under Downloads">Downloads</a>
+</li>
+	<li class="cat-item cat-item-3"><a linkindex="28" href="http://blog.delphi-jedi.net/category/jedi-windows-api-headers/" title="View all posts filed under JEDI Windows API Headers">JEDI Windows API Headers</a>
+</li>
+	<li class="cat-item cat-item-4"><a linkindex="29" href="http://blog.delphi-jedi.net/category/jedi-windows-security-code-library/" title="View all posts filed under JEDI Windows Security Code Lib">JEDI Windows Security Code Lib</a>
+</li>
+	<li class="cat-item cat-item-7"><a linkindex="30" href="http://blog.delphi-jedi.net/category/downloads/jwa-downloads/" title="View all posts filed under JWA Downloads">JWA Downloads</a>
+</li>
+	<li class="cat-item cat-item-6"><a linkindex="31" href="http://blog.delphi-jedi.net/category/downloads/jwscl-downloads/" title="View all posts filed under JWSCL Downloads">JWSCL Downloads</a>
+</li>
+		</ul>
+</div><div class="Categories"><h3>Archives</h3>		<ul>
+			<li><a linkindex="32" href="http://blog.delphi-jedi.net/2009/08/" title="August 2009">August 2009</a></li>
+	<li><a linkindex="33" href="http://blog.delphi-jedi.net/2009/07/" title="July 2009">July 2009</a></li>
+	<li><a linkindex="34" href="http://blog.delphi-jedi.net/2009/05/" title="May 2009">May 2009</a></li>
+	<li><a linkindex="35" href="http://blog.delphi-jedi.net/2009/03/" title="March 2009">March 2009</a></li>
+	<li><a linkindex="36" href="http://blog.delphi-jedi.net/2009/02/" title="February 2009">February 2009</a></li>
+	<li><a linkindex="37" href="http://blog.delphi-jedi.net/2008/11/" title="November 2008">November 2008</a></li>
+	<li><a linkindex="38" href="http://blog.delphi-jedi.net/2008/10/" title="October 2008">October 2008</a></li>
+	<li><a linkindex="39" href="http://blog.delphi-jedi.net/2008/09/" title="September 2008">September 2008</a></li>
+	<li><a linkindex="40" href="http://blog.delphi-jedi.net/2008/08/" title="August 2008">August 2008</a></li>
+	<li><a linkindex="41" href="http://blog.delphi-jedi.net/2008/07/" title="July 2008">July 2008</a></li>
+	<li><a linkindex="42" href="http://blog.delphi-jedi.net/2008/06/" title="June 2008">June 2008</a></li>
+	<li><a linkindex="43" href="http://blog.delphi-jedi.net/2008/05/" title="May 2008">May 2008</a></li>
+	<li><a linkindex="44" href="http://blog.delphi-jedi.net/2008/04/" title="April 2008">April 2008</a></li>
+	<li><a linkindex="45" href="http://blog.delphi-jedi.net/2008/03/" title="March 2008">March 2008</a></li>
+	<li><a linkindex="46" href="http://blog.delphi-jedi.net/2007/12/" title="December 2007">December 2007</a></li>
+	<li><a linkindex="47" href="http://blog.delphi-jedi.net/2007/10/" title="October 2007">October 2007</a></li>
+		</ul>
+</div><div class="Categories"><h3>Tags</h3><div><a linkindex="48" href="http://blog.delphi-jedi.net/tag/acl/" class="tag-link-72" title="3 topics" rel="tag" style="font-size: 8.82353pt;">ACL</a>
+<a linkindex="49" href="http://blog.delphi-jedi.net/tag/administrator/" class="tag-link-60" title="2 topics" rel="tag" style="font-size: 8.41177pt;">Administrator</a>
+<a linkindex="50" href="http://blog.delphi-jedi.net/tag/callback/" class="tag-link-34" title="2 topics" rel="tag" style="font-size: 8.41177pt;">callback</a>
+<a linkindex="51" href="http://blog.delphi-jedi.net/tag/com/" class="tag-link-29" title="4 topics" rel="tag" style="font-size: 9.23529pt;">COM</a>
+<a linkindex="52" href="http://blog.delphi-jedi.net/tag/conversion/" class="tag-link-38" title="3 topics" rel="tag" style="font-size: 8.82353pt;">Conversion</a>
+<a linkindex="53" href="http://blog.delphi-jedi.net/tag/createprocess/" class="tag-link-77" title="2 topics" rel="tag" style="font-size: 8.41177pt;">CreateProcess</a>
+<a linkindex="54" href="http://blog.delphi-jedi.net/tag/dacl/" class="tag-link-83" title="4 topics" rel="tag" style="font-size: 9.23529pt;">DACL</a>
+<a linkindex="55" href="http://blog.delphi-jedi.net/tag/delphi/" class="tag-link-13" title="5 topics" rel="tag" style="font-size: 9.64706pt;">Delphi</a>
+<a linkindex="56" href="http://blog.delphi-jedi.net/tag/dialog/" class="tag-link-33" title="1 topic" rel="tag" style="font-size: 8pt;">dialog</a>
+<a linkindex="57" href="http://blog.delphi-jedi.net/tag/didyouknow/" class="tag-link-112" title="5 topics" rel="tag" style="font-size: 9.64706pt;">DidYouKnow</a>
+<a linkindex="58" href="http://blog.delphi-jedi.net/tag/dll/" class="tag-link-31" title="3 topics" rel="tag" style="font-size: 8.82353pt;">DLL</a>
+<a linkindex="59" href="http://blog.delphi-jedi.net/tag/documentation/" class="tag-link-67" title="2 topics" rel="tag" style="font-size: 8.41177pt;">documentation</a>
+<a linkindex="60" href="http://blog.delphi-jedi.net/tag/download/" class="tag-link-46" title="5 topics" rel="tag" style="font-size: 9.64706pt;">Download</a>
+<a linkindex="61" href="http://blog.delphi-jedi.net/tag/elevation/" class="tag-link-42" title="2 topics" rel="tag" style="font-size: 8.41177pt;">elevation</a>
+<a linkindex="62" href="http://blog.delphi-jedi.net/tag/file/" class="tag-link-48" title="4 topics" rel="tag" style="font-size: 9.23529pt;">file</a>
+<a linkindex="63" href="http://blog.delphi-jedi.net/tag/handle/" class="tag-link-25" title="1 topic" rel="tag" style="font-size: 8pt;">Handle</a>
+<a linkindex="64" href="http://blog.delphi-jedi.net/tag/header/" class="tag-link-66" title="2 topics" rel="tag" style="font-size: 8.41177pt;">header</a>
+<a linkindex="65" href="http://blog.delphi-jedi.net/tag/howto/" class="tag-link-37" title="7 topics" rel="tag" style="font-size: 10.4706pt;">HowTo</a>
+<a linkindex="66" href="http://blog.delphi-jedi.net/tag/interface/" class="tag-link-35" title="1 topic" rel="tag" style="font-size: 8pt;">interface</a>
+<a linkindex="67" href="http://blog.delphi-jedi.net/tag/jwa/" class="tag-link-15" title="29 topics" rel="tag" style="font-size: 19.5294pt;">JWA</a>
+<a linkindex="68" href="http://blog.delphi-jedi.net/tag/jwscl/" class="tag-link-14" title="35 topics" rel="tag" style="font-size: 22pt;">JWSCL</a>
+<a linkindex="69" href="http://blog.delphi-jedi.net/tag/kernel-microsoft/" class="tag-link-26" title="1 topic" rel="tag" style="font-size: 8pt;">Kernel Microsoft</a>
+<a linkindex="70" href="http://blog.delphi-jedi.net/tag/killprocess/" class="tag-link-20" title="1 topic" rel="tag" style="font-size: 8pt;">KillProcess</a>
+<a linkindex="71" href="http://blog.delphi-jedi.net/tag/laptop/" class="tag-link-21" title="1 topic" rel="tag" style="font-size: 8pt;">Laptop</a>
+<a linkindex="72" href="http://blog.delphi-jedi.net/tag/mailinglist/" class="tag-link-30" title="1 topic" rel="tag" style="font-size: 8pt;">mailinglist</a>
+<a linkindex="73" href="http://blog.delphi-jedi.net/tag/manifest/" class="tag-link-12" title="1 topic" rel="tag" style="font-size: 8pt;">manifest</a>
+<a linkindex="74" href="http://blog.delphi-jedi.net/tag/permission/" class="tag-link-49" title="2 topics" rel="tag" style="font-size: 8.41177pt;">permission</a>
+<a linkindex="75" href="http://blog.delphi-jedi.net/tag/privilege/" class="tag-link-16" title="1 topic" rel="tag" style="font-size: 8pt;">Privilege</a>
+<a linkindex="76" href="http://blog.delphi-jedi.net/tag/process/" class="tag-link-19" title="7 topics" rel="tag" style="font-size: 10.4706pt;">Process</a>
+<a linkindex="77" href="http://blog.delphi-jedi.net/tag/processexplorer/" class="tag-link-28" title="2 topics" rel="tag" style="font-size: 8.41177pt;">ProcessExplorer</a>
+<a linkindex="78" href="http://blog.delphi-jedi.net/tag/registry/" class="tag-link-91" title="2 topics" rel="tag" style="font-size: 8.41177pt;">Registry</a>
+<a linkindex="79" href="http://blog.delphi-jedi.net/tag/runel/" class="tag-link-41" title="3 topics" rel="tag" style="font-size: 8.82353pt;">RunEl</a>
+<a linkindex="80" href="http://blog.delphi-jedi.net/tag/russinovich/" class="tag-link-27" title="1 topic" rel="tag" style="font-size: 8pt;">Russinovich</a>
+<a linkindex="81" href="http://blog.delphi-jedi.net/tag/service/" class="tag-link-95" title="3 topics" rel="tag" style="font-size: 8.82353pt;">Service</a>
+<a linkindex="82" href="http://blog.delphi-jedi.net/tag/setup/" class="tag-link-79" title="2 topics" rel="tag" style="font-size: 8.41177pt;">Setup</a>
+<a linkindex="83" href="http://blog.delphi-jedi.net/tag/sid/" class="tag-link-57" title="3 topics" rel="tag" style="font-size: 8.82353pt;">Sid</a>
+<a linkindex="84" href="http://blog.delphi-jedi.net/tag/terminateprocess/" class="tag-link-18" title="1 topic" rel="tag" style="font-size: 8pt;">TerminateProcess</a>
+<a linkindex="85" href="http://blog.delphi-jedi.net/tag/theme/" class="tag-link-32" title="1 topic" rel="tag" style="font-size: 8pt;">Theme</a>
+<a linkindex="86" href="http://blog.delphi-jedi.net/tag/thread/" class="tag-link-24" title="6 topics" rel="tag" style="font-size: 10.0588pt;">Thread</a>
+<a linkindex="87" href="http://blog.delphi-jedi.net/tag/token/" class="tag-link-75" title="6 topics" rel="tag" style="font-size: 10.0588pt;">Token</a>
+<a linkindex="88" href="http://blog.delphi-jedi.net/tag/uac/" class="tag-link-9" title="1 topic" rel="tag" style="font-size: 8pt;">UAC</a>
+<a linkindex="89" href="http://blog.delphi-jedi.net/tag/user/" class="tag-link-23" title="1 topic" rel="tag" style="font-size: 8pt;">user</a>
+<a linkindex="90" href="http://blog.delphi-jedi.net/tag/vista/" class="tag-link-10" title="4 topics" rel="tag" style="font-size: 9.23529pt;">Vista</a>
+<a linkindex="91" href="http://blog.delphi-jedi.net/tag/window/" class="tag-link-80" title="2 topics" rel="tag" style="font-size: 8.41177pt;">Window</a>
+<a linkindex="92" href="http://blog.delphi-jedi.net/tag/windows/" class="tag-link-22" title="4 topics" rel="tag" style="font-size: 9.23529pt;">Windows</a></div>
+</div>		<div class="Categories">		<h3>Recent Posts</h3>		<ul>
+				<li><a linkindex="93" href="http://blog.delphi-jedi.net/2009/08/29/version-checking-for-delphi/" title="Version Checking for Delphi (2nd Update)">Version Checking for Delphi (2nd Update) </a></li>
+				<li><a linkindex="94" href="http://blog.delphi-jedi.net/2009/07/20/the-case-of-the-failed-loading-of-the-user-profile/" title="The Case of The Failed Loading of The User Profile">The Case of The Failed Loading of The User Profile </a></li>
+				<li><a linkindex="95" href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/" title="I’m burning baby!">I’m burning baby! </a></li>
+				<li><a linkindex="96" href="http://blog.delphi-jedi.net/2009/05/30/if-youre-missing-api-headers/" title="If you’re missing api headers…">If you’re missing api headers… </a></li>
+				<li><a linkindex="97" href="http://blog.delphi-jedi.net/2009/03/31/site-recommondation/" title="Site Recommendation">Site Recommendation </a></li>
+				</ul>
+		</div>		<div class="Categories">			<h3>Recent Comments</h3>			<ul id="recentcomments"><li class="recentcomments">Luke on <a linkindex="98" href="http://blog.delphi-jedi.net/2008/05/17/the-case-of-shellexecute-shellexecuteex-createprocess-and-oskexe/comment-page-1/#comment-26491">The case of ShellExecute, ShellExecuteEx, CreateProcess and osk.exe (Update)</a></li><li class="recentcomments"><a linkindex="99" href="http://www.theunknownones.net/" rel="external nofollow" class="url">Chaosben</a> on <a linkindex="100" href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26355">I’m burning baby!</a></li><li class="recentcomments">bilm on <a linkindex="101" href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26244">I’m burning baby!</a></li><li class="recentcomments">Benjamin on <a linkindex="102" href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26230">I’m burning baby!</a></li><li class="recentcomments">bilm on <a linkindex="103" href="http://blog.delphi-jedi.net/2009/07/18/im-burning-baby/comment-page-1/#comment-26212">I’m burning baby!</a></li></ul>
+		</div><div class="Categories"><h3>Blogroll</h3>
+	<ul class="xoxo blogroll">
+<li><a linkindex="104" href="http://blog.assarbad.net/" title="Programming, reverse engineering and anything else as well …" target="_blank">Assa’s blog</a></li>
+<li><a linkindex="105" href="http://www.christianwimmer.info/" title="The private hompage of the author of JWSCL." target="_blank">Christian Wimmer</a></li>
+<li><a linkindex="106" href="http://www.delphifeeds.com/" title="Blog central to Delphi" target="_blank">Delphi Feeds</a></li>
+<li><a linkindex="107" href="http://www.remkoweijnen.nl/" title="About Terminal Server, Citrix, Delphi and other stuff">Remko Weijnen’s blog</a></li>
+<li><a linkindex="108" href="http://www.private-storm.de/" title="JEDI Member Storm’s Blog " target="_blank">Storm’s Blog</a></li>
+
+	</ul>
+</div>
+<div class="Categories"><h3>JEDI Sites</h3>
+	<ul class="xoxo blogroll">
+<li><a linkindex="109" href="http://sourceforge.net/projects/jedi-apilib" title="Visit the JEDI API Sourceforge Portal" target="_blank">JEDI API Sourceforge</a></li>
+<li><a linkindex="110" href="http://blog.delphi-jedi.net/2008/03/03/suggestion-box/" title="Do you want a blog entry about a WinAPI or JWSCL related subject?">JEDI Blog Suggestion Box</a></li>
+<li><a linkindex="111" href="http://issuetracker.delphi-jedi.org/" title="This is the bug tracker for all JEDI projects. Switch to JEDI API&amp;WSCL to send us bug reports." target="_blank">JEDI Issue Tracker</a></li>
+<li><a linkindex="112" href="http://jwscldoc.delphi-jedi.net/" title="The online documentation of JWSCL" target="_blank">JWSCL Help</a></li>
+<li><a linkindex="113" href="http://sourceforge.net/projects/projectjedi" title="The main portal of all JEDI projects." target="_blank">Project JEDI</a></li>
+
+	</ul>
+</div>
+<div class="Categories"><h3>&nbsp;</h3><div id="calendar_wrap"><table id="wp-calendar" summary="Calendar">
+	<caption>December 2007</caption>
+	<thead>
+	<tr>
+		<th abbr="Monday" scope="col" title="Monday">M</th>
+		<th abbr="Tuesday" scope="col" title="Tuesday">T</th>
+		<th abbr="Wednesday" scope="col" title="Wednesday">W</th>
+		<th abbr="Thursday" scope="col" title="Thursday">T</th>
+		<th abbr="Friday" scope="col" title="Friday">F</th>
+		<th abbr="Saturday" scope="col" title="Saturday">S</th>
+		<th abbr="Sunday" scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td abbr="October" colspan="3" id="prev"><a linkindex="114" href="http://blog.delphi-jedi.net/2007/10/" title="View posts for October 2007">« Oct</a></td>
+		<td class="pad">&nbsp;</td>
+		<td abbr="March" colspan="3" id="next"><a linkindex="115" href="http://blog.delphi-jedi.net/2008/03/" title="View posts for March 2008">Mar »</a></td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
+	</tr>
+	<tr>
+		<td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td>24</td><td>25</td><td>26</td><td><a linkindex="116" href="http://blog.delphi-jedi.net/2007/12/27/" title="How to setup the library">27</a></td><td>28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></div><div class="Categories"><h3>Pages</h3>		<ul>
+			<li class="page_item page-item-2"><a linkindex="117" href="http://blog.delphi-jedi.net/about/" title="About Fame">About Fame</a></li>
+<li class="page_item page-item-10"><a linkindex="118" href="http://blog.delphi-jedi.net/jedi-api-headers/" title="API Headers">API Headers</a></li>
+<li class="page_item page-item-9"><a linkindex="119" href="http://blog.delphi-jedi.net/home/" title="Home">Home</a></li>
+<li class="page_item page-item-11"><a linkindex="120" href="http://blog.delphi-jedi.net/security-library/" title="Security Library">Security Library</a></li>
+<li class="page_item page-item-166"><a linkindex="121" href="http://blog.delphi-jedi.net/sponsors/" title="Sponsors">Sponsors</a></li>
+		</ul>
+		</div>
+
+
+
+
+
+
+
+</div> 
+<!-- Side Right - END -->
+
+
+
+</div>
+<!-- Content END -->
+ 
+<div class="Footer"><div class="FooterCorner"></div>
+<div class="DD"><h3><a linkindex="122" href="http://www.designdisease.com/" title="A design creation of Design Disease">A design creation of Design Disease</a></h3></div>
+<p><strong>Copyright © 2007 - JEDI Windows API - is proudly powered by <a linkindex="123" href="http://www.wordpress.com/">WordPress</a></strong><br>
+InSense 1.0 Theme by <a linkindex="124" href="http://www.designdisease.com/">Design Disease</a> brought to you by <a linkindex="125" href="http://www.hostgator.com/" title="HostGator Web Hosting">HostGator Web Hosting.</a></p>
+<script src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/e-200939.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'3090465',v:'ext',post:'13'});
+var load_cmc = function(){linktracker_init(3090465,13,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script><img original="http://stats.wordpress.com/g.gif?host=blog.delphi-jedi.net&amp;rand=0.8726100790261293&amp;blog=3090465&amp;v=ext&amp;post=13&amp;ref=http%3A//blog.delphi-jedi.net/jedi-api-headers/" id="wpstats" src="How%20to%20setup%20the%20library%C2%A0by%C2%A0JEDI%20Windows%20API-Dateien/grey.gif" alt="">
+</div>
+
+</div></div>
+<!-- bgcontain & bgcontainIn END -->
+
+</body></html>

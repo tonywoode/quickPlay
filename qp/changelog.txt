@@ -1,3 +1,80 @@
+Quickplay v4.7.6 
+ 
+Features
+--------
+* [export] #49 - added name and comment to ini export
+  - see https://forums.quickplayfrontend.com/viewtopic.php?t=1449
+  thanks to user hasseno for raising this
+
+Mametool
+--------
+* [mame] Fix issues found running against Mame 0.241
+  - Fix issue with softlist printing - 
+  - https://forums.quickplayfrontend.com/viewtopic.php?t=2652
+  - thanks to user u-neeks
+  * stop hardcoding Mame64 in generated Mame efind. Instead use the Mame
+  emulator the user has selected
+  * fix illegal filename chars introduced in a single emulator in Mame 0.219,
+  causing softlist printing to exit
+  * Exclude more new boring systems
+  * Re-class all ZX Spectrums as Sinclair (Mame started calling some Amstrad)
+* [mame] rethink Mame filepaths functionlity:
+  - Possibilities for Mame rompaths set by users is arbitrary, therefore
+  convention can't be guessed by machines, instead ask the user to tell us via
+  dropdowns where each of the four romtypes we deal with are
+  - Thanks to Ulao and others for raising issues that led to this conclusion
+  * fix bug with Mame filepaths checkbox/flag, also disable correct sections
+  if filepath printing has been disabled
+  * alter Mame Options form to accomodate filepaths
+  * alter all Mame 'printer' forms - should never have been able to change 
+	Mame emulator at the point of printing (since this potentially invalidates
+	a number of decisions already made in Mame Options like rompaths)
+  * add call to to get rompath from Mame's settings ini, add UI elements
+	to display to user
+  * always turn mame rompaths absolute (in case use has relative rompaths)
+  * logic to invalidate rompath is your mame executable or its ini file change
+  * improve saving of filepath/rompath
+  * trim mame.ini's rompath properly
+  * make no-path printing consistent between arcade and softlist printing
+
+Bugfixes
+--------
+* [romlist] relabel 'delete rom'...
+  - this does not delete any files from disk, it removes
+  item from your romdata
+  - https://forums.quickplayfrontend.com/viewtopic.php?t=1452
+  - thanks to user quickplayer
+* [romlist] prompt before clearing romlist
+  - https://forums.quickplayfrontend.com/viewtopic.php?t=1452
+  thanks to jaw970 for posting this one
+* [open dir] fix opening Rom in explorer issue when comma part of filename, 
+  properly escape filename...
+  - see https://forums.quickplayfrontend.com/viewtopic.php?t=1338
+  thanks to user quickplayer for pointing this out
+* [qpnode] upgrade node.js version qpnode from node 10 to 14
+  - This should stop windows defender flagging QPnode.exe as a potential virus 
+  see https://forums.quickplayfrontend.com/viewtopic.php?t=1436#p2008
+  Thanks to Sandman1973 on the forums for raising this
+* [synctool] increase default time tolerance for file comparison
+  - for whatever reason, often src and dest files have timestamps which
+  differ only by ms, they are the same file
+  
+Technical Debt
+--------------
+* [git] Add 'lib' directory to source code
+  - often we don't add tons of external libs to our source,
+  however several needs arose over time, and in this case, it makes sense
+* [qpnode] fix issue with pkg and native module
+  - see https://github.com/vercel/pkg/issues/1319
+* [qpnode] enable combinatory operations to be run in sequence 
+  e.g.:(scan then softlist printing in dev)
+* [qpnode] better usage info when invoked with no args
+* [qpnode] slightly improved logging
+* [qpnode] add linting config
+* [qpnode] improve readme/dev instructions
+* [mame] Refactor Mame options logic generally e.g.: gatekeepers for xml scan
+* [mame] add inputs to source code
+ 
 Quickplay v4.7.5 
  
 * misc fixes for about form

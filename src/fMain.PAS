@@ -1440,7 +1440,7 @@ begin
 
     TmpStr := TStringList.Create;
     try
-      TmpStr.NameValueSeparator := '¬';
+      TmpStr.NameValueSeparator := 'Â¬';
 
       for i := 0 to EmuList.Count-1 do
         if StrCompare(CurEmu.system, EmuList[i].system) = 0 then

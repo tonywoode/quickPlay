@@ -42,7 +42,7 @@ echo %filename%
 :MAKELIST
 set typeList=(.pdi .isz .bwt .b6t .b5t .nrg .iso .img .cdi .mdx .mds .ccd .bin .cue .gcm .gdi)
 set typeListWithWildcards=(*.pdi *.isz *.bwt *.b6t *.b5t *.nrg *.iso *.img *.cdi *.mdx *.mds *.ccd *.bin *.cue *.gcm *.gdi)
-
+set originalTypeList=%typeList%
 :: don't try moving files that we've already got cached
 :: Do test zips previously cached, and recopy them if they appear corrupt
 :CLASSIFY_ZIP
@@ -130,7 +130,7 @@ call :CHECK_DT
 %_DT% %_DT_UNMOUNT_COMMAND%
 goto finish
 
-:: mount zips - not using atm
+:: mount zips - not using atm, note changes to override below not echoed here if you ever use it again
 :ZIPMOUNT
 call :CHECK_DT
 %_DT% -mount_to %_DAEMON_DRIVE%, %_ROMNAME%
@@ -151,13 +151,30 @@ goto MOUNT
 :: we make (once) a list of files in the archive. 7z list command doesn't like short names (a bug with 7z)
 :: We need to use the same for-loop-backtick form to capture a variable as used above with robocopy
 %_7Z% l %_ROMNAME% > %_TEMPDIR%\archive.txt
-
 :: Probe for favourite mountable filetype (reverse order of the list makes sure eg: cue is mounted in preference to bin or iso
 :: after, we get the line from find that corresponds to the found cueing file (skip=2 won't evaluate the first output line of find)
-:: (TODO: if I put this in solely for 4do in retroarch, this is no longer a requirement)
-if NOT [%OVERRIDE%]==[] set typeList=(.%OVERRIDE%)
-for %%Y in %typeList% do (
-	for /F "usebackq skip=2 delims=" %%v in (`FIND \i  %_TEMPDIR%\archive.txt "%%Y"`) do set ROMFOUND=%%v
+:: then we have the override: originally put this in solely for CD-i, however...modern emus (e.g.: pcsx2) don't load (or need) cue files 
+::(which are about positioning for audio tracks etc), they just want the associated .bin, so override allows us to say 'bin'
+:: that wasn't all tho: problem is I had mixed iso and bin/cue images, and wanted to make a runner that would run both from a single multiloader
+:: hence: if we don't find the override, fallback to the original typelist. So 3 cases: 
+::  (1) normal typelist order for e.g.: bin/cue
+::  (2) override set for bin when we have a bin file in the archive
+::  (3) override set for bin when we don't have a bin file in the archive (e.g.: sets 'iso' using case (1)
+set ROMFOUND=
+:: Check for override, otherwise use the original list
+if NOT [%OVERRIDE%]==[] (
+:: Attempt to find the file of overridden type or from the typelist
+    for /F "usebackq skip=2 delims=" %%v in (`FIND /i ".%OVERRIDE%" %_TEMPDIR%\archive.txt`) do (
+        if not defined ROMFOUND set ROMFOUND=%%v
+    )
+)
+:: whether or not there was an OVERRIDE, search with typelist
+:: (don't guard the assignment with a check for if romfound, that's how the typelist works, its an ordered list!)
+:: this way we cover the case where we have an override, but the override didn't get found in this rom
+if NOT defined ROMFOUND (
+    for %%Y in %typeList% do (
+        for /F "usebackq skip=2 delims=" %%v in (`FIND /i "%%Y" %_TEMPDIR%\archive.txt`) do set ROMFOUND=%%v
+    )
 )
 
 :: Pick out the filename from that line of 7zip output - note that sometimes the date and time
